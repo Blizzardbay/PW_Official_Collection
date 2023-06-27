@@ -1,0 +1,18 @@
+Sandbox_RU = {
+	Sandbox_MBW_Loot = "Виноделие (настройки лута)"
+	Sandbox_MBW_LootGeneral = "Появление предметов из мода"
+	Sandbox_MBW_LootGeneral_tooltip = "Устанавливает базовое количество лута."
+	Sandbox_MBW_WineMakingKits = "Набор для виноделия (Спавн-рейт)"
+	Sandbox_MBW_WineMakingKits_tooltip = "Определяет множитель к скорости появления предметов."
+	Sandbox_MBW_Recipes = "Журналы (Спавн-рейт)"
+	Sandbox_MBW_Recipes_tooltip = "Определяет множитель к скорости появления предметов."
+	Sandbox_MBW_Books = "Книги (Спавн-рейт)"
+	Sandbox_MBW_Books_tooltip = "Определяет множитель к скорости появления предметов."
+	Sandbox_MBW_Wine = "Полные бутылки вина (Спавн-рейт)"
+	Sandbox_MBW_Wine_tooltip = "Определяет множитель к скорости появления предметов."
+    	Sandbox_MBW_LootGeneral_option1 = "Мало",
+    	Sandbox_MBW_LootGeneral_option2 = "Нормально",
+     	Sandbox_MBW_LootGeneral_option3 = "Много",
+    	Sandbox_MBW_LootGeneral_option4 = "Очень много",
+    	Sandbox_MBW_LootGeneral_option5 = "Максимально",
+}

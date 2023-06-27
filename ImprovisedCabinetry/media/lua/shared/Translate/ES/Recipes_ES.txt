@@ -1,0 +1,72 @@
+Recipe_ES = {
+    /* IC_recipes_cabinets */
+    Recipe_ICMakeCabinet1 = "Hacer armario moderno",
+    Recipe_ICMakeCabinet1Corner = "Hacer esquinero moderno",
+    Recipe_ICMakeCabinet2 = "Hacer armario de madera",
+    Recipe_ICMakeCabinet2Corner = "Hacer esquinero de madera",
+    Recipe_ICMakeCabinet3 = "Hacer armario de abedul",
+    Recipe_ICMakeCabinet3Corner = "Hacer esquinero de abedul",
+    Recipe_ICMakeCabinet3Float = "Hacer armario alto de abedul",
+    Recipe_ICMakeCabinet4 = "Hacer armario de roble",
+    Recipe_ICMakeCabinet4Corner = "Hacer esquinero de roble",
+    Recipe_ICMakeCabinet5 = "Hacer armario negro",
+    Recipe_ICMakeCabinet5Corner = "Hacer esquinero negro",
+    Recipe_ICMakeCabinet6 = "Hacer armario verde",
+    Recipe_ICMakeCabinet6Corner = "Hacer esquinero verde",
+    Recipe_ICMakeCabinet7 = "Hacer armario blanco",
+    Recipe_ICMakeCabinet7Corner = "Hacer esquinero blanco",
+    Recipe_ICMakeCabinetBathroom = "Hacer armario médico",
+
+    /* IC_recipes_cabinets_bar */
+    Recipe_ICMakeCabinetBar1 = "Hacer mostrador de roble de bar",
+    Recipe_ICMakeCabinetBar1Corner = "Hacer esquinero de roble de bar",
+
+    /* IC_recipes_cabinets_motel */
+    Recipe_ICMakeCabinetMotel1 = "Hacer mostrador de motel",
+    Recipe_ICMakeCabinetMotel2 = "Hacer mostrador bajo de motel",
+
+    /* IC_recipes_cabinets_restaurant */
+    Recipe_ICMakeCabinetRestaurant1 = "Hacer mostrador de restaurante",
+    Recipe_ICMakeCabinetRestaurant1Corner = "Hacer esquinero de restaurante",
+    Recipe_ICMakeCabinetRestaurant2 = "Hacer mostrador a rayas blanco",
+    Recipe_ICMakeCabinetRestaurant2Corner = "Hacer esquinero a rayas blanco",
+    Recipe_ICMakeCabinetRestaurant3 = "Hacer mostrador de Pizza Whirled",
+    Recipe_ICMakeCabinetRestaurant3Corner = "Hacer esquinero de Pizza Whirled",
+    Recipe_ICMakeCabinetRestaurant4 = "Hacer mostrador de Seahorse Coffee",
+    Recipe_ICMakeCabinetRestaurant4Corner = "Hacer esquinero de Seahorse Coffee",
+    Recipe_ICMakeCabinetRestaurant5 = "Hacer mostrador de Spiffo",
+    Recipe_ICMakeCabinetRestaurant5Corner = "Hacer esquinero de Spiffo",
+
+    /* IC_recipes_cabinets_shops */
+    Recipe_ICMakeCabinetShop1 = "Hacer mostrador azul",
+    Recipe_ICMakeCabinetShop1Corner = "Hacer esquinero azul",
+    Recipe_ICMakeCabinetShop2 = "Hacer mostrador rojo",
+    Recipe_ICMakeCabinetShop2Corner = "Hacer esquinero rojo",
+    Recipe_ICMakeCabinetShop3 = "Hacer mostrador de tienda genérico",
+    Recipe_ICMakeCabinetShop3Corner = "Hacer esquinero de tienda genérico",
+    Recipe_ICMakeCabinetShop4 = "Hacer mostrador de Zippee",
+    Recipe_ICMakeCabinetShop4Corner = "Hacer esquinero de Zippee",
+
+    /* IC_recipes_cabinets_theatre */
+    Recipe_ICMakeCabinetTheater1 = "Hacer mostrador de teatro",
+    Recipe_ICMakeCabinetTheater2 = "Hacer esquinero de teatro",
+    Recipe_ICMakeCabinetTheater3 = "Hacer mostrador de teatro cuadrado",
+
+    /* IC_recipes_cabinets_tailer */
+    Recipe_ICMakeCabinetTrailer1 = "Hacer armario de caravana",
+    Recipe_ICMakeCabinetTrailer2 = "Hacer armario alto de caravana",
+    Recipe_ICMakeCabinetTrailer3 = "Hacer nevera empotrada de caravana",
+
+    /* IC_recipes_cabinets_crossover_glass */
+    Recipe_ICMakeCabinetImprovisedGlass1 = "Hacer expositor de cristal",
+    Recipe_ICMakeCabinetImprovisedGlass1Corner = "Hacer esquinero de cristal",
+    Recipe_ICMakeCabinetImprovisedGlass2 = "Hacer expositor de cristal de teatro",
+
+    /* IC_recipes_parts */
+    Recipe_ICMakeWoodPanel = "Crear panel de madera",
+    Recipe_ICMakeSmallHinge = "Crear bisagras para gabinetes",
+    
+    /* IC_recipes_metalworking */
+    Recipe_ICMakeLargeMetalShelves1 = "Hacer grandes estantes de metal",
+    Recipe_ICMakeMetalCabinet1 = "Hacer casillero de metal",
+}

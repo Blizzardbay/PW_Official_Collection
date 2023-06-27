@@ -1,0 +1,87 @@
+module stalkerfood
+{
+	imports
+	{
+		Base
+	}
+
+		item MarlboroCigarettes
+	{
+	    DisplayCategory = Junk,
+		Count	=	20,
+		HungerChange	=	0,
+		Weight	=	0.005,
+		RequireInHandOrInventory	=	Lighter/Matches,
+		Type	=	Food,
+		DisplayName	=	Marlboro Cigarettes,
+		StressChange	=	-10,
+		Icon	=	Marlboro,
+		CustomContextMenu = Smoke,
+		CantBeFrozen = TRUE,
+		OnEat = OnEat_Cigarettes,
+		StaticModel = Cigarette,
+		EatType = Cigarettes,
+		WorldStaticModel = MarlboroBrandPack_WorldItem,
+		CustomEatSound = ,
+	}
+
+		item RussianBrandCigarettes
+	{
+	    DisplayCategory = Junk,
+		Count	=	20,
+		HungerChange	=	0,
+		Weight	=	0.005,
+		RequireInHandOrInventory	=	Lighter/Matches,
+		Type	=	Food,
+		DisplayName	=	Russian Brand Cigarettes,
+		StressChange	=	-2,
+		Icon	=	RussianBrand,
+		CustomContextMenu = Smoke,
+		CantBeFrozen = TRUE,
+		OnEat = OnEat_Cigarettes,
+		StaticModel = Cigarette,
+		EatType = Cigarettes,
+		WorldStaticModel = RussianBrandPack_WorldItem,
+		CustomEatSound = ,
+	}
+
+		item HandRollingTobacco
+	{
+	    DisplayCategory = Junk,
+		Count	=	3,
+		HungerChange	=	0,
+		Weight	=	0.005,
+		RequireInHandOrInventory	=	Lighter/Matches,
+		Type	=	Food,
+		DisplayName	=	Hand Rolling Tobacco,
+		StressChange	=	-5,
+		Icon	=	HandRolledTobacco,
+		CustomContextMenu = Smoke,
+		CantBeFrozen = TRUE,
+		OnEat = OnEat_Cigarettes,
+		StaticModel = Cigarette,
+		EatType = Cigarettes,
+		WorldStaticModel = HandRollingTobacco_WorldItem,
+		CustomEatSound = ,
+	}
+
+		item CubanCigar
+	{
+	    DisplayCategory = Junk,
+		Count	=	2,
+		HungerChange	=	0,
+		Weight	=	0.1,
+		RequireInHandOrInventory	=	Lighter/Matches,
+		Type	=	Food,
+		DisplayName	=	Cuban Cigar,
+		StressChange	=	-5,
+		Icon	=	CubanCigar,
+		CustomContextMenu = Smoke,
+		CantBeFrozen = TRUE,
+		OnEat = OnEat_Cigarettes,
+		StaticModel = CubanCigarUse,
+		EatType = Cigarettes,
+		WorldStaticModel = CubanCigar_WorldItem,
+		CustomEatSound = ,
+	}
+}

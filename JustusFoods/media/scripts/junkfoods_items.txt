@@ -1,0 +1,553 @@
+module JunkFoodsPH
+{
+	imports
+	{
+		Base
+	}
+
+	item ChocolateTruffles
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Truffles,
+		Icon	=	chocolatetruffles,
+        Carbohydrates = 182,
+        Proteins = 15,
+        Lipids = 70,
+        Calories = 584,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = ChocolateTruffles,
+        CustomEatSound = EatingCrispy,
+		DaysFresh	=	33,
+		DaysTotallyRotten	=	66,
+	}
+
+	item GingerbreadMan
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	GingerbreadMan,
+		Icon	=	gingerbreadman,
+        Carbohydrates = 182,
+        Proteins = 15,
+        Lipids = 70,
+        Calories = 284,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = GingerbreadMan,
+        CustomEatSound = EatingCrispy,
+		DaysFresh	=	33,
+		DaysTotallyRotten	=	66,
+	}
+
+	item Pudding
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Christmas Pudding,
+		Icon	=	pudding,
+        Carbohydrates = 482,
+        Proteins = 55,
+        Lipids = 30,
+        Calories = 1284,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = Pudding,
+        CustomEatSound = EatingCrispy,
+		DaysFresh	=	3,
+		DaysTotallyRotten	=	6,
+	}
+
+	item ChocolateSwissRoll
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Chocolate Swiss Roll,
+		Icon	=	chocolateswissroll,
+        Carbohydrates = 442,
+        Proteins = 15,
+        Lipids = 70,
+        Calories = 1184,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = ChocolateSwissRoll,
+        CustomEatSound = EatingCrispy,
+		DaysFresh	=	3,
+		DaysTotallyRotten	=	6,
+	}
+
+	item VanillaSwissRoll
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Vanilla Swiss Roll,
+		Icon	=	vanillaswissroll,
+        Carbohydrates = 382,
+        Proteins = 15,
+        Lipids = 40,
+        Calories = 1024,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = VanillaSwissRoll,
+        CustomEatSound = EatingCrispy,
+		DaysFresh	=	3,
+		DaysTotallyRotten	=	6,
+	}
+
+
+
+	item MRE1
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	MRE (Chili with Beans),
+		Icon	=	mre,
+        Carbohydrates = 284,
+        Proteins = 115,
+        Lipids = 30,
+        Calories = 1184,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = MRE,
+        CustomEatSound = EatingCrispy,
+	}
+
+	item MRE2
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	MRE (Cheddar Cheese Spread),
+		Icon	=	mre,
+        Carbohydrates = 234,
+        Proteins = 35,
+        Lipids = 70,
+        Calories = 1184,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = MRE,
+        CustomEatSound = EatingCrispy,
+	}
+
+	item MRE3
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	MRE (Vegetable Crackers),
+		Icon	=	mre,
+        Carbohydrates = 182,
+        Proteins = 31,
+        Lipids = 30,
+        Calories = 784,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = MRE,
+        CustomEatSound = EatingCrispy,
+	}
+
+	item MRE4
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	MRE (Cornbread),
+		Icon	=	mre,
+        Carbohydrates = 682,
+        Proteins = 15,
+        Lipids = 70,
+        Calories = 984,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = MRE,
+        CustomEatSound = EatingCrispy,
+	}
+
+	item MRE5
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	MRE (Oatmeal Cookie),
+		Icon	=	mre,
+        Carbohydrates = 782,
+        Proteins = 15,
+        Lipids = 60,
+        Calories = 1182,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = MRE,
+        CustomEatSound = EatingCrispy,
+	}
+
+	item MRE6
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	MRE (Jalapeno Cheddar Cheese),
+		Icon	=	mre,
+        Carbohydrates = 325,
+        Proteins = 15,
+        Lipids = 70,
+        Calories = 1184,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = MRE,
+        CustomEatSound = EatingCrispy,
+	}
+
+	item MRE7
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	MRE (Chicken Chunks),
+		Icon	=	mre,
+        Carbohydrates = 242,
+        Proteins = 15,
+        Lipids = 70,
+        Calories = 784,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = MRE,
+        CustomEatSound = EatingCrispy,
+	}
+
+	item MRE8
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	MRE (Teriyaki Beef Stick),
+		Icon	=	mre,
+        Carbohydrates = 212,
+        Proteins = 15,
+        Lipids = 70,
+        Calories = 784,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = MRE,
+        CustomEatSound = EatingCrispy,
+	}
+
+	item InstantNoodles
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Instant Pot Noodles,
+		Icon	=	instantnoodles,
+        Carbohydrates = 163,
+        Proteins = 41,
+        Lipids = 30,
+        Calories = 384,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = InstantNoodles,
+        CustomEatSound = EatingCrispy,
+	}
+
+
+	item HeartLollipop
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Heart Lollipop,
+		Icon	=	HeartLollipop,
+        Carbohydrates = 44,
+        Proteins = 12,
+        Lipids = 10,
+        Calories = 81,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = HeartLollipop,
+        CustomEatSound = EatingCrispy,
+	}
+
+	item ChocolateSticks
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Chocolate Sticks,
+		Icon	=	ChocolateSticks,
+        Carbohydrates = 163,
+        Proteins = 14,
+        Lipids = 10,
+        Calories = 231,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = ChocolateSticks,
+        CustomEatSound = EatingCrispy,
+	}
+
+	item Churros
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Churros,
+		Icon	=	Churros,
+        Carbohydrates = 12,
+        Proteins = 11,
+        Lipids = 10,
+        Calories = 222,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = Churros,
+        CustomEatSound = EatingCrispy,
+		DaysFresh	=	13,
+		DaysTotallyRotten	=	16,
+	}
+
+	item ChocolateEclair
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Chocolate Eclair,
+		Icon	=	Eclair,
+        Carbohydrates = 13,
+        Proteins = 12,
+        Lipids = 20,
+        Calories = 284,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = Eclair,
+        CustomEatSound = EatingCrispy,
+		DaysFresh	=	3,
+		DaysTotallyRotten	=	6,
+	}
+	
+	item Macaroon
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Macaroon,
+		Icon	=	Macaroon,
+        Carbohydrates = 11,
+        Proteins = 21,
+        Lipids = 30,
+        Calories = 144,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = Macaroon,
+        CustomEatSound = EatingCrispy,
+		DaysFresh	=	33,
+		DaysTotallyRotten	=	56,
+	}
+
+	
+	item ToffeeApple
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Toffee Apple,
+		Icon	=	ToffeeApple,
+        Carbohydrates = 33,
+        Proteins = 23,
+        Lipids = 12,
+        Calories = 184,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = ToffeeApple,
+        CustomEatSound = EatingCrispy,
+		DaysFresh	=	13,
+		DaysTotallyRotten	=	16,
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	item BlueLollipop
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Blue Lollipop,
+		Icon	=	BlueLollipop,
+        Carbohydrates = 3,
+        Proteins = 3,
+        Lipids = 2,
+        Calories = 84,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = BlueLollipop,
+        CustomEatSound = EatingCrispy,
+	}
+
+	item LemonLollipop
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Lemon Lollipop,
+		Icon	=	LemonLollipop,
+        Carbohydrates = 3,
+        Proteins = 3,
+        Lipids = 2,
+        Calories = 84,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = LemonLollipop,
+        CustomEatSound = EatingCrispy,
+	}
+
+	item ChocoBalls
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Choco Balls,
+		Icon	=	ChocoBalls,
+        Carbohydrates = 33,
+        Proteins = 23,
+        Lipids = 12,
+        Calories = 284,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = ChocoBalls,
+        CustomEatSound = EatingCrispy,
+	}
+
+	item JellyWorms
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Jelly Worms,
+		Icon	=	JellyWorms,
+        Carbohydrates = 33,
+        Proteins = 13,
+        Lipids = 3,
+        Calories = 284,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = JellyWorms,
+        CustomEatSound = EatingCrispy,
+	}
+
+	item SugarSticks
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Sugar Sticks,
+		Icon	=	SugarSticks,
+        Carbohydrates = 23,
+        Proteins = 3,
+        Lipids = 3,
+        Calories = 154,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = SugarSticks,
+        CustomEatSound = EatingCrispy,
+	}
+
+	item VanillaCream
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Vanilla Cream,
+		Icon	=	VanillaCream,
+        Carbohydrates = 45,
+        Proteins = 11,
+        Lipids = 6,
+        Calories = 354,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = VanillaCream,
+        CustomEatSound = EatingCrispy,
+	}
+
+	item Wafers
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Wafers,
+		Icon	=	Wafers,
+        Carbohydrates = 35,
+        Proteins = 11,
+        Lipids = 6,
+        Calories = 231,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = Wafers,
+        CustomEatSound = EatingCrispy,
+	}
+
+	item ChocolateEgg
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Chocolate Egg,
+		Icon	=	ChocolateEgg,
+        Carbohydrates = 35,
+        Proteins = 11,
+        Lipids = 6,
+        Calories = 331,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = ChocolateEgg,
+        CustomEatSound = EatingCrispy,
+	}
+
+
+}

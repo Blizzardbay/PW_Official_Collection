@@ -1,0 +1,7 @@
+IGUI_ES = 
+{
+	IGUI_ItemCat_MoreBrews = "MoreBrews",
+	IGUI_CraftCategory_MoreBrews =  "MoreBrews",
+	IGUI_perks_Brewing = "Sumiller de cerveza",
+	IGUI_ItemCat_CraftBrewing = "Fabricación - Cervezas",
+}

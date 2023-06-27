@@ -1,0 +1,242 @@
+module Base
+{
+	model	RamenFoilPacket
+		{
+			
+			mesh	=	WorldItems/RamenFoilPacket,
+			texture	=	WorldItems/RamenFoilPacket,
+			scale	=	0.0003,
+		}
+
+	model	RamenChickenFlat
+		{
+			
+			mesh	=	WorldItems/RamenFlat,
+			texture	=	WorldItems/RamenChickenFlat,
+			scale	=	0.0008,
+		}
+
+	model	RamenChickenPack
+		{
+			
+			mesh	=	WorldItems/RamenPackV2,
+			texture	=	WorldItems/RamenChickenPack,
+			scale	=	0.0008,
+		}
+
+	model	RamenBeefFlat
+		{
+			
+			mesh	=	WorldItems/RamenFlat,
+			texture	=	WorldItems/RamenBeefFlat,
+			scale	=	0.0008,
+		}
+
+	model	RamenBeefPack
+		{
+			
+			mesh	=	WorldItems/RamenPackV2,
+			texture	=	WorldItems/RamenBeefPack,
+			scale	=	0.0008,
+		}
+
+	model	RamenShrimpFlat
+		{
+			
+			mesh	=	WorldItems/RamenFlat,
+			texture	=	WorldItems/RamenShrimpFlat,
+			scale	=	0.0008,
+		}
+
+	model	RamenShrimpPack
+		{
+			
+			mesh	=	WorldItems/RamenPackV2,
+			texture	=	WorldItems/RamenShrimpPack,
+			scale	=	0.0008,
+		}
+
+	model	RamenCheeseFlat
+		{
+			
+			mesh	=	WorldItems/RamenFlat,
+			texture	=	WorldItems/RamenCheeseFlat,
+			scale	=	0.0008,
+		}
+
+	model	RamenCheesePack
+		{
+			
+			mesh	=	WorldItems/RamenPackV2,
+			texture	=	WorldItems/RamenCheesePack,
+			scale	=	0.0008,
+		}
+
+	model	RamenChiliFlat
+		{
+			
+			mesh	=	WorldItems/RamenFlat,
+			texture	=	WorldItems/RamenChiliFlat,
+			scale	=	0.0008,
+		}
+
+	model	RamenChiliPack
+		{
+			
+			mesh	=	WorldItems/RamenPackV2,
+			texture	=	WorldItems/RamenChiliPack,
+			scale	=	0.0008,
+		}
+
+	model	RamenOrientalFlat
+		{
+			
+			mesh	=	WorldItems/RamenFlat,
+			texture	=	WorldItems/RamenOrientalFlat,
+			scale	=	0.0008,
+		}
+
+	model	RamenOrientalPack
+		{
+			
+			mesh	=	WorldItems/RamenPackV2,
+			texture	=	WorldItems/RamenOrientalPack,
+			scale	=	0.0008,
+		}
+
+	model	RamenPorkFlat
+		{
+			
+			mesh	=	WorldItems/RamenFlat,
+			texture	=	WorldItems/RamenPorkFlat,
+			scale	=	0.0008,
+		}
+
+	model	RamenPorkPack
+		{
+			
+			mesh	=	WorldItems/RamenPackV2,
+			texture	=	WorldItems/RamenPorkPack,
+			scale	=	0.0008,
+		}
+
+	model	RamenChickenFlatEmpty
+		{
+			
+			mesh	=	WorldItems/RamenFlatEmpty,
+			texture	=	WorldItems/RamenChickenFlat,
+			scale	=	0.0008,
+		}
+
+	model	RamenBeefFlatEmpty
+		{
+			
+			mesh	=	WorldItems/RamenFlatEmpty,
+			texture	=	WorldItems/RamenBeefFlat,
+			scale	=	0.0008,
+		}
+
+	model	RamenShrimpFlatEmpty
+		{
+			
+			mesh	=	WorldItems/RamenFlatEmpty,
+			texture	=	WorldItems/RamenShrimpFlat,
+			scale	=	0.0008,
+		}
+
+	model	RamenCheeseFlatEmpty
+		{
+			
+			mesh	=	WorldItems/RamenFlatEmpty,
+			texture	=	WorldItems/RamenCheeseFlat,
+			scale	=	0.0008,
+		}
+
+	model	RamenCheeseFlatEmpty
+		{
+			
+			mesh	=	WorldItems/RamenFlatEmpty,
+			texture	=	WorldItems/RamenCheeseFlat,
+			scale	=	0.0008,
+		}
+
+	model	RamenChiliFlatEmpty
+		{
+			
+			mesh	=	WorldItems/RamenFlatEmpty,
+			texture	=	WorldItems/RamenChiliFlat,
+			scale	=	0.0008,
+		}
+
+	model	RamenOrientalFlatEmpty
+		{
+			
+			mesh	=	WorldItems/RamenFlatEmpty,
+			texture	=	WorldItems/RamenOrientalFlat,
+			scale	=	0.0008,
+		}
+
+	model	RamenPorkFlatEmpty
+		{
+			
+			mesh	=	WorldItems/RamenFlatEmpty,
+			texture	=	WorldItems/RamenPorkFlat,
+			scale	=	0.0008,
+		}
+
+	model	RamenChickenPackEmpty
+		{
+			
+			mesh	=	WorldItems/RamenPackEmpty,
+			texture	=	WorldItems/RamenChickenPack,
+			scale	=	0.0008,
+		}
+
+	model	RamenBeefPackEmpty
+		{
+			
+			mesh	=	WorldItems/RamenPackEmpty,
+			texture	=	WorldItems/RamenBeefPack,
+			scale	=	0.0008,
+		}
+
+	model	RamenShrimpPackEmpty
+		{
+			
+			mesh	=	WorldItems/RamenPackEmpty,
+			texture	=	WorldItems/RamenShrimpPack,
+			scale	=	0.0008,
+		}
+
+	model	RamenCheesePackEmpty
+		{
+			
+			mesh	=	WorldItems/RamenPackEmpty,
+			texture	=	WorldItems/RamenCheesePack,
+			scale	=	0.0008,
+		}
+
+	model	RamenChiliPackEmpty
+		{
+			
+			mesh	=	WorldItems/RamenPackEmpty,
+			texture	=	WorldItems/RamenChiliPack,
+			scale	=	0.0008,
+		}
+
+	model	RamenOrientalPackEmpty
+		{
+			
+			mesh	=	WorldItems/RamenPackEmpty,
+			texture	=	WorldItems/RamenOrientalPack,
+			scale	=	0.0008,
+		}
+
+	model	RamenPorkPackEmpty
+		{
+			
+			mesh	=	WorldItems/RamenPackEmpty,
+			texture	=	WorldItems/RamenPorkPack,
+			scale	=	0.0008,
+		}
+}

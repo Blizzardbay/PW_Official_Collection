@@ -1,0 +1,16 @@
+﻿ItemName_CN = {
+
+	-- Bottling Meat MOD
+	-- Translated by Cleave
+
+	ItemName_Bottling.BottlingChicken = "一罐鸡肉",
+	ItemName_Bottling.BottlingFrogMeat = "一罐蛙肉",
+	ItemName_Bottling.BottlingMeatPatty = "一罐肉饼",
+	ItemName_Bottling.BottlingMuttonChop = "一罐羊排",
+	ItemName_Bottling.BottlingPorkChop = "一罐猪排",
+	ItemName_Bottling.BottlingRabbitmeat = "一罐兔肉",
+	ItemName_Bottling.BottlingSmallanimalmeat = "一罐动物肉",
+	ItemName_Bottling.BottlingSmallbirdmeat = "一罐飞禽肉",
+	ItemName_Bottling.BottlingSteak = "一罐牛排",
+
+}

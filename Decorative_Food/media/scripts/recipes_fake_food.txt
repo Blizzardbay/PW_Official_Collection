@@ -1,0 +1,2838 @@
+module FakeFood {
+ imports{ Base }
+   recipe Make Fake Opened Dog Food {
+       BucketPaperMache=1,
+       DogfoodOpen,
+       Result:FakeDogfoodOpen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Dog Food {
+       BucketPaperMache=1,
+       Dogfood,
+       Result:FakeDogfood, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Opened Canned Corned Beef {
+       BucketPaperMache=1,
+       CannedCornedBeefOpen,
+       Result:FakeCannedCornedBeefOpen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Opened Canned Chili {
+       BucketPaperMache=1,
+       CannedChiliOpen,
+       Result:FakeCannedChiliOpen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Opened Canned Spaghetti Bolognese {
+       BucketPaperMache=1,
+       CannedBologneseOpen,
+       Result:FakeCannedBologneseOpen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Opened Canned Carrots {
+       BucketPaperMache=1,
+       CannedCarrotsOpen,
+       Result:FakeCannedCarrotsOpen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Opened Canned Corn {
+       BucketPaperMache=1,
+       CannedCornOpen,
+       Result:FakeCannedCornOpen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Opened Canned Mushroom Soup {
+       BucketPaperMache=1,
+       CannedMushroomSoupOpen,
+       Result:FakeCannedMushroomSoupOpen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Opened Canned Peas {
+       BucketPaperMache=1,
+       CannedPeasOpen,
+       Result:FakeCannedPeasOpen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Opened Canned Potato {
+       BucketPaperMache=1,
+       CannedPotatoOpen,
+       Result:FakeCannedPotatoOpen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Opened Canned Sardines {
+       BucketPaperMache=1,
+       CannedSardinesOpen,
+       Result:FakeCannedSardinesOpen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Opened Canned Tomato {
+       BucketPaperMache=1,
+       CannedTomatoOpen,
+       Result:FakeCannedTomatoOpen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Canned Corn {
+       BucketPaperMache=1,
+       CannedCorn,
+       Result:FakeCannedCorn, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Canned Mushroom Soup {
+       BucketPaperMache=1,
+       CannedMushroomSoup,
+       Result:FakeCannedMushroomSoup, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Canned Peas {
+       BucketPaperMache=1,
+       CannedPeas,
+       Result:FakeCannedPeas, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Canned Potato {
+       BucketPaperMache=1,
+       CannedPotato2,
+       Result:FakeCannedPotato2, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Canned Sardines {
+       BucketPaperMache=1,
+       CannedSardines,
+       Result:FakeCannedSardines, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Canned Tomato {
+       BucketPaperMache=1,
+       CannedTomato2,
+       Result:FakeCannedTomato2, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Canned Carrots {
+       BucketPaperMache=1,
+       CannedCarrots2,
+       Result:FakeCannedCarrots2, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Canned Chili {
+       BucketPaperMache=1,
+       CannedChili,
+       Result:FakeCannedChili, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Canned Bolognese {
+       BucketPaperMache=1,
+       CannedBolognese,
+       Result:FakeCannedBolognese, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Canned Corned Beef {
+       BucketPaperMache=1,
+       CannedCornedBeef,
+       Result:FakeCannedCornedBeef, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Opened Canned Soup {
+       BucketPaperMache=1,
+       TinnedSoupOpen,
+       Result:FakeTinnedSoupOpen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Canned Soup {
+       BucketPaperMache=1,
+       TinnedSoup,
+       Result:FakeTinnedSoup, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Opened Tin of Tuna {
+       BucketPaperMache=1,
+       TunaTinOpen,
+       Result:FakeTunaTinOpen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Opened Canned Beans {
+       BucketPaperMache=1,
+       OpenBeans,
+       Result:FakeOpenBeans, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Canned Beans {
+       BucketPaperMache=1,
+       TinnedBeans,
+       Result:FakeTinnedBeans, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Canned Tuna {
+       BucketPaperMache=1,
+       TunaTin,
+       Result:FakeTunaTin, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Canned Fruit Cocktail {
+       BucketPaperMache=1,
+       CannedFruitCocktail,
+       Result:FakeCannedFruitCocktail, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Opened Canned Fruit Cocktail {
+       BucketPaperMache=1,
+       CannedFruitCocktailOpen,
+       Result:FakeCannedFruitCocktailOpen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Canned Fruit Beverage {
+       BucketPaperMache=1,
+       CannedFruitBeverage,
+       Result:FakeCannedFruitBeverage, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Opened Canned Fruit Beverage {
+       BucketPaperMache=1,
+       CannedFruitBeverageOpen,
+       Result:FakeCannedFruitBeverageOpen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Canned Peaches {
+       BucketPaperMache=1,
+       CannedPeaches,
+       Result:FakeCannedPeaches, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Opened Canned Peaches {
+       BucketPaperMache=1,
+       CannedPeachesOpen,
+       Result:FakeCannedPeachesOpen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Canned Pineapple {
+       BucketPaperMache=1,
+       CannedPineapple,
+       Result:FakeCannedPineapple, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Opened Canned Pineapple {
+       BucketPaperMache=1,
+       CannedPineappleOpen,
+       Result:FakeCannedPineappleOpen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Mushrooms {
+       BucketPaperMache=1,
+       MushroomGeneric1,
+       Result:FakeMushroomGeneric1, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Mushrooms {
+       BucketPaperMache=1,
+       MushroomGeneric2,
+       Result:FakeMushroomGeneric2, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Mushrooms {
+       BucketPaperMache=1,
+       MushroomGeneric3,
+       Result:FakeMushroomGeneric3, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Mushrooms {
+       BucketPaperMache=1,
+       MushroomGeneric4,
+       Result:FakeMushroomGeneric4, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Mushrooms {
+       BucketPaperMache=1,
+       MushroomGeneric5,
+       Result:FakeMushroomGeneric5, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Mushrooms {
+       BucketPaperMache=1,
+       MushroomGeneric6,
+       Result:FakeMushroomGeneric6, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Mushrooms {
+       BucketPaperMache=1,
+       MushroomGeneric7,
+       Result:FakeMushroomGeneric7, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Onion {
+       BucketPaperMache=1,
+       Onion,
+       Result:FakeOnion, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Lettuce {
+       BucketPaperMache=1,
+       Lettuce,
+       Result:FakeLettuce, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Bell Pepper {
+       BucketPaperMache=1,
+       BellPepper,
+       Result:FakeBellPepper, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Avocado {
+       BucketPaperMache=1,
+       Avocado,
+       Result:FakeAvocado, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Zucchini {
+       BucketPaperMache=1,
+       Zucchini,
+       Result:FakeZucchini, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Peas {
+       BucketPaperMache=1,
+       Peas,
+       Result:FakePeas, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Carrots {
+       BucketPaperMache=1,
+       Carrots,
+       Result:FakeCarrots, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Broccoli {
+       BucketPaperMache=1,
+       Broccoli,
+       Result:FakeBroccoli, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Corn {
+       BucketPaperMache=1,
+       Corn,
+       Result:FakeCorn, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Eggplant {
+       BucketPaperMache=1,
+       Eggplant,
+       Result:FakeEggplant, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Leek {
+       BucketPaperMache=1,
+       Leek,
+       Result:FakeLeek, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Lemon {
+       BucketPaperMache=1,
+       Lemon,
+       Result:FakeLemon, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Berries {
+       BucketPaperMache=1,
+       BerryBlack,
+       Result:FakeBerryBlack, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Berries {
+       BucketPaperMache=1,
+       BerryBlue,
+       Result:FakeBerryBlue, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Berries {
+       BucketPaperMache=1,
+       BerryGeneric1,
+       Result:FakeBerryGeneric1, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Berries {
+       BucketPaperMache=1,
+       BerryGeneric2,
+       Result:FakeBerryGeneric2, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Berries {
+       BucketPaperMache=1,
+       BerryGeneric3,
+       Result:FakeBerryGeneric3, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Berries {
+       BucketPaperMache=1,
+       BerryGeneric4,
+       Result:FakeBerryGeneric4, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Berries {
+       BucketPaperMache=1,
+       BerryGeneric5,
+       Result:FakeBerryGeneric5, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Berries {
+       BucketPaperMache=1,
+       BerryPoisonIvy,
+       Result:FakeBerryPoisonIvy, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Peach {
+       BucketPaperMache=1,
+       Peach,
+       Result:FakePeach, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pineapple {
+       BucketPaperMache=1,
+       Pineapple,
+       Result:FakePineapple, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Cherry {
+       BucketPaperMache=1,
+       Cherry,
+       Result:FakeCherry, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Watermelon {
+       BucketPaperMache=1,
+       Watermelon,
+       Result:FakeWatermelon, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Watermelon Slice {
+       BucketPaperMache=1,
+       WatermelonSliced,
+       Result:FakeWatermelonSliced, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Watermelon Chunks {
+       BucketPaperMache=1,
+       WatermelonSmashed,
+       Result:FakeWatermelonSmashed, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Grapes {
+       BucketPaperMache=1,
+       Grapes,
+       Result:FakeGrapes, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Orange {
+       BucketPaperMache=1,
+       Orange,
+       Result:FakeOrange, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Apple {
+       BucketPaperMache=1,
+       Apple,
+       Result:FakeApple, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Banana {
+       BucketPaperMache=1,
+       Banana,
+       Result:FakeBanana, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Catfish {
+       BucketPaperMache=1,
+       Catfish,
+       Result:FakeCatfish, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Bass {
+       BucketPaperMache=1,
+       Bass,
+       Result:FakeBass, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Perch {
+       BucketPaperMache=1,
+       Perch,
+       Result:FakePerch, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Crappie {
+       BucketPaperMache=1,
+       Crappie,
+       Result:FakeCrappie, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sunfish {
+       BucketPaperMache=1,
+       Panfish,
+       Result:FakePanfish, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pike {
+       BucketPaperMache=1,
+       Pike,
+       Result:FakePike, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Trout {
+       BucketPaperMache=1,
+       Trout,
+       Result:FakeTrout, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Little Bait Fish {
+       BucketPaperMache=1,
+       BaitFish,
+       Result:FakeBaitFish, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Dead Rat {
+       BucketPaperMache=1,
+       DeadRat,
+       Result:FakeDeadRat, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Dead Mouse {
+       BucketPaperMache=1,
+       DeadMouse,
+       Result:FakeDeadMouse, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Dead Rabbit {
+       BucketPaperMache=1,
+       DeadRabbit,
+       Result:FakeDeadRabbit, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Dead Squirrel {
+       BucketPaperMache=1,
+       DeadSquirrel,
+       Result:FakeDeadSquirrel, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Dead Bird {
+       BucketPaperMache=1,
+       DeadBird,
+       Result:FakeDeadBird, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Fish Fillet {
+       BucketPaperMache=1,
+       FishFillet,
+       Result:FakeFishFillet, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Hotdog {
+       BucketPaperMache=1,
+       Hotdog,
+       Result:FakeHotdog, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Mutton Chop {
+       BucketPaperMache=1,
+       MuttonChop,
+       Result:FakeMuttonChop, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pork Chop {
+       BucketPaperMache=1,
+       PorkChop,
+       Result:FakePorkChop, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Rabbit Meat {
+       BucketPaperMache=1,
+       Rabbitmeat,
+       Result:FakeRabbitmeat, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Small Animal Meat {
+       BucketPaperMache=1,
+       Smallanimalmeat,
+       Result:FakeSmallanimalmeat, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Small Bird Meat {
+       BucketPaperMache=1,
+       Smallbirdmeat,
+       Result:FakeSmallbirdmeat, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Fried Chicken {
+       BucketPaperMache=1,
+       ChickenFried,
+       Result:FakeChickenFried, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Meat Patty {
+       BucketPaperMache=1,
+       MeatPatty,
+       Result:FakeMeatPatty, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Beef Jerky {
+       BucketPaperMache=1,
+       BeefJerky,
+       Result:FakeBeefJerky, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Corndog {
+       BucketPaperMache=1,
+       Corndog,
+       Result:FakeCorndog, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Tofu {
+       BucketPaperMache=1,
+       Tofu,
+       Result:FakeTofu, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Frog Meat {
+       BucketPaperMache=1,
+       FrogMeat,
+       Result:FakeFrogMeat, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Steak {
+       BucketPaperMache=1,
+       Steak,
+       Result:FakeSteak, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Salmon {
+       BucketPaperMache=1,
+       Salmon,
+       Result:FakeSalmon, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Egg {
+       BucketPaperMache=1,
+       Egg,
+       Result:FakeEgg, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Chicken {
+       BucketPaperMache=1,
+       Chicken,
+       Result:FakeChicken, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Ham {
+       BucketPaperMache=1,
+       Ham,
+       Result:FakeHam, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Ham Slice {
+       BucketPaperMache=1,
+       HamSlice,
+       Result:FakeHamSlice, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pancakes {
+       BucketPaperMache=1,
+       Pancakes,
+       Result:FakePancakes, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Ice Cream {
+       BucketPaperMache=1,
+       Icecream,
+       Result:FakeIcecream, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Melted Ice Cream {
+       BucketPaperMache=1,
+       IcecreamMelted,
+       Result:FakeIcecreamMelted, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Candy Cane {
+       BucketPaperMache=1,
+       Candycane,
+       Result:FakeCandycane, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Peppermint {
+       BucketPaperMache=1,
+       Peppermint,
+       Result:FakePeppermint, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Cereal {
+       BucketPaperMache=1,
+       Cereal,
+       Result:FakeCereal, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Cereal Bowl {
+       BucketPaperMache=1,
+       CerealBowl,
+       Result:FakeCerealBowl, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Chocalate Chip Cookie {
+       BucketPaperMache=1,
+       CookieChocolateChip,
+       Result:FakeCookieChocolateChip, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Raspberry Shortbread {
+       BucketPaperMache=1,
+       CookieJelly,
+       Result:FakeCookieJelly, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sunflower Seeds {
+       BucketPaperMache=1,
+       SunflowerSeeds,
+       Result:FakeSunflowerSeeds, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Mint Candy {
+       BucketPaperMache=1,
+       MintCandy,
+       Result:FakeMintCandy, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Lollipop {
+       BucketPaperMache=1,
+       Lollipop,
+       Result:FakeLollipop, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Candy Package {
+       BucketPaperMache=1,
+       CandyPackage,
+       Result:FakeCandyPackage, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Instant Popcorn {
+       BucketPaperMache=1,
+       Popcorn,
+       Result:FakePopcorn, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Cupcake {
+       BucketPaperMache=1,
+       Cupcake,
+       Result:FakeCupcake, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Chocolate {
+       BucketPaperMache=1,
+       Chocolate,
+       Result:FakeChocolate, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Common Mallow {
+       BucketPaperMache=1,
+       CommonMallow,
+       Result:FakeCommonMallow, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Lemon Grass {
+       BucketPaperMache=1,
+       LemonGrass,
+       Result:FakeLemonGrass, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Black Sage {
+       BucketPaperMache=1,
+       BlackSage,
+       Result:FakeBlackSage, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Ginseng {
+       BucketPaperMache=1,
+       Ginseng,
+       Result:FakeGinseng, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Worm {
+       BucketPaperMache=1,
+       Worm,
+       Result:FakeWorm, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Rosehips {
+       BucketPaperMache=1,
+       Rosehips,
+       Result:FakeRosehips, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Grape Leaves {
+       BucketPaperMache=1,
+       GrapeLeaves,
+       Result:FakeGrapeLeaves, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Violets {
+       BucketPaperMache=1,
+       Violets,
+       Result:FakeViolets, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Wild Eggs {
+       BucketPaperMache=1,
+       WildEggs,
+       Result:FakeWildEggs, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Cockroach {
+       BucketPaperMache=1,
+       Cockroach,
+       Result:FakeCockroach, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Cricket {
+       BucketPaperMache=1,
+       Cricket,
+       Result:FakeCricket, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Grasshopper {
+       BucketPaperMache=1,
+       Grasshopper,
+       Result:FakeGrasshopper, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Grilled Cheese Sandwich {
+       BucketPaperMache=1,
+       GrilledCheese,
+       Result:FakeGrilledCheese, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Salt {
+       BucketPaperMache=1,
+       Salt,
+       Result:FakeSalt, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pepper {
+       BucketPaperMache=1,
+       Pepper,
+       Result:FakePepper, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Dough {
+       BucketPaperMache=1,
+       Dough,
+       Result:FakeDough, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Rolled Dough {
+       BucketPaperMache=1,
+       DoughRolled,
+       Result:FakeDoughRolled, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Baking Tray with Bread {
+       BucketPaperMache=1,
+       BakingTrayBread,
+       Result:FakeBakingTrayBread, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Bowl of Beans {
+       BucketPaperMache=1,
+       BeanBowl,
+       Result:FakeBeanBowl, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Bread {
+       BucketPaperMache=1,
+       Bread,
+       Result:FakeBread, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Butter {
+       BucketPaperMache=1,
+       Butter,
+       Result:FakeButter, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Cheese {
+       BucketPaperMache=1,
+       Cheese,
+       Result:FakeCheese, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Cheese Sandwich {
+       BucketPaperMache=1,
+       CheeseSandwich,
+       Result:FakeCheeseSandwich, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Chips {
+       BucketPaperMache=1,
+       Crisps,
+       Result:FakeCrisps, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Chips {
+       BucketPaperMache=1,
+       Crisps2,
+       Result:FakeCrisps2, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Chips {
+       BucketPaperMache=1,
+       Crisps3,
+       Result:FakeCrisps3, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Chips {
+       BucketPaperMache=1,
+       Crisps4,
+       Result:FakeCrisps4, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Peanut Butter {
+       BucketPaperMache=1,
+       PeanutButter,
+       Result:FakePeanutButter, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Peanut Butter Sandwich {
+       BucketPaperMache=1,
+       PeanutButterSandwich,
+       Result:FakePeanutButterSandwich, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pie Slice {
+       BucketPaperMache=1,
+       Pie,
+       Result:FakePie, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pumpkin Pie Slice {
+       BucketPaperMache=1,
+       PiePumpkin,
+       Result:FakePiePumpkin, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Peanuts {
+       BucketPaperMache=1,
+       Peanuts,
+       Result:FakePeanuts, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Dry Ramen Noodles {
+       BucketPaperMache=1,
+       Ramen,
+       Result:FakeRamen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Bowl of Ramen Noodles {
+       BucketPaperMache=1,
+       RamenBowl,
+       Result:FakeRamenBowl, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake TV Dinner {
+       BucketPaperMache=1,
+       TVDinner,
+       Result:FakeTVDinner, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Egg Carton {
+       BucketPaperMache=1,
+       EggCarton,
+       Result:FakeEggCarton, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Rice {
+       BucketPaperMache=1,
+       Rice,
+       Result:FakeRice, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pasta {
+       BucketPaperMache=1,
+       Pasta,
+       Result:FakePasta, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pasta Pan {
+       BucketPaperMache=1,
+       PastaPan,
+       Result:FakePastaPan, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Rice {
+       BucketPaperMache=1,
+       RicePan,
+       Result:FakeRicePan, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Coffee {
+       BucketPaperMache=1,
+       Coffee2,
+       Result:FakeCoffee2, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Tea Bag {
+       BucketPaperMache=1,
+       Teabag2,
+       Result:FakeTeabag2, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pasta {
+       BucketPaperMache=1,
+       PastaPot,
+       Result:FakePastaPot, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Rice {
+       BucketPaperMache=1,
+       RicePot,
+       Result:FakeRicePot, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Bowl of Rice {
+       BucketPaperMache=1,
+       RiceBowl,
+       Result:FakeRiceBowl, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Bowl of Pasta {
+       BucketPaperMache=1,
+       PastaBowl,
+       Result:FakePastaBowl, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pie Preparation {
+       BucketPaperMache=1,
+       PiePrep,
+       Result:FakePiePrep, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Cake Preparation {
+       BucketPaperMache=1,
+       CakePrep,
+       Result:FakeCakePrep, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Salad {
+       BucketPaperMache=1,
+       FruitSalad,
+       Result:FakeFruitSalad, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Oatmeal {
+       BucketPaperMache=1,
+       Oatmeal,
+       Result:FakeOatmeal, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Mac and Cheese {
+       BucketPaperMache=1,
+       Macandcheese,
+       Result:FakeMacandcheese, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Honey {
+       BucketPaperMache=1,
+       Honey,
+       Result:FakeHoney, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sugar {
+       BucketPaperMache=1,
+       Sugar,
+       Result:FakeSugar, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Yogurt {
+       BucketPaperMache=1,
+       Yoghurt,
+       Result:FakeYoghurt, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Bread {
+       BucketPaperMache=1,
+       BreadDough,
+       Result:FakeBreadDough, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Cake Slice {
+       BucketPaperMache=1,
+       CakeSlice,
+       Result:FakeCakeSlice, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Stir fry {
+       BucketPaperMache=1,
+       PanFriedVegetables,
+       Result:FakePanFriedVegetables, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Roasted Vegetables {
+       BucketPaperMache=1,
+       PanFriedVegetables2,
+       Result:FakePanFriedVegetables2, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Stir fry {
+       BucketPaperMache=1,
+       GriddlePanFriedVegetables,
+       Result:FakeGriddlePanFriedVegetables, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Mustard {
+       BucketPaperMache=1,
+       Mustard,
+       Result:FakeMustard, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Ketchup {
+       BucketPaperMache=1,
+       Ketchup,
+       Result:FakeKetchup, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Marinara {
+       BucketPaperMache=1,
+       Marinara,
+       Result:FakeMarinara, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Can of Oats {
+       BucketPaperMache=1,
+       OatsRaw,
+       Result:FakeOatsRaw, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pie {
+       BucketPaperMache=1,
+       PieWholeRaw,
+       Result:FakePieWholeRaw, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pie {
+       BucketPaperMache=1,
+       PieWholeRawSweet,
+       Result:FakePieWholeRawSweet, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Cake {
+       BucketPaperMache=1,
+       CakeRaw,
+       Result:FakeCakeRaw, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Processed Cheese {
+       BucketPaperMache=1,
+       Processedcheese,
+       Result:FakeProcessedcheese, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Modjeska {
+       BucketPaperMache=1,
+       Modjeska,
+       Result:FakeModjeska, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Bread Slices {
+       BucketPaperMache=1,
+       BreadSlices,
+       Result:FakeBreadSlices, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Toast {
+       BucketPaperMache=1,
+       Toast,
+       Result:FakeToast, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sandwich {
+       BucketPaperMache=1,
+       Sandwich,
+       Result:FakeSandwich, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Baguette Sandwich {
+       BucketPaperMache=1,
+       BaguetteSandwich,
+       Result:FakeBaguetteSandwich, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Burger {
+       BucketPaperMache=1,
+       Burger,
+       Result:FakeBurger, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pizza Slice {
+       BucketPaperMache=1,
+       Pizza,
+       Result:FakePizza, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pizza {
+       BucketPaperMache=1,
+       PizzaWhole,
+       Result:FakePizzaWhole, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Fries {
+       BucketPaperMache=1,
+       Fries,
+       Result:FakeFries, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pickles {
+       BucketPaperMache=1,
+       Pickles,
+       Result:FakePickles, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Bagel {
+       BucketPaperMache=1,
+       BagelPlain,
+       Result:FakeBagelPlain, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Poppy Bagel {
+       BucketPaperMache=1,
+       BagelPoppy,
+       Result:FakeBagelPoppy, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sesame Bagel {
+       BucketPaperMache=1,
+       BagelSesame,
+       Result:FakeBagelSesame, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Baguette {
+       BucketPaperMache=1,
+       Baguette,
+       Result:FakeBaguette, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Baguette Dough {
+       BucketPaperMache=1,
+       BaguetteDough,
+       Result:FakeBaguetteDough, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Black Beans {
+       BucketPaperMache=1,
+       Blackbeans,
+       Result:FakeBlackbeans, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Burrito {
+       BucketPaperMache=1,
+       Burrito,
+       Result:FakeBurrito, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Black Forest Cake Slice {
+       BucketPaperMache=1,
+       CakeBlackForest,
+       Result:FakeCakeBlackForest, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Carrot Cake Slice {
+       BucketPaperMache=1,
+       CakeCarrot,
+       Result:FakeCakeCarrot, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Cheese Cake Slice {
+       BucketPaperMache=1,
+       CakeCheeseCake,
+       Result:FakeCakeCheeseCake, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Chocolate Cake Slice {
+       BucketPaperMache=1,
+       CakeChocolate,
+       Result:FakeCakeChocolate, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Red Velvet Cake Slice {
+       BucketPaperMache=1,
+       CakeRedVelvet,
+       Result:FakeCakeRedVelvet, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Strawberry Cake Slice {
+       BucketPaperMache=1,
+       CakeStrawberryShortcake,
+       Result:FakeCakeStrawberryShortcake, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Chicken Foot {
+       BucketPaperMache=1,
+       ChickenFoot,
+       Result:FakeChickenFoot, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Chocolate Chips {
+       BucketPaperMache=1,
+       ChocolateChips,
+       Result:FakeChocolateChips, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Cocoa Powder {
+       BucketPaperMache=1,
+       CocoaPowder,
+       Result:FakeCocoaPowder, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Chocolate Cookie {
+       BucketPaperMache=1,
+       CookiesChocolate,
+       Result:FakeCookiesChocolate, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Oatmeal Cookie {
+       BucketPaperMache=1,
+       CookiesOatmeal,
+       Result:FakeCookiesOatmeal, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Shortbread Cookie {
+       BucketPaperMache=1,
+       CookiesShortbread,
+       Result:FakeCookiesShortbread, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Croissant {
+       BucketPaperMache=1,
+       Croissant,
+       Result:FakeCroissant, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Daikon {
+       BucketPaperMache=1,
+       Daikon,
+       Result:FakeDaikon, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Chocolate Doughnut {
+       BucketPaperMache=1,
+       DoughnutChocolate,
+       Result:FakeDoughnutChocolate, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Frosted Doughnut {
+       BucketPaperMache=1,
+       DoughnutFrosted,
+       Result:FakeDoughnutFrosted, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Jelly Doughnut {
+       BucketPaperMache=1,
+       DoughnutJelly,
+       Result:FakeDoughnutJelly, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Doughnut {
+       BucketPaperMache=1,
+       DoughnutPlain,
+       Result:FakeDoughnutPlain, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Edamame {
+       BucketPaperMache=1,
+       Edamame,
+       Result:FakeEdamame, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Boiled Egg {
+       BucketPaperMache=1,
+       EggBoiled,
+       Result:FakeEggBoiled, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Poached Egg {
+       BucketPaperMache=1,
+       EggPoached,
+       Result:FakeEggPoached, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Omelette {
+       BucketPaperMache=1,
+       EggOmelette,
+       Result:FakeEggOmelette, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Fish Roe {
+       BucketPaperMache=1,
+       FishRoe,
+       Result:FakeFishRoe, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Ginger Pickled {
+       BucketPaperMache=1,
+       GingerPickled,
+       Result:FakeGingerPickled, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Grapefruit {
+       BucketPaperMache=1,
+       Grapefruit,
+       Result:FakeGrapefruit, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Hot sauce {
+       BucketPaperMache=1,
+       Hotsauce,
+       Result:FakeHotsauce, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Icing {
+       BucketPaperMache=1,
+       Icing,
+       Result:FakeIcing, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Lime {
+       BucketPaperMache=1,
+       Lime,
+       Result:FakeLime, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Lobster {
+       BucketPaperMache=1,
+       Lobster,
+       Result:FakeLobster, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Maki {
+       BucketPaperMache=1,
+       Maki,
+       Result:FakeMaki, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Maple Syrup {
+       BucketPaperMache=1,
+       MapleSyrup,
+       Result:FakeMapleSyrup, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Meat Dumpling {
+       BucketPaperMache=1,
+       MeatDumpling,
+       Result:FakeMeatDumpling, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Meat Steam Bun {
+       BucketPaperMache=1,
+       MeatSteamBun,
+       Result:FakeMeatSteamBun, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Minced Meat {
+       BucketPaperMache=1,
+       MincedMeat,
+       Result:FakeMincedMeat, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Fruit Muffin {
+       BucketPaperMache=1,
+       MuffinFruit,
+       Result:FakeMuffinFruit, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Muffin {
+       BucketPaperMache=1,
+       MuffinGeneric,
+       Result:FakeMuffinGeneric, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Noodle Soup {
+       BucketPaperMache=1,
+       NoodleSoup,
+       Result:FakeNoodleSoup, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Olive Oil {
+       BucketPaperMache=1,
+       OilOlive,
+       Result:FakeOilOlive, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Vegetable Oil {
+       BucketPaperMache=1,
+       OilVegetable,
+       Result:FakeOilVegetable, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Onigiri {
+       BucketPaperMache=1,
+       Onigiri,
+       Result:FakeOnigiri, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Oysters {
+       BucketPaperMache=1,
+       Oysters,
+       Result:FakeOysters, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pear {
+       BucketPaperMache=1,
+       Pear,
+       Result:FakePear, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Habanero {
+       BucketPaperMache=1,
+       PepperHabanero,
+       Result:FakePepperHabanero, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Jalapeno {
+       BucketPaperMache=1,
+       PepperJalapeno,
+       Result:FakePepperJalapeno, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Refried Beans {
+       BucketPaperMache=1,
+       RefriedBeans,
+       Result:FakeRefriedBeans, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Rice Paper {
+       BucketPaperMache=1,
+       RicePaper,
+       Result:FakeRicePaper, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Rice Vinegar {
+       BucketPaperMache=1,
+       RiceVinegar,
+       Result:FakeRiceVinegar, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sausage {
+       BucketPaperMache=1,
+       Sausage,
+       Result:FakeSausage, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pepperoni {
+       BucketPaperMache=1,
+       Pepperoni,
+       Result:FakePepperoni, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Seaweed {
+       BucketPaperMache=1,
+       Seaweed,
+       Result:FakeSeaweed, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Shrimp {
+       BucketPaperMache=1,
+       Shrimp,
+       Result:FakeShrimp, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Shrimp Dumpling {
+       BucketPaperMache=1,
+       ShrimpDumpling,
+       Result:FakeShrimpDumpling, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Fried Shrimp {
+       BucketPaperMache=1,
+       ShrimpFried,
+       Result:FakeShrimpFried, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Soy sauce {
+       BucketPaperMache=1,
+       Soysauce,
+       Result:FakeSoysauce, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Spring roll {
+       BucketPaperMache=1,
+       Springroll,
+       Result:FakeSpringroll, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Brown Sugar {
+       BucketPaperMache=1,
+       SugarBrown,
+       Result:FakeSugarBrown, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Egg Sushi {
+       BucketPaperMache=1,
+       SushiEgg,
+       Result:FakeSushiEgg, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Fish Sushi {
+       BucketPaperMache=1,
+       SushiFish,
+       Result:FakeSushiFish, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Taco {
+       BucketPaperMache=1,
+       Taco,
+       Result:FakeTaco, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Fried Tofu {
+       BucketPaperMache=1,
+       TofuFried,
+       Result:FakeTofuFried, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Tortilla {
+       BucketPaperMache=1,
+       Tortilla,
+       Result:FakeTortilla, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Tortilla Chips {
+       BucketPaperMache=1,
+       TortillaChips,
+       Result:FakeTortillaChips, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Wasabi {
+       BucketPaperMache=1,
+       Wasabi,
+       Result:FakeWasabi, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Baloney {
+       BucketPaperMache=1,
+       Baloney,
+       Result:FakeBaloney, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Baloney Slices {
+       BucketPaperMache=1,
+       BaloneySlice,
+       Result:FakeBaloneySlice, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Biscuit {
+       BucketPaperMache=1,
+       Biscuit,
+       Result:FakeBiscuit, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Tray of Biscuits {
+       BucketPaperMache=1,
+       Muffintray_Biscuit,
+       Result:FakeMuffintray_Biscuit, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Crackers {
+       BucketPaperMache=1,
+       Crackers,
+       Result:FakeCrackers, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Cornbread {
+       BucketPaperMache=1,
+       Cornbread,
+       Result:FakeCornbread, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Fried Fish {
+       BucketPaperMache=1,
+       FishFried,
+       Result:FakeFishFried, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Graham Crackers {
+       BucketPaperMache=1,
+       GrahamCrackers,
+       Result:FakeGrahamCrackers, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Gravy {
+       BucketPaperMache=1,
+       Gravy,
+       Result:FakeGravy, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Gum {
+       BucketPaperMache=1,
+       Gum,
+       Result:FakeGum, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Fruit Jam {
+       BucketPaperMache=1,
+       JamFruit,
+       Result:FakeJamFruit, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Marmalade {
+       BucketPaperMache=1,
+       JamMarmalade,
+       Result:FakeJamMarmalade, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Marshmallows {
+       BucketPaperMache=1,
+       Marshmallows,
+       Result:FakeMarshmallows, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Fried Oysters {
+       BucketPaperMache=1,
+       OystersFried,
+       Result:FakeOystersFried, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Fried Onion Rings {
+       BucketPaperMache=1,
+       FriedOnionRings,
+       Result:FakeFriedOnionRings, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Onion Slices {
+       BucketPaperMache=1,
+       OnionRings,
+       Result:FakeOnionRings, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Salami {
+       BucketPaperMache=1,
+       Salami,
+       Result:FakeSalami, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Salami Slices {
+       BucketPaperMache=1,
+       SalamiSlice,
+       Result:FakeSalamiSlice, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Smore {
+       BucketPaperMache=1,
+       Smore,
+       Result:FakeSmore, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Squid {
+       BucketPaperMache=1,
+       Squid,
+       Result:FakeSquid, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Squid Calamari {
+       BucketPaperMache=1,
+       SquidCalamari,
+       Result:FakeSquidCalamari, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Taco Shell {
+       BucketPaperMache=1,
+       TacoShell,
+       Result:FakeTacoShell, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Muffin Baking Tray {
+       BucketPaperMache=1,
+       BakingTray_Muffin,
+       Result:FakeBakingTray_Muffin, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Crayfish {
+       BucketPaperMache=1,
+       Crayfish,
+       Result:FakeCrayfish, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Cone {
+       BucketPaperMache=1,
+       Cone,
+       Result:FakeCone, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Ice Cream Cone {
+       BucketPaperMache=1,
+       ConeIcecream,
+       Result:FakeConeIcecream, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Ice Cream Cone {
+       BucketPaperMache=1,
+       ConeIcecreamToppings,
+       Result:FakeConeIcecreamToppings, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Melted Ice Cream Cone {
+       BucketPaperMache=1,
+       ConeIcecreamMelted,
+       Result:FakeConeIcecreamMelted, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Granola Bar {
+       BucketPaperMache=1,
+       GranolaBar,
+       Result:FakeGranolaBar, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Mango {
+       BucketPaperMache=1,
+       Mango,
+       Result:FakeMango, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pumpkin {
+       BucketPaperMache=1,
+       Pumpkin,
+       Result:FakePumpkin, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Jack'o'lantern {
+       BucketPaperMache=1,
+       HalloweenPumpkin,
+       Result:FakeHalloweenPumpkin, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Chicken Nuggets {
+       BucketPaperMache=1,
+       ChickenNuggets,
+       Result:FakeChickenNuggets, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Dehydrated Meat Stick {
+       BucketPaperMache=1,
+       DehydratedMeatStick,
+       Result:FakeDehydratedMeatStick, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Cinnamon Roll {
+       BucketPaperMache=1,
+       CinnamonRoll,
+       Result:FakeCinnamonRoll, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Guacamole {
+       BucketPaperMache=1,
+       Guacamole,
+       Result:FakeGuacamole, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Black Licorice {
+       BucketPaperMache=1,
+       LicoriceBlack,
+       Result:FakeLicoriceBlack, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Red Licorice {
+       BucketPaperMache=1,
+       LicoriceRed,
+       Result:FakeLicoriceRed, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pain au Chocolat {
+       BucketPaperMache=1,
+       Painauchocolat,
+       Result:FakePainauchocolat, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Perogies {
+       BucketPaperMache=1,
+       Perogies,
+       Result:FakePerogies, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Potato Pancakes {
+       BucketPaperMache=1,
+       PotatoPancakes,
+       Result:FakePotatoPancakes, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Apples {
+       BucketPaperMache=1,
+       SackProduce_Apple,
+       Result:FakeSackProduce_Apple, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Bell Peppers {
+       BucketPaperMache=1,
+       SackProduce_BellPepper,
+       Result:FakeSackProduce_BellPepper, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Broccoli {
+       BucketPaperMache=1,
+       SackProduce_Broccoli,
+       Result:FakeSackProduce_Broccoli, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Cabbages {
+       BucketPaperMache=1,
+       SackProduce_Cabbage,
+       Result:FakeSackProduce_Cabbage, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Carrots {
+       BucketPaperMache=1,
+       SackProduce_Carrot,
+       Result:FakeSackProduce_Carrot, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Cherries {
+       BucketPaperMache=1,
+       SackProduce_Cherry,
+       Result:FakeSackProduce_Cherry, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Corn {
+       BucketPaperMache=1,
+       SackProduce_Corn,
+       Result:FakeSackProduce_Corn, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Eggplants {
+       BucketPaperMache=1,
+       SackProduce_Eggplant,
+       Result:FakeSackProduce_Eggplant, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Grapes {
+       BucketPaperMache=1,
+       SackProduce_Grapes,
+       Result:FakeSackProduce_Grapes, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Leeks {
+       BucketPaperMache=1,
+       SackProduce_Leek,
+       Result:FakeSackProduce_Leek, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Lettuce {
+       BucketPaperMache=1,
+       SackProduce_Lettuce,
+       Result:FakeSackProduce_Lettuce, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Onions {
+       BucketPaperMache=1,
+       SackProduce_Onion,
+       Result:FakeSackProduce_Onion, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Peaches {
+       BucketPaperMache=1,
+       SackProduce_Peach,
+       Result:FakeSackProduce_Peach, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Pears {
+       BucketPaperMache=1,
+       SackProduce_Pear,
+       Result:FakeSackProduce_Pear, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Potatoes {
+       BucketPaperMache=1,
+       SackProduce_Potato,
+       Result:FakeSackProduce_Potato, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Radishes {
+       BucketPaperMache=1,
+       SackProduce_RedRadish,
+       Result:FakeSackProduce_RedRadish, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Strawberries {
+       BucketPaperMache=1,
+       SackProduce_Strawberry,
+       Result:FakeSackProduce_Strawberry, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sack of Tomatoes {
+       BucketPaperMache=1,
+       SackProduce_Tomato,
+       Result:FakeSackProduce_Tomato, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Dried Black Beans {
+       BucketPaperMache=1,
+       DriedBlackBeans,
+       Result:FakeDriedBlackBeans, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Dried Chick Peas {
+       BucketPaperMache=1,
+       DriedChickpeas,
+       Result:FakeDriedChickpeas, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Dried Kidney Peas {
+       BucketPaperMache=1,
+       DriedKidneyBeans,
+       Result:FakeDriedKidneyBeans, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Dried Lentils {
+       BucketPaperMache=1,
+       DriedLentils,
+       Result:FakeDriedLentils, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Dried Split Peas {
+       BucketPaperMache=1,
+       DriedSplitPeas,
+       Result:FakeDriedSplitPeas, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Dried White Beans {
+       BucketPaperMache=1,
+       DriedWhiteBeans,
+       Result:FakeDriedWhiteBeans, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pretzel {
+       BucketPaperMache=1,
+       Pretzel,
+       Result:FakePretzel, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Allsorts {
+       BucketPaperMache=1,
+       Allsorts,
+       Result:FakeAllsorts, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Bouillon Cube {
+       BucketPaperMache=1,
+       BouillonCube,
+       Result:FakeBouillonCube, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Candy Corn {
+       BucketPaperMache=1,
+       CandyCorn,
+       Result:FakeCandyCorn, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Acorn {
+       BucketPaperMache=1,
+       Acorn,
+       Result:FakeAcorn, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Beauty Berry {
+       BucketPaperMache=1,
+       BeautyBerry,
+       Result:FakeBeautyBerry, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Dandelions {
+       BucketPaperMache=1,
+       Dandelions,
+       Result:FakeDandelions, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Basil {
+       BucketPaperMache=1,
+       Basil,
+       Result:FakeBasil, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Chives {
+       BucketPaperMache=1,
+       Chives,
+       Result:FakeChives, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Cilantro {
+       BucketPaperMache=1,
+       Cilantro,
+       Result:FakeCilantro, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Oregano {
+       BucketPaperMache=1,
+       Oregano,
+       Result:FakeOregano, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Parsley {
+       BucketPaperMache=1,
+       Parsley,
+       Result:FakeParsley, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Rosemary {
+       BucketPaperMache=1,
+       Rosemary,
+       Result:FakeRosemary, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sage {
+       BucketPaperMache=1,
+       Sage,
+       Result:FakeSage, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Thyme {
+       BucketPaperMache=1,
+       Thyme,
+       Result:FakeThyme, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Holly Berry {
+       BucketPaperMache=1,
+       HollyBerry,
+       Result:FakeHollyBerry, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Nettles {
+       BucketPaperMache=1,
+       Nettles,
+       Result:FakeNettles, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Ginger Root {
+       BucketPaperMache=1,
+       GingerRoot,
+       Result:FakeGingerRoot, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Thistles {
+       BucketPaperMache=1,
+       Thistle,
+       Result:FakeThistle, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Winter Berry {
+       BucketPaperMache=1,
+       WinterBerry,
+       Result:FakeWinterBerry, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Caterpillar {
+       BucketPaperMache=1,
+       AmericanLadyCaterpillar,
+       Result:FakeAmericanLadyCaterpillar, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Caterpillar {
+       BucketPaperMache=1,
+       BandedWoolyBearCaterpillar,
+       Result:FakeBandedWoolyBearCaterpillar, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Centipede {
+       BucketPaperMache=1,
+       Centipede,
+       Result:FakeCentipede, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Centipede {
+       BucketPaperMache=1,
+       Centipede2,
+       Result:FakeCentipede2, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Maggots {
+       BucketPaperMache=1,
+       Maggots,
+       Result:FakeMaggots, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Maggots {
+       BucketPaperMache=1,
+       Maggots2,
+       Result:FakeMaggots2, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Millipede {
+       BucketPaperMache=1,
+       Millipede,
+       Result:FakeMillipede, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Millipede {
+       BucketPaperMache=1,
+       Millipede2,
+       Result:FakeMillipede2, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Caterpillar {
+       BucketPaperMache=1,
+       MonarchCaterpillar,
+       Result:FakeMonarchCaterpillar, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Pillbug {
+       BucketPaperMache=1,
+       Pillbug,
+       Result:FakePillbug, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Caterpillar {
+       BucketPaperMache=1,
+       SawflyLarva,
+       Result:FakeSawflyLarva, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Caterpillar {
+       BucketPaperMache=1,
+       SilkMothCaterpillar,
+       Result:FakeSilkMothCaterpillar, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Caterpillar {
+       BucketPaperMache=1,
+       SwallowtailCaterpillar,
+       Result:FakeSwallowtailCaterpillar, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Termites {
+       BucketPaperMache=1,
+       Termites,
+       Result:FakeTermites, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Slug {
+       BucketPaperMache=1,
+       Slug,
+       Result:FakeSlug, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Slug {
+       BucketPaperMache=1,
+       Slug2,
+       Result:FakeSlug2, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Snail {
+       BucketPaperMache=1,
+       Snail,
+       Result:FakeSnail, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Lard {
+       BucketPaperMache=1,
+       Lard,
+       Result:FakeLard, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Margarine {
+       BucketPaperMache=1,
+       Margarine,
+       Result:FakeMargarine, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sugar Packet {
+       BucketPaperMache=1,
+       SugarPacket,
+       Result:FakeSugarPacket, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Candied Fruit Slices {
+       BucketPaperMache=1,
+       CandyFruitSlices,
+       Result:FakeCandyFruitSlices, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Chocolate-Covered Coffee Beans {
+       BucketPaperMache=1,
+       ChocolateCoveredCoffeeBeans,
+       Result:FakeChocolateCoveredCoffeeBeans, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Gummy Bears {
+       BucketPaperMache=1,
+       GummyBears,
+       Result:FakeGummyBears, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Gummy Worms {
+       BucketPaperMache=1,
+       GummyWorms,
+       Result:FakeGummyWorms, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Hard Candies {
+       BucketPaperMache=1,
+       HardCandies,
+       Result:FakeHardCandies, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Jellybeans {
+       BucketPaperMache=1,
+       JellyBeans,
+       Result:FakeJellyBeans, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Jujubes {
+       BucketPaperMache=1,
+       Jujubes,
+       Result:FakeJujubes, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Rock Candy {
+       BucketPaperMache=1,
+       RockCandy,
+       Result:FakeRockCandy, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sugar Cookie {
+       BucketPaperMache=1,
+       CookiesSugar,
+       Result:FakeCookiesSugar, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Packaged Corn {
+       BucketPaperMache=1,
+       CornFrozen,
+       Result:FakeCornFrozen, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Mixed Vegetables {
+       BucketPaperMache=1,
+       MixedVegetables,
+       Result:FakeMixedVegetables, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Apple Pie Slice {
+       BucketPaperMache=1,
+       PieApple,
+       Result:FakePieApple, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Blueberry Pie Slice {
+       BucketPaperMache=1,
+       PieBlueberry,
+       Result:FakePieBlueberry, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Key Lime Pie Slice {
+       BucketPaperMache=1,
+       PieKeyLime,
+       Result:FakePieKeyLime, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Lemon Meringue Pie Slice {
+       BucketPaperMache=1,
+       PieLemonMeringue,
+       Result:FakePieLemonMeringue, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Choco Cakes {
+       BucketPaperMache=1,
+       ChocoCakes,
+       Result:FakeChocoCakes, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Hi His {
+       BucketPaperMache=1,
+       HiHis,
+       Result:FakeHiHis, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Plonkies {
+       BucketPaperMache=1,
+       Plonkies,
+       Result:FakePlonkies, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Beverage {
+       BucketPaperMache=1,
+       Beverage,
+       Result:FakeBeverage, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Beverage {
+       BucketPaperMache=1,
+       Beverage2,
+       Result:FakeBeverage2, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Chocolate Chip Cookies Baking Tray {
+       BucketPaperMache=1,
+       CookieChocolateChipDough,
+       Result:FakeCookieChocolateChipDough, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Chocolate Cookies Baking Tray {
+       BucketPaperMache=1,
+       CookiesChocolateDough,
+       Result:FakeCookiesChocolateDough, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Oatmeal Cookies Baking Tray {
+       BucketPaperMache=1,
+       CookiesOatmealDough,
+       Result:FakeCookiesOatmealDough, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Shortbread Cookies Baking Tray {
+       BucketPaperMache=1,
+       CookiesShortbreadDough,
+       Result:FakeCookiesShortbreadDough, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Sugar Cookies Baking Tray {
+       BucketPaperMache=1,
+       CookiesSugarDough,
+       Result:FakeCookiesSugarDough, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Wine Glass of Water {
+       BucketPaperMache=1,
+       GlassWineWater,
+       Result:FakeGlassWineWater, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Tumbler of Water {
+       BucketPaperMache=1,
+       GlassTumblerWater,
+       Result:FakeGlassTumblerWater, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Plastic Cup of Water {
+       BucketPaperMache=1,
+       PlasticCupWater,
+       Result:FakePlasticCupWater, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake in a Glass {
+       BucketPaperMache=1,
+       WineInGlass,
+       Result:FakeWineInGlass, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Poured in a Tumbler {
+       BucketPaperMache=1,
+       Beer,
+       Result:FakeBeer, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Poured in a Glass {
+       BucketPaperMache=1,
+       Beer2,
+       Result:FakeBeer2, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+   recipe Make Fake Tomato Paste {
+       BucketPaperMache=1,
+       TomatoPaste,
+       Result:FakeTomatoPaste, 
+       Time:50.0,
+       Category:Fake Food,
+   }
+}

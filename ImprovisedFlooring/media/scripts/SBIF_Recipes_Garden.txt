@@ -1,0 +1,61 @@
+module ImprovisedFlooring
+{
+    imports 
+    {
+        Base
+    }
+
+    recipe GardenFakeGrass {   
+        keep KnittingNeedles,
+        keep [Recipe.GetItemTypes.Scissors],
+        RippedSheets=5,
+        PaintGreen,
+	    Result:Moveables.improvisedflooring_missing_0_15,
+	    Time:30.0,
+	    NeedToBeLearn:True,
+        SkillRequired:Farming=1;Tailoring=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+
+    recipe GardenPaverColorful {   
+        keep HandShovel/Shovel/Shovel,
+        Stone=1,
+        BucketConcreteFull=1,
+	    Result:Moveables.improvisedflooring_missing_0_1,
+	    Time:30.0,
+	    NeedToBeLearn:True,
+        SkillRequired:Woodwork=1;Farming=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:MakePlaster,
+    }
+
+    recipe GardenPaverGrey {   
+        keep HandShovel/Shovel,
+        Stone=1,
+        BucketConcreteFull=1,
+	    Result:Moveables.improvisedflooring_missing_0_5,
+	    Time:30.0,
+	    NeedToBeLearn:True,
+        SkillRequired:Woodwork=1;Farming=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:MakePlaster,
+    }
+
+    recipe GardenPaverRed {   
+        keep HandShovel/Shovel,
+        Stone=1,
+        BucketConcreteFull=1,
+	    Result:Moveables.improvisedflooring_missing_0_6,
+	    Time:30.0,
+	    NeedToBeLearn:True,
+        SkillRequired:Woodwork=1;Farming=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:MakePlaster,
+    }
+    
+}

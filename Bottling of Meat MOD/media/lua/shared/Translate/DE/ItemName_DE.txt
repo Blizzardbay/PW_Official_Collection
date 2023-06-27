@@ -1,0 +1,16 @@
+ItemName_DE = {
+
+	-- Bottling Meat MOD
+	-- Russian translation by Jackel
+
+	ItemName_Bottling.BottlingChicken = "Eingelegtes Huhn",
+	ItemName_Bottling.BottlingFrogMeat = "Eingelegtes Froschfleisch",
+	ItemName_Bottling.BottlingMeatPatty = "Eingelegte Hackfleisch-Patties",
+	ItemName_Bottling.BottlingMuttonChop = "Eingelegtes Hammelkotelett",
+	ItemName_Bottling.BottlingPorkChop = "Eingelegtes Schweinekotelett",
+	ItemName_Bottling.BottlingRabbitmeat = "Eingelegtes Kaninchenfleisch",
+	ItemName_Bottling.BottlingSmallanimalmeat = "Eingelegtes Kleintierfleisch",
+	ItemName_Bottling.BottlingSmallbirdmeat = "Eingelegtes Vogelfleisch",
+	ItemName_Bottling.BottlingSteak = "Eingelegte Steaks",
+
+}

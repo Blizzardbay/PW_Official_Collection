@@ -1,0 +1,50 @@
+The Ramen Mod
+1.2.2: A bequest for PSPSoldier534
+(41.71)(04jun22)
+
+Changes:
+-Added nutrition values for ramen flavor packets.
+-Turbo-nerfed ramen trash spawn rates.
+
+
+1.2.1.1:
+(41.65)(31dec21)
+Additions:
+-added icon/support for Mod Manager.
+
+Changes:
+-rebalanced ramen bowl nutrition.
+
+1.2.1:
+(41.65)(29dec21)
+Fixes:
+-Fixed bug with ramen foil packet 3d model not displaying correctly.
+
+1.2:
+Additions:
+-Added world static models for all items.
+
+1.1.1
+Fixes:
+-Fixed missing trash items
+
+
+1.1
+Additions:
+-Oriental flavor
+  -A.k.a. Soy
+-Pork Flavor
+
+Changes:
+-Ramen flats are now unique for each flavor
+
+Fixes:
+-Minor bugfixing
+
+Removed:
+-Removed old placeholder icons
+
+
+1.0
+
+Release.

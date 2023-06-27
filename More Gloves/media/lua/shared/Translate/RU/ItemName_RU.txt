@@ -1,0 +1,14 @@
+ItemName_RU = {
+	ItemName_MoreGloves.DottedGloves = "Строительные перчатки",
+	ItemName_MoreGloves.FingerlessLeatherGloves = "Кожаные перчатки без пальцевs",
+	ItemName_MoreGloves.ImprovisedGloves = "Самодельные перчатки",
+	ItemName_MoreGloves.NitrileGloves = "Нитриловые перчатки",
+	ItemName_MoreGloves.RippedDenimGloves = "Самодельные джинсовые перчатки",
+	ItemName_MoreGloves.RippedSheetsGloves = "Самодельные тканевые перчатки",
+	ItemName_MoreGloves.WeightliftingGloves = "Спортивные перчатки",
+	ItemName_MoreGloves.MetalWelderGrey = "Металлические перчатки сварщика",
+	ItemName_MoreGloves.MetalWelderOrange = "Металлические перчатки сварщика",
+	ItemName_MoreGloves.MetalWelderRed = "Металлические перчатки сварщика",
+	ItemName_MoreGloves.MetalWelderWhite = "Металлические перчатки сварщика",
+	ItemName_MoreGloves.MetalWelderYellow = "Металлические перчатки сварщика",
+}

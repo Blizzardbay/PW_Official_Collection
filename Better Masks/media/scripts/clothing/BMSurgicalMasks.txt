@@ -1,0 +1,82 @@
+module Base
+{	
+	item Hat_SurgicalMask_Blue
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Medical Mask,
+		ClothingItem = Hat_SurgicalMask_Blue,
+		BodyLocation = Mask,
+		BloodLocation = Head,
+		Icon = SurgicalMaskBlue,
+		CanHaveHoles = true,
+		Weight = 0.05,
+		ScratchDefense = 10,
+		Insulation = 0.2,
+		WindResistance = 0.3,
+		ClothingItemExtra = Hat_SurgicalMask_BlueDown,
+		ClothingItemExtraOption = PullDownM,
+		ClothingExtraSubmenu = PullUpM,
+		WorldStaticModel = SurgicalMaskBlue_Ground,
+	}
+	
+	item Hat_SurgicalMask_BlueDown
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Medical Mask (Down),
+		ClothingItem = Hat_SurgicalMask_BlueDown,
+		BodyLocation = Mask,
+		BloodLocation = Head,
+		Icon = SurgicalMaskBlue,
+		CanHaveHoles = true,
+		Weight = 0.05,
+		ScratchDefense = 5,
+		Insulation = 0.1,
+		WindResistance = 0.2,
+		ClothingItemExtra = Hat_SurgicalMask_Blue,
+		ClothingItemExtraOption = PullUpM,
+		ClothingExtraSubmenu = PullDownM,
+		WorldStaticModel = SurgicalMaskBlue_Ground,
+	}
+
+	item Hat_SurgicalMask_Green
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Medical Mask,
+		ClothingItem = Hat_SurgicalMask_Green,
+		BodyLocation = Mask,
+		BloodLocation = Head,
+		Icon = SurgicalMaskGreen,
+		CanHaveHoles = true,
+		Weight = 0.05,
+		ScratchDefense = 10,
+		Insulation = 0.2,
+		WindResistance = 0.3,
+		ClothingItemExtra = Hat_SurgicalMask_GreenDown,
+		ClothingItemExtraOption = PullDownM,
+		ClothingExtraSubmenu = PullUpM,
+		WorldStaticModel = SurgicalMaskGreen_Ground,
+	}
+
+	item Hat_SurgicalMask_GreenDown
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Medical Mask (Down),
+		ClothingItem = Hat_SurgicalMask_GreenDown,
+		BodyLocation = Mask,
+		BloodLocation = Head,
+		Icon = SurgicalMaskGreen,
+		CanHaveHoles = true,
+		Weight = 0.05,
+		ScratchDefense = 5,
+		Insulation = 0.1,
+		WindResistance = 0.2,
+		ClothingItemExtra = Hat_SurgicalMask_Green,
+		ClothingItemExtraOption = PullUpM,
+		ClothingExtraSubmenu = PullDownM,
+		WorldStaticModel = SurgicalMaskGreen_Ground,
+	}
+}

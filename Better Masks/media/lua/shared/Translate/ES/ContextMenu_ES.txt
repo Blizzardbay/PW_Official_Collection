@@ -1,0 +1,4 @@
+ContextMenu_ES = {
+	ContextMenu_PullDownM = "Destaparse",
+	ContextMenu_PullUpM = "Cubrirse",
+}

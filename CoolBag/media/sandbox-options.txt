@@ -1,0 +1,41 @@
+VERSION = 1,
+
+option Coolbag.CoolingMode
+{
+    type = enum,
+    numValues = 3,
+    default = 3,
+
+    page = Coolbag,
+    translation = Coolbag_CoolingMode,
+    valueTranslation = Coolbag_CoolingMode,
+}
+
+option Coolbag.Tooltip
+{
+    type = boolean,
+    default = true,
+
+    page = Coolbag,
+    translation = Coolbag_Tooltip,
+}
+
+option Coolbag.FreezingTime
+{
+    type = integer,
+    min = 0,
+    max = 100000,
+    default = 12,
+    page = Coolbag,
+    translation = Coolbag_FreezingTime,
+}
+
+option Coolbag.MeltingTime
+{
+    type = integer,
+    min = 0,
+    max = 100000,
+    default = 24,
+    page = Coolbag,
+    translation = Coolbag_MeltingTime,
+}

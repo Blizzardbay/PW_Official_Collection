@@ -1,0 +1,26 @@
+﻿Recipe_CN = {
+
+	-- Bottling Meat MOD
+	-- Translated by Cleave
+
+	Recipe_Make_Jar_of_Chicken = "制作一罐鸡肉",
+	Recipe_Make_Jar_of_Frog_Meat = "制作一罐蛙肉",
+	Recipe_Make_Jar_of_Meat_Patty = "制作一罐肉饼",
+	Recipe_Make_Jar_of_Mutton_Chop = "制作一罐羊排",
+	Recipe_Make_Jar_of_Pork_Chop = "制作一罐猪排",
+	Recipe_Make_Jar_of_Rabbit_Meat = "制作一罐兔肉",
+	Recipe_Make_Jar_of_Small_Animal_Meat = "制作一罐动物肉",
+	Recipe_Make_Jar_of_Small_Bird_Meat = "制作一罐飞禽肉",
+	Recipe_Make_Jar_of_Steak = "制作一罐牛排",
+
+	Recipe_Open_Jar_of_Chicken = "打开一罐鸡肉",
+	Recipe_Open_Jar_of_Frog_Meat = "打开一罐蛙肉",
+	Recipe_Open_Jar_of_Meat_Patty = "打开一罐肉饼",
+	Recipe_Open_Jar_of_Mutton_Chop = "打开一罐羊排",
+	Recipe_Open_Jar_of_Pork_Chop = "打开一罐猪排",
+	Recipe_Open_Jar_of_Rabbit_Meat = "打开一罐兔肉",
+	Recipe_Open_Jar_of_Small_Animal_Meat = "打开一罐动物肉",
+	Recipe_Open_Jar_of_Small_Bird_Meat = "打开一罐飞禽肉",
+	Recipe_Open_Jar_of_Steak = "打开一罐牛排",
+
+}

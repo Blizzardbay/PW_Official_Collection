@@ -1,0 +1,262 @@
+module Base
+{
+
+	model Gunbang
+	{
+		mesh = WorldItems/Gunbang,
+		texture = WorldItems/Gunbang,
+		scale = 0.0027,
+	}
+
+	model Matdsh
+	{
+		mesh = WorldItems/Matdsh,
+		texture = WorldItems/Matdsh,
+		scale = 0.0046,
+	}
+
+	model Dchicken
+	{
+		mesh = WorldItems/Dchicken,
+		texture = WorldItems/Dchicken,
+		scale = 0.003,
+	}
+
+
+	model SHAM
+	{
+		mesh = WorldItems/SHAM,
+		texture = WorldItems/SHAM,
+		scale = 0.005,
+	}
+
+	model SHAMOpen
+	{
+		mesh = WorldItems/SHAMOpen,
+		texture = WorldItems/SHAMOpen,
+		scale = 0.0047,
+	}
+	
+	model SHAMOpeneat
+	{
+		mesh = WorldItems/SHAMOpeneat,
+		texture = WorldItems/SHAMOpeneat,
+		scale = 0.0047,
+	}
+
+	model Gunbang2
+	{
+		mesh = WorldItems/Gunbang2,
+		texture = WorldItems/Gunbang2,
+		scale = 0.0027,
+	}
+
+	model Gunbang3
+	{
+		mesh = WorldItems/Gunbang3,
+		texture = WorldItems/Gunbang3,
+		scale = 0.0027,
+	}
+
+	model Gunbang4
+	{
+		mesh = WorldItems/Gunbang4,
+		texture = WorldItems/Gunbang4,
+		scale = 0.0027,
+	}
+
+	model Gunbang5
+	{
+		mesh = WorldItems/Gunbang5,
+		texture = WorldItems/Gunbang5,
+		scale = 0.0027,
+	}
+	
+	model Budaejjigae
+	{
+		mesh = WorldItems/Budaejjigae,
+		texture = WorldItems/Budaejjigae,
+		scale = 0.0047,
+	}
+
+	model BudaejjigaeBowl
+	{
+		mesh = WorldItems/BudaejjigaeBowl,
+		texture = WorldItems/BudaejjigaeBowl,
+		scale = 0.0027,
+	}
+	
+	model Gochujang
+	{
+		mesh = WorldItems/Gochujang,
+		texture = WorldItems/Gochujang,
+		scale = 0.0085,
+	}
+
+	model Doenjang
+	{
+		mesh = WorldItems/Doenjang,
+		texture = WorldItems/Doenjang,
+		scale = 0.0085,
+	}
+
+	model Doenjangjjigae
+	{
+		mesh = WorldItems/Doenjangjjigae,
+		texture = WorldItems/Doenjangjjigae,
+		scale = 0.0047,
+	}
+
+	model DoenjangjjigaeBowl
+	{
+		mesh = WorldItems/DoenjangjjigaeBowl,
+		texture = WorldItems/DoenjangjjigaeBowl,
+		scale = 0.0027,
+	}
+
+	model Fishbroth
+	{
+		mesh = WorldItems/Fishbroth,
+		texture = WorldItems/Fishbroth,
+		scale = 0.0047,
+	}
+	
+	
+	
+	
+	
+	model Karmyfoodbox1
+	{
+		mesh = WorldItems/Karmyfood,
+		texture = WorldItems/Karmyfood1,
+		scale = 0.0037,
+	}
+	
+	model Karmyfoodbox2
+	{
+		mesh = WorldItems/Karmyfood,
+		texture = WorldItems/Karmyfood2,
+		scale = 0.0037,
+	}
+	
+	model Karmyfoodbox3
+	{
+		mesh = WorldItems/Karmyfood,
+		texture = WorldItems/Karmyfood3,
+		scale = 0.0037,
+	}
+	
+	model Karmyfoodbox4
+	{
+		mesh = WorldItems/Karmyfoodtype2,
+		texture = WorldItems/Karmyfoodtype2,
+		scale = 0.0032,
+	}
+	
+	model Karmyfood1
+	{
+		mesh = WorldItems/Karmymainfood,
+		texture = WorldItems/Karmymainfood1,
+		scale = 0.0027,
+	}
+	model Karmyfood11
+	{
+		mesh = WorldItems/Karmymainfood,
+		texture = WorldItems/Karmymainfood1,
+		scale = 0.0020,
+	}
+	
+	model Karmyfood2
+	{
+		mesh = WorldItems/Karmymainfood,
+		texture = WorldItems/Karmymainfood2,
+		scale = 0.0027,
+	}
+	
+	model Karmyfood22
+	{
+		mesh = WorldItems/Karmymainfood,
+		texture = WorldItems/Karmymainfood22,
+		scale = 0.0020,
+	}
+	
+	model Karmyfood3
+	{
+		mesh = WorldItems/Karmymainfood,
+		texture = WorldItems/Karmymainfood3,
+		scale = 0.0027,
+	}
+	
+	model Karmyfood33
+	{
+		mesh = WorldItems/Karmymainfood,
+		texture = WorldItems/Karmymainfood33,
+		scale = 0.0020,
+	}
+	
+	model Karmyfoodbox44
+	{
+		mesh = WorldItems/Karmyfoodtype2,
+		texture = WorldItems/Karmyfoodtype3,
+		scale = 0.0023,
+	}
+	
+	model Karmyfoodbox444
+	{
+		mesh = WorldItems/Karmyfoodtype2,
+		texture = WorldItems/Karmyfoodtype4,
+		scale = 0.0015,
+	}
+	
+	model Karmyfoodbox4444
+	{
+		mesh = WorldItems/Karmyfoodtype2,
+		texture = WorldItems/Karmyfoodtype5,
+		scale = 0.0015,
+	}
+	
+	
+	model SP
+	{
+		mesh = WorldItems/SP,
+		texture = WorldItems/SP,
+		scale = 0.1,
+	}
+	model RTA
+	{
+		mesh = WorldItems/RTA,
+		texture = WorldItems/RTA,
+		scale = 0.0047,
+	}
+	model RTABOX
+	{
+		mesh = WorldItems/RTABOX,
+		texture = WorldItems/RTABOX,
+		scale = 0.0047,
+	}
+	model RTAN
+	{
+		mesh = WorldItems/RTAN,
+		texture = WorldItems/RTAN,
+		scale = 0.0036,
+	}
+	model DS
+	{
+		mesh = WorldItems/DS,
+		texture = WorldItems/DS,
+		scale = 0.0047,
+	}
+	model DSBOX
+	{
+		mesh = WorldItems/DSBOX,
+		texture = WorldItems/DSBOX,
+		scale = 0.0047,
+	}
+	model DSN
+	{
+		mesh = WorldItems/DSN,
+		texture = WorldItems/DSN,
+		scale = 0.0037,
+	}
+
+}

@@ -1,0 +1,599 @@
+module CAR {
+
+    imports 
+	{
+        Base
+    }
+
+    recipe Crush Soda Can
+    {
+        CanEmpty,
+
+        Result:CrushedCan,
+        Sound:CrushSodaCan,
+        Time:4,
+    }
+
+    recipe Recycle Crushed Cans
+    {
+        CrushedCan=10,
+        keep [Recipe.GetItemTypes.Hammer],
+
+        Result:ScrapMetal,
+        Sound:CrushSodaCan,
+        Time:50,
+    }
+
+    recipe Open 12 Pack of 7up
+    {
+       7upBox,
+
+       Result:7up=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Pack up 12 7up
+    {
+       7up=12,
+
+       Result:7upBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+    recipe Open 12 Pack of AriZona
+    {
+       AriZonaBox,
+
+       Result:AriZona=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Pack up 12 AriZona
+    {
+       AriZona=12,
+
+       Result:AriZonaBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+    recipe Open 12 Pack of Rootbeer
+    {
+       RootbeerBox,
+
+       Result:Rootbeer=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+    recipe Pack up 12 Rootbeer
+    {
+       Rootbeer=12,
+
+       Result:RootbeerBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+    recipe Open 12 Pack of Brisk
+    {
+       BriskBox,
+
+       Result:Brisk=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+    recipe Pack up 12 Brisk
+    {
+       Brisk=12,
+
+       Result:BriskBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Cherry Coke
+    {
+       CherryCokeBox,
+
+       Result:CherryCoke=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+    recipe Pack up 12 Cherry Coke
+    {
+       CherryCoke=12,
+
+       Result:CherryCokeBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Coca-Cola
+    {
+       CokeBox,
+
+       Result:Coke=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+    recipe Pack up 12 Coca-Cola
+    {
+       Coke=12,
+
+       Result:CokeBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Diet Coke
+    {
+       DietCokeBox,
+
+       Result:DietCoke=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+    recipe Pack up 12 Diet Coke
+    {
+       DietCoke=12,
+
+       Result:DietCokeBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Diet Pepsi
+    {
+       DietPepsiBox,
+
+       Result:DietPepsi=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+    recipe Pack up 12 Diet Pepsi
+    {
+       DietPepsi=12,
+
+       Result:DietPepsiBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Dr Pepper
+    {
+       DrPepperBox,
+
+       Result:DrPepper=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+    recipe Pack up 12 Dr Pepper
+    {
+       DrPepper=12,
+
+       Result:DrPepperBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Fanta Grape
+    {
+       FantaGrapeBox,
+
+       Result:FantaGrape=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+    recipe Pack up 12 Fanta Grape
+    {
+       FantaGrape=12,
+
+       Result:FantaGrapeBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Fanta Orange
+    {
+       FantaOrangeBox,
+
+       Result:FantaOrange=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+    recipe Pack up 12 Fanta Orange
+    {
+       FantaOrange=12,
+
+       Result:FantaOrangeBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Fanta Pineapple
+    {
+       FantaPineappleBox,
+
+       Result:FantaPineapple=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+
+
+    recipe Pack up 12 Fanta Pineapple
+    {
+       FantaPineapple=12,
+
+       Result:FantaPineappleBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+    recipe Open 12 Pack of Fanta Red
+    {
+       FantaRedBox,
+
+       Result:FantaRed=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+
+
+    recipe Pack up 12 Fanta Red
+    {
+       FantaRed=12,
+
+       Result:FantaRedBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Fanta Strawberry
+    {
+       FantaStrawberryBox,
+
+       Result:FantaStrawberry=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+
+
+    recipe Pack up 12 Fanta Strawberry
+    {
+       FantaStrawberry=12,
+
+       Result:FantaStrawberryBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Gatorade
+    {
+       GatoradeBox,
+
+       Result:Gatorade=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+
+
+    recipe Pack up 12 Gatorade
+    {
+       Gatorade=12,
+
+       Result:GatoradeBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Jolt
+    {
+       JoltBox,
+
+       Result:Jolt=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+
+
+    recipe Pack up 12 Jolt
+    {
+       Jolt=12,
+
+       Result:JoltBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Minute Maid
+    {
+       MinuteMaidBox,
+
+       Result:MinuteMaid=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+
+
+    recipe Pack up 12 Minute Maid
+    {
+       MinuteMaid=12,
+
+       Result:MinuteMaidBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Mountain Dew
+    {
+       MountainDewBox,
+
+       Result:MountainDew=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+
+
+    recipe Pack up 12 Mountain Dew
+    {
+       MountainDew=12,
+
+       Result:MountainDewBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Mr Pibb
+    {
+       MrPibbBox,
+
+       Result:MrPibb=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+
+
+    recipe Pack up 12 Mr Pibb
+    {
+       MrPibb=12,
+
+       Result:MrPibbBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Pepsi
+    {
+       PepsiBox,
+
+       Result:Pepsi=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+
+
+    recipe Pack up 12 Pepsi
+    {
+       Pepsi=12,
+
+       Result:PepsiBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of RC Cola
+    {
+       RCColaBox,
+
+       Result:RCCola=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+
+
+    recipe Pack up 12 RC Cola
+    {
+       RCCola=12,
+
+       Result:RCColaBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Red Bull
+    {
+       RedbullBox,
+
+       Result:Redbull=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+
+
+    recipe Pack up 12 Red Bull
+    {
+       Redbull=12,
+
+       Result:RedbullBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Sprite
+    {
+       SpriteBox,
+
+       Result:Sprite=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+
+
+    recipe Pack up 12 Sprite
+    {
+       Sprite=12,
+
+       Result:SpriteBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Tab
+    {
+       TabBox,
+
+       Result:Tab=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+
+
+    recipe Pack up 12 Tab
+    {
+       Tab=12,
+
+       Result:TabBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+    recipe Open 12 Pack of Dr Thunder
+    {
+       DrThunderBox,
+
+       Result:DrThunder=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+
+
+    recipe Pack up 12 Dr Thunder
+    {
+       DrThunder=12,
+
+       Result:DrThunderBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Welch's Grape Soda
+    {
+       WelchBox,
+
+       Result:Welch=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+
+
+    recipe Pack up 12 Welch's Grape Soda
+    {
+       Welch=12,
+
+       Result:WelchBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+}

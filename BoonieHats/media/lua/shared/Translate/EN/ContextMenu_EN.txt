@@ -1,0 +1,4 @@
+ContextMenu_EN = {
+	ContextMenu_HatonBack = "Put Hat on Back",
+	ContextMenu_HatonHead = "Wear Hat",
+} 

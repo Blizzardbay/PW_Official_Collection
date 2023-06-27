@@ -1,0 +1,70 @@
+module JunkFoodsPH
+{
+	imports
+	{
+		Base
+	}
+
+	item BubbleTea
+	{
+		StressChange	=	-1,
+		UnhappyChange	=	-5,
+		DisplayCategory = Food,
+		HungerChange	=	-15,
+		Weight	=	0.3,
+		Type	=	Food,
+		DisplayName	=	Bubble Tea,
+		Icon	=	bubbletea,
+        Carbohydrates = 182,
+        Proteins = 15,
+        Lipids = 70,
+        Calories = 484,
+        Packaged = TRUE,
+        WorldStaticModel = BubbleTea,
+		CustomContextMenu = Drink,
+        CustomEatSound = DrinkingFromCan,
+	}
+
+	item EvaporatedMilk
+    {
+        DisplayCategory = Food,
+        Type					=		Food,
+        DisplayName			=		Evaporated Milk,
+        Icon				=		evaporatedmilk,
+        Weight				=		1.0,
+        ThirstChange 		=		-30,
+        HungerChange 		= 		-10,
+        DaysFresh 			=		300,
+        DaysTotallyRotten 	=	 	365,
+		CustomContextMenu	=		Drink,
+		CustomEatSound		=		DrinkingFromCarton,
+        Carbohydrates = 48,
+        Proteins = 32,
+        Lipids = 10,
+        Calories = 120,
+        Packaged = TRUE,
+		WorldStaticModel = EvaporatedMilk,
+    }
+
+    item IcedCoffee
+    {
+        DisplayCategory = Food,
+        Type					=		Food,
+        DisplayName			=		Iced Coffee,
+        Icon				=		icedcoffee,
+        Weight				=		1.0,
+        ThirstChange 		=		-30,
+        HungerChange 		= 		-10,
+        DaysFresh 			=		22,
+        DaysTotallyRotten 	=	 	25,
+		CustomContextMenu	=		Drink,
+		CustomEatSound		=		DrinkingFromCarton,
+        Carbohydrates = 18,
+        Proteins = 15,
+        Lipids = 15,
+        Calories = 250,
+        Packaged = TRUE,
+		WorldStaticModel = IcedCoffee,
+    }
+
+}

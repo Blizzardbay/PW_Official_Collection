@@ -1,0 +1,411 @@
+module SKL
+{
+	imports
+	{
+		Base
+	}
+
+/*========== NEW RECIPES ======================================================================*/
+	
+recipe Make Jar of Milk
+{
+   EmptyJar,
+   PowderedMilk;10,
+   Water=10,
+   Result:MilkJar,
+   Time:60.0,	
+   Category:Cooking,
+   OnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Empty Jar of Milk
+{
+   MilkJar,
+   Result:EmptyJar,
+   Time:20.0,
+   Category:Cooking,
+   OnGiveXP:Recipe.OnGiveXP.None,
+}
+
+recipe Make Bottle of Milk
+{
+   WaterBottleEmpty,
+   PowderedMilk;10,
+   Water=10,
+   Result:MilkWaterBottle,
+   Time:60.0,
+   Category:Cooking,
+   OnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Make Bottle of Milk
+{
+   PopBottleEmpty,
+   PowderedMilk;10,
+   Water=10,
+   Result:MilkPopBottle,
+   Time:60.0,
+   Category:Cooking,
+   OnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Make Butter
+{
+	NeedToBeLearn:TRUE,
+	Milk;10,
+	keep Strainer,		
+	Result:Butter,
+	Time:100.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Make Butter
+{
+	NeedToBeLearn:TRUE,
+	MilkJar;10,
+	keep Strainer,		
+	Result:Butter,
+	Time:100.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Make Butter
+{
+	NeedToBeLearn:TRUE,
+	MilkWaterBottle;10,
+	keep Strainer,		
+	Result:Butter,
+	Time:100.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Make Butter
+{
+	NeedToBeLearn:TRUE,
+	MilkPopBottle;10,
+	keep Strainer,		
+	Result:Butter,
+	Time:100.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Prepare Cheese
+{
+	NeedToBeLearn:TRUE,
+	Saucepan,
+	Milk;10,
+	Vinegar=2,
+	Salt;2,
+	Result:CheesePrep,
+	Time:100.0,
+	Category:Cooking,	
+	OnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Prepare Cheese
+{
+	NeedToBeLearn:TRUE,
+	Saucepan,
+	MilkJar;10,
+	Vinegar=2,
+	Salt;2,
+	Result:CheesePrep,
+	Time:100.0,
+	Category:Cooking,	
+	OnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Prepare Cheese
+{
+	NeedToBeLearn:TRUE,
+	Saucepan,
+	MilkWaterBottle;10,
+	Vinegar=2,
+	Salt;2,
+	Result:CheesePrep,
+	Time:100.0,
+	Category:Cooking,	
+	OnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Prepare Cheese
+{
+	NeedToBeLearn:TRUE,
+	Saucepan,
+	MilkPopBottle;10,
+	Vinegar=2,
+	Salt;2,
+	Result:CheesePrep,
+	Time:100.0,
+	Category:Cooking,	
+	OnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Make Cheese	
+{
+	CheesePrep,
+	keep Strainer,
+	Result:Cheese,
+	OnTest:DairyModIsCooked_TestIsValid,
+	OnCreate:DairyModReturnSaucePan_OnCreate,
+	Time:100.0,	
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,	
+}
+
+recipe Prepare Yogurt
+{
+	NeedToBeLearn:TRUE,
+	Saucepan,
+	Milk;10,
+	YogurtCulture,
+	Result:YogurtPrep,
+	Time:100.0,
+	Category:Cooking,	
+	OnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Prepare Yogurt
+{
+	NeedToBeLearn:TRUE,
+	Saucepan,
+	MilkJar;10,
+	YogurtCulture,
+	Result:YogurtPrep,
+	Time:100.0,
+	Category:Cooking,	
+	OnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Prepare Yogurt
+{
+	NeedToBeLearn:TRUE,
+	Saucepan,
+	MilkWaterBottle;10,
+	YogurtCulture,
+	Result:YogurtPrep,
+	Time:100.0,
+	Category:Cooking,	
+	OnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Prepare Yogurt
+{
+	NeedToBeLearn:TRUE,
+	Saucepan,
+	MilkPopBottle;10,
+	YogurtCulture,
+	Result:YogurtPrep,
+	Time:100.0,
+	Category:Cooking,	
+	OnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Make Bowl of Yogurt
+{
+	YogurtPrep,
+	Bowl,
+	keep Strainer,
+	Result:YogurtBowl,
+	OnCreate:DairyModReturnSaucePan_OnCreate,
+	OnTest:DairyModIsCooked_TestIsValid,
+	Time:100.0,
+	Category:Cooking,
+    OnGiveXP:Recipe.OnGiveXP.Cooking10,
+}
+
+recipe Make Jar of Yogurt
+{
+	YogurtPrep,
+	EmptyJar,
+	keep Strainer,
+	Result:YogurtJar,
+	OnCreate:DairyModReturnSaucePan_OnCreate,
+	OnTest:DairyModIsCooked_TestIsValid,
+	Time:100.0,
+	Category:Cooking,
+    OnGiveXP:Recipe.OnGiveXP.Cooking10,
+}
+
+recipe Empty Jar of Yogurt
+{
+    YogurtJar,
+    Result:EmptyJar,
+    Time:20.0,	
+    Category:Cooking,
+    OnGiveXP:Recipe.OnGiveXP.None,
+}
+
+/*========== UPDATED RECIPES ==================================================================*/
+
+recipe Make Mildew Cure	
+{
+	MilkJar;10,
+	farming.GardeningSprayEmpty,
+	Result:farming.GardeningSprayMilk,
+	Time:40.0,
+	Category:Farming,
+	NeedToBeLearn:true,
+}
+
+recipe Make Mildew Cure	
+{
+	MilkPopBottle;10,
+	farming.GardeningSprayEmpty,
+	Result:farming.GardeningSprayMilk,
+	Time:40.0,
+	Category:Farming,
+	NeedToBeLearn:true,
+}
+
+recipe Make Mildew Cure	
+{
+	MilkWaterBottle;10,
+	farming.GardeningSprayEmpty,
+	Result:farming.GardeningSprayMilk,
+	Time:40.0,
+	Category:Farming,
+	NeedToBeLearn:true,
+}
+
+recipe Make Cake Batter
+{
+	Bowl,
+	Flour=2,
+	Butter;15,
+	Sugar=1,
+	Egg/WildEggs,
+	Yeast,
+	Milk;10,
+	Result:CakeBatter,
+	NeedToBeLearn:true,
+	Time:50.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    Override:true,
+}
+
+recipe Make Cake Batter
+{
+	Bowl,
+	Flour=2,
+	Butter;15,
+	Sugar=1,
+	Egg/WildEggs,
+	Yeast,
+	MilkJar;10,
+	Result:CakeBatter,
+	NeedToBeLearn:true,
+	Time:50.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+}
+
+recipe Make Cake Batter
+{
+	Bowl,
+	Flour=2,
+	Butter;15,
+	Sugar=1,
+	Egg/WildEggs,
+	Yeast,
+	MilkPopBottle;10,
+	Result:CakeBatter,
+	NeedToBeLearn:true,
+	Time:50.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+}
+
+recipe Make Cake Batter
+{
+	Bowl,
+	Flour=2,
+	Butter;15,
+	Sugar=1,
+	Egg/WildEggs,
+	Yeast,
+	MilkWaterBottle;10,
+	Result:CakeBatter,
+	NeedToBeLearn:true,
+	Time:50.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+}
+
+recipe Make Bowl of Cereal
+{
+	Bowl,
+	Cereal;5,
+	MilkJar;2,
+	Result:CerealBowl,
+	Time:20.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Make Bowl of Cereal
+{
+	Bowl,
+	Cereal;5,
+	MilkWaterBottle;2,
+	Result:CerealBowl,
+	Time:20.0,
+	Category:Cooking,
+	OOnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Make Bowl of Cereal
+{
+	Bowl,
+	Cereal;5,
+	MilkPopBottle;2,
+	Result:CerealBowl,
+	Time:20.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking3,
+}
+
+recipe Prepare Muffins
+{
+    MuffinTray,
+    Egg=2,
+    OilVegetable;2,
+    MilkJar;5,
+    Sugar=1,
+    Flour=2,
+    Result:BakingTray_Muffin,
+    Category:Cooking,
+    Time:60,
+}
+
+recipe Prepare Muffins
+{
+    MuffinTray,
+    Egg=2,
+    OilVegetable;2,
+    MilkWaterBottle;5,
+    Sugar=1,
+    Flour=2,
+    Result:BakingTray_Muffin,
+    Category:Cooking,
+    Time:60,
+}
+
+recipe Prepare Muffins
+{
+    MuffinTray,
+    Egg=2,
+    OilVegetable;2,
+    MilkPopBottle;5,
+    Sugar=1,
+    Flour=2,
+    Result:BakingTray_Muffin,
+    Category:Cooking,
+    Time:60,
+}    
+}

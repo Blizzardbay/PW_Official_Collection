@@ -1,0 +1,4 @@
+name=Nepenthe's Colored Battery Status
+poster=preview.png
+id=NepBatteryColor
+description=Changes the battery indicator on car dashboards to indicate how much charge is left.  Green = 75%+, Yellow = 50%+, Orange = 25%+, Red = 1%+, Dark Red = dead.

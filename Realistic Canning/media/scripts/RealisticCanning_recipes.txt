@@ -1,0 +1,162 @@
+/*** Realistic Canning MOD ***/
+
+
+module RealisticCanning
+
+{
+	imports
+	{
+	Base
+	}
+
+
+    recipe Can Jar of Tomatoes
+    {
+        EmptyJar,
+        JarLid,
+        farming.Tomato=5,
+        Water=10,
+
+
+        Result:CannedTomato,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+
+    recipe Can Jar of Carrots
+    {
+        EmptyJar,
+        JarLid,
+        Carrots=5,
+        Water=10,
+
+
+        Result:CannedCarrots,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+
+    recipe Can Jar of Potatoes
+    {
+        EmptyJar,
+        JarLid,
+        farming.Potato=5,
+        Water=10,
+
+
+        Result:CannedPotato,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Can Jar of Eggplants
+    {
+        EmptyJar,
+        JarLid,
+        Eggplant=5,
+        Water=10,
+
+
+        Result:CannedEggplant,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Can Jar of Leeks
+    {
+        EmptyJar,
+        JarLid,
+        Leek=5,
+        Water=10,
+
+
+        Result:CannedLeek,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+
+    recipe Can Jar of Red Radishes
+    {
+        EmptyJar,
+        JarLid,
+        farming.RedRadish=5,
+        Water=10,
+
+
+        Result:CannedRedRadish,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+
+    recipe Can Jar of Bell Peppers
+    {
+        EmptyJar,
+        JarLid,
+        BellPepper=5,
+        Water=10,
+
+
+        Result:CannedBellPepper,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+
+    recipe Can Jar of Cabbage
+    {
+        EmptyJar,
+        JarLid,
+        farming.Cabbage=3,
+        Water=10,
+
+
+        Result:CannedCabbage,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Can Jar of Broccoli
+    {
+        EmptyJar,
+        JarLid,
+        Broccoli=5,
+        Water=10,
+
+
+        Result:CannedBroccoli,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+}

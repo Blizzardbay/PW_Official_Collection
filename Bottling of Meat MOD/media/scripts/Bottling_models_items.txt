@@ -1,0 +1,16 @@
+
+/*** Bottling of Meat MOD ***/
+
+/*** 2022-01-04 Version 2.03 ***/
+
+module Base
+{
+
+	model Bottling_Jar_Food
+	{
+		mesh = WorldItems/Bottling_Jar_Food,
+		texture = WorldItems/Bottling_Jar_Food,
+		scale = 0.6,
+	}
+
+}

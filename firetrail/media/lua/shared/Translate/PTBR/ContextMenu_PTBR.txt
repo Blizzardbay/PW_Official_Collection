@@ -1,0 +1,5 @@
+ContextMenu_PTBR = {
+	ContextMenu_Firetrail = "Rastro de fogo",
+	ContextMenu_Firetrail_create = "Jogar gasolina",
+	ContextMenu_Firetrail_ignite = "Tacar fogo",
+}

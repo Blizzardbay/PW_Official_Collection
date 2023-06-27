@@ -1,0 +1,32 @@
+module stalkerfood
+{
+	imports
+	{
+		Base
+	}
+
+    recipe Open Beef Tushonka
+    {
+       CannedBeef,
+       keep [Recipe.GetItemTypes.CanOpener],
+
+       Result:CannedBeefOpen,
+       Time:80.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:OpenCannedFood,
+    }
+
+    recipe Open Tourists Delight
+    {
+       TouristsDelight,
+       keep [Recipe.GetItemTypes.CanOpener],
+
+       Result:TouristsDelightOpen,
+       Time:80.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:OpenCannedFood,
+    }
+
+}

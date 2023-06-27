@@ -1,0 +1,8 @@
+ItemName_EN = {
+    /* Parts */
+    ItemName_ImprovisedCabinetry.WoodPanel = "Wood Panel",
+    ItemName_ImprovisedCabinetry.SmallHinge = "Cabinet Hinge",
+
+    /* Magazines */
+    ItemName_ImprovisedCabinetry.ICMagazine1 = "Industrial Cabinetry Vol. 1",
+}

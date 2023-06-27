@@ -1,0 +1,4 @@
+ContextMenu_PTBR = {
+	ContextMenu_HatonBack = "Colocar Chapeu nas Costas",
+	ContextMenu_HatonHead = "Vestir Chapeu",
+} 

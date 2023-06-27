@@ -1,0 +1,156 @@
+module Base
+{
+	/****************************** This file is for 3D World Models. ******************************/	
+	
+	
+	model Plushie_Dog1_Ground
+	{
+		mesh = Worlditems/DogPlushie,
+		texture = Worlditems/DogTexture,
+		scale = 0.0045,
+	}
+	model Plushie_Dog2_Ground
+	{
+		mesh = Worlditems/DogPlushie,
+		texture = Worlditems/DogTexture2,
+		scale = 0.0045,
+	}
+	model Plushie_Dog3_Ground
+	{
+		mesh = Worlditems/DogPlushie,
+		texture = Worlditems/CatTexture3,
+		scale = 0.0045,
+	}
+	model Plushie_Cat1_Ground
+	{
+		mesh = Worlditems/CatPlushie,
+		texture = Worlditems/CatTexture,
+		scale = 0.0045,
+	}
+	model Plushie_Cat2_Ground
+	{
+		mesh = Worlditems/CatPlushie,
+		texture = Worlditems/CatTexture2,
+		scale = 0.0045,
+	}
+	model Plushie_Cat3_Ground
+	{
+		mesh = Worlditems/CatPlushie,
+		texture = Worlditems/CatTexture3,
+		scale = 0.0045,
+	}
+	model Plushie_Bird_Ground
+	{
+		mesh = Worlditems/BirdPlushie,
+		texture = Worlditems/DuckTexture,
+		scale = 0.0045,
+	}
+	model Plushie_Chicken1_Ground
+	{
+		mesh = Worlditems/ChickenPlushie,
+		texture = Worlditems/ChickenTexture,
+		scale = 0.0045,
+	}
+	model Plushie_Chicken2_Ground
+	{
+		mesh = Worlditems/ChickenPlushie,
+		texture = Worlditems/ChickenTexture2,
+		scale = 0.0045,
+	}
+	model Plushie_Chicken3_Ground
+	{
+		mesh = Worlditems/ChickenPlushie,
+		texture = Worlditems/ChickenTexture3,
+		scale = 0.0045,
+	}
+	model Plushie_Raven_Ground
+	{
+		mesh = Worlditems/RavenPlushie,
+		texture = Worlditems/RavenTexture,
+		scale = 0.0045,
+	}
+	model Plushie_Sheep_Ground
+	{
+		mesh = Worlditems/SheepPlushie,
+		texture = Worlditems/SheepTexture,
+		scale = 0.0045,
+	}
+
+
+	/****************************** Backpack Attatchable models. ******************************/	
+	
+
+	model H_Dog1Plushie
+	{
+		mesh = Worlditems/H_DogPlushie,
+		texture = Worlditems/DogTexture,
+		scale = 0.0045,
+	}
+	model H_Dog2Plushie
+	{
+		mesh = Worlditems/H_DogPlushie,
+		texture = Worlditems/DogTexture2,
+		scale = 0.0045,
+	}
+	model H_Dog3Plushie
+	{
+		mesh = Worlditems/H_DohPlushie,
+		texture = Worlditems/DogTexture3,
+		scale = 0.0045,
+	}
+	model H_Cat1Plushie
+	{
+		mesh = Worlditems/H_CatPlushie,
+		texture = Worlditems/CatTexture,
+		scale = 0.0045,
+	}
+	model H_Cat2Plushie
+	{
+		mesh = Worlditems/H_CatPlushie,
+		texture = Worlditems/CatTexture2,
+		scale = 0.0045,
+	}
+	model H_Cat3Plushie
+	{
+		mesh = Worlditems/H_CatPlushie,
+		texture = Worlditems/CatTexture3,
+		scale = 0.0045,
+	}
+	model H_BirdPlushie
+	{
+		mesh = Worlditems/H_BirdPlushie,
+		texture = Worlditems/DuckTexture,
+		scale = 0.0045,
+	}
+	model H_RavenPlushie
+	{
+		mesh = Worlditems/H_RavenPlushie,
+		texture = Worlditems/RavenTexture,
+		scale = 0.0045,
+	}
+	model H_SheepPlushie
+	{
+		mesh = Worlditems/H_SheepPlushie,
+		texture = Worlditems/SheepTexture,
+		scale = 0.0045,
+	}
+	model H_ChickenPlushie
+	{
+		mesh = Worlditems/H_ChickenPlushie,
+		texture = Worlditems/ChickenTexture,
+		scale = 0.0045,
+	}
+	model H_Chicken2Plushie
+	{
+		mesh = Worlditems/H_ChickenPlushie,
+		texture = Worlditems/ChickenTexture2,
+		scale = 0.0045,
+	}
+	model H_Chicken3Plushie
+	{
+		mesh = Worlditems/H_ChickenPlushie,
+		texture = Worlditems/ChickenTexture3,
+		scale = 0.0045,
+	}
+
+}

@@ -1,0 +1,88 @@
+
+Items_FR = {
+
+
+	DisplayName_Carpentry_for_Beginners = "La menuiserie Vol.1: Pour les nuls",
+	DisplayName_Carpentry_for_Intermediates = "La menuiserie Vol.2: Intermédiaire",
+	DisplayName_Advanced_Carpentry = "La menuiserie Vol.3: Avancé",
+	DisplayName_Expert_Carpentry = "La menuiserie Vol.4: Expert",
+	DisplayName_Master_Carpentry = "La menuiserie Vol.5: Maître",
+
+
+	DisplayName_Cooking_for_Beginners = "La cuisine Vol.1: Pour les nuls",
+	DisplayName_Cooking_for_Intermediates = "La cuisine Vol.2: Intermédiaire",
+	DisplayName_Advanced_Cooking = "La cuisine Vol.3: Avancé",
+	DisplayName_Expert_Cooking = "La cuisine Vol.4: Expert",
+	DisplayName_Master_Cooking = "La cuisine Vol.5: Maître",
+
+
+	DisplayName_Farming_for_Beginners = "L'agriculture Vol.1: Pour les nuls",
+	DisplayName_Farming_for_Intermediates = "L'agriculture Vol.2: Intermédiaire",
+	DisplayName_Advanced_Farming = "L'agriculture Vol.3: Avancé",
+	DisplayName_Expert_Farming = "L'agriculture Vol.4: Expert",
+	DisplayName_Master_Farming = "L'agriculture Vol.5: Maître",
+
+
+	DisplayName_Fishing_for_Beginners = "La pêche Vol.1: Pour les nuls",
+	DisplayName_Fishing_for_Intermediates = "La pêche Vol.2: Intermédiaire",
+	DisplayName_Advanced_Fishing = "La pêche Vol.3: Avancé",
+	DisplayName_Expert_Fishing = "La pêche Vol.4: Expert",
+	DisplayName_Master_Fishing = "La pêche Vol.5: Maître",
+
+
+	DisplayName_Trapping_for_Beginners = "Le piégeage Vol.1: Pour les nuls",
+	DisplayName_Trapping_for_Intermediates = "Le piégeage Vol.2: Intermédiaire",
+	DisplayName_Advanced_Trapping = "Le piégeage Vol.3: Avancé",
+	DisplayName_Expert_Trapping = "Le piégeage Vol.4: Expert",
+	DisplayName_Master_Trapping = "Le piégeage Vol.5: Maître",
+
+
+	DisplayName_Electricity_for_Beginners = "L'électricité Vol.1: Pour les nuls",
+	DisplayName_Electricity_for_Intermediates = "L'électricité Vol.2: Intermédiaire",
+	DisplayName_Advanced_Electricity = "L'électricité Vol.3: Avancé",
+	DisplayName_Expert_Electricity = "L'électricité Vol.4: Expert",
+	DisplayName_Master_Electricity = "L'électricité Vol.5: Maître",
+
+
+	DisplayName_FirstAid_for_Beginners = "Les premiers secours Vol.1: Pour les nuls",
+	DisplayName_FirstAid_for_Intermediates = "Les premiers secours Vol.2: Intermédiaire",
+	DisplayName_Advanced_First_Aid = "Les premiers secours Vol.3: Avancé",
+	DisplayName_Expert_First_Aid = "Les premiers secours Vol.4: Expert",
+	DisplayName_Master_First_Aid = "Les premiers secours Vol.5: Maître",
+
+
+	DisplayName_Foraging_for_Beginners = "La recherche Vol.1: Pour les nuls",
+	DisplayName_Foraging_for_Intermediates = "La recherche Vol.2: Intermédiaire",
+	DisplayName_Advanced_Foraging = "La recherche Vol.3: Avancé",
+	DisplayName_Expert_Foraging = "La recherche Vol.4: Expert",
+	DisplayName_Master_Foraging = "La recherche Vol.5: Maître",
+
+
+	DisplayName_Metalwork_for_Beginners = "Le travail des métaux Vol.1: Pour les nuls",
+	DisplayName_Metalwork_for_Intermediates = "Le travail des métaux Vol.2: Intermédiaire",
+	DisplayName_Advanced_Metalwork = "Le travail des métaux Vol.3: Avancé",
+	DisplayName_Expert_Metalwork = "Le travail des métaux Vol.4: Expert",
+	DisplayName_Master_Metalwork = "Le travail des métaux Vol.5: Maître",
+
+
+	DisplayName_Smithing_for_Beginners = "La forge Vol.1: Pour les nuls",
+	DisplayName_Smithing_for_Intermediates = "La forge Vol.2: Intermédiaire",
+	DisplayName_Advanced_Smithing = "La forge Vol.3: Avancé",
+	DisplayName_Expert_Smithing = "La forge Vol.4: Expert",
+	DisplayName_Master_Smithing = "La forge Vol.5: Maître",
+
+
+	DisplayName_Mechanic_for_Beginners = "La mécanique Vol.1: Pour les nuls",
+	DisplayName_Mechanic_for_Intermediates = "La mécanique Vol.2: Intermédiaire",
+	DisplayName_Advanced_Mechanics = "La mécanique Vol.3: Avancé",
+	DisplayName_Expert_Mechanics = "La mécanique Vol.4: Expert",
+	DisplayName_Master_Mechanics = "La mécanique Vol.5: Maître",
+
+
+	DisplayName_Tailoring_for_Beginners = "La couture Vol.1: Pour les nuls",
+	DisplayName_Tailoring_for_Intermediates = "La couture Vol.2: Intermédiaire",
+	DisplayName_Advanced_Tailoring = "La couture Vol.3: Avancé",
+	DisplayName_Expert_Tailoring = "La couture Vol.4: Expert",
+	DisplayName_Master_Tailoring = "La couture Vol.5: Maître",
+
+}

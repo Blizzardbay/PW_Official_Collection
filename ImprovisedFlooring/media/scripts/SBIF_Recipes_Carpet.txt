@@ -1,0 +1,278 @@
+module ImprovisedFlooring
+{
+    imports 
+    {
+        Base
+    }
+
+    recipe CanvasBeige {   
+        keep Needle,
+        keep [Recipe.GetItemTypes.Scissors],
+        Thread,
+        RippedSheets=6,
+        PaintLightBrown,
+	    Result:Moveables.improvisedflooring_missing_0_11,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=3,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+
+    recipe CanvasBlue {   
+        keep Needle,
+        keep [Recipe.GetItemTypes.Scissors],
+        Thread,
+        RippedSheets=6,
+        PaintBlue,
+	    Result:Moveables.improvisedflooring_missing_0_12,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=3,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+
+    recipe CanvasGreen {   
+        keep Needle,
+        keep [Recipe.GetItemTypes.Scissors],
+        Thread,
+        RippedSheets=6,
+        PaintGreen,
+	    Result:Moveables.improvisedflooring_missing_0_9,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=3,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+    
+    recipe CanvasGrey {   
+        keep Needle,
+        keep [Recipe.GetItemTypes.Scissors],
+        Thread,
+        RippedSheets=6,
+        PaintGrey,
+	    Result:Moveables.improvisedflooring_missing_0_10,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=3,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+
+    recipe CarpetBeige {   
+        keep KnittingNeedles,
+        keep [Recipe.GetItemTypes.Scissors],
+        RippedSheets=5,
+        PaintLightBrown/HairDyeLightBrown,
+	    Result:Moveables.floors_interior_carpet_01_12,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+    
+    recipe CarpetBlack {   
+        keep KnittingNeedles,
+        keep [Recipe.GetItemTypes.Scissors],
+        RippedSheets=5,
+        PaintGrey/HairDyeBlack,
+	    Result:Moveables.floors_interior_carpet_01_13,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+
+    recipe CarpetBordeaux {   
+        keep KnittingNeedles,
+        keep [Recipe.GetItemTypes.Scissors],
+        RippedSheets=5,
+        PaintBrown/HairDyeLightBrown,
+	    Result:Moveables.floors_interior_carpet_01_8,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+
+    recipe CarpetBrown {   
+        keep KnittingNeedles,
+        keep [Recipe.GetItemTypes.Scissors],
+        RippedSheets=5,
+        PaintBrown/HairDyeLightBrown,
+	    Result:Moveables.floors_interior_carpet_01_3,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+
+    recipe CarpetDarkGrey {   
+        keep KnittingNeedles,
+        keep [Recipe.GetItemTypes.Scissors],
+        RippedSheets=5,
+        PaintGrey/HairDyeBlack,
+	    Result:Moveables.floors_interior_carpet_01_2,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+
+    recipe CarpetDarkRed {   
+        keep KnittingNeedles,
+        keep [Recipe.GetItemTypes.Scissors],
+        RippedSheets=5,
+        PaintRed/HairDyeRed,
+	    Result:Moveables.floors_interior_carpet_01_4,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+
+    recipe CarpetGreen {   
+        keep KnittingNeedles,
+        keep [Recipe.GetItemTypes.Scissors],
+        RippedSheets=5,
+        PaintGreen/HairDyeGreen,
+	    Result:Moveables.floors_interior_carpet_01_5,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+
+    recipe CarpetGrey {   
+        keep KnittingNeedles,
+        keep [Recipe.GetItemTypes.Scissors],
+        RippedSheets=5,
+        PaintGrey/HairDyeBlack,
+	    Result:Moveables.floors_interior_carpet_01_14,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+
+    recipe CarpetGreyCurly {   
+        keep KnittingNeedles,
+        keep [Recipe.GetItemTypes.Scissors],
+        RippedSheets=5,
+        PaintGrey/HairDyeBlack,
+	    Result:Moveables.floors_interior_carpet_01_7,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+
+    recipe CarpetLightGreen {   
+        keep KnittingNeedles,
+        keep [Recipe.GetItemTypes.Scissors],
+        RippedSheets=5,
+        PaintGreen/HairDyeGreen,
+	    Result:Moveables.floors_interior_carpet_01_15,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+
+    recipe CarpetPurple {   
+        keep KnittingNeedles,
+        keep [Recipe.GetItemTypes.Scissors],
+        RippedSheets=5,
+        PaintPurple,
+	    Result:Moveables.floors_interior_carpet_01_1,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+
+    recipe CarpetRed {
+       keep KnittingNeedles,
+        keep [Recipe.GetItemTypes.Scissors],
+        RippedSheets=5,
+        PaintRed,
+	    Result:Moveables.floors_interior_carpet_01_9,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping, 
+    }
+
+    recipe CarpetViolet {   
+        keep KnittingNeedles,
+        keep [Recipe.GetItemTypes.Scissors],
+        RippedSheets=5,
+        PaintPurple/HairDyePink,
+	    Result:Moveables.floors_interior_carpet_01_6,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+
+    recipe CarpetWhite {   
+        keep KnittingNeedles,
+        keep [Recipe.GetItemTypes.Scissors],
+        RippedSheets=5,
+        PaintWhite/HairDyeWhite,
+	    Result:Moveables.floors_interior_carpet_01_11,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+
+    recipe CarpetYellow {   
+        keep KnittingNeedles,
+        keep [Recipe.GetItemTypes.Scissors],
+        RippedSheets=5,
+        PaintYellow/HairDyeYellow,
+	    Result:Moveables.floors_interior_carpet_01_10,
+	    Time:30.0,
+	    NeedToBeLearn:False,
+        SkillRequired:Tailoring=1,
+        Category:Flooring,
+        AnimNode:Craft,
+        Sound:ClothesRipping,
+    }
+
+}

@@ -1,0 +1,13 @@
+UI_EN = {
+    UI_Verbose = "Verbose",
+    UI_Tooltip_Verbose = "That's usefull for debug. Performances drawback.",
+    UI_Coolbag_CoolMode = "Cooling Mode",
+    UI_Coolbag_Tooltip_CoolMode = "Beware ease is a close friend of boredom.",
+    UI_Coolbag_ModeDropDown_1 = "Cooler bags need to be refilled with an Ice Pocket",
+    UI_Coolbag_ModeDropDown_2 = "Cooler bags always keep the temperature low (easy mode)",
+    UI_Coolbag_TT_FullFreezing = "Fully frozen in %1h%2",
+    UI_Coolbag_TT_FullMelting = "Fully melted in %1h%2",
+    UI_Coolbag_TT_Freezing = "Freezing in %1h%2",
+    UI_Coolbag_TT_Melting = "Melting in %1h%2",
+    UI_Coolbag_TT_Bug = "Timer Not Set",
+}

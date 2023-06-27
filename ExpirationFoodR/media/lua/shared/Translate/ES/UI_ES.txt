@@ -1,0 +1,17 @@
+﻿UI_ES = {
+	UI_mod_fdxpr_days = "d",
+	UI_mod_fdxpr_hours = "h",
+	UI_mod_fdxpr_mins = "m",
+	UI_mod_fdxpr_secs = "s",
+	UI_mod_fdxpr_stale = "stale in",
+	UI_mod_fdxpr_rotten = "rotten in",
+	UI_mod_fdxpr_trait_name = "Ojo para la comida",
+	UI_mod_fdxpr_trait_description = "Ves con exactitud el estado de un alimento",
+	UI_mod_fdxpr_state = "Estado:",
+	UI_mod_fdxpr_state_verygood = "Perfecto estado",
+	UI_mod_fdxpr_state_good = "Buen estado",
+	UI_mod_fdxpr_state_ok = "Normal",
+	UI_mod_fdxpr_state_rotting = "Un poco pocho",
+	UI_mod_fdxpr_state_rotten = "Podrido",
+	UI_mod_fdxpr_state_nonperish = "No caduca"
+}

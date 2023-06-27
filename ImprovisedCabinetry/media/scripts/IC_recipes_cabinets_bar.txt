@@ -1,0 +1,56 @@
+module ImprovisedCabinetry {
+    imports {
+        Base
+    }
+
+    /*  There are additional bar counters but they do not rotate
+     *  properly. I've documented them below for future additions 
+     *
+     *  Bar Counter (Black)         location_restaurant_bar_01_20
+     *                              location_restaurant_bar_01_19
+     *
+     *  Bar Counter (Brown)         location_restaurant_bar_01_4
+     *                              location_restaurant_bar_01_3
+     *
+     *  These are set to Woodworking 8 as the crappy "hodge podge"
+     *  one that everyone can make is at level 7 in vanilla
+     */
+
+    /* Bar Counter (Natural) ------------------------------------- */
+    recipe ICMakeCabinetBar1Corner {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=4,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        ImprovisedCabinetry.SmallHinge=4,
+        Result: Moveables.location_restaurant_bar_01_62,
+        SkillRequired:Woodwork=8,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    recipe ICMakeCabinetBar1 {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=4,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        ImprovisedCabinetry.SmallHinge=4,
+        Result: Moveables.location_restaurant_bar_01_59,
+        SkillRequired:Woodwork=8,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+}

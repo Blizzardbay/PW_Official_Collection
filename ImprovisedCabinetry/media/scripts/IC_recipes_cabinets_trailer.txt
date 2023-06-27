@@ -1,0 +1,62 @@
+module ImprovisedCabinetry {
+    imports {
+        Base
+    }
+
+    /* Trailer */
+    recipe ICMakeCabinetTrailer1 {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        ImprovisedCabinetry.SmallHinge=4,
+        Result: Moveables.location_trailer_02_19,
+        SkillRequired:Woodwork=1,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    /* Trailer float */
+    recipe ICMakeCabinetTrailer2 {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue,
+        Nails=4,
+        ImprovisedCabinetry.WoodPanel=2,
+        ImprovisedCabinetry.SmallHinge=2,
+        Result: Moveables.location_trailer_02_23,
+        SkillRequired:Woodwork=1,
+        Time: 180.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    /* trailer with fridge */
+    recipe ICMakeCabinetTrailer3 {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        Moveables.appliances_refrigeration_01_24/Moveables.appliances_refrigeration_01_25/Moveables.appliances_refrigeration_01_26/Moveables.appliances_refrigeration_01_27,
+        Result: Moveables.location_trailer_02_17,
+        SkillRequired:Woodwork=5;Electricity=2,
+        Time: 300.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+}

@@ -1,0 +1,7 @@
+ItemName_EN = {
+
+	-- Jar Lid MOD
+
+	ItemName_JarLidMod.JarLidBoxs = "Box of Jar Lid",
+
+}

@@ -1,0 +1,5 @@
+ContextMenu_RU = {
+	ContextMenu_Firetrail = "Сделать огненную дорожку",
+	ContextMenu_Firetrail_create = "Разлить бензин",
+	ContextMenu_Firetrail_ignite = "Поджечь бензин",
+}

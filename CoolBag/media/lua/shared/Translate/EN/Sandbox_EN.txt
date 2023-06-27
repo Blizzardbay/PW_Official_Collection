@@ -1,0 +1,14 @@
+Sandbox_EN = {
+    Sandbox_Coolbag = "Mod Coolbag",
+    Sandbox_Coolbag_CoolingMode = "Cooling Mode",
+    Sandbox_Coolbag_CoolingMode_tooltip = "Beware ease is a close friend of boredom.",
+    Sandbox_Coolbag_CoolingMode_option1 = "Cooler bags need to be refilled with an Ice Pocket (normal)",
+    Sandbox_Coolbag_CoolingMode_option2 = "Cooler bags always keep the temperature low (easy mode)",
+    Sandbox_Coolbag_CoolingMode_option3 = "Keep individual Mod Option selection (default)",
+    Sandbox_Coolbag_Tooltip = "Tooltip",
+    Sandbox_Coolbag_Tooltip_tooltip = "Deactivate to not get the freezing / melting timers.",
+    Sandbox_Coolbag_FreezingTime = "Freezing time",
+    Sandbox_Coolbag_FreezingTime_tooltip = "Time (hours) for a water pocket to fully freeze in a freezer (default = 12).",
+    Sandbox_Coolbag_MeltingTime = "Melting time",
+    Sandbox_Coolbag_MeltingTime_tooltip = "Time (hours) for an ice pocket to fully melt out of a freezer (default = 24).",
+}

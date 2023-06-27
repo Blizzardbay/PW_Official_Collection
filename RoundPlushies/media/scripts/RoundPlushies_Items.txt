@@ -1,0 +1,146 @@
+module RoundPlushies
+{
+	imports
+	{
+		Base,
+	}
+	/************DOGS************/
+	item Plushie_Dog1
+	{
+		DisplayCategory = Raccoon,
+		Weight    =    0.2,
+		Type    =    Normal,
+		DisplayName    = Dog Plushie,
+		Icon    =    PlushieDogIcon,
+		WorldStaticModel =  Plushie_Dog1_Ground,
+		StaticModel = H_Dog1Plushie,
+		AttachmentType = SpiffoPlushie,
+	}
+	item Plushie_Dog2
+	{
+		DisplayCategory = Raccoon,
+		Weight    =    0.2,
+		Type    =    Normal,
+		DisplayName    = Dog Plushie,
+		Icon    =    PlushieDog2Icon,
+		WorldStaticModel =  Plushie_Dog2_Ground,
+		StaticModel = H_Dog2Plushie,
+		AttachmentType = SpiffoPlushie,
+	}
+	item Plushie_Dog3
+	{
+		DisplayCategory = Raccoon,
+		Weight    =    0.2,
+		Type    =    Normal,
+		DisplayName    = Dog Plushie,
+		Icon    =    PlushieDog3Icon,
+		WorldStaticModel =  Plushie_Dog3_Ground,
+		StaticModel = H_Dog3Plushie,
+		AttachmentType = SpiffoPlushie,
+	}
+	/************CATS*******************/
+	item Plushie_Cat1
+	{
+		DisplayCategory = Raccoon,
+		Weight    =    0.2,
+		Type    =    Normal,
+		DisplayName    = Cat Plushie,
+		Icon    =    PlushieCatIcon,
+		WorldStaticModel =  Plushie_Cat1_Ground,
+		StaticModel = H_Cat1Plushie,
+		AttachmentType = SpiffoPlushie,
+	}
+	item Plushie_Cat2
+	{
+		DisplayCategory = Raccoon,
+		Weight    =    0.2,
+		Type    =    Normal,
+		DisplayName    = Cat Plushie,
+		Icon    =    PlushieCat2Icon,
+		WorldStaticModel =  Plushie_Cat2_Ground,
+		StaticModel = H_Cat2Plushie,
+		AttachmentType = SpiffoPlushie,
+	}
+	item Plushie_Cat3
+	{
+		DisplayCategory = Raccoon,
+		Weight    =    0.2,
+		Type    =    Normal,
+		DisplayName    = Cat Plushie,
+		Icon    =    PlushieCat3Icon,
+		WorldStaticModel =  Plushie_Cat3_Ground,
+		StaticModel = H_Cat3Plushie,
+		AttachmentType = SpiffoPlushie,
+	}
+	/*************Birds****************/
+	item Plushie_Bird
+	{
+		DisplayCategory = Raccoon,
+		Weight    =    0.2,
+		Type    =    Normal,
+		DisplayName    = Bird Plushie,
+		Icon    =    PlushieBirdIcon,
+		WorldStaticModel =  Plushie_Bird_Ground,
+		StaticModel = H_BirdPlushie,
+		AttachmentType = SpiffoPlushie,
+	}
+	item Plushie_Raven
+	{
+		DisplayCategory = Raccoon,
+		Weight    =    0.2,
+		Type    =    Normal,
+		DisplayName    = Raven Plushie,
+		Icon    =    PlushieRavenIcon,
+		WorldStaticModel =  Plushie_Raven_Ground,
+		StaticModel = H_RavenPlushie,
+		AttachmentType = SpiffoPlushie,
+	}
+	item Plushie_Chicken1
+	{
+		DisplayCategory = Raccoon,
+		Weight    =    0.2,
+		Type    =    Normal,
+		DisplayName    = Chicken Plushie,
+		Icon    =    PlushieChickenIcon,
+		WorldStaticModel =  Plushie_Chicken1_Ground,
+		StaticModel = H_ChickenPlushie,
+		AttachmentType = SpiffoPlushie,
+	}
+	item Plushie_Chicken2
+	{
+		DisplayCategory = Raccoon,
+		Weight    =    0.2,
+		Type    =    Normal,
+		DisplayName    = Chicken Plushie,
+		Icon    =    PlushieChicken2Icon,
+		WorldStaticModel =  Plushie_Chicken2_Ground,
+		StaticModel = H_Chicken2Plushie,
+		AttachmentType = SpiffoPlushie,
+	}
+	item Plushie_Chicken3
+	{
+		DisplayCategory = Raccoon,
+		Weight    =    0.2,
+		Type    =    Normal,
+		DisplayName    = Chicken Plushie,
+		Icon    =    PlushieChicken3Icon,
+		WorldStaticModel =  Plushie_Chicken3_Ground,
+		StaticModel = H_Chicken3Plushie,
+		AttachmentType = SpiffoPlushie,
+	}
+	/*********Sheep*********/
+	item Plushie_Sheep
+	{
+		DisplayCategory = Raccoon,
+		Weight    =    0.2,
+		Type    =    Normal,
+		DisplayName    = Sheep Plushie,
+		Icon    =    PlushieSheepIcon,
+		WorldStaticModel =  Plushie_Sheep_Ground,
+		StaticModel = H_SheepPlushie,
+		AttachmentType = SpiffoPlushie,
+	}
+
+
+
+}

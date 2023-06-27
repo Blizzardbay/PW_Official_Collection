@@ -1,0 +1,33 @@
+Recipes_RU {
+
+	-- Bottling Meat MOD
+	-- Russian translation by Admiral.Slowpoke
+
+	Recipe_Make_Jar_of_Chicken = "Сделать банку консервированной курятины",
+	Recipe_Make_Jar_of_Frog_Meat = "Сделать банку консервированной лягушатины",
+	Recipe_Make_Jar_of_Meat_Patty = "Сделать банку мясных котлет",
+	Recipe_Make_Jar_of_Mutton_Chop = "Сделать банку консервированной баранины",
+	Recipe_Make_Jar_of_Pork_Chop = "Сделать банку консервированной свинины",
+	Recipe_Make_Jar_of_Rabbit_Meat = "Сделать банку консервированной крольчатины",
+	Recipe_Make_Jar_of_Small_Animal_Meat = "Сделать банку с мясом мелкого животного",
+	Recipe_Make_Jar_of_Small_Bird_Meat = "Сделать банку с мясом маленькой птицы",
+	Recipe_Make_Jar_of_Steak = "Сделать банку со стейком",
+	Recipe_Make_Jar_of_Bacon = "Сделать банку с беконом",
+	Recipe_Make_Jar_of_Bacon_Bits = "Сделать банку с кусочками бекона",
+	Recipe_Make_Jar_of_Bacon_Rashers = "Сделать банку с ломтиками бекона",
+	Recipe_Make_Jar_of_Ham = "Сделать банку консервированной ветчины",
+
+	Recipe_Open_Jar_of_Chicken = "Открыть банку консервированной курятины",
+	Recipe_Open_Jar_of_Frog_Meat = "Открыть банку консервированной лягушатины",
+	Recipe_Open_Jar_of_Meat_Patty = "Открыть банку мясных котлет",
+	Recipe_Open_Jar_of_Mutton_Chop = "Открыть банку консервированной баранины",
+	Recipe_Open_Jar_of_Pork_Chop = "Открыть банку консервированной свинины",
+	Recipe_Open_Jar_of_Rabbit_Meat = "Открыть банку консервированной крольчатины",
+	Recipe_Open_Jar_of_Small_Animal_Meat = "Открыть банку с мясом мелкого животного",
+	Recipe_Open_Jar_of_Small_Bird_Meat = "Открыть банку с мясом маленькой птицы",
+	Recipe_Open_Jar_of_Steak = "Открыть банку со стейком",
+	Recipe_Open_Jar_of_Bacon = "Открыть банку с беконом",
+	Recipe_Open_Jar_of_Bacon_Bits = "Открыть банку с кусочками бекона",
+	Recipe_Open_Jar_of_Bacon_Rashers = "Открыть банку с ломтиками бекона",
+	Recipe_Open_Jar_of_Ham = "Открыть банку консервированной ветчины",
+}

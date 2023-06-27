@@ -1,0 +1,9 @@
+Moveables_ES = {
+    /* Overpower Motel Cabinets as the name collides with basic white counters */
+    Motel_Counter = "Mostrador de motel",
+    Low_Motel_Counter = "Mostrador bajo de motel",
+
+    /* Overpower Fossoil Counters so that they're just called blue */
+    Fossoil_Counter = "Mostrador azul",
+    Fossoil_Corner_Counter = "Esquinero azul",
+}

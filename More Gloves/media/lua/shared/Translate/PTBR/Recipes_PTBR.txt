@@ -1,0 +1,8 @@
+Recipes_PTBR = {
+	Recipe_Make_Cloth_Hand_Wrappings = "Fazer luvas de tecidos rasgados",
+	Recipe_Make_Denim_Hand_Wrappings = "Fazer luvas de tecidos jeans rasgados",
+	Recipe_Make_Leather_Hand_Wrappings = "Fazer luvas improvisadas (Melhor)",
+	Recipe_Improve_to_Leather_Hand_Wrappings = "Melhorar luvas improvisadas",
+	Recipe_Cut_Leather_Gloves_into_Fingerless_Leather_Gloves, = "Cortar dedos das luvas de couro",
+	Recipe_Cut_Leather_Gloves_into_Fingerless_Leather_Gloves = "Cortar dedos das luvas de couro",
+}

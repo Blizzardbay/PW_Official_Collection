@@ -1,0 +1,17 @@
+UI_PL = {
+	UI_mod_fdxpr_days = "d",
+	UI_mod_fdxpr_hours = "h",
+	UI_mod_fdxpr_mins = "m",
+	UI_mod_fdxpr_secs = "s",
+	UI_mod_fdxpr_stale = "stale in",
+	UI_mod_fdxpr_rotten = "rotten in",
+	UI_mod_fdxpr_trait_name = "Oko do jedzenia",
+	UI_mod_fdxpr_trait_description = "Wie dok³adnie kiedy jedzenie zgnije",
+	UI_mod_fdxpr_state = "Stan:",
+	UI_mod_fdxpr_state_verygood = "Bardzo œwie¿e",
+	UI_mod_fdxpr_state_good = "Œwie¿e",
+	UI_mod_fdxpr_state_ok = "Dobre",
+	UI_mod_fdxpr_state_rotting = "Zaczyna gniæ",
+	UI_mod_fdxpr_state_rotten = "Zgni³y",
+	UI_mod_fdxpr_state_nonperish = "Nie zgnije"
+}

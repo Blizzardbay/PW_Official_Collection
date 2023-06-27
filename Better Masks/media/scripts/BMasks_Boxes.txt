@@ -1,0 +1,78 @@
+module NMBM
+{
+
+		item MasksBox_Blue
+    {
+		DisplayCategory = Accessory,
+        Weight	=	2.0,
+        Type	=	Normal,
+        DisplayName	=	Box of Masks (Blue),
+        Icon	=	MasksBox,
+        WorldStaticModel = MasksBox,
+    }
+		item MasksBox_Green
+    {
+		DisplayCategory = Accessory,
+        Weight	=	2.0,
+        Type	=	Normal,
+        DisplayName	=	Box of Masks (Green),
+        Icon	=	MasksBox,
+        WorldStaticModel = MasksBox,
+    }
+		item MasksBox_White
+    {
+		DisplayCategory = Accessory,
+        Weight	=	2.0,
+        Type	=	Normal,
+        DisplayName	=	Box of Masks (White),
+        Icon	=	MasksBox,
+        WorldStaticModel = MasksBox,
+    }
+		item MasksBox_Black
+    {
+		DisplayCategory = Accessory,
+        Weight	=	2.0,
+        Type	=	Normal,
+        DisplayName	=	Box of Masks (Black),
+        Icon	=	MasksBox,
+        WorldStaticModel = MasksBox,
+    }
+
+
+		item EmptyMasksBox_White
+    {
+		DisplayCategory = Accessory,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Empty Box of Masks (White),
+        Icon	=	MaskBoxEmpty,
+        WorldStaticModel = EmptyMasksBox,
+    }
+		item EmptyMasksBox_Blue
+    {
+		DisplayCategory = Accessory,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Empty Box of Masks (Blue),
+        Icon	=	MaskBoxEmpty,
+        WorldStaticModel = EmptyMasksBox,
+    }
+		item EmptyMasksBox_Green
+    {
+		DisplayCategory = Accessory,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Empty Box of Masks (Green),
+        Icon	=	MaskBoxEmpty,
+        WorldStaticModel = EmptyMasksBox,
+    }
+		item EmptyMasksBox_Black
+    {
+		DisplayCategory = Accessory,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Empty Box of Masks (Black),
+        Icon	=	MaskBoxEmpty,
+        WorldStaticModel = EmptyMasksBox,
+    }
+}

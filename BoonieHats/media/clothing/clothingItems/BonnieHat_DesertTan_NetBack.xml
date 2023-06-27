@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Skinned\clothes\M_BonnieHat_NetBack</m_MaleModel>
+	<m_FemaleModel>Skinned\clothes\F_BonnieHat_NetBack</m_FemaleModel>
+	<m_GUID>6c08829e-b549-467c-893f-4b46c51d2ac9</m_GUID>
+	<m_Static>true</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_HatCategory>default</m_HatCategory>
+	<m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+	<textureChoices>Clothes/BonnieHat_DesertTanCamo</textureChoices>
+</clothingItem>

@@ -1,0 +1,17 @@
+UI_DE = {
+	UI_mod_fdxpr_days = "d",
+	UI_mod_fdxpr_hours = "h",
+	UI_mod_fdxpr_mins = "m",
+	UI_mod_fdxpr_secs = "s",
+	UI_mod_fdxpr_stale = "stale in",
+	UI_mod_fdxpr_rotten = "rotten in",
+	UI_mod_fdxpr_trait_name = "Lebensmittelkenner",
+	UI_mod_fdxpr_trait_description = "Du weisst genau, wann Lebensmittel schlecht werden.",
+	UI_mod_fdxpr_state = "Stand:",
+	UI_mod_fdxpr_state_verygood = "Sehr frisch",
+	UI_mod_fdxpr_state_good = "Frisch",
+	UI_mod_fdxpr_state_ok = "Okay",
+	UI_mod_fdxpr_state_rotting = "Etwas angeschimmelt",
+	UI_mod_fdxpr_state_rotten = "Verschimmelt",
+	UI_mod_fdxpr_state_nonperish = "Hat kein Verfallsdatum"
+}

@@ -1,0 +1,26 @@
+﻿Recipe_FR = {
+
+	-- Bottling Meat MOD
+	-- Traduit en français par Bobitec
+
+	Recipe_Make_Jar_of_Chicken = "Mettre le poulet en bocal",
+	Recipe_Make_Jar_of_Frog_Meat = "Mettre la viande de grenouille en bocal",
+	Recipe_Make_Jar_of_Meat_Patty = "Mettre la galette de viande en bocal",
+	Recipe_Make_Jar_of_Mutton_Chop = "Mettre la côtelettes de mouton en bocal",
+	Recipe_Make_Jar_of_Pork_Chop = "Mettre la côtelettes de porc en bocal",
+	Recipe_Make_Jar_of_Rabbit_Meat = "Mettre la viande de lapin en bocal",
+	Recipe_Make_Jar_of_Small_Animal_Meat = "Mettre la viande de petit animal en bocal",
+	Recipe_Make_Jar_of_Small_Bird_Meat = "Mettre la viande de petit oiseau en bocal",
+	Recipe_Make_Jar_of_Steak = "Mettre le steak en bocal",
+
+	Recipe_Open_Jar_of_Chicken = "Ouvrir le bocal de poulet",
+	Recipe_Open_Jar_of_Frog_Meat = "Ouvrir le bocal de viande de grenouille",
+	Recipe_Open_Jar_of_Meat_Patty = "Ouvrir le bocal de galette de viande",
+	Recipe_Open_Jar_of_Mutton_Chop = "Ouvrir le bocal de côtelettes de mouton",
+	Recipe_Open_Jar_of_Pork_Chop = "Ouvrir le bocal de côtelettes de porc",
+	Recipe_Open_Jar_of_Rabbit_Meat = "Ouvrir le bocal de viande de lapin",
+	Recipe_Open_Jar_of_Small_Animal_Meat = "Ouvrir le bocal de viande de petit animal",
+	Recipe_Open_Jar_of_Small_Bird_Meat = "Ouvrir le bocal de viande de petit oiseau",
+	Recipe_Open_Jar_of_Steak = "Ouvrir le bocal de steak",
+
+}

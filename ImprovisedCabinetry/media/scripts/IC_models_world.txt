@@ -1,0 +1,25 @@
+module ImprovisedCabinetry {
+    imports {
+        Base
+    }
+
+    model WoodPanel {
+        mesh = WorldItems/ICWoodPanel,
+        texture = WorldItems/ICWoodPanel,
+        scale = 0.6,
+    }
+
+    model ICMagazine1 {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/ICMagazine1,
+        scale = 0.4,
+    }
+
+    /* Default hinge models, just smaller */
+    model SmallHinge {
+        mesh = WorldItems/DoorHinge,
+        texture = WorldItems/DoorHinge,
+        scale = 0.35,
+    }
+
+}

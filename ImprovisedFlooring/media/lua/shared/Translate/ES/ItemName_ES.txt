@@ -1,0 +1,9 @@
+ItemName_ES = {
+    /* Version 2.0 Magazines */
+    ItemName_ImprovisedFlooring.IFMagazineTiles = "Almacén de Dave: Catálogo de Azulejos",
+    ItemName_ImprovisedFlooring.IFMagazineFranchise = "Franquicia de especificaciones de Suelos",
+    ItemName_ImprovisedFlooring.IFMagazineGarden = "Diseños para Hogar y Jardín",
+    ItemName_ImprovisedFlooring.IFMagazineIndustrial = "Suelos Industriales",
+    ItemName_ImprovisedFlooring.IFMagazineUrban = "Calzadas y Aceras Urbanas",
+    ItemName_ImprovisedFlooring.IFMagazineEasterEgg = "Un viaje por el carril de la memoria",
+}

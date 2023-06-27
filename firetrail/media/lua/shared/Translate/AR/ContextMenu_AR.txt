@@ -1,0 +1,5 @@
+ContextMenu_AR = {
+	ContextMenu_Firetrail = "Fire trail",
+	ContextMenu_Firetrail_create = "Tirar gasolina",
+	ContextMenu_Firetrail_ignite = "Arrancar fuego",
+}

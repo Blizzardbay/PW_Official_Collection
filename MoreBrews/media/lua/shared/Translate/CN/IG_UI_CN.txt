@@ -1,0 +1,7 @@
+IGUI_CN =
+{
+	IGUI_ItemCat_MoreBrews = "MoreBrews",
+	IGUI_CraftCategory_MoreBrews =  "MoreBrews",
+	IGUI_perks_Brewing = "酿酒",
+	IGUI_ItemCat_CraftBrewing = "製作 - 酿酒",
+}

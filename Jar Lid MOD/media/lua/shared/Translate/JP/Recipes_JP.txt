@@ -1,0 +1,8 @@
+﻿Recipe_JP = {
+
+	-- Jar Lid MOD
+
+	Recipe_Open_Box_of_Jar_Lid = "箱を開ける",
+	Recipe_Place_Jar_Lid_in_Box = "箱に入れる",
+
+}

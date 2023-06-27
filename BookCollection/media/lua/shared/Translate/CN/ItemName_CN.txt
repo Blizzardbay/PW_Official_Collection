@@ -1,0 +1,89 @@
+﻿
+ItemName_CN = {
+
+
+	ItemName_Base.BookCarpentry1 = "JN木工.1: 新手",
+	ItemName_Base.BookCarpentry2 = "JN木工.2: 入门",
+	ItemName_Base.BookCarpentry3 = "JN木工.3: 进阶",
+	ItemName_Base.BookCarpentry4 = "JN木工.4: 专家",
+	ItemName_Base.BookCarpentry5 = "JN木工.5: 大师",
+
+
+	ItemName_Base.BookCooking1 = "JN烹饪.1: 新手",
+	ItemName_Base.BookCooking2 = "JN烹饪.2: 入门",
+	ItemName_Base.BookCooking3 = "JN烹饪.3: 进阶",
+	ItemName_Base.BookCooking4 = "JN烹饪.4: 专家",
+	ItemName_Base.BookCooking5 = "JN烹饪.5: 大师",
+
+
+	ItemName_Base.BookFarming1 = "JN农业.1: 新手",
+	ItemName_Base.BookFarming2 = "JN农业.2: 入门",
+	ItemName_Base.BookFarming3 = "JN农业.3: 进阶",
+	ItemName_Base.BookFarming4 = "JN农业.4: 专家",
+	ItemName_Base.BookFarming5 = "JN农业.5: 大师",
+
+
+	ItemName_Base.BookFishing1 = "JN钓鱼.1: 新手",
+	ItemName_Base.BookFishing2 = "JN钓鱼.2: 入门",
+	ItemName_Base.BookFishing3 = "JN钓鱼.3: 进阶",
+	ItemName_Base.BookFishing4 = "JN钓鱼.4: 专家",
+	ItemName_Base.BookFishing5 = "JN钓鱼.5: 大师",
+
+
+	ItemName_Base.BookTrapping1 = "JN陷阱.1: 新手",
+	ItemName_Base.BookTrapping2 = "JN陷阱.2: 入门",
+	ItemName_Base.BookTrapping3 = "JN陷阱.3: 进阶",
+	ItemName_Base.BookTrapping4 = "JN陷阱.4: 专家",
+	ItemName_Base.BookTrapping5 = "JN陷阱.5: 大师",
+
+
+	ItemName_Base.BookElectrician1 = "JN电工.1: 新手",
+	ItemName_Base.BookElectrician2 = "JN电工.2: 入门",
+	ItemName_Base.BookElectrician3 = "JN电工.3: 进阶",
+	ItemName_Base.BookElectrician4 = "JN电工.4: 专家",
+	ItemName_Base.BookElectrician5 = "JN电工.5: 大师",
+
+
+	ItemName_Base.BookFirstAid1 = "JN医疗.1: 新手",
+	ItemName_Base.BookFirstAid2 = "JN医疗.2: 入门",
+	ItemName_Base.BookFirstAid3 = "JN医疗.3: 进阶",
+	ItemName_Base.BookFirstAid4 = "JN医疗.4: 专家",
+	ItemName_Base.BookFirstAid5 = "JN医疗.5: 大师",
+
+
+	ItemName_Base.BookForaging1 = "JN搜寻.1: 新手",
+	ItemName_Base.BookForaging2 = "JN搜寻.2: 入门",
+	ItemName_Base.BookForaging3 = "JN搜寻.3: 进阶",
+	ItemName_Base.BookForaging4 = "JN搜寻.4: 专家",
+	ItemName_Base.BookForaging5 = "JN搜寻.5: 大师",
+
+
+	ItemName_Base.BookMetalWelding1 = "JN焊接.1: 新手",
+	ItemName_Base.BookMetalWelding2 = "JN焊接.2: 入门",
+	ItemName_Base.BookMetalWelding3 = "JN焊接.3: 进阶",
+	ItemName_Base.BookMetalWelding4 = "JN焊接.4: 专家",
+	ItemName_Base.BookMetalWelding5 = "JN焊接.5: 大师",
+
+
+	ItemName_Base.BookBlacksmith1 = "JN锻造.1: 新手",
+	ItemName_Base.BookBlacksmith2 = "JN锻造.2: 入门",
+	ItemName_Base.BookBlacksmith3 = "JN锻造.3: 进阶",
+	ItemName_Base.BookBlacksmith4 = "JN锻造.4: 专家",
+	ItemName_Base.BookBlacksmith5 = "JN锻造.5: 大师",
+
+
+	ItemName_Base.BookMechanic1 = "JN技工.1: 新手",
+	ItemName_Base.BookMechanic2 = "JN技工.2: 入门",
+	ItemName_Base.BookMechanic3 = "JN技工.3: 进阶",
+	ItemName_Base.BookMechanic4 = "JN技工.4: 专家",
+	ItemName_Base.BookMechanic5 = "JN技工.5: 大师",
+
+
+	ItemName_Base.BookTailoring1 = "JN裁.1: 新手",
+	ItemName_Base.BookTailoring2 = "JN裁.2: 入门",
+	ItemName_Base.BookTailoring3 = "JN裁.3: 进阶",
+	ItemName_Base.BookTailoring4 = "JN裁.4: 专家",
+	ItemName_Base.BookTailoring5 = "JN裁.5: 大师",
+
+
+}

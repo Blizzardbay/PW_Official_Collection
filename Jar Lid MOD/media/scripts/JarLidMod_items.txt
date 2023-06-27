@@ -1,0 +1,23 @@
+
+/*** Jar Lid MOD add item ***/
+
+/*** 2022-01-04 Version 2.02 ***/
+
+
+module JarLidMod
+{
+	imports
+	{
+		Base
+	}
+
+item JarLidBoxs
+	{
+		DisplayName					=	Box of Jar Lid,
+		Weight						=	2.4,
+		Icon						=	JarLidbox,
+		DisplayCategory 			=	Item,
+		WorldStaticModel			=	Box_JarLid
+	}
+
+}

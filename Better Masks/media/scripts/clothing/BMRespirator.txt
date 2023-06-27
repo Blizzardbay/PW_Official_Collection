@@ -1,0 +1,197 @@
+module NMBM
+{			
+	item Hat_HalfMaskRespirator_Black
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Half Mask Respirator,
+		ClothingItem = Hat_HalfMaskRespirator_Black,
+		BodyLocation = Mask,
+		BloodLocation = Head,
+		Icon = HalfMaskRespirator_Black,
+		CanHaveHoles = false,
+		Weight = 0.8,
+		ScratchDefense = 20,
+		Insulation = 0.55,
+		WindResistance = 0.45,
+		WaterResistance = 1.0,
+		ClothingItemExtra = NMBM.Hat_HalfMaskRespirator_BlackNeck,
+		ClothingItemExtraOption = WearonNeck,
+		ClothingExtraSubmenu = WearonFace,
+		WorldStaticModel = HalfMaskRespiratorBlack_Ground,
+	}
+	
+	item Hat_HalfMaskRespirator_BlackNeck
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Half Mask Respirator,
+		ClothingItem = Hat_HalfMaskRespirator_BlackNeck,
+		BodyLocation = Mask,
+		BloodLocation = Head,
+		Icon = HalfMaskRespirator_Black,
+		CanHaveHoles = false,
+		Weight = 0.8,
+		WaterResistance = 1.0,
+		ClothingItemExtra = NMBM.Hat_HalfMaskRespirator_Black,
+		ClothingItemExtraOption = WearonFace,
+		ClothingExtraSubmenu = WearonNeck,
+		WorldStaticModel = HalfMaskRespiratorBlack_Ground,
+	}
+	
+	item Hat_HalfMaskRespirator_White
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Half Mask Respirator,
+		ClothingItem = Hat_HalfMaskRespirator_White,
+		BodyLocation = Mask,
+		BloodLocation = Head,
+		Icon = HalfMaskRespirator_White,
+		CanHaveHoles = false,
+		Weight = 0.8,
+		ScratchDefense = 20,
+		Insulation = 0.55,
+		WindResistance = 0.45,
+		WaterResistance = 1.0,
+		ClothingItemExtra = NMBM.Hat_HalfMaskRespirator_WhiteNeck,
+		ClothingItemExtraOption = WearonNeck,
+		ClothingExtraSubmenu = WearonFace,
+		WorldStaticModel = HalfMaskRespiratorWhite_Ground,
+	}
+	
+	item Hat_HalfMaskRespirator_WhiteNeck
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Half Mask Respirator,
+		ClothingItem = Hat_HalfMaskRespirator_WhiteNeck,
+		BodyLocation = Mask,
+		BloodLocation = Head,
+		Icon = HalfMaskRespirator_White,
+		CanHaveHoles = false,
+		Weight = 0.8,
+		WaterResistance = 1.0,
+		ClothingItemExtra = NMBM.Hat_HalfMaskRespirator_White,
+		ClothingItemExtraOption = WearonFace,
+		ClothingExtraSubmenu = WearonNeck,
+		WorldStaticModel = HalfMaskRespiratorWhite_Ground,
+	}
+	
+	item Hat_TR2TacticalRespirator
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = TR2 Respirator,
+		ClothingItem = Hat_TR2TacticalRespirator,
+		BodyLocation = Mask,
+		BloodLocation = Head,
+		Icon = TacticalRespirator2,
+		CanHaveHoles = false,
+		Weight = 0.6,
+		ScratchDefense = 20,
+		Insulation = 0.55,
+		WindResistance = 0.45,
+		WaterResistance = 1.0,
+		ClothingItemExtra = NMBM.Hat_TR2TacticalRespiratorNeck,
+		ClothingItemExtraOption = WearonNeck,
+		ClothingExtraSubmenu = WearonFace,
+		WorldStaticModel = TR2Respirator_Ground,
+	}
+	
+	item Hat_TR2TacticalRespiratorNeck
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = TR2 Respirator,
+		ClothingItem = Hat_TR2TacticalRespiratorNeck,
+		BodyLocation = Mask,
+		BloodLocation = Head,
+		Icon = TacticalRespirator2,
+		CanHaveHoles = false,
+		Weight = 0.6,
+		WaterResistance = 1.0,
+		ClothingItemExtra = NMBM.Hat_TR2TacticalRespirator,
+		ClothingItemExtraOption = WearonFace,
+		ClothingExtraSubmenu = WearonNeck,
+		WorldStaticModel = TR2Respirator_Ground,
+	}
+	
+	item Hat_HalfMaskRespiratorII_Black
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Half Mask Respirator II,
+		ClothingItem = Hat_HalfMaskRespiratorII_Black,
+		BodyLocation = Mask,
+		BloodLocation = Head,
+		Icon = HalfMaskRespiratorII_Black,
+		CanHaveHoles = false,
+		Weight = 0.8,
+		ScratchDefense = 20,
+		Insulation = 0.55,
+		WindResistance = 0.45,
+		WaterResistance = 1.0,
+		ClothingItemExtra = NMBM.Hat_HalfMaskRespiratorII_BlackNeck,
+		ClothingItemExtraOption = WearonNeck,
+		ClothingExtraSubmenu = WearonFace,
+		WorldStaticModel = HalfMaskRespiratorBlackII_Ground,
+	}
+	
+	item Hat_HalfMaskRespiratorII_BlackNeck
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Half Mask Respirator II,
+		ClothingItem = Hat_HalfMaskRespiratorII_BlackNeck,
+		BodyLocation = Mask,
+		BloodLocation = Head,
+		Icon = HalfMaskRespiratorII_Black,
+		CanHaveHoles = false,
+		Weight = 0.8,
+		WaterResistance = 1.0,
+		ClothingItemExtra = NMBM.Hat_HalfMaskRespiratorII_Black,
+		ClothingItemExtraOption = WearonFace,
+		ClothingExtraSubmenu = WearonNeck,
+		WorldStaticModel = HalfMaskRespiratorBlackII_Ground,
+	}
+	
+	item Hat_HalfMaskRespiratorII_White
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Half Mask Respirator II,
+		ClothingItem = Hat_HalfMaskRespiratorII_White,
+		BodyLocation = Mask,
+		BloodLocation = Head,
+		Icon = HalfMaskRespiratorII_White,
+		CanHaveHoles = false,
+		Weight = 0.8,
+		ScratchDefense = 20,
+		Insulation = 0.55,
+		WindResistance = 0.45,
+		WaterResistance = 1.0,
+		ClothingItemExtra = NMBM.Hat_HalfMaskRespiratorII_WhiteNeck,
+		ClothingItemExtraOption = WearonNeck,
+		ClothingExtraSubmenu = WearonFace,
+		WorldStaticModel = HalfMaskRespiratorWhiteII_Ground,
+	}
+	
+	item Hat_HalfMaskRespiratorII_WhiteNeck
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Half Mask Respirator II,
+		ClothingItem = Hat_HalfMaskRespiratorII_WhiteNeck,
+		BodyLocation = Mask,
+		BloodLocation = Head,
+		Icon = HalfMaskRespiratorII_White,
+		CanHaveHoles = false,
+		Weight = 0.8,
+		WaterResistance = 1.0,
+		ClothingItemExtra = NMBM.Hat_HalfMaskRespiratorII_White,
+		ClothingItemExtraOption = WearonFace,
+		ClothingExtraSubmenu = WearonNeck,
+		WorldStaticModel = HalfMaskRespiratorWhiteII_Ground,
+	}
+}

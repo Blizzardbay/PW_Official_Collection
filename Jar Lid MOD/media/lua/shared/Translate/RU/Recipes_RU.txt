@@ -1,0 +1,11 @@
+Recipe_RU = {
+
+	-- Jar Lid MOD
+	-- Russian translation by Admiral.Slowpoke
+	-- Fix by exLesnick
+	-- Fixed some typos
+
+	Recipe_Open_Box_of_Jar_Lid = "Открыть коробку с крышками от банок",
+	Recipe_Place_Jar_Lid_in_Box = "Положить крышку от банки в коробку",
+
+}

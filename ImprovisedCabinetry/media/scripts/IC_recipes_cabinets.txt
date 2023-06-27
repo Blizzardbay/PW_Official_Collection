@@ -1,0 +1,304 @@
+module ImprovisedCabinetry {
+    imports {
+        Base
+    }
+
+    /* Modern Counter ------------------------------------------- */
+    recipe ICMakeCabinet1 {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        ImprovisedCabinetry.SmallHinge=4,
+        PaintBrown,
+        PaintWhite,
+        Result: Moveables.fixtures_counters_01_3,
+        SkillRequired:Woodwork=5,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    recipe ICMakeCabinet1Corner {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        PaintBrown,
+        PaintWhite,
+        Result: Moveables.fixtures_counters_01_6,
+        SkillRequired:Woodwork=5,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    /* Wooden Counter ------------------------------------------- */
+    recipe ICMakeCabinet2 {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        ImprovisedCabinetry.SmallHinge=4,
+        Result: Moveables.fixtures_counters_01_11,
+        SkillRequired:Woodwork=2,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    recipe ICMakeCabinet2Corner {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        Result: Moveables.fixtures_counters_01_14,
+        SkillRequired:Woodwork=2,
+        Time: 300.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    /* Birchwood Counter ---------------------------------------- */
+    recipe ICMakeCabinet3 {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        ImprovisedCabinetry.SmallHinge=4,
+        Result: Moveables.fixtures_counters_01_43,
+        SkillRequired:Woodwork=2,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    recipe ICMakeCabinet3Corner {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        Result: Moveables.fixtures_counters_01_46,
+        SkillRequired:Woodwork=2,
+        Time: 300.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    recipe ICMakeCabinet3Float {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue,
+        Nails=4,
+        ImprovisedCabinetry.WoodPanel=2,
+        ImprovisedCabinetry.SmallHinge=2,
+        Result: Moveables.fixtures_counters_01_27,
+        SkillRequired:Woodwork=2,
+        Time: 180.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    /* Oak Counter ---------------------------------------------- */
+    recipe ICMakeCabinet4 {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        ImprovisedCabinetry.SmallHinge=4,
+        Result: Moveables.fixtures_counters_01_51,
+        SkillRequired:Woodwork=2,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    recipe ICMakeCabinet4Corner {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        Result: Moveables.fixtures_counters_01_54,
+        SkillRequired:Woodwork=2,
+        Time: 300.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    /* Dark Counter --------------------------------------------- */
+    recipe ICMakeCabinet5 {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        ImprovisedCabinetry.SmallHinge=4,
+        PaintBlack,
+        Result: Moveables.fixtures_counters_01_59,
+        SkillRequired:Woodwork=4,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    recipe ICMakeCabinet5Corner {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        PaintBlack,
+        Result: Moveables.fixtures_counters_01_62,
+        SkillRequired:Woodwork=4,
+        Time: 300.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    /* Green Counter -------------------------------------------- */
+    recipe ICMakeCabinet6 {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        ImprovisedCabinetry.SmallHinge=4,
+        PaintGreen,
+        Result: Moveables.fixtures_counters_01_67,
+        SkillRequired:Woodwork=3,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    recipe ICMakeCabinet6Corner {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        PaintGreen,
+        Result: Moveables.fixtures_counters_01_70,
+        SkillRequired:Woodwork=3,
+        Time: 300.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    /* White Counter -------------------------------------------- */
+    recipe ICMakeCabinet7 {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        ImprovisedCabinetry.SmallHinge=4,
+        PaintWhite,
+        Result: Moveables.fixtures_counters_01_75,
+        SkillRequired:Woodwork=3,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    recipe ICMakeCabinet7Corner {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        PaintWhite,
+        Result: Moveables.fixtures_counters_01_78,
+        SkillRequired:Woodwork=3,
+        Time: 300.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    } 
+
+    /* Bathroom Cabinets ---------------------------------------- */
+    recipe ICMakeCabinetBathroom {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue,
+        Nails=4,
+        ImprovisedCabinetry.WoodPanel,
+        ImprovisedCabinetry.SmallHinge=2,
+        Result: Moveables.fixtures_bathroom_01_29,
+        SkillRequired:Woodwork=1,
+        Time: 180.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+}

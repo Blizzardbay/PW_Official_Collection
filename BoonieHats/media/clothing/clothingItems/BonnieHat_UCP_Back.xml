@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Skinned\clothes\M_BonnieHat_Back</m_MaleModel>
+	<m_FemaleModel>Skinned\clothes\F_BonnieHat_Back</m_FemaleModel>
+	<m_GUID>63c090c6-4d8a-4f95-9238-62ab8ebc483c</m_GUID>
+	<m_Static>true</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_HatCategory>default</m_HatCategory>
+	<m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+	<textureChoices>Clothes/BonnieHat_UCP</textureChoices>
+</clothingItem>

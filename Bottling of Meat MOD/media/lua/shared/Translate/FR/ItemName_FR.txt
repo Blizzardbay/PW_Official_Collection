@@ -1,0 +1,16 @@
+﻿ItemName_FR = {
+
+	-- Bottling of Meat MOD
+	-- Traduit en français par Bobitec
+
+	ItemName_Bottling.BottlingChicken = "Bocal de poulet",
+	ItemName_Bottling.BottlingFrogMeat = "Bocal de viande de grenouille",
+	ItemName_Bottling.BottlingMeatPatty = "Bocal de galette de viande",
+	ItemName_Bottling.BottlingMuttonChop = "Bocal de côtelettes de mouton",
+	ItemName_Bottling.BottlingPorkChop = "Bocal de côtelettes de porc",
+	ItemName_Bottling.BottlingRabbitmeat = "Bocal de viande de lapin",
+	ItemName_Bottling.BottlingSmallanimalmeat = "Bocal de viande de petit animal",
+	ItemName_Bottling.BottlingSmallbirdmeat = "Bocal de viande de petit oiseau",
+	ItemName_Bottling.BottlingSteak = "Bocal de steak",
+
+}

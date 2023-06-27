@@ -1,0 +1,18 @@
+module ImprovisedFlooring
+{
+    imports 
+    {
+        Base
+    }
+
+    recipe MakeConcreteBucket {
+        destroy BucketEmpty/BucketWaterFull,
+        Water=5,
+        ConcretePowder,
+        Result:BucketConcreteFull,
+        Time: 150.0,
+        NeedToBeLearn: False,
+        Sound:MakePlaster,
+    }
+
+}

@@ -1,0 +1,43 @@
+module ImprovisedCabinetry {
+    imports {
+        Base
+    }
+
+    /* Sunstar Model --------------------------------------------- */
+    recipe ICMakeCabinetMotel1 {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        ImprovisedCabinetry.SmallHinge=4,
+        PaintWhite,
+        Result: Moveables.location_hospitality_sunstarmotel_02_13,
+        SkillRequired:Woodwork=3,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    recipe ICMakeCabinetMotel2 {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue,
+        Nails=4,
+        ImprovisedCabinetry.WoodPanel=2,
+        Result: Moveables.location_hospitality_sunstarmotel_02_21,
+        SkillRequired:Woodwork=3,
+        Time: 180.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+}

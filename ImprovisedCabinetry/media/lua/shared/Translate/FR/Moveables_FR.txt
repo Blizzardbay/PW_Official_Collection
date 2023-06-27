@@ -1,0 +1,9 @@
+Moveables_FR = {
+    /* Overpower Motel Cabinets as the name collides with basic white counters */
+    Motel_Counter = "Comptoir de Motel",
+    Low_Motel_Counter = "Comptoir de Motel (Bas)",
+
+    /* Overpower Fossoil Counters so that they're just called blue */
+    Fossoil_Counter = "Comptoir Bleu",
+    Fossoil_Corner_Counter = "Comptoir d'Angle Bleu",
+}

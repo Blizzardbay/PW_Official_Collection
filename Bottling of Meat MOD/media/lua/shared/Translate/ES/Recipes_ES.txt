@@ -1,0 +1,25 @@
+Recipe_ES = {
+
+	-- Bottling Meat MOD
+	-- Translated by Kovi16YT
+
+	Recipe_Make_Jar_of_Chicken = "Hacer Tarro de Pollo",
+	Recipe_Make_Jar_of_Frog_Meat = "Hacer Tarro de Carne de Rana",
+	Recipe_Make_Jar_of_Meat_Patty = "Hacer Tarro de Carne de Rana",
+	Recipe_Make_Jar_of_Mutton_Chop = "Hacer Tarro de Chuletas de Cordero",
+	Recipe_Make_Jar_of_Pork_Chop = "Hacer Tarro de Chuletas de Cerdo",
+	Recipe_Make_Jar_of_Rabbit_Meat = "Hacer Tarro de Carne de Conejo",
+	Recipe_Make_Jar_of_Small_Animal_Meat = "Hacer Tarro con Carne de Animal Pequeño",
+	Recipe_Make_Jar_of_Small_Bird_Meat = "Hacer Tarro con Carne de Pájaro",
+	Recipe_Make_Jar_of_Steak = "Hacer Tarro de Filetes",
+	Recipe_Open_Jar_of_Chicken = "Abrir Tarro de Pollo",
+	Recipe_Open_Jar_of_Frog_Meat = "Abrir Tarro de Carne de Rana",
+	Recipe_Open_Jar_of_Meat_Patty = "Abrir Tarro de Carne Empanada",
+	Recipe_Open_Jar_of_Mutton_Chop = "Abrir Tarro de Chuletas de Cordero",
+	Recipe_Open_Jar_of_Pork_Chop = "Abrir Tarro de Chuletas de Cerdo",
+	Recipe_Open_Jar_of_Rabbit_Meat = "Abrir Tarro de Carne de Conejo",
+	Recipe_Open_Jar_of_Small_Animal_Meat = "Abrir Tarro de Carne de Animal Pequeño",
+	Recipe_Open_Jar_of_Small_Bird_Meat = "Abrir Tarro de Carne de Pájaro",
+	Recipe_Open_Jar_of_Steak = "Abrir Tarro de Filetes",
+
+}

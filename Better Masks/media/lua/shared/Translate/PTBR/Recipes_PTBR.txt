@@ -1,0 +1,4 @@
+Recipes_PTBR = {
+	Recipe_Open_Box_of_Masks = "Abrir Caixa de Máscaras",
+	Recipe_Put_Masks_in_Box = "Colocar Máscaras na Caixa",
+}

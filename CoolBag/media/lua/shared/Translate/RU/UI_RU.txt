@@ -1,0 +1,8 @@
+UI_RU = {
+    UI_Verbose = "Отладка",
+    UI_Tooltip_Verbose = "Функция, полезная для отладки. ",
+    UI_Coolbag_CoolMode = "Режим заморозки",
+    UI_Coolbag_Tooltip_CoolMode = "Остерегайтесь лёгкости - близкого друга скуки.",
+    UI_Coolbag_ModeDropDown_1 = "Термосумки необходимо наполнять пакетами со льдом",
+    UI_Coolbag_ModeDropDown_2 = "Термосумки всегда поддерживают низкую температуру (легкий режим)",
+}

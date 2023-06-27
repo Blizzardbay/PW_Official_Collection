@@ -1,0 +1,34 @@
+module ImprovisedCabinetry {
+    imports {
+        Base
+    }
+
+    recipe ICMakeWoodPanel {
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue,
+        Result: ImprovisedCabinetry.WoodPanel,
+        SkillRequired: Woodwork=2,
+        Category: Cabinets,
+        Time: 120.0,
+        AnimNode: SawLog,
+        Prop1: Source=1,
+        Prop2: Plank,
+        Sound:Sawing,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodPanel,
+    }
+
+    recipe ICMakeSmallHinge {
+        keep [Recipe.GetItemTypes.Saw],
+        Hinge,
+        Result: ImprovisedCabinetry.SmallHinge=2,
+        Category: Cabinets,
+        Time: 90.0,
+        AnimNode: SawLog,
+        Prop1: Source=1,
+        Prop2: Hinge,
+        Sound:Sawing,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPMetalHinge,
+    }
+
+}

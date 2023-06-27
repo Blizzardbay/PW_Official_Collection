@@ -1,0 +1,153 @@
+module Base
+{
+
+	recipe Disassemble electrical wire from socket
+    {
+       SpoonUtility1,
+
+	   Result:ElectricWire,
+       Time:600.0,
+	   Category:Carpentry,
+       OnCreate:SocetWire_OnCreate,
+    }
+	
+	recipe Search cardboard box
+    {
+       SpoonUtility17/SpoonUtility18,
+
+	   Result:Mov_CardboardBox,
+       Time:400.0,
+	   Category:Carpentry,
+       OnCreate:CheckCardboardBoxes_OnCreate,
+    }
+	
+	item SpoonUtility1
+	{
+		Weight	=	1,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisStuff_1,
+		DisplayName	=	Electrical Socket,
+		Icon	=	Socket,
+	}
+	
+	item SpoonUtility17
+	{
+		Weight	=	1,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisStuff_17,
+		DisplayName	=	Cardboard Box,
+		Icon	=	Socket,
+	}
+	
+	item SpoonUtility18
+	{
+		Weight	=	1,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisStuff_18,
+		DisplayName	=	Cardboard Box,
+		Icon	=	Socket,
+	}
+	
+	item SpoonOven1
+    {
+		Weight	=	30,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_NewTiles01_1,
+		DisplayName	=	Artsy Oven,
+		Icon	=	SpoonOven,
+	}
+	
+	item SpoonOven2
+    {
+		Weight	=	30,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_NewTiles01_3,
+		DisplayName	=	Tall Light Tile Oven,
+		Icon	=	SpoonOven,
+	}
+	
+	item SpoonOven3
+    {
+		Weight	=	30,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_NewTiles01_5,
+		DisplayName	=	Low Light Tile Oven,
+		Icon	=	SpoonOven,
+	}
+	
+	item SpoonOven4
+    {
+		Weight	=	30,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_NewTiles01_7,
+		DisplayName	=	Low Dark Tile Half-Metal Oven,
+		Icon	=	SpoonOven,
+	}
+	
+	recipe Build Artsy Oven
+    {
+       Stone=30,
+	   MetalPipe=4,
+	   ConcretePowder=5,
+	   WeldingRods=2,
+       BlowTorch,
+	   keep [Recipe.GetItemTypes.Hammer],
+	   
+	   Result:SpoonOven1,
+	   Category:Carpentry,
+	   SkillRequired:Woodwork=8;MetalWelding=8,
+	   AnimNode:VehicleWorkOnTire,
+	   Prop1:Hammer,
+	   CanBeDoneFromFloor :TRUE,
+       Time:1000.0,
+    }
+	
+	recipe Build Tall Light Tile Oven
+    {
+       Stone=30,
+	   ConcretePowder=10,
+	   keep [Recipe.GetItemTypes.Hammer],
+	   
+	   Result:SpoonOven2,
+	   Category:Carpentry,
+	   SkillRequired:Woodwork=8,
+	   AnimNode:VehicleWorkOnTire,
+	   Prop1:Hammer,
+	   CanBeDoneFromFloor :TRUE,
+       Time:1000.0,
+    }
+	
+	recipe Build Low Light Tile Oven
+    {
+       Stone=30,
+	   ConcretePowder=5,
+	   keep [Recipe.GetItemTypes.Hammer],
+	   
+	   Result:SpoonOven3,
+	   Category:Carpentry,
+	   SkillRequired:Woodwork=8,
+	   AnimNode:VehicleWorkOnTire,
+	   Prop1:Hammer,
+	   CanBeDoneFromFloor :TRUE,
+       Time:1000.0,
+    }
+	
+	recipe Build Low Dark Tile Half-Metal Oven
+    {
+       Stone=30,
+	   SheetMetal=5,
+	   ConcretePowder=5,
+	   WeldingRods=2,
+       BlowTorch,
+	   keep [Recipe.GetItemTypes.Hammer],
+	   
+	   Result:SpoonOven4,
+	   Category:Carpentry,
+	   SkillRequired:Woodwork=6;MetalWelding=4,
+	   AnimNode:VehicleWorkOnTire,
+	   Prop1:Hammer,
+	   CanBeDoneFromFloor :TRUE,
+       Time:1000.0,
+    }
+
+}

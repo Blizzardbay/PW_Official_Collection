@@ -1,0 +1,49 @@
+===[v0.6.0]====================================================[11.10.2019]===
+ + nutritionist and cook traits display extended info
+ + chef and burger flipper professions also display extended info
+ ! fixed tooltip width without trait count in invisible bar
+ ! fixed tooltip width for wide Russian fonts
+
+===[v0.5.1]====================================================[30.04.2019]===
+ ! fixed issue with stale food time being out of tooltip with trait on
+ ! fixed tooltip width for long vanilla strings (f.e. custom food names)
+
+===[v0.5]======================================================[28.04.2019]===
+ + added compatibility with ORGM and similar tooltip-using mods
+ + added support for medium and large fonts
+ ! increased bar length and linked it to font size
+ ! reworked tooltip width and height logic
+ ! significant overhaul of abreu's legacy code
+ ! performance improvements
+ - removed ISToolTipInv:setItem override
+ - removed limit on days in leu of checks for '1000000000' (default for 
+   BaseScriptObject.Item)
+
+===[v0.4]======================================================[21.10.2018]===
+ + added PTBR translation by Chrono
+
+===[v0.3]======================================================[01.07.2018]===
+ + added CN translation by Misha
+ + moved 'stale in' and 'rotten in' strings to localization file
+ + moved datetime suffixes ('d', 'h', 'm', 's') to localization file
+ ! changed translation strings names to minimize risk of interference with 
+   other mods
+ ! fixed typos
+
+===[v0.2.2]====================================================[30.06.2018]===
+ - removed obsolete localization string 'UI_have_daysoff'
+ ! fixed typo in comment
+
+===[v0.2.1]====================================================[13.06.2018]===
+ ! fixed RU and PL translations
+
+===[v0.2]======================================================[20.05.2018]===
+ + added RU translation by Dr. RolePlay
+
+===[v0.1]======================================================[08.04.2018]===
+ ! massive rewrite of abreu20011's mod
+ ! changed time format
+ ! improved positioning
+ ! replaced colors
+ ! fixed math and multiline output
+ + added granularity to the bar

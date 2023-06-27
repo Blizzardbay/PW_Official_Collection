@@ -1,0 +1,477 @@
+module MoreGloves
+{
+	item DottedGloves
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Dotted Kevlar Gloves,
+		ClothingItem = DottedGloves,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		IconsForTexture = Dotted01;Dotted02;Dotted03;Dotted04,
+		Weight = 0.1,
+		CombatSpeedModifier = 1.02,
+        	Insulation = 0.40,
+        	WindResistance = 0.20,
+		ScratchDefense = 15,
+        	BiteDefense = 5,
+		FabricType = Cotton,
+        	WorldStaticModel = Gloves_Ground,
+	}
+		
+	item FingerlessLeatherGloves
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Fingerless Leather Gloves,
+		ClothingItem = FingerlessLeatherGloves,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		IconsForTexture = Fingerless01;Fingerless02,
+		Weight = 0.1,
+		Insulation = 0.10,
+		WindResistance = 0.20,
+		ScratchDefense = 15,
+		BiteDefense = 5,
+		CombatSpeedModifier = 1.01,
+		FabricType = Leather,
+		WorldStaticModel = Gloves_Ground,
+	}
+	
+	item ImprovisedGloves
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Leather Hand Wrappings,
+		ClothingItem = ImprovisedGloves,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Improvised,
+		Weight = 0.2,
+        	Insulation = 0.25,
+        	WindResistance = 0.40,
+		ScratchDefense = 35,
+        	BiteDefense = 20,
+		CombatSpeedModifier = 0.98,
+		FabricType = Cotton,
+        	WorldStaticModel = Gloves_Ground,
+	}
+	item NitrileGloves
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Cut-Resistant Gloves,
+		ClothingItem = NitrileGloves,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		IconsForTexture = Nitrile01;Nitrile02;Nitrile03;Nitrile04;Nitrile05;Nitrile06,
+		Weight = 0.15,
+        	Insulation = 0.10,
+        	WindResistance = 0.20,
+		ScratchDefense = 45,
+        	BiteDefense = 15,
+		CombatSpeedModifier = 0.99,
+		FabricType = Cotton,
+        	WorldStaticModel = Gloves_Ground,
+	}
+	
+  /************************ Ripped ************************/	
+	
+	item RippedDenimGloves
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Denim Hand Wrappings,
+		ClothingItem = RippedDenimGloves,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = RippedDenim,
+		Weight = 0.15,
+        	Insulation = 0.20,
+        	WindResistance = 0.35,
+		ScratchDefense = 25,
+        	BiteDefense = 5,
+		FabricType = Denim,
+        	WorldStaticModel = Gloves_Ground,
+	}
+	item RippedSheetsGloves
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Cloth Hand Wrappings,
+		ClothingItem = RippedSheetsGloves,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = RippedSheet,
+		Weight = 0.1,
+        	Insulation = 0.25,
+        	WindResistance = 0.25,
+		ScratchDefense = 15,
+        	BiteDefense = 5,
+		FabricType = Cotton,
+        	WorldStaticModel = Gloves_Ground,
+	}
+	
+  /************************ WeightliftingGloves ************************/	
+
+	item WeightliftingGloves
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Weightlifting Gloves,
+		ClothingItem = WeightliftingGloves,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		IconsForTexture = Weightlifting01;Weightlifting02;Weightlifting03,
+		Weight = 0.1,
+        	Insulation = 0.15,
+        	WindResistance = 0.25,
+		ScratchDefense = 25,
+        	BiteDefense = 10,
+		CombatSpeedModifier = 1.02,
+		FabricType = Leather,
+        	WorldStaticModel = Gloves_Ground,
+	}
+	
+  /************************ MetalWelder ************************/
+
+	item MetalWelderGrey
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Metalwelder Gloves,
+		ClothingItem = MetalWelderGREY,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = MetalWelderGrey,
+		Weight = 0.4,
+        	Insulation = 0.35,
+        	WindResistance = 0.60,
+		ScratchDefense = 100,
+        	BiteDefense = 100,
+		FabricType = Leather,
+		CombatSpeedModifier = 0.98,
+        	WorldStaticModel = MetalWelderGrey_Ground,
+	}
+	item MetalWelderOrange
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Metalwelder Gloves,
+		ClothingItem = MetalWelderORANGE,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = MetalWelderOrange,
+		Weight = 0.4,
+        	Insulation = 0.35,
+        	WindResistance = 0.60,
+		ScratchDefense = 100,
+        	BiteDefense = 100,
+		CombatSpeedModifier = 0.98,
+		FabricType = Leather,
+        	WorldStaticModel = MetalWelderOrange_Ground,
+	}
+	item MetalWelderRed
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Metalwelder Gloves,
+		ClothingItem = MetalWelderRED,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = MetalWelderRed,
+		Weight = 0.4,
+        	Insulation = 0.35,
+        	WindResistance = 0.60,
+		ScratchDefense = 100,
+        	BiteDefense = 100,
+		CombatSpeedModifier = 0.98,
+		FabricType = Leather,
+        	WorldStaticModel = MetalWelderRed_Ground,
+	}
+	item MetalWelderWhite
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Metalwelder Gloves,
+		ClothingItem = MetalWelderWHITE,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = MetalWelderWhite,
+		Weight = 0.4,
+        	Insulation = 0.35,
+        	WindResistance = 0.60,
+		ScratchDefense = 100,
+        	BiteDefense = 100,
+		CombatSpeedModifier = 0.98,
+		FabricType = Leather,
+        	WorldStaticModel = MetalWelderWhite_Ground,
+	}
+	item MetalWelderYellow
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Metalwelder Gloves,
+		ClothingItem = MetalWelderYELLOW,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = MetalWelderYellow,
+		Weight = 0.4,
+        	Insulation = 0.35,
+        	WindResistance = 0.60,
+		ScratchDefense = 100,
+        	BiteDefense = 100,
+		CombatSpeedModifier = 0.98,
+		FabricType = Leather,
+        	WorldStaticModel = MetalWelderYellow_Ground,
+	}
+
+  /************************ Kickboxing ************************/
+
+	item Kickboxing01
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Kickboxing Gloves,
+		ClothingItem = Kickboxing01,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Kickboxing01,
+		Weight = 0.15,
+        	Insulation = 0.15,
+        	WindResistance = 0.20,
+		ScratchDefense = 35,
+        	BiteDefense = 15,
+		FabricType = Leather,
+        	WorldStaticModel = Kickboxing01_ground,
+	}
+	item Kickboxing02
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Kickboxing Gloves,
+		ClothingItem = Kickboxing02,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Kickboxing02,
+		Weight = 0.15,
+        	Insulation = 0.15,
+        	WindResistance = 0.20,
+		ScratchDefense = 35,
+        	BiteDefense = 15,
+		FabricType = Leather,
+        	WorldStaticModel = Kickboxing02_ground,
+	}
+	item Kickboxing03
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Kickboxing Gloves,
+		ClothingItem = Kickboxing03,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Kickboxing03,
+		Weight = 0.15,
+        	Insulation = 0.15,
+        	WindResistance = 0.20,
+		ScratchDefense = 35,
+        	BiteDefense = 15,
+		FabricType = Leather,
+        	WorldStaticModel = Kickboxing03_ground,
+	}
+	item Kickboxing04
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Kickboxing Gloves,
+		ClothingItem = Kickboxing04,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Kickboxing04,
+		Weight = 0.15,
+        	Insulation = 0.15,
+        	WindResistance = 0.20,
+		ScratchDefense = 35,
+        	BiteDefense = 15,
+		FabricType = Leather,
+        	WorldStaticModel = Kickboxing04_ground,
+	}
+	item Kickboxing05
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Kickboxing Gloves,
+		ClothingItem = Kickboxing05,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Kickboxing05,
+		Weight = 0.15,
+        	Insulation = 0.15,
+        	WindResistance = 0.20,
+		ScratchDefense = 35,
+        	BiteDefense = 15,
+		FabricType = Leater,
+        	WorldStaticModel = Kickboxing05_ground,
+	}
+	item Kickboxing06
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Kickboxing Gloves,
+		ClothingItem = Kickboxing06,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Kickboxing06,
+		Weight = 0.15,
+        	Insulation = 0.15,
+        	WindResistance = 0.20,
+		ScratchDefense = 35,
+        	BiteDefense = 15,
+		FabricType = Leather,
+        	WorldStaticModel = Kickboxing06_ground,
+	}
+	
+/************************ Hazmat ************************/
+	item Hazmat01
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Hazmat Gloves,
+		ClothingItem = Hazmat01,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Hazmat01,
+		Weight = 0.1,
+        	Insulation = 1.00,
+        	WindResistance = 1.00,
+		ScratchDefense = 25,
+        	BiteDefense = 10,
+		FabricType = Leather,
+        	WorldStaticModel = Gloves_Ground,
+	}
+	item Hazmat02
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Hazmat Gloves,
+		ClothingItem = Hazmat02,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Hazmat02,
+		Weight = 0.1,
+        	Insulation = 1.00,
+        	WindResistance = 1.00,
+		ScratchDefense = 25,
+        	BiteDefense = 10,
+		FabricType = Leather,
+        	WorldStaticModel = Gloves_Ground,
+	}
+	item Hazmat03
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Hazmat Gloves,
+		ClothingItem = Hazmat03,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Hazmat03,
+		Weight = 0.1,
+        	Insulation = 1.00,
+        	WindResistance = 1.00,
+		ScratchDefense = 25,
+        	BiteDefense = 10,
+		FabricType = Leather,
+        	WorldStaticModel = Gloves_Ground,
+	}
+/************************ Winter ************************/
+	item Winter01
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Winter Gloves,
+		ClothingItem = Winter01,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Winter01,
+		Weight = 0.1,
+        	Insulation = 0.80,
+        	WindResistance = 0.75,
+		ScratchDefense = 25,
+        	BiteDefense = 10,
+		CombatSpeedModifier = 0.98,
+		FabricType = Cotton,
+        	WorldStaticModel = Gloves_Ground,
+	}
+	item Winter04
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Winter Gloves,
+		ClothingItem = Winter04,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Winter04,
+		Weight = 0.1,
+        	Insulation = 0.80,
+        	WindResistance = 0.75,
+		ScratchDefense = 25,
+        	BiteDefense = 10,
+		CombatSpeedModifier = 0.98,
+		FabricType = Cotton,
+        	WorldStaticModel = Gloves_Ground,
+	}
+	item Winter05
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Winter Gloves,
+		ClothingItem = Winter05,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Winter05,
+		Weight = 0.1,
+        	Insulation = 0.80,
+        	WindResistance = 0.75,
+		ScratchDefense = 25,
+        	BiteDefense = 10,
+		CombatSpeedModifier = 0.98,
+		FabricType = Cotton,
+        	WorldStaticModel = Gloves_Ground,
+	}
+	item Winter06
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Winter Gloves,
+		ClothingItem = Winter06,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Winter06,
+		Weight = 0.1,
+        	Insulation = 0.80,
+        	WindResistance = 0.75,
+		ScratchDefense = 25,
+        	BiteDefense = 10,
+		CombatSpeedModifier = 0.98,
+		FabricType = Cotton,
+        	WorldStaticModel = Gloves_Ground,
+	}
+	item Winter07
+	{
+	    	DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Winter Gloves,
+		ClothingItem = Winter07,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = Winter07,
+		Weight = 0.1,
+        	Insulation = 0.80,
+        	WindResistance = 0.75,
+		ScratchDefense = 25,
+        	BiteDefense = 10,
+		CombatSpeedModifier = 0.98,
+		FabricType = Cotton,
+        	WorldStaticModel = Gloves_Ground,
+	}
+}

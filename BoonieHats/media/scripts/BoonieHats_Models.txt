@@ -1,0 +1,332 @@
+module Base
+{
+	
+	/***************    Black Camo *********************/
+    model BlackCamo_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_BlackMilitaryCamo,
+		scale = 0.0045,
+	}
+	model BlackCamoNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_BlackMilitaryCamo,
+		scale = 0.0045,
+	}
+    /************Cat Black*********************/
+	
+	model BlackCat_Ground
+	{
+		mesh = Worlditems/BoonieHatCat_Ground,
+		texture = Clothes/BonnieHat_Cat,
+		scale = 0.0045,
+	}
+	model BlackCatNet_Ground
+	{
+		mesh = Worlditems/BoonieHatCatNet_Ground,
+		texture = Clothes/BonnieHat_Cat,
+		scale = 0.0045,
+	}
+    /************Cat Orange *********************/
+
+	model OrangeCat_Ground
+	{
+		mesh = Worlditems/BoonieHatCat_Ground,
+		texture = Clothes/BonnieHat_CatOrange,
+		scale = 0.0045,
+	}
+	model OrangeCatNet_Ground
+	{
+		mesh = Worlditems/BoonieHatCatNet_Ground,
+		texture = Clothes/BonnieHat_CatOrange,
+		scale = 0.0045,
+	}
+    /************Cat White *********************/
+	model WhiteCat_Ground
+	{
+		mesh = Worlditems/BoonieHatCat_Ground,
+		texture = Clothes/BonnieHat_CatWhite,
+		scale = 0.0045,
+	}
+	model WhiteCatNet_Ground
+	{
+		mesh = Worlditems/BoonieHatCatNet_Ground,
+		texture = Clothes/BonnieHat_CatWhite,
+		scale = 0.0045,
+	}
+
+    /******************************************************************ChocolateChip Camo************************************************************************/
+
+	model ChocolateChipCamo_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_ChocolateChipCamo,
+		scale = 0.0045,
+	}
+	model ChocolateChipCamoNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_ChocolateChipCamo,
+		scale = 0.0045,
+	}
+
+    /************Dark Blue *********************/
+
+	model DarkBlueCamo_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_DarkBlueCamo,
+		scale = 0.0045,
+	}
+	model DarkBlueCamoNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_DarkBlueCamo,
+		scale = 0.0045,
+	}
+
+    /************Default *********************/
+
+	model DefaultNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_Default,
+		scale = 0.0045,
+	}
+
+
+    /************* Desert Colored ********************/
+
+	model DesertColoredCamo_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_DesertColoredCamo,
+		scale = 0.0045,
+	}
+	model DesertColoredCamoNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_DesertColoredCamo,
+		scale = 0.0045,
+	}
+
+
+    /************* Desert Night ********************/
+
+	model DesertNightCamo_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_DesertNightCamo,
+		scale = 0.0045,
+	}
+	model DesertNightCamoNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_DesertNightCamo,
+		scale = 0.0045,
+	}
+
+    /************* Desert Night Dark********************/
+
+
+	model DesertNightDarkCamo_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_DesertNightDarkCamo,
+		scale = 0.0045,
+	}
+	model DesertNightDarkCamoNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_DesertNightDarkCamo,
+		scale = 0.0045,
+	}
+
+
+    /************* Desert Tan ********************/
+	
+	model DesertTanCamo_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_DesertTanCamo,
+		scale = 0.0045,
+	}
+	model DesertTanCamoNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_DesertTanCamo,
+		scale = 0.0045,
+	}
+
+
+	/****************************************************************************Digital Camo****************************************************************************/
+
+	
+	model DigitalCamo_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_DigitalCamo,
+		scale = 0.0045,
+	}
+	model DigitalCamoNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_DigitalCamo,
+		scale = 0.0045,
+	}
+
+
+	/*****************************************************************************DigitalCamo Blue Camo******************************************************************************/
+
+	model DigitalCamoBlue_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_DigitalCamo_Blue,
+		scale = 0.0045,
+	}
+	model DigitalCamoBlueNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_DigitalCamo_Blue,
+		scale = 0.0045,
+	}
+
+    /*************Digital Camo Green ********************/
+
+	model DigitalCamoGreen_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_DigitalCamo_Green,
+		scale = 0.0045,
+	}
+	model DigitalCamoGreenNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_DigitalCamo_Green,
+		scale = 0.0045,
+	}
+
+
+	/*****************************************************************************Marpat Camo******************************************************************************/
+
+	model MarpatCamo_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_MarpatCamo,
+		scale = 0.0045,
+	}
+	model MarpatCamoNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_MarpatCamo,
+		scale = 0.0045,
+	}
+
+
+    /************* Multi cam Camo ********************/
+
+	model MultiCamCamo_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_MultiCamCamo,
+		scale = 0.0045,
+	}
+	model MultiCamCamoNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_MultiCamCamo,
+		scale = 0.0045,
+	}
+
+
+    /************* UCP Camo ********************/
+
+	model UCPCamo_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_UCP,
+		scale = 0.0045,
+	}
+	model UCPCamoNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_UCP,
+		scale = 0.0045,
+	}
+
+	/****************************************************************************Urban Normal***************************************************************************/
+
+	model UrbanCamo_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_UrbanCamo,
+		scale = 0.0045,
+	}
+	model UrbanCamoNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_UrbanCamo,
+		scale = 0.0045,
+	}
+
+
+	/***************************************************************************Urban Pixelated***************************************************************************/
+
+	model UrbanPixelatedCamo_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_UrbanPixelatedCamo,
+		scale = 0.0045,
+	}
+	model UrbanPixelatedCamoNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_UrbanPixelatedCamo,
+		scale = 0.0045,
+	}
+
+    /************* USCMC Desert ********************/
+
+	model UsmcCamo_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_UsmcDesertCamo,
+		scale = 0.0045,
+	}
+	model UsmcCamoNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_UsmcDesertCamo,
+		scale = 0.0045,
+	}
+
+	/************* WHITE ********************/
+
+	model WhiteBoonie_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_White,
+		scale = 0.0045,
+	}
+	model WhiteBoonieNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_White,
+		scale = 0.0045,
+	}
+	/************* WHITE ********************/
+
+	model CaptainBoonie_Ground
+	{
+		mesh = Worlditems/BoonieHat_Ground,
+		texture = Clothes/BonnieHat_Captain,
+		scale = 0.0045,
+	}
+	model CaptainBoonieNet_Ground
+	{
+		mesh = Worlditems/BoonieHatNet_Ground,
+		texture = Clothes/BonnieHat_Captain,
+		scale = 0.0045,
+	}
+}

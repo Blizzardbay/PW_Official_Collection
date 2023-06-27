@@ -1,0 +1,59 @@
+module Eiskafee
+{
+	imports
+	{
+		Base,
+	}
+	item Small_Eiskafee
+	{
+		DisplayName = Eiskaffee 0.5L,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = EiskaffeeSmallIcon,
+		EvolvedRecipe = HotDrink:2;HotDrinkRed:2;HotDrinkWhite:2;HotDrinkSpiffo:2;HotDrinkTea:2;Beverage:2;Beverage2:2;Oatmeal:2,
+		Packaged = TRUE,
+		FoodType = NoExplicit,
+		HungerChange = -5,
+		ThirstChange = -50,
+		FatigueChange = -15,
+		UnhappyChange = -10,
+		Calories = 500,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 3,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCarton,
+		WorldStaticModel = EiskaffeSmall_Ground,
+		StaticModel = H_EiskaffeSmall,
+	}
+
+	item Large_Eiskafee
+	{
+		DisplayName = Eiskaffee 1L,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.0,
+		Icon = EiskaffeeLargeIcon,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = HotDrink:2;HotDrinkRed:2;HotDrinkWhite:2;HotDrinkSpiffo:2;HotDrinkTea:2;Beverage:2;Beverage2:2;Oatmeal:2;Soup:5;Stew:5,
+		Packaged = TRUE,
+		FoodType = NoExplicit,
+		HungerChange = -10,
+		ThirstChange = -100,
+		FatigueChange = -30,
+		UnhappyChange = -20,
+		Calories = 1050,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 6.3,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCarton,
+		WorldStaticModel = EiskaffeLarge_Ground,
+		StaticModel = H_EiskaffeLarge,
+	}	
+	
+
+
+}
+

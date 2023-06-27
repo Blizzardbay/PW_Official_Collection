@@ -1,0 +1,19 @@
+ItemName_RU {
+
+	-- Bottling Meat MOD
+	-- Russian translation by Admiral.Slowpoke
+
+	ItemName_Bottling.BottlingChicken = "Банка консервированной курятины",
+	ItemName_Bottling.BottlingFrogMeat = "Банка консервированной лягушатины",
+	ItemName_Bottling.BottlingMeatPatty = "Банка мясных котлет",
+	ItemName_Bottling.BottlingMuttonChop = "Банка консервированной баранины",
+	ItemName_Bottling.BottlingPorkChop = "Банка консервированной свинины",
+	ItemName_Bottling.BottlingRabbitmeat = "Банка консервированной крольчатины",
+	ItemName_Bottling.BottlingSmallanimalmeat = "Банка с мясом мелкого животного",
+	ItemName_Bottling.BottlingSmallbirdmeat = "Банка с мясом маленькой птицы",
+	ItemName_Bottling.BottlingSteak = "Банка со стейком",
+	ItemName_Bottling.BottlingBacon = "Банка с беконом",
+	ItemName_Bottling.BottlingBaconBits = "Банка с кусочками бекона",
+	ItemName_Bottling.BottlingBaconRashers = "Банка с ломтиками бекона",
+	ItemName_Bottling.BottlingHam = "Банка консервированной ветчины",
+}

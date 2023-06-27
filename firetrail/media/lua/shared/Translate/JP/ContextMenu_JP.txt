@@ -1,0 +1,5 @@
+ContextMenu_JP = {
+	ContextMenu_Firetrail = "火の軌跡",
+	ContextMenu_Firetrail_create = "軌跡作成",
+	ContextMenu_Firetrail_ignite = "点火",
+}

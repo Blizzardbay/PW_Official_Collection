@@ -1,0 +1,4 @@
+Recipes_RU = {
+    Recipe_Remove_Coldpacks = "Убрать пакет льда",
+    Recipe_Make_WaterPocket = "Набрать пакет воды",
+}

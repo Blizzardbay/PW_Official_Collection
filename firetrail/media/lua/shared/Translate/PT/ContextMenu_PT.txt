@@ -1,0 +1,5 @@
+ContextMenu_PT = {
+	ContextMenu_Firetrail = "Trilha de fogo",
+	ContextMenu_Firetrail_create = "Criar trilha",
+	ContextMenu_Firetrail_ignite = "Atear fogo",
+}

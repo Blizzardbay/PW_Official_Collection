@@ -1,0 +1,209 @@
+
+/*** Bottling of Meat MOD ***/
+
+/*** 2022-01-04 Version 2.03 ***/
+
+
+module Bottling
+{
+	imports
+	{
+		Base
+	}
+
+item BottlingChicken
+	{
+		Type					=	Food,
+		DisplayName				=	Jar of Chicken,
+		Icon					=	Bottling,
+		Weight					=	1.0,
+		DaysFresh 				=	1095,
+		DaysTotallyRotten 		=	1825,
+		OnCooked				=	BottlingCannedFood_OnCooked,
+		IsCookable				=	TRUE,
+		MinutesToBurn			=	120,
+		MinutesToCook			=	60,
+		WorldStaticModel		=	Bottling_Jar_Food,
+	}
+
+item BottlingSteak
+	{
+		Type					=	Food,
+		DisplayName				=	Jar of Steak,
+		Icon					=	Bottling,
+		Weight					=	1.0,
+		DaysFresh 				=	1095,
+		DaysTotallyRotten 		=	1825,
+		OnCooked				=	BottlingCannedFood_OnCooked,
+		IsCookable				=	TRUE,
+		MinutesToBurn			=	120,
+		MinutesToCook			=	60,
+		WorldStaticModel		=	Bottling_Jar_Food,
+	}
+
+item BottlingFrogMeat
+	{
+		Type					=	Food,
+		DisplayName				=	Jar of Frog Meat,
+		Icon					=	Bottling,
+		Weight					=	1.0,
+		DaysFresh 				=	1095,
+		DaysTotallyRotten 		=	1825,
+		OnCooked				=	BottlingCannedFood_OnCooked,
+		IsCookable				=	TRUE,
+		MinutesToBurn			=	120,
+		MinutesToCook			=	60,
+		WorldStaticModel		=	Bottling_Jar_Food,
+	}
+
+item BottlingMeatPatty
+	{
+		Type					=	Food,
+		DisplayName				=	Jar of Meat Patty,
+		Icon					=	Bottling,
+		Weight					=	1.0,
+		DaysFresh 				=	1095,
+		DaysTotallyRotten 		=	1825,
+		OnCooked				=	BottlingCannedFood_OnCooked,
+		IsCookable				=	TRUE,
+		MinutesToBurn			=	120,
+		MinutesToCook			=	60,
+		WorldStaticModel		=	Bottling_Jar_Food,
+	}
+
+item BottlingMuttonChop
+	{
+		Type					=	Food,
+		DisplayName				=	Jar of Mutton Chop,
+		Icon					=	Bottling,
+		Weight					=	1.0,
+		DaysFresh 				=	1095,
+		DaysTotallyRotten 		=	1825,
+		OnCooked				=	BottlingCannedFood_OnCooked,
+		IsCookable				=	TRUE,
+		MinutesToBurn			=	120,
+		MinutesToCook			=	60,
+		WorldStaticModel		=	Bottling_Jar_Food,
+	}
+
+item BottlingPorkChop
+	{
+		Type					=	Food,
+		DisplayName				=	Jar of Pork Chop,
+		Icon					=	Bottling,
+		Weight					=	1.0,
+		DaysFresh 				=	1095,
+		DaysTotallyRotten 		=	1825,
+		OnCooked				=	BottlingCannedFood_OnCooked,
+		IsCookable				=	TRUE,
+		MinutesToBurn			=	120,
+		MinutesToCook			=	60,
+		WorldStaticModel		=	Bottling_Jar_Food,
+	}
+
+item BottlingRabbitmeat
+	{
+		Type					=	Food,
+		DisplayName				=	Jar of Rabbit Meat,
+		Icon					=	Bottling,
+		Weight					=	1.0,
+		DaysFresh 				=	1095,
+		DaysTotallyRotten 		=	1825,
+		OnCooked				=	BottlingCannedFood_OnCooked,
+		IsCookable				=	TRUE,
+		MinutesToBurn			=	120,
+		MinutesToCook			=	60,
+		WorldStaticModel		=	Bottling_Jar_Food,
+	}
+
+item BottlingSmallanimalmeat
+	{
+		Type					=	Food,
+		DisplayName				=	Jar of Small Animal Meat,
+		Icon					=	Bottling,
+		Weight					=	1.0,
+		DaysFresh 				=	1095,
+		DaysTotallyRotten 		=	1825,
+		OnCooked				=	BottlingCannedFood_OnCooked,
+		IsCookable				=	TRUE,
+		MinutesToBurn			=	120,
+		MinutesToCook			=	60,
+		WorldStaticModel		=	Bottling_Jar_Food,
+	}
+
+item BottlingSmallbirdmeat
+	{
+		Type					=	Food,
+		DisplayName				=	Jar of Small Bird Meat,
+		Icon					=	Bottling,
+		Weight					=	1.0,
+		DaysFresh 				=	1095,
+		DaysTotallyRotten 		=	1825,
+		OnCooked				=	BottlingCannedFood_OnCooked,
+		IsCookable				=	TRUE,
+		MinutesToBurn			=	120,
+		MinutesToCook			=	60,
+		WorldStaticModel		=	Bottling_Jar_Food,
+	}
+
+item BottlingBacon
+	{
+		Type					=	Food,
+		DisplayName				=	Jar of Bacon,
+		Icon					=	Bottling,
+		Weight					=	1.0,
+		DaysFresh 				=	1095,
+		DaysTotallyRotten 		=	1825,
+		OnCooked				=	BottlingCannedFood_OnCooked,
+		IsCookable				=	TRUE,
+		MinutesToBurn			=	120,
+		MinutesToCook			=	60,
+		WorldStaticModel		=	Bottling_Jar_Food,
+	}
+
+item BottlingBaconBits
+	{
+		Type					=	Food,
+		DisplayName				=	Jar of Bacon Bits,
+		Icon					=	Bottling,
+		Weight					=	1.0,
+		DaysFresh 				=	1095,
+		DaysTotallyRotten 		=	1825,
+		OnCooked				=	BottlingCannedFood_OnCooked,
+		IsCookable				=	TRUE,
+		MinutesToBurn			=	120,
+		MinutesToCook			=	60,
+		WorldStaticModel		=	Bottling_Jar_Food,
+	}
+
+item BottlingBaconRashers
+	{
+		Type					=	Food,
+		DisplayName				=	Jar of Bacon Rashers,
+		Icon					=	Bottling,
+		Weight					=	1.0,
+		DaysFresh 				=	1095,
+		DaysTotallyRotten 		=	1825,
+		OnCooked				=	BottlingCannedFood_OnCooked,
+		IsCookable				=	TRUE,
+		MinutesToBurn			=	120,
+		MinutesToCook			=	60,
+		WorldStaticModel		=	Bottling_Jar_Food,
+	}
+
+item BottlingHam
+	{
+		Type					=	Food,
+		DisplayName				=	Jar of Ham,
+		Icon					=	Bottling,
+		Weight					=	1.0,
+		DaysFresh 				=	1095,
+		DaysTotallyRotten 		=	1825,
+		OnCooked				=	BottlingCannedFood_OnCooked,
+		IsCookable				=	TRUE,
+		MinutesToBurn			=	120,
+		MinutesToCook			=	60,
+		WorldStaticModel		=	Bottling_Jar_Food,
+	}
+
+}

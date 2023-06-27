@@ -1,0 +1,22 @@
+module Base
+{
+	recipe Make Homemade Gunpowder
+    {
+       Charcoal=5, CompostBag=2, SharpedStone=2,
+       keep MortarPestle,
+
+       Result:GunPowder=1,
+       Time:100.0,
+       Category:Survivalist,
+    }
+	
+	recipe Make Charcoal
+	{
+		Log=2,
+		NearItem:Campfire,
+		Result:Charcoal,
+		Time:1000.0,
+		Category:Survivalist,
+		CanBeDoneFromFloor:true,
+	}
+}

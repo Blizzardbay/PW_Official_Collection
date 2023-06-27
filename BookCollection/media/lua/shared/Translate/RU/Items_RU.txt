@@ -1,0 +1,81 @@
+Items_RU = {
+
+
+	DisplayName_Carpentry_for_Beginners = "Плотницкие работы Tom.1: для чайников",
+	DisplayName_Carpentry_for_Intermediates = "Плотницкие работы Tom.2: промежуточный",
+	DisplayName_Advanced_Carpentry = "Плотницкие работы Tom.3: продвинутый",
+	DisplayName_Expert_Carpentry = "Плотницкие работы Tom.4: эксперт",
+	DisplayName_Master_Carpentry = "Плотницкие работы Tom.5: мастер",
+
+
+	DisplayName_Cooking_for_Beginners = "Кулинария Tom.1: для чайников",
+	DisplayName_Cooking_for_Intermediates = "Кулинария Tom.2: промежуточный",
+	DisplayName_Advanced_Cooking = "Кулинария Tom.3: продвинутый",
+	DisplayName_Expert_Cooking = "Кулинария Tom.4: эксперт",
+	DisplayName_Master_Cooking = "Кулинария Tom.5: мастер",
+
+
+	DisplayName_Farming_for_Beginners = "Сельское хозяйство Tom.1: для чайников",
+	DisplayName_Farming_for_Intermediates = "Сельское хозяйство Tom.2: промежуточный",
+	DisplayName_Advanced_Farming = "Сельское хозяйство Tom.3: продвинутый",
+	DisplayName_Expert_Farming = "Сельское хозяйство Tom.4: эксперт",
+	DisplayName_Master_Farming = "Сельское хозяйство Tom.5: мастер",
+
+
+	DisplayName_Fishing_for_Beginners = "Рыбалка Tom.1: для чайников",
+	DisplayName_Fishing_for_Intermediates = "Рыбалка Tom.2: промежуточный",
+	DisplayName_Advanced_Fishing = "Рыбалка Tom.3: продвинутый",
+	DisplayName_Expert_Fishing = "Рыбалка Tom.4: эксперт",
+	DisplayName_Master_Fishing = "Рыбалка Tom.5: мастер",
+
+
+	DisplayName_Trapping_for_Beginners = "Ловушка Tom.1: для чайников",
+	DisplayName_Trapping_for_Intermediates = "Ловушка Tom.2: промежуточный",
+	DisplayName_Advanced_Trapping = "Ловушка Tom.3: продвинутый",
+	DisplayName_Expert_Trapping = "Ловушка Tom.4: эксперт",
+	DisplayName_Master_Trapping = "Ловушка Tom.5: мастер",
+
+
+	DisplayName_Electricity_for_Beginners = "Электричество Tom.1: для чайников",
+	DisplayName_Electricity_for_Intermediates = "Электричество Tom.2: промежуточный",
+	DisplayName_Advanced_Electricity = "Электричество Tom.3: продвинутый",
+	DisplayName_Expert_Electricity = "Электричество Tom.4: эксперт",
+	DisplayName_Master_Electricity = "Электричество Tom.5: мастер",
+
+
+	DisplayName_FirstAid_for_Beginners = "Первая помощь Tom.1: для чайников",
+	DisplayName_FirstAid_for_Intermediates = "Первая помощь Tom.2: промежуточный",
+	DisplayName_Advanced_First_Aid = "Первая помощь Tom.3: продвинутый",
+	DisplayName_Expert_First_Aid = "Первая помощь Tom.4: эксперт",
+	DisplayName_Master_First_Aid = "Первая помощь Tom.5: мастер",
+
+
+	DisplayName_Foraging_for_Beginners = "Собирательство Tom.1: для чайников",
+	DisplayName_Foraging_for_Intermediates = "Собирательство Tom.2: промежуточный",
+	DisplayName_Advanced_Foraging = "Собирательство Tom.3: продвинутый",
+	DisplayName_Expert_Foraging = "Собирательство Tom.4: эксперт",
+	DisplayName_Master_Foraging = "Собирательство Tom.5: мастер",
+
+
+	DisplayName_Metalwork_for_Beginners = "Металлообработка Tom.1: для чайников",
+	DisplayName_Metalwork_for_Intermediates = "Металлообработка Tom.2: промежуточный",
+	DisplayName_Advanced_Metalwork = "Металлообработка Tom.3: продвинутый",
+	DisplayName_Expert_Metalwork = "Металлообработка Tom.4: эксперт",
+	DisplayName_Master_Metalwork = "Металлообработка Tom.5: мастер",
+
+
+	DisplayName_Smithing_for_Beginners = "Ковка Tom.1: для чайников",
+	DisplayName_Smithing_for_Intermediates = "Ковка Tom.2: промежуточный",
+	DisplayName_Advanced_Smithing = "Ковка Tom.3: продвинутый",
+	DisplayName_Expert_Smithing = "Ковка Tom.4: эксперт",
+	DisplayName_Master_Smithing = "Ковка Tom.5: мастер",
+	
+	
+	DisplayName_Mechanic_for_Beginners = "Механика Tom.1: для чайников",
+	DisplayName_Mechanic_for_Intermediates = "Механика Tom.2: промежуточный",
+	DisplayName_Advanced_Mechanics = "Механика Tom.3: продвинутый",
+	DisplayName_Expert_Mechanics = "Механика Tom.4: эксперт",
+	DisplayName_Master_Mechanics = "Механика Tom.5: мастер",
+
+
+}

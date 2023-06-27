@@ -1,0 +1,25 @@
+module ImprovisedCabinetry {
+    imports {
+        Base
+    }
+
+    item WoodPanel {
+        weight = 1.0,
+        Type = Normal,
+        DisplayName = Wood panel,
+        Icon = ICWoodPanel,
+        DisplayCategory = Material,
+        WorldStaticModel = ImprovisedCabinetry.WoodPanel,
+    }
+
+    item SmallHinge {
+        weight = 0.15,
+        Type = Normal,
+        DisplayName = Small hinge,
+        Icon = Doorhinge,
+        DisplayCategory = Material,
+        WorldStaticModel = ImprovisedCabinetry.SmallHinge,
+        MetalValue = 5,
+    }
+
+}

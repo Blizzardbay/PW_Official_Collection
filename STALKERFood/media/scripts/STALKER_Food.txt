@@ -1,0 +1,282 @@
+module stalkerfood
+{
+	imports
+	{
+		Base
+	}
+
+	    item CossacksVodka
+	{
+		HungerChange	=	-12,
+		Weight		=	0.6,
+		AlwaysWelcomeGift	=	TRUE,
+		ReplaceOnUse 	= stalkerfood.EmptyCossacksVodka,
+		DisplayCategory = Food,
+		Type		=	Food,
+		UnhappyChange	=	-20,
+		ThirstChange	=	-90,
+	    FatigueChange	=	-20,
+		DisplayName	=	Cossacks Vodka,
+		Icon		=	Cossacks,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottle,
+        Carbohydrates 	= 60,
+        Proteins 	= 0,
+        Lipids 		= 0,
+        Calories 	= 210,
+        Packaged 	= TRUE,
+        CantBeFrozen 	= TRUE,
+        EatType 	= popcan,
+        StaticModel 	=	CossacksVodkaOpenUse,
+        WorldStaticModel =	CossacksClosed_WorldItem,
+	}
+
+		item EmptyCossacksVodka
+    {
+        Weight	=	0.1,
+		DisplayCategory = Junk,
+        Type	=	Normal,
+        DisplayName	=   Used Cossacks Bottle,
+        Icon	=	Cossacks,
+		CanStoreWater	=	TRUE,
+		ReplaceOnUseOn	=	stalkerfood.CossacksVodkaWater,
+        RainFactor = 0.1,
+        WorldStaticModel =	CossacksOpen_WorldItem,
+    }
+		
+	    item TouristsDelight
+	{
+		DisplayName = Tourist Delight,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = TouristsDelight,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 498,
+		Carbohydrates = 77.56,
+		Lipids = 12.58,
+		Proteins = 16.04,
+		Tags = CannedFood,
+		WorldStaticModel = TouristsDelight_WorldItem,
+	}
+
+	    item TouristsDelightOpen
+	{
+		DisplayName = Opened Tourists Delight,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = TouristsDelightOpen,
+		FoodType = Meat,
+		CannedFood = TRUE,
+		EatType = can,
+		Packaged = TRUE,
+		ReplaceOnUse = stalkerfood.EmptyTouristsDelight,
+		DaysFresh = 4,
+		DaysTotallyRotten = 6,
+		HungerChange = -30,
+		UnhappyChange = 50,
+		Calories = 498,
+		Carbohydrates = 77.56,
+		Lipids = 12.58,
+		Proteins = 16.04,
+		Tags = CannedFood,
+		WorldStaticModel = TouristsDelightTrash_WorldItem,
+	}
+
+		item EmptyTouristsDelight
+    {
+        Weight	=	0.1,
+		DisplayCategory = Junk,
+        Type	=	Normal,
+        DisplayName	=   Empty Tourist Delight,
+        Icon	=	TouristsDelightOpen,
+		Tags = CannedFood,
+        WorldStaticModel =	TouristsDelightTrash_WorldItem,
+    }
+
+	   item CannedBeef
+	{
+		DisplayName = Beef Tushonka,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedBeef,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 498,
+		Carbohydrates = 77.56,
+		Lipids = 12.58,
+		Proteins = 16.04,
+		Tags = CannedFood,
+		WorldStaticModel = CannedBeef_WorldItem,
+	}
+
+	    item CannedBeefOpen
+	{
+		DisplayName = Opened Beef Tushonka,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedBeef,
+		FoodType = Meat,
+		CannedFood = TRUE,
+		EatType = can,
+		Packaged = TRUE,
+		ReplaceOnUse = stalkerfood.EmptyCannedBeef,
+		DaysFresh = 4,
+		DaysTotallyRotten = 6,
+		HungerChange = -30,
+		UnhappyChange = 50,
+		Calories = 498,
+		Carbohydrates = 77.56,
+		Lipids = 12.58,
+		Proteins = 16.04,
+		Tags = CannedFood,
+		WorldStaticModel = CannedBeefTrash_WorldItem,
+	}
+
+		item EmptyCannedBeef
+    {
+        Weight	=	0.1,
+		DisplayCategory = Junk,
+        Type	=	Normal,
+        DisplayName	=   Empty Beef Tushonka,
+        Icon	=	CannedBeef,
+		WorldStaticModel = CannedBeefTrash_WorldItem,
+    }
+
+		item StalkerEnergyDrink
+	{
+		DisplayName = Energy Drink,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = EnergyDrink,
+		EvolvedRecipe = Beverage:4;Beverage2:4,
+		FoodType = SoftDrink,
+		CantBeFrozen = TRUE,
+		EatType = popcan,
+		Packaged = TRUE,
+		ReplaceOnUse = stalkerfood.EmptyStalkerEnergyDrink,
+		HungerChange = -8,
+		ThirstChange = -60,
+		UnhappyChange = -10,
+		Calories = 140,
+		Carbohydrates = 45,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		StaticModel = StalkerEnergyDrinkUse,
+		WorldStaticModel = StalkerEnergyDrink_WorldItem,
+	}
+
+	    item EmptyStalkerEnergyDrink
+    {
+        Weight	=	0.1,
+		DisplayCategory = Junk,
+        Type	=	Normal,
+        DisplayName	=   Empty Energy Drink,
+        Icon	=	EnergyDrinkUsed,
+        WorldStaticModel =	StalkerEnergyDrinkTrash_WorldItem,
+    }
+
+		item DietSausage
+	{
+		DisplayName = Diet Sausage,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = DietSausage,
+		BadCold = false,
+		DangerousUncooked = false,
+		EvolvedRecipe = Pizza:20;Stew:20;Stir fry Griddle Pan:20;Stir fry:20;Burger:20|Cooked;Roasted Vegetables:20;PastaPot:20;PastaPan:20;RicePot:20;RicePan:20;Taco:5|Cooked;Burrito:10|Cooked,
+		FoodType = Sausage,
+		GoodHot = true,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 40,
+		DaysFresh = 20,
+		DaysTotallyRotten = 50,
+		HungerChange = -25,
+		Calories = 250,
+		Carbohydrates = 0,
+		Lipids = 4.35,
+		Proteins = 15.62,
+		WorldStaticModel = DietSausage_WorldItem,
+	}
+
+		item OldMeat
+	{
+		DisplayName = Pack of Old Meat,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = PackofOldMeat,
+		BadCold = Yes,
+		DangerousUncooked = false,
+		EvolvedRecipe = Pizza:20;Stew:20;Stir fry Griddle Pan:20;Stir fry:20;Burger:20|Cooked;Roasted Vegetables:20;PastaPot:20;PastaPan:20;RicePot:20;RicePan:20;Taco:5|Cooked;Burrito:10|Cooked,
+		FoodType = Sausage,
+		GoodHot = false,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		DaysFresh = 2,
+		DaysTotallyRotten = 10,
+		UnhappyChange = 10,
+		HungerChange = -25,
+		Calories = 250,
+		Carbohydrates = 0,
+		Lipids = 4.35,
+		Proteins = 15.62,
+		WorldStaticModel = PackofOldMeat_WorldItem,
+	}
+
+		item Altoids
+	{
+		DisplayName = Altoids,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Altoids,
+		HungerChange = -3,
+		FatigueChange = -5,
+		ThirstChange = 3,
+		Calories = 1,
+		WorldStaticModel = Altoids_WorldItem,
+	}
+
+	    item MRE
+	{
+		DisplayName = MRE,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = MRE,
+		FoodType = Meat,
+		CannedFood = TRUE,
+		EatType = can,
+		Packaged = TRUE,
+		ReplaceOnUse = stalkerfood.MRETrash,
+		HungerChange = -60,
+		Calories = 300,
+		Carbohydrates = 18,
+		Lipids = 5,
+		Proteins = 29,
+		WorldStaticModel = MRE_WorldItem,
+	}
+
+	    item MRETrash
+    {
+        Weight	=	0.1,
+		DisplayCategory = Junk,
+        Type	=	Normal,
+        DisplayName	=   Empty MRE,
+        Icon	=	MRE,
+        WorldStaticModel =	MRETrash_WorldItem,
+    }
+}

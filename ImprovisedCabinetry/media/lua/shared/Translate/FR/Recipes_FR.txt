@@ -1,0 +1,72 @@
+Recipe_FR = {
+    /* IC_recipes_cabinets */
+    Recipe_ICMakeCabinet1 = "Fabriquer Comptoir Moderne",
+    Recipe_ICMakeCabinet1Corner = "Fabriquer Comptoir d'Angle Moderne",
+    Recipe_ICMakeCabinet2 = "Fabriquer Comptoir en Bois",
+    Recipe_ICMakeCabinet2Corner = "Fabriquer Comptoir d'Angle en Bois",
+    Recipe_ICMakeCabinet3 = "Fabriquer Comptoir en Bouleau",
+    Recipe_ICMakeCabinet3Corner = "Fabriquer Comptoir d'Angle en Bouleau",
+    Recipe_ICMakeCabinet3Float = "Fabriquer Comptoir en Bouleau (Flottant)",
+    Recipe_ICMakeCabinet4 = "Fabriquer Comptoir en Chêne",
+    Recipe_ICMakeCabinet4Corner = "Fabriquer Comptoir d'Angle en Chêne",
+    Recipe_ICMakeCabinet5 = "Fabriquer Comptoir Sombre",
+    Recipe_ICMakeCabinet5Corner = "Fabriquer Comptoir d'Angle Sombre",
+    Recipe_ICMakeCabinet6 = "Fabriquer Comptoir Vert",
+    Recipe_ICMakeCabinet6Corner = "Fabriquer Comptoir d'Angle Vert",
+    Recipe_ICMakeCabinet7 = "Fabriquer Comptoir Blanc",
+    Recipe_ICMakeCabinet7Corner = "Fabriquer Comptoir d'Angle Blanc",
+    Recipe_ICMakeCabinetBathroom = "Fabriquer Armoire à Pharmacie",
+
+    /* IC_recipes_cabinets_bar */
+    Recipe_ICMakeCabinetBar1 = "Fabriquer Comptoir de Bar en Chêne",
+    Recipe_ICMakeCabinetBar1Corner = "Fabriquer Comptoir d'Angle de Bar en Chêne",
+
+    /* IC_recipes_cabinets_motel */
+    Recipe_ICMakeCabinetMotel1 = "Fabriquer Comptoir de Motel",
+    Recipe_ICMakeCabinetMotel2 = "Fabriquer Comptoir de Motel (Bas)",
+
+    /* IC_recipes_cabinets_restaurant */
+    Recipe_ICMakeCabinetRestaurant1 = "Fabriquer Comptoir de Restaurant",
+    Recipe_ICMakeCabinetRestaurant1Corner = "Fabriquer Comptoir d'Angle de Restaurant",
+    Recipe_ICMakeCabinetRestaurant2 = "Fabriquer Comptoir Rayé Blanc",
+    Recipe_ICMakeCabinetRestaurant2Corner = "Fabriquer Comptoir d'Angle Rayé Blanc",
+    Recipe_ICMakeCabinetRestaurant3 = "Fabriquer Comptoir de Pizzeria",
+    Recipe_ICMakeCabinetRestaurant3Corner = "Fabriquer Comptoir d'Angle de Pizzeria",
+    Recipe_ICMakeCabinetRestaurant4 = "Fabriquer Comptoir du Café Hippocampe",
+    Recipe_ICMakeCabinetRestaurant4Corner = "Fabriquer Comptoir d'Angle du Café Hippocampe",
+    Recipe_ICMakeCabinetRestaurant5 = "Fabriquer Comptoir Spiffo",
+    Recipe_ICMakeCabinetRestaurant5Corner = "Fabriquer Comptoir d'Angle Spiffo",
+    
+    /* IC_recipes_cabinets_shops */
+    Recipe_ICMakeCabinetShop1 = "Fabriquer Comptoir Bleu",
+    Recipe_ICMakeCabinetShop1Corner = "Fabriquer Comptoir d'Angle Bleu",
+    Recipe_ICMakeCabinetShop2 = "Fabriquer Comptoir Rouge",
+    Recipe_ICMakeCabinetShop2Corner = "Fabriquer Comptoir d'Angle Rouge",
+    Recipe_ICMakeCabinetShop3 = "Fabriquer Comptoir de Boutique Générique",
+    Recipe_ICMakeCabinetShop3Corner = "Fabriquer Comptoir d'Angle de Boutique Générique",
+    Recipe_ICMakeCabinetShop4 = "Fabriquer Comptoir Zippee",
+    Recipe_ICMakeCabinetShop4Corner = "Fabriquer Comptoir d'Angle Zippee",
+
+    /* IC_recipes_cabinets_theatre */
+    Recipe_ICMakeCabinetTheater1 = "Fabriquer Comptoir de Théâtre",
+    Recipe_ICMakeCabinetTheater2 = "Fabriquer Comptoir d'Angle de Théâtre",
+    Recipe_ICMakeCabinetTheater3 = "Fabriquer Comptoir Carré de Théâtre",
+
+    /* IC_recipes_cabinets_tailer */
+    Recipe_ICMakeCabinetTrailer1 = "Fabriquer Comptoir de Remorque",
+    Recipe_ICMakeCabinetTrailer2 = "Fabriquer Comptoir de Remorque (Flottant)",
+    Recipe_ICMakeCabinetTrailer3 = "Fabriquer Comptoir de Remorque avec Réfrigérateur",
+
+    /* IC_recipes_cabinets_crossover_glass */
+    Recipe_ICMakeCabinetImprovisedGlass1 = "Fabriquer Présentoir en Verre",
+    Recipe_ICMakeCabinetImprovisedGlass1Corner = "Fabriquer Présentoir d'Angle en Verre",
+    Recipe_ICMakeCabinetImprovisedGlass2 = "Fabriquer Comptoir de Théâtre en Verre",
+
+    /* IC_recipes_parts */
+    Recipe_ICMakeWoodPanel = "Créer Panneau de Bois",
+    Recipe_ICMakeSmallHinge = "Créer Charnières de Comptoir",
+
+    /* IC_recipes_metalworking */
+    Recipe_ICMakeLargeMetalShelves1 = "Fabriquez de grandes étagères en métal",
+    Recipe_ICMakeMetalCabinet1 = "Faire métal locker",
+}

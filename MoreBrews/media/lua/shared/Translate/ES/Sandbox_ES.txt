@@ -1,0 +1,25 @@
+Sandbox_ES = 
+{
+	Sandbox_MB_Loot = "More Brews ajustes"
+	Sandbox_MB_LootGeneral = "More Brews ajustes de botín"
+	Sandbox_MB_LootGeneral_tooltip = "Establece la cantidad base de la distribución de botín para More Brews"
+	Sandbox_MB_BrewingKits = "Aparición de los ítems de Kit de elaboración de cerveza"
+	Sandbox_MB_BrewingKits_tooltip = "Define el multiplicador de aparición para este ítem encontrado en el mundo."
+	Sandbox_MB_Kegs = "Aparición de barriles vacíos"
+	Sandbox_MB_Kegs_tooltip = "Define el multiplicador de aparición para este ítem encontrado en el mundo."
+	Sandbox_MB_Recipes = "Aparición de revistas de recetas"
+	Sandbox_MB_Recipes_tooltip = "Define el multiplicador de aparición para las revistas de recetas encontrados en el mundo."
+	Sandbox_MB_Books = "Aparición de libros de Fabricación de cervezas"
+	Sandbox_MB_Books_tooltip = "Define el multiplicador de aparición para todos los libros de Fabricación de cervezas encontrados en el mundo."
+	Sandbox_MB_Supplies = "Aparición de ítems generales para fabricación de cervezas"
+	Sandbox_MB_Supplies_tooltip = "Define el multiplicador de aparición de recursos para fabricar cervezas encontrados en el mundo."
+	Sandbox_MB_Cans = "Aparición de latas de cervezas llenas"
+	Sandbox_MB_Cans_tooltip = "Define el multiplicador de aparición para este ítem encontrado en el mundo."
+	Sandbox_MB_Bottles = "Aparición de botellas de cervezas llenas"
+	Sandbox_MB_Bottles_tooltip = "Define el multiplicador de aparición para este ítem encontrado en el mundo."
+    Sandbox_MB_LootGeneral_option1 = "Bajo",
+    Sandbox_MB_LootGeneral_option2 = "Normal",
+    Sandbox_MB_LootGeneral_option3 = "Alto",
+    Sandbox_MB_LootGeneral_option4 = "Muy alto",
+    Sandbox_MB_LootGeneral_option5 = "Locura",
+}

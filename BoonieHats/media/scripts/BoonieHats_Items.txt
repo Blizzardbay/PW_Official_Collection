@@ -1,0 +1,1674 @@
+module BonnieHats
+{
+  	imports    
+    	{
+		Base,
+	}
+    /************Black Camo *********************/
+    item BonnieHat_Normal_BlackCamo
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Black Camo),
+        ClothingItem = BonnieHat_BlackCamo_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatBlackIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_BlackCamo,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = BlackCamo_Ground,
+    }
+	item BonnieHat_NormalBack_BlackCamo
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Black Camo),
+        ClothingItem = BonnieHat_BlackCamo_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatBlackIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_BlackCamo,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = BlackCamo_Ground,
+
+    }
+
+	item BonnieHat_Net_BlackCamo
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Black Camo),
+        ClothingItem = BonnieHat_BlackCamo_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_BlackCamo,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatBlack_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = BlackCamoNet_Ground,
+
+    }
+    item BonnieHat_NetBack_BlackCamo
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Black Camo),
+        ClothingItem = BonnieHat_BlackCamo_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_BlackCamo,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatBlack_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = BlackCamoNet_Ground,
+    }
+    /************Cat Black*********************/
+    item BonnieHat_Normal_Cat
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Cat),
+        ClothingItem = BonnieHat_Cat_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatBlackIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_Cat,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = BlackCat_Ground,
+    }
+	item BonnieHat_NormalBack_Cat
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Cat),
+        ClothingItem = BonnieHat_Cat_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatBlackIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_Cat,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = BlackCat_Ground,
+    }
+
+	item BonnieHat_Net_Cat
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Cat),
+        ClothingItem = BonnieHat_Cat_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_Cat,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatBlack_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = BlackCatNet_Ground,
+    }
+    item BonnieHat_NetBack_Cat
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Cat),
+        ClothingItem = BonnieHat_Cat_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_Cat,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatBlack_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = BlackCatNet_Ground,
+    }
+    /************Cat Orange *********************/
+    item BonnieHat_Normal_CatOrange
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Cat Orange),
+        ClothingItem = BonnieHat_CatOrange_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatOrangeIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_CatOrange,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = OrangeCat_Ground,
+    }
+	item BonnieHat_NormalBack_CatOrange
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Cat Orange),
+        ClothingItem = BonnieHat_CatOrange_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatOrangeIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_CatOrange,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = OrangeCat_Ground,
+    }
+
+	item BonnieHat_Net_CatOrange
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Cat Orange),
+        ClothingItem = BonnieHat_CatOrange_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_CatOrange,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatOrange_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = OrangeCatNet_Ground,
+    }
+    item BonnieHat_NetBack_CatOrange
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Cat Orange),
+        ClothingItem = BonnieHat_CatOrange_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_CatOrange,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatOrange_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = OrangeCatNet_Ground,
+    }
+    /************Cat White *********************/
+item BonnieHat_Normal_CatWhite
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Cat White),
+        ClothingItem = BonnieHat_CatWhite_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatWhiteIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_CatWhite,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = WhiteCat_Ground,
+    }
+	item BonnieHat_NormalBack_CatWhite
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Cat White),
+        ClothingItem = BonnieHat_CatWhite_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatWhiteIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_CatWhite,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = WhiteCat_Ground,
+    }
+
+	item BonnieHat_Net_CatWhite
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Cat White),
+        ClothingItem = BonnieHat_CatWhite_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_CatWhite,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatWhite_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = WhiteCatNet_Ground,
+    }
+    item BonnieHat_NetBack_CatWhite
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Cat White),
+        ClothingItem = BonnieHat_CatWhite_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_CatWhite,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatWhite_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = WhiteCatNet_Ground,
+    }
+	/******************************************************************ChocolateChip Camo************************************************************************/
+	item BonnieHat_Normal_ChocolateChip
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Chocolate Chip Camo),
+        ClothingItem = BonnieHat_ChocChip_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatDesertCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_ChocolateChip,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = ChocolateChipCamo_Ground,
+    }
+	item BonnieHat_NormalBack_ChocolateChip
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Chocolate Chip Camo),
+        ClothingItem = BonnieHat_ChocChip_NormalBack,
+        BodyLocation = Hat,
+        Icon = BoonieHatDesertCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_ChocolateChip,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = ChocolateChipCamo_Ground,
+    }
+
+	item BonnieHat_Net_ChocolateChip
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Chocolate Chip Camo),
+        ClothingItem = BonnieHat_ChocChip_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_ChocolateChip,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatDesertCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = ChocolateChipCamoNet_Ground,
+    }
+    item BonnieHat_NetBack_ChocolateChip
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Chocolate Chip White),
+        ClothingItem = BonnieHat_ChocolateChip_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_ChocolateChip,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatDesertCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = ChocolateChipCamoNet_Ground,
+    }
+    /************Dark Blue *********************/
+
+
+    item BonnieHat_Normal_DarkBlue
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Dark Blue Camo),
+        ClothingItem = BonnieHat_DarkBlue_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatBlueCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_DarkBlue,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DarkBlueCamo_Ground,
+    }
+	item BonnieHat_NormalBack_DarkBlue
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Dark Blue Camo),
+        ClothingItem = BonnieHat_DarkBlue_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatBlueCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_DarkBlue,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DarkBlueCamo_Ground,
+    }
+
+	item BonnieHat_Net_DarkBlue
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Dark Blue Camo),
+        ClothingItem = BonnieHat_DarkBlue_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_DarkBlue,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatBlueCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DarkBlueCamoNet_Ground,
+    }
+
+    item BonnieHat_NetBack_DarkBlue
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Dark Blue Camo),
+        ClothingItem = BonnieHat_DarkBlue_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_DarkBlue,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatBlueCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DarkBlueCamoNet_Ground,
+    }
+    /************Default *********************/
+
+    item BonnieHat_NormalBack_Default
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat,
+        ClothingItem = BonnieHat_Default_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatDefaultIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_Default,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+    }
+
+	item BonnieHat_Net_Default
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat,
+        ClothingItem = BonnieHat_Default_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_Default,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatDefault_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DefaultNet_Ground,
+    }
+    item BonnieHat_NetBack_Default
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat,
+        ClothingItem = BonnieHat_Default_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_Default,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatDefault_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DefaultNet_Ground,
+    }
+    /************* Desert Colored ********************/
+
+
+    item BonnieHat_Normal_DesertColored
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Desert Colored Camo),
+        ClothingItem = BonnieHat_DesertColored_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatDesertCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_DesertColored,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DesertColoredCamo_Ground,
+    }
+	item BonnieHat_NormalBack_DesertColored
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Desert Colored Camo),
+        ClothingItem = BonnieHat_DesertColored_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatDesertCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_DesertColored,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DesertColoredCamo_Ground,
+    }
+
+	item BonnieHat_Net_DesertColored
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Desert Colored Camo),
+        ClothingItem = BonnieHat_DesertColored_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_DesertColored,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatDesertCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DesertColoredCamoNet_Ground,
+    }
+    item BonnieHat_NetBack_DesertColored
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Desert Colored Camo),
+        ClothingItem = BonnieHat_DesertColored_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_DesertColored,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatDesertCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DesertColoredCamoNet_Ground,
+    }
+    /************* Desert Night ********************/
+
+    item BonnieHat_Normal_DesertNight
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Desert Night Camo),
+        ClothingItem = BonnieHat_DesertNight_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatDesertNightCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_DesertNight,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DesertNightCamo_Ground,
+    }
+	item BonnieHat_NormalBack_DesertNight
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Desert Night Camo),
+        ClothingItem = BonnieHat_DesertNight_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatDesertNightCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_DesertNight,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DesertNightCamo_Ground,
+    }
+
+	item BonnieHat_Net_DesertNight
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Desert Night Camo),
+        ClothingItem = BonnieHat_DesertNight_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_DesertNight,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatDesertNightCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DesertNightCamoNet_Ground,
+    }
+
+    item BonnieHat_NetBack_DesertNight
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Desert Night Camo),
+        ClothingItem = BonnieHat_DesertNight_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_DesertNight,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatDesertNightCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DesertNightCamoNet_Ground,
+    }
+
+    /************* Desert Night Dark********************/
+
+    item BonnieHat_Normal_DesertNightDark
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Desert Night Dark Camo),
+        ClothingItem = BonnieHat_DesertNightDark_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatDesertNightCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_DesertNightDark,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DesertNightDarkCamo_Ground,
+    }
+	item BonnieHat_NormalBack_DesertNightDark
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Desert Night Dark Camo),
+        ClothingItem = BonnieHat_DesertNightDark_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatDesertNightCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_DesertNightDark,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DesertNighDarkCamo_Ground,
+    }
+
+	item BonnieHat_Net_DesertNightDark
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Desert Night Dark Camo),
+        ClothingItem = BonnieHat_DesertNightDark_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_DesertNightDark,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatDesertNightCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DesertNighDarkCamoNet_Ground,
+    }
+
+    item BonnieHat_NetBack_DesertNightDark
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Desert Night Dark Camo),
+        ClothingItem = BonnieHat_DesertNightDark_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_DesertNightDark,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatDesertNightCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DesertNighDarkCamoNet_Ground,
+    }
+
+    /************* Desert Tan ********************/
+
+
+    item BonnieHat_Normal_DesertTan
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Desert Tan Camo),
+        ClothingItem = BonnieHat_DesertTan_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatDesertLightCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_DesertTan,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DesertTanCamo_Ground,
+    }
+	item BonnieHat_NormalBack_DesertTan
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Desert Tan Camo),
+        ClothingItem = BonnieHat_DesertTan_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatDesertLightCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_DesertTan,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DesertTanCamo_Ground,
+    }
+
+	item BonnieHat_Net_DesertTan
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Desert Tan Camo),
+        ClothingItem = BonnieHat_DesertTan_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_DesertTan,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatDesertLightCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DesertTanCamoNet_Ground,
+    }
+
+    item BonnieHat_NetBack_DesertTan
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Desert Tan Camo),
+        ClothingItem = BonnieHat_DesertTan_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_DesertTan,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatDesertLightCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DesertTanCamoNet_Ground,
+    }
+
+	/****************************************************************************Digital Camo****************************************************************************/
+	item BonnieHat_Normal_DigitalCamo
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Digital Camo),
+        ClothingItem = BonnieHat_DigitalCamo_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatUrbanIcon,
+        CanHaveHoles = false,
+	ClothingItemExtra = BonnieHat_NormalBack_DigitalCamo,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DigitalCamo_Ground,
+    }
+    item BonnieHat_NormalBack_DigitalCamo
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Digital Camo),
+        ClothingItem = BonnieHat_DigitalCamo_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatUrbanIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_DigitalCamo,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DigitalCamo_Ground,
+    }
+
+	item BonnieHat_Net_DigitalCamo
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Digital Camo),
+        ClothingItem = BonnieHat_DigitalCamo_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_DigitalCamo,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatUrban_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DigitalCamoNet_Ground,
+    }
+
+    item BonnieHat_NetBack_DigitalCamo
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Digital Camo),
+        ClothingItem = BonnieHat_DigitalCamo_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_DigitalCamo,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatUrban_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DigitalCamoNet_Ground,
+    }
+	/*****************************************************************************DigitalCamo Blue Camo******************************************************************************/
+
+	item BonnieHat_Normal_DigitalCamoBlue
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Digital Blue Camo),
+        ClothingItem = BonnieHat_DigitalCamoBlue_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatBlueCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHat_NormalBack_DigitalCamoBlue,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DigitalCamoBlue_Ground,
+    }
+	item BonnieHat_NormalBack_DigitalCamoBlue
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Digital Blue Camo),
+        ClothingItem = BonnieHat_DigitalCamoBlue_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatBlueCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHat_Normal_DigitalCamoBlue,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+         WorldStaticModel = DigitalCamoBlue_Ground,
+    }
+
+	item BonnieHat_Net_DigitalCamoBlue
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Digital Blue Camo),
+        ClothingItem = BonnieHat_DigitalCamoBlue_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_DigitalCamoBlue,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatBlueCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DigitalCamoBlueNet_Ground,
+    }
+    item BonnieHat_NetBack_DigitalCamoBlue
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Digital Blue Camo),
+        ClothingItem = BonnieHat_DigitalCamoBlue_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_DigitalCamoBlue,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatBlueCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DigitalCamoBlueNet_Ground,
+    }
+
+    /*************Digital Camo Green ********************/
+
+    	item BonnieHat_Normal_DigitalCamoGreen
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Digital Green Camo),
+        ClothingItem = BonnieHat_DigitalCamoGreen_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatGreenCamo_NetIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHat_NormalBack_DigitalCamoGreen,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DigitalCamoGreen_Ground,
+    }
+	item BonnieHat_NormalBack_DigitalCamoGreen
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Digital Green Camo),
+        ClothingItem = BonnieHat_DigitalCamoGreen_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatGreenCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHat_Normal_DigitalCamoGreen,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DigitalCamoGreen_Ground,
+    }
+
+	item BonnieHat_Net_DigitalCamoGreen
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Digital Green Camo),
+        ClothingItem = BonnieHat_DigitalCamoGreen_Net,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_DigitalCamoGreen,
+        ClothingItemExtraOption = HatonBack,
+        BodyLocation = Hat,
+        Icon = BoonieHatGreenCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DigitalCamoGreenNet_Ground,
+    }
+
+    item BonnieHat_NetBack_DigitalCamoGreen
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Digital Green Camo),
+        ClothingItem = BonnieHat_DigitalCamoGreen_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_DigitalCamoGreen,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatGreenCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = DigitalCamoGreenNet_Ground,
+    }
+
+	/*****************************************************************************Marpat Camo******************************************************************************/
+
+	item BonnieHat_Normal_Marpat
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Marpat Camo),
+        ClothingItem = BonnieHat_MarpatCamo_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatGreenDarkCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_Marpat,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = MarpatCamo_Ground,
+    }
+	item BonnieHat_NormalBack_Marpat
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Marpat Camo),
+        ClothingItem = BonnieHat_MarpatCamo_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatGreenDarkCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_Marpat,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = MarpatCamo_Ground,
+    }
+
+	item BonnieHat_Net_Marpat
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Marpat Camo),
+        ClothingItem = BonnieHat_MarpatCamo_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_Marpat,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatGreenDarkCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = MarpatCamoNet_Ground,
+    }
+
+    item BonnieHat_NetBack_Marpat
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Marpat Camo),
+        ClothingItem = BonnieHat_MarpatCamo_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_Marpat,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatGreenDarkCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = MarpatCamoNet_Ground,
+    }
+
+    /************* Multi cam Camo ********************/
+
+    item BonnieHat_Normal_MultiCam
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Multi Cam Camo),
+        ClothingItem = BonnieHat_MultiCamCamo_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatDesertLightCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_MultiCam,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = MultiCamCamo_Ground,
+    }
+	item BonnieHat_NormalBack_MultiCam
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Multi Cam Camo),
+        ClothingItem = BonnieHat_MultiCamCamo_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatDesertLightCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_MultiCam,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = MultiCamCamo_Ground,
+    }
+
+	item BonnieHat_Net_MultiCam
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Multi Cam Camo),
+        ClothingItem = BonnieHat_MultiCamCamo_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_MultiCam,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatDesertLightCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = MultiCamCamoNet_Ground,
+    }
+
+    item BonnieHat_NetBack_MultiCam
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (MultiCam Camo),
+        ClothingItem = BonnieHat_MultiCamCamo_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_MultiCam,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatDesertLightCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = MultiCamCamoNet_Ground,
+    }
+    /************* UCP Camo ********************/
+
+    item BonnieHat_Normal_UCP
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (UCP Camo),
+        ClothingItem = BonnieHat_UCP_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatGreenCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_UCP,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = UCPCamo_Ground,
+    }
+	item BonnieHat_NormalBack_UCP
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (UCP Camo),
+        ClothingItem = BonnieHat_UCP_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatGreenCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_UCP,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = UCPCamo_Ground,
+    }
+
+	item BonnieHat_Net_UCP
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (UCP Camo),
+        ClothingItem = BonnieHat_UCP_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_UCP,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatGreenCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = UCPCamoNet_Ground,
+    }
+
+    item BonnieHat_NetBack_UCP
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (UCP Camo),
+        ClothingItem = BonnieHat_UCP_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_UCP,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatGreenCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = UCPCamoNet_Ground,
+    }
+
+	/****************************************************************************Urban Normal***************************************************************************/
+	item BonnieHat_Normal_Urban
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Urban Camo),
+        ClothingItem = BonnieHat_UrbanCamo_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatUrbanIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_Marpat,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = UrbanCamo_Ground,
+    }
+    item BonnieHat_NormalBack_Urban
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Urban Camo),
+        ClothingItem = BonnieHat_UrbanCamo_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatUrbanIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_Urban,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = UrbanCamo_Ground,
+    }
+
+	item BonnieHat_Net_Urban
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Urban Camo),
+        ClothingItem = BonnieHat_UrbanCamo_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_Urban,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatUrban_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = UrbanCamoNet_Ground,
+    }
+
+    item BonnieHat_NetBack_Urban
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Urban Camo),
+        ClothingItem = BonnieHat_UrbanCamo_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_Urban,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatUrban_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = UrbanCamoNet_Ground,
+    }
+	/***************************************************************************Urban Pixelated***************************************************************************/
+	item BonnieHat_Normal_UrbanPixelated
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Urban Pixelated Camo),
+        ClothingItem = BonnieHat_UrbanPixelated_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatUrbanIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_UrbanPixelated,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = UrbanPixelatedCamo_Ground,
+    }
+    item BonnieHat_NormalBack_UrbanPixelated
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Urban Pixelated Camo),
+        ClothingItem = BonnieHat_UrbanPixelated_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatUrbanIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_UrbanPixelated,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = UrbanPixelatedCamo_Ground,
+    }
+
+	item BonnieHat_Net_UrbanPixelated
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Urban Pixelated Camo),
+        ClothingItem = BonnieHat_UrbanPixelated_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_UrbanPixelated,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatUrban_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = UrbanPixelatedCamoNet_Ground,
+    }
+
+    item BonnieHat_NetBack_UrbanPixelated
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (Urban Pixelated Camo),
+        ClothingItem = BonnieHat_UrbanPixelated_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_UrbanPixelated,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatUrban_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = UrbanPixelatedCamoNet_Ground,
+    }
+    /************* USCMC Desert ********************/
+
+    item BonnieHat_Normal_UsmcDesert
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (USMC Desert Camo),
+        ClothingItem = BonnieHat_UsmcDesert_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatDesertCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_UsmcDesert,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = UsmcCamo_Ground,
+    }
+    item BonnieHat_NormalBack_UsmcDesert
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (USMC Desert Camo),
+        ClothingItem = BonnieHat_UsmcDesert_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatDesertCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_UsmcDesert,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = UsmcCamo_Ground,
+    }
+
+	item BonnieHat_Net_UsmcDesert
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (USMC Desert Camo),
+        ClothingItem = BonnieHat_UsmcDesert_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_UsmcDesert,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatDesertCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = UsmcCamoNet_Ground,
+    }
+
+    item BonnieHat_NetBack_UsmcDesert
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat (USMC Desert Camo),
+        ClothingItem = BonnieHat_UsmcDesert_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_UsmcDesert,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatDesertCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = UsmcCamoNet_Ground,
+    }
+
+    /************* WHITE ********************/
+
+    item BonnieHat_Normal_White
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat,
+        ClothingItem = BonnieHat_White_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatWhiteIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_White,
+        ClothingItemExtraOption = HatonBack,
+        ColorRed = 161,
+        ColorGreen = 161,
+        ColorBlue = 161,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = WhiteBoonie_Ground,
+    }
+    item BonnieHat_NormalBack_White
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat,
+        ClothingItem = BonnieHat_White_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatWhiteIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_White,
+        ClothingItemExtraOption = HatonHead,
+        ColorRed = 161,
+        ColorGreen = 161,
+        ColorBlue = 161,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = WhiteBoonie_Ground,
+    }
+
+	item BonnieHat_Net_White
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat,
+        ClothingItem = BonnieHat_White_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_White,
+        ClothingItemExtraOption = HatonBack,
+        ColorRed = 161,
+        ColorGreen = 161,
+        ColorBlue = 161,
+        Icon = BoonieHatWhite_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = WhiteBoonie_Ground,
+    }
+
+    item BonnieHat_NetBack_White
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Boonie Hat,
+        ClothingItem = BonnieHat_White_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_White,
+        ClothingItemExtraOption = HatonHead,
+        ColorRed = 161,
+        ColorGreen = 161,
+        ColorBlue = 161,
+        Icon = BoonieHatWhite_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = WhiteBoonieNet_Ground,
+    }
+
+    /************* Captain Hat********************/
+
+    item BonnieHat_Normal_Captain
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Cpt's Boonie,
+        ClothingItem = BonnieHat_Captain_Normal,
+        BodyLocation = Hat,
+        Icon = BoonieHatDesertCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_NormalBack_Captain,
+        ClothingItemExtraOption = HatonBack,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = CaptainBoonie_Ground,
+    }
+    item BonnieHat_NormalBack_Captain
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Cpt's Boonie,
+        ClothingItem = BonnieHat_Captain_Back,
+        BodyLocation = Hat,
+        Icon = BoonieHatDesertCamoIcon,
+        CanHaveHoles = false,
+	    ClothingItemExtra = BonnieHats.BonnieHat_Normal_Captain,
+        ClothingItemExtraOption = HatonHead,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = CaptainBoonie_Ground,
+    }
+
+	item BonnieHat_Net_Captain
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Cpt's Boonie,
+        ClothingItem = BonnieHat_Captain_Net,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_NetBack_Captain,
+        ClothingItemExtraOption = HatonBack,
+        Icon = BoonieHatDesertCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = CaptainBoonieNet_Ground,
+    }
+
+    item BonnieHat_NetBack_Captain
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Cpt's Boonie,
+        ClothingItem = BonnieHat_Captain_NetBack,
+        BodyLocation = Hat,
+        ClothingItemExtra = BonnieHats.BonnieHat_Net_Captain,
+        ClothingItemExtraOption = HatonHead,
+        Icon = BoonieHatDesertCamo_NetIcon,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        BloodLocation = Head,
+        Insulation = 0.5,
+        WindResistance = 0.3,
+        Weight = 0.5,
+        WorldStaticModel = CaptainBoonieNet_Ground,
+    }
+
+
+
+	
+}

@@ -1,0 +1,51 @@
+require 'Items/ProceduralDistributions'
+
+-- Debug Mode
+--table.insert(ProceduralDistributions.list["BookstoreBooks"].items, "ImprovisedCabinetry.ICMagazine1");
+--table.insert(ProceduralDistributions.list["BookstoreBooks"].items, 1000);
+
+-- Magazine: Cabinetry #1
+table.insert(ProceduralDistributions.list["BinBar"].items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["BinBar"].items, 2);
+table.insert(ProceduralDistributions.list["BinGeneric"].items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["BinGeneric"].items, 2);
+table.insert(ProceduralDistributions.list["BookstoreMisc"].items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["BookstoreMisc"].items, 8);
+table.insert(ProceduralDistributions.list["CabinetFactoryTools"].items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["CabinetFactoryTools"].items, 8);
+table.insert(ProceduralDistributions.list["CrateBooks"].items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["CrateBooks"].items, 2);
+table.insert(ProceduralDistributions.list["CrateCarpentry"].junk.items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["CrateCarpentry"].junk.items, 1);
+table.insert(ProceduralDistributions.list["CrateLumber"].junk.items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["CrateLumber"].junk.items, 1);
+table.insert(ProceduralDistributions.list["CrateMagazines"].items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["CrateMagazines"].items, 2);
+table.insert(ProceduralDistributions.list["CrateTools"].junk.items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["CrateTools"].junk.items, 1);
+table.insert(ProceduralDistributions.list["FactoryLockers"].items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["FactoryLockers"].items, 0.5);
+table.insert(ProceduralDistributions.list["FilingCabinetGeneric"].items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["FilingCabinetGeneric"].items, 0.5);
+table.insert(ProceduralDistributions.list["GarageCarpentry"].junk.items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["GarageCarpentry"].junk.items, 1);
+table.insert(ProceduralDistributions.list["LibraryBooks"].junk.items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["LibraryBooks"].junk.items, 1);
+table.insert(ProceduralDistributions.list["OfficeDesk"].items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["OfficeDesk"].items, 2);
+table.insert(ProceduralDistributions.list["OtherGeneric"].items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["OtherGeneric"].items, 1);
+table.insert(ProceduralDistributions.list["PostOfficeBooks"].items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["PostOfficeBooks"].items, 1);
+table.insert(ProceduralDistributions.list["PostOfficeMagazines"].items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["PostOfficeMagazines"].items, 5);
+table.insert(ProceduralDistributions.list["PrisonCellRandom"].items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["PrisonCellRandom"].items, 1);
+table.insert(ProceduralDistributions.list["ShelfGeneric"].items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["ShelfGeneric"].items, 1);
+table.insert(ProceduralDistributions.list["ToolStoreAccessories"].items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["ToolStoreAccessories"].items, 1);
+table.insert(ProceduralDistributions.list["ToolStoreBooks"].items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["ToolStoreBooks"].items, 2);
+table.insert(ProceduralDistributions.list["ToolStoreCarpentry"].items, "ImprovisedCabinetry.ICMagazine1");
+table.insert(ProceduralDistributions.list["ToolStoreCarpentry"].items, 1);

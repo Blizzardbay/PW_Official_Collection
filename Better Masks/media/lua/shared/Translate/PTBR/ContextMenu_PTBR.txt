@@ -1,0 +1,6 @@
+ContextMenu_PTBR = {
+	ContextMenu_PullDownM = "Abaixar",
+	ContextMenu_PullUpM = "Levantar",
+	ContextMenu_WearonFace = "Usar no Rosto",
+	ContextMenu_WearonNeck = "Usar no Pescoço",
+}

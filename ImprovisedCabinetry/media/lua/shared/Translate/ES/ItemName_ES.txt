@@ -1,0 +1,8 @@
+ItemName_ES = {
+    /* Parts */
+    ItemName_ImprovisedCabinetry.WoodPanel = "Panel de madera",
+    ItemName_ImprovisedCabinetry.SmallHinge = "Bisagra para gabinetes",
+
+    /* Magazines */
+    ItemName_ImprovisedCabinetry.ICMagazine1 = "Gabinetes industriales Vol. 1",
+}

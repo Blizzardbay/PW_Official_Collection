@@ -1,0 +1,7 @@
+﻿ItemName_JP = {
+
+	-- Jar Lid MOD
+
+	ItemName_JarLidMod.JarLidBoxs = "瓶の蓋(箱入)",
+
+}

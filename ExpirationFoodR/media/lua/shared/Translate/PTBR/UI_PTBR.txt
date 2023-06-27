@@ -1,0 +1,17 @@
+UI_PTBR = {
+	UI_mod_fdxpr_days = "d",
+	UI_mod_fdxpr_hours = "h",
+	UI_mod_fdxpr_mins = "m",
+	UI_mod_fdxpr_secs = "s",
+	UI_mod_fdxpr_stale = "passado no dia",
+	UI_mod_fdxpr_rotten = "expira no dia",
+	UI_mod_fdxpr_trait_name = "Olhando a comida",
+	UI_mod_fdxpr_trait_description = "Ele sabe exatamente quando a comida vai apodrecer",
+	UI_mod_fdxpr_state = "Estado:",
+	UI_mod_fdxpr_state_verygood = "Muito Fresco",
+	UI_mod_fdxpr_state_good = "Bom",
+	UI_mod_fdxpr_state_ok = "Normal",
+	UI_mod_fdxpr_state_rotting = "Pouco mofado",
+	UI_mod_fdxpr_state_rotten = "Podre",
+	UI_mod_fdxpr_state_nonperish = "Não Apodrece"
+}

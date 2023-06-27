@@ -1,0 +1,10 @@
+ItemName_RU = {
+
+	-- Jar Lid MOD
+	-- Russian translation by Admiral.Slowpoke
+	-- Fix by exLesnick
+	-- Fixed some typos
+
+	ItemName_JarLidMod.JarLidBoxs = "Коробка с крышками от банок",
+
+}

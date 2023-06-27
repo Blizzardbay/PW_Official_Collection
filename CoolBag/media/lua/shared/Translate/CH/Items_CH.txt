@@ -1,0 +1,4 @@
+ItemName_CH = {
+	DisplayName_Water_Pocket = "±K«Ê¤ô³U",
+	DisplayName_Ice_Pocket = "§N­á¥]"
+}

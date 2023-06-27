@@ -1,0 +1,5 @@
+IGUI_TH = {
+    IGUI_CraftCategory_Tailoring = "เย็บผ้า",
+    IGUI_ShuruTailoring_Sew = "เย็บ $$$",
+    IGUI_ShuruTailoring_CantLearn = "นี่มันยังซับซ้อนเกินไปนะ"
+}

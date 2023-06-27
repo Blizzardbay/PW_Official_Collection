@@ -1,0 +1,13 @@
+Sandbox_EN = {
+    Sandbox_eggonsAllDoorsAreYours = "Eggon's All Doors Are Yours",
+    Sandbox_eggonsAllDoorsAreYours_AllowTransportInLargeTrunksOnly = "Allow transport of doors in large trunks only",
+    Sandbox_eggonsAllDoorsAreYours_AllowTransportInLargeTrunksOnly_tooltip = "Doors can be transported only in trunks of TOTAL capacity of at leats 90. <LINE>Free capacity must be enough to fit the door. <LINE>E.g. door weighting 30 will fit into a trunk which is 60/90 full.",
+    Sandbox_eggonsAllDoorsAreYours_DoorsWeightMultiplier = "Doors weight multiplier",
+    Sandbox_eggonsAllDoorsAreYours_DoorsWeightMultiplier_tooltip = "Default door weights (30-40) will be multiplied by this number.",
+    Sandbox_eggonsAllDoorsAreYours_MinimumCarpentryLevel = "Minimum carpentry level to take door off hinges",
+    Sandbox_eggonsAllDoorsAreYours_MinimumCarpentryLevel_tooltip = "Minimum Carpentry level required to take off door off hinges.",
+    Sandbox_eggonsAllDoorsAreYours_SuccessChance = "Base success chance to take door off hinges (%)",
+    Sandbox_eggonsAllDoorsAreYours_SuccessChance_tooltip = "Success probabilty at minimum Carpentry level.",
+    Sandbox_eggonsAllDoorsAreYours_SuccessChanceIncrease = "Success chance increase per level (%)",
+    Sandbox_eggonsAllDoorsAreYours_SuccessChanceIncrease_tooltip = "Increase of success chance per each Carpentry level abover minimum.",
+}

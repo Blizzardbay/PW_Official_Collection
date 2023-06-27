@@ -1,0 +1,173 @@
+module Base
+{
+	
+model CubanCigar_WorldItem
+	{
+		mesh    = WorldItems/CubanCigar,
+		texture = WorldItems/CubanCigar,
+		scale   = 0.5,
+	}
+
+model CubanCigarUse_WorldItem
+	{
+		mesh    = WorldItems/CubanCigar,
+		texture = WorldItems/CubanCigar,
+		scale   = 0.5,
+	}
+
+model CossacksClosed_WorldItem
+	{
+		mesh    = WorldItems/CossacksClosed,
+		texture = WorldItems/CossacksBottle,
+		scale   = 0.5,
+	}
+
+model CossacksOpen_WorldItem
+	{
+		mesh    = WorldItems/CossacksOpen,
+		texture = WorldItems/CossacksBottle,
+		scale   = 0.5,
+	}
+
+model CossacksOpenUse_WorldItem
+	{
+		mesh    = WorldItems/CossacksOpen,
+		texture = WorldItems/CossacksBottle,
+		scale   = 0.5,
+	}
+	
+model HandRollingTobacco_WorldItem
+	{
+		mesh    = WorldItems/HandRollingTobacco,
+		texture = WorldItems/HandRollingTobacco,
+		scale   = 0.5,
+	}
+
+model TouristsDelight_WorldItem
+	{
+		mesh    = WorldItems/TouristDelight,
+		texture = WorldItems/TouristDelight,
+		scale   = 0.5,
+	}
+
+model TouristsDelightUse_WorldItem
+	{
+		mesh    = WorldItems/TouristDelightTrash,
+		texture = WorldItems/TouristDelightTrash,
+		scale   = 0.5,
+	}
+
+model TouristsDelightTrash_WorldItem
+	{
+		mesh    = WorldItems/TouristDelightTrash,
+		texture = WorldItems/TouristDelightTrash,
+		scale   = 0.5,
+	}
+
+model CannedBeef_WorldItem
+	{
+		mesh    = WorldItems/CannedBeef,
+		texture = WorldItems/CannedBeef,
+		scale   = 0.5,
+	}
+
+model CannedBeefUse_WorldItem
+	{
+		mesh    = WorldItems/CannedBeefTrash,
+		texture = WorldItems/CannedBeef,
+		scale   = 0.5,
+	}
+
+model CannedBeefTrash_WorldItem
+	{
+		mesh    = WorldItems/CannedBeefTrash,
+		texture = WorldItems/CannedBeef,
+		scale   = 0.5,
+	}
+
+model RussianBrandPack_WorldItem
+	{
+		mesh    = WorldItems/CigarettePack,
+		texture = WorldItems/RussianPack,
+		scale   = 0.5,
+	}
+
+model LuckyStrikeBrandPack_WorldItem
+	{
+		mesh    = WorldItems/CigarettePack,
+		texture = WorldItems/LuckyStrikePack,
+		scale   = 0.5,
+	}
+
+model MarlboroBrandPack_WorldItem
+	{
+		mesh    = WorldItems/CigarettePack,
+		texture = WorldItems/MarlboroPack,
+		scale   = 0.5,
+	}
+
+model DietSausage_WorldItem
+	{
+		mesh    = WorldItems/DietSausage,
+		texture = WorldItems/DietSausage,
+		scale   = 0.5,
+	}
+
+model DietSausageUse_WorldItem
+	{
+		mesh    = WorldItems/DietSausage,
+		texture = WorldItems/DietSausage,
+		scale   = 0.5,
+	}
+
+model StalkerEnergyDrink_WorldItem
+	{
+		mesh    = WorldItems/EnergyDrink,
+		texture = WorldItems/EnergyDrink,
+		scale   = 0.5,
+	}
+
+model StalkerEnergyDrinkUse_WorldItem
+	{
+		mesh    = WorldItems/EnergyDrink,
+		texture = WorldItems/EnergyDrink,
+		scale   = 0.5,
+	}
+
+model StalkerEnergyDrinkTrash_WorldItem
+	{
+		mesh    = WorldItems/EnergyDrinkTrash,
+		texture = WorldItems/EnergyDrink,
+		scale   = 0.5,
+	}
+
+model PackofOldMeat_WorldItem
+	{
+		mesh    = WorldItems/PackofOldMeat,
+		texture = WorldItems/PackofOldMeat,
+		scale   = 0.5,
+	}
+
+model MRE_WorldItem
+	{
+		mesh    = WorldItems/MRE,
+		texture = WorldItems/MRE,
+		scale   = 0.5,
+	}
+
+model MRETrash_WorldItem
+	{
+		mesh    = WorldItems/MRETrash,
+		texture = WorldItems/MRE,
+		scale   = 0.5,
+	}
+
+model Altoids_WorldItem
+	{
+		mesh    = WorldItems/Altoids,
+		texture = WorldItems/Altoids,
+		scale   = 0.5,
+	}
+
+
+}

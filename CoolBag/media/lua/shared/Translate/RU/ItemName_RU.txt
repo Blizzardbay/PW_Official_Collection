@@ -1,0 +1,4 @@
+ItemName_RU = {
+    ItemName_Base.WaterPocket = "Пакет воды",
+    ItemName_Base.IcePocket = "Пакет льда",
+}

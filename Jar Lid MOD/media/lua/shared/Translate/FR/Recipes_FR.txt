@@ -1,0 +1,9 @@
+Recipe_FR = {
+
+	-- Jar Lid MOD
+	-- Traduit en français par Bobitec
+
+	Recipe_Open_Box_of_Jar_Lid = "Ouvrir la boîte de couvercle de bocal",
+	Recipe_Place_Jar_Lid_in_Box = "Placer les couvercle de bocal en boîte",
+
+}

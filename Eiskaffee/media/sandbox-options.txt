@@ -1,0 +1,13 @@
+VERSION = 1,
+
+option Eiskaffee.SpawnChance
+{
+	type = enum,
+	numValues = 5,
+	default = 3,
+
+	page = Eiskaffee,
+	translation = Eiskaffee_SpawnChance,
+	valueTranslation = Eiskaffee_SpawnChance,
+}
+

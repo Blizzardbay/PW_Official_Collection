@@ -1,0 +1,5 @@
+ContextMenu_TR = {
+	ContextMenu_Firetrail = "Alev izi",
+	ContextMenu_Firetrail_create = "Iz olustur",
+	ContextMenu_Firetrail_ignite = "Atesle",
+}

@@ -1,0 +1,106 @@
+VERSION = 1,
+
+option PompsItems.StallionMilk
+{
+    type = boolean,
+    default = true,
+    page = PompsItems,
+    translation = PompsItems_StallionMilk,
+}
+
+option PompsItems.EasterStuff
+{
+    type = boolean,
+    default = true,
+    page = PompsItems,
+    translation = PompsItems_EasterStuff,
+}
+
+option PompsItems.CandySpawnRate
+{
+	type = double,
+	min = 0, max = 100,
+	default = 1.0,
+    page = PompsItems,
+    translation = PompsItems_CandySpawnRate,
+}
+
+option PompsItems.SnacksSpawnRate
+{
+	type = double,
+	min = 0, max = 100,
+	default = 1.0,
+    page = PompsItems,
+    translation = PompsItems_SnacksSpawnRate,
+}
+
+option PompsItems.CannedGoodsSpawnRate
+{
+	type = double,
+	min = 0, max = 100,
+	default = 1.0,
+    page = PompsItems,
+    translation = PompsItems_CannedGoodsSpawnRate,
+}
+
+option PompsItems.RefrigeratedGoodsSpawnRate
+{
+	type = double,
+	min = 0, max = 100,
+	default = 1.0,
+    page = PompsItems,
+    translation = PompsItems_RefrigeratedGoodsSpawnRate,
+}
+
+option PompsItems.FrozenGoodsSpawnRate
+{
+	type = double,
+	min = 0, max = 100,
+	default = 1.0,
+    page = PompsItems,
+    translation = PompsItems_FrozenGoodsSpawnRate,
+}
+
+option PompsItems.MiscSpawnRate
+{
+	type = double,
+	min = 0, max = 100,
+	default = 1.0,
+    page = PompsItems,
+    translation = PompsItems_MiscSpawnRate,
+}
+
+option PompsItems.DrinksSpawnRate
+{
+	type = double,
+	min = 0, max = 100,
+	default = 1.0,
+    page = PompsItems,
+    translation = PompsItems_DrinksSpawnRate,
+}
+
+option PompsItems.EnergyDrinkSpawnRate
+{
+	type = double,
+	min = 0, max = 100,
+	default = 1.0,
+    page = PompsItems,
+    translation = PompsItems_EnergyDrinkSpawnRate,
+}
+
+option PompsItems.LiquorSpawnRate
+{
+	type = double,
+	min = 0, max = 100,
+	default = 1.0,
+    page = PompsItems,
+    translation = PompsItems_LiquorSpawnRate,
+}
+
+option PompsItems.Littering
+{
+    type = boolean,
+    default = false,
+    page = PompsItems,
+    translation = PompsItems_Littering,
+}

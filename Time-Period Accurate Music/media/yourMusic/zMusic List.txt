@@ -1,0 +1,439 @@
+// Default Songs (95 Including Duplicates) (Unchangeable)
+
+
+Vinyl (39)
+
+1 AC DC - Highway To Hell (1979)
+2 Air Supply - Making Love Out Of Nothing At All (1983)
+3 Alabama - Christmas In Dixie (1985)
+4 Alice Cooper - Poison (1989)
+5 Andy Williams - Its The Most Wonderful Time Of The Year (1963)
+6 Bee Gees - Stayin Alive (1977)
+7 Benny Goodman - Thats A Plenty (1931)
+8 Bill Haley - Rock Around The Clock (1955)
+9 Bing Crosby - I Will Be Home For Christmas (1943)
+10 Bing Crosby - White Christmas (1942) 
+11 Bing Crosby - Winter Wonderland (1945)
+12 Blondie - Call Me (1978)
+13 Blondie - Heart Of Glass (1976)
+14 Bobby Darin - Brand New House (1958)
+15 Bobby Darin - Dream Lover (1987)
+16 Bobby Darin - Hallelujah I Love Her So (1956)
+17 Bobby Helms - Jingle Bell Rock (1957)
+18 Boney M - Rasputin (1978) ;)
+19 Boots Randolph - Yakety Sax (1963)
+20 Brenda Lee - Rockin Around The Christmas Tree (1958)
+21 Dean Martin - Walking In A Winter Wonderland (1959)
+22 Eartha Kitt - Santa Baby (1953)
+23 Elvis Presley - Blue Christmas (1957)
+24 Elvis Presley - Jailhouse Rock (1958)
+25 Enrico Caruso - Una Furtiva Lagrima (1904)
+26 Gene Autry - Frosty The Snow Man (1951)
+27 Guy Mitchell - Heartache By The Numbers 50s (1959)
+28 Hank Williams - Lovesick Blues (1949)
+29 John Fahey - Steel Guitar Rag (1965)
+30 Johnny Horton - North To Alaska (1965)
+31 Judy Garland - Have Yourself A Merry Little Christmas (1944)
+32 Kirsten Flagstad - Die Walkure (1938)
+33 Lightnin Hopkins - Jackstropper Blues (1950)
+34 Mel Carter - Hold Me Thrill Me Kiss Me (1965)
+35 Nat King Cole - The Christmas Song (1961)
+36 Ricky Nelson - Travellin Man (1961)
+37 Righteous Brothers - Unchained Melody (1965)
+38 Robert Johnson - Walking Blues (1936)
+39 Thurl Ravenscroft - Youre A Mean One Mr Grinch (1966)
+
+Cassette (56)
+
+1 AC DC - Highway To Hell (1979)
+2 Air Supply - Making Love Out Of Nothing At All (1983)
+3 Alabama - Christmas In Dixie (1985)
+4 Alice Cooper - Poison (1989)
+5 Bee Gees - Stayin Alive (1977)
+6 Blondie - Call Me (1978)
+7 Blondie - Heart Of Glass (1976)
+8 Bobby Darin - Dream Lover (1987)
+9 Bon Jovi - Livin On A Prayer (1986)
+10 Bon Jovi - You Give Love A Bad Name (1986)
+11 Boney M - Rasputin (1978) ;P
+12 Bonnie Tyler - Holding Out For A Hero (1984)
+13 Bonnie Tyler - Total Eclipse Of The Heart (1983)
+14 Bryan Adams - I Do It For You (1991)
+15 Charley Pride - Kiss An Angel Good Morning (1971)
+16 Cyndi Lauper - Time After Time (1983)
+17 Dead Or Alive - You Spin Me Round (1984)
+18 Depeche Mode - Personal Jesus (1989)
+19 Dolly Parton - Hard Candy Christmas (1982)
+20 Flatt And Scruggs - Foggy Mountain Breakdown (1968)
+21 Foreigner - I Want To Know What Love Is (1984)
+22 George Benson - Nothings Gonna Change (1985)
+23 Israel Kamakawiwoole - Over The Rainbow (1990)
+24 John Denver - Take Me Home Country Roads (1971)
+25 Jona Lewie - Stop The Cavalry (1978)
+26 Jose Feliciano - Feliz Navidad (1970)
+27 Journey - Dont Stop Believin (1981)
+28 Kenny Loggins - Danger Zone (1986)
+29 Kiss - I Was Made For Lovin You (1979)
+30 Linda Ronstadt And Aaron Neville - Dont Know Much (1989)
+31 Metallica - Nothing Else Matters (1991)
+32 Metallica - The Unforgiven (1991)
+33 Michael Jackson - Billie Jean (1982)
+34 Nirvana - Smells Like Teen Spirit (1991)
+35 Paul Engemann - Push It To The Limit (1983)
+36 Paula Abdul - Straight Up (1988)
+37 Pepe - Shadilay (1986)
+38 Queen - 39 (1975)
+39 Queen - We Are The Champions (1977)
+40 Queen - We Will Rock You (1977)
+41 R E M - Losing My Religion (1991)
+42 Randy Travis - Deeper Than The Holler (1988)
+43 Randy Travis - Old Time Christmas (1989)
+44 Scott McKenzie - San Francisco (1967)
+45 Snap - Rhythm Is A Dancer (1992)
+46 Survivor - Eye Of The Tiger (1982)
+47 The B-52s - Love Shack (1989)
+48 The Beatles - Come Together (1969)
+49 The Beatles - Eleanor Rigby (1966)
+50 The Pogues - Fairytale Of New York (1987)
+51 The Temptations - Papa Was A Rolling Stone (1972)
+52 The Weather Girls - Its Raining Men (1983)
+53 Toto - Africa (1982)
+54 Toto - Hold The Line (1978)
+55 Wham - Last Christmas (1984)
+56 Whitney Houston - I Will Always Love You (1992)
+
+
+// Added In Music (163)
+
+1 2pac - Trapped (1991)
+2 A Flock Of Seagulls - I Ran (So Far Away) (1982)
+3 A Tribe Called Quest - Can I Kick It (1990)
+4 A Tribe Called Quest - I Left My Wallet in El Segundo (1990)
+5 A-Ha - Take On Me (1985)
+6 ABBA - SOS (1975)
+7 ACDC - Back In Black (1980)
+8 America - A Horse With No Name (1972)
+9 Asia - Heat of the Moment (1982)
+10 Australian Crawl - Reckless (Don't be so) (1983)
+11 Bee Gees - More Than A Woman (1977)
+12 Bill Monroe - Blue Moon of Kentucky (1945)
+13 Billy Idol - Dancing with myself (1980)
+14 Billy Idol - Rebel Yell (1983)
+15 Billy Joel - Piano Man (1973)
+16 Billy Joel - Uptown Girl (1983)
+17 Biz Markie - Just a Friend (1989)
+18 Black - Wonderful Life (1986)
+19 Black Sabbath - Iron Man (1970)
+20 Black Sabbath - Paranoid (1970)
+21 Black Sabbath - Snowblind (1972)
+22 Black Sabbath - War Pigs (1970)
+23 Blue Oyster Cult - Don't Fear The Reaper (1976)
+24 Bob Dylan - Knockin' on Heaven's door (1973)
+25 Bob Marley & The Wailers - Is This Love (1978)
+26 Bob Marley & The Wailers - Jamming (1977)
+27 Bob Marley & The Wailers - Redemption Song (1980)
+28 Bob Marley & The Wailers - Three Little Birds (1977)
+29 Bob Seger - Ramblin' Gamblin' Man (1969)
+30 Bon Jovi - Livin' On A Prayer (1986)
+31 Bon Jovi - Runaway (1981)
+32 Boney M. - Gatta go home (1979)
+33 Boston - More Than A Feeling (1976)
+34 Bruce Hornsby - The Way It Is (1986)
+35 Bruce Springsteen - Independence Day (1980)
+36 Bruce Springsteen - The River (1980)
+37 Bryan Adams - Summer Of '69 (1984)
+38 Clash - Rock the Casbah (1982)
+39 Count Five - Psychotic Reaction (1966)
+40 Creedence Clearwater Revival - Fortunate Son(1969)
+41 Creedence Clearwater Revival - Have You Ever Seen the Rain (1968)
+42 Cutting Crew - (I Just) Died In Your Arms (1986)
+43 David Bowie & Queen - Under Pressure (1981)
+44 David Bowie - Moonage Daydream (1972)
+45 David Bowie - The man who sold the world (1970)
+46 Deee-Lite - Groove Is In The Heart (1990)
+47 Depeche Mode - Enjoy The Silence (1990)
+48 Devo - Whip It (1980)
+49 Dion - The Wanderer (1961)
+50 Don Mclean - American Pie (1971)
+51 Eagles - Hotel California (1977)
+52 Eazy-E - Boyz-n-the-Hood (1987)
+53 ELO - Mr. Blue Sky (1977)
+54 Elton John - Rocket Man (1972)
+55 Europe - Carrie (1987)
+56 Europe - The Final Countdown (1986)
+57 George Harrison - I've Got My Mind Set on You (1987)
+58 Guns N' Roses - Sweet Child O' Mine (1988)
+59 Guns N' Roses - Welcome To The Jungle (1987)
+60 House of Pain - Jump Around (1992)
+61 Huey Lewis And The News - Hip To Be Square (1986)
+62 Japan - Quiet Life (1979)
+63 Jimi Hendrix -  I Don't Live Today (1967)
+64 Jimi Hendrix - All Along the Watchtower (1968)
+65 Jimi Hendrix - Bold as Love (1967)
+66 Jimi Hendrix - Hey Joe (1967)
+67 Jimi Hendrix - Hush Now (1981)
+68 Jimi Hendrix - Purple Haze  (1967)
+69 Jimi Hendrix - Voodoo Child (1968)
+70 John Denver - Take Me Home Country Roads (1971)
+71 John Travolta & Olivia Newton-John - You're The One That I Want (1978)
+72 Journey - Don't Stop Believin' (1981)
+73 Kansas - Carry On Wayward Son (1976)
+74 Kansas - Dust in the Wind (1977)
+75 Led Zeplin - Stairway To Heaven (1971)
+76 Led Zeppelin - Black Dog (1971)
+77 Led Zeppelin - In My Time of Dying (1975)
+78 Led Zeppelin - Misty Mountain Hop (1971)
+79 Lou Reed - Perfect Day (1972)
+80 Loverboy - Working for the Weekend (1981)
+81 Lynryd Skynyrd - Sweet Home Alabama (1974)
+82 Lynyrd Skynyrd - Simple Man (1973)
+83 Madonna - Like A Virgin (1984)
+84 Matthew Wilder - Break My Stride (1983)
+85 Men at Work - Land Down Under (1980)
+86 Men At Work - Who Can It Be Now (1981)
+87 Midnight Oil - Beds Are Burning (1987)
+88 Mighty Wings - Cheap Trick (1985)
+89 Modern English - I Melt With You (1982)
+90 Motley Crue - Home Sweet Home (1985)
+91 Motley Crue - Kickstart My Heart (1989)
+92 Nazareth - Broken Down Angel (1973)
+93 Nazareth - Down (1975)
+94 Nazareth - Love Hurts (1974)
+95 Neil Young - Campaigner (1977)
+96 NENA - 99 Red Balloons (1984)
+97 New Order - Blue Monday 88 (1983)
+98 Nirvana - Drain You (1991)
+99 Nirvana - In Bloom (1991)
+100 Nirvana - Lithium (1991) 
+101 Nirvana - Love Buzz (1989) 
+102 Nirvana - On a Plain (1991) 
+103 Nirvana - Stay Away (1991) 
+104 NWA - Fuck the Police (1988) 
+105 NWA - Gangsta Gangsta (1988) 
+106 NWA - Straight Outta Compton (1988) 
+107 Paul Simon - You Can Call Me Al (1986) 
+108 Pearl Jam - Even Flow (1991) 
+109 Pink Floyd - Comfortably Numb (1980) 
+110 Pixies - Down to the Well (1990) 
+111 Queen - Another One Bites the Dust (1980) 
+112 Queen - Bohemian Rhapsody (1975) 
+113 Queen - Don't Stop Me Now (1979) 
+114 Queen - I Want To Break Free (1984) 
+115 Quiet Riot - Cum on Feel The Noise (1973) 
+116 R.E.M. - Losing my Religion (1991) 
+117 Red Hot Chili Peppers - Under the Bridge (1991) 
+118 REO Speedwagon - Can't Fight This Feeling (1984) 
+119 Rick Astley - Never Gonna Give You Up (1987) 
+120 Rick Springfield - Jessie's Girl (1981) 
+121 Rod Stewart - Young Turks (1981) 
+122 Rolling Stones -  Paint It Black (1966) 
+123 Rolling Stones - Gimme Shelter (1969) 
+124 Run DMC - It's Tricky (1987) 
+125 Salt-N-Pepa - Push It (1988) 
+126 Sandra - (I'll Never Be) Maria Magdalena (1985) 
+127 Skid Row - 18 And Life (1989) 
+128 Starship - Nothing's Gonna Stop Us Now (1987) 
+129 Starship - We Built This City (1985) 
+130 Status Quo - Pictures of Matchstick Men (1968) 
+131 Steve Miller Band - Abracadabra (1982) 
+132 Stryper - Always There For You (1988) 
+133 Sublime - 40oz To Freedom (1992) 
+134 Talking Heads - Psycho Killer (1977) 
+135 Tears for Fears - Everybody Wants to Rule the World (1985) 
+136 Technotronic - Pump Up The Jam (1989) 
+137 The B-52's - Rock Lobster (1978) 
+138 The Beach Boys - Kokomo (1988) 
+139 The Buggles - Video Killed the Radio Star (1979) 
+140 The Eagles - Take It Easy (1972) 
+141 The Police - Every breath you take (1983) 
+142 The Police - Message In A Bottle (1979) 
+143 The Police - Roxanne (1979) 
+144 The Strangers - Golden Brown (1981) 
+145 The Tops - Reach Out I'll Be There (1967) 
+146 The Who - Eminence Front (1982) 
+147 The Who - Won't Get Fooled Again (1971) 
+148 Thin Lizzy - The Boys Are Back In Town (1976) 
+149 Thomas Dolby - She blinded me with science (1982) 
+150 Tiffany - I Think we're alone now (1987) 
+151 Tom Petty - Free Falling (1988) 
+152 Tommy Tutone - 867-5309 (1981) 
+153 Townes Van Zandt - For The Sake Of The Song (1968) 
+154 Twisted Sister - We're Not Gonna Take It (1984) 
+155 Twisted Sisters - I Wanna Rock (1984) 
+156 UB40 - Red Red Wine (1983) 
+157 Van Halen - Jump (1983) 
+158 Van Halen - Panama (1984) 
+159 Van Halen - You Really Got Me (1978) 
+160 Vehicle - The Ides of March (1970) 
+161 When in Rome - The Promise (1988) 
+162 Wings - Band on the Run (1973) 
+163 Wings - Nineteen Hundred and Eighty-Five (1973)
+164 Red Hot Chili Peppers - My Lovely Man (1991)
+165 Red Hot Chili Peppers - Me And My Friends (1987)
+166 Alice in Chains - Man in the Box (1991)
+167 Led Zeppelin - Heartbreaker (1969)
+168 Led Zeppelin - Living Loving Maid (She's Just a Woman) (1969)
+169 Elton John - i'm Still Standing (1983)
+170 ABBA - Dancing Queen (1976)
+171 Billy Joel - You May be Right (1980)
+172 Billy Joel - Movin' Out (Anthony's Song) (1977)
+173 Billy Joel - Only The Good Die Young (1977)
+174 Tears For Fears - Head Over Heels (1985)
+175 R.E.M - It's the end of the world as we know it (and I feel fine) (1987)
+176 Daryl Hall & John Oates - Maneater (1982)
+177 Billy Idol - White Wedding (1982)
+178 The Trashmen - Surfin' Bird (1963)
+179 Pantera - Cowboys From Hell (1990)
+180 Pearl Jam - Alive (1991)
+181 Tom Petty - Zombie Zoo (1989)
+182 Alabama - Dixieland Delight (1983)
+183 Alabama - Song of the South (1988)
+184 Billy Ray Cyrus - Achy Breaky Heart (1992)
+185 Gil Scott-Heron - Home is Where the Hatred is (1971)
+186 Hank Williams Jr. - All My Rowdy Friends Are Coming Over Tonight (1984)
+187 Hank Williams Jr. - Dinosaur (1980)
+188 Kraftwerk - Computer Love (1981)
+189 Kraftwerk - The Model (1978)
+190 Scorpions – Send Me An Angel (1991)
+191 Lou Reed - Satellite of Love (1972)
+192 Lou Reed - Walk on the Wild Side (1972)
+193 Hank Williams Jr. - Old Habits (1980)
+194 Hank Williams Jr. - Texas Women (1981)
+195 Hank Williams - I'll Never Get Out of This World Alive (1952)
+196 Steely Dan - Reelin' in the Years (1972)
+197 Steely Dan - Do it Again (1972)
+198 Earth, Wind & Fire - September (1978)
+199 Earth, Wind & Fire - Let's Groove (1981)
+200 Earth, Wind & Fire - Boogie Wonderland (1979)
+201 Earth, Wind & Fire - Shining Star (1975)
+202 America - Sister Golden Hair (1975)
+203 Simon & Garfunkel - Mrs. Robinson (1968)
+204 Simon & Garfunkel - Cecilia (1970)
+205 Simon & Garfunkel - Bridge over Troubled Water (1970)
+206 The Traveling Wilburys - End of the line (1988)
+207 The Traveling Wilburys - Last Night (1988)
+208 Def Leppard - Photograph (1983)
+209 Marty Robbins - El paso (1957)
+210 Rush - Limelight (1981)
+211 Rush - YYZ (1981)
+212 Rush - The Spirit Of The Radio (1980)
+213 Rush - Working Man (1974)
+214 U2 - With Or Without You (1987)
+215 Tiny Tim - Livin’ in the Sunlight, Lovin’ in the Moonlight (1968)
+216 Jim Croce - Time In A Bottle (1972)
+217 Whitesnake - Here I Go Again (1987)
+218 The Animals - House of the Rising Sun (1964)
+219 The Clash - Should I Stay or Should I Go (1982)
+220 ELO - Turn to Stone (1977)
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

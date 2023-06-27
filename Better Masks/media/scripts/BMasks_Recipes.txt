@@ -1,0 +1,79 @@
+module NMBM
+{
+	imports {
+	Base
+	}
+
+	recipe Open Box of Masks
+    {
+		destroy MasksBox_Blue,
+		Result:Hat_SurgicalMask_Blue=50,
+		Time:5.0,
+		Category:Misc,
+		Sound:PutItemInBag,
+		OnCreate:OpenBoxofMasksBlue
+    }
+	recipe Put Masks in Box
+    {
+		Hat_SurgicalMask_Blue=50,
+		EmptyMasksBox_Blue,
+		Result:MasksBox_Blue,
+		Time:5.0,
+		Category:Misc,
+		Sound:PutItemInBag,
+    }
+	recipe Open Box of Masks
+    {
+		destroy MasksBox_Green,
+		Result:Hat_SurgicalMask_Green=50,
+		Time:5.0,
+		Category:Misc,
+		Sound:PutItemInBag,
+		OnCreate:OpenBoxofMasksGreen
+    }
+	recipe Put Masks in Box
+    {
+		Hat_SurgicalMask_Green=50,
+		EmptyMasksBox_Green,
+		Result:MasksBox_Green,
+		Time:5.0,
+		Category:Misc,
+		Sound:PutItemInBag,
+    }
+	recipe Open Box of Masks
+    {
+		destroy MasksBox_White,
+		Result:Hat_DisposableMask_White=50,
+		Time:5.0,
+		Category:Misc,
+		Sound:PutItemInBag,
+		OnCreate:OpenBoxofMasksWhite
+    }
+	recipe Put Masks in Box
+    {
+		Hat_DisposableMask_White=50,
+		EmptyMasksBox_White,
+		Result:MasksBox_White,
+		Time:5.0,
+		Category:Misc,
+		Sound:PutItemInBag,
+    }
+	recipe Open Box of Masks
+    {
+		destroy MasksBox_Black,
+		Result:Hat_DisposableMask_Black=50,
+		Time:5.0,
+		Category:Misc,
+		Sound:PutItemInBag,
+		OnCreate:OpenBoxofMasksBlack
+    }
+	recipe Put Masks in Box
+    {
+		Hat_DisposableMask_Black=50,
+		EmptyMasksBox_Black,
+		Result:MasksBox_Black,
+		Time:5.0,
+		Category:Misc,
+		Sound:PutItemInBag,
+    }
+}

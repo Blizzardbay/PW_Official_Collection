@@ -1,0 +1,4 @@
+IG_UI_ES = {
+	IGUI_CraftCategory_Tailoring = "Sastrería",
+}
+

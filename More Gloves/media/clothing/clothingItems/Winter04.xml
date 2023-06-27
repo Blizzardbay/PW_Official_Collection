@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+    <m_MaleModel>media\models_X\Skinned\Clothes\Winter_Gloves_M.fbx</m_MaleModel>
+    <m_FemaleModel>media\models_X\Skinned\Clothes\Winter_Gloves_F.fbx</m_FemaleModel>
+	<m_GUID>bbb9fbbe-5f5a-4298-8dee-e4f92a59f4fe</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+    <m_Masks>4</m_Masks>
+    <m_Masks>6</m_Masks>
+	<textureChoices>clothes\gloves\Winter04</textureChoices>
+</clothingItem>

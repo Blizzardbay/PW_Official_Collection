@@ -1,0 +1,160 @@
+module ImprovisedCabinetry {
+    imports {
+        Base
+    }
+
+    /* Fossoil -------------------------------------------------- */
+    recipe ICMakeCabinetShop1 {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        PaintBlue,
+        PaintWhite,
+        Result: Moveables.location_shop_fossoil_01_23,
+        SkillRequired:Woodwork=3,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    recipe ICMakeCabinetShop1Corner {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        PaintBlue,
+        PaintWhite,
+        Result: Moveables.location_shop_fossoil_01_22,
+        SkillRequired:Woodwork=3,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    /* Gas2Go --------------------------------------------------- */
+    recipe ICMakeCabinetShop2 {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        PaintRed,
+        PaintWhite,
+        Result: Moveables.location_shop_gas2go_01_23,
+        SkillRequired:Woodwork=3,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    recipe ICMakeCabinetShop2Corner {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        PaintRed,
+        PaintWhite,
+        Result: Moveables.location_shop_gas2go_01_22,
+        SkillRequired:Woodwork=3,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    /* Generic Shop --------------------------------------------- */
+    recipe ICMakeCabinetShop3 {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        Result: Moveables.location_shop_generic_01_23,
+        SkillRequired:Woodwork=1,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    recipe ICMakeCabinetShop3Corner {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        Result: Moveables.location_shop_generic_01_22,
+        SkillRequired:Woodwork=1,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+    }
+
+    /* Zippee --------------------------------------------------- */
+    recipe ICMakeCabinetShop4 {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        PaintRed,
+        PaintWhite,
+        Result: Moveables.location_shop_zippee_01_23,
+        SkillRequired:Woodwork=3,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+        NeedToBeLearn:True,
+    }
+
+    recipe ICMakeCabinetShop4Corner {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep [Recipe.GetItemTypes.Saw],
+        Plank=2,
+        Woodglue=2,
+        Nails=8,
+        ImprovisedCabinetry.WoodPanel=2,
+        PaintRed,
+        PaintWhite,
+        Result: Moveables.location_shop_zippee_01_22,
+        SkillRequired:Woodwork=3,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BuildLow,
+        Prop1: Hammer,
+        Sound: Hammering,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPWoodCabinet,
+        NeedToBeLearn:True,
+    }
+
+}

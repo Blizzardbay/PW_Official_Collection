@@ -1,0 +1,45 @@
+module ImprovisedCabinetry {
+    imports {
+        Base
+    }
+
+    /* Double Steel Shelves ------------------------------------- */
+    recipe ICMakeLargeMetalShelves1 {
+        keep BlowTorch=2,
+        WeldingRods=2,
+        keep [Recipe.GetItemTypes.WeldingMask],
+        MetalPipe=4,
+        SmallSheetMetal=3,
+        Result: Moveables.furniture_shelving_01_25,
+        SkillRequired:MetalWelding=3,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BlowTorchFloor,
+        Prop1: Blowtorch,
+        Prop2: MetalBar,
+        Sound: BlowTorch,
+        NeedToBeLearn: False,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPMetalCabinet,
+        OnCreate:Recipe.OnCreate.ImprovisedCabinetry_SteelShelves,
+    }
+
+    /* Metal Cabinets ------------------------------------------- */
+    recipe ICMakeMetalCabinet1 {
+        keep BlowTorch=2,
+        WeldingRods=2,
+        keep [Recipe.GetItemTypes.WeldingMask],
+        MetalPipe=2,
+        SheetMetal=3,
+        SmallSheetMetal=2,
+        Result: Moveables.furniture_storage_02_1,
+        SkillRequired:MetalWelding=5;Woodwork=4;,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BlowTorchFloor,
+        Prop1: Blowtorch,
+        Prop2: MetalBar,
+        Sound: BlowTorch,
+        NeedToBeLearn: False,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPMetalCabinet,
+    }
+}

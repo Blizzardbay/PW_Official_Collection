@@ -1,0 +1,203 @@
+module Base {
+
+    imports
+    {
+        Base
+    }
+
+    recipe Make Pot of Soup
+    {
+       CannedMushroomSoup,
+       keep TinOpener/KitchenKnife/HuntingKnife/Stone,
+       Pot,
+
+       Result:PotOfSoup,
+       Time:130.0,
+       Category:Cooking,
+       OnTest:NFOCF.OpenCan.OnTest,
+       OnCreate:NFOCF.OpenCan.OnCreate,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+
+    recipe Make Pot of Soup
+    {
+       TinnedSoup,
+       keep TinOpener/KitchenKnife/HuntingKnife/Stone,
+       Pot,
+
+       Result:PotOfSoup,
+       Time:130.0,
+       Category:Cooking,
+       OnTest:NFOCF.OpenCan.OnTest,
+       OnCreate:NFOCF.OpenCan.OnCreate,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+
+    recipe Open Canned Soup
+    {
+       TinnedSoup,
+       keep TinOpener/KitchenKnife/HuntingKnife/Stone,
+
+       Result:TinnedSoupOpen,
+       Time:80.0,
+       Category:Cooking,
+       OnTest:NFOCF.OpenCan.OnTest,
+       OnCreate:NFOCF.OpenCan.OnCreate,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Override:true,
+    }
+
+    recipe Open Canned Beans
+    {
+       TinnedBeans,
+       keep TinOpener/KitchenKnife/HuntingKnife/Stone,
+
+       Result:OpenBeans,
+       Time:80.0,
+       Category:Cooking,
+       OnTest:NFOCF.OpenCan.OnTest,
+       OnCreate:NFOCF.OpenCan.OnCreate,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Override:true,
+    }
+
+    recipe Open Dog Food
+    {
+       Dogfood,
+       keep TinOpener/KitchenKnife/HuntingKnife/Stone,
+
+       Result:DogfoodOpen,
+       Time:80.0,
+       Category:Cooking,
+       OnTest:NFOCF.OpenCan.OnTest,
+       OnCreate:NFOCF.OpenCan.OnCreate,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Override:true,
+    }
+
+    recipe Make Bowl of Beans
+    {
+       TinnedBeans,
+       keep TinOpener/KitchenKnife/HuntingKnife/Stone,
+       Bowl,
+
+       Result:BeanBowl,
+       Time:130.0,
+       Category:Cooking,
+       OnTest:NFOCF.OpenCan.OnTest,
+       OnCreate:NFOCF.OpenCan.OnCreate,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+
+    recipe Open Canned Corn
+    {
+       CannedCorn,
+       keep TinOpener/KitchenKnife/HuntingKnife/Stone,
+
+       Result:CannedCornOpen,
+       Time:80.0,
+       Category:Cooking,
+       OnTest:NFOCF.OpenCan.OnTest,
+       OnCreate:NFOCF.OpenCan.OnCreate,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Override:true,
+    }
+
+    recipe Open Canned Bolognese
+    {
+       CannedBolognese,
+       keep TinOpener/KitchenKnife/HuntingKnife/Stone,
+
+       Result:CannedBologneseOpen,
+       Time:80.0,
+       Category:Cooking,
+       OnTest:NFOCF.OpenCan.OnTest,
+       OnCreate:NFOCF.OpenCan.OnCreate,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Override:true,
+    }
+
+    recipe Open Canned Chili
+    {
+       CannedChili,
+       keep TinOpener/KitchenKnife/HuntingKnife/Stone,
+
+       Result:CannedChiliOpen,
+       Time:80.0,
+       Category:Cooking,
+       OnTest:NFOCF.OpenCan.OnTest,
+       OnCreate:NFOCF.OpenCan.OnCreate,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Override:true,
+    }
+
+    recipe Open Canned Mushroom Soup
+    {
+        CannedMushroomSoup,
+        keep TinOpener/KitchenKnife/HuntingKnife/Stone,
+
+        Result:CannedMushroomSoupOpen,
+        Time:80.0,
+        Category:Cooking,
+        OnTest:NFOCF.OpenCan.OnTest,
+        OnCreate:NFOCF.OpenCan.OnCreate,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Override:true,
+    }
+
+    recipe Open Canned Peas
+    {
+       CannedPeas,
+       keep TinOpener/KitchenKnife/HuntingKnife/Stone,
+
+       Result:CannedPeasOpen,
+       Time:80.0,
+       Category:Cooking,
+       OnTest:NFOCF.OpenCan.OnTest,
+       OnCreate:NFOCF.OpenCan.OnCreate,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Override:true,
+    }
+
+    recipe Open Canned Potato
+    {
+       CannedPotato2,
+       keep TinOpener/KitchenKnife/HuntingKnife/Stone,
+
+       Result:CannedPotatoOpen,
+       Time:80.0,
+       Category:Cooking,
+       OnTest:NFOCF.OpenCan.OnTest,
+       OnCreate:NFOCF.OpenCan.OnCreate,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Override:true,
+    }
+
+    recipe Open Canned Tomato
+    {
+       CannedTomato2,
+       keep TinOpener/KitchenKnife/HuntingKnife/Stone,
+
+       Result:CannedTomatoOpen,
+       Time:80.0,
+       Category:Cooking,
+       OnTest:NFOCF.OpenCan.OnTest,
+       OnCreate:NFOCF.OpenCan.OnCreate,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Override:true,
+    }
+
+    recipe Open Canned Carrots
+    {
+       CannedCarrots2,
+       keep TinOpener/KitchenKnife/HuntingKnife/Stone,
+
+       Result:CannedCarrotsOpen,
+       Time:80.0,
+       Category:Cooking,
+       OnTest:NFOCF.OpenCan.OnTest,
+       OnCreate:NFOCF.OpenCan.OnCreate,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Override:true,
+    }
+}

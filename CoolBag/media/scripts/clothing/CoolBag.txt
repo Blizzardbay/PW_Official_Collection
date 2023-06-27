@@ -1,0 +1,46 @@
+module Base
+{
+    item WaterPocket
+    {
+        Weight              = 0.1,
+        Type                = Normal,
+        DisplayName         = Water Pocket,
+        DisplayCategory     = Cooking,
+        Icon                = WaterPocket,
+        WorldStaticModel    = WaterPocket,
+    }
+    item IcePocket
+    {
+        Weight              = 0.1,
+        Type                = Normal,
+        DisplayName         = Ice Pocket,
+        DisplayCategory     = Cooking,
+        Icon                = IcePocket,
+        WorldStaticModel    = IcePocket,
+    }
+    
+    model WaterPocket
+    {
+        mesh = WorldItems/WaterPocket,
+        texture = WorldItems/WaterPocket,
+        scale = 0.6,
+    }
+    model IcePocket
+    {
+        mesh = WorldItems/IcePocket,
+        texture = WorldItems/IcePocket,
+        scale = 0.6,
+    }
+    recipe Make WaterPocket
+    {
+        Plasticbag/Garbagebag,
+        DuctTape=1,
+        Water=5,
+        
+        Result:WaterPocket,
+        Time:100.0,
+        Category:Survivalist,
+        AnimNode:Disassemble,
+        OnCreate:Recipe.OnCreate.MakeWaterPocket,
+    }
+}

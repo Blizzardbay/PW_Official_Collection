@@ -1,0 +1,55 @@
+module MG
+    {
+    imports
+    {
+	Base
+    }
+   recipe Make Cloth Hand Wrappings
+   {
+   RippedSheets=6,
+   Result:RippedSheetsGloves,
+   Sound:ClothesRipping,
+   Time:150.0,
+   Category:Tailoring,
+   OnGiveXP:ClothMendingXP05,
+	}
+	recipe Make Denim Hand Wrappings
+   {
+   DenimStrips=6,
+   Result:RippedDenimGloves,
+   Sound:ClothesRipping,
+   Time:150.0,
+   Category:Tailoring,
+   OnGiveXP:ClothMendingXP05,
+	}
+	recipe Make Leather Hand Wrappings
+   {
+   RippedSheets=6,
+   LeatherStrips=6,
+   Result:ImprovisedGloves,
+   Sound:ClothesRipping,
+   Time:150.0,
+   Category:Tailoring,
+   OnGiveXP:ClothMendingXP05,
+	}
+	recipe Improve to Leather Hand Wrappings
+   {
+   RippedSheetsGloves,
+   LeatherStrips=6,
+   Result:ImprovisedGloves,
+   Sound:ClothesRipping,
+   Time:150.0,
+   Category:Tailoring,
+   OnGiveXP:ClothMendingXP05,
+	}
+	recipe Cut Leather Gloves into Fingerless Leather Gloves,
+	{
+	Gloves_LeatherGloves/Gloves_LeatherGlovesBlack,
+	keep [Recipe.GetItemTypes.Scissors],
+	Result:FingerlessLeatherGloves,
+	Sound:ClothesRipping,
+	Time:300.0,
+	Category:Tailoring,
+	OnGiveXP:ClothMendingXP05,
+	}
+}

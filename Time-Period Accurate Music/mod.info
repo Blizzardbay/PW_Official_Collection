@@ -1,0 +1,5 @@
+name=Time-Period Accurate Music 
+poster=poster.png
+id=TPAM
+require=truemusic
+description= Default Time-Period Accurate Music

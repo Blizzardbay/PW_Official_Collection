@@ -1,0 +1,8 @@
+ItemName_FR = {
+
+	-- Jar Lid MOD
+	-- Traduit en français par Bobitec
+
+	ItemName_JarLidMod.JarLidBoxs = "Boîte de couvercle de bocal",
+
+}

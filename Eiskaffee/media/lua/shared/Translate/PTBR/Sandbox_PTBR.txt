@@ -1,0 +1,12 @@
+Sandbox_PTBR = {
+	
+	Sandbox_Eiskaffee = "Café Gelado",
+	
+	Sandbox_Eiskaffee_SpawnChance = "Chance de Spawnar",
+	Sandbox_Eiskaffee_SpawnChance_option1 = "Extremamente Raro",
+	Sandbox_Eiskaffee_SpawnChance_option2 = "Raro",
+	Sandbox_Eiskaffee_SpawnChance_option3 = "Normal",
+	Sandbox_Eiskaffee_SpawnChance_option4 = "Comum",
+	Sandbox_Eiskaffee_SpawnChance_option5 = "Abundante",
+
+}

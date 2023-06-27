@@ -1,0 +1,8 @@
+Recipes_ES = {
+        Recipe_Make_Cloth_Hand_Wrappings = "Hacer guantes de retales de tela",
+        Recipe_Make_Denim_Hand_Wrappings = "Hacer guantes de retales de tela vaquera",
+        Recipe_Make_Leather_Hand_Wrappings = "Hacer guantes improvisados",
+        Recipe_Improve_to_Leather_Hand_Wrappings = "Hacer guantes improvisados",
+        Recipe_Cut_Leather_Gloves_into_Fingerless_Leather_Gloves, = "Cortar dedos a guantes de cuero",
+		Recipe_Cut_Leather_Gloves_into_Fingerless_Leather_Gloves = "Cortar dedos a guantes de cuero",
+}

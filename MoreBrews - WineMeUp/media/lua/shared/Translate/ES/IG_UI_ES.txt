@@ -1,0 +1,7 @@
+IGUI_ES =
+{
+	IGUI_ItemCat_MoreBrews = "MoreBrews",
+	IGUI_CraftCategory_MoreBrews =  "MoreBrews",
+	IGUI_perks_WineMaking = "Fabricación de vinos",
+	IGUI_ItemCat_CraftWineMaking = "Fabricación - Vinos",
+}

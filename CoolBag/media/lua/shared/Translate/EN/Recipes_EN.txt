@@ -1,0 +1,4 @@
+Recipes_EN = {
+    Recipe_Remove_Coldpacks = "Remove Coldpacks",
+    Recipe_Make_WaterPocket = "Make Water Pocket",
+}

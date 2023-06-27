@@ -1,0 +1,4 @@
+Recipes_RU = {
+	Recipe_Open_Box_of_Masks = "Открытая коробка масок",
+	Recipe_Put_Masks_in_Box = "Положите маски в коробку",
+}

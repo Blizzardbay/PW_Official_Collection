@@ -1,0 +1,24 @@
+Sandbox_EN = {
+	Sandbox_MB_Loot = "Пивоварение (настройки лута)"
+	Sandbox_MB_LootGeneral = "Появление предметов из мода"
+	Sandbox_MB_LootGeneral_tooltip = "Устанавливает базовое количество лута."
+	Sandbox_MB_BrewingKits = "Набор для пивоварения (Спавн-рейт)"
+	Sandbox_MB_BrewingKits_tooltip = "Определяет множитель к скорости появления предметов."
+	Sandbox_MB_Kegs = "Пустые кеги (Спавн-рейт)"
+	Sandbox_MB_Kegs_tooltip = "Определяет множитель к скорости появления предметов."
+	Sandbox_MB_Recipes = "Журналы (Спавн-рейт)"
+	Sandbox_MB_Recipes_tooltip = "Определяет множитель к скорости появления предметов."
+	Sandbox_MB_Books = "Книги (Спавн-рейт)"
+	Sandbox_MB_Books_tooltip = "Определяет множитель к скорости появления предметов."
+	Sandbox_MB_Supplies = "Инструменты пивовара (Спавн-рейт)"
+	Sandbox_MB_Supplies_tooltip = "Определяет множитель к скорости появления предметов."
+	Sandbox_MB_Cans = "Полные банки пива (Спавн-рейт)"
+	Sandbox_MB_Cans_tooltip = "Определяет множитель к скорости появления предметов."
+	Sandbox_MB_Bottles = "Полные бутылки пива (Спавн-рейт)"
+	Sandbox_MB_Bottles_tooltip = "Определяет множитель к скорости появления предметов."
+    	Sandbox_MB_LootGeneral_option1 = "Мало",
+    	Sandbox_MB_LootGeneral_option2 = "Нормально",
+     	Sandbox_MB_LootGeneral_option3 = "Много",
+    	Sandbox_MB_LootGeneral_option4 = "Очень много",
+    	Sandbox_MB_LootGeneral_option5 = "Максимально",
+}

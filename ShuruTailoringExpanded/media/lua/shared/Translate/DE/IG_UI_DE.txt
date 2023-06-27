@@ -1,0 +1,5 @@
+IGUI_DE = {
+	IGUI_CraftCategory_Tailoring = "Schneiderei",
+	IGUI_ShuruTailoring_Sew = "$$$ nähen",
+	IGUI_ShuruTailoring_CantLearn = "Das scheint mir noch zu schwierig..."
+}

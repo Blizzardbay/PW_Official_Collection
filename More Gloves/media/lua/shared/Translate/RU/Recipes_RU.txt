@@ -1,0 +1,8 @@
+Recipe_RU = {
+	Recipe_Make_Cloth_Hand_Wrappings = "Сделать Самодельные тканевые перчатки",
+    Recipe_Make_Denim_Hand_Wrappings = "Сделать Самодельные джинсовые перчатки",
+    Recipe_Make_Leather_Hand_Wrappings = "Сделать Самодельные улучшенные перчатки",
+    Recipe_Improve_to_Leather_Hand_Wrappings = "Улучшить до Самодельных улучшенных перчаток"
+    Recipe_Cut_Leather_Gloves_into_Fingerless_Leather_Gloves = "Разрезать Перчатки на Кожаные перчатки без пальцев",
+	Recipe_Cut_Leather_Gloves_into_Fingerless_Leather_Gloves, = "Разрезать Перчатки на Кожаные перчатки без пальцев",
+}

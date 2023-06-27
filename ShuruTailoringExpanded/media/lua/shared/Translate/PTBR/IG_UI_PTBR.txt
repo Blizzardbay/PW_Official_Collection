@@ -1,0 +1,5 @@
+IGUI_PTBR = {
+	IGUI_CraftCategory_Tailoring = "Costura",
+	IGUI_ShuruTailoring_Sew = "Costurar $$$",
+	IGUI_ShuruTailoring_CantLearn = "Isso parece ser muito difícil por agora..."
+}

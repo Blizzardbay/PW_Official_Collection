@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>static\clothes\m_disposablemask</m_MaleModel>
+	<m_FemaleModel>static\clothes\f_disposablemask</m_FemaleModel>
+	<m_GUID>8b4a24c4-f679-4a9e-ba88-c81e95a30bbf</m_GUID>
+	<m_Static>true</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone>Bip01_Head</m_AttachBone>
+	<m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+	<textureChoices>clothes\facemaskcatwhiskerswhite</textureChoices>
+</clothingItem>

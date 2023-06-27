@@ -1,0 +1,1172 @@
+module Base
+{
+	imports
+	{
+		Base
+	}
+
+    	item Gunbang
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Hardtack,
+		Icon					=		Gunbang,
+		Weight				=		0.15,
+		CantBeFrozen			=		TRUE,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:5;Stew:5;Stir fry:5;PastaPot:5;PastaPan:5,
+		FoodType				=		Pasta,
+		HungerChange			=		-20,
+		ThirstChange			=		6,
+		Carbohydrates			=		77,
+		Proteins				=		11,
+		Lipids 				=		3,
+		Calories				=		400,
+		WorldStaticModel			=		Gunbang,
+		CustomEatSound			=		EatingCrispy,
+	}
+
+
+    	item Matdsh
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Red chili paste,
+		Icon					=		Matdsh,
+		Weight				=		0.01,
+		CantBeFrozen			=		TRUE,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Sandwich:1;Burger:1;Soup:1;Stew:1;Pie:1;Stir fry:1;Salad:1;Roasted Vegetables:1;RicePot:1;RicePan:1;PastaPot:1;PastaPan:1,
+		HungerChange			=		-6,
+		ThirstChange			=		6,
+		Carbohydrates			=		2,
+		Proteins				=		0,
+		Lipids 				=		0,
+		Calories				=		20,
+		CustomEatSound			=		EatingFruit,
+		WorldStaticModel			=		Matdsh,
+		Spice					=		true,
+	}
+
+    	item Dchicken
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Sugar chicken,
+		Icon					=		Dchicken,
+		Weight				=		0.22,
+		DaysFresh 			=		30,
+		DaysTotallyRotten		=		30,
+		EvolvedRecipe			=       Sandwich:15;Burger:15;Soup:15;Stew:15;Stir fry:15;RicePot:15;RicePan:15,
+		FoodType				=		Meat,
+		MinutesToCook			=		10,
+		MinutesToBurn			=		100,
+		StressChange			=		-15,
+		BoredomChange			=		-15,
+		UnhappyChange			=		-15,
+		HungerChange			=		-30,
+		Carbohydrates			=		15,
+		Proteins				=		15,
+		Lipids 				=		25,
+		Calories				=		700,
+		WorldStaticModel			=		Dchicken,
+	}
+	
+	recipe Open SHAM
+    {
+       TinnedSHAM,
+
+       Result:TinnedSHAMOpen,
+       Time:80.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:OpenCannedFood,
+    }
+
+    item TinnedSHAMOpen
+	{
+	    DisplayCategory = Food,
+		HungerChange	=	-25,
+		Weight	=	0.6,
+		Type	=	Food,
+		DisplayName	=	Opened SHAM,
+		Icon	=	SHAMopen,
+		CustomEatSound = EatingFruit,
+        EvolvedRecipe = Omelette:5;Sandwich:5;Sandwich Baguette:5;Burger:5;Salad:5;RicePot:5;RicePan:5;PastaPot:5;PastaPan:5,
+		DaysTotallyRotten	=	14,
+        DaysFresh = 7,
+        Carbohydrates = 6,
+        Proteins = 20,
+        Lipids = 60,
+        Calories = 680,
+        Packaged = TRUE,
+        ReplaceOnUse    =   TinCanEmpty,
+        StaticModel = SHAMOpen,
+        EatType = can,
+        CannedFood = TRUE,
+        WorldStaticModel = SHAMOpen,
+	}
+
+	item TinnedSHAM
+    {
+        DisplayCategory = Food,
+        Weight	=	0.8,
+        Type	=	Food,
+        DisplayName	=	SHAM,
+        Icon	=	SHAM,
+        Carbohydrates = 6,
+        Proteins = 20,
+        Lipids = 60,
+        Calories = 680,
+        Packaged = TRUE,
+        StaticModel = SHAM,
+        CannedFood = TRUE,
+        WorldStaticModel = SHAM,
+    }
+
+    	item Gunbang2
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Hardtack,
+		Icon					=		Gunbang2,
+		Weight				=		0.15,
+		CantBeFrozen			=		TRUE,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:5;Stew:5;Stir fry:5;PastaPot:5;PastaPan:5,
+		FoodType				=		Pasta,
+		HungerChange			=		-20,
+		ThirstChange			=		6,
+		Carbohydrates			=		77,
+		Proteins				=		11,
+		Lipids 				=		3,
+		Calories				=		400,
+		WorldStaticModel			=		Gunbang2,
+		CustomEatSound			=		EatingCrispy,
+	}
+
+
+    	item Gunbang3
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Hardtack,
+		Icon					=		Gunbang3,
+		Weight				=		0.15,
+		CantBeFrozen			=		TRUE,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:5;Stew:5;Stir fry:5;PastaPot:5;PastaPan:5,
+		FoodType				=		Pasta,
+		HungerChange			=		-20,
+		ThirstChange			=		6,
+		Carbohydrates			=		77,
+		Proteins				=		11,
+		Lipids 				=		3,
+		Calories				=		400,
+		WorldStaticModel			=		Gunbang3,
+		CustomEatSound			=		EatingCrispy,
+	}
+
+    	item Gunbang4
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Hardtack,
+		Icon					=		Gunbang4,
+		Weight				=		0.15,
+		CantBeFrozen			=		TRUE,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:5;Stew:5;Stir fry:5;PastaPot:5;PastaPan:5,
+		FoodType				=		Pasta,
+		HungerChange			=		-20,
+		ThirstChange			=		6,
+		Carbohydrates			=		77,
+		Proteins				=		11,
+		Lipids 				=		3,
+		Calories				=		400,
+		WorldStaticModel			=		Gunbang4,
+		CustomEatSound			=		EatingCrispy,
+	}
+
+    	item Gunbang5
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Hardtack,
+		Icon					=		Gunbang5,
+		Weight				=		0.15,
+		CantBeFrozen			=		TRUE,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:5;Stew:5;Stir fry:5;PastaPot:5;PastaPan:5,
+		FoodType				=		Pasta,
+		HungerChange			=		-20,
+		ThirstChange			=		6,
+		Carbohydrates			=		77,
+		Proteins				=		11,
+		Lipids 				=		3,
+		Calories				=		400,
+		WorldStaticModel			=		Gunbang5,
+		CustomEatSound			=		EatingCrispy,
+	}
+
+	recipe Make Budaejjigae
+    {
+	TinnedSHAMOpen/Ham;25,
+	TinnedSHAMOpen/Ham;25,
+	Gochujang;5,
+	Salt;2,
+	Leek,
+	OpenBeans,
+	WaterPot,
+	MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5/MushroomGeneric7,
+	Onion,
+
+       Result:Budaejjigae,
+       Time:130.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+       Sound:OpenCannedFood,
+    }
+	
+	recipe Make 4 Bowls of Budaejjigae
+	{
+	   Budaejjigae/BudaejjigaeRecipe,
+	   Bowl=4,
+
+	   Result:BudaejjigaeBowl=4,
+	   Time:80.0,
+	   Category:Cooking,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	}
+	recipe Make 2 Bowls of Budaejjigae
+	{
+	   Budaejjigae/BudaejjigaeRecipe,
+	   Bowl=2,
+
+	   Result:BudaejjigaeBowl2=2,
+	   Time:80.0,
+	   Category:Cooking,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	}
+    item BudaejjigaeBowl
+	{
+	    DisplayCategory = Food,
+		HungerChange	=	-20,
+		ThirstChange    =   -20,
+		Type	=	Food,
+		DisplayName	=	Budaejjigae Bowl,
+		MinutesToCook	=	15,
+		Weight	=	0.7,
+        Carbohydrates = 30,
+        Proteins = 20,
+        Lipids = 11,
+        Calories = 425,
+		IsCookable	=	TRUE,
+		UnhappyChange	=	-12,
+		MinutesToBurn	=	25,
+		Icon	=	BudaejjigaeBowl,
+		ReplaceOnUse	=	Bowl,
+		CustomEatSound = EatingSoup,
+        DaysFresh 		= 	6,
+        DaysTotallyRotten 	= 	7,
+		StaticModel = Bowl,
+		EatType = 2handbowl,
+		WorldStaticModel = BudaejjigaeBowl,
+	}
+
+    item BudaejjigaeBowl2
+	{
+	    DisplayCategory = Food,
+		HungerChange	=	-40,
+		ThirstChange    =   -40,
+		Type	=	Food,
+		DisplayName	=	Budaejjigae Bowl,
+		MinutesToCook	=	15,
+		Weight	=	1,
+        Carbohydrates = 60,
+        Proteins = 40,
+        Lipids = 22,
+        Calories = 850,
+		IsCookable	=	TRUE,
+		UnhappyChange	=	-24,
+		MinutesToBurn	=	25,
+		Icon	=	BudaejjigaeBowl,
+		ReplaceOnUse	=	Bowl,
+		CustomEatSound = EatingSoup,
+        DaysFresh 		= 	6,
+        DaysTotallyRotten 	= 	7,
+		StaticModel = Bowl,
+		EatType = 2handbowl,
+		WorldStaticModel = BudaejjigaeBowl,
+	}
+
+    item Budaejjigae
+    {
+        DisplayCategory = Food,
+        Weight	=	2,
+        Type	=	Food,
+        DisplayName	=	Budaejjigae,
+        Icon	=	Budaejjigae,
+        Carbohydrates = 120,
+        Proteins = 80,
+        Lipids = 44,
+        Calories = 1700,
+        IsCookable	=	    true,
+        MinutesToBurn   =   50,
+        MinutesToCook   =   20,
+		HungerChange			=		-80,
+		ThirstChange    =   -80,
+        UnhappyChange   =   -48,
+        ReplaceOnUse    =   Pot,
+        DaysFresh 		= 	6,
+        DaysTotallyRotten 	= 	7,
+        GoodHot = true,
+        StaticModel = CookingPot,
+        WorldStaticModel = Budaejjigae,
+        CookingSound = BoilingFood,
+    }
+
+
+    	item Gochujang
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Gochu-jang,
+		Icon					=		Gochujang,
+		Weight				=		0.6,
+		CantBeFrozen			=		TRUE,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Sandwich:1;Burger:1;Soup:1;Stew:1;Pie:1;Stir fry:1;Salad:1;Roasted Vegetables:1;RicePot:1;RicePan:1;PastaPot:1;PastaPan:1,
+		HungerChange			=		-50,
+		UnhappyChange			=		-5,
+		Carbohydrates			=		220,
+		Proteins				=		30,
+		Lipids 				=		10,
+		Calories				=		1150,
+		WorldStaticModel			=		Gochujang,
+		CustomEatSound			=		EatingCrispy,
+		Spice					=		true,
+	}
+
+    	item Doenjang
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Doen-jang,
+		Icon					=		Doenjang,
+		Weight				=		0.6,
+		CantBeFrozen			=		TRUE,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Sandwich:1;Burger:1;Soup:1;Stew:1;Pie:1;Stir fry:1;Salad:1;Roasted Vegetables:1;RicePot:1;RicePan:1;PastaPot:1;PastaPan:1,
+		HungerChange			=		-50,
+		UnhappyChange			=		-5,
+		Carbohydrates			=		120,
+		Proteins				=		60,
+		Lipids 				=		10,
+		Calories				=		800,
+		WorldStaticModel			=		Doenjang,
+		CustomEatSound			=		EatingCrispy,
+		Spice					=		true,
+	}
+
+	recipe Make Fish Broth
+    {
+	BaitFish=8,
+	WaterPot,
+
+
+       Result:Fishbroth,
+       Time:200.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+
+
+    item Fishbroth
+    {
+        DisplayCategory = Food,
+        Weight	=	2,
+        Type	=	Food,
+        DisplayName	=	Fish broth,
+        Icon	=	Fishbroth,
+        Carbohydrates = 10,
+        Proteins = 10,
+        Lipids = 10,
+        Calories = 10,
+        IsCookable	=	    true,
+        MinutesToBurn   =   60,
+        MinutesToCook   =   40,
+		HungerChange			=		-8,
+		ThirstChange    =   -40,
+        UnhappyChange   =   -2,
+        ReplaceOnUse    =   Pot,
+        DaysFresh 		= 	6,
+        DaysTotallyRotten 	= 	7,
+        GoodHot = true,
+        StaticModel = CookingPot,
+        WorldStaticModel = Fishbroth,
+        CookingSound = BoilingFood,
+    }
+
+
+	recipe Make Doenjangjjigae
+    {
+	Potato=4,
+	Doenjang;5,
+	Salt;2,
+	Leek,
+	Tofu/Karmymainfood11,
+	Zucchini;2,
+	MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5/MushroomGeneric7,
+	Onion,
+	Fishbroth;4,
+
+
+       Result:Doenjangjjigae,
+       Time:130.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	recipe Make 4 Bowls of Doenjangjjigae
+	{
+	   Doenjangjjigae/DoenjangjjigaeRecipe,
+	   Bowl=4,
+
+	   Result:DoenjangjjigaeBowl=4,
+	   Time:80.0,
+	   Category:Cooking,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	}
+	recipe Make 2 Bowls of Doenjangjjigae
+	{
+	   Doenjangjjigae/DoenjangjjigaeRecipe,
+	   Bowl=2,
+
+	   Result:DoenjangjjigaeBowl2=2,
+	   Time:80.0,
+	   Category:Cooking,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	}
+    item DoenjangjjigaeBowl
+	{
+	    DisplayCategory = Food,
+		HungerChange	=	-23,
+		ThirstChange    =   -23,
+		Type	=	Food,
+		DisplayName	=	Doenjangjjigae Bowl,
+		MinutesToCook	=	15,
+		Weight	=	0.7,
+        Carbohydrates = 8,
+        Proteins = 15,
+        Lipids = 16,
+        Calories = 235,
+		IsCookable	=	TRUE,
+		UnhappyChange	=	-12,
+		MinutesToBurn	=	25,
+		Icon	=	DoenjangjjigaeBowl,
+		ReplaceOnUse	=	Bowl,
+		CustomEatSound = EatingSoup,
+        DaysFresh 		= 	6,
+        DaysTotallyRotten 	= 	7,
+		StaticModel = Bowl,
+		EatType = 2handbowl,
+		WorldStaticModel = DoenjangjjigaeBowl,
+	}
+
+    item DoenjangjjigaeBowl2
+	{
+	    DisplayCategory = Food,
+		HungerChange	=	-46,
+		ThirstChange    =   -46,
+		Type	=	Food,
+		DisplayName	=	Doenjangjjigae Bowl,
+		MinutesToCook	=	15,
+		Weight	=	1,
+        Carbohydrates = 16,
+        Proteins = 30,
+        Lipids = 32,
+        Calories = 470,
+		IsCookable	=	TRUE,
+		UnhappyChange	=	-24,
+		MinutesToBurn	=	25,
+		Icon	=	DoenjangjjigaeBowl,
+		ReplaceOnUse	=	Bowl,
+		CustomEatSound = EatingSoup,
+        DaysFresh 		= 	6,
+        DaysTotallyRotten 	= 	7,
+		StaticModel = Bowl,
+		EatType = 2handbowl,
+		WorldStaticModel = DoenjangjjigaeBowl,
+	}
+
+    item Doenjangjjigae
+    {
+        DisplayCategory = Food,
+        Weight	=	2,
+        Type	=	Food,
+        DisplayName	=	Doenjangjjigae,
+        Icon	=	Doenjangjjigae,
+        Carbohydrates = 32,
+        Proteins = 60,
+        Lipids = 64,
+        Calories = 940,
+        IsCookable	=	    true,
+        MinutesToBurn   =   50,
+        MinutesToCook   =   20,
+		HungerChange			=		-92,
+		ThirstChange    =   -92,
+        UnhappyChange   =   -48,
+        ReplaceOnUse    =   Pot,
+        DaysFresh 		= 	6,
+        DaysTotallyRotten 	= 	7,
+        GoodHot = true,
+        StaticModel = CookingPot,
+        WorldStaticModel = Doenjangjjigae,
+        CookingSound = BoilingFood,
+    }
+	
+	
+	recipe Open Korean Combat Ration Type 1 (menu 1)
+    {
+
+	   KMRE1,
+
+       Result:KMRE1,
+	   RemoveResultItem:true,
+	   OnCreate:OnOpenKMRE1,
+	   Sound:OpenCannedFood,
+       Time:50.0,
+    }
+	
+	recipe Open Korean Combat Ration Type 1 (menu 2)
+    {
+
+	   KMRE2,
+
+       Result:KMRE2,
+	   RemoveResultItem:true,
+	   OnCreate:OnOpenKMRE2,
+	   Sound:OpenCannedFood,
+       Time:50.0,
+    }
+	
+	recipe Open Korean Combat Ration Type 1 (menu 3)
+    {
+
+	   KMRE3,
+
+       Result:KMRE3,
+	   RemoveResultItem:true,
+	   OnCreate:OnOpenKMRE3,
+	   Sound:OpenCannedFood,
+       Time:50.0,
+    }
+	
+	recipe Open Korean Combat Ration Type 2
+    {
+
+	   KMRE4,
+
+       Result:KMRE4,
+	   RemoveResultItem:true,
+	   OnCreate:OnOpenKMRE4,
+	   Sound:OpenCannedFood,
+       Time:50.0,
+    }
+	
+	
+    recipe boilling Bibimbap
+    {
+        destroy Karmymainfoodt1,
+		destroy Karmymainfoodt111,
+		destroy Karmymainfoodt1111,
+        WaterPot/FullKettle;5,
+        CanBeDoneFromFloor:true,
+        Result:Karmymainfoodt11,
+        Time:100.0,
+        Heat:-0.22,
+	   Category:Cooking,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+    }
+	
+	recipe pouring cold water in Dry Bibimbap
+    {
+        destroy Karmymainfoodt1,
+		destroy Karmymainfoodt111,
+		destroy Karmymainfoodt1111,
+        WaterPot/FullKettle;5,
+        CanBeDoneFromFloor:true,
+        Result:Karmymainfoodt11,
+        Time:200.0,
+	   Category:Cooking,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+    }
+	item KMRE1
+    {
+        DisplayCategory = Food,
+        Weight	=	0.75,
+        Type	=	Food,
+        DisplayName	=	Korean Combat Ration (Type 1),
+        Icon	=	Karmyfood,
+        StaticModel = Karmyfoodbox1,
+        WorldStaticModel = Karmyfoodbox1,
+    }
+	item KMRE2
+    {
+        DisplayCategory = Food,
+        Weight	=	0.75,
+        Type	=	Food,
+        DisplayName	=	Korean Combat Ration (Type 2),
+        Icon	=	Karmyfood,
+        StaticModel = Karmyfoodbox2,
+        WorldStaticModel = Karmyfoodbox2,
+    }
+	item KMRE3
+    {
+        DisplayCategory = Food,
+        Weight	=	0.75,
+        Type	=	Food,
+        DisplayName	=	Korean Combat Ration (Type 3),
+        Icon	=	Karmyfood,
+        StaticModel = Karmyfoodbox3,
+        WorldStaticModel = Karmyfoodbox3,
+    }
+	item KMRE4
+    {
+        DisplayCategory = Food,
+        Weight	=	0.25,
+        Type	=	Food,
+        DisplayName	=	Korean Dry Combat Ration,
+        Icon	=	Karmyfood2,
+        StaticModel = Karmyfoodbox4,
+        WorldStaticModel = Karmyfoodbox4,
+    }
+	
+	item Karmymainfood1
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Bibimbap,
+		Icon					=		Karmyfood3,
+		Weight				=		0.25,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:10;Stew:10;Stir fry:10;PastaPot:10;PastaPan:10,
+		FoodType				=		Rice,
+		HungerChange			=		-45,
+		Carbohydrates			=		200,
+		Proteins				=		20,
+		Lipids 				=		10,
+		Calories				=		700,
+		WorldStaticModel			=		Karmyfood1,
+		CustomEatSound			=		EatingSoup,
+	}
+	item Karmymainfood11
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Dubujeon,
+		Icon					=		Karmyfood3,
+		Weight				=		0.1,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:5;Stew:5;Stir fry:5;PastaPot:5;PastaPan:5,
+		FoodType				=		Vegetables,
+		HungerChange			=		-15,
+		Carbohydrates			=		50,
+		Proteins				=		20,
+		Lipids 				=		7,
+		Calories				=		100,
+		WorldStaticModel			=		Karmyfood1,
+		CustomEatSound			=		EatingSoup,
+	}
+	item Karmymainfood111
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Kimchi,
+		Icon					=		Karmyfood3,
+		Weight				=		0.1,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:5;Stew:5;Stir fry:5;PastaPot:5;PastaPan:5,
+		FoodType				=		Vegetables,
+		HungerChange			=		-10,
+		Carbohydrates			=		10,
+		Proteins				=		20,
+		Lipids 				=		7,
+		Calories				=		100,
+		WorldStaticModel			=		Karmyfood1,
+		CustomEatSound			=		EatingSoup,
+	}
+	item Karmymainfood1111
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Seasoned sausages,
+		Icon					=		Karmyfood3,
+		Weight				=		0.1,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:5;Stew:5;Stir fry:5;PastaPot:5;PastaPan:5,
+		FoodType				=		Meat,
+		HungerChange			=		-15,
+		Carbohydrates			=		2,
+		Proteins				=		50,
+		Lipids 				=		7,
+		Calories				=		200,
+		WorldStaticModel			=		Karmyfood1,
+		CustomEatSound			=		EatingSoup,
+	}
+	item Karmymainfood11111
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Braised beans,
+		Icon					=		Karmyfood3,
+		Weight				=		0.05,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:5;Stew:5;Stir fry:5;PastaPot:5;PastaPan:5,
+		FoodType				=		Meat,
+		HungerChange			=		-5,
+		Carbohydrates			=		2,
+		Proteins				=		50,
+		Lipids 				=		7,
+		Calories				=		50,
+		WorldStaticModel			=		Karmyfood1,
+		CustomEatSound			=		EatingSoup,
+	}
+	
+	item Karmymainfood2
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Cooked Rice,
+		Icon					=		Karmyfood3,
+		Weight				=		0.25,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:10;Stew:10;Stir fry:10;PastaPot:10;PastaPan:10,
+		FoodType				=		Rice,
+		HungerChange			=		-45,
+		Carbohydrates			=		200,
+		Proteins				=		20,
+		Lipids 				=		10,
+		Calories				=		600,
+		WorldStaticModel			=		Karmyfood2,
+		CustomEatSound			=		EatingSoup,
+	}
+	item Karmymainfood22
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Palaemuchim,
+		Icon					=		Karmyfood3,
+		Weight				=		0.1,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:5;Stew:5;Stir fry:5;PastaPot:5;PastaPan:5,
+		FoodType				=		Vegetables,
+		HungerChange			=		-15,
+		Carbohydrates			=		50,
+		Proteins				=		20,
+		Lipids 				=		7,
+		Calories				=		100,
+		WorldStaticModel			=		Karmyfood2,
+		CustomEatSound			=		EatingSoup,
+	}
+	item Karmymainfood2222
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Meatball,
+		Icon					=		Karmyfood3,
+		Weight				=		0.1,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:5;Stew:5;Stir fry:5;PastaPot:5;PastaPan:5,
+		FoodType				=		Meat,
+		HungerChange			=		-15,
+		Carbohydrates			=		2,
+		Proteins				=		50,
+		Lipids 				=		7,
+		Calories				=		200,
+		WorldStaticModel			=		Karmyfood2,
+		CustomEatSound			=		EatingSoup,
+	}
+	item Karmymainfood22222
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Myeolchijolim,
+		Icon					=		Karmyfood3,
+		Weight				=		0.05,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:5;Stew:5;Stir fry:5;PastaPot:5;PastaPan:5,
+		FoodType				=		Fish,
+		HungerChange			=		-5,
+		Carbohydrates			=		2,
+		Proteins				=		50,
+		Lipids 				=		7,
+		Calories				=		50,
+		WorldStaticModel			=		Karmyfood2,
+		CustomEatSound			=		EatingSoup,
+	}
+	
+	item Karmymainfood3
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Red bean rice,
+		Icon					=		Karmyfood3,
+		Weight				=		0.25,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:10;Stew:10;Stir fry:10;PastaPot:10;PastaPan:10,
+		FoodType				=		Rice,
+		HungerChange			=		-45,
+		Carbohydrates			=		200,
+		Proteins				=		20,
+		Lipids 				=		10,
+		Calories				=		700,
+		WorldStaticModel			=		Karmyfood3,
+		CustomEatSound			=		EatingSoup,
+	}
+	item Karmymainfood33
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Jeyukbokk-eum Gochujang,
+		Icon					=		Karmyfood3,
+		Weight				=		0.1,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:5;Stew:5;Stir fry:5;PastaPot:5;PastaPan:5,
+		FoodType				=		Meat,
+		HungerChange			=		-15,
+		Carbohydrates			=		50,
+		Proteins				=		20,
+		Lipids 				=		7,
+		Calories				=		100,
+		WorldStaticModel			=		Karmyfood3,
+		CustomEatSound			=		EatingSoup,
+	}
+	item Karmymainfood333
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Kkakdugi,
+		Icon					=		Karmyfood3,
+		Weight				=		0.1,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:5;Stew:5;Stir fry:5;PastaPot:5;PastaPan:5,
+		FoodType				=		Vegetables,
+		HungerChange			=		-10,
+		Carbohydrates			=		10,
+		Proteins				=		20,
+		Lipids 				=		7,
+		Calories				=		100,
+		WorldStaticModel			=		Karmyfood3,
+		CustomEatSound			=		EatingSoup,
+	}
+	
+	
+	
+	
+	item Karmymainfoodt1
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Dry Bibimbap (UnCooked),
+		Icon					=		Karmyfood4,
+		Weight				=		0.20,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:5;Stew:5;Stir fry:5;PastaPot:5;PastaPan:5,
+		FoodType				=		Rice,
+		HungerChange			=		-25,
+		ThirstChange			=		6,
+		Carbohydrates			=		200,
+		Proteins				=		20,
+		Lipids 				=		10,
+		Calories				=		700,
+		WorldStaticModel			=		Karmyfoodbox44,
+		CustomEatSound			=		EatingCrispy,
+	}
+	
+	item Karmymainfoodt11
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Bibimbap (Cooked),
+		Icon					=		Karmyfood4,
+		Weight				=		0.25,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:10;Stew:10;Stir fry:10;PastaPot:10;PastaPan:10,
+		FoodType				=		Rice,
+		HungerChange			=		-45,
+		Carbohydrates			=		200,
+		Proteins				=		20,
+		Lipids 				=		10,
+		Calories				=		700,
+		WorldStaticModel			=		Karmyfoodbox44,
+		CustomEatSound			=		EatingSoup,
+	}
+	item Karmymainfoodt111
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Bibimbap Soup powder,
+		Icon					=		Karmyfood3,
+		Weight				=		0.20,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:1;Stew:1;Stir fry:1;PastaPot:1;PastaPan:1,
+		FoodType				=		Rice,
+		HungerChange			=		-45,
+		Carbohydrates			=		200,
+		Proteins				=		20,
+		Lipids 				=		10,
+		Calories				=		700,
+		WorldStaticModel			=		Karmyfoodbox444,
+		CustomEatSound			=		EatingSoup,
+	}
+	
+	item Karmymainfoodt1111
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Sesame oil,
+		Icon					=		Karmyfood3,
+		Weight				=		0.20,
+		Packaged				=		TRUE,
+		EvolvedRecipe			=       Soup:1;Stew:1;Stir fry:1;PastaPot:1;PastaPan:1,
+		FoodType				=		Rice,
+		HungerChange			=		-1,
+		Carbohydrates			=		2,
+		Proteins				=		2,
+		Lipids 				=		5,
+		Calories				=		7,
+		WorldStaticModel			=		Karmyfoodbox4444,
+		CustomEatSound			=		EatingSoup,
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	item DSNclose
+	{
+        DisplayCategory = Food,
+        Weight	=	0.1,
+        DisplayName	=	Dakgaejang (Packaged),
+        Icon	=	DSN,
+        StaticModel = DSN,
+        WorldStaticModel = DSN,
+	}
+    	item DSNopen
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Dakgaejang (UnCooked),
+		Icon					=		DSN,
+		Weight				=		0.1,
+		CantBeFrozen			=		TRUE,
+		HungerChange			=		-10,
+		ThirstChange			=		3,
+        Carbohydrates = 53,
+        Proteins = 8,
+        Lipids = 15,
+        Calories = 375,
+		WorldStaticModel			=		DSN,
+		CustomEatSound			=		EatingCrispy,
+	}
+    	item DSNcooked
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Dakgaejang (Cooked),
+		Icon					=		DSN,
+		Weight				=		0.1,
+		CantBeFrozen			=		TRUE,
+		HungerChange			=		-25,
+		StressChange	=	-20,
+		UnhappyChange	=	-20,	
+        Carbohydrates = 53,
+        Proteins = 8,
+        Lipids = 15,
+        Calories = 375,
+		WorldStaticModel			=		DSN,
+		EatType = 2handbowl,
+	}
+	item knoxSP1
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		Dakgaejang Soup powder,
+		Icon					=		SP,
+		Weight				=		0.01,
+		CantBeFrozen			=		TRUE,
+		EvolvedRecipe			=       Soup:1;Stew:1;,
+		HungerChange			=		-1,
+		ThirstChange			=		3,
+		WorldStaticModel			=		SP,
+		Spice					=		true,
+	}
+	item RTANclose
+	{
+        DisplayCategory = Food,
+        Weight	=	0.1,
+        DisplayName	=	RTA(Packaged),
+        Icon	=	RTAN,
+        StaticModel = RTAN,
+        WorldStaticModel = RTAN,
+	}
+    	item RTANopen
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		RTA (UnCooked),
+		Icon					=		RTAN,
+		Weight				=		0.1,
+		CantBeFrozen			=		TRUE,
+		HungerChange			=		-10,
+		ThirstChange			=		3,
+        Carbohydrates = 42,
+        Proteins = 6,
+        Lipids = 10,
+        Calories = 280,
+		WorldStaticModel			=		RTAN,
+		CustomEatSound			=		EatingCrispy,
+	}
+    	item RTANcooked
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		RTA (Cooked),
+		Icon					=		RTAN,
+		Weight				=		0.1,
+		CantBeFrozen			=		TRUE,
+		HungerChange			=		-25,
+		StressChange	=	-30,
+		UnhappyChange	=	-30,	
+        Carbohydrates = 42,
+        Proteins = 6,
+        Lipids = 10,
+        Calories = 280,
+		WorldStaticModel			=		RTAN,
+		EatType = 2handbowl,
+	}
+    	item knoxSP2
+	{
+		Type					=		Food,
+		DisplayCategory			=		Food,
+		DisplayName			=		RTA Soup powder,
+		Icon					=		SP,
+		Weight				=		0.01,
+		CantBeFrozen			=		TRUE,
+		EvolvedRecipe			=       Soup:1;Stew:1;,
+		HungerChange			=		-1,
+		ThirstChange			=		3,
+		WorldStaticModel			=		SP,
+		Spice					=		true,
+	}
+	item DSBOX
+    {
+        DisplayCategory = Food,
+        Weight	=	0.6,
+        Type	=	Food,
+        DisplayName	=	Box of Dakgaejang,
+        Icon	=	DS,
+        StaticModel = DS,
+        CannedFood = TRUE,
+        WorldStaticModel = DS,
+    }
+	item RTABOX
+    {
+        DisplayCategory = Food,
+        Weight	=	0.6,
+        Type	=	Food,
+        DisplayName	=	Box of RTA,
+        Icon	=	RTA,
+        StaticModel = RTA,
+        WorldStaticModel = RTA,
+    }
+	
+	
+	recipe Open Dakgaejang
+    {       
+
+	   DSNclose,
+
+       Result:DSNopen,
+	   OnCreate:OnOpenDS,
+       Time:50.0,
+    }
+		recipe Open RTA
+    {
+
+	   RTANclose,
+
+       Result:RTANopen,
+	   OnCreate:OnOpenRTA,
+       Time:50.0,
+    }
+	
+	
+    recipe boilling Dakgaejang
+    {
+        destroy DSNopen,
+		destroy knoxSP1,
+        WaterPot/FullKettle;3,
+        CanBeDoneFromFloor:true,
+        Result:DSNcooked,
+        Time:100.0,
+        Heat:-0.22,
+	   Category:Cooking,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+    }
+    recipe boilling RTA
+    {
+        destroy RTANopen,
+		destroy knoxSP2,
+        WaterPot/FullKettle;3,
+        CanBeDoneFromFloor:true,
+        Result:RTANcooked,
+        Time:100.0,
+        Heat:-0.22,
+	   Category:Cooking,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+    }
+	
+	recipe Place Dakgaejang in Box
+    {       
+	   DSNclose=6,
+
+       Result:DSBOX,
+       Time:80.0,
+    }
+		recipe Place RTA in Box
+    {
+	   RTANclose=6,
+
+       Result:RTABOX,
+       Time:80.0,
+    }
+		recipe Open Box of Dakgaejang
+    {
+       DSBOX,
+
+       Result:DSBOX,
+	   RemoveResultItem:true,
+	   OnCreate:OnOpenDSBOX,
+       Time:10.0,
+       Category:Cooking,
+       Sound:OpenCannedFood,
+    }
+		recipe Open Box of RTA
+    {
+       RTABOX,
+
+       Result:RTABOX,
+	   RemoveResultItem:true,
+	   OnCreate:OnOpenRTABOX,
+       Time:80.0,
+       Category:Cooking,
+       Sound:OpenCannedFood,
+    }
+
+}

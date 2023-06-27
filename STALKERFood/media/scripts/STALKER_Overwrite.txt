@@ -1,0 +1,24 @@
+module Base
+{
+
+    	item Cigarettes
+	{
+	    DisplayCategory = Junk,
+		Count	=	20,
+		HungerChange	=	0,
+		Weight	=	0.005,
+		RequireInHandOrInventory	=	Lighter/Matches,
+		Type	=	Food,
+		DisplayName	=	Lucky Strike Cigarettes,
+		StressChange	=	-3,
+		Icon	=	LuckyStrike,
+		CustomContextMenu = Smoke,
+		CantBeFrozen = TRUE,
+		OnEat = OnEat_Cigarettes,
+		StaticModel = Cigarette,
+		EatType = Cigarettes,
+		WorldStaticModel = LuckyStrikeBrandPack_WorldItem,
+		CustomEatSound = ,
+	}
+
+}

@@ -1,0 +1,8 @@
+UI_CH = {
+	UI_Verbose = "Verbose",
+	UI_Tooltip_Verbose = "有助於除錯. 效能妨礙.",
+	UI_Coolbag_CoolMode = "製冷模式",
+	UI_Coolbag_Tooltip_CoolMode = "當心, 安逸是無聊的好朋友.",
+	UI_Coolbag_ModeDropDown_1 = "保溫盒需要替換冰凍包以保持低溫",
+	UI_Coolbag_ModeDropDown_2 = "保溫盒永遠處於低溫（簡單模式）"
+}

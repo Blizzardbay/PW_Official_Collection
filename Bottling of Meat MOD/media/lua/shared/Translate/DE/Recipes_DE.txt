@@ -1,0 +1,26 @@
+Recipes_DE = {
+
+	-- Bottling Meat MOD
+	-- Russian translation by Jackel
+
+	Recipe_Make_Jar_of_Chicken = "Ein Glas mit eingelegtem Huhn herstellen",
+	Recipe_Make_Jar_of_Frog_Meat = "Ein Glas mit eingelegtem Froschfleisch herstellen",
+	Recipe_Make_Jar_of_Meat_Patty = "Ein Glas mit eingelegten Hackfleisch-Patties herstellen",
+	Recipe_Make_Jar_of_Mutton_Chop = "Ein Glas mit eingelegtem Hammelkotelett herstellen",
+	Recipe_Make_Jar_of_Pork_Chop = "Ein Glas mit eingelegtem Schweinekotelett herstellen",
+	Recipe_Make_Jar_of_Rabbit_Meat = "Ein Glas mit eingelegtem Kaninchenfleisch herstellen",
+	Recipe_Make_Jar_of_Small_Animal_Meat = "Ein Glas mit eingelegtem Kleintierfleisch herstellen",
+	Recipe_Make_Jar_of_Small_Bird_Meat = "Ein Glas mit eingelegtem Vogelfleisch herstellen",
+	Recipe_Make_Jar_of_Steak = "Ein Glas mit eingelegten Steaks herstellen",
+	Recipe_Open_Jar_of_Chicken = "Öffne, Glas mit eingelegtem Huhn",
+	Recipe_Open_Jar_of_Frog_Meat = " Öffne, Glas mit eingelegtem Froschfleisch",
+	Recipe_Open_Jar_of_Meat_Patty = "Öffne, Glas mit eingelegten Hackfleisch-Patties",
+	Recipe_Open_Jar_of_Mutton_Chop = "Öffne, Glas mit eingelegtem Hammelkotelett",
+	Recipe_Open_Jar_of_Pork_Chop = "Öffne, Glas mit eingelegtem Schweinekotelett",
+	Recipe_Open_Jar_of_Rabbit_Meat = "Öffne, Glas mit eingelegtem Kaninchenfleisch",
+	Recipe_Open_Jar_of_Small_Animal_Meat = "Öffne, Glas mit eingelegtem Kleintierfleisch",
+	Recipe_Open_Jar_of_Small_Bird_Meat = "Öffne, Glas mit eingelegtem Vogelfleisch",
+	Recipe_Open_Jar_of_Steak = "Öffne, Glas mit eingelegten Steaks",
+
+
+}

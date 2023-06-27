@@ -1,0 +1,12 @@
+Sandbox_EN = {
+	
+	Sandbox_Eiskaffee = "Eiskaffee",
+	
+	Sandbox_Eiskaffee_SpawnChance = "Spawn Chance",
+	Sandbox_Eiskaffee_SpawnChance_option1 = "Extremely Rare",
+	Sandbox_Eiskaffee_SpawnChance_option2 = "Rare",
+	Sandbox_Eiskaffee_SpawnChance_option3 = "Normal",
+	Sandbox_Eiskaffee_SpawnChance_option4 = "Common",
+	Sandbox_Eiskaffee_SpawnChance_option5 = "Abundant",
+
+}

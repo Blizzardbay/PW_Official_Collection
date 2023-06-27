@@ -1,0 +1,72 @@
+Recipe_RU = {
+    /* IC_recipes_cabinets */
+    Recipe_ICMakeCabinet1 = "Сделать современную стойку",
+    Recipe_ICMakeCabinet1Corner = "Сделать современную угловую стойку",
+    Recipe_ICMakeCabinet2 = "Сделать деревянную стойку",
+    Recipe_ICMakeCabinet2Corner = "Сделать деревянную угловую стойку",
+    Recipe_ICMakeCabinet3 = "Сделать березовую стойку",
+    Recipe_ICMakeCabinet3Corner = "Сделать березовую угловую стойку",
+    Recipe_ICMakeCabinet3Float = "Сделать березовую стойку(подвесную)",
+    Recipe_ICMakeCabinet4 = "Сделать дубовую стойку",
+    Recipe_ICMakeCabinet4Corner = "Сделать дубовую угловую стойку",
+    Recipe_ICMakeCabinet5 = "Сделать темную стойку",
+    Recipe_ICMakeCabinet5Corner = "Сделать темную угловую стойку",
+    Recipe_ICMakeCabinet6 = "Сделать зеленую стойку",
+    Recipe_ICMakeCabinet6Corner = "Сделать зеленую угловую стойку",
+    Recipe_ICMakeCabinet7 = "Сделать белую стойку",
+    Recipe_ICMakeCabinet7Corner = "Сделать белую угловую стойку",
+    Recipe_ICMakeCabinetBathroom = "Make Medicine Cabinet",
+
+    /* IC_recipes_cabinets_bar */
+    Recipe_ICMakeCabinetBar1 = "Сделать дубовую барную стойку",
+    Recipe_ICMakeCabinetBar1Corner = "Сделать дубовую угловую барную стойку",
+
+    /* IC_recipes_cabinets_motel */
+    Recipe_ICMakeCabinetMotel1 = "Сделать стойку из мотеля",
+    Recipe_ICMakeCabinetMotel2 = "Сделать стойку из мотеля (Низкая)",
+
+    /* IC_recipes_cabinets_restaurant */
+    Recipe_ICMakeCabinetRestaurant1 = "Сделать стойку из закусочной",
+    Recipe_ICMakeCabinetRestaurant1Corner = "Сделать угловую стойку из закусочной",
+    Recipe_ICMakeCabinetRestaurant2 = "Сделать белую полосатую стойку",
+    Recipe_ICMakeCabinetRestaurant2Corner = "Сделать белую полосатую угловую стойку",
+    Recipe_ICMakeCabinetRestaurant3 = "Сделать стойку из Крутящейся Пиццы",
+    Recipe_ICMakeCabinetRestaurant3Corner = "Сделать угловую стойку из Крутящейся Пиццы",
+    Recipe_ICMakeCabinetRestaurant4 = "Сделать стойку из Кофе Морского Конька",
+    Recipe_ICMakeCabinetRestaurant4Corner = "Сделать угловую стойку из Кофе Морского Конька",
+    Recipe_ICMakeCabinetRestaurant5 = "Сделать стойку из Спиффо",
+    Recipe_ICMakeCabinetRestaurant5Corner = "Сделать угловую стойку из Спиффо",
+
+    /* IC_recipes_cabinets_shops */
+    Recipe_ICMakeCabinetShop1 = "Сделать голубую стойку",
+    Recipe_ICMakeCabinetShop1Corner = "Сделать голубую угловую стойку",
+    Recipe_ICMakeCabinetShop2 = "Сделать красную стойку",
+    Recipe_ICMakeCabinetShop2Corner = "Сделать красную угловую стойку",
+    Recipe_ICMakeCabinetShop3 = "Сделать магазинную стойку",
+    Recipe_ICMakeCabinetShop3Corner = "Сделать угловую магазинную стойку",
+    Recipe_ICMakeCabinetShop4 = "Сделать стойку из Зиппи",
+    Recipe_ICMakeCabinetShop4Corner = "Сделать угловую стойку из Зиппи",
+
+    /* IC_recipes_cabinets_theatre */
+    Recipe_ICMakeCabinetTheater1 = "Сделать стойку из театра",
+    Recipe_ICMakeCabinetTheater2 = "Сделать угловую стойку из театра",
+    Recipe_ICMakeCabinetTheater3 = "Сделать квадратную стойку из театра",
+
+    /* IC_recipes_cabinets_tailer */
+    Recipe_ICMakeCabinetTrailer1 = "Сделать трейлерную стойку",
+    Recipe_ICMakeCabinetTrailer2 = "Сделать трейлерную стойку (Подвесная)",
+    Recipe_ICMakeCabinetTrailer3 = "Сделать трейлерную стойку с встроенным холодильником",
+
+    /* IC_recipes_cabinets_crossover_glass */
+    Recipe_ICMakeCabinetImprovisedGlass1 = "Сделать стеклянную витрину",
+    Recipe_ICMakeCabinetImprovisedGlass1Corner = "Сделать угловую стеклянную витрину",
+    Recipe_ICMakeCabinetImprovisedGlass2 = "Сделать стеклянную витрину из театра",
+
+    /* IC_recipes_parts */
+    Recipe_ICMakeWoodPanel = "Создать деревянную панель",
+    Recipe_ICMakeSmallHinge = "Создать шарниры для шкафа",
+
+    /* IC_recipes_metalworking */
+    Recipe_ICMakeLargeMetalShelves1 = "Сделайте большие металлические полки",
+    Recipe_ICMakeMetalCabinet1 = "Изготовление металлического шкафчика",
+}

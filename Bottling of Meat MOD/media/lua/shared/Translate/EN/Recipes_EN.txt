@@ -1,0 +1,33 @@
+﻿Recipe_EN = {
+
+	-- Bottling Meat MOD
+
+	Recipe_Make_Jar_of_Chicken = "Make Jar of Chicken",
+	Recipe_Make_Jar_of_Frog_Meat = "Make Jar of Frog Meat",
+	Recipe_Make_Jar_of_Meat_Patty = "Make Jar of Meat Patty",
+	Recipe_Make_Jar_of_Mutton_Chop = "Make Jar of Mutton Chop",
+	Recipe_Make_Jar_of_Pork_Chop = "Make Jar of Pork Chop",
+	Recipe_Make_Jar_of_Rabbit_Meat = "Make Jar of Rabbit Meat",
+	Recipe_Make_Jar_of_Small_Animal_Meat = "Make Jar of Small Animal Meat",
+	Recipe_Make_Jar_of_Small_Bird_Meat = "Make Jar of Small Bird Meat",
+	Recipe_Make_Jar_of_Steak = "Make Jar of Steak",
+	Recipe_Make_Jar_of_Bacon = "Make Jar of Bacon",
+	Recipe_Make_Jar_of_Bacon_Bits = "Make Jar of Bacon Bits",
+	Recipe_Make_Jar_of_Bacon_Rashers = "Make Jar of Bacon Rashers",
+	Recipe_Make_Jar_of_Ham = "Make Jar of Ham",
+
+	Recipe_Open_Jar_of_Chicken = "Open Jar of Chicken",
+	Recipe_Open_Jar_of_Frog_Meat = "Open Jar of Frog Meat",
+	Recipe_Open_Jar_of_Meat_Patty = "Open Jar of Meat Patty",
+	Recipe_Open_Jar_of_Mutton_Chop = "Open Jar of Mutton Chop",
+	Recipe_Open_Jar_of_Pork_Chop = "Open Jar of Pork Chop",
+	Recipe_Open_Jar_of_Rabbit_Meat = "Open Jar of Rabbit Meat",
+	Recipe_Open_Jar_of_Small_Animal_Meat = "Open Jar of Small Animal Meat",
+	Recipe_Open_Jar_of_Small_Bird_Meat = "Open Jar of Small Bird Meat",
+	Recipe_Open_Jar_of_Steak = "Open Jar of Steak",
+	Recipe_Open_Jar_of_Bacon = "Open Jar of Bacon",
+	Recipe_Open_Jar_of_Bacon_Bits = "Open Jar of Bacon Bits",
+	Recipe_Open_Jar_of_Bacon_Rashers = "Open Jar of Bacon Rashers",
+	Recipe_Open_Jar_of_Ham = "Open Jar of Ham",
+
+}

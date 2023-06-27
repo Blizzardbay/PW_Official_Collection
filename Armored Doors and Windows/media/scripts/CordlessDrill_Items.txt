@@ -1,0 +1,94 @@
+module Base
+{
+
+	item CordlessDrill
+    {
+        Weight    		= 4.5,
+        Type    		= Drainable,
+	UseDelta	=	0.1,	
+        DisplayName         	= Cordless Drill,
+        icon 			= CordlessDrill,
+        AttachmentType 		= Holster,
+	StaticModel 		= Drill,
+        UseWhileEquipped	=	FALSE,
+        KeepOnDeplete = true,
+        primaryAnimMask = HoldingUmbrellaRight,
+        secondaryAnimMask = HoldingUmbrellaLeft,
+    }
+	item CordlessDrillWithoutBattery
+    {
+        Weight    		= 3.5,
+        Type    		= Normal,	
+        DisplayName         	= Cordless Drill (without battery),
+        icon 			= CordlessDrill,
+        AttachmentType 		= Holster,
+	StaticModel 		= Drill,
+        primaryAnimMask = HoldingUmbrellaRight,
+        secondaryAnimMask = HoldingUmbrellaLeft,
+    }
+
+	item CordlessDrillBattery
+    {
+        Weight    		= 1,
+        Type    		= Drainable,
+	UseDelta	=	0.1,	
+        DisplayName         	= Cordless Drill Battery,
+        icon 			= CordlessDrillBattery,
+        UseWhileEquipped	=	FALSE,
+        KeepOnDeplete = true,
+    }
+/*
+    item CordlessDrillBatteryCharger
+    {
+        Weight	=	2,
+        Type	=	Normal,
+        DisplayName	=	Cordless Drill Battery Charger,
+        Icon	=	CarBatteryCharger,
+        MetalValue = 1,
+    }*/
+
+
+
+	model Drill
+	{
+		mesh = Drill,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+
+
+
+
+
+
+
+  recipe Remove Battery From Cordless Drill
+   {
+	Sound:Stormy9mmClipEject,
+     destroy CordlessDrill,
+     Result:CordlessDrillBattery,
+     Time:30,
+     /*OnTest:OnTest_DrillBatteryRemoval,*/
+     OnCreate:OnCreate_DrillBatteryRemoval,
+       Prop1:Drill,
+   }
+
+
+   recipe Insert Battery into Cordless Drill
+   {
+	Sound:Stormy9mmClipLoad,
+     destroy CordlessDrillWithoutBattery,
+     destroy CordlessDrillBattery,
+     Result:CordlessDrill,
+     Time:30,
+     /*OnTest:OnTest_DrillBatteryInsert,*/
+     OnCreate:OnCreate_DrillBatteryInsert,
+       Prop1:Drill,
+   }
+
+
+}

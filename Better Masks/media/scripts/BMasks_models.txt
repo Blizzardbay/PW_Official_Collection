@@ -1,0 +1,208 @@
+module Base
+{
+
+	model SurgicalMaskBlue_Ground
+	{
+		mesh = WorldItems/DisposableMask_Ground,
+		texture = SurgicalMaskBlue,
+		scale = 0.01,
+	}
+	model SurgicalMaskGreen_Ground
+	{
+		mesh = WorldItems/DisposableMask_Ground,
+		texture = SurgicalMaskGreen,
+		scale = 0.01,
+	}
+	model DisposableMaskWhite_Ground
+	{
+		mesh = WorldItems/DisposableMask_Ground,
+		texture = Clothes/DisposableMaskWhite,
+		scale = 0.01,
+	}
+	model DisposableMaskBlack_Ground
+	{
+		mesh = WorldItems/DisposableMask_Ground,
+		texture = Clothes/DisposableMaskBlack,
+		scale = 0.01,
+	}
+	model SpiffoMaskBlack_Ground
+	{
+		mesh = WorldItems/FaceMask2_Ground,
+		texture = Clothes/SpiffoMaskBlack,
+		scale = 0.01,
+	}
+	model SpiffoMaskWhite_Ground
+	{
+		mesh = WorldItems/FaceMask2_Ground,
+		texture = Clothes/SpiffoMaskWhite,
+		scale = 0.01,
+	}
+	model SpiffoMaskYellow_Ground
+	{
+		mesh = WorldItems/FaceMask2_Ground,
+		texture = Clothes/SpiffoMaskYellow,
+		scale = 0.01,
+	}
+	model MasksBox
+	{
+		mesh = WorldItems/Masksbox,
+		texture = Worlditems/Masksbox,
+		scale = 0.01,
+	}
+	model EmptyMasksBox
+	{
+		mesh = WorldItems/EmptyMasksbox,
+		texture = Worlditems/Masksbox,
+		scale = 0.01,
+	}
+	model XMaskWhite_Ground
+	{
+		mesh = WorldItems/FaceMask2_Ground,
+		texture = Clothes/XMaskWhite,
+		scale = 0.01,
+	}
+	model XMaskBlack_Ground
+	{
+		mesh = WorldItems/FaceMask2_Ground,
+		texture = Clothes/XMaskBlack,
+		scale = 0.01,
+	}
+	model XMaskBlack_Red_Ground
+	{
+		mesh = WorldItems/FaceMask2_Ground,
+		texture = Clothes/XMaskBlack_Red,
+		scale = 0.01,
+	}
+	model SmileMaskYellow_Ground
+	{
+		mesh = WorldItems/DisposableMask_Ground,
+		texture = Clothes/SmileMaskYellow,
+		scale = 0.01,
+	}
+	model SmileMaskBlack_Ground
+	{
+		mesh = WorldItems/DisposableMask_Ground,
+		texture = Clothes/SmileMaskBlack,
+		scale = 0.01,
+	}
+	model HalloweenMask1_Ground
+	{
+		mesh = WorldItems/DisposableMask_Ground,
+		texture = Clothes/HalloweenMask1,
+		scale = 0.01,
+	}
+	model FaceMaskBlack_Ground
+	{
+		mesh = WorldItems/FaceMask_Ground,
+		texture = Clothes/FaceMaskBlack,
+		scale = 0.01,
+	}
+	model FaceMaskYellow_Ground
+	{
+		mesh = WorldItems/FaceMask_Ground,
+		texture = Clothes/FaceMaskYellow,
+		scale = 0.01,
+	}
+	model FaceMaskNavy_Ground
+	{
+		mesh = WorldItems/FaceMask_Ground,
+		texture = Clothes/FaceMaskNavy,
+		scale = 0.01,
+	}
+	model FaceMaskWhite_Ground
+	{
+		mesh = WorldItems/FaceMask_Ground,
+		texture = Clothes/FaceMaskWhite,
+		scale = 0.01,
+	}
+	model AdidasFaceMaskBlack_Ground
+	{
+		mesh = WorldItems/FaceMask_Ground,
+		texture = Clothes/AdidasFaceMask_Black,
+		scale = 0.01,
+	}
+	model AdidasFaceMaskWhite_Ground
+	{
+		mesh = WorldItems/FaceMask_Ground,
+		texture = Clothes/AdidasFaceMask_White,
+		scale = 0.01,
+	}
+	model WoodlandFaceMask_Ground
+	{
+		mesh = WorldItems/FaceMask_Ground,
+		texture = Clothes/WoodlandFaceMask,
+		scale = 0.01,
+	}
+	model HalfMaskRespiratorBlack_Ground
+	{
+		mesh = WorldItems/HalfMaskRespirator_Ground,
+		texture = Clothes/HalfMaskRespirator_Black,
+		scale = 0.01,
+	}
+	model HalfMaskRespiratorWhite_Ground
+	{
+		mesh = WorldItems/HalfMaskRespirator_Ground,
+		texture = Clothes/HalfMaskRespirator_White,
+		scale = 0.01,
+	}
+	model TR2Respirator_Ground
+	{
+		mesh = WorldItems/TacticalRespirator2_Ground,
+		texture = Clothes/TacticalRespirator2,
+		scale = 0.01,
+	}
+	model FaceMaskRed_Ground
+	{
+		mesh = WorldItems/FaceMask_Ground,
+		texture = Clothes/FaceMaskRed,
+		scale = 0.01,
+	}
+	model FaceMaskLeopardPrint_Ground
+	{
+		mesh = WorldItems/FaceMask_Ground,
+		texture = Clothes/FaceMaskLeopardPrint,
+		scale = 0.01,
+	}
+	model FaceMaskLeopardPrint2_Ground
+	{
+		mesh = WorldItems/FaceMask_Ground,
+		texture = Clothes/FaceMaskLeopardPrint2,
+		scale = 0.01,
+	}
+	model FaceMaskJollyRoger_Ground
+	{
+		mesh = WorldItems/FaceMask2_Ground,
+		texture = Clothes/FaceMaskJollyRoger,
+		scale = 0.01,
+	}
+	model FaceMaskCatWhiskersBlack_Ground
+	{
+		mesh = WorldItems/FaceMask2_Ground,
+		texture = Clothes/FaceMaskCatWhiskersBlack,
+		scale = 0.01,
+	}
+	model FaceMaskCatWhiskersWhite_Ground
+	{
+		mesh = WorldItems/FaceMask2_Ground,
+		texture = Clothes/FaceMaskCatWhiskersWhite,
+		scale = 0.01,
+	}
+	model FaceMaskCatWhiskersPink_Ground
+	{
+		mesh = WorldItems/FaceMask2_Ground,
+		texture = Clothes/FaceMaskCatWhiskersPink,
+		scale = 0.01,
+	}
+	model HalfMaskRespiratorBlackII_Ground
+	{
+		mesh = WorldItems/HalfMaskRespiratorII_Ground,
+		texture = Clothes/HalfMaskRespiratorII_Black,
+		scale = 0.01,
+	}
+	model HalfMaskRespiratorWhiteII_Ground
+	{
+		mesh = WorldItems/HalfMaskRespiratorII_Ground,
+		texture = Clothes/HalfMaskRespiratorII_White,
+		scale = 0.01,
+	}
+}

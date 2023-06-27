@@ -1,0 +1,138 @@
+module ImprovisedFlooring
+{
+    imports 
+    {
+        Base
+    }
+
+    recipe SpecialBarFloor {   
+        keep [Recipe.GetItemTypes.Hammer],
+        keep Paintbrush,
+        Plank=2,
+        BucketPlasterFull=1,
+        PaintGrey,
+	    Result:Moveables.location_restaurant_bar_01_24,
+	    Time:60.0,
+	    NeedToBeLearn:True,
+        SkillRequired:Woodwork=8,
+        Category:Flooring,
+    }
+
+    recipe SpecialBowlingFloor {   
+        keep [Recipe.GetItemTypes.Saw],
+        keep [Recipe.GetItemTypes.Hammer],
+        Plank=2,
+        Nails=8,
+	    Result:Moveables.improvisedflooring_missing_0_8,
+	    Time:60.0,
+	    NeedToBeLearn:True,
+        SkillRequired:Woodwork=8,
+        Category:Flooring,
+    }
+
+
+    recipe SpecialDinerFloor {   
+        keep [Recipe.GetItemTypes.Hammer],
+        keep Paintbrush,
+        Plank=2,
+        BucketPlasterFull=1,
+        PaintBlack,
+	    Result:Moveables.location_restaurant_diner_01_40,
+	    Time:60.0,
+	    NeedToBeLearn:True,
+        SkillRequired:Woodwork=8,
+        Category:Flooring,
+    }
+
+    recipe SpecialDinerFloorGreen {   
+        keep [Recipe.GetItemTypes.Hammer],
+        keep Paintbrush,
+        Plank=2,
+        BucketPlasterFull=1,
+        PaintGreen/PaintCyan,
+	    Result:Moveables.location_restaurant_diner_01_41,
+	    Time:60.0,
+	    NeedToBeLearn:True,
+        SkillRequired:Woodwork=8,
+        Category:Flooring,
+    }
+
+    recipe SpecialMallTileGrey {   
+        keep [Recipe.GetItemTypes.Hammer],
+        keep Paintbrush,
+        Plank=2,
+        BucketPlasterFull=1,
+        PaintGrey,
+	    Result:Moveables.location_shop_mall_01_22,
+	    Time:60.0,
+	    NeedToBeLearn:True,
+        SkillRequired:Woodwork=8,
+        Category:Flooring,
+    }
+
+    recipe SpecialMallTileN {   
+        keep [Recipe.GetItemTypes.Hammer],
+        keep Paintbrush,
+        Plank=2,
+        BucketPlasterFull=1,
+        PaintGrey,
+	    Result:Moveables.location_shop_mall_01_20,
+	    Time:60.0,
+	    NeedToBeLearn:True,
+        SkillRequired:Woodwork=8,
+        Category:Flooring,
+    }
+
+    recipe SpecialMallTileW {   
+        keep [Recipe.GetItemTypes.Hammer],
+        keep Paintbrush,
+        Plank=2,
+        BucketPlasterFull=1,
+        PaintGrey,
+	    Result:Moveables.location_shop_mall_01_21,
+	    Time:60.0,
+	    NeedToBeLearn:True,
+        SkillRequired:Woodwork=8,
+        Category:Flooring,
+    }
+
+    recipe SpecialMallTileWhite {   
+        keep [Recipe.GetItemTypes.Hammer],
+        keep Paintbrush,
+        Plank=2,
+        BucketPlasterFull=1,
+        PaintWhite,
+	    Result:Moveables.location_shop_mall_01_23,
+	    Time:60.0,
+	    NeedToBeLearn:True,
+        SkillRequired:Woodwork=8,
+        Category:Flooring,
+    }
+
+    recipe SpecialMotelTile {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep Paintbrush,
+        Plank=2,
+        BucketPlasterFull=1,
+        PaintLightBrown,
+	    Result:Moveables.location_hospitality_sunstarmotel_02_16,
+	    Time:60.0,
+	    NeedToBeLearn:True,
+        SkillRequired:Woodwork=8,
+        Category:Flooring,
+    }
+
+    recipe SpecialPieStoreFloor {
+        keep [Recipe.GetItemTypes.Hammer],
+        keep Paintbrush,
+        Plank=2,
+        BucketPlasterFull=1,
+        PaintBrown,
+	    Result:Moveables.location_restaurant_pie_01_7,
+	    Time:60.0,
+	    NeedToBeLearn:True,
+        SkillRequired:Woodwork=8,
+        Category:Flooring,
+    }
+
+}

@@ -1,0 +1,315 @@
+module BonnieHats
+{
+  	imports    
+    	{
+		Base,
+	}
+
+    /***************    Black Camo *********************/
+    recipe Make Boonie Hat Netting
+    {
+        destroy BonnieHat_Normal_BlackCamo,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result:BonnieHat_Net_BlackCamo,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+    /************Cat Black*********************/
+    recipe Make Boonie Hat Netting2
+    {
+        destroy BonnieHat_Normal_Cat,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result:BonnieHat_Net_Cat,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+    /************Cat Orange *********************/
+    recipe Make Boonie Hat Netting3
+    {
+        destroy BonnieHat_Normal_CatOrange,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result:BonnieHat_Net_CatOrange,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+    /************Cat White *********************/
+    recipe Make Boonie Hat Netting4
+    {
+        destroy BonnieHat_Normal_CatWhite,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result:BonnieHat_Net_CatWhite,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+    /******************************************************************ChocolateChip Camo************************************************************************/
+
+    recipe Make Boonie Hat Netting5
+    {
+        destroy BonnieHat_Normal_ChocolateChip,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result:BonnieHat_Net_ChocolateChip,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+    /************Dark Blue *********************/
+
+    recipe Make Boonie Hat Netting6
+    {
+        destroy BonnieHat_Normal_DarkBlue,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result:BonnieHat_Net_DarkBlue,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+    /************Default *********************/
+
+    recipe Make Boonie Hat Netting7
+    {
+        destroy Hat_BonnieHat,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result:BonnieHat_Net_Default,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+    /************* Desert Colored ********************/
+
+    recipe Make Boonie Hat Netting8
+    {
+        destroy BonnieHat_Normal_DesertColored,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result: BonnieHat_Net_DesertColored,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+    /************* Desert Night ********************/
+
+    recipe Make Boonie Hat Netting9
+    {
+        destroy BonnieHat_Normal_DesertNight,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result: BonnieHat_Net_DesertNight,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+    /************* Desert Night Dark********************/
+
+    recipe Make Boonie Hat Netting10
+    {
+        destroy BonnieHat_Normal_DesertNightDark,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result: BonnieHat_Net_DesertNightDark,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+
+    /************* Desert Tan ********************/
+
+    recipe Make Boonie Hat Netting11
+    {
+        destroy BonnieHat_Normal_DesertTan,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result: BonnieHat_Net_DesertTan,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+	/****************************************************************************Digital Camo****************************************************************************/
+
+    recipe Make Boonie Hat Netting12
+    {
+        destroy BonnieHat_Normal_DigitalCamo,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result: BonnieHat_Net_DigitalCamo,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+	/*****************************************************************************DigitalCamo Blue Camo******************************************************************************/
+
+    recipe Make Boonie Hat Netting13
+    {
+        destroy BonnieHat_Normal_DigitalCamoBlue,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result: BonnieHat_Net_DigitalCamoBlue,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+    /*************Digital Camo Green ********************/
+
+    recipe Make Boonie Hat Netting14
+    {
+        destroy BonnieHat_Normal_DigitalCamoGreen,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result: BonnieHat_Net_DigitalCamoGreen,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+	/*****************************************************************************Marpat Camo******************************************************************************/
+
+    recipe Make Boonie Hat Netting15
+    {
+        destroy BonnieHat_Normal_Marpat,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result: BonnieHat_Net_Marpat,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+    /************* Multi cam Camo ********************/
+
+    recipe Make Boonie Hat Netting16
+    {
+        destroy BonnieHat_Normal_MultiCam,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result: BonnieHat_Net_MultiCam,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+    /************* UCP Camo ********************/
+
+    recipe Make Boonie Hat Netting17
+    {
+        destroy BonnieHat_Normal_UCP,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result: BonnieHat_Net_UCP,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+	/****************************************************************************Urban Normal***************************************************************************/
+
+    recipe Make Boonie Hat Netting18
+    {
+        destroy BonnieHat_Normal_Urban,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result: BonnieHat_Net_Urban,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+	/***************************************************************************Urban Pixelated***************************************************************************/
+
+
+    recipe Make Boonie Hat Netting19
+    {
+        destroy BonnieHat_Normal_UrbanPixelated,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result: BonnieHat_Net_UrbanPixelated,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+    /************* USCMC Desert ********************/
+
+    recipe Make Boonie Hat Netting20
+    {
+        destroy BonnieHat_Normal_UsmcDesert,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result: BonnieHat_Net_UsmcDesert,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+    /************* White ********************/
+
+    recipe Make Boonie Hat Netting21
+    {
+        destroy BonnieHat_Normal_White,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result: BonnieHat_Net_White,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+    /************* Captain ********************/
+
+    recipe Make Boonie Hat Netting22
+    {
+        destroy BonnieHat_Normal_Captain,
+        keep [Recipe.GetItemTypes.SewingNeedle],
+        Thread=5,
+        destroy FishingNet/BrokenFishingNet,
+
+        Result: BonnieHat_Net_Captain,
+        Time:180.0,
+        Category:Tailoring,
+    }
+
+
+}

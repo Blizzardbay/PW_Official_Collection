@@ -1,0 +1,20 @@
+-- Translation: Misha
+-- Steam: http://steamcommunity.com/profiles/76561197997591716
+
+UI_CH = {
+	UI_mod_fdxpr_days = "天",
+	UI_mod_fdxpr_hours = "小时",
+	UI_mod_fdxpr_mins = "分",
+	UI_mod_fdxpr_secs = "秒",
+	UI_mod_fdxpr_stale = "后劣化",
+	UI_mod_fdxpr_rotten = "后腐坏",
+	UI_mod_fdxpr_trait_name = "食监委员",
+	UI_mod_fdxpr_trait_description = "一眼就能看出食物什么时候过期",
+	UI_mod_fdxpr_state = "状态：    ",
+	UI_mod_fdxpr_state_verygood = "非常新鲜",
+	UI_mod_fdxpr_state_good = "还算新鲜",
+	UI_mod_fdxpr_state_ok = "能凑合吃",
+	UI_mod_fdxpr_state_rotting = "有点变味",
+	UI_mod_fdxpr_state_rotten = "臭气熏天",
+	UI_mod_fdxpr_state_nonperish = "终身质保"
+}

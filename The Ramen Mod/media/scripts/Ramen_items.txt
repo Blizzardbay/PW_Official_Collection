@@ -1,0 +1,514 @@
+module Ramen
+{
+	imports
+		{
+			Base
+		}
+
+	item RamenChickenFlat
+		{
+			Weight    			=	0.8,
+			Type    			=	Normal,
+			DisplayName 		= 	Chicken Ramen Flat,
+			Icon 				=	RamenChickenFlat,
+			WorldStaticModel	=	RamenChickenFlat,
+		}
+
+	item RamenChickenPack
+		{
+			Weight				=	0.2,
+			Type				=	Food,
+			DisplayName			=	Chicken Ramen,
+			Icon				=	RamenChickenPack,
+			Carbohydrates 		= 	52,
+			Proteins 			= 	10,
+			Lipids 				= 	19,
+			Calories 			= 	380,
+			Packaged 			= 	TRUE,
+			CantBeFrozen		=	TRUE,
+			WorldStaticModel	=	RamenChickenPack,
+		}
+
+	item RamenChickenFlav
+		{
+			Weight				=	0.1,
+			Type				=	Food,
+			DisplayName			=	Chicken Ramen Flavoring,
+			Icon				=	RamenChickenFlav,
+			HungerChange		=	-2,
+			ThirstChange		=	20,
+			BoredomChange		=	15,
+			UnhappyChange		=	20,
+			Carbohydrates 		=	52,
+			Proteins			=	0,
+			Lipids 				=	0,
+			Calories 			=	328,
+			Spice   			=	true,
+			EvolvedRecipe 		= 	Soup:2;Stew:2;Pie:2;Stir fry:2;Burger:2;Salad:2;Roasted Vegetables:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2,
+			CantBeFrozen 		= 	TRUE,
+			ReplaceOnUse		=	RamenChickenFlavEmpty,
+			WorldStaticModel	=	RamenFoilPacket,
+		}
+
+	item RamenChickenBowl
+		{
+			Weight				=	1,
+			Type				=	Food,
+			FoodType    		=	NoExplicit,
+			DisplayName			=	Chicken Ramen Noodles,
+			Icon				=	RamenNoodleBowl,
+			HungerChange		=	-20,
+			UnhappyChange		=	-2,
+			BoredomChange		=	-2,
+			DaysFresh 			= 	2,
+			DaysTotallyRotten	=	4,
+			IsCookable			=	TRUE,
+			MinutesToCook		=	15,
+			MinutesToBurn		=	30,
+			Carbohydrates 		= 	52,
+			Proteins 			= 	10,
+			Lipids 				= 	14,
+			Calories 			= 	380,	
+			CustomContextMenu	= 	Eat,
+			ReplaceOnUse		=	Bowl,
+			CustomEatSound		=	EatingSoup,
+			EatType				=	2handbowl,
+			StaticModel			=	Bowl,
+			WorldStaticModel	=	BowlSoup_Ground,
+		}
+
+	item RamenBeefFlat
+		{
+			Weight    			=	0.8,
+			Type    			=	Normal,
+			DisplayName 		=	Beef Ramen Flat,
+			Icon 				=	RamenBeefFlat,
+			WorldStaticModel	=	RamenBeefFlat,
+		}
+
+	item RamenBeefPack
+		{
+			Weight				=	0.2,
+			Type				=	Food,
+			DisplayName			=	Beef Ramen,
+			Icon				=	RamenBeefPack,
+			Carbohydrates 		= 	52,
+			Proteins 			= 	10,
+			Lipids 				= 	14,
+			Calories 			= 	380,
+			Packaged 			= 	TRUE,
+			CantBeFrozen		=	TRUE,
+			WorldStaticModel	=	RamenBeefPack,
+			WorldStaticModel	=	RamenBeefPack,
+			
+		}
+
+	item RamenBeefFlav
+		{
+			Weight				=	0.2,
+			Type				=	Food,
+			DisplayName			=	Beef Ramen Flavoring,
+			Icon				=	RamenBeefFlav,
+			HungerChange		=	-2,
+			ThirstChange		=	20,
+			BoredomChange		=	15,
+			UnhappyChange		=	20,
+			Carbohydrates 		=	52,
+			Proteins			=	0,
+			Lipids 				=	0,
+			Calories 			=	328,
+			Spice   			=	true,
+			EvolvedRecipe 		= 	Soup:2;Stew:2;Pie:2;Stir fry:2;Burger:2;Salad:2;Roasted Vegetables:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2,
+			CantBeFrozen 		= 	TRUE,
+			ReplaceOnUse		=	RamenBeefFlavEmpty,
+			WorldStaticModel	=	RamenFoilPacket,
+			
+		}
+
+	item RamenBeefBowl
+		{
+			Weight				=	1,
+			Type				=	Food,
+			FoodType    		=	NoExplicit,
+			DisplayName			=	Beef Ramen Noodles,
+			Icon				=	RamenNoodleBowl,
+			HungerChange		=	-20,
+			UnhappyChange		=	-2,
+			BoredomChange		=	-2,
+			DaysFresh 			= 	2,
+			DaysTotallyRotten	=	4,
+			IsCookable			=	TRUE,
+			MinutesToCook		=	15,
+			MinutesToBurn		=	30,
+			Carbohydrates 		= 	52,
+			Proteins 			= 	10,
+			Lipids 				= 	14,
+			Calories 			= 	380,
+			CustomContextMenu	= 	Eat,
+			ReplaceOnUse		=	Bowl,
+			CustomEatSound		=	EatingSoup,
+			EatType				=	2handbowl,
+			StaticModel			=	Bowl,
+			WorldStaticModel	=	BowlSoup_Ground,
+		}
+
+	item RamenShrimpFlat
+		{
+			Weight    			=	0.8,
+			Type    			=	Normal,
+			DisplayName			=	Shrimp Ramen Flat,
+			Icon 				=	RamenShrimpFlat,
+			WorldStaticModel	=	RamenShrimpFlat,
+		}
+
+	item RamenShrimpPack
+		{
+			Weight				=	0.2,
+			Type				=	Food,
+			DisplayName			=	Shrimp Ramen,
+			Icon				=	RamenShrimpPack,
+			Carbohydrates 		= 	52,
+			Proteins 			= 	10,
+			Lipids 				= 	14,
+			Calories 			= 	380,
+			Packaged 			= 	TRUE,
+			CantBeFrozen		=	TRUE,
+			WorldStaticModel	=	RamenShrimpPack,
+		}
+
+	item RamenShrimpFlav
+		{
+			Weight				=	0.2,
+			Type				=	Food,
+			DisplayName			=	Shrimp Ramen Flavoring,
+			Icon				=	RamenShrimpFlav,
+			HungerChange		=	-2,
+			ThirstChange		=	20,
+			BoredomChange		=	15,
+			UnhappyChange		=	20,
+			Carbohydrates 		=	52,
+			Proteins			=	0,
+			Lipids 				=	0,
+			Calories 			=	328,
+			Spice   			=	true,
+			EvolvedRecipe 		= 	Soup:2;Stew:2;Pie:2;Stir fry:2;Burger:2;Salad:2;Roasted Vegetables:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2,
+			CantBeFrozen 		= 	TRUE,
+			ReplaceOnUse		=	RamenShrimpFlavEmpty,
+			WorldStaticModel	=	RamenFoilPacket,
+		}
+
+	item RamenShrimpBowl
+		{
+			Weight				=	1,
+			Type				=	Food,
+			FoodType    		=	NoExplicit,
+			DisplayName			=	Shrimp Ramen Noodles,
+			Icon				=	RamenNoodleBowl,
+			HungerChange		=	-20,
+			BoredomChange		=	-2,
+			UnhappyChange		=	-2,
+			DaysFresh 			= 	2,
+			DaysTotallyRotten	=	4,
+			IsCookable			=	TRUE,
+			MinutesToCook		=	15,
+			MinutesToBurn		=	30,
+			Carbohydrates 		= 	52,
+			Proteins 			= 	10,
+			Lipids 				= 	14,
+			Calories 			= 	380,
+			CustomContextMenu 	= 	Eat,
+			ReplaceOnUse		=	Bowl,
+			CustomEatSound		=	EatingSoup,
+			EatType				=	2handbowl,
+			StaticModel			=	Bowl,
+			WorldStaticModel	=	BowlSoup_Ground,
+		}
+
+	item RamenCheeseFlat
+		{
+			Weight    			=	0.8,
+			Type				=	Normal,
+			DisplayName			=	Cheese Ramen Flat,
+			Icon 				=	RamenCheeseFlat,
+			WorldStaticModel	=	RamenCheeseFlat,
+		}
+
+	item RamenCheesePack
+		{
+			Weight				=	0.2,
+			Type				=	Food,
+			DisplayName			=	Cheese Ramen,
+			Icon				=	RamenCheesePack,
+			Carbohydrates 		= 	52,
+			Proteins 			= 	10,
+			Lipids 				= 	14,
+			Calories 			= 	380,
+			Packaged 			= 	TRUE,
+			CantBeFrozen		=	TRUE,
+			WorldStaticModel	=	RamenCheesePack,
+		}
+
+	item RamenCheeseFlav
+		{
+			Weight				=	0.2,
+			Type				=	Food,
+			DisplayName			=	Cheese Ramen Flavoring,
+			Icon				=	RamenCheeseFlav,
+			HungerChange		=	-2,
+			ThirstChange		=	20,
+			BoredomChange		=	15,
+			UnhappyChange		=	20,
+			Carbohydrates 		=	52,
+			Proteins			=	0,
+			Lipids 				=	0,
+			Calories 			=	328,
+			Spice   			=	true,
+			EvolvedRecipe 		= 	Soup:2;Stew:2;Pie:2;Stir fry:2;Burger:2;Salad:2;Roasted Vegetables:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2,
+			CantBeFrozen 		= 	TRUE,
+			ReplaceOnUse		=	RamenCheeseFlavEmpty,
+			WorldStaticModel	=	RamenFoilPacket,
+		}
+
+	item RamenCheeseBowl
+		{
+			Weight				=	1,
+			Type				=	Food,
+			FoodType    		=   NoExplicit,
+			DisplayName			=	Cheese Ramen Noodles,
+			Icon				=	RamenNoodleBowl,
+			HungerChange		=	-20,
+			BoredomChange		=	-2,
+			UnhappyChange		=	-2,
+			DaysFresh 			= 	2,
+			DaysTotallyRotten	=	4,
+			IsCookable			=	TRUE,
+			MinutesToCook		=	15,
+			MinutesToBurn		=	30,
+			Carbohydrates 		= 	52,
+			Proteins 			= 	10,
+			Lipids 				= 	14,
+			Calories 			= 	380,
+			CustomContextMenu	= 	Eat,
+			ReplaceOnUse		=	Bowl,
+			CustomEatSound		=	EatingSoup,
+			EatType				=	2handbowl,
+			StaticModel			=	Bowl,
+			WorldStaticModel	=	BowlSoup_Ground,
+		}
+
+	item RamenChiliFlat
+		{
+			Weight    			=	0.8,
+			Type				=	Normal,
+			DisplayName			=	Chili Ramen Flat,
+			Icon 				=	RamenChiliFlat,
+			WorldStaticModel	=	RamenChiliFlat,
+		}
+
+	item RamenChiliPack
+		{
+			Weight				=	0.2,
+			Type				=	Food,
+			DisplayName			=	Chili Ramen,
+			Icon				=	RamenChiliPack,
+			Carbohydrates 		= 	52,
+			Proteins 			= 	10,
+			Lipids 				= 	14,
+			Calories 			= 	380,
+			Packaged 			= 	TRUE,
+			CantBeFrozen		=	TRUE,
+			WorldStaticModel	=	RamenChiliPack,
+		}
+
+	item RamenChiliFlav
+		{
+			Weight				=	0.2,
+			Type				=	Food,
+			DisplayName			=	Chili Ramen Flavoring,
+			Icon				=	RamenChiliFlav,
+			HungerChange		=	-2,
+			ThirstChange		=	20,
+			BoredomChange		=	15,
+			UnhappyChange		=	20,
+			Carbohydrates 		=	52,
+			Proteins			=	0,
+			Lipids 				=	0,
+			Calories 			=	328,
+			Spice   			=	true,
+			EvolvedRecipe 		= 	Soup:2;Stew:2;Pie:2;Stir fry:2;Burger:2;Salad:2;Roasted Vegetables:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2,
+			CantBeFrozen 		= 	TRUE,
+			ReplaceOnUse		=	RamenCheeseFlavEmpty,
+			WorldStaticModel	=	RamenFoilPacket,
+		}
+
+	item RamenChiliBowl
+		{
+			Weight				=	1,
+			Type				=	Food,
+			FoodType    		=   NoExplicit,
+			DisplayName			=	Chili Ramen Noodles,
+			Icon				=	RamenNoodleBowl,
+			HungerChange		=	-20,
+			BoredomChange		=	-2,
+			UnhappyChange		=	-2,
+			DaysFresh 			= 	2,
+			DaysTotallyRotten	=	4,
+			IsCookable			=	TRUE,
+			MinutesToCook		=	15,
+			MinutesToBurn		=	30,
+			Carbohydrates 		= 	52,
+			Proteins 			= 	10,
+			Lipids 				= 	14,
+			Calories 			= 	380,
+			CustomContextMenu	= 	Eat,
+			ReplaceOnUse		=	Bowl,
+			CustomEatSound		=	EatingSoup,
+			EatType				=	2handbowl,
+			StaticModel			=	Bowl,
+			WorldStaticModel	=	BowlSoup_Ground,
+		}
+
+	item RamenOrientalFlat
+		{
+			Weight    			=	0.8,
+			Type				=	Normal,
+			DisplayName			=	Oriental Ramen Flat,
+			Icon 				=	RamenOrientalFlat,
+			WorldStaticModel	=	RamenOrientalFlat,
+		}
+
+	item RamenOrientalPack
+		{
+			Weight				=	0.2,
+			Type				=	Food,
+			DisplayName			=	Oriental Ramen,
+			Icon				=	RamenOrientalPack,
+			Carbohydrates 		= 	52,
+			Proteins 			= 	10,
+			Lipids 				= 	14,
+			Calories 			= 	380,
+			Packaged 			= 	TRUE,
+			CantBeFrozen		=	TRUE,
+			WorldStaticModel	=	RamenOrientalPack,
+		}
+
+	item RamenOrientalFlav
+		{
+			Weight				=	0.2,
+			Type				=	Food,
+			DisplayName			=	Oriental Ramen Flavoring,
+			Icon				=	RamenOrientalFlav,
+			HungerChange		=	-2,
+			ThirstChange		=	20,
+			BoredomChange		=	15,
+			UnhappyChange		=	20,
+			Carbohydrates 		=	52,
+			Proteins			=	0,
+			Lipids 				=	0,
+			Calories 			=	328,
+			Spice   			=	true,
+			EvolvedRecipe 		= 	Soup:2;Stew:2;Pie:2;Stir fry:2;Burger:2;Salad:2;Roasted Vegetables:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2,
+			CantBeFrozen 		= 	TRUE,
+			ReplaceOnUse		=	RamenOrientalFlavEmpty,
+			WorldStaticModel	=	RamenFoilPacket,
+		}
+
+	item RamenOrientalBowl
+		{
+			Weight				=	1,
+			Type				=	Food,
+			FoodType    		=   NoExplicit,
+			DisplayName			=	Oriental Ramen Noodles,
+			Icon				=	RamenNoodleBowl,
+			HungerChange		=	-20,
+			BoredomChange		=	-2,
+			UnhappyChange		=	-2,
+			DaysFresh 			= 	2,
+			DaysTotallyRotten	=	4,
+			IsCookable			=	TRUE,
+			MinutesToCook		=	15,
+			MinutesToBurn		=	30,
+			Carbohydrates 		= 	52,
+			Proteins 			= 	10,
+			Lipids 				= 	14,
+			Calories 			= 	380,
+			CustomContextMenu	= 	Eat,
+			ReplaceOnUse		=	Bowl,
+			CustomEatSound		=	EatingSoup,
+			EatType				=	2handbowl,
+			StaticModel			=	Bowl,
+			WorldStaticModel	=	BowlSoup_Ground,
+		}
+
+	item RamenPorkFlat
+		{
+			Weight    			=	0.8,
+			Type				=	Normal,
+			DisplayName			=	Pork Ramen Flat,
+			Icon 				=	RamenPorkFlat,
+			WorldStaticModel	=	RamenPorkFlat,
+		}
+
+	item RamenPorkPack
+		{
+			Weight				=	0.2,
+			Type				=	Food,
+			DisplayName			=	Pork Ramen,
+			Icon				=	RamenPorkPack,
+			Carbohydrates 		= 	52,
+			Proteins 			= 	10,
+			Lipids 				= 	14,
+			Calories 			= 	380,
+			Packaged 			= 	TRUE,
+			CantBeFrozen		=	TRUE,
+			WorldStaticModel	=	RamenPorkPack,
+		}
+
+	item RamenPorkFlav
+		{
+			Weight				=	0.2,
+			Type				=	Food,
+			DisplayName			=	Pork Ramen Flavoring,
+			Icon				=	RamenPorkFlav,
+			HungerChange		=	-2,
+			ThirstChange		=	20,
+			BoredomChange		=	15,
+			UnhappyChange		=	20,
+			Carbohydrates 		=	52,
+			Proteins			=	0,
+			Lipids 				=	0,
+			Calories 			=	328,
+			Spice   			=	true,
+			EvolvedRecipe 		= 	Soup:2;Stew:2;Pie:2;Stir fry:2;Burger:2;Salad:2;Roasted Vegetables:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2,
+			CantBeFrozen 		= 	TRUE,
+			ReplaceOnUse		=	RamenPorkFlavEmpty,
+			WorldStaticModel	=	RamenFoilPacket,
+		}
+
+	item RamenPorkBowl
+		{
+			Weight				=	1,
+			Type				=	Food,
+			FoodType    		=   NoExplicit,
+			DisplayName			=	Pork Ramen Noodles,
+			Icon				=	RamenNoodleBowl,
+			HungerChange		=	-20,
+			BoredomChange		=	-2,
+			UnhappyChange		=	-2,
+			DaysFresh 			= 	2,
+			DaysTotallyRotten	=	4,
+			IsCookable			=	TRUE,
+			MinutesToCook		=	15,
+			MinutesToBurn		=	30,
+			Carbohydrates 		= 	52,
+			Proteins 			= 	10,
+			Lipids 				= 	14,
+			Calories 			= 	380,
+			CustomContextMenu	= 	Eat,
+			ReplaceOnUse		=	Bowl,
+			CustomEatSound		=	EatingSoup,
+			EatType				=	2handbowl,
+			StaticModel			=	Bowl,
+			WorldStaticModel	=	BowlSoup_Ground,
+		}
+}

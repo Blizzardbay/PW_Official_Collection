@@ -1,0 +1,74 @@
+================================================================================================================
+	ITEM 						 	RECIPE name							SOURCE		NOTES
+================================================================================================================
+ALL PLAYERS
+	Small Hinges					ICMakeSmallHinge					Free
+	Wood Panel						ICMakeWoodPanel						Free
+CARPENTRY 1
+	Trailer							ICMakeCabinetTrailer1				Free
+	Trailer Float					ICMakeCabinetTrailer2				Free
+	Medicine Cabinet				ICMakeCabinetBathroom				Free
+	GenericShop						ICMakeCabinetShop3					Free
+									ICMakeCabinetShop3Corner			Free
+CARPENTRY 2
+	Wooden							ICMakeCabinet2						Free
+									ICMakeCabinet2Corner				Free
+	Birch							ICMakeCabinet3						Free
+									ICMakeCabinet3Corner				Free
+									ICMakeCabinet3Float					Free
+	Oak								ICMakeCabinet4						Free
+									ICMakeCabinet4Corner				Free
+CARPENTRY 3
+	Green							ICMakeCabinet6						Free
+									ICMakeCabinet6Corner				Free
+	White							ICMakeCabinet7						Free
+									ICMakeCabinet7Corner				Free
+	White Motel						ICMakeCabinetMotel1					Free
+	White Motel Float				ICMakeCabinetMotel2					Free
+	Fossoil 						ICMakeCabinetShop1					Free			Renamed to blue cabinet
+									ICMakeCabinetShop1Corner			Free			Renamed to blue cabinet
+	Gas2Go 							ICMakeCabinetShop2					Free
+									ICMakeCabinetShop2Corner			Free
+	Zippee							ICMakeCabinetShop4					Magazine1		Free Carpenter profession
+									ICMakeCabinetShop4Corner			Magazine1		Free Carpenter profession
+
+METALWORKING 3
+	Large Metal Shelves 			ICMakeLargeMetalShelves1 			Magazine1 		Free Metalworker profession
+
+CARPENTRY 4
+	Dark							ICMakeCabinet5						Free
+									ICMakeCabinet5Corner				Free
+CARPENTRY 5
+	Modern							ICMakeCabinet1						Free
+									ICMakeCabinet2						Free
+	Seahorse Coffee					ICMakeCabinetRestaurant4			Magazine1		Free Carpenter profession
+									ICMakeCabinetRestaurant4Corner		Magazine1		Free Carpenter profession
+	Trailer w/Fridge				ICMakeCabinetTrailer3				Free			Requires Electricity 2
+
+METALWORKING 5
+	Metal Cabinet					ICMakeMetalCabinet1 				Magazine1 		Free Metalworker profession
+
+CARPENTRY 6
+	Pie Restaurant					ICMakeCabinetRestaurant2			Free
+									ICMakeCabinetRestaurant2Corner		Free
+CARPENTRY 7
+	Theatre							ICMakeCabinetTheater1				Magazine1		Free Carpenter profession
+									ICMakeCabinetTheater2				Magazine1		Free Carpenter profession
+									ICMakeCabinetTheater3				Magazine1		Free Carpenter profession
+	Diner							ICMakeCabinetRestaurant1			Magazine1		Free Carpenter profession
+									ICMakeCabinetRestaurant1Corner		Magazine1		Free Carpenter profession
+	Spiffo 							ICMakeCabinetRestaurant5			Magazine1		Free Carpenter profession
+									ICMakeCabinetRestaurant5Corner		Magazine1		Free Carpenter profession
+METALWORKING 7
+	Glass Counter					ICMakeCabinetImprovisedGlass1		Free			If ImprovisedGlass installed
+									ICMakeCabinetImprovisedGlass1Corner	Free			If ImprovisedGlass installed
+	Theatre Glass Counter			ICMakeCabinetImprovisedGlass2		Free			If ImprovisedGlass installed
+
+CARPENTRY 8
+	Bar Counter (Black)				ICMakeCabinetBar1					Free
+									ICMakeCabinetBar1Corner				Free
+CARPENTRY 9
+	Pizza Whirled					ICMakeCabinetRestaurant3			Magazine1		Free Carpenter profession
+									ICMakeCabinetRestaurant3Counter		Magazine1		Free Carpenter profession
+CARPENTRY 10
+	No Recipes ATM

@@ -1,0 +1,4188 @@
+module Base{
+
+
+item FakeDogfoodOpen
+{
+DisplayName = Fake Opened Dog Food,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = DogfoodOpen,
+StaticModel = CanOpen,
+WorldStaticModel = CanOpenDogFood,
+}
+
+item FakeDogfood
+{
+DisplayName = Fake Dog Food,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Dogfood,
+WorldStaticModel = CanClosedDogFood,
+}
+
+item FakeCannedCornedBeefOpen
+{
+DisplayName = Fake Opened Canned Corned Beef,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedCornedBeefOpen,
+StaticModel = CanOpen,
+WorldStaticModel = CanOpenCornerBeef,
+}
+
+item FakeCannedChiliOpen
+{
+DisplayName = Fake Opened Canned Chili,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedChiliOpen,
+StaticModel = CanOpen,
+WorldStaticModel = CanOpenChilli,
+}
+
+item FakeCannedBologneseOpen
+{
+DisplayName = Fake Opened Canned Spaghetti Bolognese,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedBologneseOpen,
+StaticModel = CanOpen,
+WorldStaticModel = CanOpenBolognese,
+}
+
+item FakeCannedCarrotsOpen
+{
+DisplayName = Fake Opened Canned Carrots,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedCarrotsOpen,
+StaticModel = CanOpen,
+WorldStaticModel = CanOpenCarrots,
+}
+
+item FakeCannedCornOpen
+{
+DisplayName = Fake Opened Canned Corn,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedCornOpen,
+StaticModel = CanOpen,
+WorldStaticModel = CanOpenCorn,
+}
+
+item FakeCannedMushroomSoupOpen
+{
+DisplayName = Fake Opened Canned Mushroom Soup,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedMushroomSoupOpen,
+StaticModel = CanOpen,
+WorldStaticModel = CanOpenMushroom,
+}
+
+item FakeCannedPeasOpen
+{
+DisplayName = Fake Opened Canned Peas,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedPeasOpen,
+StaticModel = CanOpen,
+WorldStaticModel = CanOpenPeas,
+}
+
+item FakeCannedPotatoOpen
+{
+DisplayName = Fake Opened Canned Potato,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedPotatoOpen,
+StaticModel = CanOpen,
+WorldStaticModel = CanOpenPotatoes,
+}
+
+item FakeCannedSardinesOpen
+{
+DisplayName = Fake Opened Canned Sardines,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedSardinesOpen,
+StaticModel = CanOpen,
+WorldStaticModel = CannedSardines_Open_Ground,
+}
+
+item FakeCannedTomatoOpen
+{
+DisplayName = Fake Opened Canned Tomato,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedTomatoOpen,
+StaticModel = CanOpen,
+WorldStaticModel = CanOpenTomatoes,
+}
+
+item FakeCannedCorn
+{
+DisplayName = Fake Canned Corn,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedCorn,
+StaticModel = CanClosed,
+WorldStaticModel = CanClosedCorn,
+}
+
+item FakeCannedMushroomSoup
+{
+DisplayName = Fake Canned Mushroom Soup,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedMushroomSoup,
+StaticModel = CanClosed,
+WorldStaticModel = CanClosedMushroom,
+}
+
+item FakeCannedPeas
+{
+DisplayName = Fake Canned Peas,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedPeas,
+StaticModel = CanClosed,
+WorldStaticModel = CanClosedPeas,
+}
+
+item FakeCannedPotato2
+{
+DisplayName = Fake Canned Potato,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedPotato,
+StaticModel = CanClosed,
+WorldStaticModel = CanClosedPotatoes,
+}
+
+item FakeCannedSardines
+{
+DisplayName = Fake Canned Sardines,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedSardines,
+StaticModel = CanClosed,
+WorldStaticModel = CannedSardines_Ground,
+}
+
+item FakeCannedTomato2
+{
+DisplayName = Fake Canned Tomato,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedTomato,
+StaticModel = CanClosed,
+WorldStaticModel = CanClosedTomatoes,
+}
+
+item FakeCannedCarrots2
+{
+DisplayName = Fake Canned Carrots,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedCarrots,
+StaticModel = CanClosed,
+WorldStaticModel = CanClosedCarrots,
+}
+
+item FakeCannedChili
+{
+DisplayName = Fake Canned Chili,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedChili,
+StaticModel = CanClosed,
+WorldStaticModel = CanClosedChilli,
+}
+
+item FakeCannedBolognese
+{
+DisplayName = Fake Canned Bolognese,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedBolognese,
+StaticModel = CanClosed,
+WorldStaticModel = CanClosedBolognese,
+}
+
+item FakeCannedCornedBeef
+{
+DisplayName = Fake Canned Corned Beef,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedCornedBeef,
+StaticModel = CanClosed,
+WorldStaticModel = CanClosedCornerBeef,
+}
+
+item FakeTinnedSoupOpen
+{
+DisplayName = Fake Opened Canned Soup,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = SoupOpen,
+StaticModel = CanOpen,
+WorldStaticModel = CanOpenSoup,
+}
+
+item FakeTinnedSoup
+{
+DisplayName = Fake Canned Soup,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Soup,
+StaticModel = CanClosed,
+WorldStaticModel = CanClosedSoup,
+}
+
+item FakeTunaTinOpen
+{
+DisplayName = Fake Opened Tin of Tuna,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = TunaOpen,
+StaticModel = CanOpen,
+WorldStaticModel = TinnedTuna_Open_Ground,
+}
+
+item FakeOpenBeans
+{
+DisplayName = Fake Opened Canned Beans,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BeansOpen,
+StaticModel = CanOpen,
+WorldStaticModel = CanOpen,
+}
+
+item FakeTinnedBeans
+{
+DisplayName = Fake Canned Beans,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Beans,
+StaticModel = CanClosed,
+WorldStaticModel = CanClosed,
+}
+
+item FakeTunaTin
+{
+DisplayName = Fake Canned Tuna,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Tuna,
+StaticModel = CanClosed,
+WorldStaticModel = TinnedTuna_Ground,
+}
+
+item FakeCannedFruitCocktail
+{
+DisplayName = Fake Canned Fruit Cocktail,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedFruitCocktail,
+StaticModel = CanClosed,
+WorldStaticModel = CanClosedFruitCocktail_Ground,
+}
+
+item FakeCannedFruitCocktailOpen
+{
+DisplayName = Fake Opened Canned Fruit Cocktail,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedFruitCocktailOpen,
+StaticModel = CanOpen,
+WorldStaticModel = CanOpenFruitCocktail_Ground,
+}
+
+item FakeCannedFruitBeverage
+{
+DisplayName = Fake Canned Fruit Beverage,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedJuice,
+StaticModel = CanClosed,
+WorldStaticModel = CanClosedFruitBeverage_Ground,
+}
+
+item FakeCannedFruitBeverageOpen
+{
+DisplayName = Fake Opened Canned Fruit Beverage,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedJuice_Open,
+StaticModel = CanOpen,
+WorldStaticModel = CanOpenFruitBeverage_Ground,
+}
+
+item FakeCannedPeaches
+{
+DisplayName = Fake Canned Peaches,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedPeaches,
+StaticModel = CanClosed,
+WorldStaticModel = CanClosedPeaches_Ground,
+}
+
+item FakeCannedPeachesOpen
+{
+DisplayName = Fake Opened Canned Peaches,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedPeachesOpen,
+StaticModel = CanOpen,
+WorldStaticModel = CanOpenPeaches_Ground,
+}
+
+item FakeCannedPineapple
+{
+DisplayName = Fake Canned Pineapple,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedPineapple,
+StaticModel = CanClosed,
+WorldStaticModel = CanClosedPineapple_Ground,
+}
+
+item FakeCannedPineappleOpen
+{
+DisplayName = Fake Opened Canned Pineapple,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CannedPineappleOpen,
+StaticModel = CanOpen,
+WorldStaticModel = CanOpenPineapple_Ground,
+}
+
+item FakeMushroomGeneric1
+{
+DisplayName = Fake Mushrooms,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = MushroomGeneric1,
+WorldStaticModel = MushroomGeneric1,
+}
+
+item FakeMushroomGeneric2
+{
+DisplayName = Fake Mushrooms,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = MushroomGeneric2,
+WorldStaticModel = MushroomGeneric1,
+}
+
+item FakeMushroomGeneric3
+{
+DisplayName = Fake Mushrooms,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = MushroomGeneric3,
+WorldStaticModel = MushroomGeneric1,
+}
+
+item FakeMushroomGeneric4
+{
+DisplayName = Fake Mushrooms,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = MushroomGeneric4,
+WorldStaticModel = MushroomGeneric1,
+}
+
+item FakeMushroomGeneric5
+{
+DisplayName = Fake Mushrooms,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = MushroomGeneric5,
+WorldStaticModel = MushroomGeneric1,
+}
+
+item FakeMushroomGeneric6
+{
+DisplayName = Fake Mushrooms,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = MushroomGeneric6,
+WorldStaticModel = MushroomGeneric1,
+}
+
+item FakeMushroomGeneric7
+{
+DisplayName = Fake Mushrooms,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = MushroomGeneric7,
+WorldStaticModel = MushroomGeneric1,
+}
+
+item FakeOnion
+{
+DisplayName = Fake Onion,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Onion,
+
+StaticModel = RoundFood_Peach,
+WorldStaticModel = Onion_Ground,
+}
+
+item FakeLettuce
+{
+DisplayName = Fake Lettuce,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Lettuce,
+StaticModel = RoundFood_Green,
+WorldStaticModel = Lettuce_Ground,
+}
+
+item FakeBellPepper
+{
+DisplayName = Fake Bell Pepper,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BellPepper,
+StaticModel = RoundFood_Red,
+WorldStaticModel = BellPepper_Ground,
+}
+
+item FakeAvocado
+{
+DisplayName = Fake Avocado,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Avocado,
+StaticModel = RoundFood_Green,
+WorldStaticModel = Avocado_Ground,
+}
+
+item FakeZucchini
+{
+DisplayName = Fake Zucchini,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Zucchini,
+StaticModel = CylinderFood_Green,
+WorldStaticModel = Zucchini_Ground,
+}
+
+item FakePeas
+{
+DisplayName = Fake Peas,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Peas,
+WorldStaticModel = Peas,
+}
+
+item FakeCarrots
+{
+DisplayName = Fake Carrots,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Carrots,
+StaticModel = CylinderFood_Orange,
+WorldStaticModel = Carrots_Ground,
+}
+
+item FakeBroccoli
+{
+DisplayName = Fake Broccoli,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Broccoli,
+StaticModel = CylinderFood_Green,
+WorldStaticModel = Broccoli_Ground,
+}
+
+item FakeCorn
+{
+DisplayName = Fake Corn,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Corn,
+StaticModel = CylinderFood_Yellow,
+WorldStaticModel = Corn_Ground,
+}
+
+item FakeEggplant
+{
+DisplayName = Fake Eggplant,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Eggplant,
+StaticModel = CylinderFood_Purple,
+WorldStaticModel = EggPlant_Ground,
+}
+
+item FakeLeek
+{
+DisplayName = Fake Leek,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Leek,
+StaticModel = CylinderFood_Green,
+WorldStaticModel = Leek_Ground,
+}
+
+item FakeLemon
+{
+DisplayName = Fake Lemon,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Lemon,
+StaticModel = RoundFood_Yellow,
+WorldStaticModel = Lemon_Ground,
+}
+
+item FakeBerryBlack
+{
+DisplayName = Fake Berries,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BerryBlack,
+WorldStaticModel = BerryBlack,
+}
+
+item FakeBerryBlue
+{
+DisplayName = Fake Berries,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BerryBlue,
+WorldStaticModel = BerryBlue,
+}
+
+item FakeBerryGeneric1
+{
+DisplayName = Fake Berries,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BerryGeneric1,
+WorldStaticModel = BerryGeneric1,
+}
+
+item FakeBerryGeneric2
+{
+DisplayName = Fake Berries,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BerryGeneric2,
+WorldStaticModel = BerryGeneric2,
+}
+
+item FakeBerryGeneric3
+{
+DisplayName = Fake Berries,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BerryGeneric3,
+WorldStaticModel = BerryGeneric3,
+}
+
+item FakeBerryGeneric4
+{
+DisplayName = Fake Berries,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BerryGeneric4,
+WorldStaticModel = BerryGeneric4,
+}
+
+item FakeBerryGeneric5
+{
+DisplayName = Fake Berries,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BerryGeneric5,
+WorldStaticModel = BerryGeneric5,
+}
+
+item FakeBerryPoisonIvy
+{
+DisplayName = Fake Berries,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BerryPoisonIvy,
+WorldStaticModel = BerryWhite,
+}
+
+item FakePeach
+{
+DisplayName = Fake Peach,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Peach,
+StaticModel = RoundFood_Peach,
+WorldStaticModel = Peach_Ground,
+}
+
+item FakePineapple
+{
+DisplayName = Fake Pineapple,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Pineapple,
+WorldStaticModel = Pineapple_Ground,
+}
+
+item FakeCherry
+{
+DisplayName = Fake Cherry,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Cherry,
+StaticModel = RoundFood_Red,
+WorldStaticModel = Cherry_Ground,
+}
+
+item FakeWatermelon
+{
+DisplayName = Fake Watermelon,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Watermelon,
+
+WorldStaticModel = Watermelon_Ground,
+}
+
+item FakeWatermelonSliced
+{
+DisplayName = Fake Watermelon Slice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = WatermelonSliced,
+StaticModel = MelonSlice,
+WorldStaticModel = WaterMelonSlice_Ground,
+}
+
+item FakeWatermelonSmashed
+{
+DisplayName = Fake Watermelon Chunks,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = WatermelonSmashed,
+StaticModel = MelonSlice,
+WorldStaticModel = WaterMelonChunks_Ground,
+}
+
+item FakeGrapes
+{
+DisplayName = Fake Grapes,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Grapes,
+WorldStaticModel = Grapes_Ground,
+}
+
+item FakeOrange
+{
+DisplayName = Fake Orange,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Orange,
+StaticModel = RoundFood_Orange,
+WorldStaticModel = Orange_Ground,
+}
+
+item FakeApple
+{
+DisplayName = Fake Apple,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Apple,
+StaticModel = RoundFood_Red,
+WorldStaticModel = Apple_Ground,
+}
+
+item FakeBanana
+{
+DisplayName = Fake Banana,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Banana,
+StaticModel = CylinderFood_Yellow,
+WorldStaticModel = Banana_Ground,
+}
+
+item FakeCatfish
+{
+DisplayName = Fake Catfish,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = FishCatfish,
+StaticModel = Catfish,
+WorldStaticModel = Catfish,
+}
+
+item FakeBass
+{
+DisplayName = Fake Bass,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = FishBass,
+StaticModel = Bass,
+WorldStaticModel = Bass,
+}
+
+item FakePerch
+{
+DisplayName = Fake Perch,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = FishPerch,
+WorldStaticModel = Perch,
+}
+
+item FakeCrappie
+{
+DisplayName = Fake Crappie,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = FishCrappie,
+StaticModel = Crappie,
+WorldStaticModel = Crappie,
+}
+
+item FakePanfish
+{
+DisplayName = Fake Sunfish,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = FishPanfish,
+WorldStaticModel = SunFish,
+}
+
+item FakePike
+{
+DisplayName = Fake Pike,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = FishPike,
+WorldStaticModel = Pike_Ground,
+}
+
+item FakeTrout
+{
+DisplayName = Fake Trout,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = FishTrout,
+WorldStaticModel = Trout,
+}
+
+item FakeBaitFish
+{
+DisplayName = Fake Little Bait Fish,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = FishMinnow,
+StaticModel = LittleBaitFish,
+WorldStaticModel = LittleBaitFish,
+}
+
+item FakeDeadRat
+{
+DisplayName = Fake Dead Rat,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = DeadRat,
+StaticModel = DeadRat,
+WorldStaticModel = DeadRat,
+}
+
+item FakeDeadMouse
+{
+DisplayName = Fake Dead Mouse,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = MouseDead,
+StaticModel = DeadMouse,
+WorldStaticModel = DeadMouseWorld,
+}
+
+item FakeDeadRabbit
+{
+DisplayName = Fake Dead Rabbit,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = RabbitDead,
+WorldStaticModel = DeadRabbit,
+}
+
+item FakeDeadSquirrel
+{
+DisplayName = Fake Dead Squirrel,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = SquirrelDead,
+WorldStaticModel = DeadSquirrel,
+}
+
+item FakeDeadBird
+{
+DisplayName = Fake Dead Bird,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BirdDead,
+WorldStaticModel = DeadBird,
+}
+
+item FakeFishFillet
+{
+DisplayName = Fake Fish Fillet,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = FishFillet,
+WorldStaticModel = FishFillet,
+}
+
+item FakeHotdog
+{
+DisplayName = Fake Hotdog,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = HotdogCrafted,
+StaticModel = HotDog,
+WorldStaticModel = HotDog_Ground,
+}
+
+item FakeMuttonChop
+{
+DisplayName = Fake Mutton Chop,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Mutton,
+WorldStaticModel = MuttonChop,
+}
+
+item FakePorkChop
+{
+DisplayName = Fake Pork Chop,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Porkchop,
+WorldStaticModel = PorkChop,
+}
+
+item FakeRabbitmeat
+{
+DisplayName = Fake Rabbit Meat,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Rabbitmeat,
+WorldStaticModel = RabbitMeat,
+}
+
+item FakeSmallanimalmeat
+{
+DisplayName = Fake Small Animal Meat,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Smallanimalmeat,
+WorldStaticModel = SmallAnimalMeat_Ground,
+}
+
+item FakeSmallbirdmeat
+{
+DisplayName = Fake Small Bird Meat,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Smallbirdmeat,
+WorldStaticModel = SmallBirdMeat_Ground,
+}
+
+item FakeChickenFried
+{
+DisplayName = Fake Fried Chicken,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = ChickenFried,
+StaticModel = FriedChicken,
+WorldStaticModel = ChickenFried_Ground,
+}
+
+item FakeMeatPatty
+{
+DisplayName = Fake Meat Patty,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = MeatPatty,
+WorldStaticModel = MeatPatty,
+}
+
+item FakeBeefJerky
+{
+DisplayName = Fake Beef Jerky,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BeefJerky,
+StaticModel = BeefJerky,
+WorldStaticModel = BeefJerky,
+}
+
+item FakeCorndog
+{
+DisplayName = Fake Corndog,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Corndog,
+StaticModel = Corndog,
+WorldStaticModel = Corndog_Ground,
+}
+
+item FakeTofu
+{
+DisplayName = Fake Tofu,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Tofu,
+WorldStaticModel = Tofu,
+}
+
+item FakeFrogMeat
+{
+DisplayName = Fake Frog Meat,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Frogmeat,
+WorldStaticModel = FrogMeat_Ground,
+}
+
+item FakeSteak
+{
+DisplayName = Fake Steak,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Steak,
+WorldStaticModel = Steak,
+}
+
+item FakeSalmon
+{
+DisplayName = Fake Salmon,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Salmon,
+WorldStaticModel = Salmon,
+}
+
+item FakeEgg
+{
+DisplayName = Fake Egg,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Egg,
+WorldStaticModel = Egg,
+}
+
+item FakeChicken
+{
+DisplayName = Fake Chicken,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Chicken,
+StaticModel = FriedChicken,
+WorldStaticModel = Chicken,
+}
+
+item FakeHam
+{
+DisplayName = Fake Ham,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Ham,
+
+WorldStaticModel = Ham,
+}
+
+item FakeHamSlice
+{
+DisplayName = Fake Ham Slice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = HamSlices,
+WorldStaticModel = HamSlice,
+}
+
+
+item FakePancakes
+{
+DisplayName = Fake Pancakes,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Pancakes,
+WorldStaticModel = Pancakes,
+}
+
+item FakeIcecream
+{
+DisplayName = Fake Ice Cream,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Icecream,
+ReplaceOnRotten = IcecreamMelted,
+WorldStaticModel = IceCream,
+}
+
+item FakeIcecreamMelted
+{
+DisplayName = Fake Melted Ice Cream,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = IcecreamMelted,
+WorldStaticModel = IcecreamMelted,
+}
+
+item FakeCandycane
+{
+DisplayName = Fake Candy Cane,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Candycane,
+WorldStaticModel = CandyCane,
+}
+
+item FakePeppermint
+{
+DisplayName = Fake Peppermint,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Peppermint,
+WorldStaticModel = Peppermint_Ground,
+}
+
+item FakeCereal
+{
+DisplayName = Fake Cereal,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Cereal,
+WorldStaticModel = Cereal,
+}
+
+item FakeCerealBowl
+{
+DisplayName = Fake Cereal Bowl,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Oatmeal,
+StaticModel = Bowl,
+WorldStaticModel = BowlRamen_Ground,
+}
+
+item FakeCookieChocolateChip
+{
+DisplayName = Fake Chocalate Chip Cookie,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CookieChocolateChip,
+
+WorldStaticModel = Cookie,
+}
+
+item FakeCookieJelly
+{
+DisplayName = Fake Raspberry Shortbread,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CookieJelly,
+WorldStaticModel = CookieJelly,
+}
+
+item FakeSunflowerSeeds
+{
+DisplayName = Fake Sunflower Seeds,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = SunflowerSeeds,
+WorldStaticModel = SunflowerSeeds,
+}
+
+item FakeMintCandy
+{
+DisplayName = Fake Mint Candy,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = MintCandy,
+WorldStaticModel = MintCandy,
+}
+
+item FakeLollipop
+{
+DisplayName = Fake Lollipop,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Lollipop,
+WorldStaticModel = Lollipop,
+}
+
+item FakeCandyPackage
+{
+DisplayName = Fake Candy Package,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CandyPackagei,
+WorldStaticModel = CandyPackage,
+}
+
+item FakePopcorn
+{
+DisplayName = Fake Instant Popcorn,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Popcorn,
+WorldStaticModel = Popcorn,
+}
+
+item FakeCupcake
+{
+DisplayName = Fake Cupcake,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Cupcake,
+WorldStaticModel = Cupcake,
+}
+
+item FakeChocolate
+{
+DisplayName = Fake Chocolate,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Chocolate,
+WorldStaticModel = Chocolate,
+}
+
+item FakeWildGarlic2
+{
+Weight=0.1,
+DisplayCategory = Food,
+Type=Food,
+DisplayName=Wild Garlic,
+Icon = WildGarlic,
+WorldStaticModel = MedicinalHerbsLeafBundle,
+}
+
+item FakeCommonMallow
+{
+DisplayName = Fake Common Mallow,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CommonMallow,
+WorldStaticModel = CommonMallow,
+}
+
+item FakeLemonGrass
+{
+DisplayName = Fake Lemon Grass,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = LemonGrass,
+WorldStaticModel = LemonGrass,
+}
+
+item FakeBlackSage
+{
+DisplayName = Fake Black Sage,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BlackSage,
+WorldStaticModel = BlackSage,
+}
+
+item FakeGinseng
+{
+DisplayName = Fake Ginseng,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Ginseng,
+WorldStaticModel = Ginseng,
+}
+
+item FakeWorm
+{
+DisplayName = Fake Worm,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Worm,
+WorldStaticModel = Worm_Ground,
+}
+
+item FakeRosehips
+{
+DisplayName = Fake Rosehips,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Rosehips,
+WorldStaticModel = RoseHips,
+}
+
+item FakeGrapeLeaves
+{
+DisplayName = Fake Grape Leaves,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = GrapeLeaves,
+WorldStaticModel = GrapeLeaves,
+}
+
+item FakeViolets
+{
+DisplayName = Fake Violets,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Violets,
+WorldStaticModel = Violets,
+}
+
+item FakeWildEggs
+{
+DisplayName = Fake Wild Eggs,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = WildEggs,
+WorldStaticModel = WildEggs,
+}
+
+item FakeCockroach
+{
+DisplayName = Fake Cockroach,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Cockroach,
+WorldStaticModel = Cockroach_Ground,
+}
+
+item FakeCricket
+{
+DisplayName = Fake Cricket,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Cricket,
+WorldStaticModel = Cricket_Ground,
+}
+
+item FakeGrasshopper
+{
+DisplayName = Fake Grasshopper,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Grasshopper,
+WorldStaticModel = Grasshopper_Ground,
+}
+
+item FakeGrilledCheese
+{
+DisplayName = Fake Grilled Cheese Sandwich,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandwich_grilledcheese,
+WorldStaticModel = GrilledCheese,
+}
+
+item FakeSalt
+{
+DisplayName = Fake Salt,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Salt,
+WorldStaticModel = Salt,
+}
+
+item FakePepper
+{
+DisplayName = Fake Pepper,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Pepper,
+WorldStaticModel = Pepper,
+}
+
+item FakeDough
+{
+DisplayName = Fake Dough,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Dough,
+WorldStaticModel = Dough,
+}
+
+item FakeDoughRolled
+{
+DisplayName = Fake Rolled Dough,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = DoughRolled,
+WorldStaticModel = RolledDough,
+}
+
+item FakeBakingTrayBread
+{
+DisplayName = Fake Baking Tray with Bread,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BakingTray_bread,
+WorldStaticModel = BakingTray,
+}
+
+item FakeBeanBowl
+{
+DisplayName = Fake Bowl of Beans,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BowlFull,
+StaticModel = Bowl,
+WorldStaticModel = BowlSoup_Ground,
+}
+
+item FakeBread
+{
+DisplayName = Fake Bread,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Bread,
+WorldStaticModel = Bread,
+}
+
+item FakeButter
+{
+DisplayName = Fake Butter,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Butter,
+
+WorldStaticModel = Butter,
+}
+
+item FakeCheese
+{
+DisplayName = Fake Cheese,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Cheese,
+WorldStaticModel = Cheese,
+}
+
+item FakeCheeseSandwich
+{
+DisplayName = Fake Cheese Sandwich,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandwich_cheese,
+WorldStaticModel = CheeseSandwich,
+}
+
+item FakeCrisps
+{
+DisplayName = Fake Chips,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Crisps,
+WorldStaticModel = Chips,
+}
+
+item FakeCrisps2
+{
+DisplayName = Fake Chips,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Crisps2,
+WorldStaticModel = Chips2,
+}
+
+item FakeCrisps3
+{
+DisplayName = Fake Chips,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Crisps3,
+WorldStaticModel = Chips3,
+}
+
+item FakeCrisps4
+{
+DisplayName = Fake Chips,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Crisps4,
+WorldStaticModel = Chips4,
+}
+
+item FakePeanutButter
+{
+DisplayName = Fake Peanut Butter,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = PeanutButter,
+WorldStaticModel = PeanutButter,
+}
+
+item FakePeanutButterSandwich
+{
+DisplayName = Fake Peanut Butter Sandwich,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandwich_peanut,
+WorldStaticModel = PeanutButterSandwich,
+}
+
+item FakePie
+{
+DisplayName = Fake Pie Slice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Pie,
+StaticModel = PieSlice,
+WorldStaticModel = Pie,
+}
+
+item FakePiePumpkin
+{
+DisplayName = Fake Pumpkin Pie Slice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = PiePumpkin,
+WorldStaticModel = PiePumpkin,
+}
+
+item FakePeanuts
+{
+DisplayName = Fake Peanuts,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Peanut,
+WorldStaticModel = Peanuts,
+}
+
+item FakeRamen
+{
+DisplayName = Fake Dry Ramen Noodles,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Ramen,
+WorldStaticModel = DryRamenNoodles,
+}
+
+item FakeRamenBowl
+{
+DisplayName = Fake Bowl of Ramen Noodles,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BowlFull,
+StaticModel = Bowl,
+WorldStaticModel = BowlRamen_Ground,
+}
+
+item FakeTVDinner
+{
+DisplayName = Fake TV Dinner,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = TVDinner,
+StaticModel = TVDinner,
+WorldStaticModel = TVDinner_Ground,
+}
+
+item FakeEggCarton
+{
+DisplayName = Fake Egg Carton,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = EggCarton,
+WorldStaticModel = EggCarton,
+}
+
+item FakeRice
+{
+DisplayName = Fake Rice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = RiceRaw,
+WorldStaticModel = Rice,
+}
+
+item FakePasta
+{
+DisplayName = Fake Pasta,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = SpagettiRaw,
+WorldStaticModel = Pasta,
+}
+
+item FakePastaPan
+{
+DisplayName = Fake Pasta,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = SaucepanFilled,
+WorldStaticModel = SaucePanPasta,
+}
+
+item FakeRicePan
+{
+DisplayName = Fake Rice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = SaucepanFilled,
+WorldStaticModel = SaucePanRice,
+}
+
+item FakeCoffee2
+{
+DisplayName = Fake Coffee,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = InstantCoffee,
+WorldStaticModel = Coffee,
+}
+
+item FakeTeabag2
+{
+DisplayName = Fake Tea Bag,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Teabag,
+WorldStaticModel = TeaBag,
+}
+
+item FakePastaPot
+{
+DisplayName = Fake Pasta,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = PotFull,
+StaticModel = CookingPot,
+WorldStaticModel = CookingPotPasta_Ground,
+}
+
+item FakeRicePot
+{
+DisplayName = Fake Rice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = PotFull,
+StaticModel = CookingPot,
+WorldStaticModel = CookingPotRice_Ground,
+}
+
+item FakeRiceBowl
+{
+DisplayName = Fake Bowl of Rice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = FriedRice,
+StaticModel = Bowl,
+WorldStaticModel = BowlRice_Ground,
+}
+
+item FakePastaBowl
+{
+DisplayName = Fake Bowl of Pasta,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = FriedRice,
+StaticModel = Bowl,
+WorldStaticModel = BowlPasta_Ground,
+}
+
+item FakePiePrep
+{
+DisplayName = Fake Pie Preparation,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = PieWhole,
+WorldStaticModel = PiePreparation,
+}
+
+item FakeCakePrep
+{
+DisplayName = Fake Cake Preparation,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Cake,
+WorldStaticModel = CakePreparation,
+}
+
+item FakeFruitSalad
+{
+DisplayName = Fake Salad,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = FruitSalad,
+StaticModel = Bowl,
+WorldStaticModel = BowlSalad_Ground,
+}
+
+item FakeOatmeal
+{
+DisplayName = Fake Oatmeal,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Oatmeal,
+StaticModel = Bowl,
+WorldStaticModel = BowlRamen_Ground,
+}
+
+item FakeMacandcheese
+{
+DisplayName = Fake Mac and Cheese,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Macandcheese,
+WorldStaticModel = MacAndCheese,
+}
+
+item FakeHoney
+{
+DisplayName = Fake Honey,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Honeybottle,
+WorldStaticModel = Honey,
+}
+
+item FakeSugar
+{
+DisplayName = Fake Sugar,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sugar,
+WorldStaticModel = Sugar,
+}
+
+item FakeYoghurt
+{
+DisplayName = Fake Yogurt,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Yoghurt,
+WorldStaticModel = Yogurt,
+}
+
+item FakeBreadDough
+{
+DisplayName = Fake Bread,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Dough,
+WorldStaticModel = BreadDough,
+}
+
+item FakeCakeSlice
+{
+DisplayName = Fake Cake Slice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CakeSlice,
+StaticModel = CakeSlice,
+WorldStaticModel = CakeSlice,
+}
+
+item FakePanFriedVegetables
+{
+DisplayName = Fake Stir fry,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = PanFull,
+WorldStaticModel = PanFriedVegetables_Ground,
+}
+
+item FakePanFriedVegetables2
+{
+DisplayName = Fake Roasted Vegetables,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = RoastingpanFull,
+WorldStaticModel = PanFriedVegetables_Ground,
+}
+
+item FakeGriddlePanFriedVegetables
+{
+DisplayName = Fake Stir fry,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = PanFull,
+WorldStaticModel = GriddlePanFriedVegetables_Ground,
+}
+
+item FakeMustard
+{
+DisplayName = Fake Mustard,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Mustard,
+WorldStaticModel = Mustard,
+}
+
+item FakeKetchup
+{
+DisplayName = Fake Ketchup,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Ketchup,
+WorldStaticModel = Ketchup,
+}
+
+item FakeMarinara
+{
+DisplayName = Fake Marinara,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Marinarai,
+WorldStaticModel = Marinara,
+}
+
+item FakeOatsRaw
+{
+DisplayName = Fake Can of Oats,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = OatsRaw,
+WorldStaticModel = CanOfOats,
+}
+
+item FakePieWholeRaw
+{
+DisplayName = Fake Pie,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = PieWhole,
+WorldStaticModel = PiePreparation,
+}
+
+item FakePieWholeRawSweet
+{
+DisplayName = Fake Pie,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = PieWhole,
+WorldStaticModel = PiePreparation,
+}
+
+item FakeCakeRaw
+{
+DisplayName = Fake Cake,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Cake,
+WorldStaticModel = Cake,
+}
+
+item FakeProcessedcheese
+{
+DisplayName = Fake Processed Cheese,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Processedcheese,
+WorldStaticModel = ProcessedCheese,
+}
+
+item FakeModjeska
+{
+DisplayName = Fake Modjeska,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Modjeska,
+WorldStaticModel = Modjeska,
+}
+
+item FakeBreadSlices
+{
+DisplayName = Fake Bread Slices,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BreadSlices,
+WorldStaticModel = BreadSlices,
+}
+
+
+item FakeToast
+{
+DisplayName = Fake Toast,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BreadSlices,
+WorldStaticModel = BreadSlices_Toast,
+}
+
+item FakeSandwich
+{
+DisplayName = Fake Sandwich,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandwich,
+StaticModel = Sandwich,
+WorldStaticModel = CheeseSandwich,
+}
+
+item FakeBaguetteSandwich
+{
+DisplayName = Fake Baguette Sandwich,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BaguetteSandwich,
+StaticModel = Sandwich,
+}
+
+item FakeBurger
+{
+DisplayName = Fake Burger,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Burger,
+StaticModel = Burger,
+WorldStaticModel = Burger_Ground,
+}
+
+item FakePizza
+{
+DisplayName = Fake Pizza Slice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Pizza,
+WorldStaticModel = PizzaSlice_Ground,
+}
+
+item FakePizzaWhole
+{
+DisplayName = Fake Pizza,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = PizzaWhole,
+WorldStaticModel = Pizza,
+}
+
+item FakeFries
+{
+DisplayName = Fake Fries,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Fries,
+WorldStaticModel = Fries,
+}
+
+item FakePickles
+{
+DisplayName = Fake Pickles,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Pickles,
+WorldStaticModel = Pickles,
+}
+
+item FakeBagelPlain
+{
+DisplayName = Fake Bagel,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BagelPlain,
+WorldStaticModel = Bagel_Ground,
+}
+
+item FakeBagelPoppy
+{
+DisplayName = Fake Poppy Bagel,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BagelPoppy,
+WorldStaticModel = BagelPoppy_Ground,
+}
+
+item FakeBagelSesame
+{
+DisplayName = Fake Sesame Bagel,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BagelSesame,
+WorldStaticModel = BagelSesame_Ground,
+}
+
+item FakeBaguette
+{
+DisplayName = Fake Baguette,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Baguette,
+WorldStaticModel = Baguette_Ground,
+}
+
+item FakeBaguetteDough 
+{
+DisplayName = Fake Baguette Dough,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Doughnut_Baguette,
+WorldStaticModel = BaguetteDough,
+}
+
+item FakeBlackbeans
+{
+DisplayName = Fake Black Beans,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Blackbeans,
+WorldStaticModel = Blackbeans_Ground,
+}
+
+item FakeBurrito
+{
+DisplayName = Fake Burrito,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Burrito,
+WorldStaticModel = Burrito_Ground,
+}
+
+item FakeCakeBlackForest
+{
+DisplayName = Fake Black Forest Cake Slice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CakeBlackForest,
+StaticModel = CakeSlice,
+WorldStaticModel = BlackForestCake_Ground,
+}
+
+item FakeCakeCarrot
+{
+DisplayName = Fake Carrot Cake Slice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CakeCarrot,
+StaticModel = CakeSlice,
+WorldStaticModel = CarrotCake_Ground,
+}
+
+item FakeCakeCheeseCake
+{
+DisplayName = Fake Cheese Cake Slice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CakeCheesecake,
+StaticModel = CakeSlice,
+WorldStaticModel = CheeseCake_Ground,
+}
+
+item FakeCakeChocolate
+{
+DisplayName = Fake Chocolate Cake Slice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CakeChocolate,
+StaticModel = CakeSlice,
+WorldStaticModel = ChocolateCake_Ground,
+}
+
+item FakeCakeRedVelvet
+{
+DisplayName = Fake Red Velvet Cake Slice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CakeRedVelvet,
+StaticModel = CakeSlice,
+WorldStaticModel = RedVelvetCake_Ground,
+}
+
+item FakeCakeStrawberryShortcake
+{
+DisplayName = Fake Strawberry Cake Slice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CakeStrawberryShortcake,
+StaticModel = CakeSlice,
+WorldStaticModel = StrawberryShortcake_Ground,
+}
+
+item FakeChickenFoot
+{
+DisplayName = Fake Chicken Foot,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = ChickenFoot,
+WorldStaticModel = ChickenFoot_Ground,
+}
+
+item FakeChocolateChips
+{
+DisplayName = Fake Chocolate Chips,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = ChocolateChips,
+WorldStaticModel = ChocolateChips_Ground,
+}
+
+item FakeCocoaPowder
+{
+DisplayName = Fake Cocoa Powder,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CocoaPowder,
+WorldStaticModel = CocoaPowder_Ground,
+}
+
+item FakeCookiesChocolate
+{
+DisplayName = Fake Chocolate Cookie,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CookiesChocolate,
+
+WorldStaticModel = Cookie_Chocolate_Ground,
+}
+
+item FakeCookiesOatmeal
+{
+DisplayName = Fake Oatmeal Cookie,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CookiesOatmeal,
+
+WorldStaticModel = Cookie_Oatmeal_Ground,
+}
+
+item FakeCookiesShortbread
+{
+DisplayName = Fake Shortbread Cookie,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CookiesShortbread,
+
+WorldStaticModel = Cookie_Shortbread_Ground,
+}
+
+item FakeCroissant
+{
+DisplayName = Fake Croissant,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Croissant,
+WorldStaticModel = Croissant_Ground,
+}
+
+item FakeDaikon
+{
+DisplayName = Fake Daikon,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Daikon,
+StaticModel = CylinderFood_Green,
+WorldStaticModel = Daikon_Ground,
+}
+
+item FakeDoughnutChocolate
+{
+DisplayName = Fake Chocolate Doughnut,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = DoughnutChocolate,
+WorldStaticModel = Doughnut_Chocolate_Ground,
+}
+
+item FakeDoughnutFrosted
+{
+DisplayName = Fake Frosted Doughnut,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = DoughnutFrosted,
+WorldStaticModel = Doughnut_Frosted_Ground,
+}
+
+item FakeDoughnutJelly
+{
+DisplayName = Fake Jelly Doughnut,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = DoughnutJelly,
+WorldStaticModel = Doughnut_Jelly_Ground,
+}
+
+item FakeDoughnutPlain
+{
+DisplayName = Fake Doughnut,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = DoughnutPlain,
+WorldStaticModel = Doughnut_Ground,
+}
+
+item FakeEdamame
+{
+DisplayName = Fake Edamame,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Edamame,
+WorldStaticModel = Edamame_Ground,
+}
+
+item FakeEggBoiled
+{
+DisplayName = Fake Boiled Egg,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = EggBoiled,
+WorldStaticModel = EggBoiled_Ground,
+}
+
+item FakeEggPoached
+{
+DisplayName = Fake Poached Egg,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = EggPoached,
+}
+
+item FakeEggOmelette
+{
+DisplayName = Fake Omelette,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = EggOmelette,
+WorldStaticModel = EggOmlette_Ground,
+}
+
+item FakeFishRoe
+{
+DisplayName = Fake Fish Roe,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = FishRoe,
+WorldStaticModel = FishRoe_Ground,
+}
+
+item FakeGingerPickled
+{
+DisplayName = Fake Ginger Pickled,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = GingerPickled,
+}
+
+item FakeGrapefruit
+{
+DisplayName = Fake Grapefruit,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Grapefruit,
+WorldStaticModel = Grapefruit_Ground,
+}
+
+item FakeHotsauce
+{
+DisplayName = Fake Hot sauce,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Hotsauce,
+}
+
+item FakeIcing
+{
+DisplayName = Fake Icing,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Icing,
+WorldStaticModel = Icing_Ground,
+}
+
+item FakeLime
+{
+DisplayName = Fake Lime,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Lime,
+StaticModel = RoundFood_Yellow,
+WorldStaticModel = Lime_Ground,
+}
+
+item FakeLobster
+{
+DisplayName = Fake Lobster,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Lobster,
+WorldStaticModel = Lobster_Ground,
+}
+
+item FakeMaki
+{
+DisplayName = Fake Maki,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Maki,
+WorldStaticModel = Maki_Ground,
+}
+
+item FakeMapleSyrup
+{
+DisplayName = Fake Maple Syrup,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = MapleSyrup,
+WorldStaticModel = MapleSyrup_Ground,
+}
+
+item FakeMeatDumpling
+{
+DisplayName = Fake Meat Dumpling,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = MeatDumpling,
+WorldStaticModel = MeatDumplings_Ground,
+}
+
+item FakeMeatSteamBun
+{
+DisplayName = Fake Meat Steam Bun,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = MeatSteamBun,
+WorldStaticModel = MeatSteamBun_Ground,
+}
+
+item FakeMincedMeat
+{
+DisplayName = Fake Minced Meat,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = MincedMeat,
+WorldStaticModel = MincedMeat_Ground,
+}
+
+item FakeMuffinFruit
+{
+DisplayName = Fake Fruit Muffin,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = MuffinFruit,
+WorldStaticModel = MuffinFruit_Ground,
+}
+
+item FakeMuffinGeneric
+{
+DisplayName = Fake Muffin,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = MuffinGeneric,
+WorldStaticModel = MuffinGeneric_Ground,
+}
+
+item FakeNoodleSoup
+{
+DisplayName = Fake Noodle Soup,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = NoodleSoup,
+StaticModel = Bowl,
+WorldStaticModel = NoodleSoup_Ground,
+}
+
+item FakeOilOlive
+{
+DisplayName = Fake Olive Oil,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = OilOlive,
+WorldStaticModel = OilOlive_Ground,
+}
+
+item FakeOilVegetable
+{
+DisplayName = Fake Vegetable Oil,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = OilVegetable,
+WorldStaticModel = OilVegetable_Ground,
+}
+
+item FakeOnigiri
+{
+DisplayName = Fake Onigiri,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Onigiri,
+WorldStaticModel = Onigiri_Ground,
+}
+
+item FakeOysters
+{
+DisplayName = Fake Oysters,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Oysters,
+WorldStaticModel = Oysters_Ground,
+}
+
+item FakePear
+{
+DisplayName = Fake Pear,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Pear,
+WorldStaticModel = Pear_Ground,
+}
+
+item FakePepperHabanero
+{
+DisplayName = Fake Habanero,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = PepperHabanero,
+WorldStaticModel = PepperHabanero_Ground,
+}
+
+item FakePepperJalapeno
+{
+DisplayName = Fake Jalapeno,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = PepperJalapeno,
+WorldStaticModel = PepperJalapeno_Ground,
+}
+
+item FakeRefriedBeans
+{
+DisplayName = Fake Refried Beans,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = RefriedBeans,
+WorldStaticModel = RefriedBeans_Ground,
+}
+
+item FakeRicePaper
+{
+DisplayName = Fake Rice Paper,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = RicePaper,
+WorldStaticModel = RicePaper_Ground,
+}
+
+item FakeRiceVinegar
+{
+DisplayName = Fake Rice Vinegar,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = RiceVinegar,
+WorldStaticModel = RiceVinegar_Ground,
+}
+
+item FakeSausage
+{
+DisplayName = Fake Sausage,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sausage,
+WorldStaticModel = Sausage_Ground,
+}
+
+item FakePepperoni
+{
+DisplayName = Fake Pepperoni,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Pepperoni,
+WorldStaticModel = Pepperoni_Ground,
+}
+
+item FakeSeaweed
+{
+DisplayName = Fake Seaweed,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Seaweed,
+WorldStaticModel = SeaWeed_Ground,
+}
+
+item FakeShrimp
+{
+DisplayName = Fake Shrimp,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Shrimp,
+WorldStaticModel = Shrimp_Ground,
+}
+
+item FakeShrimpDumpling
+{
+DisplayName = Fake Shrimp Dumpling,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = ShrimpDumpling,
+}
+
+item FakeShrimpFried
+{
+DisplayName = Fake Fried Shrimp,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = ShrimpFried,
+WorldStaticModel = ShrimpFried_Ground,
+}
+
+item FakeSoysauce
+{
+DisplayName = Fake Soy sauce,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Soysauce,
+WorldStaticModel = Soysauce_Ground,
+}
+
+item FakeSpringroll
+{
+DisplayName = Fake Spring roll,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Springroll,
+WorldStaticModel = Springroll_Ground,
+}
+
+item FakeSugarBrown
+{
+DisplayName = Fake Brown Sugar,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = SugarBrown,
+WorldStaticModel = SugarBrown_Ground,
+}
+
+item FakeSushiEgg
+{
+DisplayName = Fake Egg Sushi,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = SushiEgg,
+WorldStaticModel = SushEgg_Ground,
+}
+
+item FakeSushiFish
+{
+DisplayName = Fake Fish Sushi,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = SushiFish,
+}
+
+item FakeTaco
+{
+DisplayName = Fake Taco,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Taco,
+WorldStaticModel = Taco_Ground,
+}
+
+item FakeTofuFried
+{
+DisplayName = Fake Fried Tofu,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = TofuFried,
+WorldStaticModel = TofuFried_Ground,
+}
+
+item FakeTortilla
+{
+DisplayName = Fake Tortilla,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Tortilla,
+WorldStaticModel = Tortilla_Ground,
+}
+
+item FakeTortillaChips
+{
+DisplayName = Fake Tortilla Chips,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = TortillaChips,
+WorldStaticModel = Chips,
+WorldStaticModel = TortillaChips_Ground,
+}
+
+item FakeWasabi
+{
+DisplayName = Fake Wasabi,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Wasabi,
+}
+
+item FakeBaloney
+{
+DisplayName = Fake Baloney,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Baloney,
+
+WorldStaticModel = Baloney_Ground,
+}
+
+item FakeBaloneySlice
+{
+DisplayName = Fake Baloney Slices,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BaloneySlices,
+WorldStaticModel = BaloneySlice,
+}
+
+item FakeBiscuit
+{
+DisplayName = Fake Biscuit,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Biscuit,
+WorldStaticModel = Biscuit_Ground,
+}
+
+item FakeMuffintray_Biscuit
+{
+DisplayName = Fake Tray of Biscuits,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Muffintray_Batter,
+WorldStaticModel = MuffinTray_Batter,
+}
+
+item FakeCrackers
+{
+DisplayName = Fake Crackers,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Crackers,
+WorldStaticModel = Crackers_Ground,
+}
+
+item FakeCornbread
+{
+DisplayName = Fake Cornbread,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Cornbread,
+WorldStaticModel = Cornbread_Ground,
+}
+
+item FakeFishFried
+{
+DisplayName = Fake Fried Fish,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = FishFried,
+WorldStaticModel = FishFried_Ground,
+}
+
+item FakeGrahamCrackers
+{
+DisplayName = Fake Graham Crackers,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = GrahamCrackers,
+WorldStaticModel = CrackersGraham_Ground,
+}
+
+item FakeGravy
+{
+DisplayName = Fake Gravy,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Gravy,
+WorldStaticModel = GravyBoat_Full,
+}
+
+item FakeGum
+{
+DisplayName = Fake Gum,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Gum,
+WorldStaticModel = Gum_Ground,
+}
+
+item FakeJamFruit
+{
+DisplayName = Fake Fruit Jam,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = JamFruit,
+WorldStaticModel = JamFruit_Ground,
+}
+
+item FakeJamMarmalade
+{
+DisplayName = Fake Marmalade,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = JamMarmalade,
+WorldStaticModel = JamMarmalade_Ground,
+}
+
+item FakeMarshmallows
+{
+DisplayName = Fake Marshmallows,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Marshmallows,
+WorldStaticModel = Marshmallows_Ground,
+}
+
+item FakeOystersFried
+{
+DisplayName = Fake Fried Oysters,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = OystersFried,
+WorldStaticModel = OysterFried_Ground,
+}
+
+item FakeFriedOnionRings
+{
+DisplayName = Fake Fried Onion Rings,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = OnionRings,
+WorldStaticModel = OnionRings_Ground,
+}
+
+item FakeOnionRings
+{
+DisplayName = Fake Onion Slices,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Rings,
+WorldStaticModel = OnionRings_Ground,
+}
+
+item FakeSalami
+{
+DisplayName = Fake Salami,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Salami,
+
+WorldStaticModel = Salami_Ground,
+}
+
+item FakeSalamiSlice
+{
+DisplayName = Fake Salami Slices,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = SalamiSlices,
+WorldStaticModel = SalamiSlice,
+}
+
+item FakeSmore
+{
+DisplayName = Fake Smore,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Smore,
+WorldStaticModel = Smore_Ground,
+}
+
+item FakeSquid
+{
+DisplayName = Fake Squid,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Squid,
+WorldStaticModel = Squid_Ground,
+}
+
+item FakeSquidCalamari
+{
+DisplayName = Fake Squid Calamari,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = SquidCalimari,
+WorldStaticModel = SquidCalimari_Ground,
+}
+
+item FakeTacoShell
+{
+DisplayName = Fake Taco Shell,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = TacoShell,
+WorldStaticModel = TacoShell_Ground,
+}
+
+item FakeBakingTray_Muffin
+{
+DisplayName = Fake Muffin Baking Tray,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Muffintray_Batter,
+WorldStaticModel = MuffinTray_Batter,
+}
+
+item FakeCrayfish
+{
+DisplayName = Fake Crayfish,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Crayfish,
+WorldStaticModel = Crayfish_Ground,
+}
+
+item FakeCone
+{
+DisplayName = Fake Cone,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Cone,
+WorldStaticModel = Cone_Ground,
+}
+
+item FakeConeIcecream
+{
+DisplayName = Fake Ice Cream Cone,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = ConeIcecream,
+ReplaceOnRotten = ConeIcecreamMelted,
+WorldStaticModel = ConeIcecream_Ground,
+}
+
+
+item FakeConeIcecreamToppings
+{
+DisplayName = Fake Ice Cream Cone,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = ConeIceCreamTopped,
+ReplaceOnRotten = ConeIcecreamMelted,
+WorldStaticModel = ConeIceCreamToppings_Ground,
+}
+
+
+item FakeConeIcecreamMelted
+{
+DisplayName = Fake Melted Ice Cream Cone,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = ConeIcecream,
+WorldStaticModel = ConeIceCreamMelted_Ground,
+}
+
+item FakeGranolaBar
+{
+DisplayName = Fake Granola Bar,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = GranolaBar,
+
+WorldStaticModel = GranolaBar_Ground,
+}
+
+item FakeMango
+{
+DisplayName = Fake Mango,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Mango,
+WorldStaticModel = Mango_Ground,
+}
+
+item FakePumpkin
+{
+DisplayName = Fake Pumpkin,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Pumpkin,
+WorldStaticModel = Pumpkin_Ground,
+}
+
+item FakeHalloweenPumpkin
+{
+DisplayName = Fake Jack'o'lantern,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Jackolantern,
+WorldStaticModel = Jackolantern_Ground,
+}
+
+item FakeChickenNuggets
+{
+DisplayName = Fake Chicken Nuggets,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = ChickenNuggets,
+WorldStaticModel = ChickenNuggets_Ground,
+}
+
+item FakeDehydratedMeatStick
+{
+DisplayName = Fake Dehydrated Meat Stick,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = DehydratedMeatStick,
+WorldStaticModel = DehydratedMeatStick_Ground,
+}
+
+item FakeCinnamonRoll
+{
+DisplayName = Fake Cinnamon Roll,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CinnamonRoll,
+WorldStaticModel = CinnamonRoll_Ground,
+}
+
+item FakeGuacamole
+{
+DisplayName = Fake Guacamole,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Guacamole,
+
+WorldStaticModel = Guacamole_Ground,
+}
+
+item FakeLicoriceBlack
+{
+DisplayName = Fake Black Licorice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = LicoriceBlack,
+WorldStaticModel = LicoriceBlack_Ground,
+}
+
+item FakeLicoriceRed
+{
+DisplayName = Fake Red Licorice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = LicoriceRed,
+WorldStaticModel = LicoriceRed_Ground,
+}
+
+item FakePainauchocolat
+{
+DisplayName = Fake Pain au Chocolat,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Painauchocolat,
+WorldStaticModel = Painauchocolat_Ground,
+}
+
+item FakePerogies
+{
+DisplayName = Fake Perogies,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Perogies,
+WorldStaticModel = Perogies_Ground,
+}
+
+item FakePotatoPancakes
+{
+DisplayName = Fake Potato Pancakes,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = PotatoPancakes,
+WorldStaticModel = PotatoPancakes_Ground,
+}
+
+item FakeSackProduce_Apple
+{
+DisplayName = Fake Sack of Apples,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeSackProduce_BellPepper
+{
+DisplayName = Fake Sack of Bell Peppers,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeSackProduce_Broccoli
+{
+DisplayName = Fake Sack of Broccoli,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeSackProduce_Cabbage
+{
+DisplayName = Fake Sack of Cabbages,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeSackProduce_Carrot
+{
+DisplayName = Fake Sack of Carrots,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeSackProduce_Cherry
+{
+DisplayName = Fake Sack of Cherries,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeSackProduce_Corn
+{
+DisplayName = Fake Sack of Corn,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeSackProduce_Eggplant
+{
+DisplayName = Fake Sack of Eggplants,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeSackProduce_Grapes
+{
+DisplayName = Fake Sack of Grapes,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeSackProduce_Leek
+{
+DisplayName = Fake Sack of Leeks,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeSackProduce_Lettuce
+{
+DisplayName = Fake Sack of Lettuce,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeSackProduce_Onion
+{
+DisplayName = Fake Sack of Onions,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeSackProduce_Peach
+{
+DisplayName = Fake Sack of Peaches,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeSackProduce_Pear
+{
+DisplayName = Fake Sack of Pears,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeSackProduce_Potato
+{
+DisplayName = Fake Sack of Potatoes,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeSackProduce_RedRadish
+{
+DisplayName = Fake Sack of Radishes,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeSackProduce_Strawberry
+{
+DisplayName = Fake Sack of Strawberries,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeSackProduce_Tomato
+{
+DisplayName = Fake Sack of Tomatoes,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Sandbag,
+WorldStaticModel = SandBag,
+}
+
+item FakeDriedBlackBeans
+{
+DisplayName = Fake Dried Black Beans,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = DriedBlackBeans,
+WorldStaticModel = DriedBlackBeans_Ground,
+}
+
+item FakeDriedChickpeas
+{
+DisplayName = Fake Dried Chick Peas,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = DriedChickpeas,
+WorldStaticModel = DriedChickpeas_Ground,
+}
+
+item FakeDriedKidneyBeans
+{
+DisplayName = Fake Dried Kidney Peas,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = DriedKidneyBeans,
+WorldStaticModel = DriedKidneyBeans_Ground,
+}
+
+item FakeDriedLentils
+{
+DisplayName = Fake Dried Lentils,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = DriedLentils,
+WorldStaticModel = DriedLentils_Ground,
+}
+
+item FakeDriedSplitPeas
+{
+DisplayName = Fake Dried Split Peas,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = DriedSplitPeas,
+WorldStaticModel = DriedSplitPeas_Ground,
+}
+
+item FakeDriedWhiteBeans
+{
+DisplayName = Fake Dried White Beans,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = DriedWhiteBeans,
+WorldStaticModel = DriedWhiteBeans_Ground,
+}
+
+item FakePretzel
+{
+DisplayName = Fake Pretzel,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Pretzel,
+WorldStaticModel = Pretzel_Ground,
+}
+
+item FakeAllsorts
+{
+DisplayName = Fake Allsorts,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Allsorts,
+WorldStaticModel = Peppermint_Ground,
+}
+
+item FakeBouillonCube
+{
+DisplayName = Fake Bouillon Cube,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BouillionCube,
+WorldStaticModel = BouillionCube_Ground,
+}
+
+item FakeCandyCorn
+{
+DisplayName = Fake Candy Corn,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CandyCorn,
+WorldStaticModel = Peppermint_Ground,
+}
+
+item FakeAcorn
+{
+DisplayName = Fake Acorn,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Acorn,
+WorldStaticModel = Acorn_Ground,
+}
+
+item FakeBeautyBerry
+{
+DisplayName = Fake Beauty Berry,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BeautyBerries,
+WorldStaticModel = BeautyBerries_Ground,
+}
+
+item FakeDandelions
+{
+DisplayName = Fake Dandelions,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Dandelions,
+WorldStaticModel = Dandelion_Ground,
+}
+
+item FakeBasil
+{
+DisplayName = Fake Basil,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = HerbBasil,
+WorldStaticModel = Basil_Ground,
+}
+
+item FakeChives
+{
+DisplayName = Fake Chives,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = HerbChives,
+WorldStaticModel = HerbChives_Ground,
+}
+
+item FakeCilantro
+{
+DisplayName = Fake Cilantro,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = HerbCilantro,
+WorldStaticModel = HerbCilantro_Ground,
+}
+
+item FakeOregano
+{
+DisplayName = Fake Oregano,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = HerbOregano,
+WorldStaticModel = HerbOregano_Ground,
+}
+
+item FakeParsley
+{
+DisplayName = Fake Parsley,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = HerbParsley,
+WorldStaticModel = HerbParsley_Ground,
+}
+
+item FakeRosemary
+{
+DisplayName = Fake Rosemary,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = HerbRosemary,
+WorldStaticModel = HerbRosemary_Ground,
+}
+
+item FakeSage
+{
+DisplayName = Fake Sage,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = HerbSage,
+WorldStaticModel = HerbSage_Ground,
+}
+
+item FakeThyme
+{
+DisplayName = Fake Thyme,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = HerbThyme,
+WorldStaticModel = HerbThyme_Ground,
+}
+
+item FakeHollyBerry
+{
+DisplayName = Fake Holly Berry,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = HollyBerries,
+WorldStaticModel = HollyBerries_Ground,
+}
+
+item FakeNettles
+{
+DisplayName = Fake Nettles,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Nettle,
+WorldStaticModel = Nettles_Ground,
+}
+
+item FakeGingerRoot
+{
+DisplayName = Fake Ginger Root,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = RootGinger,
+WorldStaticModel = Ginger_Ground,
+}
+
+item FakeThistle
+{
+DisplayName = Fake Thistles,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Thistle,
+WorldStaticModel = Thistle_Ground,
+}
+
+item FakeWinterBerry
+{
+DisplayName = Fake Winter Berry,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Winterberries,
+WorldStaticModel = WinterBerries_Ground,
+}
+
+item FakeAmericanLadyCaterpillar
+{
+DisplayName = Fake Caterpillar,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Insect_AmericanLadyCaterpillar,
+WorldStaticModel = AmericanLadyCaterpillar_Ground,
+}
+
+item FakeBandedWoolyBearCaterpillar
+{
+DisplayName = Fake Caterpillar,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Insect_BandedWoolyBearCaterpillar,
+WorldStaticModel = BandedWoolyBearCaterpillar_Ground,
+}
+
+item FakeCentipede
+{
+DisplayName = Fake Centipede,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Insect_Centipede1,
+WorldStaticModel = Insect_Centipede_Ground,
+}
+
+item FakeCentipede2
+{
+DisplayName = Fake Centipede,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Insect_Centipede2,
+WorldStaticModel = Insect_Centipede2_Ground,
+}
+
+item FakeMaggots
+{
+DisplayName = Fake Maggots,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Insect_Maggots,
+WorldStaticModel = Maggots_Ground,
+}
+
+item FakeMaggots2
+{
+DisplayName = Fake Maggots,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Insect_Maggots,
+WorldStaticModel = Maggots_Ground,
+}
+
+item FakeMillipede
+{
+DisplayName = Fake Millipede,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Insect_Millipede1,
+WorldStaticModel = Insect_Millipede_Ground,
+}
+
+item FakeMillipede2
+{
+DisplayName = Fake Millipede,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Insect_Millipede2,
+WorldStaticModel = Insect_Millipede2_Ground,
+}
+
+item FakeMonarchCaterpillar
+{
+DisplayName = Fake Caterpillar,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Insect_MonarchrCaterpillar,
+WorldStaticModel = MonarchrCaterpillar_Ground,
+}
+
+item FakePillbug
+{
+DisplayName = Fake Pillbug,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Insect_Pillbug,
+WorldStaticModel = Insect_Pillbug_Ground,
+}
+
+item FakeSawflyLarva
+{
+DisplayName = Fake Caterpillar,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Insect_SawflyLarva,
+WorldStaticModel = SawflyLarva_Ground,
+}
+
+item FakeSilkMothCaterpillar
+{
+DisplayName = Fake Caterpillar,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Insect_SilkMothCaterpillar,
+WorldStaticModel = SilkMothCaterpillar_Ground,
+}
+
+item FakeSwallowtailCaterpillar
+{
+DisplayName = Fake Caterpillar,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Insect_SwallowtailCaterpillar,
+WorldStaticModel = SwallowtailCaterpillar_Ground,
+}
+
+item FakeTermites
+{
+DisplayName = Fake Termites,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Insect_Termite,
+WorldStaticModel = Insect_Termite_Ground,
+}
+
+item FakeSlug
+{
+DisplayName = Fake Slug,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Slug1,
+WorldStaticModel = Slug1_Ground,
+}
+
+item FakeSlug2
+{
+DisplayName = Fake Slug,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Slug2,
+WorldStaticModel = Slug2_Ground,
+}
+
+item FakeSnail
+{
+DisplayName = Fake Snail,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Snail,
+WorldStaticModel = Snail_Ground,
+}
+
+item FakeLard
+{
+DisplayName = Fake Lard,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Lard,
+WorldStaticModel = Lard_Ground,
+}
+
+item FakeMargarine
+{
+DisplayName = Fake Margarine,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Margerine,
+WorldStaticModel = Margerine_Ground,
+}
+
+item FakeSugarPacket
+{
+DisplayName = Fake Sugar Packet,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = SugarPacket,
+WorldStaticModel = SugarPacket_Ground,
+}
+
+item FakeCandyFruitSlices
+{
+DisplayName = Fake Candied Fruit Slices,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CandyFruitSlices,
+}
+
+item FakeChocolateCoveredCoffeeBeans
+{
+DisplayName = Fake Chocolate-Covered Coffee Beans,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = ChocolateCoveredCoffeeBeans,
+WorldStaticModel = ChocolateCoveredCoffeeBeans_Ground,
+}
+
+item FakeGummyBears
+{
+DisplayName = Fake Gummy Bears,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = GummyBears,
+}
+
+
+item FakeGummyWorms
+{
+DisplayName = Fake Gummy Worms,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = GummyWorms,
+}
+
+item FakeHardCandies
+{
+DisplayName = Fake Hard Candies,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = HardCandies,
+}
+
+item FakeJellyBeans
+{
+DisplayName = Fake Jellybeans,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = JellyBeans,
+}
+
+item FakeJujubes
+{
+DisplayName = Fake Jujubes,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Jujujubes,
+}
+
+item FakeRockCandy
+{
+DisplayName = Fake Rock Candy,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = RockCandy,
+WorldStaticModel = RockCandy_Ground,
+}
+
+item FakeCookiesSugar
+{
+DisplayName = Fake Sugar Cookie,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = CookiesSugar,
+}
+
+item FakeCornFrozen
+{
+DisplayName = Fake Packaged Corn,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Frozen_Corn,
+}
+
+item FakeMixedVegetables
+{
+DisplayName = Fake Mixed Vegetables,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Frozen_MixedVegetables,
+}
+
+item FakePieApple
+{
+DisplayName = Fake Apple Pie Slice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Pie_Apple,
+WorldStaticModel = PieApple_Ground,
+}
+
+
+item FakePieBlueberry
+{
+DisplayName = Fake Blueberry Pie Slice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Pie_Blueberry,
+WorldStaticModel = PieBlueberry_Ground,
+}
+
+
+item FakePieKeyLime
+{
+DisplayName = Fake Key Lime Pie Slice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Pie_Keylime,
+WorldStaticModel = Pie_Keylime_Ground,
+}
+
+
+item FakePieLemonMeringue
+{
+DisplayName = Fake Lemon Meringue Pie Slice,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Pie_Lemonmeringue,
+WorldStaticModel = PieLemonmeringue_Ground,
+}
+
+item FakeChocoCakes
+{
+DisplayName = Fake Choco Cakes,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Snackcake_Chocakes,
+WorldStaticModel = Snackcake_Chocakes,
+}
+
+item FakeHiHis
+{
+DisplayName = Fake Hi His,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Snackcake_HiHis,
+WorldStaticModel = Snackcake_HiHis,
+}
+
+item FakePlonkies
+{
+DisplayName = Fake Plonkies,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Snackcake_Plonkies,
+WorldStaticModel = Snackcake_Plonkies,
+}
+
+
+item FakeSnoGlobes
+{
+DisplayName= Sno Globes,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Snackcake_SnoSpheres,
+WorldStaticModel = Snackcake_SnoSpheres,
+}
+
+
+item FakeQuaggaCakes
+{
+DisplayName= Quagga Cakes,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = Snackcake_QuaggaCakes,
+WorldStaticModel = Snackcake_QuaggaCakes,
+}
+
+item FakeBeverage
+{
+DisplayName = Fake Beverage,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = GlassTumbler,
+WorldStaticModel = GlassTumbler_Ground,
+}
+
+item FakeBeverage2
+{
+DisplayName = Fake Beverage,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = PlasticCup,
+WorldStaticModel = PlasticCup_Ground,
+}
+
+
+item FakeCookieChocolateChipDough
+{
+DisplayName = Fake Chocolate Chip Cookies Baking Tray,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BakingTray_CookiesBaked,
+WorldStaticModel = BakingTray_Cookies,
+}
+
+item FakeCookiesChocolateDough
+{
+DisplayName = Fake Chocolate Cookies Baking Tray,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BakingTray_CookiesBaked,
+WorldStaticModel = BakingTray_Cookies,
+}
+
+item FakeCookiesOatmealDough
+{
+DisplayName = Fake Oatmeal Cookies Baking Tray,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BakingTray_CookiesBaked,
+WorldStaticModel = BakingTray_Cookies,
+}
+
+item FakeCookiesShortbreadDough
+{
+DisplayName = Fake Shortbread Cookies Baking Tray,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BakingTray_CookiesBaked,
+WorldStaticModel = BakingTray_Cookies,
+}
+
+item FakeCookiesSugarDough
+{
+DisplayName = Fake Sugar Cookies Baking Tray,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = BakingTray_CookiesBaked,
+WorldStaticModel = BakingTray_Cookies,
+}
+
+
+item FakeGlassWineWater
+{
+DisplayCategory = Food,
+Type = Drainable,
+DisplayName = Fake Wine Glass of Water,
+Icon = GlassWine,
+Weight = 0.1,
+WorldStaticModel = GlassWine_Ground,
+}
+
+
+item FakeGlassTumblerWater
+{
+DisplayName = Fake Tumbler of Water,
+DisplayCategory = Food,
+Type = Drainable,
+Weight = 0.1,
+Icon = GlassTumbler,
+WorldStaticModel = GlassTumbler_Ground,
+}
+
+item FakePlasticCupWater
+{
+DisplayName = Fake Plastic Cup of Water,
+DisplayCategory = Food,
+Type = Drainable,
+Weight = 0.1,
+Icon = PlasticCup,
+WorldStaticModel = PlasticCup_Ground,
+}
+
+
+item FakeWineInGlass
+{
+DisplayCategory = Food,
+Type = Food,
+DisplayName = Fake in a Glass,
+Icon = GlassWine,
+Weight = 0.1,
+WorldStaticModel = GlassWine_Ground,
+}
+
+
+item FakeBeer
+{
+DisplayName = Fake Poured in a Tumbler,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = GlassTumbler,
+WorldStaticModel = GlassTumbler_Ground,
+}
+
+item FakeBeer2
+{
+DisplayName = Fake Poured in a Glass,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = PlasticCup,
+WorldStaticModel = PlasticCup_Ground,
+}
+
+
+item FakeTomatoPaste
+{
+
+DisplayName = Fake Tomato Paste,
+DisplayCategory = Food,
+Type = Food,
+Weight = 0.1,
+Icon = TomatoPaste,
+WorldStaticModel = TomatoPaste_Ground,
+}
+}

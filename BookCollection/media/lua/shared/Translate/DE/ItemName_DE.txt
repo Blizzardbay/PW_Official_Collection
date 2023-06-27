@@ -1,0 +1,89 @@
+
+ItemName_DE = {
+
+
+	ItemName_Base.BookCarpentry1 = "Tischlern Bd.1: Für Dummies",
+	ItemName_Base.BookCarpentry2 = "Tischlern Bd.2: Mittleren",
+	ItemName_Base.BookCarpentry3 = "Tischlern Bd.3: Fortgeschrittene",
+	ItemName_Base.BookCarpentry4 = "Tischlern Bd.4: Experten",
+	ItemName_Base.BookCarpentry5 = "Tischlern Bd.5: Meister",
+
+
+	ItemName_Base.BookCooking1 = "Kochen Bd.1: Für Dummies",
+	ItemName_Base.BookCooking2 = "Kochen Bd.2: Mittleren",
+	ItemName_Base.BookCooking3 = "Kochen Bd.3: Fortgeschrittene",
+	ItemName_Base.BookCooking4 = "Kochen Bd.4: Experten",
+	ItemName_Base.BookCooking5 = "Kochen Bd.5: Meister",
+
+
+	ItemName_Base.BookFarming1 = "Landwirtschaft Bd.1: Für Dummies",
+	ItemName_Base.BookFarming2 = "Landwirtschaft Bd.2: Mittleren",
+	ItemName_Base.BookFarming3 = "Landwirtschaft Bd.3: Fortgeschrittene",
+	ItemName_Base.BookFarming4 = "Landwirtschaft Bd.4: Experten",
+	ItemName_Base.BookFarming5 = "Landwirtschaft Bd.5: Meister",
+
+
+	ItemName_Base.BookFishing1 = "Fischen Bd.1: Für Dummies",
+	ItemName_Base.BookFishing2 = "Fischen Bd.2: Mittleren",
+	ItemName_Base.BookFishing3 = "Fischen Bd.3: Fortgeschrittene",
+	ItemName_Base.BookFishing4 = "Fischen Bd.4: Experten",
+	ItemName_Base.BookFishing5 = "Fischen Bd.5: Meister",
+
+
+	ItemName_Base.BookTrapping1 = "Jagen Bd.1: Für Dummies",
+	ItemName_Base.BookTrapping2 = "Jagen Bd.2: Mittleren",
+	ItemName_Base.BookTrapping3 = "Jagen Bd.3: Fortgeschrittene",
+	ItemName_Base.BookTrapping4 = "Jagen Bd.4: Experten",
+	ItemName_Base.BookTrapping5 = "Jagen Bd.5: Meister",
+
+
+	ItemName_Base.BookElectrician1 = "Elektrotechnik Bd.1: Für Dummies",
+	ItemName_Base.BookElectrician2 = "Elektrotechnik Bd.2: Mittleren",
+	ItemName_Base.BookElectrician3 = "Elektrotechnik Bd.3: Fortgeschrittene",
+	ItemName_Base.BookElectrician4 = "Elektrotechnik Bd.4: Experten",
+	ItemName_Base.BookElectrician5 = "Elektrotechnik Bd.5: Meister",
+
+
+	ItemName_Base.BookFirstAid1 = "Erste-Hilfe Bd.1: Für Dummies",
+	ItemName_Base.BookFirstAid2 = "Erste-Hilfe Bd.2: Mittleren",
+	ItemName_Base.BookFirstAid3 = "Erste-Hilfe Bd.3: Fortgeschrittene",
+	ItemName_Base.BookFirstAid4 = "Erste-Hilfe Bd.4: Experten",
+	ItemName_Base.BookFirstAid5 = "Erste-Hilfe Bd.5: Meister",
+
+
+	ItemName_Base.BookForaging1 = "Nahrungssuche Bd.1: Für Dummies",
+	ItemName_Base.BookForaging2 = "Nahrungssuche Bd.2: Mittleren",
+	ItemName_Base.BookForaging3 = "Nahrungssuche Bd.3: Fortgeschrittene",
+	ItemName_Base.BookForaging4 = "Nahrungssuche Bd.4: Experten",
+	ItemName_Base.BookForaging5 = "Nahrungssuche Bd.5: Meister",
+
+
+	ItemName_Base.BookMetalWelding1 = "Metallbearbeitung Bd.1: Für Dummies",
+	ItemName_Base.BookMetalWelding2 = "Metallbearbeitung Bd.2: Mittleren",
+	ItemName_Base.BookMetalWelding3 = "Metallbearbeitung Bd.3: Fortgeschrittene",
+	ItemName_Base.BookMetalWelding4 = "Metallbearbeitung Bd.4: Experten",
+	ItemName_Base.BookMetalWelding5 = "Metallbearbeitung Bd.5: Meister",
+
+
+	ItemName_Base.BookBlacksmith1 = "Schmiedekunst Bd.1: Für Dummies",
+	ItemName_Base.BookBlacksmith2 = "Schmiedekunst Bd.2: Mittleren",
+	ItemName_Base.BookBlacksmith3 = "Schmiedekunst Bd.3: Fortgeschrittene",
+	ItemName_Base.BookBlacksmith4 = "Schmiedekunst Bd.4: Experten",
+	ItemName_Base.BookBlacksmith5 = "Schmiedekunst Bd.5: Meister",
+
+
+	ItemName_Base.BookMechanic1 = "Mechanik Bd.1: Für Dummies",
+	ItemName_Base.BookMechanic2 = "Mechanik Bd.2: Mittleren",
+	ItemName_Base.BookMechanic3 = "Mechanik Bd.3: Fortgeschrittene",
+	ItemName_Base.BookMechanic4 = "Mechanik Bd.4: Experten",
+	ItemName_Base.BookMechanic5 = "Mechanik Bd.5: Meister",
+
+
+	ItemName_Base.BookTailoring1 = "Schneiderei Bd.1: Für Dummies",
+	ItemName_Base.BookTailoring2 = "Schneiderei Bd.2: Mittleren",
+	ItemName_Base.BookTailoring3 = "Schneiderei Bd.3: Fortgeschrittene",
+	ItemName_Base.BookTailoring4 = "Schneiderei Bd.4: Experten",
+	ItemName_Base.BookTailoring5 = "Schneiderei Bd.5: Meister",
+
+
+}

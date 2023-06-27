@@ -1,0 +1,48 @@
+VERSION = 1,
+option eggonsAllDoorsAreYours.AllowTransportInLargeTrunksOnly
+{
+	type = boolean,
+	default = true,
+	page = eggonsAllDoorsAreYours,
+	translation = eggonsAllDoorsAreYours_AllowTransportInLargeTrunksOnly,
+}
+
+option eggonsAllDoorsAreYours.DoorsWeightMultiplier
+{
+	type = double,
+	min = 0.1,
+	max = 2,
+	default = 1,
+	page = eggonsAllDoorsAreYours,
+	translation = eggonsAllDoorsAreYours_DoorsWeightMultiplier,
+}
+
+option eggonsAllDoorsAreYours.MinimumCarpentryLevel
+{
+	type = integer,
+	min = 0,
+	max = 10,
+	default = 3,
+	page = eggonsAllDoorsAreYours,
+	translation = eggonsAllDoorsAreYours_MinimumCarpentryLevel,
+}
+
+option eggonsAllDoorsAreYours.SuccessChance
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 75,
+	page = eggonsAllDoorsAreYours,
+	translation = eggonsAllDoorsAreYours_SuccessChance,
+}
+
+option eggonsAllDoorsAreYours.SuccessChanceIncrease
+{
+	type = integer,
+	min = 1,
+	max = 100,
+	default = 5,
+	page = eggonsAllDoorsAreYours,
+	translation = eggonsAllDoorsAreYours_SuccessChanceIncrease,
+}

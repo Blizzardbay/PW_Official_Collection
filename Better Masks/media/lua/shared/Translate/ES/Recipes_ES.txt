@@ -1,0 +1,4 @@
+Recipes_ES = {
+	Recipe_Open_Box_of_Masks = "Abrir caja de mascarillas",
+	Recipe_Put_Masks_in_Box = "Poner mascarilla en la caja",
+}

@@ -1,0 +1,37 @@
+module Base
+{
+	/****************************** This file is for 3D World Models. ******************************/	
+	
+	model EiskaffeSmall_Ground
+	{
+		mesh = Worlditems/EiskaffeSmall,
+		texture = Worlditems/Eiskafee2L,
+		scale = 0.0045,
+	}
+	model EiskaffeLarge_Ground
+	{
+		mesh = Worlditems/EiskaffeLarge,
+		texture = Worlditems/Eiskafee2L,
+		scale = 0.0045,
+	}
+
+	/**********HAND************/
+
+	model H_EiskaffeSmall
+	{
+		mesh = Worlditems/H_EiskaffeSmall,
+		texture = Worlditems/Eiskafee2L,
+		scale = 0.0045,
+	}
+	model H_EiskaffeLarge
+	{
+		mesh = Worlditems/H_EiskaffeLarge,
+		texture = Worlditems/Eiskafee2L,
+		scale = 0.0045,
+	}
+
+
+
+
+
+}

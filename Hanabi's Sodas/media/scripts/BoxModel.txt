@@ -1,0 +1,186 @@
+module CAR {
+	imports 
+	{
+        Base,
+    }
+
+model 7upBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/7upBox,
+		scale = 3.6,
+	}
+ model AriZonaBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/AriZonaBox,
+		scale = 3.6,
+	}
+
+     model RootBeerBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/RootBeerBox,
+		scale = 3.6,
+	}
+
+     model BriskBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/BriskBox,
+		scale = 3.6,
+	}
+
+     model CherryCokeBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/CherryCokeBox,
+		scale = 3.6,
+	}
+
+     model CokeBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/CokeBox,
+		scale = 3.6,
+	}
+
+     model DietCokeBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/DietCokeBox,
+		scale = 3.6,
+	}
+
+     model DietPepsiBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/DietPepsiBox,
+		scale = 3.6,
+	}
+
+     model DrPepperBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/DrPepperBox,
+		scale = 3.6,
+	}
+
+     model FantaGrapeBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/FantaGrapeBox,
+		scale = 3.6,
+	}
+
+     model FantaOrangeBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/FantaOrangeBox,
+		scale = 3.6,
+	}
+
+     model FantaPineappleBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/FantaPineappleBox,
+		scale = 3.6,
+	}
+
+     model FantaRedBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/FantaRedBox,
+		scale = 3.6,
+	}
+
+     model FantaStrawberryBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/FantaStrawberryBox,
+		scale = 3.6,
+	}
+
+     model GatoradeBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/GatoradeBox,
+		scale = 3.6,
+	}
+
+     model JoltBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/JoltBox,
+		scale = 3.6,
+	}
+
+     model MinuteMaidBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/MinuteMaidBox,
+		scale = 3.6,
+	}
+
+     model MountainDewBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/MountainDewBox,
+		scale = 3.6,
+	}
+
+     model MrPibbBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/MrPibbBox,
+		scale = 3.6,
+	}
+
+     model PepsiBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/PepsiBox,
+		scale = 3.6,
+	}
+
+     model RCColaBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/RCcolaBox,
+		scale = 3.6,
+	}
+
+     model RedBullBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/RedBullBox,
+		scale = 3.6,
+	}
+
+     model SpriteBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/SpriteBox,
+		scale = 3.6,
+	}
+
+     model TabBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/TabBox,
+		scale = 3.6,
+	}
+
+	 model DrThunderBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/DrThunderBox,
+		scale = 3.6,
+	}
+	model WelchBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/WelchBox,
+		scale = 3.6,
+	}
+}

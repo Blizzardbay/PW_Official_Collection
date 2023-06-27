@@ -1,0 +1,504 @@
+module Base
+{
+	
+	item SpoonPosterRoll
+	{
+		DisplayCategory = Junk,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Rolled Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	recipe Unroll Poster
+    {
+       SpoonPosterRoll,
+
+	   Result:RubberBand,
+       Time:10.0,
+       OnCreate:UnRollPoster_OnCreate,
+    }
+	
+	item SpoonPoster1
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_1,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster2
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_3,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster3
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_5,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster4
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_7,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster5
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_9,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster6
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_11,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster7
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_13,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster8
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_15,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster9
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_17,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster10
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_19,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster11
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_21,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster12
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_23,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster13
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_25,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster14
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_27,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster15
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_29,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster16
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_31,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster17
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_33,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster18
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_35,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	
+	
+	
+	
+	item SpoonPoster19
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_37,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster20
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_39,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster21
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_41,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster22
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_43,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster23
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_45,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster24
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_47,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster25
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_49,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster26
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_51,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster27
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_53,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+	
+	item SpoonPoster28
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_55,
+		DisplayName	=	Poster,
+		Icon	=	SpoonPoster,
+	}
+
+	item SpoonPicture1
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_57,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPicture2
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_59,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPicture3
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_61,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPicture4
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPosters_63,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	
+	item SpoonPhoto1
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_1,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto2
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_3,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto3
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_5,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto4
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_7,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto5
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_9,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto6
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_11,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto7
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_13,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto8
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_15,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto9
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_17,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto10
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_19,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto11
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_21,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto12
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_23,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto13
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_25,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto14
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_27,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto15
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_29,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto16
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_31,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto17
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_33,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto18
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_35,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto19
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_37,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto20
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_39,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+	item SpoonPhoto21
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisPhotos_41,
+		DisplayName	=	Wall Photo,
+		Icon	=	SpoonPhoto,
+	}
+	
+}

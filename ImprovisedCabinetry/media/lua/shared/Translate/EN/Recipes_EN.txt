@@ -1,0 +1,74 @@
+Recipe_EN = {
+
+    /* IC_recipes_cabinets */
+    Recipe_ICMakeCabinet1 = "Make Modern Counter",
+    Recipe_ICMakeCabinet1Corner = "Make Modern Counter Corner",
+    Recipe_ICMakeCabinet2 = "Make Wooden Counter",
+    Recipe_ICMakeCabinet2Corner = "Make Wooden Counter Corner",
+    Recipe_ICMakeCabinet3 = "Make Birchwood Counter",
+    Recipe_ICMakeCabinet3Corner = "Make Birchwood Counter Corner",
+    Recipe_ICMakeCabinet3Float = "Make Birchwood Counter (Floating)",
+    Recipe_ICMakeCabinet4 = "Make Oak Counter",
+    Recipe_ICMakeCabinet4Corner = "Make Oak Counter Corner",
+    Recipe_ICMakeCabinet5 = "Make Dark Counter",
+    Recipe_ICMakeCabinet5Corner = "Make Dark Counter Corner",
+    Recipe_ICMakeCabinet6 = "Make Green Counter",
+    Recipe_ICMakeCabinet6Corner = "Make Green Counter Corner",
+    Recipe_ICMakeCabinet7 = "Make White Counter",
+    Recipe_ICMakeCabinet7Corner = "Make White Counter Corner",
+    Recipe_ICMakeCabinetBathroom = "Make Medicine Cabinet",
+
+    /* IC_recipes_cabinets_bar */
+    Recipe_ICMakeCabinetBar1 = "Make Oak Bar Counter",
+    Recipe_ICMakeCabinetBar1Corner = "Make Oak Bar Counter Corner",
+
+    /* IC_recipes_cabinets_motel */
+    Recipe_ICMakeCabinetMotel1 = "Make Motel Counter",
+    Recipe_ICMakeCabinetMotel2 = "Make Motel Counter (Low)",
+
+    /* IC_recipes_cabinets_restaurant */
+    Recipe_ICMakeCabinetRestaurant1 = "Make Diner Counter",
+    Recipe_ICMakeCabinetRestaurant1Corner = "Make Diner Counter Corner",
+    Recipe_ICMakeCabinetRestaurant2 = "Make White Striped Counter",
+    Recipe_ICMakeCabinetRestaurant2Corner = "Make White Striped Counter Corner",
+    Recipe_ICMakeCabinetRestaurant3 = "Make Pizza Whirled Counter",
+    Recipe_ICMakeCabinetRestaurant3Corner = "Make Pizza Whirled Counter Corner",
+    Recipe_ICMakeCabinetRestaurant4 = "Make Seahorse Coffee Counter",
+    Recipe_ICMakeCabinetRestaurant4Corner = "Make Seahorse Coffee Counter Corner",
+    Recipe_ICMakeCabinetRestaurant5 = "Make Spiffo Counter",
+    Recipe_ICMakeCabinetRestaurant5Corner = "Make Spiffo Counter Corner",
+    
+    /* IC_recipes_cabinets_shops */
+    Recipe_ICMakeCabinetShop1 = "Make Blue Counter",
+    Recipe_ICMakeCabinetShop1Corner = "Make Blue Counter Corner",
+    Recipe_ICMakeCabinetShop2 = "Make Red Counter",
+    Recipe_ICMakeCabinetShop2Corner = "Make Red Counter Corner",
+    Recipe_ICMakeCabinetShop3 = "Make Generic Shop Counter",
+    Recipe_ICMakeCabinetShop3Corner = "Make Generic Shop Counter Corner",
+    Recipe_ICMakeCabinetShop4 = "Make Zippee Counter",
+    Recipe_ICMakeCabinetShop4Corner = "Make Zippee Counter Corner",
+
+    /* IC_recipes_cabinets_theatre */
+    Recipe_ICMakeCabinetTheater1 = "Make Theater Counter",
+    Recipe_ICMakeCabinetTheater2 = "Make Theater Counter Corner",
+    Recipe_ICMakeCabinetTheater3 = "Make Theater Counter Square",
+
+    /* IC_recipes_cabinets_tailer */
+    Recipe_ICMakeCabinetTrailer1 = "Make Trailer Counter",
+    Recipe_ICMakeCabinetTrailer2 = "Make Trailer Counter (Floating)",
+    Recipe_ICMakeCabinetTrailer3 = "Make Trailer Counter with Fridge",
+
+    /* IC_recipes_cabinets_crossover_glass */
+    Recipe_ICMakeCabinetImprovisedGlass1 = "Make Glass Display",
+    Recipe_ICMakeCabinetImprovisedGlass1Corner = "Make Glass Display Corner",
+    Recipe_ICMakeCabinetImprovisedGlass2 = "Make Glass Theatre Counter",
+
+    /* IC_recipes_parts */
+    Recipe_ICMakeWoodPanel = "Craft Wood Panel",
+    Recipe_ICMakeSmallHinge = "Craft Cabinet Hinges",
+
+    /* IC_recipes_metalworking */
+    Recipe_ICMakeLargeMetalShelves1 = "Make Large Metal Shelves",
+    Recipe_ICMakeMetalCabinet1 = "Make Metal Locker",
+ 
+}

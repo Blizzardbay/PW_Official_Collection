@@ -1,0 +1,14 @@
+ItemName_PL = {
+	ItemName_MoreGloves.DottedGloves = "Rêkawiczki ogrodowe z kropkami",
+	ItemName_MoreGloves.FingerlessLeatherGloves = "Skórzane rêkawiczki bez palców",
+	ItemName_MoreGloves.ImprovisedGloves = "Improwizowane rêkawiczki",
+	ItemName_MoreGloves.NitrileGloves = "Nitrylowe rêkawiczki",
+	ItemName_MoreGloves.RippedDenimGloves = "Prowizoryczne rêkawiczki z jeansu",
+	ItemName_MoreGloves.RippedSheetsGloves = "Prowizoryczne rêkawiczki",
+	ItemName_MoreGloves.WeightliftingGloves = "Rêkawiczki na si³ownie",
+	ItemName_MoreGloves.MetalWelderGrey = "Rêkawice spawalnicze",
+	ItemName_MoreGloves.MetalWelderOrange = "Rêkawice spawalnicze",
+	ItemName_MoreGloves.MetalWelderRed = "Rêkawice spawalnicze",
+	ItemName_MoreGloves.MetalWelderWhite = "Rêkawice spawalnicze",
+	ItemName_MoreGloves.MetalWelderYellow = "Rêkawice spawalnicze",
+}

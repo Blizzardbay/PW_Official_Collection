@@ -1,0 +1,315 @@
+module Ramen
+{
+	imports
+		{
+			Base
+		}
+
+	recipe Unbox Chicken Ramen Flat
+		{
+			destroy RamenChickenFlat,
+
+			Result:RamenChickenPack=12,
+			Time:50.0,
+			Category:Cooking,
+			OnCreate:ChickenFlatUnpack,
+		}
+
+	recipe Box Up Chicken Ramen
+		{
+			RamenChickenPack=12,
+			RamenChickenFlatEmpty,
+
+			Result:RamenChickenFlat,
+			Time:100.0,
+			Category:Cooking,
+		}
+
+	recipe Open Chicken Ramen
+		{
+			destroy RamenChickenPack,
+
+			Result:Ramen,
+			Time:50.0,
+			Category:Cooking,
+			OnCreate:ChickenPackOpen,
+		}
+
+	recipe Prepare Chicken Ramen in Bowl
+		{
+			Bowl,
+			Ramen,
+			RamenChickenFlav,
+			Water=2,
+
+			Result:RamenChickenBowl,
+			Time:50.0,
+			Category:Cooking,
+			OnGiveXP:Give3CookingXP,
+			OnCreate:ChickenEmptyFlav,
+		}
+
+	recipe Unbox Beef Ramen Flat
+		{
+			destroy RamenBeefFlat,
+
+			Result:RamenBeefPack=12,
+			Time:50.0,
+			Category:Cooking,
+			OnCreate:BeefFlatUnpack,
+		}
+
+	recipe Box Up Beef Ramen
+		{
+			RamenBeefPack=12,
+			RamenBeefFlatEmpty,
+
+			Result:RamenBeefFlat,
+			Time:100.0,
+			Category:Cooking,
+		}
+
+	recipe Open Beef Ramen
+		{
+			destroy RamenBeefPack,
+
+			Result:Ramen,
+			Time:50.0,
+			Category:Cooking,
+			OnCreate:BeefPackOpen,
+		}
+
+	recipe Prepare Beef Ramen in Bowl
+		{
+			Bowl,
+			Ramen,
+			RamenBeefFlav,
+			Water=2,
+
+			Result:RamenBeefBowl,
+			Time:50.0,
+			Category:Cooking,
+			OnGiveXP:Give3CookingXP,
+			OnCreate:BeefEmptyFlav,
+		}
+
+	recipe Unbox Shrimp Ramen Flat
+		{
+			destroy RamenShrimpFlat,
+
+			Result:RamenShrimpPack=12,
+			Time:50.0,
+			Category:Cooking,
+			OnCreate:ShrimpFlatUnpack,
+		}
+
+	recipe Box Up Shrimp Ramen
+		{
+			RamenShrimpPack=12,
+			RamenShrimpFlatEmpty,
+
+			Result:RamenShrimpFlat,
+			Time:100.0,
+			Category:Cooking,
+		}
+
+	recipe Open Shrimp Ramen
+		{
+			destroy RamenShrimpPack,
+
+			Result:Ramen,
+			Time:50.0,
+			Category:Cooking,
+			OnCreate:ShrimpPackOpen,
+		}
+
+	recipe Prepare Shrimp Ramen in Bowl
+		{
+			Bowl,
+			Ramen,
+			RamenShrimpFlav,
+			Water=2,
+
+			Result:RamenShrimpBowl,
+			Time:50.0,
+			Category:Cooking,
+			OnGiveXP:Give3CookingXP,
+			OnCreate:ShrimpEmptyFlav,
+		}
+
+	recipe Unbox Cheese Ramen Flat
+		{
+			destroy RamenCheeseFlat,
+
+			Result:RamenCheesePack=12,
+			Time:50.0,
+			Category:Cooking,
+			OnCreate:CheeseFlatUnpack,
+		}
+
+	recipe Box Up Cheese Ramen
+		{
+			RamenCheesePack=12,
+			RamenCheeseFlatEmpty,
+
+			Result:RamenCheeseFlat,
+			Time:100.0,
+			Category:Cooking,
+		}
+
+	recipe Open Cheese Ramen
+		{
+			destroy RamenCheesePack,
+			
+			Result:Ramen,
+			Time:50.0,
+			Category:Cooking,
+			OnCreate:CheesePackOpen,
+		}
+
+	recipe Prepare Cheese Ramen in Bowl
+		{
+			Bowl,
+			Ramen,
+			RamenCheeseFlav,
+			Water=2,
+
+			Result:RamenCheeseBowl,
+			Time:50.0,
+			Category:Cooking,
+			OnGiveXP:Give3CookingXP,
+			OnCreate:CheeseEmptyFlav,
+		}
+
+	recipe Unbox Chili Ramen Flat
+		{
+			destroy RamenChiliFlat,
+
+			Result:RamenChiliPack=12,
+			Time:50.0,
+			Category:Cooking,
+			OnCreate:ChiliFlatUnpack,
+		}
+
+	recipe Box Up Chili Ramen
+		{
+			RamenChiliPack=12,
+			RamenChiliFlatEmpty,
+
+			Result:RamenChiliFlat,
+			Time:100.0,
+			Category:Cooking,
+		}
+
+	recipe Open Chili Ramen
+		{
+			destroy RamenChiliPack,
+			
+			Result:Ramen,
+			Time:50.0,
+			Category:Cooking,
+			OnCreate:ChiliPackOpen,
+		}
+
+	recipe Prepare Chili Ramen in Bowl
+		{
+			Bowl,
+			Ramen,
+			RamenChiliFlav,
+			Water=2,
+
+			Result:RamenChiliBowl,
+			Time:50.0,
+			Category:Cooking,
+			OnGiveXP:Give3CookingXP,
+			OnCreate:OrientalEmptyFlav,
+		}
+
+	recipe Unbox Oriental Ramen Flat
+		{
+			destroy RamenOrientalFlat,
+
+			Result:RamenOrientalPack=12,
+			Time:50.0,
+			Category:Cooking,
+			OnCreate:OrientalFlatUnpack,
+		}
+
+	recipe Box Up Oriental Ramen
+		{
+			RamenOrientalPack=12,
+			RamenOrientalFlatEmpty,
+
+			Result:RamenOrientalFlat,
+			Time:100.0,
+			Category:Cooking,
+		}
+
+	recipe Open Oriental Ramen
+		{
+			destroy RamenOrientalPack,
+			
+			Result:Ramen,
+			Time:50.0,
+			Category:Cooking,
+			OnCreate:OrientalPackOpen,
+		}
+
+	recipe Prepare Oriental Ramen in Bowl
+		{
+			Bowl,
+			Ramen,
+			RamenOrientalFlav,
+			Water=2,
+
+			Result:RamenOrientalBowl,
+			Time:50.0,
+			Category:Cooking,
+			OnGiveXP:Give3CookingXP,
+			OnCreate:OrientalEmptyFlav,
+		}
+
+	recipe Unbox Pork Ramen Flat
+		{
+			destroy RamenPorkFlat,
+
+			Result:RamenPorkPack=12,
+			Time:50.0,
+			Category:Cooking,
+			OnCreate:PorkFlatUnpack,
+		}
+
+	recipe Box Up Pork Ramen
+		{
+			RamenPorkPack=12,
+			RamenPorkFlatEmpty,
+
+			Result:RamenPorkFlat,
+			Time:100.0,
+			Category:Cooking,
+		}
+
+	recipe Open Pork Ramen
+		{
+			destroy RamenPorkPack,
+			
+			Result:Ramen,
+			Time:50.0,
+			Category:Cooking,
+			OnCreate:PorkPackOpen,
+		}
+
+	recipe Prepare Oriental Ramen in Bowl
+		{
+			Bowl,
+			Ramen,
+			RamenPorkFlav,
+			Water=2,
+
+			Result:RamenPorkBowl,
+			Time:50.0,
+			Category:Cooking,
+			OnGiveXP:Give3CookingXP,
+			OnCreate:PorkEmptyFlav,
+		}
+}

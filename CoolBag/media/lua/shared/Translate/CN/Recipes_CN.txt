@@ -1,0 +1,4 @@
+﻿Recipes_CN = {
+	Recipe_Remove_Coldpacks = "移除冷冻包",
+	Recipe_Make_WaterPocket = "制作密封水袋"
+}

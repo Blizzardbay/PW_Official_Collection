@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel></m_MaleModel>
+	<m_FemaleModel></m_FemaleModel>
+	<m_GUID>e43c087d-2f64-428f-9d77-cb678fc1e6d4</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_BaseTextures>clothes\gloves\Dotted01</m_BaseTextures>
+	<m_BaseTextures>clothes\gloves\Dotted02</m_BaseTextures>
+	<m_BaseTextures>clothes\gloves\Dotted03</m_BaseTextures>
+	<m_BaseTextures>clothes\gloves\Dotted04</m_BaseTextures>
+</clothingItem>

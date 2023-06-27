@@ -1,0 +1,88 @@
+ItemName_RU = {
+
+
+	ItemName_Base.BookCarpentry1 = "Плотницкие работы Tom.1: для чайников",
+	ItemName_Base.BookCarpentry2 = "Плотницкие работы Tom.2: промежуточный",
+	ItemName_Base.BookCarpentry3 = "Плотницкие работы Tom.3: продвинутый",
+	ItemName_Base.BookCarpentry4 = "Плотницкие работы Tom.4: эксперт",
+	ItemName_Base.BookCarpentry5 = "Плотницкие работы Tom.5: мастер",
+
+
+	ItemName_Base.BookCooking1 = "Кулинария Tom.1: для чайников",
+	ItemName_Base.BookCooking2 = "Кулинария Tom.2: промежуточный",
+	ItemName_Base.BookCooking3 = "Кулинария Tom.3: продвинутый",
+	ItemName_Base.BookCooking4 = "Кулинария Tom.4: эксперт",
+	ItemName_Base.BookCooking5 = "Кулинария Tom.5: мастер",
+
+
+	ItemName_Base.BookFarming1 = "Сельское хозяйство Tom.1: для чайников",
+	ItemName_Base.BookFarming2 = "Сельское хозяйство Tom.2: промежуточный",
+	ItemName_Base.BookFarming3 = "Сельское хозяйство Tom.3: продвинутый",
+	ItemName_Base.BookFarming4 = "Сельское хозяйство Tom.4: эксперт",
+	ItemName_Base.BookFarming5 = "Сельское хозяйство Tom.5: мастер",
+
+
+	ItemName_Base.BookFishing1 = "Рыбалка Tom.1: для чайников",
+	ItemName_Base.BookFishing2 = "Рыбалка Tom.2: промежуточный",
+	ItemName_Base.BookFishing3 = "Рыбалка Tom.3: продвинутый",
+	ItemName_Base.BookFishing4 = "Рыбалка Tom.4: эксперт",
+	ItemName_Base.BookFishing5 = "Рыбалка Tom.5: мастер",
+
+
+	ItemName_Base.BookTrapping1 = "Ловушка Tom.1: для чайников",
+	ItemName_Base.BookTrapping2 = "Ловушка Tom.2: промежуточный",
+	ItemName_Base.BookTrapping3 = "Ловушка Tom.3: продвинутый",
+	ItemName_Base.BookTrapping4 = "Ловушка Tom.4: эксперт",
+	ItemName_Base.BookTrapping5 = "Ловушка Tom.5: мастер",
+
+
+	ItemName_Base.BookElectrician1 = "Электричество Tom.1: для чайников",
+	ItemName_Base.BookElectrician2 = "Электричество Tom.2: промежуточный",
+	ItemName_Base.BookElectrician3 = "Электричество Tom.3: продвинутый",
+	ItemName_Base.BookElectrician4 = "Электричество Tom.4: эксперт",
+	ItemName_Base.BookElectrician5 = "Электричество Tom.5: мастер",
+
+
+	ItemName_Base.BookFirstAid1 = "Первая помощь Tom.1: для чайников",
+	ItemName_Base.BookFirstAid2 = "Первая помощь Tom.2: промежуточный",
+	ItemName_Base.BookFirstAid3 = "Первая помощь Tom.3: продвинутый",
+	ItemName_Base.BookFirstAid4 = "Первая помощь Tom.4: эксперт",
+	ItemName_Base.BookFirstAid5 = "Первая помощь Tom.5: мастер",
+
+
+	ItemName_Base.BookForaging1 = "Собирательство Tom.1: для чайников",
+	ItemName_Base.BookForaging2 = "Собирательство Tom.2: промежуточный",
+	ItemName_Base.BookForaging3 = "Собирательство Tom.3: продвинутый",
+	ItemName_Base.BookForaging4 = "Собирательство Tom.4: эксперт",
+	ItemName_Base.BookForaging5 = "Собирательство Tom.5: мастер",
+
+
+	ItemName_Base.BookMetalWelding1 = "Металлообработка Tom.1: для чайников",
+	ItemName_Base.BookMetalWelding2 = "Металлообработка Tom.2: промежуточный",
+	ItemName_Base.BookMetalWelding3 = "Металлообработка Tom.3: продвинутый",
+	ItemName_Base.BookMetalWelding4 = "Металлообработка Tom.4: эксперт",
+	ItemName_Base.BookMetalWelding5 = "Металлообработка Tom.5: мастер",
+
+
+	ItemName_Base.BookBlacksmith1 = "Ковка Tom.1: для чайников",
+	ItemName_Base.BookBlacksmith2 = "Ковка Tom.2: промежуточный",
+	ItemName_Base.BookBlacksmith3 = "Ковка Tom.3: продвинутый",
+	ItemName_Base.BookBlacksmith4 = "Ковка Tom.4: эксперт",
+	ItemName_Base.BookBlacksmith5 = "Ковка Tom.5: мастер",
+	
+	
+	ItemName_Base.BookMechanic1 = "Механика Tom.1: для чайников",
+	ItemName_Base.BookMechanic2 = "Механика Tom.1: промежуточный",
+	ItemName_Base.BookMechanic3 = "Механика Tom.3: продвинутый",
+	ItemName_Base.BookMechanic4 = "Механика Tom.4: эксперт",
+	ItemName_Base.BookMechanic5 = "Механика Tom.5: мастер",
+
+
+	ItemName_Base.BookTailoring1 = "Портняжное Дело Tom.1: для чайников",
+	ItemName_Base.BookTailoring2 = "Портняжное Дело Tom.1: промежуточный",
+	ItemName_Base.BookTailoring3 = "Портняжное Дело Tom.3: продвинутый",
+	ItemName_Base.BookTailoring4 = "Портняжное Дело Tom.4: эксперт",
+	ItemName_Base.BookTailoring5 = "Портняжное Дело Tom.5: мастер",
+	
+	
+}

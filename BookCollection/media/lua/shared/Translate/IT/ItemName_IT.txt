@@ -1,0 +1,89 @@
+
+ItemName_IT = {
+
+
+	ItemName_Base.BookCarpentry1 = "Carpenteria Vol.1: Per negati",
+	ItemName_Base.BookCarpentry2 = "Carpenteria Vol.2: Intermedio",
+	ItemName_Base.BookCarpentry3 = "Carpenteria Vol.3: Avanzato",
+	ItemName_Base.BookCarpentry4 = "Carpenteria Vol.4: Esperto",
+	ItemName_Base.BookCarpentry5 = "Carpenteria Vol.5: Maestro",
+
+
+	ItemName_Base.BookCooking1 = "Cucina Vol.1: Per negati",
+	ItemName_Base.BookCooking2 = "Cucina Vol.2: Intermedio",
+	ItemName_Base.BookCooking3 = "Cucina Vol.3: Avanzato",
+	ItemName_Base.BookCooking4 = "Cucina Vol.4: Esperto",
+	ItemName_Base.BookCooking5 = "Cucina Vol.5: Maestro",
+
+
+	ItemName_Base.BookFarming1 = "Coltivazione Vol.1: Per negati",
+	ItemName_Base.BookFarming2 = "Coltivazione Vol.2: Intermedio",
+	ItemName_Base.BookFarming3 = "Coltivazione Vol.3: Avanzato",
+	ItemName_Base.BookFarming4 = "Coltivazione Vol.4: Esperto",
+	ItemName_Base.BookFarming5 = "Coltivazione Vol.5: Maestro",
+
+
+	ItemName_Base.BookFishing1 = "Pesca Vol.1: Per negati",
+	ItemName_Base.BookFishing2 = "Pesca Vol.2: Intermedio",
+	ItemName_Base.BookFishing3 = "Pesca Vol.3: Avanzato",
+	ItemName_Base.BookFishing4 = "Pesca Vol.4: Esperto",
+	ItemName_Base.BookFishing5 = "Pesca Vol.5: Maestro",
+
+
+	ItemName_Base.BookTrapping1 = "Trappole Vol.1: Per negati",
+	ItemName_Base.BookTrapping2 = "Trappole Vol.2: Intermedio",
+	ItemName_Base.BookTrapping3 = "Trappole Vol.3: Avanzato",
+	ItemName_Base.BookTrapping4 = "Trappole Vol.4: Esperto",
+	ItemName_Base.BookTrapping5 = "Trappole Vol.5: Maestro",
+
+
+	ItemName_Base.BookElectrician1 = "Elettricità Vol.1: Per negati",
+	ItemName_Base.BookElectrician2 = "Elettricità Vol.2: Intermedio",
+	ItemName_Base.BookElectrician3 = "Elettricità Vol.3: Avanzato",
+	ItemName_Base.BookElectrician4 = "Elettricità Vol.4: Esperto",
+	ItemName_Base.BookElectrician5 = "Elettricità Vol.5: Maestro",
+
+
+	ItemName_Base.BookFirstAid1 = "Pronto soccorso Vol.1: Per negati",
+	ItemName_Base.BookFirstAid2 = "Pronto soccorso Vol.2: Intermedio",
+	ItemName_Base.BookFirstAid3 = "Pronto soccorso Vol.3: Avanzato",
+	ItemName_Base.BookFirstAid4 = "Pronto soccorso Vol.4: Esperto",
+	ItemName_Base.BookFirstAid5 = "Pronto soccorso Vol.5: Maestro",
+
+
+	ItemName_Base.BookForaging1 = "Foraggio Vol.1: Per negati",
+	ItemName_Base.BookForaging2 = "Foraggio Vol.2: Intermedio",
+	ItemName_Base.BookForaging3 = "Foraggio Vol.3: Avanzato",
+	ItemName_Base.BookForaging4 = "Foraggio Vol.4: Esperto",
+	ItemName_Base.BookForaging5 = "Foraggio Vol.5: Maestro",
+
+
+	ItemName_Base.BookMetalWelding1 = "Lavorazione del metallo Vol.1: Per negati",
+	ItemName_Base.BookMetalWelding2 = "Lavorazione del metallo Vol.2: Intermedio",
+	ItemName_Base.BookMetalWelding3 = "Lavorazione del metallo Vol.3: Avanzato",
+	ItemName_Base.BookMetalWelding4 = "Lavorazione del metallo Vol.4: Esperto",
+	ItemName_Base.BookMetalWelding5 = "Lavorazione del metallo Vol.5: Maestro",
+
+
+	ItemName_Base.BookBlacksmith1 = "Fucina Vol.1: Per negati",
+	ItemName_Base.BookBlacksmith2 = "Fucina Vol.2: Intermedio",
+	ItemName_Base.BookBlacksmith3 = "Fucina Vol.3: Avanzato",
+	ItemName_Base.BookBlacksmith4 = "Fucina Vol.4: Esperto",
+	ItemName_Base.BookBlacksmith5 = "Fucina Vol.5: Maestro",
+
+
+	ItemName_Base.BookMechanic1 = "Meccanica Vol.1: Per negati",
+	ItemName_Base.BookMechanic2 = "Meccanica Vol.2: Intermedio",
+	ItemName_Base.BookMechanic3 = "Meccanica Vol.3: Avanzato",
+	ItemName_Base.BookMechanic4 = "Meccanica Vol.4: Esperto",
+	ItemName_Base.BookMechanic5 = "Meccanica Vol.5: Maestro",
+
+
+	ItemName_Base.BookTailoring1 = "Sartoria Vol.1: Per negati",
+	ItemName_Base.BookTailoring2 = "Sartoria Vol.2: Intermedio",
+	ItemName_Base.BookTailoring3 = "Sartoria Vol.3: Avanzato",
+	ItemName_Base.BookTailoring4 = "Sartoria Vol.4: Esperto",
+	ItemName_Base.BookTailoring5 = "Sartoria Vol.5: Maestro",
+
+
+}

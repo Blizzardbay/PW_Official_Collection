@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Skinned\clothes\M_BonnieHat_Net</m_MaleModel>
+	<m_FemaleModel>Skinned\clothes\F_BonnieHat_Net</m_FemaleModel>
+	<m_GUID>ed07ffc5-d073-41ce-aae7-247407ad1542</m_GUID>
+	<m_Static>true</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_HatCategory>nohair</m_HatCategory>
+	<m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+	<textureChoices>Clothes/BonnieHat_DigitalCamo_Blue</textureChoices>
+</clothingItem>

@@ -1,0 +1,30 @@
+
+/*** Jar Lid MOD add item ***/
+
+/*** 2022-01-04 Version 2.02 ***/
+
+module JarLidMod
+
+{
+	imports
+	{
+	Base
+	}
+	
+recipe Place Jar Lid in Box
+    {
+	JarLid=24,
+	Result:JarLidBoxs,
+	Sound:PZ_PutInBag,
+	Time:5.0,
+	}
+
+recipe Open Box of Jar Lid
+	{
+	JarLidBoxs,
+	Result:JarLid=24,
+	Sound:PZ_PutInBag,
+	Time:5.0,
+	}
+
+}

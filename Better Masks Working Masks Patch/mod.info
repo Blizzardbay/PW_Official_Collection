@@ -1,0 +1,6 @@
+name=Better Masks - Working Masks Patch
+poster=poster.png
+icon=icon.png
+id=bettermasks_WMPatch
+require=bettermasks,WorkingMasks
+description=<RGB:0.8,0.8,1>Compatibility patch with "Working Masks" mod.

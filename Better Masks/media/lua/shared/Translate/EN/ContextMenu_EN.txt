@@ -1,0 +1,6 @@
+ContextMenu_EN = {
+	ContextMenu_PullDownM = "Pull Down",
+	ContextMenu_PullUpM = "Pull Up",
+	ContextMenu_WearonFace = "Wear on Face",
+	ContextMenu_WearonNeck = "Wear on Neck",
+}

@@ -1,0 +1,1107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<outfitManager>
+
+<!-- Police -->
+	<m_FemaleOutfits>
+		<m_Name>NukeManduPolice</m_Name>
+		<m_Guid>ad53fb38-1aaa-40a3-a4bd-752e9d82f327</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<!--Mask-->
+		<m_items> <!--Tactical Respirator-->
+			<itemGUID>151d9dd8-5c78-4fe9-b09e-de04110ff3e4</itemGUID>
+			<subItems> <!--Navy Face Mask-->
+				<itemGUID>d8ce9bf8-154d-4b93-b347-f1c07fc17b8c</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Police Hat-->
+		<m_items>
+			<probability>0.1</probability>
+			<itemGUID>120db3e8-15a1-40cc-824f-b9d8c65bca86</itemGUID>
+		</m_items>
+		<!--Police Jacket-->
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>c280861d-1dae-4914-ac94-99de18700c68</itemGUID>
+		</m_items>
+		<!--Police Shirt-->
+		<m_items>
+			<itemGUID>993a89f1-7dde-406d-ba1f-3d02d14db5cc</itemGUID>
+			<subItems>
+				<itemGUID>c87c06e9-15c3-4667-807f-7bec508f1405</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>193a4816-ca1a-4723-a0b2-ce05fd73514c</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>987ab998-d4c2-4b54-8c1c-c65e13b740e6</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>1a355b1d-3b97-4a11-a244-2b80aad8c009</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Police Pants-->
+		<m_items>
+			<itemGUID>01cfabba-f1eb-4d18-8259-2dca4d0af8e5</itemGUID>
+		</m_items>
+		<!--Shoes-->
+		<m_items>
+			<itemGUID>593bea3d-c127-4574-ac1e-2197dc56e486</itemGUID>
+		</m_items>
+		<!--Holster-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>88f11c9e-e717-446c-82ec-f749320df25a</itemGUID>
+		</m_items>
+		<!--Double Holster-->
+		<m_items>
+			<probability>0.1</probability>
+			<itemGUID>124e9f8a-d83b-4e69-a7b2-34fc44cae7e9</itemGUID>
+		</m_items>
+		<!--Wristwatch-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>5fc22466-2942-4ba1-8c33-2a8528b73021</itemGUID>
+			<subItems>
+				<itemGUID>ce1a8520-7120-432e-8a3a-aa7b3094f0bb</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>c7cc655b-284a-4087-85a6-d7c116385fb0</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Vest-->
+		<m_items>
+			<probability>0.4</probability>
+			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+		</m_items>
+	</m_FemaleOutfits>
+	
+	
+	<m_MaleOutfits>
+		<m_Name>NukeManduPolice</m_Name>
+		<m_Guid>ad53fb38-1aaa-40a3-a4bd-752e9d82f327</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<!--Mask-->
+		<m_items> <!--Tactical Respirator-->
+			<itemGUID>151d9dd8-5c78-4fe9-b09e-de04110ff3e4</itemGUID>
+			<subItems> <!--Navy Face Mask-->
+				<itemGUID>d8ce9bf8-154d-4b93-b347-f1c07fc17b8c</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Police Hat-->
+		<m_items>
+			<probability>0.1</probability>
+			<itemGUID>120db3e8-15a1-40cc-824f-b9d8c65bca86</itemGUID>
+		</m_items>
+		<!--Police Jacket-->
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>c280861d-1dae-4914-ac94-99de18700c68</itemGUID>
+		</m_items>
+		<!--Police Shirt-->
+		<m_items>
+			<itemGUID>993a89f1-7dde-406d-ba1f-3d02d14db5cc</itemGUID>
+			<subItems>
+				<itemGUID>c87c06e9-15c3-4667-807f-7bec508f1405</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>193a4816-ca1a-4723-a0b2-ce05fd73514c</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>987ab998-d4c2-4b54-8c1c-c65e13b740e6</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>1a355b1d-3b97-4a11-a244-2b80aad8c009</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Police Pants-->
+		<m_items>
+			<itemGUID>01cfabba-f1eb-4d18-8259-2dca4d0af8e5</itemGUID>
+		</m_items>
+		<!--Shoes-->
+		<m_items>
+			<itemGUID>593bea3d-c127-4574-ac1e-2197dc56e486</itemGUID>
+		</m_items>
+		<!--Holster-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>88f11c9e-e717-446c-82ec-f749320df25a</itemGUID>
+		</m_items>
+		<!--Double Holster-->
+		<m_items>
+			<probability>0.1</probability>
+			<itemGUID>124e9f8a-d83b-4e69-a7b2-34fc44cae7e9</itemGUID>
+		</m_items>
+		<!--Wristwatch-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>5fc22466-2942-4ba1-8c33-2a8528b73021</itemGUID>
+			<subItems>
+				<itemGUID>ce1a8520-7120-432e-8a3a-aa7b3094f0bb</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>c7cc655b-284a-4087-85a6-d7c116385fb0</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Vest-->
+		<m_items>
+			<probability>0.4</probability>
+			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+		</m_items>
+	</m_MaleOutfits>
+	
+	
+	
+<!-- State Police -->	
+	<m_FemaleOutfits>
+		<m_Name>NukeManduStatePolice</m_Name>
+		<m_Guid>d25c2a25-0ed7-40e0-8441-cc187bc43bee</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<!--Mask-->
+		<m_items> <!--Navy Face Mask-->
+			<itemGUID>d8ce9bf8-154d-4b93-b347-f1c07fc17b8c</itemGUID>
+			<subItems> <!--Disposable Mask-->
+				<itemGUID>e1cceb17-2cef-49a5-9ba0-4776ea7a30eb</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Police Hat Grey-->
+		<m_items>
+			<probability>0.1</probability>
+			<itemGUID>39c66338-430e-43d1-9bc9-7d9e998546e0</itemGUID>
+		</m_items>
+		<!--Police Jacket-->
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>c280861d-1dae-4914-ac94-99de18700c68</itemGUID>
+		</m_items>
+		<!--Police Shirt-->
+		<m_items>
+			<itemGUID>6e3a5fbf-5473-4a8b-92d1-a10a48a52fef</itemGUID>
+			<subItems>
+				<itemGUID>993a89f1-7dde-406d-ba1f-3d02d14db5cc</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>c87c06e9-15c3-4667-807f-7bec508f1405</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>3d13c81d-2dae-4f3f-9cb0-18146938c973</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>987ab998-d4c2-4b54-8c1c-c65e13b740e6</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>1a355b1d-3b97-4a11-a244-2b80aad8c009</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Police Pants Grey-->
+		<m_items>
+			<itemGUID>37c9c7d2-eacd-496b-b72c-e7c4d7984fbd</itemGUID>
+		</m_items>
+		<!--Shoes-->
+		<m_items>
+			<itemGUID>593bea3d-c127-4574-ac1e-2197dc56e486</itemGUID>
+		</m_items>
+		<!--Holster-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>88f11c9e-e717-446c-82ec-f749320df25a</itemGUID>
+		</m_items>
+		<!--Double Holster-->
+		<m_items>
+			<probability>0.1</probability>
+			<itemGUID>124e9f8a-d83b-4e69-a7b2-34fc44cae7e9</itemGUID>
+		</m_items>
+		<!--Wristwatch-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>5fc22466-2942-4ba1-8c33-2a8528b73021</itemGUID>
+			<subItems>
+				<itemGUID>ce1a8520-7120-432e-8a3a-aa7b3094f0bb</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>c7cc655b-284a-4087-85a6-d7c116385fb0</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Vest-->
+		<m_items>
+			<probability>0.4</probability>
+			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+		</m_items>
+	</m_FemaleOutfits>
+	
+	
+	<m_MaleOutfits>
+		<m_Name>NukeManduStatePolice</m_Name>
+		<m_Guid>d25c2a25-0ed7-40e0-8441-cc187bc43bee</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<!--Mask-->
+		<m_items> <!--Navy Face Mask-->
+			<itemGUID>d8ce9bf8-154d-4b93-b347-f1c07fc17b8c</itemGUID>
+			<subItems> <!--Disposable Mask-->
+				<itemGUID>e1cceb17-2cef-49a5-9ba0-4776ea7a30eb</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Police Hat Grey-->
+		<m_items>
+			<probability>0.1</probability>
+			<itemGUID>39c66338-430e-43d1-9bc9-7d9e998546e0</itemGUID>
+		</m_items>
+		<!--Police Jacket-->
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>c280861d-1dae-4914-ac94-99de18700c68</itemGUID>
+		</m_items>
+		<!--Police Shirt-->
+		<m_items>
+			<itemGUID>6e3a5fbf-5473-4a8b-92d1-a10a48a52fef</itemGUID>
+			<subItems>
+				<itemGUID>993a89f1-7dde-406d-ba1f-3d02d14db5cc</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>c87c06e9-15c3-4667-807f-7bec508f1405</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>3d13c81d-2dae-4f3f-9cb0-18146938c973</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>987ab998-d4c2-4b54-8c1c-c65e13b740e6</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>1a355b1d-3b97-4a11-a244-2b80aad8c009</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Police Pants Grey-->
+		<m_items>
+			<itemGUID>37c9c7d2-eacd-496b-b72c-e7c4d7984fbd</itemGUID>
+		</m_items>
+		<!--Shoes-->
+		<m_items>
+			<itemGUID>593bea3d-c127-4574-ac1e-2197dc56e486</itemGUID>
+		</m_items>
+		<!--Holster-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>88f11c9e-e717-446c-82ec-f749320df25a</itemGUID>
+		</m_items>
+		<!--Double Holster-->
+		<m_items>
+			<probability>0.1</probability>
+			<itemGUID>124e9f8a-d83b-4e69-a7b2-34fc44cae7e9</itemGUID>
+		</m_items>
+		<!--Wristwatch-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>5fc22466-2942-4ba1-8c33-2a8528b73021</itemGUID>
+			<subItems>
+				<itemGUID>ce1a8520-7120-432e-8a3a-aa7b3094f0bb</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>c7cc655b-284a-4087-85a6-d7c116385fb0</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Vest-->
+		<m_items>
+			<probability>0.4</probability>
+			<itemGUID>d234e3b1-4e68-41b9-a48c-5669a8a52629</itemGUID>
+		</m_items>
+	</m_MaleOutfits>
+
+
+
+<!-- Army -->
+	<m_FemaleOutfits>
+		<m_Name>NukeManduArmy</m_Name>
+		<m_Guid>63db7a79-b785-4411-bb25-442e4f3f82ca</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<!--FaceMask-->
+		<m_items> <!--Woodland Camo-->
+			<itemGUID>681b4c5b-f9ec-406b-ba5e-0388548b2522</itemGUID>
+			<subitems> <!--Woodland Camo-->
+				<itemGUID>c20bc034-d462-4083-9dfa-818e069af9ef</itemGUID>
+			</subitems>
+		</m_items>
+		<!--Army Hat-->
+		<m_items>
+			<probability>0.6</probability>
+			<itemGUID>9709be80-dbd9-4f98-90a6-aaab8e87cd28</itemGUID>
+			<subItems>
+				<itemGUID>7a946b38-8764-419f-a3fc-fd9c4c03cc23</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Army Jacket-->
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>b0d642f6-eb11-456c-aeb0-1b190b29a364</itemGUID>
+		</m_items>
+		<!--Shirt-->
+		<m_items>
+			<itemGUID>cbe793fe-97d9-4585-88e0-bc18be39d714</itemGUID>
+			<subItems>
+				<itemGUID>48efaf62-6a65-474a-8773-886e05ea7632</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>0cc9f034-1d90-4f4c-9b17-e1dcf008b356</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Army Pants-->
+		<m_items>
+			<itemGUID>d325b65d-497d-4c77-8919-74a65172cb94</itemGUID>
+		</m_items>
+		<!--ALICEpack-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>e5e131ff-bc65-4b94-9bc1-b70e8f99e68d</itemGUID>
+		</m_items>
+		<!--Socks-->
+		<m_items>
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+		<!--Army Boots-->
+		<m_items>
+			<itemGUID>227cb2d5-05a5-44ed-872d-ac4ca16e80bc</itemGUID>
+		</m_items>
+		<!--Dog Tags-->
+		<m_items>
+			<probability>0.8</probability>
+			<itemGUID>88321000-2b08-4537-9c51-4b5eca360c92</itemGUID>
+		</m_items>
+		<!--Wristwatch-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>5fc22466-2942-4ba1-8c33-2a8528b73021</itemGUID>
+			<subItems>
+				<itemGUID>ce1a8520-7120-432e-8a3a-aa7b3094f0bb</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>c7cc655b-284a-4087-85a6-d7c116385fb0</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+	</m_FemaleOutfits>
+
+	<m_MaleOutfits>
+		<m_Name>NukeManduArmy</m_Name>
+		<m_Guid>63db7a79-b785-4411-bb25-442e4f3f82ca</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<!--FaceMask-->
+		<m_items> <!--Woodland Camo-->
+			<itemGUID>681b4c5b-f9ec-406b-ba5e-0388548b2522</itemGUID>
+			<subitems> <!--Woodland Camo-->
+				<itemGUID>c20bc034-d462-4083-9dfa-818e069af9ef</itemGUID>
+			</subitems>
+		</m_items>
+		<!--Army Hat-->
+		<m_items>
+			<probability>0.6</probability>
+			<itemGUID>9709be80-dbd9-4f98-90a6-aaab8e87cd28</itemGUID>
+			<subItems>
+				<itemGUID>7a946b38-8764-419f-a3fc-fd9c4c03cc23</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Army Jacket-->
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>b0d642f6-eb11-456c-aeb0-1b190b29a364</itemGUID>
+		</m_items>
+		<!--Shirt-->
+		<m_items>
+			<itemGUID>cbe793fe-97d9-4585-88e0-bc18be39d714</itemGUID>
+			<subItems>
+				<itemGUID>48efaf62-6a65-474a-8773-886e05ea7632</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>0cc9f034-1d90-4f4c-9b17-e1dcf008b356</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Army Pants-->
+		<m_items>
+			<itemGUID>d325b65d-497d-4c77-8919-74a65172cb94</itemGUID>
+		</m_items>
+		<!--ALICEpack-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>e5e131ff-bc65-4b94-9bc1-b70e8f99e68d</itemGUID>
+		</m_items>
+		<!--Socks-->
+		<m_items>
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+		<!--Army Boots-->
+		<m_items>
+			<itemGUID>227cb2d5-05a5-44ed-872d-ac4ca16e80bc</itemGUID>
+		</m_items>
+		<!--Dog Tags-->
+		<m_items>
+			<probability>0.8</probability>
+			<itemGUID>88321000-2b08-4537-9c51-4b5eca360c92</itemGUID>
+		</m_items>
+		<!--Wristwatch-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>5fc22466-2942-4ba1-8c33-2a8528b73021</itemGUID>
+			<subItems>
+				<itemGUID>ce1a8520-7120-432e-8a3a-aa7b3094f0bb</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>c7cc655b-284a-4087-85a6-d7c116385fb0</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+	</m_MaleOutfits>
+
+
+<!--Army2-->
+	<m_FemaleOutfits>
+		<m_Name>NukeManduArmy2</m_Name>
+		<m_Guid>da775c8b-7c4c-4b3b-bd27-03d9632d16e8</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<!--Respirator-->
+		<m_items> <!--Tactical Respirator ii-->
+			<itemGUID>b036b66e-24bc-4c81-b450-58bf29a558b0</itemGUID>
+			<subitems> <!--Tactical Respirator ii-->
+				<itemGUID>151d9dd8-5c78-4fe9-b09e-de04110ff3e4</itemGUID>
+			</subitems>
+		</m_items>
+		<!--Army Hat-->
+		<m_items>
+			<probability>0.6</probability>
+			<itemGUID>9709be80-dbd9-4f98-90a6-aaab8e87cd28</itemGUID>
+			<subItems>
+				<itemGUID>7a946b38-8764-419f-a3fc-fd9c4c03cc23</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Army Jacket-->
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>b0d642f6-eb11-456c-aeb0-1b190b29a364</itemGUID>
+		</m_items>
+		<!--Shirt-->
+		<m_items>
+			<itemGUID>cbe793fe-97d9-4585-88e0-bc18be39d714</itemGUID>
+			<subItems>
+				<itemGUID>48efaf62-6a65-474a-8773-886e05ea7632</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>0cc9f034-1d90-4f4c-9b17-e1dcf008b356</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Army Pants-->
+		<m_items>
+			<itemGUID>d325b65d-497d-4c77-8919-74a65172cb94</itemGUID>
+		</m_items>
+		<!--ALICEpack-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>e5e131ff-bc65-4b94-9bc1-b70e8f99e68d</itemGUID>
+		</m_items>
+		<!--Socks-->
+		<m_items>
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+		<!--Army Boots-->
+		<m_items>
+			<itemGUID>227cb2d5-05a5-44ed-872d-ac4ca16e80bc</itemGUID>
+		</m_items>
+		<!--Dog Tags-->
+		<m_items>
+			<probability>0.8</probability>
+			<itemGUID>88321000-2b08-4537-9c51-4b5eca360c92</itemGUID>
+		</m_items>
+		<!--Wristwatch-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>5fc22466-2942-4ba1-8c33-2a8528b73021</itemGUID>
+			<subItems>
+				<itemGUID>ce1a8520-7120-432e-8a3a-aa7b3094f0bb</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>c7cc655b-284a-4087-85a6-d7c116385fb0</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+	</m_FemaleOutfits>
+
+	<m_MaleOutfits>
+		<m_Name>NukeManduArmy2</m_Name>
+		<m_Guid>da775c8b-7c4c-4b3b-bd27-03d9632d16e8</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<!--Respirator-->
+		<m_items> <!--Tactical Respirator ii-->
+			<itemGUID>b036b66e-24bc-4c81-b450-58bf29a558b0</itemGUID>
+			<subitems> <!--Tactical Respirator ii-->
+				<itemGUID>151d9dd8-5c78-4fe9-b09e-de04110ff3e4</itemGUID>
+			</subitems>
+		</m_items>
+		<!--Army Hat-->
+		<m_items>
+			<probability>0.6</probability>
+			<itemGUID>9709be80-dbd9-4f98-90a6-aaab8e87cd28</itemGUID>
+			<subItems>
+				<itemGUID>7a946b38-8764-419f-a3fc-fd9c4c03cc23</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Army Jacket-->
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>b0d642f6-eb11-456c-aeb0-1b190b29a364</itemGUID>
+		</m_items>
+		<!--Shirt-->
+		<m_items>
+			<itemGUID>cbe793fe-97d9-4585-88e0-bc18be39d714</itemGUID>
+			<subItems>
+				<itemGUID>48efaf62-6a65-474a-8773-886e05ea7632</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>0cc9f034-1d90-4f4c-9b17-e1dcf008b356</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Army Pants-->
+		<m_items>
+			<itemGUID>d325b65d-497d-4c77-8919-74a65172cb94</itemGUID>
+		</m_items>
+		<!--ALICEpack-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>e5e131ff-bc65-4b94-9bc1-b70e8f99e68d</itemGUID>
+		</m_items>
+		<!--Socks-->
+		<m_items>
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+		<!--Army Boots-->
+		<m_items>
+			<itemGUID>227cb2d5-05a5-44ed-872d-ac4ca16e80bc</itemGUID>
+		</m_items>
+		<!--Dog Tags-->
+		<m_items>
+			<probability>0.8</probability>
+			<itemGUID>88321000-2b08-4537-9c51-4b5eca360c92</itemGUID>
+		</m_items>
+		<!--Wristwatch-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>5fc22466-2942-4ba1-8c33-2a8528b73021</itemGUID>
+			<subItems>
+				<itemGUID>ce1a8520-7120-432e-8a3a-aa7b3094f0bb</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>c7cc655b-284a-4087-85a6-d7c116385fb0</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+	</m_MaleOutfits>
+
+
+
+<!-- Civilian -->
+	<m_FemaleOutfits>
+		<m_Name>NukeManduCivilian01</m_Name>
+		<m_Guid>3e4fd89c-1c49-41c7-ba70-075a0f21f217</m_Guid>
+		<m_Pants>false</m_Pants>
+		<!--Mask-->
+		<m_items> <!--Disposable White-->
+			<itemGUID>c0e2ab3e-5dc5-4b28-bec8-1ed18e0c5627</itemGUID>
+			<subItems> <!--Disposable Black-->
+				<itemGUID>b65c5768-4b60-4ba2-8f40-1664f71d2c06</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Jacket-->
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>0ab6a4b8-4dcf-4ee0-9e5a-c6304652568a</itemGUID>
+		</m_items>
+		<!--Shirt-->
+		<m_items>
+			<itemGUID>53b95680-245b-4439-8ba7-5aa6d938e465</itemGUID>
+		</m_items>
+		<!--Pants-->
+		<m_items>
+			<itemGUID>229b23f6-8e8f-4f16-837b-4fe950c48bfc</itemGUID>
+			<subItems>
+				<itemGUID>e2822080-de7e-4aca-8fa1-140f118b7043</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>e4b71599-604d-4cc7-9ce4-7723a7e37d8a</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Belt-->
+		<m_items>
+			<probability>0.2</probability>
+			<itemGUID>86a018e3-8701-4f67-9751-afd478c81f3f</itemGUID>
+		</m_items>
+		<!--Shoes-->
+		<m_items>
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+			<subItems>
+				<itemGUID>593bea3d-c127-4574-ac1e-2197dc56e486</itemGUID>
+			</subItems>
+		</m_items>
+	</m_FemaleOutfits>
+
+
+	<m_MaleOutfits>
+		<m_Name>NukeManduCivilian01</m_Name>
+		<m_Guid>3e4fd89c-1c49-41c7-ba70-075a0f21f217</m_Guid>
+		<m_Pants>false</m_Pants>
+		<!--Mask-->
+		<m_items> <!--Disposable White-->
+			<itemGUID>c0e2ab3e-5dc5-4b28-bec8-1ed18e0c5627</itemGUID>
+			<subItems> <!--Disposable Black-->
+				<itemGUID>b65c5768-4b60-4ba2-8f40-1664f71d2c06</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Jacket-->
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>0ab6a4b8-4dcf-4ee0-9e5a-c6304652568a</itemGUID>
+		</m_items>
+		<!--Shirt-->
+		<m_items>
+			<itemGUID>53b95680-245b-4439-8ba7-5aa6d938e465</itemGUID>
+		</m_items>
+		<!--Pants-->
+		<m_items>
+			<itemGUID>229b23f6-8e8f-4f16-837b-4fe950c48bfc</itemGUID>
+			<subItems>
+				<itemGUID>e2822080-de7e-4aca-8fa1-140f118b7043</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>e4b71599-604d-4cc7-9ce4-7723a7e37d8a</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Belt-->
+		<m_items>
+			<probability>0.2</probability>
+			<itemGUID>86a018e3-8701-4f67-9751-afd478c81f3f</itemGUID>
+		</m_items>
+		<!--Shoes-->
+		<m_items>
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+			<subItems>
+				<itemGUID>593bea3d-c127-4574-ac1e-2197dc56e486</itemGUID>
+			</subItems>
+		</m_items>
+	</m_MaleOutfits>
+		
+	
+
+<!-- Civilian 02 -->
+	<m_FemaleOutfits>
+		<m_Name>NukeManduCivilian02</m_Name>
+		<m_Guid>267336f0-5001-4264-80f7-62801376e0f2</m_Guid>
+		<m_Pants>false</m_Pants>
+		<!--Respirator-->
+		<m_items> <!--Half Mask Respirator-->
+			<itemGUID>4009306b-0509-4f29-aef2-bf05a3e8a25f</itemGUID>
+			<subItems> <!--Half Mask Respirator ii-->
+				<itemGUID>ec8a8978-c515-4065-a832-32a19b8f260a</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hat-->
+		<m_items>
+			<itemGUID>7b339ad5-da2e-42a5-8a51-ee87239a943c</itemGUID>
+			<subItems>
+				<itemGUID>e29ea6f7-5cff-40e5-9dd0-f80fef8276a7</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Goggles-->
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>c05cf7a7-f704-43ce-a6bf-5eee59d96a5c</itemGUID>
+		</m_items>
+		<!--Jacket-->
+		<m_items>
+			<itemGUID>0ab6a4b8-4dcf-4ee0-9e5a-c6304652568a</itemGUID>
+			<subItems>
+				<itemGUID>d9d60d23-421e-4a97-8e74-9e7b3c35d620</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Shirt-->
+		<m_items>
+			<itemGUID>ceead19e-1c55-4d89-8a59-864dd72d0c93</itemGUID>
+			<subItems>
+				<itemGUID>88b27ecc-8a00-4d1a-882e-1ab4f4a46350</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Bulletproof Vest-->
+		<m_items>
+			<probability>0.4</probability>
+			<itemGUID>0d7e7bf1-e6ea-4915-a87a-4bbbb687718e</itemGUID>
+		</m_items>
+		<!--Pants-->
+		<m_items>
+			<itemGUID>229b23f6-8e8f-4f16-837b-4fe950c48bfc</itemGUID>
+			<subItems>
+				<itemGUID>e4b71599-604d-4cc7-9ce4-7723a7e37d8a</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Gloves-->
+		<m_items>
+			<itemGUID>2b0756ac-57f3-415e-bfed-24b28d1ca4d6</itemGUID>
+		</m_items>
+		<!--Belt-->
+		<m_items>
+			<itemGUID>86a018e3-8701-4f67-9751-afd478c81f3f</itemGUID>
+		</m_items>
+		<!--Bag-->
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>0eb60cd5-ed6a-4806-ac60-376c77af64cf</itemGUID>
+			<subItems>
+				<itemGUID>d1859d8a-1857-4854-9f24-30affdbade34</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Shoes-->
+		<m_items>
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+		<!--Wristwatch-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>5fc22466-2942-4ba1-8c33-2a8528b73021</itemGUID>
+			<subItems>
+				<itemGUID>ce1a8520-7120-432e-8a3a-aa7b3094f0bb</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>c7cc655b-284a-4087-85a6-d7c116385fb0</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+	</m_FemaleOutfits>
+		
+		
+		
+	<m_MaleOutfits>
+		<m_Name>NukeManduCivilian02</m_Name>
+		<m_Guid>267336f0-5001-4264-80f7-62801376e0f2</m_Guid>
+		<m_Pants>false</m_Pants>
+		<!--Respirator-->
+		<m_items> <!--Half Mask Respirator-->
+			<itemGUID>4009306b-0509-4f29-aef2-bf05a3e8a25f</itemGUID>
+			<subItems> <!--Half Mask Respirator ii-->
+				<itemGUID>ec8a8978-c515-4065-a832-32a19b8f260a</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hat-->
+		<m_items>
+			<itemGUID>7b339ad5-da2e-42a5-8a51-ee87239a943c</itemGUID>
+			<subItems>
+				<itemGUID>e29ea6f7-5cff-40e5-9dd0-f80fef8276a7</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Goggles-->
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>c05cf7a7-f704-43ce-a6bf-5eee59d96a5c</itemGUID>
+		</m_items>
+		<!--Jacket-->
+		<m_items>
+			<itemGUID>0ab6a4b8-4dcf-4ee0-9e5a-c6304652568a</itemGUID>
+			<subItems>
+				<itemGUID>d9d60d23-421e-4a97-8e74-9e7b3c35d620</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Shirt-->
+		<m_items>
+			<itemGUID>ceead19e-1c55-4d89-8a59-864dd72d0c93</itemGUID>
+			<subItems>
+				<itemGUID>88b27ecc-8a00-4d1a-882e-1ab4f4a46350</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Bulletproof Vest-->
+		<m_items>
+			<probability>0.4</probability>
+			<itemGUID>0d7e7bf1-e6ea-4915-a87a-4bbbb687718e</itemGUID>
+		</m_items>
+		<!--Pants-->
+		<m_items>
+			<itemGUID>229b23f6-8e8f-4f16-837b-4fe950c48bfc</itemGUID>
+			<subItems>
+				<itemGUID>e4b71599-604d-4cc7-9ce4-7723a7e37d8a</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Gloves-->
+		<m_items>
+			<itemGUID>2b0756ac-57f3-415e-bfed-24b28d1ca4d6</itemGUID>
+		</m_items>
+		<!--Belt-->
+		<m_items>
+			<itemGUID>86a018e3-8701-4f67-9751-afd478c81f3f</itemGUID>
+		</m_items>
+		<!--Bag-->
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>0eb60cd5-ed6a-4806-ac60-376c77af64cf</itemGUID>
+			<subItems>
+				<itemGUID>d1859d8a-1857-4854-9f24-30affdbade34</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Shoes-->
+		<m_items>
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+		<!--Wristwatch-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>5fc22466-2942-4ba1-8c33-2a8528b73021</itemGUID>
+			<subItems>
+				<itemGUID>ce1a8520-7120-432e-8a3a-aa7b3094f0bb</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>c7cc655b-284a-4087-85a6-d7c116385fb0</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+	</m_MaleOutfits>
+		
+		
+		
+<!-- Civilian 03 -->
+	<m_FemaleOutfits>
+		<m_Name>NukeManduCivilian03</m_Name>
+		<m_Guid>c76030fe-32fd-40c0-bd29-7427943d67d3</m_Guid>
+		<m_Pants>false</m_Pants>
+		<!--Mask-->
+		<m_items> <!--White-->
+			<itemGUID>2da4719b-f220-4ab8-8f4e-6e4f1c742303</itemGUID>
+			<subItems> <!--Black-->
+				<itemGUID>e1d7182a-ebdd-4fd8-8c76-94e4c0875e09</itemGUID>
+			</subItems>
+			<subItems> <!--XWhite-->
+				<itemGUID>ed425295-2ab2-47e5-b904-a03f440c14b7</itemGUID>
+			</subItems>
+			<subItems> <!--XBlack-->
+				<itemGUID>94a514af-1972-423c-9b2a-4922c2358210</itemGUID>
+			</subItems>
+			<subItems> <!--AnimalPrint-->
+				<itemGUID>e3cfab20-02a9-45ad-b178-5fe44c5750f2</itemGUID>
+			</subItems>
+			<subItems> <!--AnimalPrint-->
+				<itemGUID>63074970-b05f-46d4-aabb-868cc7c3beb1</itemGUID>
+			</subItems>
+			<subItems> <!--JollyRoger-->
+				<itemGUID>6a7c7511-d90b-4d05-949e-3380f28e74e3</itemGUID>
+			</subItems>
+			<subItems> <!--Red-->
+				<itemGUID>3a7eaa1b-5c73-469d-a1e2-58a8569a4b85</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hat-->
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>7b339ad5-da2e-42a5-8a51-ee87239a943c</itemGUID>
+		</m_items>
+		<!--Hoodie-->
+		<m_items>
+			<itemGUID>51851e1a-3c3d-473d-8894-8cde0770b645</itemGUID>
+		</m_items>
+		<!--Shirt-->
+		<m_items>
+			<itemGUID>53b95680-245b-4439-8ba7-5aa6d938e465</itemGUID>
+		</m_items>
+		<!--Pants-->
+		<m_items>
+			<itemGUID>229b23f6-8e8f-4f16-837b-4fe950c48bfc</itemGUID>
+			<subItems>
+				<itemGUID>e2822080-de7e-4aca-8fa1-140f118b7043</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>e4b71599-604d-4cc7-9ce4-7723a7e37d8a</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Shoes-->
+		<m_items>
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+	</m_FemaleOutfits>
+
+
+	<m_MaleOutfits>
+		<m_Name>NukeManduCivilian03</m_Name>
+		<m_Guid>c76030fe-32fd-40c0-bd29-7427943d67d3</m_Guid>
+		<m_Pants>false</m_Pants>
+		<!--Mask-->
+		<m_items> <!--White-->
+			<itemGUID>2da4719b-f220-4ab8-8f4e-6e4f1c742303</itemGUID>
+			<subItems> <!--Black-->
+				<itemGUID>e1d7182a-ebdd-4fd8-8c76-94e4c0875e09</itemGUID>
+			</subItems>
+			<subItems> <!--XWhite-->
+				<itemGUID>ed425295-2ab2-47e5-b904-a03f440c14b7</itemGUID>
+			</subItems>
+			<subItems> <!--XBlack-->
+				<itemGUID>94a514af-1972-423c-9b2a-4922c2358210</itemGUID>
+			</subItems>
+			<subItems> <!--AnimalPrint-->
+				<itemGUID>e3cfab20-02a9-45ad-b178-5fe44c5750f2</itemGUID>
+			</subItems>
+			<subItems> <!--AnimalPrint-->
+				<itemGUID>63074970-b05f-46d4-aabb-868cc7c3beb1</itemGUID>
+			</subItems>
+			<subItems> <!--JollyRoger-->
+				<itemGUID>6a7c7511-d90b-4d05-949e-3380f28e74e3</itemGUID>
+			</subItems>
+			<subItems> <!--Red-->
+				<itemGUID>3a7eaa1b-5c73-469d-a1e2-58a8569a4b85</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hat-->
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>7b339ad5-da2e-42a5-8a51-ee87239a943c</itemGUID>
+		</m_items>
+		<!--Hoodie-->
+		<m_items>
+			<itemGUID>51851e1a-3c3d-473d-8894-8cde0770b645</itemGUID>
+		</m_items>
+		<!--Shirt-->
+		<m_items>
+			<itemGUID>53b95680-245b-4439-8ba7-5aa6d938e465</itemGUID>
+		</m_items>
+		<!--Pants-->
+		<m_items>
+			<itemGUID>229b23f6-8e8f-4f16-837b-4fe950c48bfc</itemGUID>
+			<subItems>
+				<itemGUID>e2822080-de7e-4aca-8fa1-140f118b7043</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>e4b71599-604d-4cc7-9ce4-7723a7e37d8a</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Shoes-->
+		<m_items>
+			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
+		</m_items>
+	</m_MaleOutfits>
+	
+	
+	
+<!--Construction Worker-->
+	<m_MaleOutfits>
+		<m_Name>NukeManduConstructionWorker</m_Name>
+		<m_Guid>ab042dbe-8738-45b1-ba97-773c5e65996a</m_Guid>
+		<m_Pants>false</m_Pants>
+		<!--Respirator-->
+		<m_items> <!--Half Mask Respirator-->
+			<itemGUID>87e0903d-f496-45ad-8492-0c94c283b148</itemGUID>
+			<subItems> <!--Half Mask Respirator ii-->
+				<itemGUID>aa3bd28f-6f54-45ef-856f-90e794bcd728</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Hat-->
+		<m_items>
+			<probability>0.5</probability>
+			<itemGUID>523b2893-137b-44bc-b3f6-ba2c9d42d488</itemGUID>
+			<subItems>
+				<itemGUID>e29ea6f7-5cff-40e5-9dd0-f80fef8276a7</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Goggles-->
+		<m_items>
+			<probability>0.2</probability>
+			<itemGUID>c05cf7a7-f704-43ce-a6bf-5eee59d96a5c</itemGUID>
+		</m_items>
+		<!--Shirt-->
+		<m_items>
+			<probability>0.8</probability>
+			<itemGUID>88b27ecc-8a00-4d1a-882e-1ab4f4a46350</itemGUID>
+			<subItems>
+				<itemGUID>19af00e4-ed4d-49bc-a893-a4a3376fe6da</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>a700a956-32c2-49a6-bd5f-5a2895073f19</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Trousers-->
+		<m_items>
+			<itemGUID>229b23f6-8e8f-4f16-837b-4fe950c48bfc</itemGUID>
+		</m_items>
+		<!--Socks-->
+		<m_items>
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+		<!--Boots-->
+		<m_items>
+			<itemGUID>227cb2d5-05a5-44ed-872d-ac4ca16e80bc</itemGUID>
+		</m_items>
+		<!--Gloves-->
+		<m_items>
+			<probability>0.2</probability>
+			<itemGUID>2b0756ac-57f3-415e-bfed-24b28d1ca4d6</itemGUID>
+		</m_items>
+		<!--Vest-->
+		<m_items>
+			<probability>0.7</probability>
+			<itemGUID>8aff3b6a-08aa-425e-be41-e41ebe198a11</itemGUID>
+		</m_items>
+		<!--Wristwatch-->
+		<m_items>
+			<probability>0.3</probability>
+			<itemGUID>5fc22466-2942-4ba1-8c33-2a8528b73021</itemGUID>
+			<subItems>
+				<itemGUID>ce1a8520-7120-432e-8a3a-aa7b3094f0bb</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>c7cc655b-284a-4087-85a6-d7c116385fb0</itemGUID>
+			</subItems>
+			<subItems>
+				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
+			</subItems>
+		</m_items>
+	</m_MaleOutfits>
+</outfitManager>

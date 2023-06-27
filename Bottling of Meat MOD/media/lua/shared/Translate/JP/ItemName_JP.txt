@@ -1,0 +1,19 @@
+﻿ItemName_JP = {
+
+	-- Bottling of Meat MOD
+
+	ItemName_Bottling.BottlingChicken = "瓶詰(チキン)",
+	ItemName_Bottling.BottlingFrogMeat = "瓶詰(カエルの肉)",
+	ItemName_Bottling.BottlingMeatPatty = "瓶詰(ミートパテ)",
+	ItemName_Bottling.BottlingMuttonChop = "瓶詰(骨付ラム)",
+	ItemName_Bottling.BottlingPorkChop = "瓶詰(豚の骨付ロース)",
+	ItemName_Bottling.BottlingRabbitmeat = "瓶詰(ウサギの肉)",
+	ItemName_Bottling.BottlingSmallanimalmeat = "瓶詰(小動物の肉)",
+	ItemName_Bottling.BottlingSmallbirdmeat = "瓶詰(野鳥の肉)",
+	ItemName_Bottling.BottlingSteak = "瓶詰(ビーフ)",
+	ItemName_Bottling.BottlingBacon = "瓶詰(ベーコン)",
+	ItemName_Bottling.BottlingBaconBits = "瓶詰(ベーコン刻み)",
+	ItemName_Bottling.BottlingBaconRashers = "瓶詰(ベーコン薄切り)",
+	ItemName_Bottling.BottlingHam = "瓶詰(ハム)",
+
+}

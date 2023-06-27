@@ -1,0 +1,18 @@
+Sandbox_ES = {
+	Sandbox_MBW_Loot = "More Brews Wine Me Up Ajustes"
+	Sandbox_MBW_LootGeneral = "More Brews Wine Me Up ajustes de botín"
+	Sandbox_MBW_LootGeneral_tooltip = "Establece la cantidad base de la distribución de botín para Wine Me Up"
+	Sandbox_MBW_WineMakingKits = "Aparición de los Kits de elaboración de vino"
+	Sandbox_MBW_WineMakingKits_tooltip = "Define el multiplicador de aparición para este ítem encontrado en el mundo."
+	Sandbox_MBW_Recipes = "Recipe Magazine Items Spawn Rate"
+	Sandbox_MBW_Recipes_tooltip = "Define el multiplicador de aparición para las revistas de recetas encontrados en el mundo."
+	Sandbox_MBW_Books = "Wine Making Skill Books Items Spawn Rate"
+	Sandbox_MBW_Books_tooltip = "Define el multiplicador de aparición para los libros de habilidad encontrados en el mundo."
+	Sandbox_MBW_Wine = "Aparición de botellas de vino llenas y cajas de vino"
+	Sandbox_MBW_Wine_tooltip = "Define el multiplicador de aparición para estos ítems encontrados en el mundo."
+    Sandbox_MBW_LootGeneral_option1 = "Bajo",
+    Sandbox_MBW_LootGeneral_option2 = "Normal",
+    Sandbox_MBW_LootGeneral_option3 = "Alto",
+    Sandbox_MBW_LootGeneral_option4 = "Muy alto",
+    Sandbox_MBW_LootGeneral_option5 = "Locura",
+}

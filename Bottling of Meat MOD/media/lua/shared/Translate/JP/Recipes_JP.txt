@@ -1,0 +1,33 @@
+﻿Recipe_JP = {
+
+	-- Bottling Meat MOD
+
+	Recipe_Make_Jar_of_Chicken = "瓶詰(チキン)を作る",
+	Recipe_Make_Jar_of_Frog_Meat = "瓶詰(カエルの肉)を作る",
+	Recipe_Make_Jar_of_Meat_Patty = "瓶詰(ミートパテ)を作る",
+	Recipe_Make_Jar_of_Mutton_Chop = "瓶詰(骨付ラム)を作る",
+	Recipe_Make_Jar_of_Pork_Chop = "瓶詰(豚の骨付ロース)を作る",
+	Recipe_Make_Jar_of_Rabbit_Meat = "瓶詰(ウサギの肉)を作る",
+	Recipe_Make_Jar_of_Small_Animal_Meat = "瓶詰(小動物の肉)を作る",
+	Recipe_Make_Jar_of_Small_Bird_Meat = "瓶詰(野鳥の肉)を作る",
+	Recipe_Make_Jar_of_Steak = "瓶詰(ビーフ)を作る",
+	Recipe_Make_Jar_of_Bacon = "瓶詰(ベーコン)を作る",
+	Recipe_Make_Jar_of_Bacon_Bits = "瓶詰(ベーコン刻み)を作る",
+	Recipe_Make_Jar_of_Bacon_Rashers = "瓶詰(ベーコン薄切り)を作る",
+	Recipe_Make_Jar_of_Ham = "瓶詰(ハム)を作る",
+
+	Recipe_Open_Jar_of_Chicken = "瓶詰(チキン)を開封する",
+	Recipe_Open_Jar_of_Frog_Meat = "瓶詰(カエル肉)を開封する",
+	Recipe_Open_Jar_of_Meat_Patty = "瓶詰(ミートパテ)を開封する",
+	Recipe_Open_Jar_of_Mutton_Chop = "瓶詰(骨付ラム)を開封する",
+	Recipe_Open_Jar_of_Pork_Chop = "瓶詰(豚の骨付ロース)を開封する",
+	Recipe_Open_Jar_of_Rabbit_Meat = "瓶詰(ウサギの肉)を開封する",
+	Recipe_Open_Jar_of_Small_Animal_Meat = "瓶詰(小動物の肉)を開封する",
+	Recipe_Open_Jar_of_Small_Bird_Meat = "瓶詰(野鳥の肉)を開封する",
+	Recipe_Open_Jar_of_Steak = "瓶詰(ビーフ)を開封する",
+	Recipe_Open_Jar_of_Bacon = "瓶詰(ベーコン)を開封する",
+	Recipe_Open_Jar_of_Bacon_Bits = "瓶詰(ベーコン刻み)を開封する",
+	Recipe_Open_Jar_of_Bacon_Rashers = "瓶詰(ベーコン薄切り)を開封する",
+	Recipe_Open_Jar_of_Ham = "瓶詰(ハム)を作るを開封する",
+
+}

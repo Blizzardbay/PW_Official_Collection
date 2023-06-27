@@ -1,0 +1,328 @@
+
+/*** Bottling of Meat MOD ***/
+
+/*** 2022-01-04 Version 2.03 ***/
+
+module Bottling
+
+{
+	imports
+	{
+	Base
+	}
+
+	recipe Make Jar of Chicken
+		{
+		EmptyJar,
+		JarLid,
+		Chicken=5,
+		Water=10,
+		Salt=1,
+		Result:BottlingChicken,
+		Time:100.0,
+		OnCreate:CannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:Give10CookingXP,
+		}
+
+	recipe Open Jar of Chicken
+		{
+		BottlingChicken,
+		Result:Chicken=5,
+		Time:30.0,
+		OnCreate:OpenCannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:NoXP_OnGiveXP,
+		}
+
+	recipe Make Jar of Steak
+		{
+		EmptyJar,
+		JarLid,
+		Steak=5,
+		Water=10,
+		Salt=1,
+		Result:BottlingSteak,
+		Time:100.0,
+		OnCreate:CannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:Give10CookingXP,
+		}
+
+	recipe Open Jar of Steak
+		{
+		BottlingSteak,
+		Result:Steak=5,
+		Time:30.0,
+		OnCreate:OpenCannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:NoXP_OnGiveXP,
+		}
+
+	recipe Make Jar of Frog Meat
+		{
+		EmptyJar,
+		JarLid,
+		FrogMeat=5,
+		Water=10,
+		Salt=1,
+		Result:BottlingFrogMeat,
+		Time:100.0,
+		OnCreate:CannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:Give10CookingXP,
+		}
+
+	recipe Open Jar of Frog Meat
+		{
+		BottlingFrogMeat,
+		Result:FrogMeat=5,
+		Time:30.0,
+		OnCreate:OpenCannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:NoXP_OnGiveXP,
+		}
+
+	recipe Make Jar of Meat Patty
+		{
+		EmptyJar,
+		JarLid,
+		MeatPatty=5,
+		Water=10,
+		Salt=1,
+		Result:BottlingMeatPatty,
+		Time:100.0,
+		OnCreate:CannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:Give10CookingXP,
+		}
+
+	recipe Open Jar of Meat Patty
+		{
+		BottlingMeatPatty,
+		Result:MeatPatty=5,
+		Time:30.0,
+		OnCreate:OpenCannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:NoXP_OnGiveXP,
+		}
+
+	recipe Make Jar of Mutton Chop
+		{
+		EmptyJar,
+		JarLid,
+		MuttonChop=5,
+		Water=10,
+		Salt=1,
+		Result:BottlingMuttonChop,
+		Time:100.0,
+		OnCreate:CannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:Give10CookingXP,
+		}
+
+	recipe Open Jar of Mutton Chop
+		{
+		BottlingMuttonChop,
+		Result:MuttonChop=5,
+		Time:30.0,
+		OnCreate:OpenCannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:NoXP_OnGiveXP,
+		}
+
+	recipe Make Jar of Pork Chop
+		{
+		EmptyJar,
+		JarLid,
+		PorkChop=5,
+		Water=10,
+		Salt=1,
+		Result:BottlingPorkChop,
+		Time:100.0,
+		OnCreate:CannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:Give10CookingXP,
+		}
+
+	recipe Open Jar of Pork Chop
+		{
+		BottlingPorkChop,
+		Result:PorkChop=5,
+		Time:30.0,
+		OnCreate:OpenCannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:NoXP_OnGiveXP,
+		}
+
+	recipe Make Jar of Rabbit Meat
+		{
+		EmptyJar,
+		JarLid,
+		Rabbitmeat=5,
+		Water=10,
+		Salt=1,
+		Result:BottlingRabbitmeat,
+		Time:100.0,
+		OnCreate:CannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:Give10CookingXP,
+		}
+
+	recipe Open Jar of Rabbit Meat
+		{
+		BottlingRabbitmeat,
+		Result:Rabbitmeat=5,
+		Time:30.0,
+		OnCreate:OpenCannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:NoXP_OnGiveXP,
+		}
+
+	recipe Make Jar of Small Animal Meat
+		{
+		EmptyJar,
+		JarLid,
+		Smallanimalmeat=5,
+		Water=10,
+		Salt=1,
+		Result:BottlingSmallanimalmeat,
+		Time:100.0,
+		OnCreate:CannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:Give10CookingXP,
+		}
+
+	recipe Open Jar of Small Animal Meat
+		{
+		BottlingSmallanimalmeat,
+		Result:Smallanimalmeat=5,
+		Time:30.0,
+		OnCreate:OpenCannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:NoXP_OnGiveXP,
+		}
+
+	recipe Make Jar of Small Bird Meat
+		{
+		EmptyJar,
+		JarLid,
+		Smallbirdmeat=5,
+		Water=10,
+		Salt=1,
+		Result:BottlingSmallbirdmeat,
+		Time:100.0,
+		OnCreate:CannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:Give10CookingXP,
+		}
+
+	recipe Open Jar of Small Bird Meat
+		{
+		BottlingSmallbirdmeat,
+		Result:Smallbirdmeat=5,
+		Time:30.0,
+		OnCreate:OpenCannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:NoXP_OnGiveXP,
+		}
+
+	recipe Make Jar of Bacon
+		{
+		EmptyJar,
+		JarLid,
+		Bacon=5,
+		Water=10,
+		Salt=1,
+		Result:BottlingBacon,
+		Time:100.0,
+		OnCreate:CannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:Give10CookingXP,
+		}
+
+	recipe Open Jar of Bacon
+		{
+		BottlingBacon,
+		Result:Bacon=5,
+		Time:30.0,
+		OnCreate:OpenCannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:NoXP_OnGiveXP,
+		}
+
+	recipe Make Jar of Bacon Bits
+		{
+		EmptyJar,
+		JarLid,
+		BaconBits=5,
+		Water=10,
+		Salt=1,
+		Result:BottlingBaconBits,
+		Time:100.0,
+		OnCreate:CannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:Give10CookingXP,
+		}
+
+	recipe Open Jar of Bacon Bits
+		{
+		BottlingBaconBits,
+		Result:BaconBits=5,
+		Time:30.0,
+		OnCreate:OpenCannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:NoXP_OnGiveXP,
+		}
+
+	recipe Make Jar of Bacon Rashers
+		{
+		EmptyJar,
+		JarLid,
+		BaconRashers=5,
+		Water=10,
+		Salt=1,
+		Result:BottlingBaconRashers,
+		Time:100.0,
+		OnCreate:CannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:Give10CookingXP,
+		}
+
+	recipe Open Jar of Bacon Rashers
+		{
+		BottlingBaconRashers,
+		Result:BaconRashers=5,
+		Time:30.0,
+		OnCreate:OpenCannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:NoXP_OnGiveXP,
+		}
+
+	recipe Make Jar of Ham
+		{
+		EmptyJar,
+		JarLid,
+		Ham=1,
+		Water=10,
+		Salt=1,
+		Result:BottlingHam,
+		Time:100.0,
+		OnCreate:CannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:Give10CookingXP,
+		}
+
+	recipe Open Jar of Ham
+		{
+		BottlingHam,
+		Result:Ham=1,
+		Time:30.0,
+		OnCreate:OpenCannedFood_OnCreate,
+		Category:Cooking,
+		OnGiveXP:NoXP_OnGiveXP,
+		}
+
+
+}
+

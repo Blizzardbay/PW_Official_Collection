@@ -1,0 +1,7 @@
+name=Craft Metal Drum Rain Collector
+poster=poster.png
+id=MetalDrumRainCollector
+pack=metaldrums
+description=Enables you to convert a Metal Drum into one that can collect rain water (or have a fire)
+tiledef=tiledefinitions 279
+versionMin=41.56

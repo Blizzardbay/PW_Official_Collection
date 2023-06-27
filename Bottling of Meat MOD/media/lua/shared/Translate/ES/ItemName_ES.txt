@@ -1,0 +1,16 @@
+ItemName_ES = {
+
+	-- Bottling Meat MOD
+	-- Translated by Kovi16YT
+
+	ItemName_Bottling.BottlingChicken = "Tarro de Pollo",
+	ItemName_Bottling.BottlingFrogMeat = "Tarro de Carne de Rana",
+	ItemName_Bottling.BottlingMeatPatty = "Tarro de Carne de Rana",
+	ItemName_Bottling.BottlingMuttonChop = "Tarro de Chuletas de Cordero",
+	ItemName_Bottling.BottlingPorkChop = "Tarro de Chuletas de Cerdo",
+	ItemName_Bottling.BottlingRabbitmeat = "Tarro de Carne de Conejo",
+	ItemName_Bottling.BottlingSmallanimalmeat = "Tarro con Carne de Animal Pequeño",
+	ItemName_Bottling.BottlingSmallbirdmeat = "Tarro con Carne de Pájaro",
+	ItemName_Bottling.BottlingSteak = "Tarro de Filetes",
+
+}

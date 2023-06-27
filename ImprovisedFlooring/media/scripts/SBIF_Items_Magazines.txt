@@ -1,0 +1,86 @@
+module ImprovisedFlooring
+{
+    imports 
+    {
+        Base
+    }
+
+    /* Nostalgia Magazine */
+    item IFMagazineEasterEgg {
+        weight = 0.1,
+        Type = Literature,
+        DisplayName = A Trip Down Memory Lane,
+        Icon = IFMagazine_Nostalgia,
+        TeachedRecipes = EasterEggNostalgia,
+        ReplaceOnUse = IFMagazineEasterEgg,
+        DisplayCategory = SkillBook,
+        StaticModel = Magazine,
+        WorldStaticModel = ImprovisedFlooring.Magazine_Nostalgia,
+    }
+
+    /* Franchise Magazine */
+    item IFMagazineFranchise {
+        weight = 0.1,
+        Type = Literature,
+        DisplayName = Franchise Flooring Specifications,
+        Icon = IFMagazine_Franchise,
+        TeachedRecipes = SpecialFossoilBlueFloor;SpecialFossoilWhiteFloor;SpecialGreenesCarpet;SpecialGreenesCarpet2;SpecialGreenesFloor;SpecialPileOCrepeFloor;SpecialPizzaWhirledFloor;SpecialSpiffoFloor;SpecialZippeeFloor1;SpecialZippeeFloor2,
+        ReplaceOnUse = IFMagazineFranchise,
+        DisplayCategory = SkillBook,
+        StaticModel = Magazine,
+        WorldStaticModel = ImprovisedFlooring.Magazine_Franchise,
+    }
+
+    /* Garden Magazine */
+    item IFMagazineGarden {
+        weight = 0.1,
+        Type = Literature,
+        DisplayName = Home and Garden,
+        Icon = IFMagazine_Garden,
+        TeachedRecipes = GardenPaverColorful;GardenPaverGrey;GardenPaverRed;GardenFakeGrass,
+        ReplaceOnUse = IFMagazineGarden,
+        DisplayCategory = SkillBook,
+        StaticModel = Magazine,
+        WorldStaticModel = ImprovisedFlooring.Magazine_Garden,
+    }
+
+    /* Industrial Magazine */
+    item IFMagazineIndustrial {
+        weight = 0.1,
+        Type = Literature,
+        DisplayName = Industrial flooring and design,
+        Icon = IFMagazine_Industrial,
+        TeachedRecipes = SpecialMallTileGrey;SpecialMallTileN;SpecialMallTileW;SpecialMallTileWhite;SpecialBarFloor;SpecialDinerFloor;SpecialDinerFloorGreen;SpecialMotelTile;SpecialPieStoreFloor;SpecialBowlingFloor,
+        ReplaceOnUse = IFMagazineIndustrial,
+        DisplayCategory = SkillBook,
+        StaticModel = Magazine,
+        WorldStaticModel = ImprovisedFlooring.Magazine_Industrial,
+    }
+
+    /* Tile Magazine */
+    item IFMagazineTiles {
+        weight = 0.1,
+        Type = Literature,
+        DisplayName = Dave Depot: Tile Catalog,
+        Icon = IFMagazine_Tiles,
+        TeachedRecipes = TilesBeigeCheckered;TilesBeige;TilesBeigeSmooth;TilesBlack;TilesBlackDiagonal;TilesBlueCheckered;TilesBrown;TilesBrownLarge;TilesDarkGrey;TilesDarkGreySmooth;TilesDarkGreySquares;TilesGreenDiagonal;TilesGreen;TilesGrey;TilesGreyCheckered;TilesGreyDiagonal;TilesGreyDiagonal2;TilesGreySmooth;TilesGreySquares;TilesPurple;TilesWhiteCheckered;TilesWhiteDiagonal;TilesWhiteSmooth;TilesWhite;TilesYellowCheckered;TilesYellowDiagonal;TilesYellow;TilesRed,
+        ReplaceOnUse = IFMagazineTiles,
+        DisplayCategory = SkillBook,
+        StaticModel = Magazine,
+        WorldStaticModel = ImprovisedFlooring.Magazine_Tiles,
+    }
+
+    /* Urban Magazine */
+    item IFMagazineUrban {
+        weight = 0.1,
+        Type = Literature,
+        DisplayName = Urban Walkways and Roads,
+        Icon = IFMagazine_Urban,
+        TeachedRecipes = UrbanSidewalk1;UrbanSidewalk2;UrbanSidewalk3;UrbanSidewalk4;UrbanRoad1;UrbanRoad2;UrbanRoad3;UrbanRoad4;UrbanRoad5;UrbanRoad6;UrbanRoad7;UrbanRoad8,
+        ReplaceOnUse = IFMagazineUrban,
+        DisplayCategory = SkillBook,
+        StaticModel = Magazine,
+        WorldStaticModel = ImprovisedFlooring.Magazine_Urban,
+    }
+
+}

@@ -1,0 +1,5 @@
+ContextMenu_TH = {
+	ContextMenu_Firetrail = "เส้นทางเพลิง",
+	ContextMenu_Firetrail_create = "สร้างเส้นทางเพลิง",
+	ContextMenu_Firetrail_ignite = "จุดไฟ",
+}

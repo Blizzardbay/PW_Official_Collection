@@ -1,0 +1,4 @@
+ContextMenu_RU = {
+	ContextMenu_PullDownM = "Тянуть вниз",
+	ContextMenu_PullUpM = "Надеть",
+}

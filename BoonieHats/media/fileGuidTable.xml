@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_BlackCamo_Back.xml</path>
+        <guid>6b51b148-1fac-4f6a-a37d-da17c98282b9</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_BlackCamo_Net.xml</path>
+        <guid>91291c0f-0078-4089-84dd-48257db39a2f</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_BlackCamo_Normal.xml</path>
+        <guid>601ca5a9-a0b5-4b74-a927-86730847ef51</guid>
+</files>
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_Cat_Back.xml</path>
+        <guid>ee1f4d2e-89df-431d-b233-202322a4f210</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_Cat_Net.xml</path>
+        <guid>fac36e34-03bd-4e4f-8655-800232f07a7e</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_Cat_Normal.xml</path>
+        <guid>5d4bf53a-9629-44e2-90b4-7ceb6724ebd6</guid>
+</files>
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_CatOrange_Back.xml</path>
+        <guid>16940ae0-9eb6-462b-b914-7ca93e48190d</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_CatOrange_Net.xml</path>
+        <guid>da525a5c-30eb-4e7d-85d9-2dfd3fb86113</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_CatOrange_Normal.xml</path>
+        <guid>f5835a72-97dc-427a-8a5c-aa4dd82c1258</guid>
+</files>
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_CatWhite_Back.xml</path>
+        <guid>f19d392d-d40c-4eab-be68-2e736a4c0369</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_CatWhite_Net.xml</path>
+        <guid>12967398-bc73-416a-839a-ee644ecced32</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_CatWhite_Normal.xml</path>
+        <guid>ee0d21de-7a65-4963-93ba-0db84fed201c</guid>
+</files>
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_ChocChip_Normal.xml</path>
+        <guid>e8203097-5ff6-4364-b34e-2fa60b956ea0</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_ChocChip_Net.xml</path>
+        <guid>718e68d1-1f7d-45c8-9dcd-bddf6499a84d</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_ChocChip_NormalBack.xml</path>
+        <guid>2a1111aa-a7bd-4848-bc69-cd253de4982c</guid>
+</files>
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DarkBlue_Back.xml</path>
+        <guid>b8dbbaaa-5644-480a-8e53-bbfaa412f2ff</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DarkBlue_Net.xml</path>
+        <guid>39bd3d64-1524-4f9f-8f6e-c58b895e7c9e</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DarkBlue_Normal.xml</path>
+        <guid>1f5b67f6-5f83-4afd-a69e-32c15f016a67</guid>
+</files>
+
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_Default_Back.xml</path>
+        <guid>c56b5507-326c-4ffd-9d09-74cc57c6a169</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_Default_Net.xml</path>
+        <guid>07a60305-53da-48ff-94fd-24bf3dc40314</guid>
+</files>
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DesertColored_Back.xml</path>
+        <guid>a5657b74-592d-4c0d-8dd4-db1d4abe7071</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DesertColored_Net.xml</path>
+        <guid>d44106fe-08d2-4ea8-8324-a9435697b99c</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DesertColored_Normal.xml</path>
+        <guid>9110ffba-b93e-4dfc-94a7-1257e3910e77</guid>
+</files>
+
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DesertNight_Back.xml</path>
+        <guid>b21918d5-612c-4e43-a1ad-ccdc002121e4</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DesertNight_Net.xml</path>
+        <guid>98cb3e95-cb99-499d-bc94-095c95fc2cab</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DesertNight_Normal.xml</path>
+        <guid>b4a50364-07ac-4602-a221-a8918449bdbf</guid>
+</files>
+
+
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DesertNightDark_Back.xml</path>
+        <guid>6640d811-b851-40b5-b13e-31a947d6176d</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DesertNightDark_Net.xml</path>
+        <guid>4cdfbf74-6d8f-4ccb-a3f1-12c102485f2b</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DesertNightDark_Normal.xml</path>
+        <guid>b5d148c1-9f54-4402-9833-a508709cd4b2</guid>
+</files>
+
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DesertTan_Back.xml</path>
+        <guid>787ee090-88d6-436d-92f2-f6ae87e76c93</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DesertTan_Net.xml</path>
+        <guid>01d6b3a7-855d-440f-b025-7f0b276c285c</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DesertTan_Normal.xml</path>
+        <guid>326b2b34-a332-4299-9e70-437d701f39c1</guid>
+</files>
+
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DigitalCamo_Back.xml</path>
+        <guid>cf97bb5a-7d2d-443e-9968-d3798d26497c</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DigitalCamo_Net.xml</path>
+        <guid>df933c02-3295-4868-9d77-d730a5f100a7</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DigitalCamo_Normal.xml</path>
+        <guid>edc90b1c-1169-4781-8ee4-afadc4359b6f</guid>
+</files>
+
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DigitalCamoBlue_Back.xml</path>
+        <guid>66f6215b-b13a-46b6-ae3c-552930a825ed</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DigitalCamoBlue_Net.xml</path>
+        <guid>ed07ffc5-d073-41ce-aae7-247407ad1542</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DigitalCamoBlue_Normal.xml</path>
+        <guid>0fb900ca-0885-49a9-b95e-f64c2fa06794</guid>
+</files>
+
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DigitalCamoGreen_Back.xml</path>
+        <guid>87bbdfdf-5bbf-4c0c-b1b2-3040a943ce6e</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DigitalCamoGreen_Net.xml</path>
+        <guid>a591d46e-bbce-4696-910e-c4752fb9a69a</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DigitalCamoGreen_Normal.xml</path>
+        <guid>f8f26a5b-acfd-404d-95fd-5c0a3859085e</guid>
+</files>
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_MarpatCamo_Back.xml</path>
+        <guid>78d03b15-13d3-43d9-925c-ac2054f30873</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_MarpatCamo_Net.xml</path>
+        <guid>fa63d708-e572-4c2c-bcaf-3022913ec831</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_MarpatCamo_Normal.xml</path>
+        <guid>41f8fe3e-1ddb-43a4-b59a-4512bfb3d7e4</guid>
+</files>
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_MultiCamCamo_Back.xml</path>
+        <guid>b71ec1f6-69ca-4675-9120-109f39215aa8</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_MultiCamCamo_Net.xml</path>
+        <guid>3806c38e-20b3-4fca-8028-ac5cf4110a38</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_MultiCamCamo_Normal.xml</path>
+        <guid>48e1e8c8-be60-43af-8f65-17e29effbb85</guid>
+</files>
+
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_UCP_Back.xml</path>
+        <guid>63c090c6-4d8a-4f95-9238-62ab8ebc483c</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_UCP_Net.xml</path>
+        <guid>9099615b-b0d8-4250-a93d-4b3c0f86903d</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_UCP_Normal.xml</path>
+        <guid>78ca08de-028e-4af4-965b-c5a6496bd456</guid>
+</files>
+
+
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_UrbanCamo_Back.xml</path>
+        <guid>b15c47f9-e772-4b93-a560-4a57463c96d8</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_UrbanCamo_Net.xml</path>
+        <guid>872ccbf5-366e-43f2-b9f5-f51327dec038</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_UrbanCamo_Normal.xml</path>
+        <guid>b185fe6e-fc09-4022-a349-d160f2bd975d</guid>
+</files>
+
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_UrbanPixelated_Back.xml</path>
+        <guid>d3f0181f-e25f-4b5d-a388-e8d1d7ffbf0e</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_UrbanPixelated_Net.xml</path>
+        <guid>c4ff1afa-bd3d-4cf6-963a-77a21342d95f</guid>
+</files>
+<files>
+      	<path>media/clothing/clothingItems/BonnieHat_UrbanPixelated_Normal.xml</path>
+      	<guid>879217d1-ccf4-4953-bf8b-a4ab6f2c3431</guid>
+</files>
+
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_UsmcDesert_Back.xml</path>
+        <guid>d452b5a7-2bae-4db0-a6c0-8c60bc07f52d</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_UsmcDesert_Net.xml</path>
+        <guid>75c5a3fb-278c-4386-93eb-66efa6ee00f3</guid>
+</files>
+<files>
+      	<path>media/clothing/clothingItems/BonnieHat_UsmcDesert_Normal.xml</path>
+      	<guid>2ab6f64f-84e7-4d8d-9094-f6fd6125bf41</guid>
+</files>
+
+
+
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_BlackCamo_NetBack.xml</path>
+        <guid>91fd4c84-7a7a-4a57-bcb2-3625a3197289</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_Cat_NetBack.xml</path>
+        <guid>c5353716-0b23-4c8c-a65e-cf8b7e87b1b4</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_CatOrange_NetBack.xml</path>
+        <guid>40cdb718-5f3c-4cbe-8ffd-44e950898e41</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_CatWhite_NetBack.xml</path>
+        <guid>223b62e1-fd42-4630-8f0f-0abdce45320b</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_ChocChip_NetBack.xml</path>
+        <guid>db023758-b59d-484a-aaef-8eb2a4a98291</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DarkBlue_NetBack.xml</path>
+        <guid>a0a30246-1df6-4929-8778-f4820dbbd7a9</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_Default_NetBack.xml</path>
+        <guid>d2a77fd8-03b0-4781-a3be-f47290d1ed16</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DesertColored_NetBack.xml</path>
+        <guid>a0b7e710-3200-4cc0-ba37-eed3befaf25e</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DesertNight_NetBack.xml</path>
+        <guid>8e12a6e3-65d7-4a46-a1ff-a7f9312c5795</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DesertNightDark_NetBack.xml</path>
+        <guid>bb671fbd-60b4-4810-9a45-b11167c3c76b</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DesertTan_NetBack.xml</path>
+        <guid>6c08829e-b549-467c-893f-4b46c51d2ac9</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DigitalCamo_NetBack.xml</path>
+        <guid>f2441a4a-9d95-41e8-8f6c-c2c52297d4b8</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DigitalCamoBlue_NetBack.xml</path>
+        <guid>63a01376-3828-490c-9eb1-399513ef28f2</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_DigitalCamoGreen_NetBack.xml</path>
+        <guid>f28dea6c-d94b-470f-b60b-9876e4fc86ed</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_MarpatCamo_NetBack.xml</path>
+        <guid>ca15376c-1ae8-4eff-9149-557fc0187dd0</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_MultiCamCamo_NetBack.xml</path>
+        <guid>dcf47b35-4d82-4b99-a8a5-e6b541e70972</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_UCP_NetBack.xml</path>
+        <guid>fe15eb48-99d4-46be-a67f-529a128cf237</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_UrbanCamo_NetBack.xml</path>
+        <guid>b391f826-5607-432e-a427-81a9f0a533fb</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_UrbanPixelated_NetBack.xml</path>
+        <guid>19ae6269-aefd-4290-98a9-c88e38c45893</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_UsmcDesert_NetBack.xml</path>
+        <guid>a3a97dff-54f1-4a4a-9e41-f3a26a9c897a</guid>
+</files>
+
+
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_Captain_Back.xml</path>
+        <guid>26509c02-c7f0-441c-9cd9-1eb28a2e445c</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_Captain_Net.xml</path>
+        <guid>faadd592-8b68-4ab2-960a-74cbc9800f97</guid>
+</files>
+<files>
+      	<path>media/clothing/clothingItems/BonnieHat_Captain_Normal.xml</path>
+      	<guid>2cb4ff99-9ca0-45bf-ab7c-a368106a1bce</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_Captain_NetBack.xml</path>
+        <guid>f61cffe6-bcfd-4725-a1cb-9acd5949c2fb</guid>
+</files>
+
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_White_Back.xml</path>
+        <guid>bb8a4bbc-88d4-468c-a780-d402cd50a84c</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_White_Net.xml</path>
+        <guid>32d06416-9d77-4022-a531-db6501500976</guid>
+</files>
+<files>
+      	<path>media/clothing/clothingItems/BonnieHat_White_Normal.xml</path>
+      	<guid>028be53b-602d-4983-a0dc-864d54d2a92e</guid>
+</files>
+<files>
+        <path>media/clothing/clothingItems/BonnieHat_White_NetBack.xml</path>
+        <guid>4bde1fd9-1c95-4e65-8dc5-0227b9e90d9e</guid>
+</files>
+
+</fileGuidTable>

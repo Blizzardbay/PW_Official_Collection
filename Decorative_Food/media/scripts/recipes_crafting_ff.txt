@@ -1,0 +1,16 @@
+module FakeFood{
+    imports{
+        Base
+    }
+
+    recipe Make Bucket of Paper Mache {
+        Newspaper/Magazine/HottieZ/ComicBook/Book/ToiletPaper/Notebook/Journal/SheetPaper2=2,
+        Water=2,
+        Glue=1,
+        BucketEmpty,
+
+        Result:BucketPaperMache,
+        Time:200.0,
+        Category:Carpentry
+    }
+}

@@ -1,0 +1,3 @@
+Recipes_CN = {
+	Recipe_Learn_Clothing_Design = "学习服装设计"
+}

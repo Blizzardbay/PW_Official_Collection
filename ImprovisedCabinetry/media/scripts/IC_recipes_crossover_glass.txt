@@ -1,0 +1,63 @@
+module ImprovisedCabinetry {
+    imports {
+        Base
+    }
+
+    recipe ICMakeCabinetImprovisedGlass1 {
+        keep BlowTorch=2,
+        WeldingRods=6,
+        keep [Recipe.GetItemTypes.WeldingMask],
+        MetalPipe=2,
+        SheetMetal=1,
+        ImprovisedGlass.GlassPane=4,
+        Result: Moveables.location_shop_generic_01_103,
+        SkillRequired:MetalWelding=7,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BlowTorchFloor,
+        Prop1: Blowtorch,
+        Prop2: MetalBar,
+        Sound: BlowTorch,
+        NeedToBeLearn: True,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPMetalCabinet,
+    }
+
+    recipe ICMakeCabinetImprovisedGlass1Corner {
+        keep BlowTorch=2,
+        keep [Recipe.GetItemTypes.WeldingMask],
+        WeldingRods=6,
+        MetalPipe=2,
+        SheetMetal=1,
+        ImprovisedGlass.GlassPane=4,
+        Result: Moveables.location_shop_generic_01_102,
+        SkillRequired:MetalWelding=7,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BlowTorchFloor,
+        Prop1: Blowtorch,
+        Prop2: MetalBar,
+        Sound: BlowTorch,
+        NeedToBeLearn: True,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPMetalCabinet,
+    }
+
+    recipe ICMakeCabinetImprovisedGlass2 {
+        keep BlowTorch=2,
+        WeldingRods=6,
+        keep [Recipe.GetItemTypes.WeldingMask],
+        MetalPipe=2,
+        SheetMetal=1,
+        ImprovisedGlass.GlassPane=4,
+        Result: Moveables.location_entertainment_theatre_01_7,
+        SkillRequired:MetalWelding=7,
+        Time: 240.0,
+        Category:Cabinets,
+        AnimNode: BlowTorchFloor,
+        Prop1: Blowtorch,
+        Prop2: MetalBar,
+        Sound: BlowTorch,
+        NeedToBeLearn: True,
+        OnGiveXP:Recipe.OnGiveXP.ImprovisedCabinetry_XPMetalCabinet,
+    }
+
+}

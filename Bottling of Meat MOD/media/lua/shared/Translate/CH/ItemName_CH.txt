@@ -1,0 +1,16 @@
+ItemName_CH = {
+
+	-- Bottling Meat MOD
+	-- Translated by Cleave
+
+	ItemName_Bottling.BottlingChicken = "¤@ÅøÂû¦×",
+	ItemName_Bottling.BottlingFrogMeat = "¤@ÅøµE×",
+	ItemName_Bottling.BottlingMeatPatty = "¤@Åø¦×»E,
+	ItemName_Bottling.BottlingMuttonChop = "¤@Åø¦Ï±Æ",
+	ItemName_Bottling.BottlingPorkChop = "¤@Åø½Ş±Æ",
+	ItemName_Bottling.BottlingRabbitmeat = "¤@Åø¨ß¦×",
+	ItemName_Bottling.BottlingSmallanimalmeat = "¤@Åø°Êª«¦×",
+	ItemName_Bottling.BottlingSmallbirdmeat = "¤@Åø­¸¸V¦×",
+	ItemName_Bottling.BottlingSteak = "¤@Åø¤û±Æ",
+
+}

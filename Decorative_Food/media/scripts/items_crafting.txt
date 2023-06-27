@@ -1,0 +1,21 @@
+module FakeFood{
+    imports{
+        Base
+    }
+
+    item BucketPaperMache{
+        DisplayName = Bucket of Paper Mache,
+        DisplayCategory = Material,
+		Type = Drainable,
+        Weight = 3.0,
+        Icon = BucketPaperMache,
+        UseDelta = 0.1,
+		UseWhileEquipped = FALSE,        
+		ReplaceOnDeplete = BucketEmpty,
+		StaticModel = Bucket,
+		WorldStaticModel = BucketFullWater_Ground,
+        ConsolidateOption = ContextMenu_Merge,
+        Tooltip = Tooltip_FixItems,
+    }
+
+}

@@ -1,0 +1,94 @@
+
+function FindAppliance(player, Appliance)
+    --print("find worksbench")
+    local station = nil
+    local CustomName = nil
+    local cell = player:getCell() -- the cell wont change. no need to getWorld():getCell() every step of the loop
+    local x, y, z = player:getX(), player:getY(), player:getZ()
+    local xx, yy, zz
+    for xx =-1,1 do -- no rule says we need to start at index 1. skip the funky math
+
+        for yy =-1,1 do
+
+            local square = cell:getGridSquare(x+xx, y+yy, z)
+            if square then
+
+                local objects = square:getObjects()
+
+                for index=0, objects:size()-1 do
+                    local object = objects:get(index)
+                    
+                    
+                    if object:getProperties():Val("CustomName") then
+                        CustomName = object:getProperties():Val("CustomName")
+                        if CustomName:contains(Appliance) or Appliance:contains(CustomName) then
+                            station = object
+                            return station
+                        end
+                    end
+                end
+                
+            end
+        end
+    end
+    return station
+end
+
+function FindWorkbench(player, workbench)
+	local station = nil
+	local cell = player:getCell() 
+	local x, y, z = player:getX(), player:getY(), player:getZ()
+	local xx, yy, zz
+	for xx =-1,1 do 
+		for yy =-1,1 do
+			local square = cell:getGridSquare(x+xx, y+yy, z)
+			if square then
+				local objects = square:getObjects()
+				for index=0, objects:size()-1 do
+					local object = objects:get(index)					
+					if object:getName() == workbench then
+						if station == nil then station = object end
+						-- elseif station then
+							-- square1 = object:getSquare()
+							-- square2 = station:getSquare()
+							-- if getSpecificPlayer(0):DistoTo(station)
+							-- > getSpecificPlayer(0):DistoTo(object) then
+								-- station = object
+							-- end
+						-- end						
+					end
+				end				
+			end
+		end
+	end
+	return station
+end
+function FindWorkbench_Container(player, workbench)
+	local station = nil
+	local cell = player:getCell() 
+	local x, y, z = player:getX(), player:getY(), player:getZ()
+	local xx, yy, zz
+	for xx =-1,1 do 
+		for yy =-1,1 do
+			local square = cell:getGridSquare(x+xx, y+yy, z)
+			if square then
+				local objects = square:getObjects()
+				for index=0, objects:size()-1 do
+					local object = objects:get(index)					
+					if object:getName() == workbench and object:getContainer() then
+						if station == nil then station = object end
+						-- elseif station then
+							-- square1 = object:getSquare()
+							-- square2 = station:getSquare()
+							-- if getSpecificPlayer(0):DistoTo(station)
+							-- > getSpecificPlayer(0):DistoTo(object) then
+								-- station = object
+							-- end
+						-- end						
+					end
+				end				
+			end
+		end
+	end
+	return station
+end

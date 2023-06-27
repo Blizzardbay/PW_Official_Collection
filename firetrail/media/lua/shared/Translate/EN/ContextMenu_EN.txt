@@ -1,0 +1,5 @@
+ContextMenu_EN = {
+	ContextMenu_Firetrail = "Fire trail",
+	ContextMenu_Firetrail_create = "Create trail",
+	ContextMenu_Firetrail_ignite = "Start fire",
+}

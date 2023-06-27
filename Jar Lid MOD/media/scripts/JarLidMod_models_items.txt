@@ -1,0 +1,18 @@
+
+/*** Jar Lid MOD add item ***/
+
+/*** 2022-01-04 Version 2.02 ***/
+
+module Base
+{
+
+	model Box_JarLid
+	{
+
+        mesh = WorldItems/Box_Jar_Lid,
+        texture = WorldItems/Box_Jar_Lid,
+        scale = 0.4,
+
+	}
+
+}

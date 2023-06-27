@@ -1,0 +1,337 @@
+module SKL
+{
+	imports
+	{
+		Base
+	}
+
+/*========== NEW ITEMS ========================================================================*/
+
+item DairyCookingMag
+{
+	Type                = Literature,
+    DisplayCategory     = SkillBook,
+	DisplayName         = Good Cooking Magazine,
+	Icon                = DairyMag,
+	Weight              = 0.1,
+	TeachedRecipes      = Make Butter;Prepare Cheese;Prepare Yogurt,
+	ReplaceOnUse        = DairyCookingMag,
+    StaticModel         = Magazine,
+    WorldStaticModel    = MagazineGround,
+}
+
+item Strainer
+{
+	Type                = Normal,
+    DisplayCategory     = Cooking,
+	DisplayName         = Strainer,
+	Icon                = Strainer,
+	Weight              = 0.5,	
+	MetalValue          = 15,
+}
+
+item PowderedMilk
+{
+    Type                = Food,
+    FoodType            = NoExplicit,
+    DisplayCategory     = Food,
+    DisplayName         = Powdered Milk,
+    Icon                = PowderedMilk,
+    Weight              = 1.0,
+    
+    HungerChange        = -30,
+	ThirstChange        = 50,
+	Calories            = 110,
+	Carbohydrates       = 13,
+	Proteins            = 8,
+	Lipids              = 2.5,
+    
+    UseWhileEquipped    = FALSE,
+    Packaged            = TRUE,
+
+	EvolvedRecipe       = HotDrink:2;HotDrinkRed:2;HotDrinkWhite:2;HotDrinkSpiffo:2;HotDrinkTea:2, 
+
+    WorldStaticModel    = CanOfOats,
+}
+
+item MilkJar
+{
+	Type                = Food,
+    FoodType            = NoExplicit,
+    DisplayCategory     = Food,
+	DisplayName         = Jar of Milk,
+	Icon                = MilkJar,
+    Weight              = 1.0,
+	ReplaceOnUse        = EmptyJar,
+
+	DaysFresh           = 4,
+	DaysTotallyRotten   = 7,
+	HungerChange        = -10,
+	ThirstChange        = -100,
+	Calories            = 110,
+	Carbohydrates       = 13,
+	Proteins            = 8,
+	Lipids              = 2.5,
+	
+	Packaged            = TRUE,
+	CantBeFrozen        = TRUE,
+    AlwaysWelcomeGift	= TRUE,
+	
+	CustomContextMenu   = Drink,
+	CustomEatSound      = DrinkingFromBottleGlass,
+	
+	EvolvedRecipe       = HotDrink:2;HotDrinkRed:2;HotDrinkWhite:2;HotDrinkSpiffo:2;HotDrinkTea:2,
+	 
+    StaticModel         = EmptyJar,
+    WorldStaticModel    = EmptyJar,
+}
+
+item MilkWaterBottle
+{
+	Type                = Food,
+    FoodType            = NoExplicit,
+    DisplayCategory     = Food,
+	DisplayName         = Bottle of Milk,
+	Icon                = MilkWaterBottle,
+	Weight              = 0.8,
+    ReplaceOnUse        = WaterBottleEmpty,
+
+	DaysFresh           = 4,
+	DaysTotallyRotten   = 7,
+	HungerChange        = -10,
+	ThirstChange        = -100,
+	Calories            = 110,
+	Carbohydrates       = 13,
+	Proteins            = 8,
+	Lipids              = 2.5,
+	
+	Packaged            = TRUE,
+	CantBeFrozen        = TRUE,
+    AlwaysWelcomeGift	= TRUE,
+	
+	CustomContextMenu   = Drink,
+	CustomEatSound      = DrinkingFromBottlePlastic,
+    EatType             = bottle,
+	
+	EvolvedRecipe       = HotDrink:2;HotDrinkRed:2;HotDrinkWhite:2;HotDrinkSpiffo:2;HotDrinkTea:2,
+
+    StaticModel         = WaterBottle,
+    WorldStaticModel    = WaterBottleFull,
+}
+
+item MilkPopBottle
+{
+	Type                = Food,
+    FoodType            = NoExplicit,
+    DisplayCategory     = Food,
+	DisplayName         = Bottle of Milk,
+	Icon                = MilkPopBottle,
+    Weight              = 0.8,
+	ReplaceOnUse        = PopBottleEmpty,
+
+	DaysFresh           = 4,
+	DaysTotallyRotten   = 7,
+	HungerChange        = -10,
+	ThirstChange        = -100,
+	Calories            = 110,
+	Carbohydrates       = 13,
+	Proteins            = 8,
+	Lipids              = 2.5,
+	
+	Packaged            = TRUE,
+	CantBeFrozen        = TRUE,
+    AlwaysWelcomeGift	= TRUE,
+	 
+    CustomContextMenu   = Drink,
+	CustomEatSound      = DrinkingFromBottlePlastic,
+    EatType             = bottle,
+    
+    EvolvedRecipe       = HotDrink:2;HotDrinkRed:2;HotDrinkWhite:2;HotDrinkSpiffo:2;HotDrinkTea:2,
+    
+    StaticModel         = PopBottle,
+    WorldStaticModel    = PopBottleWorld,
+}
+
+item CheesePrep
+{
+	Type                = Food,
+    DisplayCategory     = Food,
+	DisplayName         = Cheese Preparation,
+	Icon                = DairyPan,
+	ReplaceOnUse        = Saucepan,
+	Weight              = 3.0,
+	
+	DaysFresh           = 3,
+	DaysTotallyRotten   = 5,
+	
+    UnhappyChange       = 20,
+	HungerChange        = -10,
+    ThirstChange        = 10,
+	
+    Calories            = 110,
+	Carbohydrates       = 13,
+	Proteins            = 8,
+	Lipids              = 2.5,
+	
+	IsCookable          = TRUE,
+	DangerousUncooked   = FALSE,
+    BadInMicrowave      = TRUE,
+    MinutesToBurn       = 60,
+    MinutesToCook       = 30,
+    CookingSound        = BoilingFood,  
+    WorldStaticModel    = SaucePanPasta,
+}
+
+item YogurtCulture
+{
+	Type                = Drainable,
+    DisplayCategory     = Cooking,
+	DisplayName         = Yogurt Culture,
+	Icon                = YogurtCulture,
+	Weight              = 0.1,	
+	UseDelta            = 0.2,
+	UseWhileEquipped    = FALSE,  
+    
+    WorldStaticModel    = Yeast,
+}
+
+item YogurtPrep
+{
+	Type                = Food,
+    DisplayCategory     = Food,
+	DisplayName         = Yogurt Preparation,
+	Icon                = DairyPan,
+	ReplaceOnUse        = Saucepan,
+	Weight              = 3.0,
+	
+	DaysFresh           = 3,
+	DaysTotallyRotten   = 5,
+	
+    UnhappyChange       = 20,
+	HungerChange        = -10,
+    ThirstChange        = 10,
+	
+    Calories            = 110,
+	Carbohydrates       = 13,
+	Proteins            = 8,
+	Lipids              = 2.5,
+	
+	IsCookable          = TRUE,
+	DangerousUncooked   = FALSE,
+    BadInMicrowave      = TRUE,
+    MinutesToBurn       = 60,
+    MinutesToCook       = 30,
+    CookingSound        = BoilingFood,  
+    
+    WorldStaticModel    = SaucePanRice,
+}
+
+item YogurtJar
+{
+	Type                = Food,
+    FoodType            = NoExplicit,
+    DisplayCategory     = Food,
+	DisplayName         = Jar of Yogurt,
+	Icon                = YogurtJar,
+	ReplaceOnUse        = EmptyJar,	
+	Weight              = 0.5,
+		
+	DaysFresh           = 7,
+	DaysTotallyRotten   = 14,	
+	HungerChange        = -10,
+	Calories            = 110,
+	Carbohydrates       = 13,
+	Proteins            = 8,
+	Lipids              = 2.5,
+	
+	Spice               = TRUE,
+    
+	EvolvedRecipe       = FruitSalad:2;Salad:2,
+    
+    EatType             = popcan,
+    
+    StaticModel         = EmptyJar,
+    WorldStaticModel    = EmptyJar,
+}
+
+item YogurtBowl
+{
+	Type                = Food,
+    FoodType            = NoExplicit,
+    DisplayCategory     = Food,
+	DisplayName         = Bowl of Yogurt,
+	Icon                = BowlFull_Water,
+	ReplaceOnUse        = Bowl,	
+	Weight              = 0.8,
+		
+	DaysFresh           = 7,
+	DaysTotallyRotten   = 14,	
+	HungerChange        = -10,
+	Calories            = 110,
+	Carbohydrates       = 13,
+	Proteins            = 8,
+	Lipids              = 2.5,
+	
+	Spice               = TRUE,
+    
+	EvolvedRecipe       = FruitSalad:2;Salad:2,
+    
+    EatType             = 2hand,
+    
+    StaticModel         = Bowl,
+    WorldStaticModel    = BowlWater_Ground,
+}
+
+/*========== UPDATED ITEMS ====================================================================*/
+
+item Butter
+{
+	Type                = Food,
+    FoodType            = NoExplicit,
+    DisplayCategory     = Food,
+	DisplayName         = Butter,
+	Icon                = Butter,
+	Weight              = 0.3,
+	
+	HungerChange        = -25,
+	UnhappyChange       = 20,
+	
+	Calories            = 800,
+	Carbohydrates       = 0,
+	Proteins            = 1,
+	Lipids              = 80,
+
+    EvolvedRecipe = Sandwich:5;Sandwich Baguette:5;Stir fry Griddle Pan:5;Stir fry:5;Roasted Vegetables:5;PastaPot:5;PastaPan:5;Taco:5;Burrito:5,
+
+	Packaged            = TRUE,
+    WorldStaticModel    = Butter,
+    Override            : true,
+}
+
+item Yoghurt
+{
+	Type                = Food,
+    FoodType            = NoExplicit,
+    DisplayCategory     = Food,
+	DisplayName         = Yogurt,
+	Icon                = Yoghurt,
+	Weight              = 0.3,
+	
+	DaysFresh           = 10,
+	DaysTotallyRotten   = 15,
+	
+	HungerChange        = -10,
+	
+	Calories            = 110,
+	Carbohydrates       = 13,
+	Proteins            = 8,
+	Lipids              = 2.5,
+
+	Packaged            = TRUE,
+	Spice               = TRUE,
+	EvolvedRecipe       = FruitSalad:5;Salad:5,
+    
+    WorldStaticModel    = Yogurt,
+    Override            : true,
+}
+}

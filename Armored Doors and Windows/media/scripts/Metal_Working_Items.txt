@@ -1,0 +1,21 @@
+module Base
+{
+
+
+
+
+
+	item MetalworkStation
+	{
+		Weight = 40,
+		Type			= Moveable,
+		WorldObjectSprite	= MetalWork_0,
+		DisplayName = Metalwork Station,
+		Icon			=	MetalworkStation,
+		WorkbenchType = Metalwork Station,
+	}
+
+
+
+
+}

@@ -1,0 +1,342 @@
+module CAR {
+    imports 
+	{
+        Base
+    }
+    item 7upBox
+	{
+		DisplayName                 = 12 Pack of 7up,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = 7upBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = 7upBox,
+		Tags                        = HasMetal,
+	}
+	item AriZonaBox
+	{
+		DisplayName                 = 12 Pack of AriZona,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = AriZonaBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = AriZonaBox,
+		Tags                        = HasMetal,
+	}
+
+	item RootbeerBox
+	{
+		DisplayName                 = 12 Pack of Root Beer,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = RootbeerBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = RootbeerBox,
+		Tags                        = HasMetal,
+	}
+
+	item BriskBox
+	{
+		DisplayName                 = 12 Pack of Brisk,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = BriskBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = BriskBox,
+		Tags                        = HasMetal,
+	}
+
+	item CherryCokeBox
+	{
+		DisplayName                 = 12 Pack of Cherry Coke,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = CherryCokeBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = CherryCokeBox,
+		Tags                        = HasMetal,
+	}
+
+	item CokeBox
+	{
+		DisplayName                 = 12 Pack of Coca-Cola,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = CokeBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = CokeBox,
+		Tags                        = HasMetal,
+	}
+
+	item DietCokeBox
+	{
+		DisplayName                 = 12 Pack of Diet Coke,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = DietCokeBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = DietCokeBox,
+		Tags                        = HasMetal,
+	}
+
+	item DietPepsiBox
+	{
+		DisplayName                 = 12 Pack of Diet Pepsi,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = DietPepsiBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = DietPepsiBox,
+		Tags                        = HasMetal,
+	}
+
+	item DrPepperBox
+	{
+		DisplayName                 = 12 Pack of Dr Pepper,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = DrPepperBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = DrPepperBox,
+		Tags                        = HasMetal,
+	}
+
+	item FantaGrapeBox
+	{
+		DisplayName                 = 12 Pack of Fanta Grape,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = FantaGrapeBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = FantaGrapeBox,
+		Tags                        = HasMetal,
+	}
+
+	item FantaOrangeBox
+	{
+		DisplayName                 = 12 Pack of Fanta Orange,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = FantaOrangeBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = FantaOrangeBox,
+		Tags                        = HasMetal,
+	}
+
+	item FantaPineappleBox
+	{
+		DisplayName                 = 12 Pack of Fanta Pineapple,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = FantaPineappleBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = FantaPineappleBox,
+		Tags                        = HasMetal,
+	}
+
+	item FantaRedBox
+	{
+		DisplayName                 = 12 Pack of Fanta Red,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = FantaRedBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = FantaRedBox,
+		Tags                        = HasMetal,
+	}
+
+	item FantaStrawberryBox
+	{
+		DisplayName                 = 12 Pack of Fanta Strawberry,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = FantaStrawberryBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = FantaStrawberryBox,
+		Tags                        = HasMetal,
+	}
+
+	item GatoradeBox
+	{
+		DisplayName                 = 12 Pack of Gatorade,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = GatoradeBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = GatoradeBox,
+		Tags                        = HasMetal,
+	}
+
+	item JoltBox
+	{
+		DisplayName                 = 12 Pack of Jolt,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = JoltBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = JoltBox,
+		Tags                        = HasMetal,
+	}
+
+	item MinuteMaidBox
+	{
+		DisplayName                 = 12 Pack of Minute Maid,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = MinuteMaidBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = MinuteMaidBox,
+		Tags                        = HasMetal,
+	}
+
+	item MountainDewBox
+	{
+		DisplayName                 = 12 Pack of Mountain Dew,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = MountainDewBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = MountainDewBox,
+		Tags                        = HasMetal,
+	}
+
+	item MrPibbBox
+	{
+		DisplayName                 = 12 Pack of Mr Pibb,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = MrPibbBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = MrPibbBox,
+		Tags                        = HasMetal,
+	}
+
+	item PepsiBox
+	{
+		DisplayName                 = 12 Pack of Pepsi,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = PepsiBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = PepsiBox,
+		Tags                        = HasMetal,
+	}
+
+	item RCColaBox
+	{
+		DisplayName                 = 12 Pack of RC Cola,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = RCColaBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = RCColaBox,
+		Tags                        = HasMetal,
+	}
+
+	item RedbullBox
+	{
+		DisplayName                 = 12 Pack of Red Bull,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = RedbullBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = RedbullBox,
+		Tags                        = HasMetal,
+	}
+
+	item SpriteBox
+	{
+		DisplayName                 = 12 Pack of Sprite,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = SpriteBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = SpriteBox,
+		Tags                        = HasMetal,
+	}
+
+	item TabBox
+	{
+		DisplayName                 = 12 Pack of Tab,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = TabBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = TabBox,
+		Tags                        = HasMetal,
+	}
+
+	item DrThunderBox
+	{
+		DisplayName                 = 12 Pack of Dr Thunder,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = DrThunderBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = DrThunderBox,
+		Tags                        = HasMetal,
+	}
+
+	item WelchBox
+	{
+		DisplayName                 = 12 Pack of Welch's Grape Soda,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = WelchBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = WelchBox,
+		Tags                        = HasMetal,
+	}
+}

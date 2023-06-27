@@ -1,0 +1,9 @@
+Moveables_RU = {
+    /* Overpower Motel Cabinets as the name collides with basic white counters */
+    Motel_Counter = "Стойка из мотеля",
+    Low_Motel_Counter = "Стойка из мотеля (Низкая)",
+
+    /* Overpower Fossoil Counters so that they're just called blue */
+    Fossoil_Counter = "Голубая стойка",
+    Fossoil_Corner_Counter = "Голубая угловая стойка",
+}

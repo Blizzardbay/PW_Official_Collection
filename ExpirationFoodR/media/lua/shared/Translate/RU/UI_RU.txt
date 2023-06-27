@@ -1,0 +1,17 @@
+UI_RU = {
+	UI_mod_fdxpr_days = "д",
+	UI_mod_fdxpr_hours = "ч",
+	UI_mod_fdxpr_mins = "м",
+	UI_mod_fdxpr_secs = "с",
+	UI_mod_fdxpr_stale = "Выдохнется за",
+	UI_mod_fdxpr_rotten = "Сгниёт за",
+	UI_mod_fdxpr_trait_name = "Дегустатор",
+	UI_mod_fdxpr_trait_description = "Вы точно определяете срок годности продуктов",
+	UI_mod_fdxpr_state = "Продукт:",
+	UI_mod_fdxpr_state_verygood = "свежайший",
+	UI_mod_fdxpr_state_good = "свежий",
+	UI_mod_fdxpr_state_ok = "годен",
+	UI_mod_fdxpr_state_rotting = "лежалый",
+	UI_mod_fdxpr_state_rotten = "стух",
+	UI_mod_fdxpr_state_nonperish = "без срока годности"
+}

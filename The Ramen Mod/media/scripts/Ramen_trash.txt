@@ -1,0 +1,199 @@
+module Ramen
+{
+	imports
+		{
+			Base
+		}
+		
+	/*FLATS*/
+	item RamenChickenFlatEmpty
+		{
+			Weight    			=	0.2,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Ramen Flat,
+			Icon 				=	RamenChickenFlatEmpty,
+			WorldStaticModel	=	RamenChickenFlatEmpty,
+		}
+
+	item RamenBeefFlatEmpty
+		{
+			Weight    			=	0.2,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Ramen Flat,
+			Icon 				=	RamenBeefFlatEmpty,
+			WorldStaticModel	=	RamenBeefFlatEmpty,
+		}
+
+	item RamenShrimpFlatEmpty
+		{
+			Weight    			=	0.2,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Ramen Flat,
+			Icon 				=	RamenShrimpFlatEmpty,
+			WorldStaticModel	=	RamenShrimpFlatEmpty,
+		}
+
+	item RamenCheeseFlatEmpty
+		{
+			Weight    			=	0.2,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Ramen Flat,
+			Icon 				=	RamenCheeseFlatEmpty,
+			WorldStaticModel	=	RamenCheeseFlatEmpty,
+		}
+
+	item RamenChiliFlatEmpty
+		{
+			Weight    			=	0.2,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Ramen Flat,
+			Icon 				=	RamenChiliFlatEmpty,
+			WorldStaticModel	=	RamenChiliFlatEmpty,
+		}
+
+	item RamenOrientalFlatEmpty
+		{
+			Weight    			=	0.2,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Ramen Flat,
+			Icon 				=	RamenOrientalFlatEmpty,
+			WorldStaticModel	=	RamenOrientalFlatEmpty,
+		}
+
+	item RamenPorkFlatEmpty
+		{
+			Weight    			=	0.2,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Pork Flat,
+			Icon 				=	RamenPorkFlatEmpty,
+			WorldStaticModel	=	RamenPorkFlatEmpty,
+		}
+
+	/*PACKS*/
+	item RamenChickenPackEmpty
+		{
+			Weight    			=	0.01,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Ramen Pack,
+			Icon 				=	RamenChickenPackEmpty,
+			WorldStaticModel	=	RamenChickenPackEmpty,
+		}
+
+	item RamenBeefPackEmpty
+		{
+			Weight    			=	0.01,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Ramen Pack,
+			Icon 				=	RamenBeefPackEmpty,
+			WorldStaticModel	=	RamenBeefPackEmpty,
+		}
+
+	item RamenShrimpPackEmpty
+		{
+			Weight    			=	0.01,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Ramen Pack,
+			Icon 				=	RamenShrimpPackEmpty,
+			WorldStaticModel	=	RamenShrimpPackEmpty,
+		}
+
+	item RamenCheesePackEmpty
+		{
+			Weight    			=	0.01,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Ramen Pack,
+			Icon 				=	RamenCheesePackEmpty,
+			WorldStaticModel	=	RamenCheesePackEmpty,
+		}
+
+	item RamenChiliPackEmpty
+		{
+			Weight    			=	0.01,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Ramen Pack,
+			Icon 				=	RamenChiliPackEmpty,
+			WorldStaticModel	=	RamenChiliPackEmpty,
+		}
+
+	item RamenOrientalPackEmpty
+		{
+			Weight    			=	0.01,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Ramen Pack,
+			Icon 				=	RamenOrientalPackEmpty,
+			WorldStaticModel	=	RamenOrientalPackEmpty,
+		}
+
+	item RamenPorkPackEmpty
+		{
+			Weight    			=	0.01,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Pork Pack,
+			Icon 				=	RamenPorkPackEmpty,
+			WorldStaticModel	=	RamenPorkPackEmpty,
+		}
+
+	/*FLAV PACKS*/
+	item RamenChickenFlavEmpty
+		{
+			Weight    			=	0.005,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Flavor Pack,
+			Icon 				=	RamenChickenFlavEmpty,
+			WorldStaticModel	=	RamenFoilPacket,
+		}
+
+	item RamenBeefFlavEmpty
+		{
+			Weight    			=	0.005,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Flavor Pack,
+			Icon 				=	RamenBeefFlavEmpty,
+			WorldStaticModel	=	RamenFoilPacket,
+		}
+
+	item RamenShrimpFlavEmpty
+		{
+			Weight    			=	0.005,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Flavor Pack,
+			Icon 				=	RamenShrimpFlavEmpty,
+			WorldStaticModel	=	RamenFoilPacket,
+		}
+
+	item RamenCheeseFlavEmpty
+		{
+			Weight    			=	0.005,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Flavor Pack,
+			Icon 				=	RamenCheeseFlavEmpty,
+			WorldStaticModel	=	RamenFoilPacket,
+		}
+
+	item RamenChiliFlavEmpty
+		{
+			Weight    			=	0.005,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Flavor Pack,
+			Icon 				=	RamenChiliFlavEmpty,
+			WorldStaticModel	=	RamenFoilPacket,
+		}
+
+	item RamenOrientalFlavEmpty
+		{
+			Weight    			=	0.005,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Flavor Pack,
+			Icon 				=	RamenOrientalFlavEmpty,
+			WorldStaticModel	=	RamenFoilPacket,
+		}
+
+	item RamenPorkFlavEmpty
+		{
+			Weight    			=	0.005,
+			Type    			=	Normal,
+			DisplayName 		= 	Empty Flavor Pack,
+			Icon 				=	RamenPorkFlavEmpty,
+			WorldStaticModel	=	RamenFoilPacket,
+		}
+}

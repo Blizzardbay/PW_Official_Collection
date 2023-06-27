@@ -1,0 +1,19 @@
+﻿ItemName_EN = {
+
+	-- Bottling of Meat MOD
+
+	ItemName_Bottling.BottlingChicken = "Jar of Chicken",
+	ItemName_Bottling.BottlingFrogMeat = "Jar of Frog Meat",
+	ItemName_Bottling.BottlingMeatPatty = "Jar of Meat Patty",
+	ItemName_Bottling.BottlingMuttonChop = "Jar of Mutton Chop",
+	ItemName_Bottling.BottlingPorkChop = "Jar of Pork Chop",
+	ItemName_Bottling.BottlingRabbitmeat = "Jar of Rabbit Meat",
+	ItemName_Bottling.BottlingSmallanimalmeat = "Jar of Small Animal Meat",
+	ItemName_Bottling.BottlingSmallbirdmeat = "Jar of Small Bird Meat",
+	ItemName_Bottling.BottlingSteak = "Jar of Steak",
+	ItemName_Bottling.BottlingBacon = "Jar of Bacon",
+	ItemName_Bottling.BottlingBaconBits = "Jar of Bacon Bits",
+	ItemName_Bottling.BottlingBaconRashers = "Jar of Bacon Rashers",
+	ItemName_Bottling.BottlingHam = "Jar of Ham",
+
+}

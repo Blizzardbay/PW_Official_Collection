@@ -1,0 +1,8 @@
+Recipe_EN = {
+
+	-- Jar Lid MOD
+
+	Recipe_Open_Box_of_Jar_Lid = "Open Box of Jar Lid",
+	Recipe_Place_Jar_Lid_in_Box = "Place Jar Lid in Box",
+
+}

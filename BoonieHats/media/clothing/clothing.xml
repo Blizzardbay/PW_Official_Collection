@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Adds zombie spawns-->
+<outfitManager>
+
+
+
+<m_MaleOutfits>
+		<m_Name>BonnieHat_Random</m_Name>
+		<m_Guid>30bc37b4-207b-4a2c-82b8-53f058f5d251</m_Guid>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>true</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!--BonnieHat White-->
+            		<itemGUID>4bde1fd9-1c95-4e65-8dc5-0227b9e90d9e</itemGUID> 
+        	</m_items>
+		<m_items> <!--Blue Navy Jacket-->
+			<itemGUID>0ab6a4b8-4dcf-4ee0-9e5a-c6304652568a</itemGUID> 	
+		</m_items>
+		<m_items> <!--T shirt-->
+            		<itemGUID>19af00e4-ed4d-49bc-a893-a4a3376fe6da</itemGUID> 
+        	</m_items>
+		<m_items> <!-- Blue Police Trousers-->
+			<itemGUID>01cfabba-f1eb-4d18-8259-2dca4d0af8e5</itemGUID> 	
+		</m_items>	
+		<m_items> <!-- Military Boots -->
+			<itemGUID>227cb2d5-05a5-44ed-872d-ac4ca16e80bc</itemGUID>
+		</m_items>
+		<m_items> <!-- Holster -->
+			<itemGUID>88f11c9e-e717-446c-82ec-f749320df25a</itemGUID>
+		</m_items>	
+</m_MaleOutfits>
+<m_FemaleOutfits>
+		<m_Name>BonnieHat_Random</m_Name>
+		<m_Guid>30bc37b4-207b-4a2c-82b8-53f058f5d251</m_Guid>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>true</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!--BonnieHat White-->
+            		<itemGUID>4bde1fd9-1c95-4e65-8dc5-0227b9e90d9e</itemGUID> 
+        	</m_items>
+		<m_items> <!--Blue Navy Jacket-->
+			<itemGUID>0ab6a4b8-4dcf-4ee0-9e5a-c6304652568a</itemGUID> 	
+		</m_items>
+		<m_items> <!-- Blue Formal Shirt -->
+			<itemGUID>b95a969d-4861-465f-a3c3-413c736cd2db</itemGUID>
+		</m_items>	
+		<m_items> <!-- Blue Police Trousers-->
+			<itemGUID>01cfabba-f1eb-4d18-8259-2dca4d0af8e5</itemGUID> 	
+		</m_items>	
+		<m_items> <!-- Military Boots -->
+			<itemGUID>227cb2d5-05a5-44ed-872d-ac4ca16e80bc</itemGUID>
+		</m_items>
+		<m_items> <!-- Holster -->
+			<itemGUID>88f11c9e-e717-446c-82ec-f749320df25a</itemGUID>
+		</m_items>
+</m_FemaleOutfits>
+
+
+
+<m_MaleOutfits>
+		<m_Name>BonnieHat_Marpat</m_Name>
+		<m_Guid>af2c54a5-570c-46c4-937c-cb6bc4dfa796</m_Guid>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>true</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!--BonnieHat Marpat Net-->
+            		<itemGUID>fa63d708-e572-4c2c-bcaf-3022913ec831</itemGUID> 
+        	</m_items>
+		<m_items> <!--Blue Navy Jacket-->
+			<itemGUID>0ab6a4b8-4dcf-4ee0-9e5a-c6304652568a</itemGUID> 	
+		</m_items>
+		<m_items> <!-- Blue Formal Shirt -->
+			<itemGUID>b95a969d-4861-465f-a3c3-413c736cd2db</itemGUID>
+		</m_items>	
+		<m_items> <!-- Blue Police Trousers-->
+			<itemGUID>01cfabba-f1eb-4d18-8259-2dca4d0af8e5</itemGUID> 		
+		</m_items>	
+		<m_items> <!-- Military Boots-->
+			<itemGUID>227cb2d5-05a5-44ed-872d-ac4ca16e80bc</itemGUID> 	
+		</m_items>
+		<m_items> <!-- Holster -->
+			<itemGUID>88f11c9e-e717-446c-82ec-f749320df25a</itemGUID>
+		</m_items>	
+</m_MaleOutfits>
+<m_FemaleOutfits>
+		<m_Name>BonnieHat_Marpat</m_Name>
+		<m_Guid>af2c54a5-570c-46c4-937c-cb6bc4dfa796</m_Guid>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>true</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!--BonnieHat Marpat Net-->
+            		<itemGUID>fa63d708-e572-4c2c-bcaf-3022913ec831</itemGUID> 
+        	</m_items>
+		<m_items> <!--Blue Navy Jacket-->
+			<itemGUID>0ab6a4b8-4dcf-4ee0-9e5a-c6304652568a</itemGUID> 	
+		</m_items>
+		<m_items> <!-- Blue Formal Shirt -->
+			<itemGUID>b95a969d-4861-465f-a3c3-413c736cd2db</itemGUID>
+		</m_items>	
+		<m_items> <!-- Blue Police Trousers-->
+			<itemGUID>01cfabba-f1eb-4d18-8259-2dca4d0af8e5</itemGUID> 		
+		</m_items>	
+		<m_items> <!-- Military Boots -->
+			<itemGUID>227cb2d5-05a5-44ed-872d-ac4ca16e80bc</itemGUID>
+		</m_items>
+		<m_items> <!-- Holster -->
+			<itemGUID>88f11c9e-e717-446c-82ec-f749320df25a</itemGUID>
+		</m_items>
+</m_FemaleOutfits>
+
+
+
+
+<m_MaleOutfits>
+		<m_Name>BonnieHat_ChocolateChip</m_Name>
+		<m_Guid>4cfea29b-f4b8-4330-b09b-2b59b47dbf21</m_Guid>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>true</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!--BonnieHat ChocolateChip Normal-->
+            		<itemGUID>e8203097-5ff6-4364-b34e-2fa60b956ea0</itemGUID> 
+        	</m_items>
+		<m_items> <!--Blue Navy Jacket-->
+			<itemGUID>0ab6a4b8-4dcf-4ee0-9e5a-c6304652568a</itemGUID> 	
+		</m_items>
+		<m_items> <!-- Blue Formal Shirt -->
+			<itemGUID>b95a969d-4861-465f-a3c3-413c736cd2db</itemGUID>
+		</m_items>	
+		<m_items> <!-- Blue Police Trousers-->
+			<itemGUID>01cfabba-f1eb-4d18-8259-2dca4d0af8e5</itemGUID> 		
+		</m_items>	
+		<m_items> <!-- Military Boots-->
+			<itemGUID>227cb2d5-05a5-44ed-872d-ac4ca16e80bc</itemGUID> 	
+		</m_items>
+		<m_items> <!-- Holster -->
+			<itemGUID>88f11c9e-e717-446c-82ec-f749320df25a</itemGUID>
+		</m_items>	
+</m_MaleOutfits>
+<m_FemaleOutfits>
+		<m_Name>BonnieHat_ChocolateChip</m_Name>
+		<m_Guid>4cfea29b-f4b8-4330-b09b-2b59b47dbf21</m_Guid>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>true</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!--BonnieHat ChocolateChip Back-->
+            		<itemGUID>2a1111aa-a7bd-4848-bc69-cd253de4982c</itemGUID> 
+        	</m_items>
+		<m_items> <!--Blue Navy Jacket-->
+			<itemGUID>0ab6a4b8-4dcf-4ee0-9e5a-c6304652568a</itemGUID> 	
+		</m_items>
+		<m_items> <!-- Blue Formal Shirt -->
+			<itemGUID>b95a969d-4861-465f-a3c3-413c736cd2db</itemGUID>
+		</m_items>	
+		<m_items> <!-- Blue Police Trousers-->
+			<itemGUID>01cfabba-f1eb-4d18-8259-2dca4d0af8e5</itemGUID> 		
+		</m_items>	
+		<m_items> <!-- Military Boots-->
+			<itemGUID>227cb2d5-05a5-44ed-872d-ac4ca16e80bc</itemGUID> 	
+		</m_items>
+		<m_items> <!-- Holster -->
+			<itemGUID>88f11c9e-e717-446c-82ec-f749320df25a</itemGUID>
+		</m_items>
+</m_FemaleOutfits>
+
+
+
+
+<m_MaleOutfits>
+        	<m_Name>BonnieHat_DigitalBlue</m_Name>
+        	<m_Guid>8295b709-6b8b-4c16-968b-73692032681e</m_Guid>
+        	<m_AllowPantsHue>false</m_AllowPantsHue>
+        	<m_AllowTopTint>true</m_AllowTopTint>
+        	<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+        	<m_items> <!--BonnieHat DigitalBlue Net-->
+            	<itemGUID>0fb900ca-0885-49a9-b95e-f64c2fa06794</itemGUID> 
+        	</m_items>
+		<m_items> <!--Blue Navy Jacket-->
+			<itemGUID>0ab6a4b8-4dcf-4ee0-9e5a-c6304652568a</itemGUID> 	
+		</m_items>
+		<m_items> <!-- Blue Formal Shirt -->
+			<itemGUID>b95a969d-4861-465f-a3c3-413c736cd2db</itemGUID>
+		</m_items>	
+		<m_items> <!-- Blue Police Trousers-->
+			<itemGUID>01cfabba-f1eb-4d18-8259-2dca4d0af8e5</itemGUID> 		
+		</m_items>	
+		<m_items> <!-- Military Boots-->
+			<itemGUID>227cb2d5-05a5-44ed-872d-ac4ca16e80bc</itemGUID> 	
+		</m_items>
+		<m_items> <!-- Holster -->
+			<itemGUID>88f11c9e-e717-446c-82ec-f749320df25a</itemGUID>
+		</m_items>
+</m_MaleOutfits>
+<m_FemaleOutfits>
+        	<m_Name>BonnieHat_DigitalBlue</m_Name>
+        	<m_Guid>8295b709-6b8b-4c16-968b-73692032681e</m_Guid>
+        	<m_AllowPantsHue>false</m_AllowPantsHue>
+        	<m_AllowTopTint>true</m_AllowTopTint>
+        	<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+        	<m_items> <!--BonnieHat DigitalBlue Net-->
+            	<itemGUID>0fb900ca-0885-49a9-b95e-f64c2fa06794</itemGUID> 
+        	</m_items>
+		<m_items> <!--Blue Navy Jacket-->
+			<itemGUID>0ab6a4b8-4dcf-4ee0-9e5a-c6304652568a</itemGUID> 	
+		</m_items>
+		<m_items> <!-- Blue Formal Shirt -->
+			<itemGUID>b95a969d-4861-465f-a3c3-413c736cd2db</itemGUID>
+		</m_items>	
+		<m_items> <!-- Blue Police Trousers-->
+			<itemGUID>01cfabba-f1eb-4d18-8259-2dca4d0af8e5</itemGUID> 		
+		</m_items>	
+		<m_items> <!-- Military Boots-->
+			<itemGUID>227cb2d5-05a5-44ed-872d-ac4ca16e80bc</itemGUID> 	
+		</m_items>
+		<m_items> <!-- Holster -->
+			<itemGUID>88f11c9e-e717-446c-82ec-f749320df25a</itemGUID>
+		</m_items>
+</m_FemaleOutfits>
+
+
+</outfitManager>
