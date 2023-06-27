@@ -1,0 +1,111 @@
+This mod adds map items of vanilla map locations and modded map locations.
+They can all be disabled through Sandbox options if you don't think a specific location should have a map.
+Maps of mods will also be disabled if you haven't activated the mod. (Even if the tickbox is checked if you don't have the mods the corresponding maps won't spawn.)
+
+[h1]Map items of vanilla map locations:[/h1]
+[list]
+[*] Valley Station
+[*] Valley Station - Mall Area
+[*] Valley Station - Summer Camp (rare)
+[*] Ekron (compatible with the mod "New Ekron")
+[*] Riverside Country Club  (uncommon)
+[*] Scenic Grove Mobile Park 
+[*] Dixie Mobile Park
+[*] Pony Roam-O (uncommon)
+[*] Warehouse Complex (south west of muldraugh)
+[*] Eastern Railyard 
+[*] 5x Cabins (very rare, not found in the usual places)
+[*] Camp grounds (rare)
+[*] Louisville (COMPLETE map of louisville, VERY rare)
+[*] 15x Louisville Districts (15 maps of different districts, uncommon)
+[*] Western Farmlands (rare)
+[*] Western Abandoned Factory (rare)
+[*] Military Base (very rare, not found in the usual places)
+[*] Kentucky (COMPLETE map of Knox Country, INSANELY RARE, DISABLED by default, must be enabled in sandbox options, not found in the usual places)
+[/list]
+
+[h1]Map items of modded map locations: (44 MODS) [/h1]
+[list]
+[*] Raven Creek (COMPLETE map of raven creek, VERY rare)
+[*] 3x Raven Creek Districts (3 maps of different districts - SouthEast Suburbs, Northern Central, and Western Port Facilities, rare)
+[*] Grapeseed
+[*] Blackwood
+[*] Pitstop
+[*] New Ekron
+[*] Lake Ivy Township
+[*] 5x Weather Stations (5 maps of different weather stations from the "Save Our Station!" mod, very rare, the secret one is not found in usual places)
+[*] Rosewood Expansion
+[*] Over The River
+[*] Little Township
+[*] Linden
+[*] Refordville
+[*] West Point South Trailer Park
+[*] Kingsmouth (the Kingsmouth In KY version, that is an island in the ohio river)
+[*] Survivor Warehouse (rare)
+[*] Chinatown
+[*] Old's Military Airfield
+[*] Chernaville
+[*] Blueberry
+[*] 11x Eerie Country maps ([b]REQUIRES[/b] a mod, see [b]WARNING[/b] section)
+[*] 3x Slocan lake maps
+[*] 2x Fort Knox linked to Eerie Country ([b]REQUIRES a mod, see [b]WARNING[/b] section)
+[*] West Point Expansion ([b]REQUIRES[/b] a mod, see [b]WARNING[/b] section)
+[*] Glenport ([b]REQUIRES[/b] a mod, see [b]WARNING[/b] section)
+[*] March Ridge Expansion (added by NCrawler)
+[*] C.O.N. Research & Testing Facility (added by NCrawler)
+[*] Greenleaf (added by NCrawler)
+[*] x3 Coryerdon 
+[*] OldPark Town (added by NCrawler)
+[*] Fort Redstone (updated by NCrawler)
+[*] EZPZ Community Center
+[*] Old Pine Village
+[*] Wildberries
+[*] Tugaland
+[*] Remus
+[*] Billionaire Safehouse Adress
+[*] x2 Trimble County Power Station & La Grange
+[*] [i][b][NEW Added 19/05/2022][/b][/i] Fort Rock Ridge
+[*] [i][b][NEW Added 19/05/2022][/b][/i] Fort Benning
+[*] [i][b][NEW Added 19/05/2022][/b][/i] Muldraugh Military Base
+[*] [i][b][NEW Added 19/05/2022][/b][/i] Christmas Village
+[*] [i][b][NEW Added 19/05/2022][/b][/i] Hyrule County
+[*] [i][b][NEW Added 19/05/2022][/b][/i] Riverwood
+[*] [i][b][NEW Added 19/05/2022][/b][/i] Dead In Hong Kong
+[*] [i][b][NEW Added 19/05/2022][/b][/i] x3 SNAKE's Modpack : Mansion, construction factory, western military complex
+[/list]
+
+[u][b]Exceptions:[/b][/u]
+[list]
+[*] Bedford Falls: The Beford Falls mod itself already adds a map item, so no need for me to add another. I tweaked its distribution tables though.
+[*] St Bernard's Hill : Idem.
+[*] Trelai 4x4 : Idem.
+[*] Monmouth County : Idem.
+[/list]
+Some mods have not added the ingame map feature to their map zones yet, so I can't make map items for them.
+Once they have mapped their mod, I will add the corresponding item (if they haven't already).
+
+[h1]WARNING : READ THIS[/h1]
+If you want to use one of these maps items:
+Eerie Country maps, Slocan Lake maps, Fort Knox linked to Eerie Country, West Point Expansion, Glenport,
+you will need the mod : "IngameMaps" by alree_unjammer.
+
+[h1]Where can I find these maps?[/h1]
+[list]
+[*] in vehicle gloveboxes,
+[*] on magazine racks,
+[*] in sidetables that aren't in bedrooms (very rare),
+[*] in survivor bags, hiking bags, duffel bags, school bags, golf bags and satchels,
+[*] in mechanics crates and shelves (rare),
+[*] in crates containing random junk (rare),
+[*] in crates of map factories,
+[*] On the following zombies :raiders, hunters, survivalists, police officers, private militia, military soldiers and officers, mechanics, fishermen, campers, bikers, bandits, ambulance drivers, park rangers, cyclists, tourists, traders, postmen, air crew (varying chance for individual maps relative to the outfit : military maps and big maps on military zeds, town maps on town zeds, countryside maps on country side zeds):
+[*] through Foraging (as junk category, starting skill level 4, can be disabled in sandbox options)
+[/list]
+
+[h1]Can I contribute ?[/h1]
+
+If you want to suggest adding a map item for a specific mod, leave a comment below and I'll see what I can do.
+If you want to contribute directly to coding the mod, here's the github :
+https://github.com/Champignakx/MoreMaps
+
+[b]Credits:[/b]Many thanks to [O30C] NCrawler for adding maps.

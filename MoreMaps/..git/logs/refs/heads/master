@@ -1,0 +1,37 @@
+0000000000000000000000000000000000000000 35fa3c49b6b2ba90d26758f3ed102278446b3eb2 Champygnakx <s3conan@enib.fr> 1648830313 +0200	commit (initial): First commit
+35fa3c49b6b2ba90d26758f3ed102278446b3eb2 483f2e2718e659c2268d66005cd2ea835fe3ec9c Champygnakx <s3conan@enib.fr> 1648982332 +0200	pull: Fast-forward
+483f2e2718e659c2268d66005cd2ea835fe3ec9c 6cb005e539267e836144c9ba501ec7bd134b5642 Champygnakx <s3conan@enib.fr> 1648985923 +0200	commit: tweaked distributions
+6cb005e539267e836144c9ba501ec7bd134b5642 2f9626a224957abe8048b6fe377fa37f67215c85 Champygnakx <s3conan@enib.fr> 1649341199 +0200	pull: Fast-forward
+2f9626a224957abe8048b6fe377fa37f67215c85 e97f41f8a7fa34d9ff118dcc381f29913ce31376 Champygnakx <s3conan@enib.fr> 1649341355 +0200	commit: removed muldraugh fire department and ed auto salvage
+e97f41f8a7fa34d9ff118dcc381f29913ce31376 b7479f548c7dafb98e8c40172025463ba09c3620 Champygnakx <s3conan@enib.fr> 1649341791 +0200	commit: fixed activated mod requirement for the mod InGameMaps
+b7479f548c7dafb98e8c40172025463ba09c3620 37ecf573678677d95f8dadd52550d63165bcde9d Champygnakx <s3conan@enib.fr> 1649342508 +0200	commit: Added specification to sandbox settings to differentiate vanilla maps and modded maps
+37ecf573678677d95f8dadd52550d63165bcde9d 6e44dc0c93e70334eddc8f451d5ce649b9bc844b Champygnakx <s3conan@enib.fr> 1649343096 +0200	commit: updated steamdesc
+6e44dc0c93e70334eddc8f451d5ce649b9bc844b b5eda3b21fe2d413a09b899b1cb544abf262ce67 Champygnakx <s3conan@enib.fr> 1649343167 +0200	commit: updated steamdesc again
+b5eda3b21fe2d413a09b899b1cb544abf262ce67 249698285039af4b345be0721c5926ed7c05904d Champygnakx <s3conan@enib.fr> 1651941332 +0200	pull: Fast-forward
+249698285039af4b345be0721c5926ed7c05904d c6a75e57fab0a79c961072abd5d6a2c4fc7eb477 Champygnakx <s3conan@enib.fr> 1651941583 +0200	commit: updated slocan lake maps
+c6a75e57fab0a79c961072abd5d6a2c4fc7eb477 4576da2b006df8831ab9db14034043d02e92e11d Champygnakx <s3conan@enib.fr> 1651941728 +0200	commit: updated slocan lake map loot distributions to no longuer require ingamemaps mod
+4576da2b006df8831ab9db14034043d02e92e11d 20ac91b5b1ce0e98f65d9b968d7257f6dbc7f73f Champygnakx <s3conan@enib.fr> 1651942476 +0200	commit: renamed all maps for better organisation in the inventory
+20ac91b5b1ce0e98f65d9b968d7257f6dbc7f73f 9165659406f8f5342c783580e2347c5d7a7d6080 Champygnakx <s3conan@enib.fr> 1652015026 +0200	commit: added map for Billionaire Safehouse
+9165659406f8f5342c783580e2347c5d7a7d6080 516a8f0a3734d21c9037bcd0d108e14828f5d0de Champygnakx <s3conan@enib.fr> 1652015376 +0200	commit: added Wildberries map
+516a8f0a3734d21c9037bcd0d108e14828f5d0de 440aaf708ce1cb5672b6b59c5625036111f2a02e Champygnakx <s3conan@enib.fr> 1652015661 +0200	commit: added Tugaland Map
+440aaf708ce1cb5672b6b59c5625036111f2a02e 745b388aef70ce6df41b888bbd2b52f5cca09b87 Champygnakx <s3conan@enib.fr> 1652016026 +0200	commit: added Monmouth County Map
+745b388aef70ce6df41b888bbd2b52f5cca09b87 902cd0dd8df296c482c9b6e1689e2e7492fbbab5 Champygnakx <s3conan@enib.fr> 1652016381 +0200	commit: added Remus map
+902cd0dd8df296c482c9b6e1689e2e7492fbbab5 8c53b0e38785a99fbfaef0941e0db99f97a49ac5 Champygnakx <s3conan@enib.fr> 1652016850 +0200	commit: added Timble county maps: power station and La Grange
+8c53b0e38785a99fbfaef0941e0db99f97a49ac5 f7db0b732a1925ffa60a69f39cca007af073a244 Champygnakx <s3conan@enib.fr> 1652017210 +0200	commit: added Trelai map
+f7db0b732a1925ffa60a69f39cca007af073a244 2757f9589d50ef6505e8e8c94ff266f9f18f964f Champygnakx <s3conan@enib.fr> 1652021515 +0200	commit: removed trelai map but added it to distributions, + tweak displayname of existing map items of mods
+2757f9589d50ef6505e8e8c94ff266f9f18f964f a4098714882162f068633f9596cdce2c54e810f6 Champygnakx <s3conan@enib.fr> 1652022045 +0200	commit: added map of EZPZ Community Center
+a4098714882162f068633f9596cdce2c54e810f6 fff1b1999e08036f6b4f25c0ae657f0ae5abe883 Champygnakx <s3conan@enib.fr> 1652022670 +0200	commit: added map of Old Pine Village
+fff1b1999e08036f6b4f25c0ae657f0ae5abe883 faeee89758b8db2f8b7867ca3d1ce74afc3e50e2 Champygnakx <s3conan@enib.fr> 1652023241 +0200	commit: removed monmouth
+faeee89758b8db2f8b7867ca3d1ce74afc3e50e2 b54d5d9e5f485e3ab2cb253373d5fb2598c536c8 Champygnakx <s3conan@enib.fr> 1652025295 +0200	commit: tweaked distributions
+b54d5d9e5f485e3ab2cb253373d5fb2598c536c8 a93270339cc46f6a01c190b67b48753f878cf5f2 Champygnakx <s3conan@enib.fr> 1652025481 +0200	commit: updated steamdesc.txt
+a93270339cc46f6a01c190b67b48753f878cf5f2 b719a1b912d8180707f77c8fc16f6b43d1233222 Champygnakx <s3conan@enib.fr> 1652025828 +0200	commit: updated steamdesc again
+b719a1b912d8180707f77c8fc16f6b43d1233222 d2891805c8dec2b9123cd3fa5a083bfc252e11da Champygnakx <s3conan@enib.fr> 1652026040 +0200	commit: removed monmouth option sandbox
+d2891805c8dec2b9123cd3fa5a083bfc252e11da 39c667a9d2fe496b20bfb7ac9370471af7bcd663 Champygnakx <s3conan@enib.fr> 1652043533 +0200	commit: added old map item definitions to fix bugs on servers
+39c667a9d2fe496b20bfb7ac9370471af7bcd663 2cdec7fbe1171bc014204de7b98d8aaa7dfcaf38 Champygnakx <s3conan@enib.fr> 1652629094 +0200	commit: refactored a lot of stuff + rebalanced loot distributions + added new places to find maps
+2cdec7fbe1171bc014204de7b98d8aaa7dfcaf38 5a0563932121a7fa9b037a33149f0dcfeaa63353 Champygnakx <s3conan@enib.fr> 1652631975 +0200	commit: added outfits from expanded helicopter events to distributions
+5a0563932121a7fa9b037a33149f0dcfeaa63353 c10d53631cf97d71b044db0d896ac63028e45097 Champygnakx <s3conan@enib.fr> 1652633540 +0200	commit: added Fort Rock Ridge maps
+c10d53631cf97d71b044db0d896ac63028e45097 b821abd689dad75b099849a33c73c31c7b762553 Champygnakx <s3conan@enib.fr> 1652635775 +0200	commit: added vehicle distributions of some specific popular mods
+b821abd689dad75b099849a33c73c31c7b762553 7e1c7ab595e4b5e073f090c854c65ba6bc8270bc Champygnakx <s3conan@enib.fr> 1652795226 +0200	commit: added Hyrule County Map, Hong Kong Map, Muldraugh Military Base Map, Fort Waterfront Map, Research Facility Map
+7e1c7ab595e4b5e073f090c854c65ba6bc8270bc 21295ea8b697698aedcd7fd8a342a8fd39bbad37 Champygnakx <s3conan@enib.fr> 1652795567 +0200	commit: added Map Loot Multiplier to adjust loot chances if needed
+21295ea8b697698aedcd7fd8a342a8fd39bbad37 f6a7f961a6b0bde61d8d03a2a5fdd42db9fdf743 Champygnakx <s3conan@enib.fr> 1652889466 +0200	commit: Added maps of Snake's mod pack
+f6a7f961a6b0bde61d8d03a2a5fdd42db9fdf743 f960b825143b547cca41320aea0dd59399e15d22 Champygnakx <s3conan@enib.fr> 1652965982 +0200	commit: added back hong kong map

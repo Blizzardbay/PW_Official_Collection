@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 0a6562c01778aaf124bd5fd861cbac0f7e082aee ProjectSky <me@imsky.cc> 1652498954 +0800	clone: from https://github.com/ProjectSky/MoreBuilds
+0a6562c01778aaf124bd5fd861cbac0f7e082aee 9049ef005eb31ee3a7e5185cddbdc8070cb07a5d ProjectSky <me@imsky.cc> 1652499112 +0800	commit: Added Spanish translation (thanks Pedra)
+9049ef005eb31ee3a7e5185cddbdc8070cb07a5d 2eb02b99838bcf71aeea78a1e5c36141cb6e69a5 ProjectSky <me@imsky.cc> 1653576213 +0800	commit: official tile definition fixes
+2eb02b99838bcf71aeea78a1e5c36141cb6e69a5 0741509dabfe9a45d5fb613446a4fafca188754f ProjectSky <me@imsky.cc> 1653657288 +0800	commit: version 1.1.8a

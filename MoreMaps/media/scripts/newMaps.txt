@@ -1,0 +1,1291 @@
+module Base
+{
+    item KentuckyMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Kentucky,
+        Icon				=			Map,
+        Weight				=			0.2,
+        Map                 =           KentuckyMap,
+        SurvivalGear = FALSE,
+        WorldStaticModel = Map,
+    }
+    
+    item EkronMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Ekron,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           EkronMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item DixieMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Dixie,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           DixieMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item ScenicGroveMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Scenic Grove,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           ScenicGroveMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item CountryClubMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Riverside's Country Club,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           CountryClubMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item PonyRoamOMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Pony Roam-O,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           PonyRoamOMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    
+    item MuldraughRailyardMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Muldraugh's Railyard,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           MuldraughRailyardMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item LouisvilleMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Louisville,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LouisvilleMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item LouisvilleIroquoisMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Louisville: Iroquois Park,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LouisvilleIroquoisMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item LouisvilleAudubonMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Louisville: Audubon,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LouisvilleAudubonMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item LouisvilleCentralMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Louisville: Central Louisville,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LouisvilleCentralMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item LouisvilleEvergreenHillMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Louisville: Evergreen Hill,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LouisvilleEvergreenHillMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    
+    item LouisvilleOldMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Louisville: Old Louisville,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LouisvilleOldMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item LouisvillePhoenixHillMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Louisville: Phoenix Hill,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LouisvillePhoenixHillMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    
+    item LouisvilleGatedCommunityMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Louisville: Fenced Neiborhood,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LouisvilleGatedCommunityMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+        
+    item LouisvilleNorthCommercialDistrictMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Louisville: Northern Commercials,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LouisvilleNorthCommercialDistrictMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+
+    item LouisvillePortlandMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Louisville: Portland,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LouisvillePortlandMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+
+    item LouisvilleLSUMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Louisville: LS University,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LouisvilleLSUMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+
+    item LouisvilleSouthMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Louisville: South Louisville,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LouisvilleSouthMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item LouisvilleLeafhillHeightsMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Louisville: Leafhill Heights,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LouisvilleLeafhillHeightsMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    
+    item LouisvilleChapelmountDownsMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Louisville: Chapelmount Downs,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LouisvilleChapelmountDownsMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    
+    item LouisvilleScarletOakMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Louisville: Scarlet Oak,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LouisvilleScarletOakMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+
+    item LouisvilleEastMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Louisville: East Louisville,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LouisvilleEastMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item ValleyStationMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Valley Station,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           ValleyStationMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item ValleyStationMallAreaMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Valley Station: Mall Area,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           ValleyStationMallAreaMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item EasternSummerCampMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Valley Station's Summer Camp,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           EasternSummerCampMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item MilitaryBaseMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    (CONFIDENTIAL - DO NOT SHARE),
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           MilitaryBaseMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item SmallTownWestMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Western Farmland,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           SmallTownWestMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    
+    item MuldraughWarehouseComplexMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of a Warehouse Complex,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           MuldraughWarehouseComplexMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item CabinLocation1
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Cabin Location 1,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           CabinLocation1,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item CabinLocation2
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Cabin Location 2,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           CabinLocation2,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item CabinLocation3
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Cabin Location 3,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           CabinLocation3,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item CabinLocation4
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Cabin Location 4,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           CabinLocation4,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item CabinLocation5
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Cabin Location 5,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           CabinLocation5,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item CampGroundsLocation
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Camping Grounds,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           CampGroundsLocation,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item AbandonedFactoryMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of an Abandoned Factory,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           AbandonedFactoryMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+
+    item GrapeseedMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Grapeseed,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           GrapeseedMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item BlackwoodMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Blackwood,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           BlackwoodMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item PitstopMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Pitstop,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           PitstopMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item OverTheRiverMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Over The River,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           OverTheRiverMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item LakeIvyMap2
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Lake Ivy Township,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LakeIvyMap2,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item StationRIVS500Location
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Station RIVS-500 Location,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           StationRIVS500Location,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item StationWESTP88Location
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Station WEST-P88 Location,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           StationWESTP88Location,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item StationROSE099Location
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Station ROSE-099 Location,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           StationROSE099Location,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item StationMULD650Location
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Station MULD-650 Location,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           StationMULD650Location,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item StationZULULocation
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Station ZULU Location,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           StationZULULocation,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+	
+	item MarchRidgeExpansionMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of March Ridge Expansion,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           MarchRidgeExpansionMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+	
+	item CONResearchMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of C.O.N. Research & Testing Facility,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           CONResearchMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item RosewoodExpansionMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Rosewood North Expansion,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           RosewoodExpansionMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item LittleTownshipMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Little Township,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LittleTownshipMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item LindenMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Linden,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           LindenMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+	item WestPointFireDepartmentMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of West Point's Fire Department,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           WestPointFireDepartmentMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+	
+    item WestPointSouthTrailerParkMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of West Point's South Trailer Park,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           WestPointSouthTrailerParkMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item KingsmouthMap2
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Kingsmouth,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           KingsmouthMap2,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item RavenCreekMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Raven Creek,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           RavenCreekMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item NorthRavenCreekMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Raven Creek's Center,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           NorthRavenCreekMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item SouthEastRavenCreekMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Raven Creek's Suburbs,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           SouthEastRavenCreekMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item RavenCreekPortFacilitiesMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Raven Creek's Port Facilities,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           RavenCreekPortFacilitiesMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item SurvivorWarehouseLocation
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Survivor Warehouse Location,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           SurvivorWarehouseLocation,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item RefordvilleMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Refordville,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           RefordvilleMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item ChinatownMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Chinatown,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           ChinatownMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    
+    item MilitaryAirportMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Military Airfield,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           MilitaryAirportMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item ChernavilleMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Chernaville,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           ChernavilleMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item BlueberryMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Blueberry,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           BlueberryMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+	
+	item GreenleafMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Greenleaf,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           GreenleafMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+	item WestPointFireDepartmentMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    West Point's Fire Department Map (old),
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           WestPointFireDepartmentMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+	item CoryerdonMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Coryerdon (Old): Center,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           CenterCoryerdonMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+	item EastCoryerdonMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Coryerdon: East,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           EastCoryerdonMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+	item SouthCoryerdonMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Coryerdon: South,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           SouthCoryerdonMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+	item CenterCoryerdonMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Coryerdon: Center,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           CenterCoryerdonMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+	
+
+	
+	item OldParkTownMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of OldPark Town,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           OldParkTownMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+	
+
+
+    item WestPointExpansionMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Salt Ridge,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           WestPointExpansionMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    item GlenportMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Glenport,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           GlenportMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+    
+    item EC_CustomsBorderZoneMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of EC - Customs Border Zone,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           EC_CustomsBorderZoneMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item EC_CentraliaMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of EC - Centralia,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           EC_CentraliaMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item EC_TrainStationMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of EC - Train Station,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           EC_TrainStationMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item EC_DarkFallsMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of EC - Dark Falls,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           EC_DarkFallsMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item EC_HiddenSwampsMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of EC - Hidden Swamps,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           EC_HiddenSwampsMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item EC_SanDitoAirportMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of EC - San Dito Airport,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           EC_SanDitoAirportMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item EC_LakeHeisenbergMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of EC - Lake Heisenberg,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           EC_LakeHeisenbergMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item EC_ErenCityMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of EC - Eren City,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           EC_ErenCityMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item EC_IrvingtonMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of EC - Irvington,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           EC_IrvingtonMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item EC_RuralZoneMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of EC - Rural Zone,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           EC_RuralZoneMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    
+    item EC_CompleteMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of  Eerie Country,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           EC_CompleteMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+
+
+
+
+    
+    item SL_NewDenverMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of New Denver,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           SL_NewDenverMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item SL_RoseberyMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Rosebery,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           SL_RoseberyMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item SL_SilvertonMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Silverton,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           SL_SilvertonMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item FK_QuitmanMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Quitman,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           FK_QuitmanMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item FK_FortKnoxMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Fort Knox,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           FK_FortKnoxMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item FortRedstoneMap
+    {
+        DisplayCategory = Cartography,
+        Type				=			Map,
+        DisplayName			=		    Map of Fort Redstone,
+        Icon				=			Map,
+        Weight				=			0.1,
+        Map                 =           FortRedstoneMap,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Map,
+    }
+    item BillionaireSafehouseLocation
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Adress of a Billionaire's Safehouse,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   BillionaireSafehouseLocation,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+
+    item WildberriesMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Wildberries,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   WildberriesMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item TugalandMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Tugaland,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   TugalandMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item RemusMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Remus,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   RemusMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item TrimbleCountyPowerStationMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Trimble County: Power Station,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   TrimbleCountyPowerStationMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item TrimbleCountyLaGrangeMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Trimble County: La Grange,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   TrimbleCountyLaGrangeMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+
+    item EZPZCommunityCenterMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of EZPZ Community Center,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   EZPZCommunityCenterMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+
+    item OldPineVillageMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Old Pine Village,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   OldPineVillageMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item ChristmasVillageMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Christmas Village,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   ChristmasVillageMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item FortBenningMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Fort Benning,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   FortBenningMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item FortRockRidgeMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Fort Rock Ridge,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   FortRockRidgeMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item ResearchFacilityMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of secret Research Facility,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   ResearchFacilityMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item MuldraughMilitaryBaseMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Muldraugh Military Base,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   MuldraughMilitaryBaseMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item FortWaterfrontMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Fort Waterfront,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   FortWaterfrontMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item HyruleCountyMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Hyrule County,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   HyruleCountyMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+
+    item RiverwoodMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Riverwood,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   RiverwoodMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item HongKongYauMaTeiMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Yau Ma Tei - Hong Kong,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   HongKongYauMaTeiMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+
+    item WesternMilitaryComplexMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Western Military Complex,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   WesternMilitaryComplexMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item ConstructionFactoryMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Construction Factory,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   ConstructionFactoryMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item MansionAdress
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Mansion Adress,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   MansionAdress,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+}
