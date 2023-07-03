@@ -1,0 +1,7 @@
+IGUI_DE = {
+	IGUI_Campfire_FuelAmount = "Brennstoff: %1",
+	IGUI_Campfire = "Lagerfeuer",
+	IGUI_Fireplace_FuelAmount = "Brennstoff: %1",
+	IGUI_Fireplace = "Feuerstelle",
+
+}

@@ -1,0 +1,39 @@
+UI_PL = {
+	UI_WeatherMoodles_EnableRain = "Wlacz Ikone Deszczu",
+	UI_WeatherMoodles_EnableRain_Tooltip = "Wlacza ikone deszczu.",
+	UI_WeatherMoodles_RainIs = "Deszcz jest",
+	
+	UI_WeatherMoodles_EnableSnow = "Wlacz Ikone Sniegu",
+	UI_WeatherMoodles_EnableSnow_Tooltip = "Wlacza ikone sniegu",
+	UI_WeatherMoodles_SnowIs = "Snieg jest",
+	
+	UI_WeatherMoodles_EnableCloud = "Wlacz Ikone Chmur",
+	UI_WeatherMoodles_EnableCloud_Tooltip = "Wlacza ikone zachmurzenia",
+	UI_WeatherMoodles_CloudIs = "Chmury sa",
+	
+	UI_WeatherMoodles_EnableWind = "Wlacz Ikone Wiatru",
+	UI_WeatherMoodles_EnableWind_Tooltip = "Wlacza ikone wiatru",
+	UI_WeatherMoodles_WindIs = "Wiatr jest",
+	
+	UI_WeatherMoodles_EnableFog = "Wlacz Ikone Mgly",
+	UI_WeatherMoodles_EnableFog_Tooltip = "Wlacza ikone mgly",
+	UI_WeatherMoodles_FogIs = "Mgla jest",
+	
+	UI_WeatherMoodles_EnableSun = "Wlacz Ikone Slonca",
+	UI_WeatherMoodles_EnableSun_Tooltip = "Wlacza ikone slonca",
+	UI_WeatherMoodles_SunIs = "Slonce jest",
+	
+	UI_WeatherMoodles_IsAltTex = "Alternatywne Tekstury",
+	UI_WeatherMoodles_IsAltTex_Tooltip = "Wlacz aby uzywac alternatywnych tekstur.<br>(Courtesy of Laast)",
+	UI_WeatherMoodles_EnableExtreme = "Ikony Ekstermalnych Zjawisk Pogodowych",
+	UI_WeatherMoodles_EnableExtreme_Tooltip = "Wlacza ikony dla nietypowych i/lub ekstremalnych zjawisk pogodowych",
+	UI_WeatherMoodles_IsCombine = "Polaczenie Ikon",
+	UI_WeatherMoodles_IsCombine_Tooltip = "Gdy trwa ekstremalne zjawisko pogodowe, wszystkie pozostale ikony zostana ukryte.<br>(Oprócz ikony ekstremalnej pogody i mgly)",
+	UI_WeatherMoodles_ShowInside = "Pokazuj Ikony w Pomieszczeniach",
+	UI_WeatherMoodles_ShowInside_Tooltip = "Pokazuje ikony nawet wtedy, gdy gracz jest w pomieszczeniu",
+	UI_WeatherMoodles_BGColor_Tooltip = "Definuje kolor tla ikony<br>Dobry = Zielony | Zly = Czerwony",
+	UI_WeatherMoodles_Good = "Dobry",
+	UI_WeatherMoodles_Bad = "Zly",
+	
+	UI_optionscreen_binding_KeyToggle = "Wlacz/Wylacz Ikony",
+}

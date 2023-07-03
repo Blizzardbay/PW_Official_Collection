@@ -1,0 +1,4 @@
+ContextMenu_ES = {
+	ContextMenu_Cremate_Corpse = "Quemar cadáver",
+	ContextMenu_CampfireInfo = "Información de la hoguera",
+}

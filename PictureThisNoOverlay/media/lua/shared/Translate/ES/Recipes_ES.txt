@@ -1,0 +1,48 @@
+Recipes_ES = {
+   /**** PictureThisFlags.txt ****/
+	Recipe_Unfold_Flag = "Desplegar Bandera",
+	Recipe_Destroy_Flag = "Destruir Bandera",
+	
+	/**** PictureThisPictures.txt ****/
+	Recipe_Look_Closer = "Mirar de Cerca",
+	
+	/**** PictureThisPosters.txt ****/
+	Recipe_Unroll_Poster = "Desenrollar Póster",
+
+	/**** PictureThisSigns.txt ****/
+	Recipe_Draw_Sign_-Food- = "Dibujar Cartel de Alimentos 'Food'",
+	Recipe_Draw_Sign_-Books- = "Dibujar Cartel de Libros 'Books'",
+	Recipe_Draw_Sign_-Fishing- = "Dibujar Cartel de Pesca 'Fishing'",
+	Recipe_Draw_Sign_-Gunz- = "Dibujar Cartel de Armas 'Guns'",
+	Recipe_Draw_Sign_-Farming- = "Dibujar Cartel de Agricultura 'Farming'",
+	Recipe_Draw_Sign_-Electric- = "Dibujar Cartel de Electricidad 'Electric'",
+	Recipe_Draw_Sign_-Metal- = "Dibujar Cartel de Metal",
+	Recipe_Draw_Sign_-Material- = "Dibujar Cartel de Material",
+	Recipe_Draw_Sign_-Junk- = "Dibujar Cartel de Basura 'Junk'",
+	Recipe_Draw_Sign_-Fruits- = "Dibujar Cartel de Frutas 'Fruits'",
+	Recipe_Draw_Sign_-Herbs- = "Dibujar Cartel de Hierbas 'Herbs'",
+	Recipe_Draw_Sign_-Hunting- = "Dibujar Cartel de Caza 'Hunting'",
+	Recipe_Draw_Sign_-Ammo- = "Dibujar Cartel de Munición 'Ammo'",
+	Recipe_Draw_Sign_-Seeds- = "Dibujar Cartel de Semillas 'Seeds'",
+	Recipe_Draw_Sign_-Tools- = "Dibujar Cartel de Herramientas 'Tools'",
+	Recipe_Draw_Sign_-Medicine- = "Dibujar Cartel de Medicinas 'Medicine'",
+	Recipe_Destroy_Paper_Sign = "Destruir Cartel de Papel",
+	/* CARTELES DE MADERA */
+	Recipe_Craft_Sign_-S_and_W_Arrow- = "Hacer Cartel de Madera 'Flecha S y O'",
+	Recipe_Craft_Sign_-N_and_E_Arrow- = "Hacer Cartel de Madera 'Flecha N y E'",
+	Recipe_Craft_Sign_-Shop- = "Hacer Cartel de Madera 'Shop'",
+	Recipe_Craft_Sign_-Welcome- = "Hacer Cartel de Madera 'Welcome'",
+	Recipe_Craft_Sign_-Medic- = "Hacer Cartel de Madera 'Medecine'",
+	Recipe_Craft_Sign_-Keep_Out- = "Hacer Cartel de Madera 'Keep Out'",
+	Recipe_Craft_Sign_-Danger- = "Hacer Cartel de Madera 'Danger'",
+	Recipe_Craft_Sign_-Warehouse- = "Hacer Cartel de Madera 'Warehouse'",
+	Recipe_Destroy_Wooden_Sign = "Destruir Cartel de Madera",
+
+	/**** PictureThisUtility.txt ****/
+	Recipe_Disassemble_electrical_wire_from_socket = "Desmontar Enchufe",
+	Recipe_Search_cardboard_box = "Buscar en Caja de Cartón",
+	Recipe_Build_Artsy_Oven = "Construir Horno Artístico",
+	Recipe_Build_Tall_Light_Tile_Oven = "Construir Horno de Azulejos Alto Claro",
+	Recipe_Build_Low_Light_Tile_Oven = "Construir Horno de Azulejos Bajo Claro",
+	Recipe_Build_Low_Dark_Tile_Half-Metal_Oven = "Construir Horno de Azulejos Bajo Oscuro parcial de Metal",
+}

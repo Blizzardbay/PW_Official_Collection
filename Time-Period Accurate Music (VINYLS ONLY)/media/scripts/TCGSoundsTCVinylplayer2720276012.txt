@@ -1,0 +1,2223 @@
+module Tsarcraft
+{
+	sound Vinyl2pacTrapped(1991)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/2pac - Trapped (1991).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylAFlockOfSeagullsIRan(SoFarAway)(1982)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/A Flock Of Seagulls - I Ran (So Far Away) (1982).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylATribeCalledQuestCanIKickIt(1990)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/A Tribe Called Quest - Can I Kick It (1990).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylATribeCalledQuestILeftMyWalletinElSegundo(1990)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/A Tribe Called Quest - I Left My Wallet in El Segundo (1990).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylAHaTakeOnMe(1985)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/A-Ha - Take On Me (1985).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylABBADancingQueen(1976)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/ABBA - Dancing Queen (1976).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylABBASOS(1975)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/ABBA - SOS (1975).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylACDCBackInBlack(1980)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/ACDC - Back In Black (1980).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylAlabamaDixielandDelight(1983)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Alabama - Dixieland Delight (1983).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylAlabamaSongoftheSouth(1988)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Alabama - Song of the South (1988).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylAliceinChainsManintheBox(1991)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Alice in Chains - Man in the Box (1991).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylAmericaAHorseWithNoName(1972)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/America - A Horse With No Name (1972).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylAmericaSisterGoldenHair(1975)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/America - Sister Golden Hair (1975).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylAsiaHeatoftheMoment(1982)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Asia - Heat of the Moment (1982).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylAustralianCrawlReckless(Don'tbeso)(1983)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Australian Crawl - Reckless (Don't be so) (1983).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBeeGeesMoreThanAWoman(1977)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Bee Gees - More Than A Woman (1977).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBillMonroeBlueMoonofKentucky(1945)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Bill Monroe - Blue Moon of Kentucky (1945).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBillyIdolDancingwithmyself(1980)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Billy Idol - Dancing with myself (1980).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBillyIdolRebelYell(1983)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Billy Idol - Rebel Yell (1983).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBillyIdolWhiteWedding(1982)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Billy Idol - White Wedding (1982).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBillyJoelMovin'Out(Anthony'sSong)(1977)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Billy Joel - Movin' Out (Anthony's Song) (1977).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBillyJoelOnlyTheGoodDieYoung(1977)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Billy Joel - Only The Good Die Young (1977).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBillyJoelPianoMan(1973)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Billy Joel - Piano Man (1973).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBillyJoelUptownGirl(1983)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Billy Joel - Uptown Girl (1983).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBillyJoelYouMaybeRight(1980)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Billy Joel - You May be Right (1980).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBillyRayCyrusAchyBreakyHeart(1992)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Billy Ray Cyrus - Achy Breaky Heart (1992).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBizMarkieJustaFriend(1989)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Biz Markie - Just a Friend (1989).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBlackWonderfulLife(1986)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Black - Wonderful Life (1986).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBlackSabbathIronMan(1970)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Black Sabbath - Iron Man (1970).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBlackSabbathParanoid(1970)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Black Sabbath - Paranoid (1970).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBlackSabbathSnowblind(1972)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Black Sabbath - Snowblind (1972).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBlackSabbathWarPigs(1970)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Black Sabbath - War Pigs (1970).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBlueOysterCultDon'tFearTheReaper(1976)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Blue Oyster Cult - Don't Fear The Reaper (1976).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBobDylanKnockin'onHeaven'sdoor(1973)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Bob Dylan - Knockin' on Heaven's door (1973).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBobMarley&TheWailersIsThisLove(1978)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Bob Marley & The Wailers - Is This Love (1978).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBobMarley&TheWailersJamming(1977)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Bob Marley & The Wailers - Jamming (1977).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBobMarley&TheWailersRedemptionSong(1980)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Bob Marley & The Wailers - Redemption Song (1980).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBobMarley&TheWailersThreeLittleBirds(1977)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Bob Marley & The Wailers - Three Little Birds (1977).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBobSegerRamblin'Gamblin'Man(1969)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Bob Seger - Ramblin' Gamblin' Man (1969).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBonJoviLivin'OnAPrayer(1986)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Bon Jovi - Livin' On A Prayer (1986).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBonJoviRunaway(1981)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Bon Jovi - Runaway (1981).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBoneyMGattagohome(1979)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Boney M. - Gatta go home (1979).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBostonMoreThanAFeeling(1976)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Boston - More Than A Feeling (1976).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBruceHornsbyTheWayItIs(1986)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Bruce Hornsby - The Way It Is (1986).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBruceSpringsteenIndependenceDay(1980)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Bruce Springsteen - Independence Day (1980).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBruceSpringsteenTheRiver(1980)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Bruce Springsteen - The River (1980).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylBryanAdamsSummerOf'69(1984)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Bryan Adams - Summer Of '69 (1984).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylClashRocktheCasbah(1982)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Clash - Rock the Casbah (1982).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylCountFivePsychoticReaction(1966)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Count Five - Psychotic Reaction (1966).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylCreedenceClearwaterRevivalFortunateSon(1969)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Creedence Clearwater Revival - Fortunate Son(1969).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylCreedenceClearwaterRevivalHaveYouEverSeentheRain(1968)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Creedence Clearwater Revival - Have You Ever Seen the Rain (1968).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylCuttingCrew(IJust)DiedInYourArms(1986)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Cutting Crew - (I Just) Died In Your Arms (1986).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylDarylHall&JohnOatesManeater(1982)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Daryl Hall & John Oates - Maneater (1982).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylDavidBowie&QueenUnderPressure(1981)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/David Bowie & Queen - Under Pressure (1981).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylDavidBowieMoonageDaydream(1972)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/David Bowie - Moonage Daydream (1972).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylDavidBowieThemanwhosoldtheworld(1970)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/David Bowie - The man who sold the world (1970).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylDeeeLiteGrooveIsInTheHeart(1990)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Deee-Lite - Groove Is In The Heart (1990).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylDefLeppardPhotograph(1983)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Def Leppard - Photograph (1983).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylDepecheModeEnjoyTheSilence(1990)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Depeche Mode - Enjoy The Silence (1990).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylDevoWhipIt(1980)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Devo - Whip It (1980).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylDionTheWanderer(1961)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Dion - The Wanderer (1961).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylDonMcleanAmericanPie(1971)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Don Mclean - American Pie (1971).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylEaglesHotelCalifornia(1977)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Eagles - Hotel California (1977).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylEarthWind&FireBoogieWonderland(1979)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Earth Wind & Fire - Boogie Wonderland (1979).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylEarthWind&FireLet'sGroove(1981)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Earth Wind & Fire - Let's Groove (1981).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylEarthWind&FireSeptember(1978)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Earth Wind & Fire - September (1978).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylEarthWind&FireShiningStar(1975)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Earth Wind & Fire - Shining Star (1975).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylEazyEBoyzntheHood(1987)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Eazy-E - Boyz-n-the-Hood (1987).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylELOMrBlueSky(1977)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/ELO - Mr. Blue Sky (1977).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylELOTurntoStone(1977)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/ELO - Turn to Stone (1977).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylEltonJohni'mStillStanding(1983)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Elton John - i'm Still Standing (1983).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylEltonJohnRocketMan(1972)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Elton John - Rocket Man (1972).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylEuropeCarrie(1987)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Europe - Carrie (1987).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylEuropeTheFinalCountdown(1986)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Europe - The Final Countdown (1986).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylGeorgeHarrisonI'veGotMyMindSetonYou(1987)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/George Harrison - I've Got My Mind Set on You (1987).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylGilScottHeronHomeisWheretheHatredis(1971)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Gil Scott-Heron - Home is Where the Hatred is (1971).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylGunsN'RosesSweetChildO'Mine(1988)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Guns N' Roses - Sweet Child O' Mine (1988).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylGunsN'RosesWelcomeToTheJungle(1987)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Guns N' Roses - Welcome To The Jungle (1987).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylHankWilliamsI'llNeverGetOutofThisWorldAlive(1952)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Hank Williams - I'll Never Get Out of This World Alive (1952).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylHankWilliamsJrAllMyRowdyFriendsAreComingOverTonight(1984)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Hank Williams Jr. - All My Rowdy Friends Are Coming Over Tonight (1984).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylHankWilliamsJrDinosaur(1980)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Hank Williams Jr. - Dinosaur (1980).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylHankWilliamsJrOldHabits(1980)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Hank Williams Jr. - Old Habits (1980).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylHankWilliamsJrTexasWomen(1981)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Hank Williams Jr. - Texas Women (1981).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylHouseofPainJumpAround(1992)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/House of Pain - Jump Around (1992).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylHueyLewisAndTheNewsHipToBeSquare(1986)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Huey Lewis And The News - Hip To Be Square (1986).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylJapanQuietLife(1979)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Japan - Quiet Life (1979).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylJimCroceTimeInABottle(1972)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Jim Croce - Time In A Bottle (1972).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylJimiHendrixIDon'tLiveToday(1967)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Jimi Hendrix -  I Don't Live Today (1967).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylJimiHendrixAllAlongtheWatchtower(1968)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Jimi Hendrix - All Along the Watchtower (1968).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylJimiHendrixBoldasLove(1967)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Jimi Hendrix - Bold as Love (1967).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylJimiHendrixHeyJoe(1967)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Jimi Hendrix - Hey Joe (1967).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylJimiHendrixHushNow(1981)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Jimi Hendrix - Hush Now (1981).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylJimiHendrixPurpleHaze(1967)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Jimi Hendrix - Purple Haze  (1967).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylJimiHendrixVoodooChild(1968)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Jimi Hendrix - Voodoo Child (1968).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylJohnDenverTakeMeHomeCountryRoads(1971)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/John Denver - Take Me Home Country Roads (1971).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylJohnTravolta&OliviaNewtonJohnYou'reTheOneThatIWant(1978)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/John Travolta & Olivia Newton-John - You're The One That I Want (1978).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylJourneyDon'tStopBelievin'(1981)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Journey - Don't Stop Believin' (1981).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylKansasCarryOnWaywardSon(1976)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Kansas - Carry On Wayward Son (1976).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylKansasDustintheWind(1977)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Kansas - Dust in the Wind (1977).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylKraftwerkComputerLove(1981)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Kraftwerk - Computer Love (1981).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylKraftwerkTheModel(1978)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Kraftwerk - The Model (1978).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylLedZeplinStairwayToHeaven(1971)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Led Zeplin - Stairway To Heaven (1971).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylLedZeppelinBlackDog(1971)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Led Zeppelin - Black Dog (1971).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylLedZeppelinHeartbreaker(1969)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Led Zeppelin - Heartbreaker (1969).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylLedZeppelinInMyTimeofDying(1975)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Led Zeppelin - In My Time of Dying (1975).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylLedZeppelinLivingLovingMaid(She'sJustaWoman)(1969)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Led Zeppelin - Living Loving Maid (She's Just a Woman) (1969).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylLedZeppelinMistyMountainHop(1971)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Led Zeppelin - Misty Mountain Hop (1971).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylLouReedPerfectDay(1972)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Lou Reed - Perfect Day (1972).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylLouReedSatelliteofLove(1972)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Lou Reed - Satellite of Love (1972).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylLouReedWalkontheWildSide(1972)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Lou Reed - Walk on the Wild Side (1972).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylLoverboyWorkingfortheWeekend(1981)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Loverboy - Working for the Weekend (1981).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylLynrydSkynyrdSweetHomeAlabama(1974)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Lynryd Skynyrd - Sweet Home Alabama (1974).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylLynyrdSkynyrdSimpleMan(1973)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Lynyrd Skynyrd - Simple Man (1973).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylMadonnaLikeAVirgin(1984)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Madonna - Like A Virgin (1984).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylMartyRobbinsElpaso(1957)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Marty Robbins - El paso (1957).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylMatthewWilderBreakMyStride(1983)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Matthew Wilder - Break My Stride (1983).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylMenatWorkLandDownUnder(1980)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Men at Work - Land Down Under (1980).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylMenAtWorkWhoCanItBeNow(1981)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Men At Work - Who Can It Be Now (1981).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylMidnightOilBedsAreBurning(1987)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Midnight Oil - Beds Are Burning (1987).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylMightyWingsCheapTrick(1985)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Mighty Wings - Cheap Trick (1985).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylModernEnglishIMeltWithYou(1982)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Modern English - I Melt With You (1982).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylMotleyCrueHomeSweetHome(1985)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Motley Crue - Home Sweet Home (1985).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylMotleyCrueKickstartMyHeart(1989)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Motley Crue - Kickstart My Heart (1989).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylNazarethBrokenDownAngel(1973)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Nazareth - Broken Down Angel (1973).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylNazarethDown(1975)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Nazareth - Down (1975).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylNazarethLoveHurts(1974)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Nazareth - Love Hurts (1974).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylNeilYoungCampaigner(1977)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Neil Young - Campaigner (1977).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylNENA99RedBalloons(1984)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/NENA - 99 Red Balloons (1984).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylNewOrderBlueMonday88(1983)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/New Order - Blue Monday 88 (1983).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylNirvanaDrainYou(1991)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Nirvana - Drain You (1991).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylNirvanaInBloom(1991)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Nirvana - In Bloom (1991).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylNirvanaLithium(1991)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Nirvana - Lithium (1991).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylNirvanaLoveBuzz(1989)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Nirvana - Love Buzz (1989).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylNirvanaOnaPlain(1991)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Nirvana - On a Plain (1991).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylNirvanaStayAway(1991)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Nirvana - Stay Away (1991).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylNWAFuckthePolice(1988)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/NWA - Fuck the Police (1988).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylNWAGangstaGangsta(1988)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/NWA - Gangsta Gangsta (1988).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylNWAStraightOuttaCompton(1988)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/NWA - Straight Outta Compton (1988).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylPanteraCowboysFromHell(1990)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Pantera - Cowboys From Hell (1990).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylPaulSimonYouCanCallMeAl(1986)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Paul Simon - You Can Call Me Al (1986).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylPearlJamAlive(1991)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Pearl Jam - Alive (1991).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylPearlJamEvenFlow(1991)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Pearl Jam - Even Flow (1991).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylPinkFloydComfortablyNumb(1980)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Pink Floyd - Comfortably Numb (1980).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylPixiesDowntotheWell(1990)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Pixies - Down to the Well (1990).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylQueenAnotherOneBitestheDust(1980)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Queen - Another One Bites the Dust (1980).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylQueenBohemianRhapsody(1975)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Queen - Bohemian Rhapsody (1975).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylQueenDon'tStopMeNow(1979)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Queen - Don't Stop Me Now (1979).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylQueenIWantToBreakFree(1984)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Queen - I Want To Break Free (1984).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylQuietRiotCumonFeelTheNoise(1973)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Quiet Riot - Cum on Feel The Noise (1973).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylREMIt'stheendoftheworldasweknowit(andIfeelfine)(1987)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/R.E.M - It's the end of the world as we know it (and I feel fine) (1987).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylREMLosingmyReligion(1991)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/R.E.M. - Losing my Religion (1991).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylRedHotChiliPeppersMeAndMyFriends(1987)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Red Hot Chili Peppers - Me And My Friends (1987).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylRedHotChiliPeppersMyLovelyMan(1991)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Red Hot Chili Peppers - My Lovely Man (1991).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylRedHotChiliPeppersUndertheBridge(1991)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Red Hot Chili Peppers - Under the Bridge (1991).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylREOSpeedwagonCan'tFightThisFeeling(1984)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/REO Speedwagon - Can't Fight This Feeling (1984).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylRickAstleyNeverGonnaGiveYouUp(1987)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Rick Astley - Never Gonna Give You Up (1987).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylRickSpringfieldJessie'sGirl(1981)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Rick Springfield - Jessie's Girl (1981).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylRodStewartYoungTurks(1981)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Rod Stewart - Young Turks (1981).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylRollingStonesPaintItBlack(1966)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Rolling Stones -  Paint It Black (1966).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylRollingStonesGimmeShelter(1969)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Rolling Stones - Gimme Shelter (1969).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylRunDMCIt'sTricky(1987)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Run DMC - It's Tricky (1987).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylRushLimelight(1981)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Rush - Limelight (1981).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylRushTheSpiritOfTheRadio(1980)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Rush - The Spirit Of The Radio (1980).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylRushWorkingMan(1974)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Rush - Working Man (1974).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylRushYYZ(1981)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Rush - YYZ (1981).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylSaltNPepaPushIt(1988)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Salt-N-Pepa - Push It (1988).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylSandra(I'llNeverBe)MariaMagdalena(1985)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Sandra - (I'll Never Be) Maria Magdalena (1985).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylScorpionsSendMeAnAngel(1991)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Scorpions - Send Me An Angel (1991).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylSimon&GarfunkelBridgeoverTroubledWater(1970)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Simon & Garfunkel - Bridge over Troubled Water (1970).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylSimon&GarfunkelCecilia(1970)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Simon & Garfunkel - Cecilia (1970).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylSimon&GarfunkelMrsRobinson(1968)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Simon & Garfunkel - Mrs. Robinson (1968).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylSkidRow18AndLife(1989)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Skid Row - 18 And Life (1989).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylStarshipNothing'sGonnaStopUsNow(1987)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Starship - Nothing's Gonna Stop Us Now (1987).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylStarshipWeBuiltThisCity(1985)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Starship - We Built This City (1985).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylStatusQuoPicturesofMatchstickMen(1968)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Status Quo - Pictures of Matchstick Men (1968).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylSteelyDanDoitAgain(1972)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Steely Dan - Do it Again (1972).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylSteelyDanReelin'intheYears(1972)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Steely Dan - Reelin' in the Years (1972).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylSteveMillerBandAbracadabra(1982)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Steve Miller Band - Abracadabra (1982).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylStryperAlwaysThereForYou(1988)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Stryper - Always There For You (1988).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylSublime40ozToFreedom(1992)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Sublime - 40oz To Freedom (1992).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTalkingHeadsPsychoKiller(1977)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Talking Heads - Psycho Killer (1977).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTearsforFearsEverybodyWantstoRuletheWorld(1985)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Tears for Fears - Everybody Wants to Rule the World (1985).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTearsForFearsHeadOverHeels(1985)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Tears For Fears - Head Over Heels (1985).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTechnotronicPumpUpTheJam(1989)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Technotronic - Pump Up The Jam (1989).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTheAnimalsHouseoftheRisingSun(1964)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/The Animals - House of the Rising Sun (1964).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTheB52'sRockLobster(1978)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/The B-52's - Rock Lobster (1978).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTheBeachBoysKokomo(1988)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/The Beach Boys - Kokomo (1988).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTheBugglesVideoKilledtheRadioStar(1979)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/The Buggles - Video Killed the Radio Star (1979).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTheClashShouldIStayorShouldIGo(1982)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/The Clash - Should I Stay or Should I Go (1982).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTheEaglesTakeItEasy(1972)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/The Eagles - Take It Easy (1972).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylThePoliceEverybreathyoutake(1983)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/The Police - Every breath you take (1983).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylThePoliceMessageInABottle(1979)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/The Police - Message In A Bottle (1979).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylThePoliceRoxanne(1979)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/The Police - Roxanne (1979).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTheStrangersGoldenBrown(1981)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/The Strangers - Golden Brown (1981).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTheTopsReachOutI'llBeThere(1967)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/The Tops - Reach Out I'll Be There (1967).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTheTrashmenSurfin'Bird(1963)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/The Trashmen - Surfin' Bird (1963).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTheTravelingWilburysEndoftheline(1988)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/The Traveling Wilburys - End of the line (1988).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTheTravelingWilburysLastNight(1988)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/The Traveling Wilburys - Last Night (1988).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTheWhoEminenceFront(1982)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/The Who - Eminence Front (1982).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTheWhoWon'tGetFooledAgain(1971)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/The Who - Won't Get Fooled Again (1971).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylThinLizzyTheBoysAreBackInTown(1976)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Thin Lizzy - The Boys Are Back In Town (1976).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylThomasDolbySheblindedmewithscience(1982)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Thomas Dolby - She blinded me with science (1982).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTiffanyIThinkwe'realonenow(1987)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Tiffany - I Think we're alone now (1987).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTinyTimLivin'intheSunlightLovin'intheMoonlight(1968)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Tiny Tim - Livin' in the Sunlight Lovin' in the Moonlight (1968).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTomPettyFreeFalling(1988)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Tom Petty - Free Falling (1988).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTomPettyZombieZoo(1989)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Tom Petty - Zombie Zoo (1989).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTommyTutone8675309(1981)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Tommy Tutone - 867-5309 (1981).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTotoAfrica(1982)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Toto - Africa (1982).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTotoHoldTheLine(1978)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Toto - Hold The Line (1978).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTownesVanZandtForTheSakeOfTheSong(1968)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Townes Van Zandt - For The Sake Of The Song (1968).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTwistedSisterWe'reNotGonnaTakeIt(1984)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Twisted Sister - We're Not Gonna Take It (1984).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylTwistedSistersIWannaRock(1984)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Twisted Sisters - I Wanna Rock (1984).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylU2WithOrWithoutYou(1987)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/U2 - With Or Without You (1987).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylUB40RedRedWine(1983)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/UB40 - Red Red Wine (1983).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylVanHalenJump(1983)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Van Halen - Jump (1983).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylVanHalenPanama(1984)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Van Halen - Panama (1984).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylVanHalenYouReallyGotMe(1978)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Van Halen - You Really Got Me (1978).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylVehicleTheIdesofMarch(1970)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Vehicle - The Ides of March (1970).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylWheninRomeThePromise(1988)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/When in Rome - The Promise (1988).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylWhitesnakeHereIGoAgain(1987)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Whitesnake - Here I Go Again (1987).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylWingsBandontheRun(1973)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Wings - Band on the Run (1973).ogg,
+			distanceMax = 75,
+		}
+	}
+	sound VinylWingsNineteenHundredandEightyFive(1973)
+	{
+		category = True Music,
+		master = Ambient,
+		clip
+		{
+			file = media/yourMusic/TCVinylplayer/Wings - Nineteen Hundred and Eighty-Five (1973).ogg,
+			distanceMax = 75,
+		}
+	}
+}

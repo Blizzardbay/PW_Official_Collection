@@ -1,0 +1,5 @@
+ContextMenu_CH = {
+	ContextMenu_Cremate_Corpse = "將屍體火葬",
+	ContextMenu_CampfireInfo = "營火資訊",
+	ContextMenu_FireplaceInfo = "壁爐資訊",
+}	

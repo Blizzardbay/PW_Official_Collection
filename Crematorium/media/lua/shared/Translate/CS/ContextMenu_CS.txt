@@ -1,0 +1,4 @@
+ContextMenu_CS = {
+	ContextMenu_Cremate_Corpse = "Spálit tìlo",
+	ContextMenu_CampfireInfo = "Info o ohništì",
+}

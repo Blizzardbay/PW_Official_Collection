@@ -1,0 +1,4 @@
+IGUI_FR = {
+	IGUI_Campfire_FuelAmount = "Carburant : %1",
+	IGUI_Campfire = "Feu de camp",
+}

@@ -1,0 +1,5 @@
+name=Time-Period Accurate Music (VINYLS ONLY)
+poster=poster.png
+id=TPAMVO
+require=truemusic
+description= Time-Period Accurate Music but only vinyls.

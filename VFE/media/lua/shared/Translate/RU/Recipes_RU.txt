@@ -1,0 +1,21 @@
+Recipes_RU = {
+
+/*Actions*/
+Recipe_Saw_Off_Shotgun_Stock = "Спилить приклад",
+Recipe_Saw_Off_Double_Barrel_Shotgun_Stock = "Спилить приклад",
+
+Recipe_Open_Box_of_7.62_Ammo = "Вынуть патроны из коробки",
+Recipe_Place_7.62_Ammo_in_Box = "Сложить патроны в коробку",
+
+Recipe_Open_Box of_.22_Ammo = "Вынуть патроны из коробки",
+Recipe_Place_.22_Ammo_in_Box = "Сложить патроны в коробку",
+
+Recipe_Couple_5.56_Magazines = "Пара 5,56 Журналы",
+Recipe_Separate_5.56_Magazines = "Отдельные магазины 5,56",
+
+Recipe_Couple_7.62_Magazines = "Пара 7,62 Журналы",
+Recipe_Separate_7.62_Magazines = "Отдельные магазины 7,62",
+
+Recipe_Attach_M9_Bayonet_to_Spear = "Закрепить Штык-нож M9 на копье",
+Recipe_Reclaim_M9_Bayonet_from_Spear = "Снять с копья Штык-нож M9",
+}

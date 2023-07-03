@@ -1,0 +1,3 @@
+Items_ES = {
+    DisplayName_Empty_Lighter = "Encendedor vacío",
+}

@@ -1,0 +1,128 @@
+ItemName_ES = {
+    /*Weapons*/
+	ItemName_Base.AK47 = "Rifle de asalto AK47",	
+	ItemName_Base.AK47Unfolded = "Rifle de asalto AK47",	
+	ItemName_Base.AK47Folded = "Rifle de asalto AK47",
+	
+	ItemName_Base.SKS = "Rifle SKS",
+	ItemName_Base.SKSSpiker = "Rifle SKS",
+	ItemName_Base.SKSSpikerBayonet = "Rifle SKS",
+	
+	ItemName_Base.Mini14 = "Rifle Mini-14",	
+	ItemName_Base.Mini14Unfolded = "Rifle Mini-14",
+	ItemName_Base.Mini14Folded = "Rifle Mini-14",
+	
+	ItemName_Base.HuntingRifle = "Rifle R788",	
+	ItemName_Base.VarmintRifle = "Rifle R700",
+	ItemName_Base.SniperRifle = "Eifle de Francotirador M24",
+	
+	ItemName_Base.LeverRifle = "Carabina W1866",
+	
+	ItemName_Base.1022 = "Rifle R1022",
+	
+	ItemName_Base.Spas12 = "Escopeta SPAS-12",
+	ItemName_Base.Spas12Folded = "Escopeta SPAS-12",
+	
+	ItemName_Base.Shotgun = "Escopeta M500",
+	ItemName_Base.Shotgun2 = "Escopeta M590",
+	ItemName_Base.ShotgunSemi = "Escopeta R1187",
+	ItemName_Base.ShotgunSemi2 = "Escopeta R1187",
+	ItemName_Base.ShotgunSilent = "Lanzamiento de la Moneda",
+	
+	ItemName_Base.ShotgunSawnoff = "Escopeta recortada M500",
+	ItemName_Base.ShotgunSawnoffNoStock = "Escopeta recortada M500",
+	
+	ItemName_Base.DoubleBarrelShotgun = "Escopeta Double Barrel",
+    ItemName_Base.DoubleBarrelShotgunSawnoff = "Escopeta recortada Double Barrel",
+	ItemName_Base.DoubleBarrelShotgunSawnoffNoStock = "Escopeta recortada Double Barrel",
+	
+	ItemName_Base.Revolver_Short = "Revólver M10-5",
+	ItemName_Base.Revolver_Long = "Revólver Mágnum M29",
+	
+	ItemName_Base.Pistol3 = "Pistola DE",
+	ItemName_Base.Tec9 = "Pistola TEC9",
+	ItemName_Base.Glock = "Pistola G17",
+	ItemName_Base.Glock18 = "Pistola G18",
+	ItemName_Base.P229 = "Pistola P229",
+	
+	ItemName_Base.MP5 = "Subfusil MP5",
+	ItemName_Base.MP5SD = "Subfusil MP5SD",
+	ItemName_Base.MP5Unfolded = "Subfusil MP5",
+	ItemName_Base.MP5Folded = "Subfusil MP5",
+	ItemName_Base.MAC10Unfolded = "Subfusil M10",
+	ItemName_Base.MAC10Folded = "Subfusil M10",
+	
+	ItemName_Base.CAR15 = "Rifle de asalto CAR-15", 
+	ItemName_Base.CAR15Folded = "Rifle de asalto CAR-15", 
+	ItemName_Base.CAR15D = "Rifle de asalto CAR-15",
+	ItemName_Base.CAR15DFolded = "Rifle de asalto CAR-15 Delta",
+	
+	ItemName_Base.AssaultRifleBayonet = "Rifle de asalto M16", 
+	ItemName_Base.M16Bayonet = "Bayoneta M9", 
+	
+	ItemName_Base.FAL = "Rifle de combate FAL",
+	ItemName_Base.FALClassic = "Rifle de combate FAL",
+	
+	ItemName_Base.AssaultRiflM1 = "Rifle M1",
+	
+	/*Ammo*/	
+	ItemName_Base.762Box = "Caja de munición 7,62",
+	ItemName_Base.762Bullets = "Balas 7,62",
+
+	ItemName_Base.22Box = "Caja de munición ,22",
+	ItemName_Base.22Bullets = "Balas ,22",
+	
+	/*Magazines*/
+	ItemName_Base.762Clip = "Cargador para balas de AK47",
+	ItemName_Base.223Clip20 = "Cargador para balas de Mini-14",
+	
+	ItemName_Base.9mmClip20 = "Cargador para balas de TEC9",
+	ItemName_Base.9mmClip30 = "Cargador para balas de MP5",
+	ItemName_Base.45Clip32 = "Cargador para balas de M10",
+	
+	ItemName_Base.22ClipRifle = "Cargador para balas de R1022",
+	
+	ItemName_Base.9mmClip = "Cargador para balas de M9",
+	ItemName_Base.44Clip = "Cargador para balas de DE",
+	ItemName_Base.45Clip = "Cargador para balas de M1911",
+	ItemName_Base.308Clip = "Cargador para balas de R788",
+	ItemName_Base.556Clip = "Cargador para balas de M16",
+	ItemName_Base.M14Clip = "Cargador para balas de M14",
+	ItemName_Base.FALClip = "Cargador para balas de FAL",
+	ItemName_Base.9mmClip17 = "Cargador para balas de G17",
+	
+	/*Attachments*/
+	ItemName_Base.Bipod = "Bípode",
+	ItemName_Base.IronSight = "Miras de Hierro Mejoradas",
+	ItemName_Base.ShellHolder = "Portacartuchos",
+	ItemName_Base.Coupled556 = "Cargador acoplado para balas de 5,56",
+	ItemName_Base.Coupled762 = "Cargador acoplado para balas de 7,62",
+	ItemName_Base.x2Scope_Fake = "Mira 2x",
+	ItemName_Base.x4Scope_Fake = "Mira 4x",
+	ItemName_Base.x8Scope_Fake = "Mira 8x",
+	
+	/*Items*/
+	ItemName_Base.CleaningKit = "Kit de Limpieza de Armas",
+	ItemName_Base.FireKlean = "Lubricante para pistolas FireKlean",
+	
+	/*Gun Cases*/
+	ItemName_Base.VFERifleCase1 = "Estuche de armas",
+	ItemName_Base.VFERifleCase2 = "Estuche de armas",
+	ItemName_Base.VFERifleCase3 = "Estuche de armas",
+	ItemName_Base.VFERifleCase4 = "Estuche de armas",
+	ItemName_Base.VFERifleCase5 = "Estuche de armas",
+	ItemName_Base.VFERifleCase6 = "Estuche de armas",
+	ItemName_Base.VFERifleCase7 = "Estuche de armas",
+	ItemName_Base.VFERifleCase8 = "Estuche de armas",
+	ItemName_Base.VFERifleCase9 = "Estuche de armas",
+	ItemName_Base.VFEShotgunCase1 = "Estuche de armas",
+	ItemName_Base.VFEShotgunCase2 = "Estuche de armas",
+	ItemName_Base.VFEShotgunCase3 = "Estuche de armas",
+	ItemName_Base.VFEPistolCase1 = "Estuche de armas",
+	ItemName_Base.VFEPistolCase2 = "Estuche de armas",
+	ItemName_Base.VFEPistolCase3 = "Estuche de armas",
+	
+	/*Fake items for attachments*/
+	ItemName_Base.FakeItemSling = "todas las armas largas.",
+	ItemName_Base.FakeItemSights = "todas las armas.",
+	}

@@ -1,0 +1,4 @@
+IGUI_PTBR = {
+	IGUI_Campfire_FuelAmount = "Combustível: %1",
+	IGUI_Campfire = "Acampamento",
+}

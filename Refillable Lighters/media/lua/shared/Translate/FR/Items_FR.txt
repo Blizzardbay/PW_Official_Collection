@@ -1,0 +1,3 @@
+Items_FR = {
+    DisplayName_Empty_Lighter = "Briquet vide",
+}

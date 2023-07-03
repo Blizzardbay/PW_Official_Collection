@@ -1,0 +1,4 @@
+ContextMenu_PTBR = {
+	ContextMenu_Cremate_Corpse = "Queimar cadáver",
+	ContextMenu_CampfireInfo = "Informações do acampamento",
+}

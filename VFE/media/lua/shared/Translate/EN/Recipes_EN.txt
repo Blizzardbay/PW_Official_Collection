@@ -1,0 +1,21 @@
+Recipes_EN = {
+
+/*Actions*/
+Recipe_Saw_Off_Shotgun_Stock = "Saw Off Shotgun Stock",
+Recipe_Saw_Off_Double_Barrel_Shotgun_Stock = "Saw Off Shotgun Stock",
+
+Recipe_Open_Box_of_7.62_Ammo = "Open Box of 7.62 Ammo",
+Recipe_Place_7.62_Ammo_in_Box = "Place 7.62 Ammo in Box",
+
+Recipe_Open_Box of_.22_Ammo = "Open Box of .22 Ammo",
+Recipe_Place_.22_Ammo_in_Box = "Place .22 Ammo in Box",
+
+Recipe_Couple_5.56_Magazines = "Couple 5.56 Magazines",
+Recipe_Separate_5.56_Magazines = "Separate 5.56 Magazines",
+
+Recipe_Couple_7.62_Magazines = "Couple 7.62 Magazines",
+Recipe_Separate_7.62_Magazines = "Separate 7.62 Magazines",
+
+Recipe_Attach_M9_Bayonet_to_Spear = "Attach M9 Bayonet to Spear",
+Recipe_Reclaim_M9_Bayonet_from_Spear = "Reclaim M9 Bayonet from Spear",
+}

@@ -1,0 +1,3 @@
+Recipes_TR = {
+   Recipe_Refill_Empty_Lighter = "Boþ Çakmaðý Doldur",
+}

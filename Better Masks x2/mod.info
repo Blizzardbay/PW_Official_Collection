@@ -1,0 +1,7 @@
+name=Better Masks - 2x spawn chance
+poster=poster.png
+icon=icon.png
+id=bettermasks_2x
+require=bettermasks
+authors=NukeMandu
+description=<RGB:0.8,0.8,1>When this mod is activated, the spawn chance of masks in "Better Masks" is increased by about 2x.

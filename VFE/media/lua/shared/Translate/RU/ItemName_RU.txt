@@ -1,0 +1,128 @@
+ItemName_RU = {
+    /*Weapons*/
+	ItemName_Base.AK47 = "Штурмовая винтовка AK47",	
+	ItemName_Base.AK47Unfolded = "Штурмовая винтовка AK47",	
+	ItemName_Base.AK47Folded = "Штурмовая винтовка AK47",
+	
+	ItemName_Base.SKS = "Винтовка SKS",
+	ItemName_Base.SKSSpiker = "Винтовка SKS",
+	ItemName_Base.SKSSpikerBayonet = "Винтовка SKS",
+	
+	ItemName_Base.Mini14 = "Винтовка Mini-14",	
+	ItemName_Base.Mini14Unfolded = "Винтовка Mini-14",
+	ItemName_Base.Mini14Folded = "Винтовка Mini-14",
+	
+	ItemName_Base.HuntingRifle = "Винтовка R788",	
+	ItemName_Base.VarmintRifle = "Винтовка R700",
+	ItemName_Base.SniperRifle = "Снайперская винтовка M24",
+	
+	ItemName_Base.LeverRifle = "Карабин W1866",
+	
+	ItemName_Base.1022 = "Винтовка R1022",
+	
+	ItemName_Base.Spas12 = "Дробовик SPAS-12",
+	ItemName_Base.Spas12Folded = "Дробовик SPAS-12",
+	
+	ItemName_Base.Shotgun = "Дробовик M500",
+	ItemName_Base.Shotgun2 = "Дробовик M590",
+	ItemName_Base.ShotgunSemi = "Дробовик R1187",
+	ItemName_Base.ShotgunSemi2 = "Дробовик R1187",
+	ItemName_Base.ShotgunSilent = "Подбрасывание монеты",
+	
+	ItemName_Base.ShotgunSawnoff = "Обрез дробовика M500",
+	ItemName_Base.ShotgunSawnoffNoStock = "Обрез дробовика M500",
+	
+	ItemName_Base.DoubleBarrelShotgun = "Двуствольный дробовик",
+    ItemName_Base.DoubleBarrelShotgunSawnoff = "Обрез Двуствольный дробовик",
+	ItemName_Base.DoubleBarrelShotgunSawnoffNoStock = "Обрез Двуствольный дробовик",
+	
+	ItemName_Base.Revolver_Short = "Револьвер M10-5",
+	ItemName_Base.Revolver_Long = "Револьвер M29 магнум",
+	
+	ItemName_Base.Pistol3 = "Пистолет DE",
+	ItemName_Base.Tec9 = "Пистолет TEC9",
+	ItemName_Base.Glock = "Пистолет G17",
+	ItemName_Base.Glock18 = "Пистолет G18",
+	ItemName_Base.P229 = "Пистолет P229",
+	
+	ItemName_Base.MP5 = "Пистолет-пулемет MP5",
+	ItemName_Base.MP5SD = "Пистолет-пулемет MP5SD",
+	ItemName_Base.MP5Unfolded = "Пистолет-пулемет MP5",
+	ItemName_Base.MP5Folded = "Пистолет-пулемет MP5",
+	ItemName_Base.MAC10Unfolded = "Пистолет-пулемет M10",
+	ItemName_Base.MAC10Folded = "Пистолет-пулемет M10",
+	
+	ItemName_Base.CAR15 = "Штурмовая винтовка CAR-15", 
+	ItemName_Base.CAR15Folded = "Штурмовая винтовка CAR-15", 
+	ItemName_Base.CAR15D = "Тактическая штурмовая винтовка CAR-15",
+	ItemName_Base.CAR15DFolded = "Тактическая штурмовая винтовка CAR-15",
+	
+	ItemName_Base.AssaultRifleBayonet = "Штурмовая винтовка M16", 
+	ItemName_Base.M16Bayonet = "Штык-нож M9", 
+	
+	ItemName_Base.FAL = "Боевая винтовка FAL",
+	ItemName_Base.FALClassic = "Боевая винтовка FAL",
+	
+	ItemName_Base.AssaultRiflM1 = "Винтовка M1",
+	
+	/*Ammo*/	
+	ItemName_Base.762Box = "Коробка патронов 7.62",
+	ItemName_Base.762Bullets = "Патрон 7.62",
+	
+	ItemName_Base.22Box = "Коробка патронов .22",
+	ItemName_Base.22Bullets = "Патрон .22",
+	
+	/*Magazines*/
+	ItemName_Base.762Clip = "Магазин от AK47",
+	ItemName_Base.223Clip20 = "Магазин от Mini-14",
+	
+	ItemName_Base.9mmClip20 = "Магазин от TEC9",
+	ItemName_Base.9mmClip30 = "Магазин от MP5",
+	ItemName_Base.45Clip32 = "Магазин от M10",
+	
+	ItemName_Base.22ClipRifle = "Магазин от R1022",
+	
+	ItemName_Base.9mmClip = "Магазин от M9",
+	ItemName_Base.44Clip = "Магазин от DE",
+	ItemName_Base.45Clip = "Магазин от M1911",
+	ItemName_Base.308Clip = "Магазин от R788",
+	ItemName_Base.556Clip = "Магазин от M16",
+	ItemName_Base.M14Clip = "Магазин от M14",
+	ItemName_Base.FALClip = "Магазин от FAL",
+	ItemName_Base.9mmClip17 = "Магазин от G17",
+	
+	/*Attachments*/
+	ItemName_Base.Bipod = "Сошка",
+	ItemName_Base.IronSight = "Улучшенные прицельные приспособления",
+	ItemName_Base.ShellHolder = "Держатель патронов",
+	ItemName_Base.Coupled556 = "Сдвоенные магазины 5,56",
+	ItemName_Base.Coupled762 = "Спаренные магазины 7,62",
+	ItemName_Base.x2Scope_Fake = "Прицел x2",
+    ItemName_Base.x4Scope_Fake = "Прицел x4",
+    ItemName_Base.x8Scope_Fake = "Прицел x8",
+	
+	/*Items*/
+	ItemName_Base.CleaningKit = "Набор для чистки оружия",
+	ItemName_Base.FireKlean = "Оружейное масло FireKlean",
+	
+	/*Gun Cases*/
+	ItemName_Base.VFERifleCase1 = "Оружейный кейс",
+	ItemName_Base.VFERifleCase2 = "Оружейный кейс",
+	ItemName_Base.VFERifleCase3 = "Оружейный кейс",
+	ItemName_Base.VFERifleCase4 = "Оружейный кейс",
+	ItemName_Base.VFERifleCase5 = "Оружейный кейс",
+	ItemName_Base.VFERifleCase6 = "Оружейный кейс",
+	ItemName_Base.VFERifleCase7 = "Оружейный кейс",
+	ItemName_Base.VFERifleCase8 = "Оружейный кейс",
+	ItemName_Base.VFERifleCase9 = "Оружейный кейс",
+	ItemName_Base.VFEShotgunCase1 = "Оружейный кейс",
+	ItemName_Base.VFEShotgunCase2 = "Оружейный кейс",
+	ItemName_Base.VFEShotgunCase3 = "Оружейный кейс",
+	ItemName_Base.VFEPistolCase1 = "Оружейный кейс",
+	ItemName_Base.VFEPistolCase2 = "Оружейный кейс",
+	ItemName_Base.VFEPistolCase3 = "Оружейный кейс",
+	
+	/*Fake items for attachments*/
+	ItemName_Base.FakeItemSling = "все длинные пушки.",
+	ItemName_Base.FakeItemSights = "все оружие.",
+	}

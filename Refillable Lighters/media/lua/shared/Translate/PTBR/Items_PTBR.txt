@@ -1,0 +1,3 @@
+Items_PTBR = {
+    DisplayName_Empty_Lighter = "Isqueiro vazio",
+}

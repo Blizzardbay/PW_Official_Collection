@@ -1,0 +1,4 @@
+IGUI_RU = {
+	IGUI_Campfire_FuelAmount = "Топлива: %1",
+	IGUI_Campfire = "Костер",
+}

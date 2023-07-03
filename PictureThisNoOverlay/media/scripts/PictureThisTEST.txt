@@ -1,0 +1,58 @@
+module Base
+{
+
+	recipe Make Upper
+    {
+       SpoonTS1,
+
+	   Result:SpoonTS3,
+       Time:600.0,
+       OnCreate:SocetWire_OnCreate,
+    }
+	
+	recipe Make Lower
+    {
+       SpoonTS3,
+
+	   Result:SpoonTS1,
+       Time:600.0,
+       OnCreate:SocetWire_OnCreate,
+    }
+	
+	item SpoonTS1
+	{
+		Weight	=	0.1,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisTEST_1,
+		DisplayName	=	Face Sign 1,
+		Icon	=	TS,
+	}
+	
+	item SpoonTS2
+	{
+		Weight	=	0.1,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisTEST_3,
+		DisplayName	=	Face Sign 2,
+		Icon	=	TS,
+	}
+	
+	item SpoonTS3
+	{
+		Weight	=	0.1,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisTEST_9,
+		DisplayName	=	Face Sign 3,
+		Icon	=	TS,
+	}
+	
+	item SpoonTS4
+	{
+		Weight	=	0.1,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisTEST_11,
+		DisplayName	=	Face Sign 4,
+		Icon	=	TS,
+	}
+
+}

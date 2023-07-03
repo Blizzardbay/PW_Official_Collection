@@ -1,0 +1,6 @@
+IGUI_CH = {
+	IGUI_Campfire_FuelAmount = "燃料: %1",
+	IGUI_Campfire = "營火",
+	IGUI_Fireplace_FuelAmount = "燃料: %1",
+	IGUI_Fireplace = "壁爐",
+}

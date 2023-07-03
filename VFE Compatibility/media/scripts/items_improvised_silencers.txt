@@ -1,0 +1,127 @@
+module ImprovisedSilencers
+{
+	imports
+	{
+		Base
+	}
+
+	item Silencer
+    {
+        Type = WeaponPart,
+        DisplayName = Silencer,
+        Icon = Silencer,
+        Weight = 1,
+		MaxRangeModifier = -0.8,
+		RecoilDelayModifier = -1,
+        WeightModifier = 1.2,
+		PartType = Canon,
+        MountOn = Pistol; Pistol2; Pistol3; VarmintRifle; HuntingRifle; Shotgun; ShotgunSawnoff; ShotgunSawnoffNoStock; Spas12; Spas12Folded; AssaultRifle; AssaultRifle2; AK47; AK47Folded; SKS; 1022; Mini14; Mini14Folded; CAR15; LeverRifle; MP5; Glock; Tec9; P229; Revolver; Revolver_Short; Revolver_Long,
+		Tooltip = Tooltip_Silencer,
+		WorldStaticModel = ImprovisedSilencers.Silencer_Ground,
+    }
+
+	item MetalPipeSilencer
+    {
+        Type = WeaponPart,
+        DisplayName = Metal Pipe Silencer,
+        Icon = MetalPipeSilencer,
+        Weight = 1,
+		MaxRangeModifier = -1,
+		RecoilDelayModifier = -1,
+        WeightModifier = 1.4,
+		PartType = Canon,
+        MountOn = Pistol; Pistol2; Pistol3; VarmintRifle; HuntingRifle; Shotgun; ShotgunSawnoff; ShotgunSawnoffNoStock; Spas12; Spas12Folded; AssaultRifle; AssaultRifle2; AK47; AK47Folded; SKS; 1022; Mini14; Mini14Folded; CAR15; LeverRifle; MP5; Glock; Tec9; P229; Revolver; Revolver_Short; Revolver_Long,
+		Tooltip = Tooltip_MetalPipeSilencer,
+		WorldStaticModel = ImprovisedSilencers.MetalPipeSilencer_Ground,
+    }
+
+	item TorchSilencer
+    {
+        Type = WeaponPart,
+        DisplayName = Hand Torch Silencer,
+        Icon = TorchSilencer,
+        Weight = 1,
+		MaxRangeModifier = -2,
+		RecoilDelayModifier = -1,
+        WeightModifier = 1.4,
+		PartType = Canon,
+        MountOn = Pistol; Pistol2; Pistol3; VarmintRifle; HuntingRifle; AssaultRifle; AssaultRifle2; AK47; AK47Folded; SKS; 1022; Mini14; Mini14Folded; CAR15; LeverRifle; MP5; Glock; Tec9; P229,
+		Tooltip = Tooltip_TorchSilencer,
+		WorldStaticModel = ImprovisedSilencers.TorchSilencer_Ground,
+    }
+	
+	item WaterBottleSilencer
+    {
+        Type = WeaponPart,
+        DisplayName = Water Bottle Silencer,
+        Icon = WaterBottleSilencer,
+        Weight = 0.8,
+		MaxRangeModifier = -2,
+		RecoilDelayModifier = -1,
+        WeightModifier = 1.2,
+		PartType = Canon,
+        MountOn = Pistol; Pistol2; Pistol3; VarmintRifle; HuntingRifle; AssaultRifle; AssaultRifle2; AK47; AK47Folded; SKS; 1022; Mini14; Mini14Folded; CAR15; LeverRifle; MP5; Glock; Tec9; P229,
+		Tooltip = Tooltip_WaterBottleSilencer,
+		WorldStaticModel = ImprovisedSilencers.WaterBottleSilencer_Ground,
+    }
+	
+	recipe Craft Silencer
+    {
+    	MetalPipe=1,
+		SmallSheetMetal=6,
+		BlowTorch=5,
+        keep WeldingMask,
+		keep [Recipe.GetItemTypes.Screwdriver],
+		keep Saw/GardenSaw,
+		AnimNode:Disassemble,
+    	Result:Silencer,
+    	Category:Improvised,
+		SkillRequired:MetalWelding=6,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding50,
+    	Time:500.0,
+		Prop1:Screwdriver,
+      	Prop2:Source=1,
+    }
+
+	recipe Craft Metal Pipe Silencer
+    {
+    	MetalPipe=1,
+        Sheet=1,
+		DuctTape=1,
+		keep [Recipe.GetItemTypes.Screwdriver],
+		keep Saw/GardenSaw,
+		AnimNode:Disassemble,
+    	Result:MetalPipeSilencer,
+    	Category:Improvised,
+		SkillRequired:MetalWelding=1,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+    	Time:500.0,
+		Prop1:Screwdriver,
+      	Prop2:Source=1,
+    } 
+
+	recipe Craft Hand Torch Silencer
+    {
+		destroy HandTorch,
+        Sheet=1,
+		DuctTape=1,
+		keep [Recipe.GetItemTypes.Screwdriver],
+    	Result:TorchSilencer,
+    	Category:Improvised,
+    	Time:500.0,
+		OnCreate:Recipe.OnCreate.DismantleFlashlight,
+		AnimNode:Disassemble,
+      	Prop1:Screwdriver,
+      	Prop2:Source=1,
+    }
+
+	recipe Craft Water Bottle Silencer
+    {
+    	WaterBottleEmpty/PopBottleEmpty,
+        Sheet=1,
+		DuctTape=1,
+    	Result:WaterBottleSilencer,
+    	Category:Improvised,
+    	Time:500.0,
+    }
+}

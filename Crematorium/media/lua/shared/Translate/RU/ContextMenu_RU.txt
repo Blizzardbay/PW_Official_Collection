@@ -1,0 +1,4 @@
+ContextMenu_RU = {
+	ContextMenu_Cremate_Corpse = "Сжечь Труп",
+	ContextMenu_CampfireInfo = "Информация О Костре",
+}	

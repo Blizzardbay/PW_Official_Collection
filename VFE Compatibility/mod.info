@@ -1,0 +1,5 @@
+name=Improvised Silencers VFE Patch
+poster=poster.png
+id=ImprovisedSilencersVFEPatch
+require=VFExpansion1
+description=Standalone compatibility patch for Vanilla firearms expansion. Use this version only along with VFE.

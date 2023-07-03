@@ -1,0 +1,92 @@
+/* Ammo Maker by STIMP_TM */
+
+module ammomaker {
+
+	imports
+	{
+		Base
+	}
+
+/* Recipes Raw Materials */
+
+	recipe Extract Sulfur
+	{
+		Stone=6,
+		EmptySandbag=1,
+		keep Hammer/HammerStone/Sledgehammer/BallPeenHammer/ClubHammer,
+
+		Result:ammomaker_Sulfur=5,
+		OnCreate:Recipe.OnCreate.ExtractSulfur,
+		Sound:Hammering,
+		Time:100.0,
+        Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Chemistry3,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make Charcoal from Logs
+	{
+		Log=2,
+
+		Result:Charcoal=1,
+		NearItem:Campfire,
+		Time:500.0,
+        Category:Ammo Maker,
+		CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Charcoal from Tree Branches
+	{
+		TreeBranch=18,
+
+		Result:Charcoal=1,
+		NearItem:Campfire,
+		Time:500.0,
+        Category:Ammo Maker,
+		CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Gun Powder
+	{
+		ammomaker_BirdExcrement=40,
+		ammomaker_Sulfur=5,
+		Charcoal;1,
+		keep MortarPestle,
+
+		Result:GunPowder=50,
+		Sound:Hammering,
+		Time:500.0,
+        Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Chemistry3,
+		NeedToBeLearn:false,
+	}
+
+	recipe Recycle Metal
+	{
+		TinCanEmpty/UnusableMetal,
+		BlowTorch=1,
+		keep Hammer/HammerStone/Sledgehammer/BallPeenHammer/ClubHammer,
+
+		Result:ScrapMetal=2,
+		OnCreate:Recipe.OnCreate.RecycleMetal,
+		Sound:BlowTorch,
+		Time:50.0,
+        Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Recycle Plastic
+	{
+		WaterBottleEmpty/PopBottleEmpty/MayonnaiseEmpty/Garbagebag/Plasticbag/CatToy/Disc/Disc_Retail/Toothbrush/BleachEmpty/Cube/Razor/Lunchbox/Lunchbox2/BucketEmpty/Cooler,
+		keep Scissors,
+
+		Result:ammomaker_RecPlastic=1,
+		OnCreate:Recipe.OnCreate.RecyclePlastic,
+		Sound:OpenCannedFood,
+		Time:50.0,
+        Category:Ammo Maker,
+		NeedToBeLearn:false,
+	}
+
+}

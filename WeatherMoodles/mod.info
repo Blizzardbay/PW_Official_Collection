@@ -2,6 +2,6 @@ name=Weather Moodles
 poster=poster.png
 id=WeatherMoodles
 description=Adds moodles to show current weather conditions.
-description=Although not required, the ModOptions mod can be used to enable/disable specific moodles.
+description=Although not required, the ModOptions mod is recommended for customization.
 require=MoodleFramework
 url=

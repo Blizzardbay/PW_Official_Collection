@@ -1,0 +1,129 @@
+ItemName_EN = {
+    /*Weapons*/
+	ItemName_Base.AK47 = "AK47 Assault Rifle",	
+	ItemName_Base.AK47Unfolded = "AK47 Assault Rifle",	
+	ItemName_Base.AK47Folded = "AK47 Assault Rifle",
+	
+	ItemName_Base.SKS = "SKS Rifle",
+	ItemName_Base.SKSSpiker = "SKS Rifle",
+	ItemName_Base.SKSSpikerBayonet = "SKS Rifle",
+	
+	ItemName_Base.Mini14 = "Mini-14 Rifle",	
+	ItemName_Base.Mini14Unfolded = "Mini-14 Rifle",
+	ItemName_Base.Mini14Folded = "Mini-14 Rifle",
+	
+	ItemName_Base.HuntingRifle = "R788 Rifle",	
+	ItemName_Base.VarmintRifle = "R700 Rifle",
+	ItemName_Base.SniperRifle = "M24 Sniper Rifle",
+	
+	ItemName_Base.LeverRifle = "W1866 Carbine",
+	
+	ItemName_Base.1022 = "R1022 Rifle",
+	
+	ItemName_Base.Spas12 = "SPAS-12 Shotgun",
+	ItemName_Base.Spas12Folded = "SPAS-12 Shotgun",
+	
+	ItemName_Base.Shotgun = "M500 Shotgun",
+	ItemName_Base.Shotgun2 = "M590 Shotgun",
+	ItemName_Base.ShotgunSemi = "R1187 Shotgun",
+	ItemName_Base.ShotgunSemi2 = "R1187 Shotgun",
+	ItemName_Base.ShotgunSilent = "Coin Toss",
+	
+	ItemName_Base.ShotgunSawnoff = "Sawed-Off M500 Shotgun",
+	ItemName_Base.ShotgunSawnoffNoStock = "Sawed-Off M500 Shotgun",
+	
+	ItemName_Base.DoubleBarrelShotgun = "Double Barrel Shotgun",
+    ItemName_Base.DoubleBarrelShotgunSawnoff = "Sawed-Off Double Barrel Shotgun",
+	ItemName_Base.DoubleBarrelShotgunSawnoffNoStock = "Sawed-Off Double Barrel Shotgun",
+	
+	ItemName_Base.Revolver_Short = "M10-5 Revolver",
+	ItemName_Base.Revolver_Long = "M29 Magnum Revolver",
+	
+	ItemName_Base.Pistol3 = "DE Pistol",
+	ItemName_Base.Tec9 = "TEC9 Pistol",
+	ItemName_Base.Glock = "G17 Pistol",
+	ItemName_Base.Glock18 = "G18 Pistol",
+	ItemName_Base.P229 = "P229 Pistol",
+	
+	ItemName_Base.MP5 = "MP5 Submachinegun",
+	ItemName_Base.MP5SD = "MP5SD Submachinegun",
+	ItemName_Base.MP5Unfolded = "MP5 Submachinegun",
+	ItemName_Base.MP5Folded = "MP5 Submachinegun",
+	ItemName_Base.MAC10Unfolded = "M10 Submachinegun",
+	ItemName_Base.MAC10Folded = "M10 Submachinegun",
+	
+	ItemName_Base.CAR15 = "CAR-15 Assault Rifle", 
+	ItemName_Base.CAR15Folded = "CAR-15 Assault Rifle", 
+	ItemName_Base.CAR15D = "CAR-15 Delta Assault Rifle",
+	ItemName_Base.CAR15DFolded = "CAR-15 Delta Assault Rifle",
+	
+	ItemName_Base.AssaultRifleBayonet = "M16 Assault Rifle", 
+	ItemName_Base.M16Bayonet = "M9 Bayonet", 
+	
+	ItemName_Base.FAL = "FAL Battle Rifle",
+	ItemName_Base.FALClassic = "FAL Battle Rifle",
+	
+	ItemName_Base.AssaultRiflM1 = "M1 Rifle",
+	
+	/*Ammo*/	
+	ItemName_Base.762Box = "Box of 7.62 Rounds",
+	ItemName_Base.762Bullets = "7.62 Rounds",
+
+	
+	ItemName_Base.22Box = "Box of .22 Rounds",
+	ItemName_Base.22Bullets = ".22 Rounds",
+	
+	/*Magazines*/
+	ItemName_Base.762Clip = "AK47 Magazine",
+	ItemName_Base.223Clip20 = "Mini-14 Magazine",
+	
+	ItemName_Base.9mmClip20 = "TEC9 Magazine",
+	ItemName_Base.9mmClip30 = "MP5 Magazine",
+	ItemName_Base.45Clip32 = "M10 Magazine",
+	
+	ItemName_Base.22ClipRifle = "R1022 Magazine",
+	
+	ItemName_Base.9mmClip = "M9 Magazine",
+	ItemName_Base.44Clip = "DE Magazine",
+	ItemName_Base.45Clip = "M1911 Magazine",
+	ItemName_Base.308Clip = "R788 Magazine",
+	ItemName_Base.556Clip = "M16 Magazine",
+	ItemName_Base.M14Clip = "M14 Magazine",
+	ItemName_Base.FALClip = "FAL Magazine",
+	ItemName_Base.9mmClip17 = "G17 Magazine",
+	
+	/*Attachments*/
+	ItemName_Base.Bipod = "Bipod",
+	ItemName_Base.IronSight = "Improved Iron Sights",
+	ItemName_Base.ShellHolder = "Shellholder",
+	ItemName_Base.Coupled556 = "Coupled 5.56 Magazines",
+	ItemName_Base.Coupled762 = "Coupled 7.62 Magazines",
+	ItemName_Base.x2Scope_Fake = "x2 Scope",
+    ItemName_Base.x4Scope_Fake = "x4 Scope",
+    ItemName_Base.x8Scope_Fake = "x8 Scope",
+	
+	/*Items*/
+	ItemName_Base.CleaningKit = "Gun Cleaning Kit",
+	ItemName_Base.FireKlean = "FireKlean Gun Lube",
+	
+	/*Gun Cases*/
+	ItemName_Base.VFERifleCase1 = "Gun Case",
+	ItemName_Base.VFERifleCase2 = "Gun Case",
+	ItemName_Base.VFERifleCase3 = "Gun Case",
+	ItemName_Base.VFERifleCase4 = "Gun Case",
+	ItemName_Base.VFERifleCase5 = "Gun Case",
+	ItemName_Base.VFERifleCase6 = "Gun Case",
+	ItemName_Base.VFERifleCase7 = "Gun Case",
+	ItemName_Base.VFERifleCase8 = "Gun Case",
+	ItemName_Base.VFERifleCase9 = "Gun Case",
+	ItemName_Base.VFEShotgunCase1 = "Gun Case",
+	ItemName_Base.VFEShotgunCase2 = "Gun Case",
+	ItemName_Base.VFEShotgunCase3 = "Gun Case",
+	ItemName_Base.VFEPistolCase1 = "Gun Case",
+	ItemName_Base.VFEPistolCase2 = "Gun Case",
+	ItemName_Base.VFEPistolCase3 = "Gun Case",
+	
+	/*Fake items for attachments*/
+	ItemName_Base.FakeItemSling = "all long guns.",
+	ItemName_Base.FakeItemSights = "all guns.",
+	}

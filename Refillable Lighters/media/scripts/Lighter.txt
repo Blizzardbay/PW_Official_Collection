@@ -1,0 +1,34 @@
+module Base
+{
+    item Lighter
+	{
+	    DisplayCategory = LightSource,
+		LightDistance	=	2,
+		Weight	=	0.1,
+		Type	=	Drainable,
+		UseWhileEquipped	=	TRUE,
+		TorchCone	=	FALSE,
+		LightStrength	=	0.4,
+		DisplayName	=	Lighter,
+		ActivatedItem	=	TRUE,
+		Icon	=	Lighter,
+		MetalValue = 1,
+		StaticModel = Zippo,
+		WorldStaticModel = ZippoGround,
+		ticksPerEquipUse = 110,
+		ReplaceOnDeplete	=	EmptyLighter,
+	}
+
+    item EmptyLighter
+    {
+		DisplayCategory = LightSource,
+		Weight	=	0.1,
+		DisplayName	=	Empty Lighter,
+		Icon	=	Lighter_Empty,
+		StaticModel = Zippo,
+		WorldStaticModel = ZippoGround,
+    }
+}
+
+
+	

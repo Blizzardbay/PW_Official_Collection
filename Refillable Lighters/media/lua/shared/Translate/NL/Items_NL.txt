@@ -1,0 +1,3 @@
+Items_NL = {
+    DisplayName_Empty_Lighter = "Lege aansteker",
+}

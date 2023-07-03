@@ -1,0 +1,4 @@
+IGUI_NL = {
+	IGUI_Campfire_FuelAmount = "Brandstof: %1",
+	IGUI_Campfire = "Kampvuur",
+}

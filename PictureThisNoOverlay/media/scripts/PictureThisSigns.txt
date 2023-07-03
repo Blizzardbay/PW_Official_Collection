@@ -1,0 +1,529 @@
+module Base
+{
+
+	/****************************** SIGN DRAWING RECIPES ******************************/
+	
+	recipe Draw Sign -Food-
+    {
+       SheetPaper2,
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign1,
+	   Category:Drawing,
+       Time:200.0,
+    }
+	
+	recipe Draw Sign -Books-
+    {
+       SheetPaper2,
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign2,
+	   Category:Drawing,
+       Time:200.0,
+    }
+	
+	recipe Draw Sign -Fishing-
+    {
+       SheetPaper2,
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign3,
+	   Category:Drawing,
+       Time:200.0,
+    }
+	
+	recipe Draw Sign -Gunz-
+    {
+       SheetPaper2,
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign4,
+	   Category:Drawing,
+       Time:200.0,
+    }
+	
+	recipe Draw Sign -Farming-
+    {
+       SheetPaper2,
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign5,
+	   Category:Drawing,
+       Time:200.0,
+    }
+	
+	recipe Draw Sign -Electric-
+    {
+       SheetPaper2,
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign6,
+	   Category:Drawing,
+       Time:200.0,
+    }
+	
+	recipe Draw Sign -Metal-
+    {
+       SheetPaper2,
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign7,
+	   Category:Drawing,
+       Time:200.0,
+    }
+	
+	recipe Draw Sign -Material-
+    {
+       SheetPaper2,
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign8,
+	   Category:Drawing,
+       Time:200.0,
+    }
+	
+	recipe Draw Sign -Junk-
+    {
+       SheetPaper2,
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign9,
+	   Category:Drawing,
+       Time:200.0,
+    }
+	
+	recipe Draw Sign -Fruits-
+    {
+       SheetPaper2,
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign10,
+	   Category:Drawing,
+       Time:200.0,
+    }
+	
+	recipe Draw Sign -Herbs-
+    {
+       SheetPaper2,
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign11,
+	   Category:Drawing,
+       Time:200.0,
+    }
+	
+	recipe Draw Sign -Hunting-
+    {
+       SheetPaper2,
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign12,
+	   Category:Drawing,
+       Time:200.0,
+    }
+	
+	recipe Draw Sign -Ammo-
+    {
+       SheetPaper2,
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign13,
+	   Category:Drawing,
+       Time:200.0,
+    }
+	
+	recipe Draw Sign -Seeds-
+    {
+       SheetPaper2,
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign14,
+	   Category:Drawing,
+       Time:200.0,
+    }
+	
+	recipe Draw Sign -Tools-
+    {
+       SheetPaper2,
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign15,
+	   Category:Drawing,
+       Time:200.0,
+    }
+	
+	recipe Draw Sign -Medicine-
+    {
+       SheetPaper2,
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign16,
+	   Category:Drawing,
+       Time:200.0,
+    }
+	
+	recipe Destroy Paper Sign
+    {
+       SpoonSign1/SpoonSign2/SpoonSign3/SpoonSign4/SpoonSign5/SpoonSign6/SpoonSign7/SpoonSign8/SpoonSign9/SpoonSign10/SpoonSign11/SpoonSign12/SpoonSign13/SpoonSign14/SpoonSign15/SpoonSign16,
+
+	   Result:ToiletPaper=1,
+	   Category:Drawing,
+	   AnimNode:VehicleWorkOnTire,
+       Time:200.0,
+    }
+	
+	/****************************** SIGN CRAFTING RECIPES ******************************/
+	
+	recipe Craft Sign -S and W Arrow-
+    {
+       Plank,
+	   Nails=2,
+	   keep Saw/HandAxe/AxeStone/Axe/WoodAxe,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign17,
+	   Category:Drawing,
+	   SkillRequired:Woodwork=1,
+	   AnimNode:VehicleWorkOnTire,
+       Time:400.0,
+    }
+	
+	recipe Craft Sign -N and E Arrow-
+    {
+       Plank,
+	   Nails=2,
+	   keep Saw/HandAxe/AxeStone/Axe/WoodAxe,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign18,
+	   Category:Drawing,
+	   SkillRequired:Woodwork=1,
+	   AnimNode:VehicleWorkOnTire,
+       Time:400.0,
+    }
+	
+	recipe Craft Sign -Shop-
+    {
+       Plank,
+	   Nails=2,
+	   keep Saw/HandAxe/AxeStone/Axe/WoodAxe,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign19,
+	   Category:Drawing,
+	   SkillRequired:Woodwork=1,
+	   AnimNode:VehicleWorkOnTire,
+       Time:400.0,
+    }
+	
+	recipe Craft Sign -Welcome-
+    {
+       Plank,
+	   Nails=2,
+	   keep Saw/HandAxe/AxeStone/Axe/WoodAxe,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign20,
+	   Category:Drawing,
+	   SkillRequired:Woodwork=1,
+	   AnimNode:VehicleWorkOnTire,
+       Time:400.0,
+    }
+	
+	recipe Craft Sign -Medic-
+    {
+       Plank,
+	   Nails=2,
+	   keep Saw/HandAxe/AxeStone/Axe/WoodAxe,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign21,
+	   Category:Drawing,
+	   SkillRequired:Woodwork=1,
+	   AnimNode:VehicleWorkOnTire,
+       Time:400.0,
+    }
+	
+	recipe Craft Sign -Keep Out-
+    {
+       Plank,
+	   Nails=2,
+	   keep Saw/HandAxe/AxeStone/Axe/WoodAxe,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign22,
+	   Category:Drawing,
+	   SkillRequired:Woodwork=1,
+	   AnimNode:VehicleWorkOnTire,
+       Time:400.0,
+    }
+	
+	recipe Craft Sign -Danger-
+    {
+       Plank,
+	   Nails=2,
+	   keep Saw/HandAxe/AxeStone/Axe/WoodAxe,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign23,
+	   Category:Drawing,
+	   SkillRequired:Woodwork=1,
+	   AnimNode:VehicleWorkOnTire,
+       Time:400.0,
+    }
+	
+	recipe Craft Sign -Warehouse-
+    {
+       Plank,
+	   Nails=2,
+	   keep Saw/HandAxe/AxeStone/Axe/WoodAxe,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep Crayons/RedPen/BluePen/Pen/Pencil,
+
+	   Result:SpoonSign24,
+	   Category:Drawing,
+	   SkillRequired:Woodwork=1,
+	   AnimNode:VehicleWorkOnTire,
+       Time:400.0,
+    }
+	
+	recipe Destroy Wooden Sign
+    {
+       SpoonSign17/SpoonSign18/SpoonSign19/SpoonSign20/SpoonSign21/SpoonSign22/SpoonSign23/SpoonSign24,
+	   keep Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+	   Result:UnusableWood,
+	   Category:Drawing,
+	   AnimNode:VehicleWorkOnTire,
+       Time:200.0,
+    }
+	
+	/****************************** PAPER SIGNS ******************************/
+	
+	item SpoonSign1
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_1,
+		DisplayName	=	Sign -Food-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign2
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_3,
+		DisplayName	=	Sign -Books-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign3
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_5,
+		DisplayName	=	Sign -Fishing-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign4
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_7,
+		DisplayName	=	Sign -Gunz-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign5
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_9,
+		DisplayName	=	Sign -Farming-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign6
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_11,
+		DisplayName	=	Sign -Electric-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign7
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_13,
+		DisplayName	=	Sign -Metal-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign8
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_15,
+		DisplayName	=	Sign -Material-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign9
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_17,
+		DisplayName	=	Sign -Junk-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign10
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_19,
+		DisplayName	=	Sign -Fruits-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign11
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_21,
+		DisplayName	=	Sign -Herbs-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign12
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_23,
+		DisplayName	=	Sign -Hunting-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign13
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_25,
+		DisplayName	=	Sign -Ammo-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign14
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_27,
+		DisplayName	=	Sign -Seeds-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign15
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_29,
+		DisplayName	=	Sign -Tools-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign16
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_31,
+		DisplayName	=	Sign -Medicine-,
+		Icon	=	TS,
+	}
+	
+	/****************************** WOODEN ITEMS ******************************/
+	
+	item SpoonSign17
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_33,
+		DisplayName	=	Wooden Sign -Arrow S and W-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign18
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_35,
+		DisplayName	=	Wooden Sign -Arrow N and East-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign19
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_37,
+		DisplayName	=	Wooden Sign -Shop-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign20
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_39,
+		DisplayName	=	Wooden Sign -Welcome-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign21
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_41,
+		DisplayName	=	Wooden Sign -Medicine-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign22
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_43,
+		DisplayName	=	Wooden Sign -Keep Out-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign23
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_45,
+		DisplayName	=	Wooden Sign -Danger-,
+		Icon	=	TS,
+	}
+	
+	item SpoonSign24
+	{
+		Weight	=	0.2,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisSigns_47,
+		DisplayName	=	Wooden Sign -Warehouse-,
+		Icon	=	TS,
+	}
+
+}

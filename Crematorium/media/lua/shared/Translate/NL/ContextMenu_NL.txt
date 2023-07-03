@@ -1,0 +1,4 @@
+ContextMenu_NL = {
+	ContextMenu_Cremate_Corpse = "Lijk verbranden",
+	ContextMenu_CampfireInfo = "Kampvuur Info",
+}

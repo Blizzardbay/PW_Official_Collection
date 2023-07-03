@@ -1,0 +1,4 @@
+ContextMenu_FR = {
+	ContextMenu_Cremate_Corpse = "Crémate le corps",
+	ContextMenu_CampfireInfo = "Info sur le feu de camp",
+}

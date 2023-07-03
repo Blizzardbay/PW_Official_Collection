@@ -1,0 +1,22 @@
+IGUI_ES = {
+
+	IGUI_FirearmRadial_FoldStock = "Plegar culata",
+	IGUI_FirearmRadial_UnfoldStock = "Desplegar culata",
+	IGUI_FirearmRadial_UseBayonet = "Usar bayoneta",
+	IGUI_FirearmRadial_UseRifle = "Usar fusil",
+	
+	IGUI_ContextMenu_MoveToInv = "Mover al inventario principal o equipar",
+	
+	IGUI_ContextMenu_FoldStockArg = "Plegar %1 culata",
+	IGUI_ContextMenu_UnfoldStockArg = "Desplegar %1 culata",
+	IGUI_ContextMenu_RestoreStock = "Restaura culata",
+	
+	IGUI_ContextMenu_AttackBayonet = "Ataque con bayoneta",
+	IGUI_ContextMenu_AttackRifle = "Ataque con fusil",
+	IGUI_ContextMenu_RequiresBayonet = "Requiere %1 en el inventario principal",
+	
+	IGUI_ContextMenu_AddSling = "Adjuntar cabestrillo",
+	IGUI_ContextMenu_AddSlingDescription = "Reduce el estorbo",
+	IGUI_ContextMenu_AddSights = "Actualizar vistas",
+	IGUI_ContextMenu_AddSightsDescription = "Mejora la velocidad de puntería",
+}

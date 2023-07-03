@@ -1,0 +1,3 @@
+Recipes_IT = {
+   Recipe_Refill_Empty_Lighter = "Ricarica dell'accendino vuoto",
+}

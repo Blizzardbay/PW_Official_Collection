@@ -1,0 +1,3 @@
+Recipes_JP = {
+   Recipe_Refill_Empty_Lighter = "空っぽのライターに補充する",
+}

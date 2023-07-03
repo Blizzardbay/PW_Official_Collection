@@ -1,0 +1,6 @@
+name=Enhanced Environment- NO OVERLAYS
+id=PictureThisNoOverlay
+description=Use only one version. Don't run them together.
+pack=PictureThis
+tiledef=spoon_visual_enhancements 723
+poster=poster.png

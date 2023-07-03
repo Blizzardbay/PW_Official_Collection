@@ -1,0 +1,4 @@
+ContextMenu_TR = {
+	ContextMenu_Cremate_Corpse = "Cesedi Yak",
+	ContextMenu_CampfireInfo = "Kamp Ateþi Bilgisi",
+}

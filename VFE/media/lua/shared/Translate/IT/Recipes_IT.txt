@@ -1,0 +1,21 @@
+Recipes_IT = {
+
+/*Actions*/
+Recipe_Saw_Off_Shotgun_Stock = "calcio di fucile segato",
+Recipe_Saw_Off_Double_Barrel_Shotgun_Stock = "calcio di fucile segato",
+
+Recipe_Open_Box_of_7.62_Ammo = "Apri scatola di munizioni 7.62",
+Recipe_Place_7.62_Ammo_in_Box = "Deposita le munizioni 7.62 in una scatola",
+
+Recipe_Open_Box of_.22_Ammo = "Apri scatola di munizioni .22",
+Recipe_Place_.22_Ammo_in_Box = "Deposita le munizioni .22 in una scatola",
+
+Recipe_Couple_5.56_Magazines = "Coppia 5.56 Riviste",
+Recipe_Separate_5.56_Magazines = "Riviste 5.56 separate",
+
+Recipe_Couple_7.62_Magazines = "Coppia 7.62 Riviste",
+Recipe_Separate_7.62_Magazines = "Riviste 7.62 separate",
+
+Recipe_Attach_M9_Bayonet_to_Spear = "Attacca Baionetta M9 alla lancia",
+Recipe_Reclaim_M9_Bayonet_from_Spear = "Recupera Baionetta M9 dalla lancia",
+}

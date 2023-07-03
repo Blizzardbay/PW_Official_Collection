@@ -1,0 +1,22 @@
+IGUI_EN = {
+
+	IGUI_FirearmRadial_FoldStock = "Fold Stock",
+	IGUI_FirearmRadial_UnfoldStock = "Unfold Stock",
+	IGUI_FirearmRadial_UseBayonet = "Use Bayonet",
+	IGUI_FirearmRadial_UseRifle = "Use Rifle",
+	
+	IGUI_ContextMenu_MoveToInv = "Move into main inventory or equip",
+	
+	IGUI_ContextMenu_FoldStockArg = "Fold %1 Stock",
+	IGUI_ContextMenu_UnfoldStockArg = "Unfold %1 Stock",
+	IGUI_ContextMenu_RestoreStock = "Restores Stock",
+	
+	IGUI_ContextMenu_AttackBayonet = "Attack with bayonet",
+	IGUI_ContextMenu_AttackRifle = "Attack with rifle",
+	IGUI_ContextMenu_RequiresBayonet = "Requires %1 in main inventory",
+	
+	IGUI_ContextMenu_AddSling = "Attach Sling",
+	IGUI_ContextMenu_AddSlingDescription = "Reduces encumbrance",
+	IGUI_ContextMenu_AddSights = "Upgrade Sights",
+	IGUI_ContextMenu_AddSightsDescription = "Improves aiming speed",
+}

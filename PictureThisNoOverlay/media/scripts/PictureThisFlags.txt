@@ -1,0 +1,464 @@
+module Base
+{
+	
+	item SpoonFlagFolded
+	{
+		DisplayCategory = Junk,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Folded Flag,
+		Icon	=	SpoonFlag,
+	}
+	
+	recipe Unfold Flag
+    {
+       SpoonFlagFolded,
+
+	   Result:RippedSheets,
+       Time:10.0,
+       OnCreate:UnFoldFlag_OnCreate,
+    }
+	
+	item SpoonFlag1
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_1,
+		DisplayName	=	Flag -Kentucky-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag2
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_3,
+		DisplayName	=	Flag -Rebel-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag3
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_5,
+		DisplayName	=	Flag -USA-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag4
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_7,
+		DisplayName	=	Flag -Black Panther-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag5
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_9,
+		DisplayName	=	Flag -No Step On Snake-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag6
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_11,
+		DisplayName	=	Flag -Peace-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag7
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_13,
+		DisplayName	=	Flag -Germany WW2-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag8
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_15,
+		DisplayName	=	Flag -USSR WW2-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag9
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_17,
+		DisplayName	=	Flag -Canada-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag10
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_19,
+		DisplayName	=	Flag -Arkansa-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag11
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_21,
+		DisplayName	=	Flag -Mexico-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag12
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_23,
+		DisplayName	=	Flag -Tennessee-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag13
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_25,
+		DisplayName	=	Flag -Texas-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag14
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_27,
+		DisplayName	=	Flag -UK-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag15
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_29,
+		DisplayName	=	Flag -Israel-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag16
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_31,
+		DisplayName	=	Flag -Iran-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag17
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_33,
+		DisplayName	=	Flag -India-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag18
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_35,
+		DisplayName	=	Flag -Brazil-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag19
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_37,
+		DisplayName	=	Flag -Argentina-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag20
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_39,
+		DisplayName	=	Flag -Poland-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag21
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_41,
+		DisplayName	=	Flag -Japan-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag22
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_43,
+		DisplayName	=	Flag -Saudi Arabia-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag23
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_45,
+		DisplayName	=	Flag -Nigeria-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag24
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_47,
+		DisplayName	=	Flag -South Africa-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag25
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_49,
+		DisplayName	=	Flag -China-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag26
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_51,
+		DisplayName	=	Flag -Spain-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag27
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_53,
+		DisplayName	=	Flag -Italy-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag28
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_55,
+		DisplayName	=	Flag -Ireland-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag29
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_57,
+		DisplayName	=	Flag -Australia-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag30
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_59,
+		DisplayName	=	Flag -France-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag31
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_61,
+		DisplayName	=	Flag -Russia-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag32
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_63,
+		DisplayName	=	Flag -North Korea-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag33
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_65,
+		DisplayName	=	Flag -Ukraine-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag34
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_67,
+		DisplayName	=	Flag -Germany-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag35
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_69,
+		DisplayName	=	Flag -Egypt-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag36
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_71,
+		DisplayName	=	Flag -Yugoslavia-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag37
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_73,
+		DisplayName	=	Flag -Mississippi-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag38
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_75,
+		DisplayName	=	Flag -West Virginia-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag39
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_77,
+		DisplayName	=	Flag -South Carolina-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag40
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_79,
+		DisplayName	=	Flag -Florida-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag41
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_81,
+		DisplayName	=	Flag -Kansas-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag42
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_83,
+		DisplayName	=	Flag -California-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag43
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_85,
+		DisplayName	=	Flag -Arizona-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag44
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_87,
+		DisplayName	=	Flag -Alabama-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag45
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_89,
+		DisplayName	=	Flag -North American Union-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag46
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_91,
+		DisplayName	=	Flag -Mormon Union-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag47
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_93,
+		DisplayName	=	Flag -Northern Union-,
+		Icon	=	SpoonFlag,
+	}
+	
+	item SpoonFlag48
+	{
+		Weight	=	3,	
+		Type	=	Moveable,
+		WorldObjectSprite =	Spoon_PictureThisFlags_95,
+		DisplayName	=	Flag -Pride-,
+		Icon	=	SpoonFlag,
+	}
+	
+	recipe Destroy Flag
+    {
+       SpoonFlag1/SpoonFlag2/SpoonFlag3/SpoonFlag4/SpoonFlag5/SpoonFlag6/SpoonFlag7/SpoonFlag8/SpoonFlag9/SpoonFlag10/SpoonFlag11/SpoonFlag12/SpoonFlag13/SpoonFlag14/SpoonFlag15/SpoonFlag16/SpoonFlag17/SpoonFlag18/SpoonFlag19/SpoonFlag20/SpoonFlag21/SpoonFlag22/SpoonFlag23/SpoonFlag24/SpoonFlag25/SpoonFlag26/SpoonFlag27/SpoonFlag28/SpoonFlag29/SpoonFlag30/SpoonFlag31/SpoonFlag32/SpoonFlag33/SpoonFlag34/SpoonFlag35/SpoonFlag36/SpoonFlag37/SpoonFlag38/SpoonFlag39/SpoonFlag40/SpoonFlag41/SpoonFlag42/SpoonFlag43/SpoonFlag44/SpoonFlag45/SpoonFlag46/SpoonFlag47/SpoonFlag48,
+
+	   Result:RippedSheetsDirty=10,
+	   Category:Drawing,
+	   AnimNode:VehicleWorkOnTire,
+       Time:200.0,
+    }
+	
+}

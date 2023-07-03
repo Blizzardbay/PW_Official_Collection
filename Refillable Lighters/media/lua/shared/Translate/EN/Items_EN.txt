@@ -1,0 +1,3 @@
+Items_EN = {
+    DisplayName_Empty_Lighter = "Empty Lighter",
+}

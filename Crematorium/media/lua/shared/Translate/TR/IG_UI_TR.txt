@@ -1,0 +1,4 @@
+IGUI_TR = {
+	IGUI_Campfire_FuelAmount = "Yakýt: %1",
+	IGUI_Campfire = "Kamp Ateþi",
+}

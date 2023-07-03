@@ -1,0 +1,21 @@
+Recipes_ES = {
+
+/*Actions*/
+Recipe_Saw_Off_Shotgun_Stock = "Culata de Escopeta con Sierra",
+Recipe_Saw_Off_Double_Barrel_Shotgun_Stock = "Culata de Escopeta con Sierra",
+
+Recipe_Open_Box_of_7.62_Ammo = "Abrir caja de munición 7,62",
+Recipe_Place_7.62_Ammo_in_Box = "Coloque munición de 7,62 en la caja",
+
+Recipe_Open_Box of_.22_Ammo = "Abrir caja de munición ,22",
+Recipe_Place_.22_Ammo_in_Box = "Coloque munición de ,22 en la caja",
+
+Recipe_Couple_5.56_Magazines = "Pareja 5,56 Revistas",
+Recipe_Separate_5.56_Magazines = "Revistas separadas 5,56",
+
+Recipe_Couple_7.62_Magazines = "Pareja 7,62 Revistas",
+Recipe_Separate_7.62_Magazines = "Revistas separadas 7,62",
+
+Recipe_Attach_M9_Bayonet_to_Spear = "Añadir Bayoneta M9 a la lanza",
+Recipe_Reclaim_M9_Bayonet_from_Spear = "Recuperar Bayoneta M9 de la lanza",
+}

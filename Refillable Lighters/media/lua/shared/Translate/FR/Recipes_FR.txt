@@ -1,0 +1,3 @@
+Recipes_FR = {
+   Recipe_Refill_Empty_Lighter = "Recharge du briquet vide",
+}

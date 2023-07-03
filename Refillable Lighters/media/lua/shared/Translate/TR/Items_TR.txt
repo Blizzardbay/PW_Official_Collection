@@ -1,0 +1,3 @@
+Items_TR = {
+    DisplayName_Empty_Lighter = "Boþ Çakmak",
+}

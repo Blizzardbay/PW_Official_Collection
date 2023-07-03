@@ -1,0 +1,4 @@
+IGUI_CS = {
+	IGUI_Campfire_FuelAmount = "Palivo: %1",
+	IGUI_Campfire = "Ohništì",
+}

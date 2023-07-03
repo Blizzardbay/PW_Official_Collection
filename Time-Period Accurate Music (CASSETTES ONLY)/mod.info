@@ -1,0 +1,5 @@
+name=Time-Period Accurate Music (CASSETTES ONLY)
+poster=poster.png
+id=TPAMCO
+require=truemusic
+description= Time-Period Accurate Music but only cassettes.

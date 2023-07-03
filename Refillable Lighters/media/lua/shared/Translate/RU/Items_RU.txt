@@ -1,0 +1,3 @@
+Items_RU = {
+    DisplayName_Empty_Lighter = "Пустая зажигалка",
+}

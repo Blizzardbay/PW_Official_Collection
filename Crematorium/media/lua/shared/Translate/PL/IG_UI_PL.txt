@@ -1,0 +1,4 @@
+IGUI_PL = {
+	IGUI_Campfire_FuelAmount = "Benzyna: %1%",
+	IGUI_Campfire = "Ognisko",
+}
