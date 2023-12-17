@@ -1,0 +1,21 @@
+Sandbox_EN = {
+    Sandbox_WhisperingZombies = "Whispering Zombies",
+
+    Sandbox_WhisperingZombies_ZombiesReactToPhrases = "Zombies react to phrases",
+    Sandbox_WhisperingZombies_ZombiesReactToPhrases_tooltip = "Zombies react to the phrases of other zombies and go to the sound",
+
+    Sandbox_WhisperingZombies_MinimumDelayBetweenSpecificPhrasesTimeInSeconds = "Minimum delay in seconds between specific phrases",
+    Sandbox_WhisperingZombies_MinimumDelayBetweenSpecificPhrasesTimeInSeconds_tooltip = "Specific phrases are zombie attack phrases and player devouring phrases. It's recommended less than a state delay",
+
+    Sandbox_WhisperingZombies_MaximumDelayBetweenSpecificPhrasesTimeInSeconds = "Maximum delay in seconds between specific phrases",
+    Sandbox_WhisperingZombies_MaximumDelayBetweenSpecificPhrasesTimeInSeconds_tooltip = "Specific phrases are zombie attack phrases and player devouring phrases. It's recommended less than a state delay",
+
+    Sandbox_WhisperingZombies_MinimumDelayBetweenStatePhrasesTimeInSeconds = "Minimum delay in seconds between state phrases",
+    Sandbox_WhisperingZombies_MinimumDelayBetweenStatePhrasesTimeInSeconds_tooltip = "State phrases are idle zombie, thump and other not specific states",
+
+    Sandbox_WhisperingZombies_MaximumDelayBetweenStatePhrasesTimeInSeconds = "Maximum delay in seconds between state phrases",
+    Sandbox_WhisperingZombies_MaximumDelayBetweenStatePhrasesTimeInSeconds_tooltip = "State phrases are idle zombie, thump and other not specific states",
+
+
+    Sandbox_WhisperingZombies_OnHitZombieChance = "Chance of a zombie's phrase when it has taken damage",
+}

@@ -1,0 +1,104 @@
+module Base
+{
+
+   fixing Fix WitchySMG
+    {
+      Require : WitchySMG,
+
+       Fixer : WitchySMG; Aiming=3,
+    }
+
+   fixing Fix m32
+    {
+      Require : m32,
+
+       Fixer : m32; Aiming=2,
+    }
+
+   fixing Fix p88p
+    {
+      Require : p88p,
+
+       Fixer : p88p; Aiming=2,
+    }
+
+   fixing Fix ClericRevolver
+    {
+      Require : ClericRevolver,
+
+       Fixer : ClericRevolver; Aiming=3,
+    }
+
+   fixing Fix TKShotgun
+    {
+      Require : TKShotgun,
+
+       Fixer : TKShotgun; Aiming=4,
+    }
+    
+	fixing Fix PPSH
+	{
+	   Require : PPSH,
+	   
+       Fixer : PPSH; Aiming=3,
+       Fixer : Woodglue=4; Woodwork=5,
+       Fixer : DuctTape=4,
+       Fixer : Glue=4,
+       Fixer : Scotchtape=8,
+	}
+
+   fixing Fix MAS38
+	{
+	   Require : MAS38,
+	   
+       Fixer : MAS38; Aiming=3,
+       Fixer : Woodglue=4; Woodwork=5,
+       Fixer : DuctTape=4,
+       Fixer : Glue=4,
+       Fixer : Scotchtape=8,
+	}
+
+	fixing Fix Lewis
+	{
+	   Require : Lewis,
+
+       Fixer : Lewis; Aiming=4,
+       Fixer : Woodglue=3; Woodwork=5,
+       Fixer : DuctTape=4,
+       Fixer : Glue=4,
+       Fixer : Scotchtape=8,
+	}
+
+   fixing Fix Rogue Sniper Rifle
+	{
+	   Require : RogueSniperRifle,
+
+       Fixer : RogueSniperRifle; Aiming=4,
+       Fixer : Woodglue=4; Woodwork=5,
+       Fixer : DuctTape=4,
+       Fixer : Glue=4,
+       Fixer : Scotchtape=8,
+	}
+
+   fixing Fix Rogue Sword
+	{
+	   Require : RogueSword2,
+
+       Fixer : BlowTorch=20; MetalWelding=4,
+	}
+
+    fixing Fix Great Sword
+	{
+	   Require : TKSword2,
+
+       Fixer : BlowTorch=30; MetalWelding=4,
+	}
+
+	fixing Fix Cleric Mace
+	{
+	   Require : ClericMace,
+
+       Fixer : BlowTorch=30; MetalWelding=4,
+	}
+
+}

@@ -4045,4 +4045,112 @@ module Base
 		texture = Food/PIKidCuisinePopcornChickenMealTex,
         scale = 0.007,
 	}
+					    model PIBagOfDisappointment
+    {
+        mesh = WorldItems/Food/PIFishSnackems,
+		texture = Food/PIBagOfDisappointmentTex,
+        scale = 0.008,
+	}
+					    model PIBagOfDisappointmentHand
+    {
+        mesh = WorldItems/Food/PIChipBagHandy,
+		texture = Food/PIBagOfDisappointmentTex,
+        scale = 0.008,
+	}
+					    model PIBagOfDisappointmentEmpty
+    {
+        mesh = WorldItems/Food/PIFishSnackemsEmpty,
+		texture = Food/PIBagOfDisappointmentTex,
+        scale = 0.008,
+	}
+					    model PIBonnieBites
+    {
+        mesh = WorldItems/BittersBar,
+		texture = Food/PIBonnieBitesTex,
+        scale = 0.02,
+	}
+					    model PIBonnieBitesHand
+    {
+        mesh = WorldItems/BittersBarHand,
+		texture = Food/PIBonnieBitesTex,
+        scale = 0.02,
+	}
+					    model PIBonnieBitesEmpty
+    {
+        mesh = WorldItems/BittersBarEmpty,
+		texture = Food/PIBonnieBitesTex,
+        scale = 0.02,
+	}
+					    model PIPiratePlunderbar
+    {
+        mesh = WorldItems/BittersBar,
+		texture = Food/PIPiratePlunderbarTex,
+        scale = 0.02,
+	}
+					    model PIPiratePlunderbarHand
+    {
+        mesh = WorldItems/BittersBarHand,
+		texture = Food/PIPiratePlunderbarTex,
+        scale = 0.02,
+	}
+					    model PIPiratePlunderbarEmpty
+    {
+        mesh = WorldItems/BittersBarEmpty,
+		texture = Food/PIPiratePlunderbarTex,
+        scale = 0.02,
+	}
+					    model PILemonChica
+    {
+        mesh = WorldItems/BittersBar,
+		texture = Food/PILemonChicaTex,
+        scale = 0.02,
+	}
+					    model PILemonChicaHand
+    {
+        mesh = WorldItems/BittersBarHand,
+		texture = Food/PILemonChicaTex,
+        scale = 0.02,
+	}
+					    model PILemonChicaEmpty
+    {
+        mesh = WorldItems/BittersBarEmpty,
+		texture = Food/PILemonChicaTex,
+        scale = 0.02,
+	}
+					    model PIFreddyFudgebar
+    {
+        mesh = WorldItems/BittersBar,
+		texture = Food/PIFreddyFudgebarTex,
+        scale = 0.02,
+	}
+					    model PIFreddyFudgebarHand
+    {
+        mesh = WorldItems/BittersBarHand,
+		texture = Food/PIFreddyFudgebarTex,
+        scale = 0.02,
+	}
+					    model PIFreddyFudgebarEmpty
+    {
+        mesh = WorldItems/BittersBarEmpty,
+		texture = Food/PIFreddyFudgebarTex,
+        scale = 0.02,
+	}
+					    model PIFazbar
+    {
+        mesh = WorldItems/BittersBar,
+		texture = Food/PIFazbarTex,
+        scale = 0.02,
+	}
+					    model PIFazbarHand
+    {
+        mesh = WorldItems/BittersBarHand,
+		texture = Food/PIFazbarTex,
+        scale = 0.02,
+	}
+					    model PIFazbarEmpty
+    {
+        mesh = WorldItems/BittersBarEmpty,
+		texture = Food/PIFazbarTex,
+        scale = 0.02,
+	}
 }

@@ -63,17 +63,21 @@ end
 function CVFEBayonet:fillMenu(menu, weapon, index)
     local bayonet = nil
 	local bayonetFound = false
-	if weapon:getFullType() == "Base.AssaultRifle" then
-		local playerItems = self.character:getInventory():getItems()
-		for i=1,playerItems:size() do
-			bayonet = playerItems:get(i-1)
-			if bayonet:getFullType() == "Base.M16Bayonet" and not bayonet:isBroken() then
-				bayonetFound = true
-				break
+	self.index = index
+	if index % 3 == 1 then
+		if VFEBayonetSet[index + 2] ~= "NULL" then
+			local playerItems = self.character:getInventory():getItems()
+			for i=1,playerItems:size() do
+				bayonet = playerItems:get(i-1)
+				if bayonet:getFullType() == VFEBayonetSet[index + 2] and not bayonet:isBroken() then
+					bayonetFound = true
+					break
+				end
 			end
+			if not bayonetFound then return end
 		end
-		if not bayonetFound then return end
 	end
+	
 	if weapon:getSubCategory() == "Firearm" then
 		local text = getText("IGUI_FirearmRadial_UseBayonet")
 		menu:addSlice(text, getTexture("media/ui/RadialMenu_UseBayonet.png"), self.invoke, self)
@@ -88,18 +92,28 @@ function CVFEBayonet:invoke()
 	if not weapon then return end
 	local bayonet = nil
 	local bayonetFound = false
-	if weapon:getFullType() == "Base.AssaultRifle" then
-		local playerItems = self.character:getInventory():getItems()
-		for i=1,playerItems:size() do
-			bayonet = playerItems:get(i-1)
-			if bayonet:getFullType() == "Base.M16Bayonet" then
-				bayonetFound = true
-				break
+	if self.index % 3 == 1 then
+		if VFEBayonetSet[self.index + 2] ~= "NULL" then
+			bayonetScript = getScriptManager():getItem(VFEBayonetSet[self.index + 2])
+			local playerItems = self.character:getInventory():getItems()
+			for i=1,playerItems:size() do
+				bayonet = playerItems:get(i-1)
+				if bayonet:getFullType() == VFEBayonetSet[self.index + 2] and not bayonet:isBroken() then
+					bayonetFound = true
+					break
+				end
 			end
+		else
+			bayonetFound = true
 		end
-		if not bayonetFound then return end
+	else
+		if VFEBayonetSet[self.index + 1] ~= "NULL" then
+			bayonetScript = getScriptManager():getItem(VFEBayonetSet[self.index + 1])
+		end
+		bayonetFound = true
 	end
-	ISTimedActionQueue.add(VFEBayonetContextAction:new(weapon, self.character, bayonet, CharacterActionAnims.Craft, 15));
+
+	ISTimedActionQueue.add(VFEBayonetContextAction:new(weapon, self.index, self.character, bayonet, CharacterActionAnims.Craft, 15));
 end
 
 --- because they're local I have to redefine all the other methods lmao --
@@ -318,49 +332,56 @@ local ISFirearmRadialMenu_fillMenu_old = ISFirearmRadialMenu.fillMenu
 function ISFirearmRadialMenu:fillMenu(submenu)
 	local weapon = self.character:getPrimaryHandItem()
 	if not weapon then return nil end
-	if  weapon:getFullType() == "Base.SKSSpikerBayonet" or weapon:getFullType() == "Base.AssaultRifleBayonet"  then -- this isn't very future proof 
-		local menu = getPlayerRadialMenu(self.playerNum)
-		menu:clear()
-		local commands = {}
-		table.insert(commands, CVFEBayonet:new(self))
-		
-		for _,command in ipairs(commands) do
-			local count = #menu.slices
-			command:fillMenu(menu, weapon, weapInd)
-			if count == #menu.slices then
-				menu:addSlice(nil, nil, nil)
+	for index, preset in ipairs(VFEBayonetSet) do
+		if preset == weapon:getFullType() and index % 3 == 2 then
+			local weapInd = index
+			local menu = getPlayerRadialMenu(self.playerNum)
+			menu:clear()
+			local commands = {}
+			table.insert(commands, CVFEBayonet:new(self))
+			
+			for _,command in ipairs(commands) do
+				local count = #menu.slices
+				command:fillMenu(menu, weapon, weapInd)
+				if count == #menu.slices then
+					menu:addSlice(nil, nil, nil)
+				end
 			end
+			return
+
 		end
-		return
 	end
 	if not instanceof(weapon, "HandWeapon") then return nil end
 	if not weapon:isRanged() then return nil end
-	if weapon:getFullType() == "Base.SKSSpiker" or weapon:getFullType() == "Base.AssaultRifle" then -- ditto
-		local menu = getPlayerRadialMenu(self.playerNum)
-		menu:clear()
-		local commands = {}
-		if weapon:getMagazineType() then
-			if weapon:isContainsClip() then
-				table.insert(commands, CEjectMagazine:new(self))
+	for index, preset in ipairs(VFEBayonetSet) do
+		if preset == weapon:getFullType() and index % 3 == 1 then
+			local weapInd = index
+			local menu = getPlayerRadialMenu(self.playerNum)
+			menu:clear()
+			local commands = {}
+			if weapon:getMagazineType() then
+				if weapon:isContainsClip() then
+					table.insert(commands, CEjectMagazine:new(self))
+				else
+					table.insert(commands, CInsertMagazine:new(self))
+				end
+				table.insert(commands, CLoadBulletsInMagazine:new(self))
 			else
-				table.insert(commands, CInsertMagazine:new(self))
+				table.insert(commands, CLoadRounds:new(self))
+				table.insert(commands, CUnloadRounds:new(self))
 			end
-			table.insert(commands, CLoadBulletsInMagazine:new(self))
-		else
-			table.insert(commands, CLoadRounds:new(self))
-			table.insert(commands, CUnloadRounds:new(self))
-		end
-		table.insert(commands, CRack:new(self))
-		table.insert(commands, CVFEBayonet:new(self))
-		
-		for _,command in ipairs(commands) do
-			local count = #menu.slices
-			command:fillMenu(menu, weapon, weapInd)
-			if count == #menu.slices then
-				menu:addSlice(nil, nil, nil)
+			table.insert(commands, CRack:new(self))
+			table.insert(commands, CVFEBayonet:new(self))
+			
+			for _,command in ipairs(commands) do
+				local count = #menu.slices
+				command:fillMenu(menu, weapon, weapInd)
+				if count == #menu.slices then
+					menu:addSlice(nil, nil, nil)
+				end
 			end
+			return
 		end
-		return
 	end
 	for index, preset in ipairs(VFEFoldingWeaponPair) do
 		if preset == weapon:getFullType() then
@@ -399,9 +420,10 @@ local ISFirearmRadialMenu_checkWeapon_old = ISFirearmRadialMenu.checkWeapon -- F
 function ISFirearmRadialMenu.checkWeapon(playerObj)
 	local weapon = playerObj:getPrimaryHandItem()
 	if not weapon then return nil end
-	if  weapon:getFullType() == "Base.SKSSpikerBayonet" or weapon:getFullType() == "Base.AssaultRifleBayonet" then
-		return true
-	else
-		return ISFirearmRadialMenu_checkWeapon_old(playerObj)
+	for index, preset in ipairs(VFEBayonetSet) do
+		if preset == weapon:getFullType() and index % 3 == 2 then
+			return true
+		end
 	end
+	return ISFirearmRadialMenu_checkWeapon_old(playerObj)
 end

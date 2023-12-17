@@ -1,4 +1,4 @@
-IG_UI_PL = {
+IGUI_PL = {
+	IGUI_ItemCat_ClothArm = "Odziez — Ramiona/Rece",
 	IGUI_CraftCategory_Tailoring = "Krawiectwo",
 }
-

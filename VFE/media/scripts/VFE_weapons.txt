@@ -78,6 +78,7 @@ module Base
         ModelWeaponPart = ChokeTubeImproved ChokeTube choketube choketube,
         ModelWeaponPart = ShellHolder ShellHolder shellholder shellholder,
 		ModelWeaponPart = Sling Sling_Shotgun sling sling,
+		ModelWeaponPart = Sling2 Sling2_Shotgun sling sling,
         StopPower = 20,
 	}
 	
@@ -109,7 +110,7 @@ module Base
 		IsAimedFirearm	=	TRUE,
 		DoorDamage	=	20,
 		UseEndurance	=	FALSE,
-		DisplayName	=	JS-2000 Shotgun,
+		DisplayName	=	M590 Shotgun,
 		MinRange	=	0.61,
 		SwingTime	=	2,
 		AngleFalloff	=	TRUE,
@@ -157,8 +158,62 @@ module Base
         ModelWeaponPart = ChokeTubeImproved ChokeTube choketube choketube,
         ModelWeaponPart = ShellHolder ShellHolder shellholder shellholder,
 		ModelWeaponPart = Sling Sling_Shotgun sling sling,
+		ModelWeaponPart = Sling2 Sling2_Shotgun sling sling,
         StopPower = 20,
 	}
+	
+	item Shotgun2Bayonet
+    {
+        DisplayCategory = Weapon,
+        MaxRange	=	1.37,
+        WeaponSprite	=	Shotgun2M9,
+        MinAngle	=	0.8,
+        Type	=	Weapon,
+        MinimumSwingTime	=	2,
+        KnockBackOnNoDeath	=	FALSE,
+        SwingAmountBeforeImpact	=	0.02,
+        Categories	=	Spear,
+        ConditionLowerChanceOneIn	=	15,
+        Weight	=	4.7,
+        SplatNumber	=	1,
+        PushBackMod	=	0.3,
+        SubCategory	=	Swinging,
+        ConditionMax	=	15,
+        MaxHitCount	=	2,
+        DoorDamage	=	7,
+        SwingAnim	=	Spear,
+        DisplayName	=	M590 Shotgun,
+        MinRange	=	0.61,
+        SwingTime	=	2,
+        KnockdownMod	=	0,
+        SplatBloodOnNoDeath	=	FALSE,
+        Icon	=	Shotgun2BayonetVFER,
+        RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+        TreeDamage  =   0,
+        TwoHandWeapon = TRUE,
+        CriticalChance	=	30,
+        CritDmgMultiplier = 10,
+        MinDamage	=	1,
+        MaxDamage	=	1.5,
+        BaseSpeed = 0.9,
+        DamageCategory = Slash,
+        DamageMakeHole = TRUE,
+        AmmoType = Base.ShotgunShells,
+		EnduranceMod	=	2,
+        BreakSound  =   GardenForkBreak,
+        HitFloorSound	=	GardenForkHit,
+        ImpactSound	=	GardenForkHit,
+        DoorHitSound = GardenForkHit,
+        HitSound	=	GardenForkHit,
+        SwingSound = GardenForkSwing,
+		ModelWeaponPart = ChokeTubeFull ChokeTube choketube choketube,
+        ModelWeaponPart = ChokeTubeImproved ChokeTube choketube choketube,
+        ModelWeaponPart = ShellHolder ShellHolder shellholder shellholder,
+		ModelWeaponPart = Sling Sling_Shotgun sling sling,
+		ModelWeaponPart = Sling2 Sling2_Shotgun sling sling,
+        AttachmentType = Rifle,
+    }
 	
 	item ShotgunSemi
 	{
@@ -235,6 +290,7 @@ module Base
         ModelWeaponPart = ChokeTubeImproved ChokeTube choketube choketube,
         ModelWeaponPart = ShellHolder ShellHolder shellholder shellholder,
 		ModelWeaponPart = Sling Sling_Shotgun sling sling,
+		ModelWeaponPart = Sling2 Sling2_Shotgun sling sling,
         StopPower = 20,
 	}
 	
@@ -313,11 +369,13 @@ module Base
         ModelWeaponPart = ChokeTubeImproved ChokeTube choketube choketube,
         ModelWeaponPart = ShellHolder ShellHolder shellholder shellholder,
 		ModelWeaponPart = Sling Sling_Shotgun sling sling,
+		ModelWeaponPart = Sling2 Sling2_Shotgun sling sling,
         StopPower = 20,
 	}
 	
 	item ShotgunSawnoff
 	{
+		DisplayCategory = Weapon,
 		ImpactSound	=	null,
 		MaxRange	=	12,
 		RangeFalloff	=	TRUE,
@@ -386,6 +444,7 @@ module Base
         WeaponReloadType = shotgun,
         ModelWeaponPart = ShellHolder ShellHolder shellholder shellholder,
 		ModelWeaponPart = Sling Sling_Shotgun sling sling,
+		ModelWeaponPart = Sling2 Sling2_Shotgun sling sling,
         RackAfterShoot = TRUE,
         JamGunChance = 2,
         AttachmentType = Rifle,
@@ -394,6 +453,7 @@ module Base
 	
 	item ShotgunSawnoffNoStock
 	{
+		DisplayCategory = Weapon,
 		ImpactSound	=	null,
 		MaxRange	=	12,
 		RangeFalloff	=	TRUE,
@@ -535,6 +595,7 @@ module Base
         AmmoType = Base.ShotgunShells,
         WeaponReloadType = doublebarrelshotgun,
 		ModelWeaponPart = Sling Sling_Doublebarrel sling sling,
+		ModelWeaponPart = Sling2 Sling2_Doublebarrel sling sling,
         JamGunChance = 0,
         AttachmentType = Rifle,
         InsertAllBulletsReload = TRUE,
@@ -545,6 +606,7 @@ module Base
 	
 	item DoubleBarrelShotgunSawnoff
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	14,
         RangeFalloff	=	TRUE,
@@ -618,6 +680,7 @@ module Base
 	
 	item DoubleBarrelShotgunSawnoffNoStock
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	14,
         RangeFalloff	=	TRUE,
@@ -691,6 +754,7 @@ module Base
 		
 	item Spas12
     {
+		DisplayCategory = Weapon,
 		ImpactSound	=	null,
 		MaxRange	=	16,
 		RangeFalloff	=	TRUE,
@@ -764,13 +828,16 @@ module Base
         ModelWeaponPart = ChokeTubeImproved ChokeTube choketube choketube,
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         ModelWeaponPart = ShellHolder ShellHolder shellholder shellholder,
 		ModelWeaponPart = Sling Sling_Spas sling sling,
+		ModelWeaponPart = Sling2 Sling2_Spas sling sling,
         StopPower = 20,
 	}
 	
 	item Spas12Folded
     {
+		DisplayCategory = Weapon,
 		ImpactSound	=	null,
 		MaxRange	=	16,
 		RangeFalloff	=	TRUE,
@@ -844,8 +911,10 @@ module Base
         ModelWeaponPart = ChokeTubeImproved ChokeTube choketube choketube,
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         ModelWeaponPart = ShellHolder ShellHolder shellholder shellholder,
 		ModelWeaponPart = Sling Sling_Spas sling sling,
+		ModelWeaponPart = Sling2 Sling2_Spas sling sling,
         StopPower = 20,
 		}
 		
@@ -919,6 +988,7 @@ module Base
         AmmoType = Base.ShotgunShells,
         WeaponReloadType = shotgunsemi,
 		ModelWeaponPart = Sling Sling_Shotgun sling sling,
+		ModelWeaponPart = Sling2 Sling2_Shotgun sling sling,
         JamGunChance = 5,
         AttachmentType = Rifle,
         StopPower = 20,
@@ -928,6 +998,7 @@ module Base
 
 	item AK47Unfolded
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	20,
         WeaponSprite	=	AK47Unfolded,
@@ -950,6 +1021,7 @@ module Base
         ShareDamage	=	FALSE,
         MaxHitCount	=	1,
         IsAimedFirearm	=	TRUE,
+		PiercingBullets = TRUE,
         DoorDamage	=	20,
         UseEndurance	=	FALSE,
         SwingAnim	=	Rifle,
@@ -1008,12 +1080,14 @@ module Base
         ModelWeaponPart = x4Scope PSO1x4Scope scope scope,
         ModelWeaponPart = Coupled762 Coupled762 coupled762 coupled762,
 		ModelWeaponPart = Sling Sling_AK47Folding sling sling,
+		ModelWeaponPart = Sling2 Sling2_AK47Folding sling sling,
         AttachmentType = Rifle,
         StopPower = 2,
 	}
 
     item AK47Folded
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	18,
         WeaponSprite	=	AK47Folded,
@@ -1036,6 +1110,7 @@ module Base
         ShareDamage	=	FALSE,
         MaxHitCount	=	1,
         IsAimedFirearm	=	TRUE,
+		PiercingBullets = TRUE,
         DoorDamage	=	20,
         UseEndurance	=	FALSE,
         SwingAnim	=	Rifle,
@@ -1094,12 +1169,14 @@ module Base
         ModelWeaponPart = x4Scope PSO1x4Scope scope scope,
         ModelWeaponPart = Coupled762 Coupled762 coupled762 coupled762,
 		ModelWeaponPart = Sling Sling_AK47Folding sling sling,
+		ModelWeaponPart = Sling2 Sling2_AK47Folding sling sling,
         AttachmentType = Rifle,
         StopPower = 2,
 	}
 	
 	item AK47
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	20,
         WeaponSprite	=	AK47Solid,
@@ -1122,6 +1199,7 @@ module Base
         ShareDamage	=	FALSE,
         MaxHitCount	=	1,
         IsAimedFirearm	=	TRUE,
+		PiercingBullets = TRUE,
         DoorDamage	=	20,
         UseEndurance	=	FALSE,
         SwingAnim	=	Rifle,
@@ -1180,12 +1258,14 @@ module Base
         ModelWeaponPart = x4Scope PSO1x4Scope scope scope,
         ModelWeaponPart = Coupled762 Coupled762 coupled762 coupled762,
 		ModelWeaponPart = Sling Sling_AK47 sling sling,
+		ModelWeaponPart = Sling2 Sling2_AK47 sling sling,
         AttachmentType = Rifle,
         StopPower = 2,
 	}
 
 	item SKS
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	22,
         WeaponSprite	=	SKS,
@@ -1267,11 +1347,13 @@ module Base
         ModelWeaponPart = RecoilPad RecoilPad recoilpad recoilpad,
         ModelWeaponPart = Bipod Bipod bipod bipod,
 		ModelWeaponPart = Sling Sling_SKS sling sling,
+		ModelWeaponPart = Sling2 Sling2_SKS sling sling,
         StopPower = 2,
 	}
 	
 	item SKSSpiker
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	22,
         WeaponSprite	=	SKSSpiker,
@@ -1298,7 +1380,7 @@ module Base
         DoorDamage	=	20,
         UseEndurance	=	FALSE,
         SwingAnim	=	Rifle,
-        DisplayName	=	SKS Rifle,
+        DisplayName	=	SKS-45 Rifle,
         MinRange	=	0.61,
         SwingTime	=	0.5,
         MultipleHitConditionAffected	=	FALSE,
@@ -1348,13 +1430,17 @@ module Base
         FireMode = Single,
         AmmoBox = 762Box,
         MaxAmmo = 9,
+		ModelWeaponPart = x4Scope PSO1x4Scope scope scope,
+		ModelWeaponPart = AmmoStraps BulletLoops bulletloops bulletloops,
+        ModelWeaponPart = RecoilPad RecoilPad recoilpad recoilpad,
 		ModelWeaponPart = Sling Sling_SKS sling sling,
+		ModelWeaponPart = Sling2 Sling2_SKS sling sling,
         StopPower = 2,
 	}
 	
 	item SKSSpikerBayonet
     {
-        DisplayCategory = Gardening,
+        DisplayCategory = Weapon,
         MaxRange	=	1.37,
         WeaponSprite	=	SKSSpikerBayonet,
         MinAngle	=	0.8,
@@ -1372,7 +1458,7 @@ module Base
         MaxHitCount	=	2,
         DoorDamage	=	7,
         SwingAnim	=	Spear,
-        DisplayName	=	SKS Rifle,
+        DisplayName	=	SKS-45 Rifle,
         MinRange	=	0.61,
         SwingTime	=	2,
         KnockdownMod	=	0,
@@ -1397,19 +1483,17 @@ module Base
         DoorHitSound = GardenForkHit,
         HitSound	=	GardenForkHit,
         SwingSound = GardenForkSwing,
-		ModelWeaponPart = x2Scope_Fake x2Scope scope scope,
-        ModelWeaponPart = x4Scope_Fake x4Scope scope scope,
-        ModelWeaponPart = x8Scope_Fake x8Scope scope scope,
-        ModelWeaponPart = RedDot RedDot reddot reddot,
+		ModelWeaponPart = x4Scope_Fake PSO1x4Scope scope scope,
+		ModelWeaponPart = AmmoStraps BulletLoops bulletloops bulletloops,
         ModelWeaponPart = RecoilPad RecoilPad recoilpad recoilpad,
-        ModelWeaponPart = Laser Laser laser laser,
-        ModelWeaponPart = Bipod_Fake Bipod bipod bipod,
 		ModelWeaponPart = Sling Sling_SKS sling sling,
+		ModelWeaponPart = Sling2 Sling2_SKS sling sling,
         AttachmentType = Rifle,
     }
 
     item 1022
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	20,
         WeaponSprite	=	Ruger1022,
@@ -1491,12 +1575,15 @@ module Base
         ModelWeaponPart = x8Scope x8Scope scope scope,
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
 		ModelWeaponPart = Sling Sling_1022 sling sling,
+		ModelWeaponPart = Sling2 Sling2_1022 sling sling,
         StopPower = 2,
     }
 
     item Mini14Unfolded
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	22,
         WeaponSprite	=	Mini14Unfolded,
@@ -1578,12 +1665,15 @@ module Base
         ModelWeaponPart = x8Scope M14x8Scope scope scope,
         ModelWeaponPart = RedDot M14RedDot scope scope,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
 		ModelWeaponPart = Sling Sling_Mini14Folding sling sling,
+		ModelWeaponPart = Sling2 Sling2_Mini14Folding sling sling,
         StopPower = 2,
     }
 
     item Mini14Folded
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	18,
         WeaponSprite	=	Mini14Folded,
@@ -1665,12 +1755,15 @@ module Base
         ModelWeaponPart = x8Scope M14x8Scope scope scope,
         ModelWeaponPart = RedDot M14RedDot scope scope,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
 		ModelWeaponPart = Sling Sling_Mini14Folding sling sling,
+		ModelWeaponPart = Sling2 Sling2_Mini14Folding sling sling,
         StopPower = 2,
     }
 
     item Mini14
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	22,
         WeaponSprite	=	Mini14Solid,
@@ -1752,12 +1845,15 @@ module Base
         ModelWeaponPart = x8Scope M14x8Scope scope scope,
         ModelWeaponPart = RedDot M14RedDot scope scope,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
 		ModelWeaponPart = Sling Sling_Mini14 sling sling,
+		ModelWeaponPart = Sling2 Sling2_Mini14 sling sling,
         StopPower = 2,
     }
 	
 	item FAL
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	22,
         WeaponSprite	=	FAL,
@@ -1779,6 +1875,7 @@ module Base
         ConditionMax	=	20,
         ShareDamage	=	FALSE,
         MaxHitCount	=	1,
+		PiercingBullets = TRUE,
         IsAimedFirearm	=	TRUE,
         DoorDamage	=	20,
         UseEndurance	=	FALSE,
@@ -1839,13 +1936,16 @@ module Base
         ModelWeaponPart = x4Scope x4Scope scope scope,
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
 		ModelWeaponPart = Sling Sling_FAL sling sling,
+		ModelWeaponPart = Sling2 Sling2_FAL sling sling,
         AttachmentType = Rifle,
         StopPower = 2,
 	}
 	
 	item FALClassic
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	22,
         WeaponSprite	=	FALClassic,
@@ -1867,6 +1967,7 @@ module Base
         ConditionMax	=	20,
         ShareDamage	=	FALSE,
         MaxHitCount	=	1,
+		PiercingBullets = TRUE,
         IsAimedFirearm	=	TRUE,
         DoorDamage	=	20,
         UseEndurance	=	FALSE,
@@ -1929,13 +2030,16 @@ module Base
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = RecoilPad RecoilPad recoilpad recoilpad,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
 		ModelWeaponPart = Sling Sling_FAL sling sling,
+		ModelWeaponPart = Sling2 Sling2_FAL sling sling,
         AttachmentType = Rifle,
         StopPower = 2,
 	}
 	
 	item CAR15
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	20,
         WeaponSprite	=	car15,
@@ -2016,13 +2120,16 @@ module Base
         ModelWeaponPart = x2Scope x2Scope scope scope,
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         ModelWeaponPart = Coupled556 Coupled556 coupled556 coupled556,
 		ModelWeaponPart = Sling Sling_CAR15 sling sling,
+		ModelWeaponPart = Sling2 Sling2_CAR15 sling sling,
         StopPower = 2,
     }
 	
 	item CAR15Folded
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	18,
         WeaponSprite	=	car15folded,
@@ -2103,13 +2210,16 @@ module Base
         ModelWeaponPart = x2Scope x2Scope scope scope,
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         ModelWeaponPart = Coupled556 Coupled556 coupled556 coupled556,
 		ModelWeaponPart = Sling Sling_CAR15Folded sling sling,
+		ModelWeaponPart = Sling2 Sling2_CAR15Folded sling sling,
         StopPower = 2,
     }
 
     item CAR15D
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	20,
         WeaponSprite	=	car15d,
@@ -2190,17 +2300,20 @@ module Base
         ModelWeaponPart = x2Scope x2Scope scope scope,
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         ModelWeaponPart = Coupled556 Coupled556 coupled556 coupled556,
 		ModelWeaponPart = Sling Sling_CAR15 sling sling,
+		ModelWeaponPart = Sling2 Sling2_CAR15 sling sling,
         StopPower = 2,
-		ActivatedItem	=	TRUE,
 		TorchCone	=	TRUE,
 		LightStrength	=	0,
 		LightDistance	=	15,
+		Tags = WeaponLight,
     }
 	
 	item CAR15DFolded
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	18,
         WeaponSprite	=	car15dfolded,
@@ -2281,17 +2394,20 @@ module Base
        ModelWeaponPart = x2Scope x2Scope scope scope,
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         ModelWeaponPart = Coupled556 Coupled556 coupled556 coupled556,
 		ModelWeaponPart = Sling Sling_CAR15Folded sling sling,
+		ModelWeaponPart = Sling2 Sling2_CAR15Folded sling sling,
         StopPower = 2,
-		ActivatedItem	=	TRUE,
 		TorchCone	=	TRUE,
 		LightStrength	=	0,
 		LightDistance	=	15,
+		Tags = WeaponLight,
     }
 	
 	item AssaultRifle2
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	22,
         WeaponSprite	=	M14,
@@ -2375,13 +2491,16 @@ module Base
         ModelWeaponPart = RedDot M14RedDot scope scope,
         ModelWeaponPart = RecoilPad RecoilPad recoilpad recoilpad,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         ModelWeaponPart = Bipod Bipod bipod bipod,
 		ModelWeaponPart = Sling Sling_M14 sling sling,
+		ModelWeaponPart = Sling2 Sling2_M14 sling sling,
         StopPower = 2,
     }
 	
 	item AssaultRifleM1
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	22,
         WeaponSprite	=	AssaultRifleM1,
@@ -2452,20 +2571,22 @@ module Base
         MetalValue = 45,
         AmmoType = Base.308Bullets,
         WeaponReloadType = M1Reload,
-        JamGunChance = 3,
+        JamGunChance = 4,
         AttachmentType = Rifle,
         FireMode = Single,
         AmmoBox = 308Box,
         MaxAmmo = 8,
 		InsertAllBulletsReload = TRUE,
         ModelWeaponPart = RecoilPad RecoilPad recoilpad recoilpad,
-		ModelWeaponPart = Sling Sling_M1 sling sling,
 		ModelWeaponPart = AmmoStraps BulletLoops bulletloops bulletloops,
+		ModelWeaponPart = Sling Sling_M1 sling sling,
+		ModelWeaponPart = Sling2 Sling2_M1 sling sling,
         StopPower = 2,
     }
 
     item AssaultRifle
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	20,
         WeaponSprite	=	AssaultRifle,
@@ -2546,14 +2667,16 @@ module Base
         ModelWeaponPart = x2Scope x2Scope scope scope,
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         ModelWeaponPart = Coupled556 Coupled556 coupled556 coupled556,
 		ModelWeaponPart = Sling Sling_M16 sling sling,
+		ModelWeaponPart = Sling2 Sling2_M16 sling sling,
         StopPower = 2,
     }
 	
 	item AssaultRifleBayonet
     {
-        DisplayCategory = Gardening,
+        DisplayCategory = Weapon,
         MaxRange	=	1.37,
         WeaponSprite	=	AssaultRifleM9,
         MinAngle	=	0.8,
@@ -2599,13 +2722,16 @@ module Base
 		ModelWeaponPart = x2Scope_Fake x2Scope scope scope,
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         ModelWeaponPart = Coupled556 Coupled556 coupled556 coupled556,
 		ModelWeaponPart = Sling Sling_M16 sling sling,
+		ModelWeaponPart = Sling2 Sling2_M16 sling sling,
         AttachmentType = Rifle,
     }
 	
 	item HuntingRifle
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	25,
         WeaponSprite	=	HuntingRifle,
@@ -2687,6 +2813,7 @@ module Base
         ModelWeaponPart = Bipod Bipod bipod bipod,
         ModelWeaponPart = AmmoStraps BulletLoops bulletloops bulletloops,
 		ModelWeaponPart = Sling Sling_R788 sling sling,
+		ModelWeaponPart = Sling2 Sling2_R788 sling sling,
         RackAfterShoot = TRUE,
         MagazineType = Base.308Clip,
         JamGunChance = 5,
@@ -2696,6 +2823,7 @@ module Base
 
     item VarmintRifle
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	24,
         WeaponSprite	=	R700,
@@ -2776,6 +2904,7 @@ module Base
         ModelWeaponPart = Bipod Bipod bipod bipod,
         ModelWeaponPart = AmmoStraps BulletLoops bulletloops bulletloops,
 		ModelWeaponPart = Sling Sling_R700 sling sling,
+		ModelWeaponPart = Sling2 Sling2_R700 sling sling,
         RackAfterShoot = TRUE,
         JamGunChance = 5,
         AttachmentType = Rifle,
@@ -2784,6 +2913,7 @@ module Base
 	
 	item SniperRifle
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	25,
         WeaponSprite	=	M24,
@@ -2861,9 +2991,11 @@ module Base
         ModelWeaponPart = x8Scope x8Scope scope scope,
         ModelWeaponPart = RedDot RedDot reddot reddot,
 		ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         ModelWeaponPart = Bipod Bipod bipod bipod,
         ModelWeaponPart = AmmoStraps BulletLoops bulletloops bulletloops,
 		ModelWeaponPart = Sling Sling_R700 sling sling,
+		ModelWeaponPart = Sling2 Sling2_R700 sling sling,
 		ModelWeaponPart = IronSight M24_Sights ironsight ironsight,
         RackAfterShoot = TRUE,
         JamGunChance = 5,
@@ -2874,6 +3006,7 @@ module Base
 
     item LeverRifle
 	{
+		DisplayCategory = Weapon,
 		ImpactSound	=	null,
 		MaxRange	=	18,
 		WeaponSprite	=	yellowboy,
@@ -2947,9 +3080,11 @@ module Base
        WeaponReloadType = Lever,
        ModelWeaponPart = x4Scope Leverx4Scope scope scope,
 	   ModelWeaponPart = Sling Sling_Levergun sling sling,
+	   ModelWeaponPart = Sling2 Sling2_Levergun sling sling,
 	   ModelWeaponPart = AmmoStraps BulletLoops bulletloops bulletloops,
 	   ModelWeaponPart = RedDot RedDot scope2 scope2,
 	   ModelWeaponPart = Laser Laser laser laser,
+	   ModelWeaponPart = LaserOn LaserOn laser laser,
        RackAfterShoot = TRUE,
        JamGunChance = 1,
        AttachmentType = Rifle,
@@ -2961,6 +3096,7 @@ module Base
 
     item MP5
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	20,
         WeaponSprite	=	mp5,
@@ -3040,12 +3176,15 @@ module Base
         FireModePossibilities = Auto/Single,
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
 		ModelWeaponPart = Sling Sling_MP5 sling sling,
+		ModelWeaponPart = Sling2 Sling2_MP5 sling sling,
         StopPower = 2,
     }
 
     item MP5SD
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	18,
         WeaponSprite	=	mp5sd,
@@ -3125,12 +3264,15 @@ module Base
         FireModePossibilities = Auto/Single,
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
 		ModelWeaponPart = Sling Sling_MP5SD sling sling,
+		ModelWeaponPart = Sling2 Sling2_MP5SD sling sling,
         StopPower = 2,
     }
 	
 	item MP5Unfolded
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	20,
         WeaponSprite	=	mp5unfolded,
@@ -3210,16 +3352,19 @@ module Base
         FireModePossibilities = Auto/Single,
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
 		ModelWeaponPart = Sling Sling_MP5Folding sling sling,
+		ModelWeaponPart = Sling2 Sling2_MP5Folding sling sling,
         StopPower = 2,
-		ActivatedItem	=	TRUE,
 		TorchCone	=	TRUE,
 		LightStrength	=	0,
 		LightDistance	=	15,
+		Tags = WeaponLight,
     }
 	
 	item MP5Folded
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	16,
         WeaponSprite	=	mp5folded,
@@ -3299,16 +3444,19 @@ module Base
         FireModePossibilities = Auto/Single,
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
 		ModelWeaponPart = Sling Sling_MP5Folding sling sling,
+		ModelWeaponPart = Sling2 Sling2_MP5Folding sling sling,
         StopPower = 2,
-		ActivatedItem	=	TRUE,
 		TorchCone	=	TRUE,
 		LightStrength	=	0,
 		LightDistance	=	15,
+		Tags = WeaponLight,
     }
 	
 	item MAC10Unfolded
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	16,
         WeaponSprite	=	mac10unfolded,
@@ -3388,6 +3536,7 @@ module Base
 	
 	item MAC10Folded
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	10,
         WeaponSprite	=	mac10folded,
@@ -3469,6 +3618,7 @@ module Base
 
     item Tec9
 	{
+		DisplayCategory = Weapon,
 		ImpactSound	=	null,
 		MaxRange	=	11,
 		WeaponSprite	=	Tec9,
@@ -3543,12 +3693,14 @@ module Base
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = GunLight GunLight gunlight gunlight,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         AttachmentType = Holster,
         StopPower = 5,
 	}
 
 	item Pistol
 	{
+		DisplayCategory = Weapon,
 		ImpactSound	=	null,
 		MaxRange	=	10,
 		WeaponSprite	=	Handgun03,
@@ -3621,12 +3773,14 @@ module Base
         WeaponReloadType = handgun,
         JamGunChance = 2,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         AttachmentType = Holster,
         StopPower = 5,
 	}
 
 	item Pistol2
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	10,
         WeaponSprite	=	M1911,
@@ -3702,8 +3856,91 @@ module Base
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = GunLight GunLight gunlight gunlight,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         ModelWeaponPart = OilFilterSuppressor2 OilFilterSuppressor2 oilfiltersuppressor2 oilfiltersuppressor2,
         StopPower = 7,
+    }
+	
+	item MK23SOCOM
+    {
+		DisplayCategory = Weapon,
+        ImpactSound	=	null,
+        MaxRange	=	10,
+        WeaponSprite	=	MK23SOCOM,
+        SoundVolume	=	22,
+        MinAngle	=	0.95,
+        Type	=	Weapon,
+        MinimumSwingTime	=	0.5,
+        ToHitModifier	=	1.5,
+        NPCSoundBoost	=	1.5,
+        KnockBackOnNoDeath	=	TRUE,
+        Ranged	=	TRUE,
+        SwingAmountBeforeImpact	=	0,
+        ProjectileCount	=	1,
+        ConditionLowerChanceOneIn	=	60,
+        Weight	=	2.2,
+        SplatNumber	=	3,
+        PushBackMod	=	0.3,
+        SubCategory	=	Firearm,
+        ConditionMax	=	20,
+        ShareDamage	=	FALSE,
+        MaxHitCount	=	1,
+        IsAimedFirearm	=	TRUE,
+        DoorDamage	=	5,
+        UseEndurance	=	FALSE,
+        SwingAnim	=	Handgun,
+        DisplayName	=	MK23 Pistol,
+        MinRange	=	0.61,
+        SwingTime	=	0.5,
+        MultipleHitConditionAffected	=	FALSE,
+		BringToBearSound = M1911BringToBear,
+        SwingSound	=	SuppressedShot,
+        HitSound = BulletHitBody,
+		ClickSound = M1911Jam,
+        SoundRadius	=	22,
+        MinDamage	=	0.9,
+        MaxDamage	=	1.2,
+        SplatSize	=	3,
+        KnockdownMod	=	1,
+        SplatBloodOnNoDeath	=	TRUE,
+        Icon	=	MK23SOCOM,
+        RunAnim	=	Run_Weapon2,
+        CriticalChance	=	8,
+        CritDmgMultiplier = 4,
+        AimingPerkCritModifier = 20,
+        AimingPerkRangeModifier = 1.6,
+        HitChance = 30,
+        AimingPerkHitChanceModifier = 8,
+        AimingPerkMinAngleModifier = 0.05,
+        RecoilDelay = 15,
+        SoundGain = 1.5,
+        ClipSize = 12,
+        ReloadTime = 30,
+        AimingTime = 20,
+        BreakSound = M1911Break,
+        MetalValue = 30,
+        AmmoBox = Bullets45Box,
+        MaxAmmo = 12,
+		EquipSound = M1911Equip,
+		UnequipSound = M1911UnEquip,
+        InsertAmmoSound = M1911InsertAmmo,
+        EjectAmmoSound = M1911EjectAmmo,
+		InsertAmmoStartSound = M1911InsertAmmoStart,
+		InsertAmmoStopSound = M1911InsertAmmoStop,
+		EjectAmmoStartSound = M1911EjectAmmoStart,
+		EjectAmmoStopSound = M1911EjectAmmoStop,
+        ShellFallSound = M1911CartridgeFall,
+        RackSound = M1911Rack,
+        MagazineType = Base.45Clip12,
+        AmmoType = Base.Bullets45,
+        WeaponReloadType = handgun,
+        JamGunChance = 2.0,
+        AttachmentType = Holster,
+        StopPower = 7,
+		TorchCone	=	TRUE,
+		LightStrength	=	0,
+		LightDistance	=	12,
+		Tags = WeaponLight,
     }
 
     item Pistol3
@@ -3783,13 +4020,14 @@ module Base
         AttachmentType = Holster,
         ModelWeaponPart = RedDot RedDot reddot reddot,
         ModelWeaponPart = GunLight GunLight gunlight gunlight,
-        ModelWeaponPart = IronSight IronSight scope scope,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         StopPower = 9,
     }
 
     item Glock
 	{
+		DisplayCategory = Weapon,
 		ImpactSound	=	null,
 		MaxRange	=	10,
 		WeaponSprite	=	Glock17,
@@ -3862,6 +4100,7 @@ module Base
         WeaponReloadType = handgun,
         JamGunChance = 1.5,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         ModelWeaponPart = OilFilterSuppressor2 OilFilterSuppressor2 oilfiltersuppressor2 oilfiltersuppressor2,
         AttachmentType = Holster,
         StopPower = 5,
@@ -3869,6 +4108,7 @@ module Base
 	
 	item Glock18
 	{
+		DisplayCategory = Weapon,
 		ImpactSound	=	null,
 		MaxRange	=	10,
 		WeaponSprite	=	Glock17,
@@ -3941,6 +4181,7 @@ module Base
         WeaponReloadType = handgun,
         JamGunChance = 1.5,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         ModelWeaponPart = OilFilterSuppressor2 OilFilterSuppressor2 oilfiltersuppressor2 oilfiltersuppressor2,
         AttachmentType = Holster,
 		FireMode = Auto,
@@ -3950,6 +4191,7 @@ module Base
 
 	item P229
 	{
+		DisplayCategory = Weapon,
 		ImpactSound	=	null,
 		MaxRange	=	8,
 		WeaponSprite	=	P229,
@@ -4022,7 +4264,88 @@ module Base
         WeaponReloadType = handgun,
         JamGunChance = 2,
         ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         ModelWeaponPart = OilFilterSuppressor2 OilFilterSuppressor2 oilfiltersuppressor2 oilfiltersuppressor2,
+        AttachmentType = Holster,
+        StopPower = 5,
+	}
+	
+	item CZ75
+	{
+		DisplayCategory = Weapon,
+		ImpactSound	=	null,
+		MaxRange	=	10,
+		WeaponSprite	=	CZ75,
+		SoundVolume	=	53,
+		MinAngle	=	0.95,
+		Type	=	Weapon,
+		MinimumSwingTime	=	0.5,
+		ToHitModifier	=	1.2,
+		NPCSoundBoost	=	1.5,
+		KnockBackOnNoDeath	=	TRUE,
+		Ranged	=	TRUE,
+		SwingAmountBeforeImpact	=	0,
+		ProjectileCount	=	1,
+		ConditionLowerChanceOneIn	=	60,
+		Weight	=	1.55,
+		SplatNumber	=	3,
+		PushBackMod	=	0.3,
+		SubCategory	=	Firearm,
+		ConditionMax	=	20,
+		ShareDamage	=	FALSE,
+		MaxHitCount	=	1,
+		IsAimedFirearm	=	TRUE,
+		DoorDamage	=	5,
+		UseEndurance	=	FALSE,
+		SwingAnim	=	Handgun,
+		DisplayName	=	CZ 75 Pistol,
+		MinRange	=	0.51,
+		SwingTime	=	0.5,
+		MultipleHitConditionAffected	=	FALSE,
+		BringToBearSound = M9BringToBear,
+		SwingSound	=	M9Shoot,
+		HitSound = BulletHitBody,
+		ClickSound = M9Jam,
+		SoundRadius	=	50,
+		MinDamage	=	0.8,
+		MaxDamage	=	1,
+		SplatSize	=	3,
+		KnockdownMod	=	0,
+		SplatBloodOnNoDeath	=	TRUE,
+		Icon	=	CZ75,
+		RunAnim	=	Run_Weapon2,
+		CriticalChance	=	15,
+        CritDmgMultiplier = 4,
+        AimingPerkCritModifier = 25,
+        AimingPerkRangeModifier = 1.8,
+        HitChance = 50,
+        AimingPerkHitChanceModifier = 10,
+        AimingPerkMinAngleModifier = 0.05,
+        RecoilDelay = 15,
+        SoundGain = 1.5,
+        ClipSize = 16,
+        ReloadTime = 30,
+        AimingTime = 15,
+        BreakSound = M9Break,
+        MetalValue = 30,
+        AmmoBox = Bullets9mmBox,
+        MaxAmmo = 16,
+		EquipSound = M9Equip,
+		UnequipSound = M9UnEquip,
+        InsertAmmoSound = M9InsertAmmo,
+        EjectAmmoSound = M9EjectAmmo,
+		InsertAmmoStartSound = M9InsertAmmoStart,
+		InsertAmmoStopSound = M9InsertAmmoStop,
+		EjectAmmoStartSound = M9EjectAmmoStart,
+		EjectAmmoStopSound = M9EjectAmmoStop,
+        ShellFallSound = M9CartridgeFall,
+        RackSound = M9Rack,
+        MagazineType = Base.9mmClip16,
+        AmmoType = Base.Bullets9mm,
+        WeaponReloadType = handgun,
+        JamGunChance = 1.5,
+        ModelWeaponPart = Laser Laser laser laser,
+		ModelWeaponPart = LaserOn LaserOn laser laser,
         AttachmentType = Holster,
         StopPower = 5,
 	}
@@ -4107,6 +4430,7 @@ module Base
 	
     item Revolver_Short
     {
+		DisplayCategory = Weapon,
         ImpactSound	=	null,
         MaxRange	=	8,
         WeaponSprite	=	Revolver_Short,

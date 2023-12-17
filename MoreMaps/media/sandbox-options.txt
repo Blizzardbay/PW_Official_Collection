@@ -357,14 +357,6 @@ option MoreMaps.BlueberryMap
 	translation = MoreMaps_BlueberryMap,
 }
 
-option MoreMaps.WestPointFireDepartmentMap
-{
-	type = boolean,
-	default = true,
-	page = MoreMaps,
-	translation = MoreMaps_WestPointFireDepartmentMap,
-}
-
 option MoreMaps.WestPointSouthTrailerParkMap
 {
 	type = boolean,
@@ -558,4 +550,531 @@ option MoreMaps.ConstructionFactoryMap
 	default = true,
 	page = MoreMaps,
 	translation = MoreMaps_ConstructionFactoryMap,
+}
+
+option MoreMaps.WestwoodMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_WestwoodMap,
+}
+option MoreMaps.AnthemMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_AnthemMap,
+}
+option MoreMaps.LaconiaMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_LaconiaMap,
+}
+option MoreMaps.AshenwoodMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_AshenwoodMap,
+}
+option MoreMaps.ElysiumIslandMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_ElysiumIslandMap,
+}
+option MoreMaps.HopewellMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_HopewellMap,
+}
+option MoreMaps.WalnutRidgeMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_WalnutRidgeMap,
+}
+option MoreMaps.HeavensHillMansionAdress
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_HeavensHillMansionAdress,
+}
+option MoreMaps.ChestownMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_ChestownMap,
+}
+option MoreMaps.NashvilleMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_NashvilleMap,
+}
+option MoreMaps.OverlookHotelMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_OverlookHotelMap,
+}
+option MoreMaps.PerfectShelterMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_PerfectShelterMap,
+}
+option MoreMaps.OConnorFarmAddress
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_OConnorFarmAddress,
+}
+option MoreMaps.LincolnRegionalAirportMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_LincolnRegionalAirportMap,
+}
+option MoreMaps.MuldraughWesternShippingCompanyMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_MuldraughWesternShippingCompanyMap,
+}
+option MoreMaps.RosewoodMilitaryHospitalMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_RosewoodMilitaryHospitalMap,
+}
+option MoreMaps.TheMuseumMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_TheMuseumMap,
+}
+option MoreMaps.TheEyeLakeMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_TheEyeLakeMap,
+}
+option MoreMaps.AddamsFamilyMansionMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_AddamsFamilyMansionMap,
+}
+option MoreMaps.JeffersonvilleMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_JeffersonvilleMap,
+}
+option MoreMaps.CherokeeLakeMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_CherokeeLakeMap,
+}
+option MoreMaps.RiversideMansionMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_RiversideMansionMap,
+}
+option MoreMaps.FinneganMentalAsylumMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_FinneganMentalAsylumMap,
+}
+option MoreMaps.PapavilleMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_PapavilleMap,
+}
+option MoreMaps.SouthTownMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_SouthTownMap,
+}
+option MoreMaps.ChinatownMapExpansionMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_ChinatownMapExpansionMap,
+}
+option MoreMaps.LouisvilleBunkerLocationMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_LouisvilleBunkerLocationMap,
+}
+option MoreMaps.OrchidwoodMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_OrchidwoodMap,
+}
+option MoreMaps.WinchesterMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_WinchesterMap,
+}
+option MoreMaps.BreakpointMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_BreakpointMap,
+}
+option MoreMaps.WilboreMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_WilboreMap,
+}
+option MoreMaps.PetrovilleMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_PetrovilleMap,
+}
+option MoreMaps.CedarHillMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_CedarHillMap,
+}
+option MoreMaps.CathayaValleyMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_CathayaValleyMap,
+}
+option MoreMaps.SpringwoodMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_SpringwoodMap,
+}
+option MoreMaps.NaturesVengeanceTownshipMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_NaturesVengeanceTownshipMap,
+}
+option MoreMaps.BigBearLakeMaps
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_BigBearLakeMaps,
+}
+option MoreMaps.SimsZomboidMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_SimsZomboidMap,
+}
+option MoreMaps.DirkerdamMaps
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_DirkerdamMaps,
+}
+option MoreMaps.LakeCumberlandMaps
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_LakeCumberlandMaps,
+}
+option MoreMaps.PharmaceuticalFactoryMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_PharmaceuticalFactoryMap,
+}
+option MoreMaps.NettleTownshipMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_NettleTownshipMap,
+}
+option MoreMaps.StMooseHospitalMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_StMooseHospitalMap,
+}
+option MoreMaps.ShortrestCountyMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_ShortrestCountyMap,
+}
+option MoreMaps.LeavenburgMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_LeavenburgMap,
+}
+option MoreMaps.BunkerDayOfTheDeadMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_BunkerDayOfTheDeadMap,
+}
+option MoreMaps.SuperGigaMartMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_SuperGigaMartMap,
+}
+option MoreMaps.ZtardewValleyMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_ZtardewValleyMap,
+}
+option MoreMaps.TheWalkingDeadPrisonMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_TheWalkingDeadPrisonMap,
+}
+option MoreMaps.TheWalkingDeadTerminusMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_TheWalkingDeadTerminusMap,
+}
+option MoreMaps.HuntersBaseMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_HuntersBaseMap,
+}
+option MoreMaps.PortCityMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_PortCityMap,
+}
+option MoreMaps.SpringValleyMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_SpringValleyMap,
+}
+option MoreMaps.OakshireMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_OakshireMap,
+}
+option MoreMaps.RangersHomesteadMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_RangersHomesteadMap,
+}
+option MoreMaps.FrigateMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_FrigateMap,
+}
+option MoreMaps.BunkerLastMinutePrepperMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_BunkerLastMinutePrepperMap,
+}
+option MoreMaps.LouisvilleQuarantineZoneMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_LouisvilleQuarantineZoneMap,
+}
+option MoreMaps.LVInternationalAirport
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_LVInternationalAirport,
+}
+option MoreMaps.MuldraughCheckpointMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_MuldraughCheckpointMap,
+}
+option MoreMaps.SpeckMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_SpeckMap,
+}
+option MoreMaps.HomesteadWindyMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_HomesteadWindyMap,
+}
+option MoreMaps.MilitaryFuelDepotMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_MilitaryFuelDepotMap,
+}
+option MoreMaps.SpencerMansionMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_SpencerMansionMap,
+}
+option MoreMaps.UncleRedsBunkerMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_UncleRedsBunkerMap,
+}
+option MoreMaps.HopefallsMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_HopefallsMap,
+}
+option MoreMaps.VineGroveMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_VineGroveMap,
+}
+option MoreMaps.LouisianaMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_LouisianaMap,
+}
+option MoreMaps.CaliforniaMaps
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_CaliforniaMaps,
+}
+
+option MoreMaps.WeyhausenMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_WeyhausenMap,
+}
+option MoreMaps.DaisyCountyMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_DaisyCountyMap,
+}
+option MoreMaps.McCoysBunkerMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_McCoysBunkerMap,
+}
+option MoreMaps.OtterCreekMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_OtterCreekMap,
+}
+option MoreMaps.WellsburgLakeMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_WellsburgLakeMap,
+}
+option MoreMaps.FortBoonesboroughMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_FortBoonesboroughMap,
 }

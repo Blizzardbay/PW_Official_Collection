@@ -1,0 +1,10 @@
+VERSION = 1,
+
+option TrueMusicJukebox.TMJJukeboxAttractZombies
+{
+	type = boolean,
+	default = TRUE,
+
+	page = TrueMusicJukebox,
+	translation = TrueMusicJukebox_TMJJukeboxAttractZombies,
+}

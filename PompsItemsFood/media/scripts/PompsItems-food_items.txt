@@ -7981,4 +7981,173 @@ module PompsItems
 		WorldStaticModel = PIKidCuisinePopcornChicken,
 		Tooltip	= Tooltip_PIKidCuisinePopcornChicken,
 	}
+	item PIBagOfDisappointment
+    {
+        DisplayCategory = Food,
+        HungerChange	=	-10,
+		UnhappyChange = 2,
+		BoredomChange	=	2,
+        Weight	=	0.15,
+        Type	=	Food,
+        DisplayName	=	Bag of Disappointment,
+        Icon	=	PIBagOfDisappointment,
+        Carbohydrates = 1,
+        Proteins = 2,
+        Lipids = 95,
+        Calories = 850,
+        Packaged = TRUE,
+		StaticModel = PIBagOfDisappointmentHand,
+        WorldStaticModel = PIBagOfDisappointment,
+    }
+	    item PIBagOfDisappointmentEmpty
+	{
+	    DisplayCategory = Junk,
+		Weight	=	0.02,
+		Type	=	Food,
+		DisplayName	=	Empty Bag,
+		Icon	=	PIBagOfDisappointmentEmpty,
+		Type	=	Normal,
+		StaticModel = PIBagOfDisappointmentEmpty,
+        WorldStaticModel = PIBagOfDisappointmentEmpty,
+	}
+	item PIBonnieBites
+    {
+        DisplayCategory = Food,
+        HungerChange	=	-6,
+        Weight	=	0.2,
+        Type	=	Food,
+        UnhappyChange	=	-2,
+        DisplayName	=	Bonnie Bites,
+        Icon	=	PIBonnieBites,
+        Carbohydrates = 0,
+        Proteins = 4,
+        Lipids = 15,
+        Calories = 250,
+        Packaged = TRUE,
+		StaticModel = PIBonnieBitesHand,
+        WorldStaticModel = PIBonnieBites,
+    }
+	    item PIBonnieBitesEmpty
+	{
+	    DisplayCategory = Junk,
+		Weight	=	0.05,
+		Type	=	Food,
+		DisplayName	=	Empty Wrapper,
+		Icon	=	PIBonnieBitesEmpty,
+		Type	=	Normal,
+		StaticModel = PIBonnieBitesEmpty,
+        WorldStaticModel = PIBonnieBitesEmpty,
+	}
+	item PIPiratePlunderbar
+    {
+        DisplayCategory = Food,
+        HungerChange	=	-6,
+        Weight	=	0.2,
+        Type	=	Food,
+        UnhappyChange	=	-2,
+        DisplayName	=	Pirate Plunderbar,
+        Icon	=	PIPiratePlunderbar,
+        Carbohydrates = 0,
+        Proteins = 4,
+        Lipids = 15,
+        Calories = 250,
+        Packaged = TRUE,
+		StaticModel = PIPiratePlunderbarHand,
+        WorldStaticModel = PIPiratePlunderbar,
+    }
+	    item PIPiratePlunderbarEmpty
+	{
+	    DisplayCategory = Junk,
+		Weight	=	0.05,
+		Type	=	Food,
+		DisplayName	=	Empty Wrapper,
+		Icon	=	PIPiratePlunderbarEmpty,
+		Type	=	Normal,
+		StaticModel = PIPiratePlunderbarEmpty,
+        WorldStaticModel = PIPiratePlunderbarEmpty,
+	}
+	item PILemonChica
+    {
+        DisplayCategory = Food,
+        HungerChange	=	-6,
+        Weight	=	0.2,
+        Type	=	Food,
+        UnhappyChange	=	-2,
+        DisplayName	=	Lemon Chica Bar,
+        Icon	=	PILemonChica,
+        Carbohydrates = 0,
+        Proteins = 4,
+        Lipids = 15,
+        Calories = 250,
+        Packaged = TRUE,
+		StaticModel = PILemonChicaHand,
+        WorldStaticModel = PILemonChica,
+    }
+	    item PILemonChicaEmpty
+	{
+	    DisplayCategory = Junk,
+		Weight	=	0.05,
+		Type	=	Food,
+		DisplayName	=	Empty Wrapper,
+		Icon	=	PILemonChicaEmpty,
+		Type	=	Normal,
+		StaticModel = PILemonChicaEmpty,
+        WorldStaticModel = PILemonChicaEmpty,
+	}
+	item PIFreddyFudgebar
+    {
+        DisplayCategory = Food,
+        HungerChange	=	-6,
+        Weight	=	0.2,
+        Type	=	Food,
+        UnhappyChange	=	-2,
+        DisplayName	=	Freddy Fudgebar,
+        Icon	=	PIFreddyFudgebar,
+        Carbohydrates = 0,
+        Proteins = 4,
+        Lipids = 15,
+        Calories = 250,
+        Packaged = TRUE,
+		StaticModel = PIFreddyFudgebarHand,
+        WorldStaticModel = PIFreddyFudgebar,
+    }
+	    item PIFreddyFudgebarEmpty
+	{
+	    DisplayCategory = Junk,
+		Weight	=	0.05,
+		Type	=	Food,
+		DisplayName	=	Empty Wrapper,
+		Icon	=	PIFreddyFudgebarEmpty,
+		Type	=	Normal,
+		StaticModel = PIFreddyFudgebarEmpty,
+        WorldStaticModel = PIFreddyFudgebarEmpty,
+	}
+	item PIFazbar
+    {
+        DisplayCategory = Food,
+        HungerChange	=	-6,
+        Weight	=	0.2,
+        Type	=	Food,
+        UnhappyChange	=	-2,
+        DisplayName	=	Fazbar,
+        Icon	=	PIFazbar,
+        Carbohydrates = 0,
+        Proteins = 4,
+        Lipids = 15,
+        Calories = 250,
+        Packaged = TRUE,
+		StaticModel = PIFazbarHand,
+        WorldStaticModel = PIFazbar,
+    }
+	    item PIFazbarEmpty
+	{
+	    DisplayCategory = Junk,
+		Weight	=	0.05,
+		Type	=	Food,
+		DisplayName	=	Empty Wrapper,
+		Icon	=	PIFazbarEmpty,
+		Type	=	Normal,
+		StaticModel = PIFazbarEmpty,
+        WorldStaticModel = PIFazbarEmpty,
+	}
 }

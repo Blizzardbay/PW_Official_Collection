@@ -6,7 +6,7 @@ if getCore():getVersionNumber() == "41.50 - IWBUMS" then
 	--extraskills.PerkName["Others"] = "ContextMenu_Others"; text entry for the category's name
 
 	--To add your skill in an existing category change "Misc" for the internal name i.e. "Crafting" or "Survivalist"
-	table.insert(extraskills.PerkList["Crafting"], "WineMaking");
+	table.insert(extraskills.PerkList["Libations"], "WineMaking");
 
 	extraskills.skills["WineMaking"] = {};
 	extraskills.skills["WineMaking"].name = "ContextMenu_WineMaking_Skill";

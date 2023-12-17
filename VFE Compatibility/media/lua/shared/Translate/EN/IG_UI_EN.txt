@@ -1,0 +1,10 @@
+IGUI_EN = {
+    IGUI_ContextMenu_AddSilencer = "Attach Silencer",
+	IGUI_ContextMenu_AddSilencerDescription = "Reduces sound radius by 80% but slightly lowers range",
+    IGUI_ContextMenu_AddMetalPipeSilencer = "Attach Metal Pipe Silencer",
+	IGUI_ContextMenu_AddMetalPipeSilencerDescription = "Reduces sound radius by 60% but slightly lowers range",
+    IGUI_ContextMenu_AddTorchSilencer = "Attach Hand Torch Silencer",
+	IGUI_ContextMenu_AddTorchSilencerDescription = "Reduces sound radius by 40% but lowers range",
+    IGUI_ContextMenu_AddWaterBottleSilencer = "Attach Water Bottle Silencer",
+	IGUI_ContextMenu_AddWaterBottleSilencerDescription = "Reduces sound radius by 20% but lowers range",
+}

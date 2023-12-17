@@ -17,6 +17,8 @@ if getActivatedMods():contains("BetterSortCC") then
 	TweakItem("Base.MAC10Unfolded","DisplayCategory","WepFire");
 	TweakItem("Base.MAC10Folded","DisplayCategory","WepFire");
 	TweakItem("Base.Glock18","DisplayCategory","WepFire");
+	TweakItem("Base.MK23SOCOM","DisplayCategory","WepFire");
+	TweakItem("Base.CZ75","DisplayCategory","WepFire");
 	TweakItem("Base.CAR15Folded","DisplayCategory","WepFire");
 	TweakItem("Base.CAR15DFolded","DisplayCategory","WepFire");
 	TweakItem("Base.SKSSpiker","DisplayCategory","WepFire");
@@ -24,8 +26,13 @@ if getActivatedMods():contains("BetterSortCC") then
 	
 	TweakItem("Base.SKSSpikerBayonet","DisplayCategory","WepMelee");
 	TweakItem("Base.AssaultRifleBayonet","DisplayCategory","WepMelee");
+	TweakItem("Base.Shotgun2Bayonet","DisplayCategory","WepMelee");
 	TweakItem("Base.M16Bayonet","DisplayCategory","WepMelee");
 
 	TweakItem("Base.45Clip32","DisplayCategory","WepAmmoMag");
+	TweakItem("Base.45Clip12","DisplayCategory","WepAmmoMag");
+	TweakItem("Base.9mmClip16","DisplayCategory","WepAmmoMag");
 	TweakItem("Base.FALClip","DisplayCategory","WepAmmoMag");
+	
+	TweakItem("Base.Sling2","DisplayCategory","WepPart");
 end

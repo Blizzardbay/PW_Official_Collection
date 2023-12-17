@@ -1,0 +1,4 @@
+Tooltip_EN = {
+	-- Item tooltip
+	Tooltip_BreastItems = "Only items under 0.5 encumbrance can fit inside",
+}

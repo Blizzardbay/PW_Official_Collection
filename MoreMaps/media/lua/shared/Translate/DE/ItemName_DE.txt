@@ -1,0 +1,13 @@
+ItemName_DE = {
+    ItemName_Base.LouisvilleMap1 = "Louisville-Karte Nordwest",
+    ItemName_Base.LouisvilleMap2 = "Louisville-Karte Nord",
+    ItemName_Base.LouisvilleMap3 = "Louisville-Karte Nordosten",
+    ItemName_Base.LouisvilleMap4 = "Louisville-Karte Westen",
+    ItemName_Base.LouisvilleMap5 = "Louisville-Karte Zentral",
+    ItemName_Base.LouisvilleMap6 = "Louisville-Karte Ost",
+    ItemName_Base.LouisvilleMap7 = "Louisville-Karte Südwesten",
+    ItemName_Base.LouisvilleMap8 = "Louisville-Karte Süden",
+    ItemName_Base.LouisvilleMap9 = "Louisville-Karte Süd-Ost",
+}
+
+

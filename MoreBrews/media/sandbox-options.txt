@@ -10,6 +10,15 @@ option MoreBrews.Loot
 	translation = MB_LootGeneral,
 }
 
+option MoreBrews.TotalAmount
+{
+	type = enum,
+	default = 3,
+	numValues = 5,
+	page = MB_Loot,
+	translation = MB_TotalAmount,
+}
+
 option MoreBrews.KitSpawnOption
 {
 	type = boolean,
@@ -24,6 +33,24 @@ option MoreBrews.KegSpawnOption
 	default = true,
 	page = MB_Loot,
 	translation = MB_KegSpawnOption,
+}
+
+option MoreBrews.ForageHops
+{
+	type = boolean,
+	default = false,
+	page = MB_Loot,
+	translation = MB_ForageHops,
+}
+
+option MoreBrews.ForageHopsRate
+{
+	type = integer,
+	default = 5,
+	min = 1,
+	max = 20,
+	page = MB_Loot,
+	translation = MB_ForageHopsRate,
 }
 
 option MoreBrews.HopsOption
@@ -174,4 +201,32 @@ option MoreBrews.RottenChange
 	max = 20,
 	page = MB_Loot,
 	translation = MB_RottenChange,
+}
+
+option MoreBrews.CalorieChange
+{
+	type = integer,
+	default = 10,
+	min = 1,
+	max = 20,
+	page = MB_Loot,
+	translation = MB_CalorieChange,
+}
+
+option MoreBrews.Expired
+{
+	type = boolean,
+	default = false,
+	page = MB_Loot,
+	translation = MB_Expired,
+}
+
+option MoreBrews.ExpireChange
+{
+	type = integer,
+	default = 10,
+	min = 1,
+	max = 20,
+	page = MB_Loot,
+	translation = MB_ExpireChange,
 }

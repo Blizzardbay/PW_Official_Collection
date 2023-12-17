@@ -199,6 +199,26 @@ Shotgun.Apply = function(weapon, open)
 end
 table.insert(VFEWeaponModelTable, Shotgun);
 
+local ShotgunSawnoff = {}
+ShotgunSawnoff.Name = "Base.ShotgunSawnoff"
+ShotgunSawnoff.Apply = function(weapon, open)
+	local originalSprite = weapon:getOriginalWeaponSprite()
+	local stock = weapon:getStock()
+	if stock ~= nil then
+		if stock:getType() == "FiberglassStock" then
+			originalSprite = originalSprite .. "FGS"
+		end
+	end
+	local pad = weapon:getRecoilpad()
+	if pad ~= nil then
+		if pad:getType() == "ShellHolder" then
+			originalSprite = originalSprite .. "SH"
+		end
+	end
+	weapon:setWeaponSprite(originalSprite)
+end
+table.insert(VFEWeaponModelTable, ShotgunSawnoff);
+
 local Shotgun2 = {}
 Shotgun2.Name = "Base.Shotgun2"
 Shotgun2.Apply = function(weapon, open)
@@ -218,6 +238,26 @@ Shotgun2.Apply = function(weapon, open)
 	weapon:setWeaponSprite(originalSprite)
 end
 table.insert(VFEWeaponModelTable, Shotgun2);
+
+local Shotgun2Bayonet = {}
+Shotgun2Bayonet.Name = "Base.Shotgun2Bayonet"
+Shotgun2Bayonet.Apply = function(weapon, open)
+	local originalSprite = weapon:getOriginalWeaponSprite()
+	local stock = weapon:getStock()
+	if stock ~= nil then
+		if stock:getType() == "FiberglassStock" then
+			originalSprite = originalSprite .. "FGS"
+		end
+	end
+	local pad = weapon:getRecoilpad()
+	if pad ~= nil then
+		if pad:getType() == "ShellHolder" then
+			originalSprite = originalSprite .. "SH"
+		end
+	end
+	weapon:setWeaponSprite(originalSprite)
+end
+table.insert(VFEWeaponModelTable, Shotgun2Bayonet);
 
 local ShotgunSemi = {}
 ShotgunSemi.Name = "Base.ShotgunSemi"

@@ -183,4 +183,11 @@ model 7upBox
 		texture = Items/WelchBox,
 		scale = 3.6,
 	}
+
+		model BigRedBox
+	{
+		mesh = items/SodaBox,
+		texture = Items/BigRedBox,
+		scale = 3.6,
+	}
 }

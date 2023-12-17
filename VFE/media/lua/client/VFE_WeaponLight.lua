@@ -7,7 +7,7 @@ local function WeaponLightBeam()
 	local playerItems = attacker:getInventory():getItems()
 	for i=1,playerItems:size() do
 		weapon = playerItems:get(i-1)
-		if ((weapon:getType() == "MP5Folded") or (weapon:getType() == "MP5Unfolded") or (weapon:getType() == "CAR15D") or (weapon:getType() == "CAR15DFolded")) then
+		if (weapon:hasTag("WeaponLight")) then
 			weapon:setLightStrength(0.0)
 			break
 		end
@@ -16,13 +16,38 @@ local function WeaponLightBeam()
 	if attacker ~= nil then				
 		weapon	= attacker:getPrimaryHandItem()
 	end
+	if weapon == nil then return end
 	
-	if attacker:isAiming() and attacker:getPrimaryHandItem() and ((weapon:getType() == "MP5Folded") or (weapon:getType() == "MP5Unfolded") or (weapon:getType() == "CAR15D") or (weapon:getType() == "CAR15DFolded")) then
+	if attacker:isAiming() and attacker:getPrimaryHandItem() and (weapon:hasTag("WeaponLight")) then
 		weapon:setLightStrength(1.5)
-	elseif not attacker:isAiming() and attacker:getPrimaryHandItem() and ((weapon:getType() == "MP5Folded") or (weapon:getType() == "MP5Unfolded") or (weapon:getType() == "CAR15D") or (weapon:getType() == "CAR15DFolded")) then
+	elseif not attacker:isAiming() and attacker:getPrimaryHandItem() and (weapon:hasTag("WeaponLight")) then
 		weapon:setLightStrength(0.0)
 	end
-		
+	
+	if  weapon:getCat() == ItemType.valueOf("Weapon") then
+		if ( weapon:getCanon()) then
+			if attacker:isAiming() and weapon then
+				if  weapon:getCanon():getFullType() == "Base.Laser" and weapon:getSubCategory() == "Firearm" then
+					local part = InventoryItemFactory.CreateItem("Base.LaserOn")
+					weapon:attachWeaponPart(part)
+					attacker:setPrimaryHandItem(weapon);
+					if weapon:isTwoHandWeapon() then
+						attacker:setSecondaryHandItem(weapon);
+					end
+				end
+			
+			elseif not attacker:isAiming() and weapon then
+				if  weapon:getCanon():getFullType() == "Base.LaserOn" then
+					local part = InventoryItemFactory.CreateItem("Base.Laser")
+					weapon:attachWeaponPart(part)
+					attacker:setPrimaryHandItem(weapon);
+					if weapon:isTwoHandWeapon() then
+						attacker:setSecondaryHandItem(weapon);
+					end
+				end
+			end
+		end
+	end
 end
 			
 

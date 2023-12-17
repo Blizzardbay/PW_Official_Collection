@@ -1,0 +1,88 @@
+module Base
+{
+
+	recipe Make Biofuel From Cabbages
+	{
+	Cabbage = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	SkillRequired:Cooking=6,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Potatos
+	{
+	Potato = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	SkillRequired:Cooking=6,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Radishes
+	{
+	RedRadish = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	SkillRequired:Cooking=6,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Carrots
+	{
+	Carrots = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	SkillRequired:Cooking=6,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Tomatos
+	{
+	Tomato = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	SkillRequired:Cooking=6,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Broccoli
+	{
+	Broccoli = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	SkillRequired:Cooking=6,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Strawberries
+	{
+	Strewberrie = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	SkillRequired:Cooking=6,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+}

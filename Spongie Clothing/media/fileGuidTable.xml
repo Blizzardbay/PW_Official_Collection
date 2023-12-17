@@ -40,11 +40,6 @@
     </files>
 	
     <files>
-        <path>media/clothing/clothingItems/Jacket_Bomber.xml</path>
-        <guid>spongiec-4543-45df-b6fb-e59aa4bc0937</guid>
-    </files>
-	
-    <files>
         <path>media/clothing/clothingItems/Jacket_Denim.xml</path>
         <guid>spongiec-1ead-49ca-bb38-c6e77d78ea87</guid>
     </files>
@@ -62,11 +57,11 @@
         <guid>spongiec-OPEN-49ca-field-c6e77d78ea87</guid>
     </files>
     <files>
-        <path>media/clothing/clothingItems/Jacket_Bomber.xml</path>
+        <path>media/clothing/clothingItems/Jacket_BomberThick.xml</path>
         <guid>spongiec-2880-422e-b0c8-d25e92d9d862</guid>
     </files>
     <files>
-        <path>media/clothing/clothingItems/Jacket_BomberOPEN.xml</path>
+        <path>media/clothing/clothingItems/Jacket_BomberThickOPEN.xml</path>
         <guid>spongiec-OPEN-422e-b0c8-d25e92d9d862</guid>
     </files>
 	
@@ -144,9 +139,60 @@
         <guid>spongiec-DOWN-4c5f-99b1-8ee43c131f0f</guid>
     </files>
 	
+    <files>
+        <path>media/clothing/clothingItems/Vest_Puffy.xml</path>
+        <guid>spongiec-94de-4137-a498-3c09e77a5cab</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/Vest_PuffyOPEN.xml</path>
+        <guid>spongiec-OPEN-4137-a498-3c09e77a5cab</guid>
+    </files>
+	
+    <files>
+        <path>media/clothing/clothingItems/Shirt_Quilted.xml</path>
+        <guid>spongiec-5a37-quil-9322-2504bff33433</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/Shirt_QuiltedOPEN.xml</path>
+        <guid>spongiec-OPEN-quil-9322-2504bff33433</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/Shirt_QuiltedOPENROLL.xml</path>
+        <guid>spongiec-OPEN-quil-ROLL-2504bff33433</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/Shirt_QuiltedROLL.xml</path>
+        <guid>spongiec-5a37-quil-ROLL-2504bff33433</guid>
+    </files>
+	
+    <files>
+        <path>media/clothing/clothingItems/Jacket_Quilted.xml</path>
+        <guid>spongiec-1ead-49ca-quilt-c6e77d78ea87</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/Jacket_QuiltedOPEN.xml</path>
+        <guid>spongiec-OPEN-49ca-quilt-c6e77d78ea87</guid>
+    </files>
+	
+	
+    <files>
+        <path>media/clothing/clothingItems/Jacket_PeaCoat.xml</path>
+        <guid>spongiec-e7a5-45b6-9c59-dbffefe8555b</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/Jacket_PeaCoatOPEN.xml</path>
+        <guid>spongiec-OPEN-45b6-9c59-dbffefe8555b</guid>
+    </files>
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	<!--VANILLA ITEMS FOR ZOMBIE SPAWNS-->
 	<files>
 		<path>media/clothing/clothingItems/Vest_BulletArmy.xml</path>
 		<guid>1a437dbb-cee9-4013-8e8a-e158acf98b62</guid>
@@ -159,8 +205,6 @@
 		<path>media/clothing/clothingItems/Vest_BulletPolice.xml</path>
 		<guid>d234e3b1-4e68-41b9-a48c-5669a8a52629</guid>
 	</files>
-	
-	<!--VANILLA ITEMS FOR ZOMBIE SPAWNS-->
 	<files>
 		<path>media/clothing/clothingItems/Glasses_Normal.xml</path>
 		<guid>6d702d88-4ca0-4bcb-9aee-d88f2be29e69</guid>
@@ -248,6 +292,34 @@
 	<files>
 		<path>media/clothing/clothingItems/Shirt_CropTopTINT.xml</path>
 		<guid>cceb85fc-8c41-477e-9167-07513bad2dd9</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Shirt_FormalWhite.xml</path>
+		<guid>ac7976de-2c73-44ea-9392-5d24ac1fb649</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Shirt_FormalWhite_ShortSleeve.xml</path>
+		<guid>00d77803-6b57-453b-89b6-135d2d642719</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Shoes_Brown.xml</path>
+		<guid>c0a3a194-2ee9-4ce5-9d7a-aa1d5e031cea</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Suit.xml</path>
+		<guid>52acd769-424a-4cbb-b02a-441cb723b747</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Trousers_SuitTEXTURE.xml</path>
+		<guid>ac44bda8-2501-4b7b-8bf9-4d3b2b8da737</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Jumper_PoloNeck.xml</path>
+		<guid>5574c07e-1381-49d8-a0ba-40e5b2cf55cd</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Jumper_RoundNeck.xml</path>
+		<guid>7a5f7b89-9de9-4c05-afb6-e62dca97b8a2</guid>
 	</files>
 
 </fileGuidTable>

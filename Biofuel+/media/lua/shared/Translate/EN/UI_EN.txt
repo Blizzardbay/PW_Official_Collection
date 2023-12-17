@@ -1,0 +1,6 @@
+UI_EN = {
+UI_trait_BiofuelExpert = "Biofuel Expert",
+UI_traitdesc_BiofuelExpert = "Knows how to make Biofuel but Lacks the Skills to do so",
+UI_trait_BiofuelMaster = "Biofuel Master",
+UI_traitdesc_BiofuelMaster = "Knows how to make Biofuel and has the Skills Required to do so",
+}

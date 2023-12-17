@@ -1,0 +1,12 @@
+module Base
+{
+
+   fixing Tanto Dagger
+	{
+	   Require : Tanto; Hammer,
+
+       Fixer : Woodglue=2; Woodwork=3,
+       Fixer : BlowTorch=10; MetalWelding=2,
+	}
+
+}

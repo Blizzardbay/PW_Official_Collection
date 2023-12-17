@@ -7,7 +7,7 @@ module CAR {
 
     recipe Crush Soda Can
     {
-        CanEmpty,
+        CanEmpty/Empty7upCan/EmptyAriZonaCan/EmptyRootBeerCan/EmptyBriskCan/EmptyCherryCokeCan/EmptyCokeCan/EmptyDietCokeCan/EmptyDietPepsiCan/EmptyDrPepperCan/EmptyFantaGrapeCan/EmptyFantaOrangeCan/EmptyFantaPineappleCan/EmptyFantaRedCan/EmptyFantaStrawberryCan/EmptyGatoradeCan/EmptyJoltCan/EmptyMinuteMaidCan/EmptyMountainDewCan/EmptyMrPibbCan/EmptyPepsiCan/EmptyRCcolaCan/EmptyRedBullCan/EmptySpriteCan/EmptyTabCan/EmptyDrThunderCan/EmptyWelch,
 
         Result:CrushedCan,
         Sound:CrushSodaCan,
@@ -592,6 +592,29 @@ module CAR {
        Welch=12,
 
        Result:WelchBox,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+    recipe Open 12 Pack of Big Red
+    {
+       BigRedBox,
+
+       Result:BigRed=12,
+       Time:120.0,
+       Sound:PutItemInBag,
+       Category:Storage,
+    }
+
+
+
+
+    recipe Pack up 12 Big Red
+    {
+       BigRed=12,
+
+       Result:BigRedBox,
        Time:120.0,
        Sound:PutItemInBag,
        Category:Storage,

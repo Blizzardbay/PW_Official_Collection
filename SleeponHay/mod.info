@@ -1,0 +1,5 @@
+name=Sleep on Hay
+id=SOH3403
+description=Lets the player sleep on Hay Bales as if they were (average quality) beds and Hay Floors as if they were (bad quality) beds.
+poster=poster.png
+tiledef=sleeponhay 3403

@@ -1,0 +1,356 @@
+module Base
+{
+
+	recipe Make Biofuel From Cabbages
+	{
+	Cabbage = 20,
+	Water=25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Potatos
+	{
+	Potato = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Radishes
+	{
+	RedRadish = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Carrots
+	{
+	Carrots = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Tomatos
+	{
+	Tomato = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Broccoli
+	{
+	Broccoli = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Strawberries
+	{
+	Strewberrie = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Corn
+	{
+	Corn = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Onions
+	{
+	Onion = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Bell Peppers
+	{
+	BellPepper = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Eggplants
+	{
+	Eggplant = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Leeks
+	{
+	Leek = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Lettuce
+	{
+	Lettuce = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Zucchinis
+	{
+	Zucchini = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Apples
+	{
+	Apple = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Bananas
+	{
+	Banana = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Cherrys
+	{
+	Cherry = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Grapefruit
+	{
+	Grapefruit = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+
+	recipe Make Biofuel From Grapes
+	{
+	Grapes = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Mangos
+	{
+	Mango = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Oranges
+	{
+	Orange = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Peachs
+	{
+	Peach = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Pears
+	{
+	Pear = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Pineapples
+	{
+	Pineapple = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Pumpkin
+	{
+	Pumpkin = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Watermelon
+	{
+	Watermelon = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+	recipe Make Biofuel From Avaocados
+	{
+	Avocado = 20,
+	Water = 25,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Cooking,
+	NeedToBeLearn:true,
+	SkillRequired:Cooking=4,
+	Result:PetrolCan,
+        Time:1000.0,
+	}
+
+}

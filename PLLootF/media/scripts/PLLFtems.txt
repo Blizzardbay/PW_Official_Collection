@@ -1,0 +1,103 @@
+module Base
+{
+
+	item MShield
+	{
+		Weight	=	3,
+		DisappearOnUse	=	FALSE,
+		Type	=	Normal,
+		DisplayName	=	Metallic Shield,
+		Icon	=	MShield,
+		cantBeConsolided = TRUE,
+		StaticModel = Weapons/1Handed/MShield,
+      	RunAnim	=	Run_Weapon2,
+       	IdleAnim	= HoldingTorchRight,
+		primaryAnimMask = HoldingTorchRight,
+        secondaryAnimMask = HoldingTorchLeft,
+
+	}
+
+	item aresbody
+	{
+		Type = Clothing,
+		DisplayName = Ares Prototype Body,
+		ClothingItem = aresbody,
+		BodyLocation = Torso1Legs1,
+		BloodLocation = Trousers;Jumper;Hands;Shoes;Neck,
+		RunSpeedModifier = 3,
+        CombatSpeedModifier = 3,
+		ScratchDefense = 100,
+        BiteDefense = 100,
+		Icon = aresbody,
+		Weight	=	25,
+		CanHaveHoles = false,
+		DisappearOnUse	=	FALSE,
+	}
+
+    item Grimoire
+    {
+        Weight	=	3,
+        Type	=	Literature,
+        DisplayName	=	Grimoire,
+        Icon	=	Grimoire,
+        TeachedRecipes  =   Summon Rogue Sword;Summon Witchy Staff;Summon TKnight Sword;Summon Cleric Mace,
+        ReplaceOnUse    =   Grimoire,
+        BoredomChange	=	-30,
+        StaticModel = Grimoire,
+        Tooltip = A heavy book with intricate drawings. What this might teach?,
+    }
+
+   item grimoireclosed
+	{
+		MaxRange	=	1,
+		WeaponSprite	=	grimoireclosed,
+		MinAngle	=	0.65,
+		Type	=	Weapon,
+		MinimumSwingTime	=	3,
+		KnockBackOnNoDeath	=	TRUE,
+		SwingAmountBeforeImpact	=	0.02,
+		Categories	=	SmallBlunt,
+		ConditionLowerChanceOneIn	=	15,
+		Weight	=	2,
+		SplatNumber	=	1,
+		PushBackMod	=	0.5,
+		SubCategory	=	Swinging,
+		ConditionMax	=	25,
+		MaxHitCount	=	1,
+		DoorDamage	=	4,
+		CanBarricade	=	TRUE,
+		SwingAnim	=	Bat,
+		DisplayName	=	Grimoire (Closed),
+		MinRange	=	0.51,
+		SwingTime	=	3,
+		KnockdownMod	=	0,
+		SplatBloodOnNoDeath	=	TRUE,
+		Icon	=	Grimoire,
+		RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+        BreakSound  =   BreakWoodItem,
+        TreeDamage  =   0,
+        MetalValue = 25,
+        MinDamage	=	0.05,
+        MaxDamage	=	0.1,
+        BaseSpeed = 1.0,
+		WeaponLength = 0.20,
+		AttachmentType = Walkie,
+  	}
+
+	item Animask23
+	{
+		Type = Clothing,
+		DisplayName = Ares Prototype Mask,
+		ClothingItem = Animask23,
+		BodyLocation = Pupils,
+		BloodLocation = Head,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		Icon = aresbody,
+		Weight	=	0.1,
+		CanHaveHoles = false,
+		Tooltip = Need Batteries To Operate Night Vision,
+	}
+
+}

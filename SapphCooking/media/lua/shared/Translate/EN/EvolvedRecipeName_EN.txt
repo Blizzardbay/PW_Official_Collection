@@ -22,10 +22,18 @@ EvolvedRecipeName_EN = {
 	EvolvedRecipeName_SapphCooking.SlicedSteak = "Beef",
 	EvolvedRecipeName_SapphCooking.StrawberryMilk = "Strawberry Milk",
 	EvolvedRecipeName_SapphCooking.EnergyDrink = "Energy Drink",
-
-
-
-
-
+	
+	EvolvedRecipeName_SapphCooking.IceCubes = "Ice",
+	EvolvedRecipeName_SapphCooking.VodkaFull = "Vodka",
+	EvolvedRecipeName_SapphCooking.LiqueurBottle = "Liqueur",
+	EvolvedRecipeName_SapphCooking.SakeFull = "Sake",
+	EvolvedRecipeName_SapphCooking.TequilaFull = "Tequila",
+	EvolvedRecipeName_SapphCooking.CachacaFull = "Cachaca",
+	EvolvedRecipeName_SapphCooking.RumFull = "Rum",
+	EvolvedRecipeName_SapphCooking.GinFull = "Gin",
+	EvolvedRecipeName_SapphCooking.SugarPacket = "Sweet",
+	EvolvedRecipeName_SapphCooking.HotsaucePacket = "Hot",
+	EvolvedRecipeName_SapphCooking.CoffeePacket = "Coffee",
+	EvolvedRecipeName_SapphCooking.Rice = "Rice",
 
 }

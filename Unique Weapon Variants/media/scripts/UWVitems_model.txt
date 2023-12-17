@@ -1,0 +1,303 @@
+module Base
+{
+	model Katana_RisingSun
+	{
+		mesh = Weapons/2Handed/UWVKatana,
+		texture = Weapons/2Handed/Katana_RisingSun,		
+
+		attachment world
+		{
+			offset = 0.0000 0.2850 0.0150,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model PickAxe_MinersFury
+	{
+		mesh = Weapons/2Handed/UWVPickAxe,
+		texture = Weapons/2Handed/PickAxe_MinersFury,			
+
+		attachment world
+		{
+			offset = 0.0000 0.2400 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model FireAxe_Prototype
+	{
+		mesh = Weapons/2Handed/UWVFireAxe,
+		texture = Weapons/2Handed/FireAxe_Prototype,		
+
+		attachment world
+		{
+			offset = 0.0170 0.1730 -0.0070,
+			rotate = 180.0000 -21.0000 180.0000,
+		}
+	}		
+	model WoodAxe_TheBigMcCoy
+	{
+		mesh = Weapons/2Handed/UWVWoodAxe,
+		texture = Weapons/2Handed/WoodAxe_TheBigMcCoy,		
+
+		attachment world
+		{
+			offset = 0.0120 0.2500 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model Nightstick_Justice
+	{
+		mesh = Weapons/1Handed/UWVNightstick,
+		texture = Weapons/1Handed/NightStick_Justice,		
+
+		attachment world
+		{
+			offset = 0.0000 0.1630 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model Crowbar_Resonance
+	{
+		mesh = Weapons/1Handed/UWVCrowbar,
+		texture = Weapons/1Handed/Crowbar_Resonance,				
+
+		attachment world
+		{
+			offset = 0.0000 0.1700 0.0000,
+			rotate = 0.0000 90.0000 0.0000,
+		}
+	}	
+	model Plunger_Gold
+	{
+		mesh = Weapons/1Handed/UWVPlunger,
+		texture = Weapons/1Handed/Plunger_Gold,			
+
+		attachment world
+		{
+			offset = 0.0000 0.1620 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model Knife_Cultist
+	{
+		mesh = Weapons/1Handed/UWVKnife,
+		texture = Weapons/1Handed/Knife_Cultist,				
+
+		attachment world
+		{
+			offset = 0.0000 0.0900 -0.0100,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model MeatCleaver_Artisan
+	{
+		mesh = Weapons/1Handed/UWVMeatCleaver,
+		texture = Weapons/1Handed/MeatCleaver_Artisan,		
+
+		attachment world
+		{
+			offset = 0.0000 0.1000 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model GuitarElectricRed_FamousMuscician
+	{
+		mesh = Weapons/2Handed/UWVGuitar_ElectricBlack,
+		texture = Weapons/2Handed/GuitarElectricRed_FamousMuscician,
+
+		attachment world
+		{
+			offset = 0.0000 0.2900 -0.0250,
+			rotate = 0.0000 -90.0000 0.0000,
+		}
+	}
+	model Pen_Space
+	{
+		mesh = Weapons/1Handed/UWVPen,
+		texture = Weapons/1Handed/Pen_Space,
+
+		attachment world
+		{
+			offset = -0.0050 0.0600 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model Broom_TomSword
+	{
+		mesh = Weapons/2Handed/UWVBroom,
+		texture = Weapons/2Handed/Broom_TomSword,	
+
+		attachment world
+		{
+			offset = 0.0000 0.3010 0.0000,
+			rotate = 0.0000 90.0000 0.0000,
+		}
+	}
+	model GardenFork_BigFork
+	{
+		mesh = Weapons/2Handed/UWVGardenFork,
+		texture = Weapons/2Handed/GardenFork_BigFork,		
+
+		attachment world
+		{
+			offset = 0.0000 0.2600 0.0000,
+			rotate = 0.0000 -90.0000 0.0000,
+		}
+	}
+	model Stake_Salvation
+    {
+        mesh = Weapons/1Handed/UWVStake,
+		texture = Weapons/1Handed/Stake_Salvation,			
+    }
+	model Scalpel_Slicer
+	{
+		mesh = Weapons/1Handed/UWVScalpel,
+		texture = Weapons/1Handed/Scalpel_Slicer,			
+	}
+	model HuntingKnife_McGrewKnife
+	{
+		mesh = Weapons/1Handed/UWVHuntingKnife,
+		texture = Weapons/1Handed/HuntingKnife_McGrewKnife,			
+
+		attachment world
+		{
+			offset = 0.0000 0.1150 -0.0100,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model HandAxe_Ranger
+	{
+		mesh = Weapons/1Handed/UWVHandAxe,
+		texture = Weapons/1Handed/HandAxe_Ranger,			
+
+		attachment world
+		{
+			offset = 0.0000 0.1250 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model BaseballBat_Aluminium
+	{
+		mesh = Weapons/2Handed/UWVBaseballBat,
+		texture = Weapons/2Handed/BaseballBat_Aluminium,			
+
+		attachment world
+		{
+			offset = 0.0000 0.2450 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model HandScythe_LilGrim
+	{
+		mesh = Weapons/1Handed/UWVHandScythe,
+		texture = Weapons/1Handed/HandScythe_LilGrim,		
+
+		attachment world
+		{
+			offset = 0.0100 0.1150 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model PipeWrench_Tuner
+	{
+		mesh = Weapons/1Handed/UWVPipeWrench,
+		texture = Weapons/1Handed/PipeWrench_Tuner,				
+
+		attachment world
+		{
+			offset = 0.0000 0.1300 -0.0100,
+			rotate = 0.0000 -90.0000 0.0000,
+		}
+	}
+	model LeadPipe_Pipey
+	{
+		mesh = Weapons/1Handed/UWVLeadPipe,
+		texture = Weapons/1Handed/LeadPipe_Pipey,		
+
+		attachment world
+		{
+			offset = 0.0000 0.1530 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model IcePick_PrisonShiv
+	{
+		mesh = Weapons/1Handed/UWVIcePick,
+		texture = Weapons/1Handed/IcePick_PrisonShiv,	
+	}
+	model WoodenMallet_Smasher
+	{
+		mesh = Weapons/1Handed/UWVWoodenMallet,
+		texture = Weapons/1Handed/WoodenMallet_Smasher,	
+	}
+	model Machete_Slasher
+	{
+		mesh = Weapons/1Handed/UWVMachete,
+		texture = Weapons/1Handed/Machete_Slasher,			
+
+		attachment world
+		{
+			offset = 0.0000 0.1400 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model WoodenLance_FallenSpear
+	{
+		mesh = Weapons/2Handed/UWVSpearCrafted,
+		texture = Weapons/2Handed/WoodenLance_FallenSpear,	
+
+		attachment world
+		{
+			offset = -0.0100 0.2900 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model Golfclub_PrizedClub
+	{
+		mesh = Weapons/1Handed/UWVGolfClub,
+		texture = Weapons/1Handed/GolfClub_PrizedClub,		
+
+		attachment world
+		{
+			offset = 0.0000 0.2900 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model BallPeenHammer_WoodCrafter
+	{
+		mesh = Weapons/1Handed/UWVBallPeenHammer,
+		texture = Weapons/1Handed/BallPeenHammer_Woodcrafter,		
+
+		attachment world
+		{
+			offset = 0.0150 0.1100 0.0000,
+			rotate = -180.0000 0.0000 -180.0000,
+		}
+	}
+	model Violin_Stradivarius
+	{
+		mesh = Weapons/1Handed/UWVViolin,
+		texture = Weapons/1Handed/Violin_Stradivarius,		
+
+		attachment world
+		{
+			offset = 0.0000 0.1300 0.0000,
+			rotate = -56.0000 90.0000 56.0000,
+		}
+	}
+	model AxeStone_StoneAge
+	{
+		mesh = Weapons/2Handed/UWVStoneAxe,
+		texture = Weapons/2Handed/AxeStone_StoneAge,		
+
+		attachment world
+		{
+			offset = 0.0000 0.1720 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model LetterOpener_Diplomacy
+	{
+		mesh = Weapons/1Handed/UWVLetterOpener,
+		texture = Weapons/1Handed/LetterOpener_Diplomacy,		
+	}	
+}

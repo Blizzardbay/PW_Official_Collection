@@ -1,0 +1,17 @@
+ItemName_FR = {
+	ItemName_MoreGloves.DottedGloves = "Gants en Kevlar",
+	ItemName_MoreGloves.FingerlessLeatherGloves = "Gants en Cuir Sans Doigts",
+	ItemName_MoreGloves.ImprovisedGloves = "Bandages en Cuir",
+	ItemName_MoreGloves.Cut-ResistantGloves = "Gants Résistants aux Coupures",
+	ItemName_MoreGloves.RippedDenimGloves = "Bandages en Denim",
+	ItemName_MoreGloves.RippedSheetsGloves = "Bandages en Tissu",
+	ItemName_MoreGloves.WeightliftingGloves = "Gants de Musculation",
+	ItemName_MoreGloves.MetalWelderGloves = "Gants de Soudure",
+	ItemName_MoreGloves.KickboxingGloves = "Gants de Kickboxing",
+    	ItemName_MoreGloves.HazmatGloves = "Gants de Protection Chimique",
+	ItemName_MoreGloves.WinterGloves = "Gants d'Hiver",
+	ItemName_MoreGloves.FirefighterGloves = "Gants de Sapeur-Pompier",
+	ItemName_MoreGloves.TacticalGloves01 = "Gants Tactiques",
+	ItemName_MoreGloves.TacticalGloves02 = "Gants Tactiques",
+	ItemName_MoreGloves.TacticalGloves03 = "Gants Tactiques",
+}

@@ -1,0 +1,424 @@
+module Base
+{
+    
+    /****************************** ITEM_AMMO ******************************/
+
+    recipe Open Box of 13.2 Ammo
+    {
+        132Box,
+
+        Result:132Bullets=2,
+        Sound:PutItemInBag,
+        Time:5.0,
+    }
+
+    recipe Place 13.2 Ammo in Box
+    {
+        132Bullets=10,
+
+        Result:132Box,
+        Sound:PutItemInBag,
+        Time:5.0,
+    }
+
+        recipe Open Box of .32 Ammo
+    {
+        32Box,
+
+        Result:32Bullets=2,
+        Sound:PutItemInBag,
+        Time:5.0,
+    }
+
+    recipe Place .32 Ammo in Box
+    {
+        32Bullets=20,
+
+        Result:32Box,
+        Sound:PutItemInBag,
+        Time:5.0,
+    }
+
+    recipe Open Box of .500 Ammo
+    {
+        500Box,
+
+        Result:500Bullets=2,
+        Sound:PutItemInBag,
+        Time:5.0,
+    }
+
+    recipe Place .500 Ammo in Box
+    {
+        500Bullets=20,
+
+        Result:500Box,
+        Sound:PutItemInBag,
+        Time:5.0,
+    }
+
+    recipe Detach Clip of 40MM Rounds
+    {
+        40Clip,
+
+        Result:40Rounds=5,
+        Sound:PutItemInBag,
+        Time:5.0,
+    }
+
+    recipe Place 40MM Rounds in Clip
+    {
+        40Rounds=5,
+
+        Result:40Clip,
+        Sound:PutItemInBag,
+        Time:5.0,
+    }
+
+    /****************************** ITEM_ALL ******************************/
+
+    recipe Make Arm Wrapping
+    {
+       RippedSheets=20,
+        Result:bandagesgloves,
+        NeedToBeLearn:false,
+        Time:150.0,
+        
+    }
+
+    recipe Make Leg Wrapping
+    {
+       RippedSheets=20,
+        Result:bandageslegs,
+        NeedToBeLearn:false,
+        Time:150.0,
+        
+    }
+
+    recipe Make Denim Arm Wrapping
+    {
+        keep Needle/SutureNeedle,
+       DenimStrips=20,
+       Thread=1,
+       SkillRequired:Tailoring=1,
+        Result:bandagesglovesdenim,
+        NeedToBeLearn:false,
+        Time:150.0,
+        
+    }
+
+    recipe Make Denim Leg Wrapping
+    {
+        keep Needle/SutureNeedle,
+       DenimStrips=20,
+       Thread=1,
+       SkillRequired:Tailoring=1,
+        Result:bandageslegsdenim,
+        NeedToBeLearn:false,
+        Time:150.0,
+        
+    }
+
+        recipe Make Leather Arm Wrapping
+    {
+        keep Needle/SutureNeedle,
+       LeatherStrips=20,
+       Thread=1,
+       SkillRequired:Tailoring=2,
+        Result:bandagesglovesleather,
+        NeedToBeLearn:false,
+        Time:150.0,
+        
+    }
+
+    recipe Make Leather Leg Wrapping
+    {
+        keep Needle/SutureNeedle,
+       LeatherStrips=20,
+       Thread=1,
+       SkillRequired:Tailoring=2,
+        Result:bandageslegsleather,
+        NeedToBeLearn:false,
+        Time:150.0,
+        
+    }
+
+    recipe Unstrap Holster
+    {
+       HolsterPLL,
+        Category: Misc,
+        Result:HolsterPLL2,
+        NeedToBeLearn:false,
+        Time:10.0,
+        
+    }
+
+    recipe Unstrap holster
+    {
+       HolsterPLLLEFT,
+        Category: Misc,
+        Result:HolsterPLLLEFT2,
+        NeedToBeLearn:false,
+        Time:10.0,
+        
+    }
+
+    recipe Strap Holster
+    {
+       HolsterPLL2,
+        Category: Misc,
+        Result:HolsterPLL,
+        NeedToBeLearn:false,
+        Time:10.0,
+        
+    }
+
+    recipe Strap Holster
+    {
+       HolsterPLLLEFT2,
+        Category: Misc,
+        Result:HolsterPLLLEFT,
+        NeedToBeLearn:false,
+        Time:10.0,
+        
+    }
+
+    /**milihoster**/
+
+        recipe Unstrap Holster
+    {
+       HolsterPLLM,
+        Category: Misc,
+        Result:HolsterPLL2M,
+        NeedToBeLearn:false,
+        Time:10.0,
+        
+    }
+
+    recipe Unstrap holster
+    {
+       HolsterPLLLEFTM,
+        Category: Misc,
+        Result:HolsterPLLLEFT2M,
+        NeedToBeLearn:false,
+        Time:10.0,
+        
+    }
+
+    recipe Strap Holster
+    {
+       HolsterPLL2M,
+        Category: Misc,
+        Result:HolsterPLLM,
+        NeedToBeLearn:false,
+        Time:10.0,
+        
+    }
+
+    recipe Strap Holster
+    {
+       HolsterPLLLEFT2M,
+        Category: Misc,
+        Result:HolsterPLLLEFTM,
+        NeedToBeLearn:false,
+        Time:10.0,
+        
+    }
+
+    recipe Swap to Angled Aim (M79)
+    {
+       m79,
+
+        Result:m79A,
+        NeedToBeLearn:false,
+        Sound:vulejectHigh,
+        Time:20.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Swap to Straight Aim (M79)
+    {
+       m79A,
+        Category: Misc,
+        Result:m79,
+        NeedToBeLearn:false,
+        Sound:vulejectHigh,
+        Time:20.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Open Skorpion stock
+    {
+       WitchySMG,
+        Category: Misc,
+        Result:WitchySMGE,
+        NeedToBeLearn:false,
+        Sound:vulejectHigh,
+        Time:20.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Close Skorpion stock
+    {
+       WitchySMGE,
+        Category: Misc,
+        Result:WitchySMG,
+        NeedToBeLearn:false,
+        Sound:vulejectHigh,
+        Time:20.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Open Skorpion stock
+    {
+       WitchySMGN,
+        Category: Misc,
+        Result:WitchySMGEN,
+        NeedToBeLearn:false,
+        Sound:vulejectHigh,
+        Time:20.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Close Skorpion stock
+    {
+       WitchySMGEN,
+        Category: Misc,
+        Result:WitchySMGN,
+        NeedToBeLearn:false,
+        Sound:vulejectHigh,
+        Time:20.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Remove Skorpion silencer
+    {
+       WitchySMG,
+        Category: Misc,
+        Result:WitchySMGN,
+        NeedToBeLearn:false,
+        Sound:vulejectHigh,
+        Time:20.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Insert Skorpion silencer
+    {
+       WitchySMGN,
+        Category: Misc,
+        Result:WitchySMG,
+        NeedToBeLearn:false,
+        Sound:vulejectHigh,
+        Time:20.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Remove Skorpion silencer
+    {
+       WitchySMGE,
+        Category: Misc,
+        Result:WitchySMGEN,
+        NeedToBeLearn:false,
+        Sound:vulejectHigh,
+        Time:20.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Insert Skorpion silencer
+    {
+       WitchySMGEN,
+        Category: Misc,
+        Result:WitchySMGE,
+        NeedToBeLearn:false,
+        Sound:vulejectHigh,
+        Time:20.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Take Gunpowder
+    {
+       500Bullets/132Bullets/40Rounds,
+
+       Result:GunPowder,
+       Time:20.0,
+    }
+
+        recipe Unsheathe Sword
+    {
+       RogueSword2,
+        Category: Misc,
+        Result:RogueSword,
+        NeedToBeLearn:false,
+        Sound:drawsw,
+        Time:12.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Sheathe Sword
+    {
+       RogueSword,
+        Category: Misc,
+        Result:RogueSword2,
+        NeedToBeLearn:false,
+        Prop1:RogueSword,
+        Sound:undrawsw,
+        Time:20.0,
+    }
+
+    recipe Unsheathe Sword
+    {
+       TKSword2,
+        Category: Misc,
+        Result:TKSword,
+        NeedToBeLearn:false,
+        Sound:drawsw2,
+        Time:12.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Sheathe Sword
+    {
+       TKSword,
+        Category: Misc,
+        Result:TKSword2,
+        NeedToBeLearn:false,
+        Prop1:TKSword,
+        Sound:undrawsw,
+        Time:20.0,
+    }
+
+    recipe Change Style (Half-Swording, Spear EXP)
+    {
+       TKSword,
+        Category: Misc,
+        Result:TKSwordHalf,
+        NeedToBeLearn:false,
+        Prop1:TKSword,
+        Time:10.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Change Style (Default, Long Blade EXP)
+    {
+       TKSwordHalf,
+        Category: Misc,
+        Result:TKSword,
+        NeedToBeLearn:false,
+        Prop1:TKSword,
+        Time:10.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Sheathe Sword
+    {
+       TKSwordHalf,
+        Category: Misc,
+        Result:TKSword2,
+        NeedToBeLearn:false,
+        Prop1:TKSword,
+        Sound:undrawsw,
+        Time:20.0,
+    }
+
+
+}

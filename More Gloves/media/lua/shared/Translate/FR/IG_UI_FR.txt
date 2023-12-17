@@ -1,0 +1,5 @@
+IG_UI_ES = {
+	IGUI_CraftCategory_Tailoring = "Couture",
+	IGUI_ItemCat_ClothArm = "Vêtements - Bras/Mains",
+}
+

@@ -332,6 +332,12 @@
 		mesh = weapons/parts/m24_sights,
 		texture = weapons/firearm/m24_texture,
 	}
+	
+	model LaserOn
+	{
+		mesh = Weapons/parts/Handgun_Laser_On,
+		texture = Weapons/parts/Handgun_Laser,
+	}
 
 	model ShellHolder
 	{
@@ -418,10 +424,22 @@
 	    texture = Weapons/parts/sling_texture,
 	}
 	
+	model Sling2_Ground
+	{
+	    mesh = WorldItems/sling_ground,
+	    texture = Weapons/parts/sling2_texture,
+	}
+	
 	model Sling_1022
 	{
 	    mesh = Weapons/parts/sling_1022,
 	    texture = Weapons/parts/sling_texture,
+	}
+	
+	model Sling2_1022
+	{
+	    mesh = Weapons/parts/sling_1022,
+	    texture = Weapons/parts/sling2_texture,
 	}
 	
 	model Sling_MP5
@@ -430,10 +448,22 @@
 	    texture = Weapons/parts/sling_texture,
 	}
 	
+	model Sling2_MP5
+	{
+	    mesh = Weapons/parts/sling_mp5,
+	    texture = Weapons/parts/sling2_texture,
+	}
+	
 	model Sling_MP5Folding
 	{
 	    mesh = Weapons/parts/sling_mp5folding,
 	    texture = Weapons/parts/sling_texture,
+	}
+	
+	model Sling2_MP5Folding
+	{
+	    mesh = Weapons/parts/sling_mp5folding,
+	    texture = Weapons/parts/sling2_texture,
 	}
 	
 	model Sling_MP5SD
@@ -442,10 +472,22 @@
 	    texture = Weapons/parts/sling_texture,
 	}
 	
+	model Sling2_MP5SD
+	{
+	    mesh = Weapons/parts/sling_mp5sd,
+	    texture = Weapons/parts/sling2_texture,
+	}
+	
 	model Sling_R788
 	{
 	    mesh = Weapons/parts/sling_R788,
 	    texture = Weapons/parts/sling_texture,
+	}
+	
+	model Sling2_R788
+	{
+	    mesh = Weapons/parts/sling_R788,
+	    texture = Weapons/parts/sling2_texture,
 	}
 	
 	model Sling_R700
@@ -454,10 +496,22 @@
 	    texture = Weapons/parts/sling_texture,
 	}
 	
+	model Sling2_R700
+	{
+	    mesh = Weapons/parts/sling_R700,
+	    texture = Weapons/parts/sling2_texture,
+	}
+	
 	model Sling_M14
 	{
 	    mesh = Weapons/parts/sling_M14,
 	    texture = Weapons/parts/sling_texture,
+	}
+	
+	model Sling2_M14
+	{
+	    mesh = Weapons/parts/sling_M14,
+	    texture = Weapons/parts/sling2_texture,
 	}
 	
 	model Sling_M1
@@ -466,10 +520,22 @@
 	    texture = Weapons/parts/sling_texture,
 	}
 	
+	model Sling2_M1
+	{
+	    mesh = Weapons/parts/sling_M1,
+	    texture = Weapons/parts/sling2_texture,
+	}
+	
 	model Sling_FAL
 	{
 	    mesh = Weapons/parts/sling_fal,
 	    texture = Weapons/parts/sling_texture,
+	}
+	
+	model Sling2_FAL
+	{
+	    mesh = Weapons/parts/sling_fal,
+	    texture = Weapons/parts/sling2_texture,
 	}
 	
 	model Sling_SKS
@@ -478,10 +544,22 @@
 	    texture = Weapons/parts/sling_texture,
 	}
 	
+	model Sling2_SKS
+	{
+	    mesh = Weapons/parts/sling_sks,
+	    texture = Weapons/parts/sling2_texture,
+	}
+	
 	model Sling_Mini14
 	{
 	    mesh = Weapons/parts/sling_mini14,
 	    texture = Weapons/parts/sling_texture,
+	}
+	
+	model Sling2_Mini14
+	{
+	    mesh = Weapons/parts/sling_mini14,
+	    texture = Weapons/parts/sling2_texture,
 	}
 	
 	model Sling_Mini14Folding
@@ -490,10 +568,22 @@
 	    texture = Weapons/parts/sling_texture,
 	}
 	
+	model Sling2_Mini14Folding
+	{
+	    mesh = Weapons/parts/sling_mini14folding,
+	    texture = Weapons/parts/sling2_texture,
+	}
+	
 	model Sling_Levergun
 	{
 	    mesh = Weapons/parts/sling_levergun,
 	    texture = Weapons/parts/sling_texture,
+	}
+	
+	model Sling2_Levergun
+	{
+	    mesh = Weapons/parts/sling_levergun,
+	    texture = Weapons/parts/sling2_texture,
 	}
 	
 	model Sling_Shotgun
@@ -502,10 +592,22 @@
 	    texture = Weapons/parts/sling_texture,
 	}
 	
+	model Sling2_Shotgun
+	{
+	    mesh = Weapons/parts/sling_shotgun,
+	    texture = Weapons/parts/sling2_texture,
+	}
+	
 	model Sling_Doublebarrel
 	{
 	    mesh = Weapons/parts/sling_doublebarrel,
 	    texture = Weapons/parts/sling_texture,
+	}
+	
+	model Sling2_Doublebarrel
+	{
+	    mesh = Weapons/parts/sling_doublebarrel,
+	    texture = Weapons/parts/sling2_texture,
 	}
 	
 	model Sling_Spas
@@ -514,10 +616,22 @@
 	    texture = Weapons/parts/sling_texture,
 	}
 	
+	model Sling2_Spas
+	{
+	    mesh = Weapons/parts/sling_spas,
+	    texture = Weapons/parts/sling2_texture,
+	}
+	
 	model Sling_M16
 	{
 	    mesh = Weapons/parts/sling_m16,
 	    texture = Weapons/parts/sling_texture,
+	}
+	
+	model Sling2_M16
+	{
+	    mesh = Weapons/parts/sling_m16,
+	    texture = Weapons/parts/sling2_texture,
 	}
 	
 	model Sling_CAR15
@@ -526,10 +640,22 @@
 	    texture = Weapons/parts/sling_texture,
 	}
 	
+	model Sling2_CAR15
+	{
+	    mesh = Weapons/parts/sling_car15,
+	    texture = Weapons/parts/sling2_texture,
+	}
+	
 	model Sling_CAR15Folded
 	{
 	    mesh = Weapons/parts/sling_car15folded,
 	    texture = Weapons/parts/sling_texture,
+	}
+	
+	model Sling2_CAR15Folded
+	{
+	    mesh = Weapons/parts/sling_car15folded,
+	    texture = Weapons/parts/sling2_texture,
 	}
 	
 	model Sling_AK47
@@ -538,10 +664,22 @@
 	    texture = Weapons/parts/sling_texture,
 	}
 	
+	model Sling2_AK47
+	{
+	    mesh = Weapons/parts/sling_ak47,
+	    texture = Weapons/parts/sling2_texture,
+	}
+	
 	model Sling_AK47Folding
 	{
 	    mesh = Weapons/parts/sling_ak47folding,
 	    texture = Weapons/parts/sling_texture,
+	}
+	
+	model Sling2_AK47Folding
+	{
+	    mesh = Weapons/parts/sling_ak47folding,
+	    texture = Weapons/parts/sling2_texture,
 	}
 	
 	model M9Bayonet

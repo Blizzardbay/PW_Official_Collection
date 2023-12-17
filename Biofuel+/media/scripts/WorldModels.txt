@@ -1,0 +1,9 @@
+module Base
+{
+	model MagazineBiofuel
+	{
+		mesh = Worlditems/Magazine,
+		texture = Worlditems/MagazineBiofuelClosed,
+		scale = 0.4,
+	}
+}

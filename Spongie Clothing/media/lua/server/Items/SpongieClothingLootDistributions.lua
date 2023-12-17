@@ -54,26 +54,26 @@ table.insert(ProceduralDistributions.list["ArmyHangarOutfit"].items, 5);
 table.insert(ProceduralDistributions.list["CampingStoreClothes"].items, "Spongie.Jacket_Flight");
 table.insert(ProceduralDistributions.list["CampingStoreClothes"].items, 3);
 
---Jacket_Bomber
-table.insert(ProceduralDistributions.list["ClothingStorageWinter"].items, "Spongie.Jacket_Bomber");
+--Jacket_BomberThick
+table.insert(ProceduralDistributions.list["ClothingStorageWinter"].items, "Spongie.Jacket_BomberThick");
 table.insert(ProceduralDistributions.list["ClothingStorageWinter"].items, 4);
-table.insert(ProceduralDistributions.list["ClothingStorageWinter"].items, "Spongie.Jacket_Bomber");
+table.insert(ProceduralDistributions.list["ClothingStorageWinter"].items, "Spongie.Jacket_BomberThick");
 table.insert(ProceduralDistributions.list["ClothingStorageWinter"].items, 4);
 
-table.insert(ProceduralDistributions.list["ClothingStoresJackets"].items, "Spongie.Jacket_Bomber");
+table.insert(ProceduralDistributions.list["ClothingStoresJackets"].items, "Spongie.Jacket_BomberThick");
 table.insert(ProceduralDistributions.list["ClothingStoresJackets"].items, 0.5);
-table.insert(ProceduralDistributions.list["ClothingStorageAllJackets"].items, "Spongie.Jacket_Bomber");
+table.insert(ProceduralDistributions.list["ClothingStorageAllJackets"].items, "Spongie.Jacket_BomberThick");
 table.insert(ProceduralDistributions.list["ClothingStorageAllJackets"].items, 1);
-table.insert(ProceduralDistributions.list["ClothingStoresJacketsLeather"].items, "Spongie.Jacket_Bomber");
+table.insert(ProceduralDistributions.list["ClothingStoresJacketsLeather"].items, "Spongie.Jacket_BomberThick");
 table.insert(ProceduralDistributions.list["ClothingStoresJacketsLeather"].items, 3);
 
-table.insert(ProceduralDistributions.list["WardrobeMan"].items, "Spongie.Jacket_Bomber");
+table.insert(ProceduralDistributions.list["WardrobeMan"].items, "Spongie.Jacket_BomberThick");
 table.insert(ProceduralDistributions.list["WardrobeMan"].items, 0.01);
 
-table.insert(ProceduralDistributions.list["CampingStoreClothes"].items, "Spongie.Jacket_Bomber");
+table.insert(ProceduralDistributions.list["CampingStoreClothes"].items, "Spongie.Jacket_BomberThick");
 table.insert(ProceduralDistributions.list["CampingStoreClothes"].items, 0.1);
 
-table.insert(ProceduralDistributions.list["ArmyHangarOutfit"].items, "Spongie.Jacket_Bomber");
+table.insert(ProceduralDistributions.list["ArmyHangarOutfit"].items, "Spongie.Jacket_BomberThick");
 table.insert(ProceduralDistributions.list["ArmyHangarOutfit"].items, 5);
 
 --Jacket_Field

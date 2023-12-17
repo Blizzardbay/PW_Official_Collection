@@ -10,6 +10,15 @@ option MoreBrewsWineMeUp.Loot
 	translation = MBW_LootGeneral,
 }
 
+option MoreBrewsWineMeUp.TotalAmount
+{
+	type = enum,
+	default = 3,
+	numValues = 5,
+	page = MBW_Loot,
+	translation = MBW_TotalAmount,
+}
+
 option MoreBrewsWineMeUp.WineKitSpawnOption
 {
 	type = boolean,
@@ -118,4 +127,32 @@ option MoreBrewsWineMeUp.FermentChange
 	max = 20,
 	page = MBW_Loot,
 	translation = MBW_FermentChange,
+}
+
+option MoreBrewsWineMeUp.CalorieChange
+{
+	type = integer,
+	default = 10,
+	min = 1,
+	max = 20,
+	page = MBW_Loot,
+	translation = MBW_CalorieChange,
+}
+
+option MoreBrewsWineMeUp.Expired
+{
+	type = boolean,
+	default = false,
+	page = MBW_Loot,
+	translation = MBW_Expired,
+}
+
+option MoreBrewsWineMeUp.ExpireChange
+{
+	type = integer,
+	default = 10,
+	min = 1,
+	max = 20,
+	page = MBW_Loot,
+	translation = MBW_ExpireChange,
 }

@@ -9,7 +9,7 @@ function ISVehicleMenu.showRadialMenu(player)
 
 	--Now we run some custom code
 	local vehicle = player:getVehicle()
-	local smokables = CheckInventoryForCigarette(player)
+	local smokables = IDNALCheckInventoryForCigarette(player)
 
 	if vehicle ~= nil then
 		local menu = getPlayerRadialMenu(player:getPlayerNum())
@@ -32,25 +32,30 @@ function ISVehicleMenu.showRadialMenu(player)
 					else menu:addSlice(getText('ContextMenu_CarLighter'),getTexture("media/ui/vehicles/carSmokingBatteryCigarette.png"), OnCarSmoking, player, smokables[0] ) 
 				end
 			
-			--What are we missing ?
+			--Missing cigs 
 			elseif smokables == nil and vehicle:getBatteryCharge() > 0 and (vehicle:isHotwired() or vehicle:isKeysInIgnition()) then
 				 menu:addSlice(getText('ContextMenu_CarLighter')  ..":" .. getText('ContextMenu_CarOutOfCigarette'), getTexture("media/ui/vehicles/carSmokingBatteryContactNoCigarette.png"))	
-				 
+			
+			--Missing cigs and battery 
 			elseif smokables == nil and vehicle:getBatteryCharge() == 0 and (vehicle:isHotwired() or vehicle:isKeysInIgnition()) then
 				menu:addSlice(getText('ContextMenu_CarLighter') ..":" .. getText('ContextMenu_CarOutOfCigarette') .. getText('ContextMenu_CarNoBattery'),getTexture("media/ui/vehicles/carSmokingNoBatteryContactNoCigarette.png")) 						
-
+				
+			--Missing cigs and battery and keys
 			elseif smokables == nil and vehicle:getBatteryCharge() == 0 and (not vehicle:isHotwired() or not vehicle:isKeysInIgnition()) then
 				menu:addSlice(getText('ContextMenu_CarLighter') ..":" .. getText('ContextMenu_CarOutOfCigarette') .. getText('ContextMenu_CarNoBattery') .. getText('ContextMenu_CarNoKeyOrWire'),getTexture("media/ui/vehicles/carSmokingNoBatteryNoContactNoCigarette.png") )
 
+			--Missing cigs and keys
 			elseif smokables == nil and vehicle:getBatteryCharge() > 0 and (not vehicle:isHotwired() or not vehicle:isKeysInIgnition()) then
 				menu:addSlice(getText('ContextMenu_CarLighter') ..":".. getText('ContextMenu_CarOutOfCigarette') .. getText('ContextMenu_CarNoKeyOrWire'),getTexture("media/ui/vehicles/carSmokingBatteryNoContactNoCigarette.png") ) 
-
+			
+			--Missing keys
 			elseif smokables ~= nil and vehicle:getBatteryCharge() > 0 and (not vehicle:isHotwired() or not vehicle:isKeysInIgnition()) then
 				menu:addSlice(getText('ContextMenu_CarLighter') ..":" .. getText('ContextMenu_CarNoKeyOrWire'),getTexture("media/ui/vehicles/carSmokingBatteryNoContactCigarette.png")) 
-
+			--Missing charge
 			elseif smokables ~= nil and vehicle:getBatteryCharge() == 0 and  (vehicle:isHotwired() or  vehicle:isKeysInIgnition()) then
 				 menu:addSlice(getText('ContextMenu_CarLighter') ..":".. getText('ContextMenu_CarNoBattery'),getTexture("media/ui/vehicles/carSmokingNoBatteryContactCigarette.png")) 
-
+			
+			--Missing charge and keys
 			elseif smokables ~= nil and vehicle:getBatteryCharge() == 0 and (not vehicle:isHotwired() or not vehicle:isKeysInIgnition()) then
 				 menu:addSlice(getText('ContextMenu_CarLighter') ..":".. getText('ContextMenu_CarNoBattery') .. getText('ContextMenu_CarNoKeyOrWire'),getTexture("media/ui/vehicles/carSmokingNoBatteryNoContactCigarette.png")) 
 			end
@@ -61,7 +66,7 @@ end
 
 --This is the function for the Sub-Menu for the modded version of the car lighter to show-up smokable while in a car
 function IDNALOnSubMenu(player)
-	local smokables = CheckInventoryForCigarette(player) --TODO : this could be a parameter, we are wasting power
+	local smokables = IDNALCheckInventoryForCigarette(player)
 	local menu = getPlayerRadialMenu(player:getPlayerNum())
 	menu:clear()
 	
@@ -72,7 +77,7 @@ function IDNALOnSubMenu(player)
 	local texture = Joypad.Texture.AButton
 
 	
-	for i=0, getTableSize(smokables) -1 do --TODO : this need to have a hardcap to not fuck up the radialmenu
+	for i=0, IDNALgetTableSize(smokables) -1 do --TODO : this need to have a hardcap to not fuck up the radialmenu
 		menu:addSlice(smokables[i]:getDisplayName(), smokables[i]:getTexture(), OnCarSmoking, player, smokables[i] )
 	end
 	

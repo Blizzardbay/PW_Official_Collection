@@ -1,0 +1,18 @@
+ItemName_CN = {
+	ItemName_MoreGloves.DottedGloves = "圆点工作手套",
+	ItemName_MoreGloves.FingerlessLeatherGloves = "露指皮手套",
+	ItemName_MoreGloves.ImprovisedGloves = "皮革手工包装",
+	ItemName_MoreGloves.Cut-ResistantGloves = "防切手套",
+	ItemName_MoreGloves.RippedDenimGloves = "牛仔手工包装",
+	ItemName_MoreGloves.RippedSheetsGloves = "布料手工包装",
+	ItemName_MoreGloves.WeightliftingGloves = "举重手套",
+	ItemName_MoreGloves.MetalWelderGloves = "金属焊工手套",
+	ItemName_MoreGloves.KickboxingGloves = "自由搏击手套",
+	ItemName_MoreGloves.HazmatGloves = "危险品手套",
+	ItemName_MoreGloves.WinterGloves = "冬季手套",
+	ItemName_MoreGloves.FirefighterGloves = "消防手套",
+	ItemName_MoreGloves.TacticalGloves01 = "战术手套",
+	ItemName_MoreGloves.TacticalGloves02 = "战术手套",
+	ItemName_MoreGloves.TacticalGloves03 = "战术手套",
+
+}

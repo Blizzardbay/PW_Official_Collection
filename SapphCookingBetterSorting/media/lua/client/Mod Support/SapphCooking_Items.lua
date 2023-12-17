@@ -47,8 +47,9 @@ TweakItem("SapphCooking.BakingMolds","DisplayCategory", "Cooking");
 TweakItem("SapphCooking.BagofWoodenSkewers","DisplayCategory", "Cooking");
 TweakItem("SapphCooking.WoodenSkewers","DisplayCategory", "Cooking");
 TweakItem("SapphCooking.ClothFilter","DisplayCategory", "Cooking");
-TweakItem("SapphCooking.DirtyClothFilter","DisplayCategory", "Cooking");
-
+TweakItem("SapphCooking.BagofToothpicks","DisplayCategory", "Cooking");
+TweakItem("SapphCooking.IceTray","DisplayCategory", "Cooking");
+TweakItem("SapphCooking.ButterChurn","DisplayCategory", "Cooking");
 
 
 
@@ -96,7 +97,7 @@ TweakItem("SapphCooking.LowballGlassNegroni","DisplayCategory", "FoodB");
 TweakItem("SapphCooking.VodkaFull","DisplayCategory", "FoodB");
 TweakItem("SapphCooking.TequilaFull","DisplayCategory", "FoodB");
 TweakItem("SapphCooking.LowballGlassMargarita","DisplayCategory", "FoodB");
-TweakItem("SapphCooking.CachaçaFull","DisplayCategory", "FoodB");
+TweakItem("SapphCooking.CachacaFull","DisplayCategory", "FoodB");
 TweakItem("SapphCooking.LowballGlassCaipirinha","DisplayCategory", "FoodB");
 TweakItem("SapphCooking.LowballGlassTequila","DisplayCategory", "FoodB");
 TweakItem("SapphCooking.LowballGlassBeer","DisplayCategory", "FoodB");
@@ -133,6 +134,18 @@ TweakItem("SapphCooking.LowballGlassPilk","DisplayCategory", "FoodB");
 TweakItem("SapphCooking.LowballGlassCubaLibre","DisplayCategory", "FoodB");
 TweakItem("SapphCooking.EnergyDrink","DisplayCategory", "FoodB");
 TweakItem("SapphCooking.ThermosBeverage","DisplayCategory", "FoodB");
+TweakItem("SapphCooking.ThermosSoup","DisplayCategory", "FoodB");
+TweakItem("SapphCooking.ThermosCoffeeEvolved","DisplayCategory", "FoodB");
+TweakItem("SapphCooking.LowBallEvolved","DisplayCategory", "FoodB");
+TweakItem("SapphCooking.CocktailGlassEvolved","DisplayCategory", "FoodB");
+TweakItem("SapphCooking.CocktailMixerEvolved","DisplayCategory", "FoodB");
+TweakItem("SapphCooking.ButtermilkBottle","DisplayCategory", "FoodB");
+TweakItem("SapphCooking.Churn_Wine","DisplayCategory", "FoodB");
+TweakItem("SapphCooking.Churn_Buttermilk","DisplayCategory", "FoodB");
+
+
+
+
 
 
 
@@ -335,14 +348,29 @@ TweakItem("SapphCooking.Gingerbread_Man","DisplayCategory", "FoodP");
 TweakItem("SapphCooking.Gingerbread_Wall","DisplayCategory", "FoodP");
 TweakItem("SapphCooking.Gingerbread_House","DisplayCategory", "FoodP");
 TweakItem("SapphCooking.Gingerbread_Pieces","DisplayCategory", "FoodP");
-
-
-
-
-
-
-
-
+TweakItem("SapphCooking.ScotchEgg","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.ScotchEggRaw","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.SlicedChickenBatter","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.WokFriedRiceEvolved","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.FryingPanFriedRiceEvolved","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.BakedPotato_Evolved","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.WokPan_YakisobaEvolve","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.SushiEvolved","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.SushiRecipe","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.HotdogCustom","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.HotdogSandwichEvolved","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.HotdogEvolved","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.MincedMeat_Chicken","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.SausageEvolved","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.SausageCasing","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.Saucepan_ArrozLecheUn","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.Saucepan_ArrozLeche","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.CevicheBowl","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.CevicheBowlEvolved","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.SpringrollWrapper","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.SpringrollEvolved","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.Saucepan_InstantNoodlesEvolved","DisplayCategory", "FoodP");
+TweakItem("SapphCooking.Mochi","DisplayCategory", "FoodP");
 
 
 
@@ -472,18 +500,25 @@ TweakItem("SapphCooking.Heart_Chocolate","DisplayCategory", "FoodN");
 TweakItem("SapphCooking.Bonbon","DisplayCategory", "FoodN");
 TweakItem("SapphCooking.Bonbon_Liqueur","DisplayCategory", "FoodN");
 TweakItem("SapphCooking.ArborioRice","DisplayCategory", "FoodN");
+TweakItem("SapphCooking.Syrup_Chocolate","DisplayCategory", "FoodN");
+TweakItem("SapphCooking.Syrup_Strawberry","DisplayCategory", "FoodN");
+TweakItem("SapphCooking.Syrup_Caramel","DisplayCategory", "FoodN");
+TweakItem("SapphCooking.NoodleSachet_Beef","DisplayCategory", "FoodN");
+TweakItem("SapphCooking.NoodleSachet_Chicken","DisplayCategory", "FoodN");
 
 
 
+--Clothing(Glove)
+TweakItem("SapphCooking.Gloves_OvenMitten_Udderly","DisplayCategory", "ClothArm");
+TweakItem("SapphCooking.Gloves_OvenMitten_White","DisplayCategory", "ClothArm");
 
-
-
-
-
+--Toothpick
+TweakItem("SapphCooking.Mouth_Toothpick","DisplayCategory", "ClothHead");
 
 
 
 -- Recipe magazines
+TweakItem("SapphCooking.SausageMakingMagazine","DisplayCategory", "LitR");
 TweakItem("SapphCooking.AsianFoodMagazine","DisplayCategory", "LitR");
 TweakItem("SapphCooking.EuropeFoodMagazine","DisplayCategory", "LitR");
 TweakItem("SapphCooking.PastaDoughMagazine","DisplayCategory", "LitR");

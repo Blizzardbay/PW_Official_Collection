@@ -47,31 +47,6 @@ module Base
 		Tags 		= FishingSpear,
 		WorldStaticModel 		= CarvingForkGround,
 	}
-	recipe Make Bread Dough
-   	{
-   	    	keep RollingPin,
-    	   	Water=1,
-       		Flour=1,
-     	  	[Recipe.GetItemTypes.SapphCookingSalt];1,
-      	 	Yeast,
-
-       		Result:BreadDough,
-       		NeedToBeLearn:true,
-       		Time:50.0,
-       		Category:Cooking,
-       		OnGiveXP:Recipe.OnGiveXP.Cooking10,
-   	}
-
-	 recipe Make Cheese Sandwich
-   	{
-        BreadSlices,
-        [Recipe.GetItemTypes.SapphCookingCheese];5,
-
-        Result:CheeseSandwich,
-        OnTest:Recipe.OnTest.WholeBreadSlices,
-        Time:50.0,
-        Category:Cooking,
-   	}
 
     recipe Make Mildew Cure
 	{

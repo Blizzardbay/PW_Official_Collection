@@ -5,8 +5,8 @@ ItemName_ES = {
 	ItemName_Base.AK47Folded = "Rifle de asalto AK47",
 	
 	ItemName_Base.SKS = "Rifle SKS",
-	ItemName_Base.SKSSpiker = "Rifle SKS",
-	ItemName_Base.SKSSpikerBayonet = "Rifle SKS",
+	ItemName_Base.SKSSpiker = "Rifle SKS-45",
+	ItemName_Base.SKSSpikerBayonet = "Rifle SKS-45",
 	
 	ItemName_Base.Mini14 = "Rifle Mini-14",	
 	ItemName_Base.Mini14Unfolded = "Rifle Mini-14",
@@ -25,6 +25,7 @@ ItemName_ES = {
 	
 	ItemName_Base.Shotgun = "Escopeta M500",
 	ItemName_Base.Shotgun2 = "Escopeta M590",
+	ItemName_Base.Shotgun2Bayonet = "Escopeta M590",
 	ItemName_Base.ShotgunSemi = "Escopeta R1187",
 	ItemName_Base.ShotgunSemi2 = "Escopeta R1187",
 	ItemName_Base.ShotgunSilent = "Lanzamiento de la Moneda",
@@ -44,6 +45,8 @@ ItemName_ES = {
 	ItemName_Base.Glock = "Pistola G17",
 	ItemName_Base.Glock18 = "Pistola G18",
 	ItemName_Base.P229 = "Pistola P229",
+	ItemName_Base.CZ75 = "Pistola CZ 75",
+	ItemName_Base.MK23SOCOM = "Pistola MK23",
 	
 	ItemName_Base.MP5 = "Subfusil MP5",
 	ItemName_Base.MP5SD = "Subfusil MP5SD",
@@ -63,7 +66,8 @@ ItemName_ES = {
 	ItemName_Base.FAL = "Rifle de combate FAL",
 	ItemName_Base.FALClassic = "Rifle de combate FAL",
 	
-	ItemName_Base.AssaultRiflM1 = "Rifle M1",
+	ItemName_Base.AssaultRifle2 = "Rifle de combate M14",
+	ItemName_Base.AssaultRifleM1 = "Rifle M1",
 	
 	/*Ammo*/	
 	ItemName_Base.762Box = "Caja de munición 7,62",
@@ -79,6 +83,7 @@ ItemName_ES = {
 	ItemName_Base.9mmClip20 = "Cargador para balas de TEC9",
 	ItemName_Base.9mmClip30 = "Cargador para balas de MP5",
 	ItemName_Base.45Clip32 = "Cargador para balas de M10",
+	ItemName_Base.45Clip12 = "Cargador para balas de MK23",
 	
 	ItemName_Base.22ClipRifle = "Cargador para balas de R1022",
 	
@@ -89,6 +94,7 @@ ItemName_ES = {
 	ItemName_Base.556Clip = "Cargador para balas de M16",
 	ItemName_Base.M14Clip = "Cargador para balas de M14",
 	ItemName_Base.FALClip = "Cargador para balas de FAL",
+	ItemName_Base.9mmClip16 = "Cargador para balas de CZ 75",
 	ItemName_Base.9mmClip17 = "Cargador para balas de G17",
 	
 	/*Attachments*/
@@ -100,6 +106,8 @@ ItemName_ES = {
 	ItemName_Base.x2Scope_Fake = "Mira 2x",
 	ItemName_Base.x4Scope_Fake = "Mira 4x",
 	ItemName_Base.x8Scope_Fake = "Mira 8x",
+	ItemName_Base.Sling = "Honda de Cuero",
+	ItemName_Base.Sling2 = "Honda de Nailon",
 	
 	/*Items*/
 	ItemName_Base.CleaningKit = "Kit de Limpieza de Armas",

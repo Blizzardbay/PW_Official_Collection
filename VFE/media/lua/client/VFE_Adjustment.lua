@@ -1,5 +1,5 @@
 local function Adjust(Name, Property, Value)
-Item = ScriptManager.instance:getItem(Name)
+local Item = ScriptManager.instance:getItem(Name)
 Item:DoParam(Property.." = "..Value)
 end
 

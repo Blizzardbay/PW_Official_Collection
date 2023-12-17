@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+   <files>
+        <path>media/clothing/clothingItems/SapphOvenMitten_White.xml</path>
+        <guid>da76bf80-d182-4546-aa4f-039d749a0f0f</guid>
+    </files>
+   <files>
+        <path>media/clothing/clothingItems/SapphOvenMitten_Spiffo.xml</path>
+        <guid>0bc9f0d9f-789e-4297-9812-37b0919bf0de</guid>
+    </files>
+   <files>
+        <path>media/clothing/clothingItems/SapphOvenMitten_IndieStone.xml</path>
+        <guid>f4602f0d-5da3-448f-be23-c903ba2d1096</guid>
+    </files>
+   <files>
+        <path>media/clothing/clothingItems/SapphOvenMitten_Udderly.xml</path>
+        <guid>c5eaadec-88e6-4230-9ea9-e55fefe8317d</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/Sapph_Toothpick.xml</path>
+        <guid>e952a559-edd8-47ac-9a6f-dbdffc5001bf</guid>
+    </files>
+</fileGuidTable>

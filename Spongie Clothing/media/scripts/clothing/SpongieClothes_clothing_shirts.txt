@@ -116,5 +116,77 @@ module Spongie {
         WorldStaticModel = BulletVest_Ground,
     }
 	
+	item Shirt_Quilted
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Quilted Shirt,
+        ClothingItem = Shirt_Quilted,
+        BodyLocation = Shirt,
+        Icon = QuiltedShirt,
+        BloodLocation = ShirtLongSleeves,
+        Insulation = 0.35,
+        WindResistance = 0.25,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+		
+        ClothingItemExtra = Spongie.Shirt_QuiltedOPEN;Spongie.Shirt_QuiltedROLL;Spongie.Shirt_QuiltedOPENROLL,
+        ClothingItemExtraOption = OpenRollDown;CloseRollUp;OpenRollUp,
+        clothingExtraSubmenu = CloseRollDown,
+    }
+	item Shirt_QuiltedOPEN
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Quilted Shirt,
+        ClothingItem = Shirt_QuiltedOPEN,
+        BodyLocation = Shirt,
+        Icon = QuiltedShirt,
+        BloodLocation = ShirtLongSleeves,
+        Insulation = 0.35,
+        WindResistance = 0.25,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+		
+        ClothingItemExtra = Spongie.Shirt_Quilted;Spongie.Shirt_QuiltedROLL;Spongie.Shirt_QuiltedOPENROLL,
+        ClothingItemExtraOption = CloseRollDown;CloseRollUp;OpenRollUp,
+        clothingExtraSubmenu = OpenRollDown,
+    }
+	item Shirt_QuiltedROLL
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Quilted Shirt,
+        ClothingItem = Shirt_QuiltedROLL,
+        BodyLocation = ShortSleeveShirt,
+        Icon = QuiltedShirt,
+        BloodLocation = Shirt,
+        Insulation = 0.35,
+        WindResistance = 0.25,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+		
+        ClothingItemExtra = Spongie.Shirt_Quilted;Spongie.Shirt_QuiltedOPEN;Spongie.Shirt_QuiltedOPENROLL,
+        ClothingItemExtraOption = CloseRollDown;OpenRollDown;OpenRollUp,
+        clothingExtraSubmenu = CloseRollUp,
+    }
+	item Shirt_QuiltedOPENROLL
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Quilted Shirt,
+        ClothingItem = Shirt_QuiltedOPENROLL,
+        BodyLocation = ShortSleeveShirt,
+        Icon = QuiltedShirt,
+        BloodLocation = Shirt,
+        Insulation = 0.35,
+        WindResistance = 0.25,
+        FabricType = Cotton,
+        WorldStaticModel = Shirt_Ground,
+		
+        ClothingItemExtra = Spongie.Shirt_Quilted;Spongie.Shirt_QuiltedOPEN;Spongie.Shirt_QuiltedROLL,
+        ClothingItemExtraOption = CloseRollDown;OpenRollDown;CloseRollUp,
+        clothingExtraSubmenu = OpenRollUp,
+    }
 	
 }

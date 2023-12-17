@@ -626,4 +626,11 @@ module Base
         texture = WorldItems/BookCyan,
         scale = 0.4,
     }
+
+	model BrewingInstructions
+    {
+        mesh = WorldItems/Map,
+        texture = WorldItems/BrewingInstructions,
+        scale = 0.5,
+    }
 }

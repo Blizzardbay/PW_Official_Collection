@@ -704,6 +704,24 @@ table.insert(ProceduralDistributions["list"]["StoreShelfSnacks"].items, 0.35 * S
 table.insert(SuburbsDistributions["all"]["vendingsnack"].items, "PompsItems.PICheeseStickDip");
 table.insert(SuburbsDistributions["all"]["vendingsnack"].items, 0.12 * SandboxVars.PompsItems.SnacksSpawnRate);
 
+	--Bag of Disappointment
+table.insert(ProceduralDistributions["list"]["CrateChips"].items, "PompsItems.PIBagOfDisappointment");
+table.insert(ProceduralDistributions["list"]["CrateChips"].items, 0.5 * SandboxVars.PompsItems.SnacksSpawnRate);
+table.insert(ProceduralDistributions["list"]["GigamartCrisps"].items, "PompsItems.PIBagOfDisappointment");
+table.insert(ProceduralDistributions["list"]["GigamartCrisps"].items, 0.5 * SandboxVars.PompsItems.SnacksSpawnRate);
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, "PompsItems.PIBagOfDisappointment");
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, 0.15 * SandboxVars.PompsItems.SnacksSpawnRate);
+table.insert(ProceduralDistributions["list"]["StoreShelfCombo"].items, "PompsItems.PIBagOfDisappointment");
+table.insert(ProceduralDistributions["list"]["StoreShelfCombo"].items, 0.15 * SandboxVars.PompsItems.SnacksSpawnRate);
+table.insert(ProceduralDistributions["list"]["StoreShelfSnacks"].items, "PompsItems.PIBagOfDisappointment");
+table.insert(ProceduralDistributions["list"]["StoreShelfSnacks"].items, 0.25 * SandboxVars.PompsItems.SnacksSpawnRate);
+table.insert(SuburbsDistributions["all"]["vendingsnack"].items, "PompsItems.PIBagOfDisappointment");
+table.insert(SuburbsDistributions["all"]["vendingsnack"].items, 0.2 * SandboxVars.PompsItems.SnacksSpawnRate);
+table.insert(SuburbsDistributions["Lunchbox"].items, "PompsItems.PIBagOfDisappointment");
+table.insert(SuburbsDistributions["Lunchbox"].items, 0.2 * SandboxVars.PompsItems.SnacksSpawnRate);
+table.insert(SuburbsDistributions["Lunchbox2"].items, "PompsItems.PIBagOfDisappointment");
+table.insert(SuburbsDistributions["Lunchbox2"].items, 0.2 * SandboxVars.PompsItems.SnacksSpawnRate);
+
 ---------------------- FOODS - REFRIGERATED GOODS ----------------------
 
 	--Phoenix Mac and Cheese
@@ -1996,6 +2014,105 @@ table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, 0.5 * Sa
 table.insert(SuburbsDistributions["all"]["vendingsnack"].items, "PompsItems.PIStonewallChew");
 table.insert(SuburbsDistributions["all"]["vendingsnack"].items, 0.01 * SandboxVars.PompsItems.CandySpawnRate);
 
+	---Bonnie Bites
+table.insert(ProceduralDistributions["list"]["CrateCandyPackage"].items, "PompsItems.PIBonnieBites");
+table.insert(ProceduralDistributions["list"]["CrateCandyPackage"].items, 0.25 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["GigamartCandy"].items, "PompsItems.PIBonnieBites");
+table.insert(ProceduralDistributions["list"]["GigamartCandy"].items, 0.4 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["TheatreSnacks"].items, "PompsItems.PIBonnieBites");
+table.insert(ProceduralDistributions["list"]["TheatreSnacks"].items, 0.15 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, "PompsItems.PIBonnieBites");
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, 0.08 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["CafeteriaSnacks"].items, "PompsItems.PIBonnieBites");
+table.insert(ProceduralDistributions["list"]["CafeteriaSnacks"].items, 0.1 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, "PompsItems.PIBonnieBites");
+table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, 0.5 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(SuburbsDistributions["all"]["vendingsnack"].items, "PompsItems.PIBonnieBites");
+table.insert(SuburbsDistributions["all"]["vendingsnack"].items, 0.01 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(SuburbsDistributions["Lunchbox"].items, "PompsItems.PIBonnieBites");
+table.insert(SuburbsDistributions["Lunchbox"].items, 0.4 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(SuburbsDistributions["Lunchbox2"].items, "PompsItems.PIBonnieBites");
+table.insert(SuburbsDistributions["Lunchbox2"].items, 0.4 * SandboxVars.PompsItems.CandySpawnRate);
+
+	---Pirate Plunderbar
+table.insert(ProceduralDistributions["list"]["CrateCandyPackage"].items, "PompsItems.PIPiratePlunderbar");
+table.insert(ProceduralDistributions["list"]["CrateCandyPackage"].items, 0.25 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["GigamartCandy"].items, "PompsItems.PIPiratePlunderbar");
+table.insert(ProceduralDistributions["list"]["GigamartCandy"].items, 0.4 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["TheatreSnacks"].items, "PompsItems.PIPiratePlunderbar");
+table.insert(ProceduralDistributions["list"]["TheatreSnacks"].items, 0.15 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, "PompsItems.PIPiratePlunderbar");
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, 0.08 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["CafeteriaSnacks"].items, "PompsItems.PIPiratePlunderbar");
+table.insert(ProceduralDistributions["list"]["CafeteriaSnacks"].items, 0.1 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, "PompsItems.PIPiratePlunderbar");
+table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, 0.5 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(SuburbsDistributions["all"]["vendingsnack"].items, "PompsItems.PIPiratePlunderbar");
+table.insert(SuburbsDistributions["all"]["vendingsnack"].items, 0.01 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(SuburbsDistributions["Lunchbox"].items, "PompsItems.PIPiratePlunderbar");
+table.insert(SuburbsDistributions["Lunchbox"].items, 0.4 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(SuburbsDistributions["Lunchbox2"].items, "PompsItems.PIPiratePlunderbar");
+table.insert(SuburbsDistributions["Lunchbox2"].items, 0.4 * SandboxVars.PompsItems.CandySpawnRate);
+
+	---Chica Bar
+table.insert(ProceduralDistributions["list"]["CrateCandyPackage"].items, "PompsItems.PILemonChica");
+table.insert(ProceduralDistributions["list"]["CrateCandyPackage"].items, 0.25 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["GigamartCandy"].items, "PompsItems.PILemonChica");
+table.insert(ProceduralDistributions["list"]["GigamartCandy"].items, 0.4 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["TheatreSnacks"].items, "PompsItems.PILemonChica");
+table.insert(ProceduralDistributions["list"]["TheatreSnacks"].items, 0.15 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, "PompsItems.PILemonChica");
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, 0.08 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["CafeteriaSnacks"].items, "PompsItems.PILemonChica");
+table.insert(ProceduralDistributions["list"]["CafeteriaSnacks"].items, 0.1 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, "PompsItems.PILemonChica");
+table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, 0.5 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(SuburbsDistributions["all"]["vendingsnack"].items, "PompsItems.PILemonChica");
+table.insert(SuburbsDistributions["all"]["vendingsnack"].items, 0.01 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(SuburbsDistributions["Lunchbox"].items, "PompsItems.PILemonChica");
+table.insert(SuburbsDistributions["Lunchbox"].items, 0.4 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(SuburbsDistributions["Lunchbox2"].items, "PompsItems.PILemonChica");
+table.insert(SuburbsDistributions["Lunchbox2"].items, 0.4 * SandboxVars.PompsItems.CandySpawnRate);
+
+	---Freddy Fudgebar
+table.insert(ProceduralDistributions["list"]["CrateCandyPackage"].items, "PompsItems.PIFreddyFudgebar");
+table.insert(ProceduralDistributions["list"]["CrateCandyPackage"].items, 0.25 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["GigamartCandy"].items, "PompsItems.PIFreddyFudgebar");
+table.insert(ProceduralDistributions["list"]["GigamartCandy"].items, 0.4 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["TheatreSnacks"].items, "PompsItems.PIFreddyFudgebar");
+table.insert(ProceduralDistributions["list"]["TheatreSnacks"].items, 0.15 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, "PompsItems.PIFreddyFudgebar");
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, 0.08 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["CafeteriaSnacks"].items, "PompsItems.PIFreddyFudgebar");
+table.insert(ProceduralDistributions["list"]["CafeteriaSnacks"].items, 0.1 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, "PompsItems.PIFreddyFudgebar");
+table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, 0.5 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(SuburbsDistributions["all"]["vendingsnack"].items, "PompsItems.PIFreddyFudgebar");
+table.insert(SuburbsDistributions["all"]["vendingsnack"].items, 0.01 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(SuburbsDistributions["Lunchbox"].items, "PompsItems.PIFreddyFudgebar");
+table.insert(SuburbsDistributions["Lunchbox"].items, 0.4 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(SuburbsDistributions["Lunchbox2"].items, "PompsItems.PIFreddyFudgebar");
+table.insert(SuburbsDistributions["Lunchbox2"].items, 0.4 * SandboxVars.PompsItems.CandySpawnRate);
+
+	---Fazbar
+table.insert(ProceduralDistributions["list"]["CrateCandyPackage"].items, "PompsItems.PIFazbar");
+table.insert(ProceduralDistributions["list"]["CrateCandyPackage"].items, 0.25 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["GigamartCandy"].items, "PompsItems.PIFazbar");
+table.insert(ProceduralDistributions["list"]["GigamartCandy"].items, 0.4 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["TheatreSnacks"].items, "PompsItems.PIFazbar");
+table.insert(ProceduralDistributions["list"]["TheatreSnacks"].items, 0.15 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, "PompsItems.PIFazbar");
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, 0.08 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["CafeteriaSnacks"].items, "PompsItems.PIFazbar");
+table.insert(ProceduralDistributions["list"]["CafeteriaSnacks"].items, 0.1 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, "PompsItems.PIFazbar");
+table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, 0.5 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(SuburbsDistributions["all"]["vendingsnack"].items, "PompsItems.PIFazbar");
+table.insert(SuburbsDistributions["all"]["vendingsnack"].items, 0.01 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(SuburbsDistributions["Lunchbox"].items, "PompsItems.PIFazbar");
+table.insert(SuburbsDistributions["Lunchbox"].items, 0.4 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(SuburbsDistributions["Lunchbox2"].items, "PompsItems.PIFazbar");
+table.insert(SuburbsDistributions["Lunchbox2"].items, 0.4 * SandboxVars.PompsItems.CandySpawnRate);
 ---------------------- DRINKS - ALCOHOL ----------------------
 
 	--Wild Pegasus

@@ -3,7 +3,7 @@ IGUI_IT = {
 	IGUI_FirearmRadial_FoldStock = "Piega il calcio",
 	IGUI_FirearmRadial_UnfoldStock = "Apri il calcio",
 	IGUI_FirearmRadial_UseBayonet = "Usa la baionetta",
-	IGUI_FirearmRadial_UseRifle = "Usa il fucile",
+	IGUI_FirearmRadial_UseRifle = "Usa l'arma da fuoco",
 	
 	IGUI_ContextMenu_MoveToInv = "Spostati nell'inventario principale o equipaggia",
 	
@@ -15,7 +15,8 @@ IGUI_IT = {
 	IGUI_ContextMenu_AttackRifle = "Attacco con fucile",
 	IGUI_ContextMenu_RequiresBayonet = "Richiede %1 nell'inventario principale",
 	
-	IGUI_ContextMenu_AddSling = "Attacca l'imbracatura",
+	IGUI_ContextMenu_AddSling = "Attacca l'imbragatura in pelle",
+	IGUI_ContextMenu_AddSling2 = "Attacca l'imbracatura in nylon",
 	IGUI_ContextMenu_AddSlingDescription = "Riduce l'ingombro",
 	IGUI_ContextMenu_AddSights = "Migliora le viste",
 	IGUI_ContextMenu_AddSightsDescription = "Migliora la velocità di mira",

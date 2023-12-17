@@ -71,6 +71,34 @@ function VFEStockContextAction:stop()
     self.item:setJobDelta(0.0);
 end
 
+local function FoldingStockModifierRecalc(item)
+	item:getModData().scriptStats = {
+		ScriptName = item:getDisplayName() or "",
+		MinDamage = item:getMinDamage() or nil,
+		MaxDamage = item:getMaxDamage() or nil,
+		TreeDamage = item:getTreeDamage() or nil,
+		DoorDamage = item:getDoorDamage() or nil,
+		PushBackMod = item:getPushBackMod() or nil,
+		KnockdownMod = item:getKnockdownMod() or nil,
+		MaxRange = item:getMaxRange() or nil,
+		MinRange = item:getMinRange() or nil,
+		BaseSpeed = item:getBaseSpeed() or nil,
+		EnduranceMod = item:getEnduranceMod() or nil,
+		CriticalChance = item:getCriticalChance() or nil,
+		ConditionLowerChance = item:getConditionLowerChance() or nil,
+		HitChance = item:getHitChance() or nil,
+		SoundRadius = item:getSoundRadius() or nil,
+		SoundVolume = item:getSoundVolume() or nil,
+		SoundGain = item:getSoundGain() or nil,
+		RecoilDelay = item:getRecoilDelay() or nil,
+		AimingTime = item:getAimingTime() or nil,
+		ReloadTime = item:getReloadTime() or nil,
+		AimingPerkRangeModifier = item:getAimingPerkRangeModifier() or nil,
+		AimingPerkCritModifier = item:getAimingPerkCritModifier() or nil,
+		AimingPerkHitChanceModifier= item:getAimingPerkHitChanceModifier() or nil,
+	}
+end
+
 
 function VFEFoldingStock(item, newWeapIndex, player)
 
@@ -145,6 +173,10 @@ function VFEFoldingStock(item, newWeapIndex, player)
 			player:setPrimaryHandItem(result);
 			if result:isTwoHandWeapon() then
 				player:setSecondaryHandItem(result);
+			end
+			-- If the weapon has a modifier, give it new base stats
+			if(modData.modifier) then
+				FoldingStockModifierRecalc(result)
 			end
 			VFESetWeaponModel(result,false) -- Sets the model corretly incase of attachments that change weapon model
 			player:getEmitter():playSound("M16Equip")

@@ -8,7 +8,6 @@
 	<m_AllowRandomTint>true</m_AllowRandomTint>
 	<m_AttachBone></m_AttachBone>
 	<m_Masks>12</m_Masks>
-	<m_Masks>13</m_Masks>
-	<m_UnderlayMasksFolder>media/textures/Clothes/BulletVest\Masks_HuntingVest</m_UnderlayMasksFolder>
+    <m_UnderlayMasksFolder>media/textures/Clothes/Vest/Masks</m_UnderlayMasksFolder>
 	<textureChoices>clothes\bulletvest\vest_bulletcivilian</textureChoices>
 </clothingItem>

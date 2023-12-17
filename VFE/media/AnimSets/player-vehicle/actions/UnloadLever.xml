@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="loadLever.xml">
+<animNode x_extends="LoadLever.xml">
 	<m_Name>UnloadLever</m_Name>
 	<m_AnimReverse>true</m_AnimReverse>
 	<m_Conditions />

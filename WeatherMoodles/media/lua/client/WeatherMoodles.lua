@@ -1,3 +1,5 @@
+--by B O B c a t (https://steamcommunity.com/id/the_bobcat/)
+
 require "MF_ISMoodle"
 
 --Variables are not local. Because we're accessing them from the ModOptions file.

@@ -1,0 +1,8 @@
+Recipes_CN = {
+        Recipe_Make_Cloth_Hand_Wrappings = "制作布手包裹物",
+        Recipe_Make_Denim_Hand_Wrappings = "制作牛仔布手包",
+        Recipe_Make_Leather_Hand_Wrappings = "制作皮革手包",
+        Recipe_Improve_to_Leather_Hand_Wrappings = "制作皮革手包"
+        Recipe_Cut_Leather_Gloves_into_Fingerless_Leather_Gloves, = "割破皮手套手指",
+		Recipe_Cut_Leather_Gloves_into_Fingerless_Leather_Gloves = "割破皮手套手指",
+}

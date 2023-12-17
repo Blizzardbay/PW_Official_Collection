@@ -40,10 +40,16 @@ description=Please submit any bug you find here:
 description=https://github.com/quarantin/zomboid-ladders/issues
 description=
 description=The following bugs are already known:
-description=- Sometimes the player falls while climbing a ladder.
+description=- [strike]Sometimes the player falls while climbing a ladder.[/strike]
 description=
 description=Feedbacks are welcome! You can find me on Project Zomboid Discord server:
 description=https://discord.com/invite/theindiestone
+description=
+description=[h1]Credits[/h1]
+description=People listed here made significant contributions:
+description=[*] Gyropilot: Add climbing animation
+description=[*] [url=https://steamcommunity.com/id/zendachi/myworkshopfiles/?appid=108600]Burryaga[/url]: Add support for game controller
+description=[*] [url=https://steamcommunity.com/profiles/76561199218026428/myworkshopfiles/?appid=108600]Poltergeist[/url]: Complete rewrite
 description=
 description=[h1]Special Thanks[/h1]
 description=I'd like to say thank you to the following people for their constant help, availability, testing, or feedback:

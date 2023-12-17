@@ -9,16 +9,43 @@ module ammomaker {
 
 /* Recipes Raw Materials */
 
+	recipe Dissolve Brid Excrement
+	{
+		ammomaker_BirdExcrement=100,
+		destroy WaterPot,
+
+		Result:ammomaker_PotOfBridExcrement=1,
+		Time:100.0,
+		Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Chemistry3,
+		NeedToBeLearn:false,
+	}
+
+	recipe Extract Nitre
+	{
+		RippedSheets=2,
+		SheetPaper2=1,
+		destroy ammomaker_PotOfBridExcrement=1,
+
+		Result:ammomaker_Nitre=10,
+		OnCreate:Recipe.OnCreate.ExtractNitre,
+		Sound:EmptyPan,
+		Time:300.0,
+        Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Chemistry3,
+		NeedToBeLearn:false,
+	}
+
 	recipe Extract Sulfur
 	{
 		Stone=6,
 		EmptySandbag=1,
 		keep Hammer/HammerStone/Sledgehammer/BallPeenHammer/ClubHammer,
 
-		Result:ammomaker_Sulfur=5,
+		Result:ammomaker_Sulfur=10,
 		OnCreate:Recipe.OnCreate.ExtractSulfur,
 		Sound:Hammering,
-		Time:100.0,
+		Time:300.0,
         Category:Ammo Maker,
 		OnGiveXP:Recipe.OnGiveXP.Chemistry3,
 		NeedToBeLearn:false,
@@ -46,14 +73,25 @@ module ammomaker {
 		CanBeDoneFromFloor:true,
 	}
 
-	recipe Make Gun Powder
+	recipe Make Charcoal Powder
 	{
-		ammomaker_BirdExcrement=40,
-		ammomaker_Sulfur=5,
 		Charcoal;1,
 		keep MortarPestle,
 
-		Result:GunPowder=50,
+		Result:ammomaker_CharcoalPowder=10,
+		Time:100.0,
+        Category:Ammo Maker,
+		CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Gun Powder
+	{
+		ammomaker_Nitre=15,
+		ammomaker_CharcoalPowder=3,
+		ammomaker_Sulfur=2,
+		keep MortarPestle,
+
+		Result:GunPowder=2,
 		Sound:Hammering,
 		Time:500.0,
         Category:Ammo Maker,

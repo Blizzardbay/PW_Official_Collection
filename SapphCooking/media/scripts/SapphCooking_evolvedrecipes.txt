@@ -11,6 +11,7 @@ module Base
 		ResultItem:SapphCooking.BowlofFriedRice,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.BowlofOmurice
 	{
@@ -19,6 +20,7 @@ module Base
 		ResultItem:SapphCooking.BowlofOmurice,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.ArborioRiceBowl
 	{
@@ -27,6 +29,7 @@ module Base
 		ResultItem:SapphCooking.ArborioRiceBowl,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.BowlofRisotto
 	{
@@ -35,6 +38,7 @@ module Base
 		ResultItem:SapphCooking.BowlofRisotto,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.BrownRiceBowl
 	{
@@ -43,6 +47,7 @@ module Base
 		ResultItem:SapphCooking.BrownRiceBowl,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.BowlofRavioli
 	{
@@ -51,6 +56,7 @@ module Base
 		ResultItem:SapphCooking.BowlofRavioli,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.BowlofTortellini
 	{
@@ -59,6 +65,7 @@ module Base
 		ResultItem:SapphCooking.BowlofTortellini,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.BowlofBeefStew
 	{
@@ -67,6 +74,7 @@ module Base
 		ResultItem:SapphCooking.BowlofBeefStew,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 
 	evolvedrecipe SapphCooking.BowlofRefriedBeans
@@ -76,6 +84,7 @@ module Base
 		ResultItem:SapphCooking.BowlofRefriedBeans,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.BowlofSpaguetti
 	{
@@ -84,6 +93,7 @@ module Base
 		ResultItem:SapphCooking.BowlofSpaguetti,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.BowlofSpaguettiandMeatballs
 	{
@@ -92,6 +102,7 @@ module Base
 		ResultItem:SapphCooking.BowlofSpaguettiandMeatballs,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.BowlofMashedPotatoes
 	{
@@ -100,6 +111,7 @@ module Base
 		ResultItem:SapphCooking.BowlofMashedPotatoes,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 
 	evolvedrecipe SapphCooking.BowlofYakisoba
@@ -109,6 +121,7 @@ module Base
 		ResultItem:SapphCooking.BowlofYakisoba,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.BowlofKungPaoChicken
 	{
@@ -117,6 +130,7 @@ module Base
 		ResultItem:SapphCooking.BowlofKungPaoChicken,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.BowlofShuiZhuYu
 	{
@@ -125,6 +139,7 @@ module Base
 		ResultItem:SapphCooking.BowlofShuiZhuYu,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 
 
@@ -135,6 +150,7 @@ module Base
 		ResultItem:SapphCooking.BowlofJapaneseCurry,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.BowlofBorscht
 	{
@@ -143,6 +159,7 @@ module Base
 		ResultItem:SapphCooking.BowlofBorscht,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.BowlofMashedPotatoes_Meatballs
 	{
@@ -151,6 +168,7 @@ module Base
 		ResultItem:SapphCooking.BowlofMashedPotatoes_Meatballs,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 
 	evolvedrecipe SapphCooking.BowlofRiceJapaneseCurry
@@ -160,6 +178,7 @@ module Base
 		ResultItem:SapphCooking.BowlofRiceJapaneseCurry,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 
 
@@ -173,6 +192,7 @@ module Base
 		ResultItem:SapphCooking.FryingPan_BaconandEggs,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.Plate_BaconandEggs
 	{
@@ -181,6 +201,7 @@ module Base
 		ResultItem:SapphCooking.Plate_BaconandEggs,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.PlateBlue_BaconandEggs
 	{
@@ -189,6 +210,7 @@ module Base
 		ResultItem:SapphCooking.PlateBlue_BaconandEggs,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.PlateOrange_BaconandEggs
 	{
@@ -197,6 +219,7 @@ module Base
 		ResultItem:SapphCooking.PlateOrange_BaconandEggs,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.PlateFancy_BaconandEggs
 	{
@@ -205,6 +228,7 @@ module Base
 		ResultItem:SapphCooking.PlateFancy_BaconandEggs,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.RiceBeanBowl
 	{
@@ -213,6 +237,7 @@ module Base
 		ResultItem:SapphCooking.RiceBeanBowl,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.BowlofChickenStroganoff
 	{
@@ -221,6 +246,7 @@ module Base
 		ResultItem:SapphCooking.BowlofChickenStroganoff,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.BowlofRiceChickenStroganoff
 	{
@@ -229,6 +255,7 @@ module Base
 		ResultItem:SapphCooking.BowlofRiceChickenStroganoff,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.Plate_HuevosRancheros
 	{
@@ -237,6 +264,7 @@ module Base
 		ResultItem:SapphCooking.Plate_HuevosRancheros,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.PlateBlue_HuevosRancheros
 	{
@@ -245,6 +273,7 @@ module Base
 		ResultItem:SapphCooking.PlateBlue_HuevosRancheros,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.PlateOrange_HuevosRancheros
 	{
@@ -253,6 +282,7 @@ module Base
 		ResultItem:SapphCooking.PlateOrange_HuevosRancheros,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.PlateFancy_HuevosRancheros
 	{
@@ -261,6 +291,7 @@ module Base
 		ResultItem:SapphCooking.PlateFancy_HuevosRancheros,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.PoutineBowl
 	{
@@ -269,6 +300,7 @@ module Base
 		ResultItem:SapphCooking.PoutineBowl,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 
 
@@ -291,6 +323,7 @@ module Base
 
 
 	/****************************** MREs ******************************/	
+
 	evolvedrecipe SapphCooking.MRE_1
 	{
 		BaseItem:SapphCooking.MRE_BeefStew,
@@ -298,6 +331,7 @@ module Base
 		ResultItem:SapphCooking.MRE_BeefStew,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.MRE_2
 	{
@@ -306,6 +340,7 @@ module Base
 		ResultItem:SapphCooking.MRE_PorkwRice,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.MRE_3
 	{
@@ -314,6 +349,7 @@ module Base
 		ResultItem:SapphCooking.MRE_Spaguetti,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.MRE_4
 	{
@@ -322,6 +358,7 @@ module Base
 		ResultItem:SapphCooking.MRE_OmeletwHam,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.MRE_5
 	{
@@ -330,6 +367,7 @@ module Base
 		ResultItem:SapphCooking.MRE_SausageswGravy,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.MRE_6
 	{
@@ -338,6 +376,7 @@ module Base
 		ResultItem:SapphCooking.MRE_CheeseTortellini,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.MRE_7
 	{
@@ -346,6 +385,7 @@ module Base
 		ResultItem:SapphCooking.MRE_MeatballsinSauce,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.MRE_8
 	{
@@ -354,6 +394,7 @@ module Base
 		ResultItem:SapphCooking.MRE_Lasagna,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.MRE_9
 	{
@@ -362,6 +403,7 @@ module Base
 		ResultItem:SapphCooking.MRE_ChiliwBeans,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.MRE_10
 	{
@@ -370,6 +412,7 @@ module Base
 		ResultItem:SapphCooking.MRE_InBeefStrogonoff,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 	evolvedrecipe SapphCooking.MRE_11
 	{
@@ -378,6 +421,7 @@ module Base
 		ResultItem:SapphCooking.MRE_InChickenStrogonoff,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 
 	evolvedrecipe SapphCooking.MRE_12
@@ -387,6 +431,7 @@ module Base
 		ResultItem:SapphCooking.MRE_InRiceMincedMeat,
 		Name:Add Spices,
 		CanAddSpicesEmpty:true,
+		IsHidden:true,
 	}
 
 	evolvedrecipe SapphCooking.SkewersVegetable
@@ -418,13 +463,13 @@ module Base
 	}
 	evolvedrecipe SapphCooking.ThermosBeverage
 	{
-		BaseItem:EmptyThermos,
+		BaseItem:FullWaterThermos,
 		MaxItems:5,
 		ResultItem:SapphCooking.ThermosBeverage,
 		AddIngredientSound:AddItemInBeverage,
 		Cookable:false,
 		Name:Thermos,
-		CanAddSpicesEmpty:false,
+		CanAddSpicesEmpty:True,
 	}
 
 	evolvedrecipe SapphCooking.SapphCrackers
@@ -443,5 +488,267 @@ module Base
 		ResultItem:SapphCooking.GrahamCrackersEvolved,
 		Name:Graham Crackers,
 		CanAddSpicesEmpty:True,
+	}
+
+	/********New Evolved stuff, as of june 2023************************/
+	
+	evolvedrecipe SapphCooking.FriedRiceWok
+	{
+		BaseItem:WokPanwithFriedRice,
+		MaxItems:6,
+		Cookable:true,
+		ResultItem:SapphCooking.WokFriedRiceEvolved,
+		Name:Fried Rice,
+		CanAddSpicesEmpty:True,
+	}
+
+	evolvedrecipe SapphCooking.FryingPanwithFriedRice
+	{
+		BaseItem:FryingPanwithFriedRice,
+		MaxItems:6,
+		Cookable:true,
+		ResultItem:SapphCooking.FryingPanFriedRiceEvolved,
+		Name:Fried Rice,
+		CanAddSpicesEmpty:True,
+	}
+
+	evolvedrecipe SapphCooking.BakedPotatoEvolved
+	{
+		BaseItem:BakedPotato,
+		MaxItems:5,
+		Cookable:true,
+		ResultItem:SapphCooking.BakedPotato_Evolved,
+		Name:Baked Potato,
+		CanAddSpicesEmpty:True,
+	}
+
+	evolvedrecipe SapphCooking.LasagnaEvolved
+	{
+		BaseItem:RoastingpanwithUncookedLasagna,
+		MaxItems:5,
+		Cookable:true,
+		ResultItem:SapphCooking.RoastingpanwithLasagna,
+		Name:Lasagna,
+		CanAddSpicesEmpty:True,
+	}
+	evolvedrecipe SapphCooking.RatatouilleEvolved
+	{
+		BaseItem:RoastingpanwithRatatouilleUn,
+		MaxItems:5,
+		Cookable:true,
+		ResultItem:SapphCooking.RoastingpanwithRatatouilleCooked,
+		Name:Ratatouille,
+		CanAddSpicesEmpty:True,
+	}
+	evolvedrecipe SapphCooking.YakisobaEvolved
+	{
+		BaseItem:WokPan_Yakisoba,
+		MaxItems:5,
+		Cookable:true,
+		ResultItem:SapphCooking.WokPan_YakisobaEvolved,
+		Name:Yakisoba,
+		CanAddSpicesEmpty:True,
+	}
+	evolvedrecipe SapphCooking.SushiEvolved
+	{
+		BaseItem:SushiRecipe,
+		MaxItems:5,
+		Cookable:true,
+		ResultItem:SapphCooking.SushiEvolved,
+		Name:Sushi,
+		CanAddSpicesEmpty:True,
+	}
+	evolvedrecipe SapphCooking.HotdogSandwich
+	{
+		BaseItem:HotdogBun,
+		MaxItems:4,
+		ResultItem:SapphCooking.HotdogSandwichEvolved,
+		Name:Sandwich,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:false,
+	}
+	evolvedrecipe SapphCooking.HotdogEvolved
+	{
+		BaseItem:HotdogCustom,
+		MaxItems:4,
+		ResultItem:SapphCooking.HotdogEvolved,
+		Name:Hotdog,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:false,
+	}
+	evolvedrecipe SapphCooking.StockEvolved
+	{
+		BaseItem:WaterPot,
+		MaxItems:5,
+		Cookable:true,
+		ResultItem:SapphCooking.PotofVegetableStock,
+		Name:Stock,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:false,
+	}
+	evolvedrecipe SapphCooking.DumplingsEvolved
+	{
+		BaseItem:WontonWrappers,
+		MaxItems:5,
+		Cookable:true,
+		ResultItem:SapphCooking.DumplingsMeatUn,
+		Name:Dumpling,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:false,
+	}
+	evolvedrecipe SapphCooking.CoffeeThermosEvolved
+	{
+		BaseItem:ThermosCoffee,
+		MaxItems:5,
+		ResultItem:SapphCooking.ThermosCoffeeEvolved,
+		Name:Coffee,
+		CanAddSpicesEmpty:true,
+	}
+	evolvedrecipe SapphCooking.SausageEvolved
+	{
+		BaseItem:SausageCasing,
+		MaxItems:5,
+		Cookable:true,
+		ResultItem:SapphCooking.SausageEvolved,
+		Name:Sausage,
+		CanAddSpicesEmpty:false,
+		AddIngredientIfCooked:false,
+	}
+	evolvedrecipe SapphCooking.ShavedIceEvolved
+	{
+		BaseItem:BowlShavedIce,
+		MaxItems:3,
+		Cookable:false,
+		ResultItem:SapphCooking.BowlShavedIceEvolved,
+		Name:Shaved Ice,
+		CanAddSpicesEmpty:true,
+	}
+	evolvedrecipe SapphCooking.CevicheEvolved
+	{
+		BaseItem:CevicheBowl,
+		MaxItems:3,
+		Cookable:true,
+		ResultItem:SapphCooking.CevicheBowlEvolved,
+		Name:Ceviche,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:false,
+	}
+	evolvedrecipe SapphCooking.PoutineEvolved
+	{
+		BaseItem:PoutineBowl,
+		MaxItems:4,
+		Cookable:true,
+		ResultItem:SapphCooking.PoutineBowlEvolved,
+		Name:Poutine,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:false,
+	}
+	evolvedrecipe SapphCooking.ArrozLecheEvolved
+	{
+		BaseItem:Saucepan_ArrozLecheUn,
+		MaxItems:4,
+		Cookable:true,
+		ResultItem:SapphCooking.Saucepan_ArrozLeche,
+		Name:Arroz con Leche,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:false,
+	}
+	evolvedrecipe SapphCooking.SpringrollEvolved
+	{
+		BaseItem:SpringrollWrapper,
+		MaxItems:3,
+		Cookable:true,
+		ResultItem:SapphCooking.SpringrollEvolved,
+		Name:Spring roll,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:false,
+	}
+	evolvedrecipe SapphCooking.InstantNoodles
+	{
+		BaseItem:Saucepan_InstantNoodles,
+		MaxItems:5,
+		Cookable:true,
+		ResultItem:SapphCooking.Saucepan_InstantNoodlesEvolved,
+		Name:Instant Noodles,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:false,
+	}
+
+	evolvedrecipe SapphCooking.SpaguettiEvolved
+	{
+		BaseItem:SaucepanwithUncookedSpaguetti,
+		MaxItems:5,
+		Cookable:true,
+		ResultItem:SapphCooking.SaucepanwithSpaguetti,
+		Name:Spaghetti,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:false,
+	}
+
+	evolvedrecipe SapphCooking.CocktailMix
+	{
+		BaseItem:CocktailMixerPrep,
+		MaxItems:5,
+		ResultItem:SapphCooking.CocktailMixerEvolved,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Mix,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:false,
+	}
+
+	evolvedrecipe SapphCooking.HR1
+	{
+		BaseItem:Plate_HuevosRancheros,
+		MaxItems:5,
+		Cookable:false,
+		ResultItem:SapphCooking.Plate_HuevosRancherosEvolved,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Huevos Rancheros,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:false,
+	}
+	evolvedrecipe SapphCooking.HR2
+	{
+		BaseItem:PlateBlue_HuevosRancheros,
+		MaxItems:5,
+		Cookable:false,
+		ResultItem:SapphCooking.PlateBlue_HuevosRancherosEvolved,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Huevos Rancheros,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:false,
+	}
+	evolvedrecipe SapphCooking.HR3
+	{
+		BaseItem:PlateOrange_HuevosRancheros,
+		MaxItems:5,
+		Cookable:false,
+		ResultItem:SapphCooking.PlateOrange_HuevosRancherosEvolved,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Huevos Rancheros,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:false,
+	}
+	evolvedrecipe SapphCooking.HR4
+	{
+		BaseItem:PlateFancy_HuevosRancheros,
+		MaxItems:5,
+		Cookable:false,
+		ResultItem:SapphCooking.PlateFancy_HuevosRancherosEvolved,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Huevos Rancheros,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:false,
+	}
+	evolvedrecipe SapphCooking.Mochi
+	{
+		BaseItem:MochiPrep,
+		MaxItems:5,
+		Cookable:false,
+		ResultItem:SapphCooking.Mochi,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Mochi,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:false,
 	}
 }

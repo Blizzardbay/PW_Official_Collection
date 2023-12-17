@@ -1,0 +1,17 @@
+ItemName_EN = {
+    ItemName_Base.LouisvilleMap1 = "Map of Louisville - North West",
+    ItemName_Base.LouisvilleMap2 = "Map of Louisville - North",
+    ItemName_Base.LouisvilleMap3 = "Map of Louisville - North East",
+    ItemName_Base.LouisvilleMap4 = "Map of Louisville - West",
+    ItemName_Base.LouisvilleMap5 = "Map of Louisville - Central",
+    ItemName_Base.LouisvilleMap6 = "Map of Louisville - East",
+    ItemName_Base.LouisvilleMap7 = "Map of Louisville - South West",
+    ItemName_Base.LouisvilleMap8 = "Map of Louisville - South",
+    ItemName_Base.LouisvilleMap9 = "Map of Louisville - South East",
+    
+    ItemName_Base.MuldraughMap = "Map of Muldraugh",
+    ItemName_Base.WestpointMap = "Map of West Point",
+    ItemName_Base.RiversideMap = "Map of Riverside",
+    ItemName_Base.RosewoodMap = "Map of Rosewood",
+    ItemName_Base.MarchRidgeMap = "Map of March Ridge",
+}

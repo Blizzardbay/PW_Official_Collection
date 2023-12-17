@@ -5,5 +5,14 @@ Tooltip_PTBR = {
 	Tooltip_AsiaFoodMagazine = "Ensina Pratos Tipicos do Continente Asiático.",
 	Tooltip_EuropeFoodMagazine = "Ensina Pratos Tipicos do Continente Europeu.",
 	Tooltip_PastaDoughMagazine = "Ensina Receitas de Pasta.",
+	Tooltip_HotWater = "As instruções dizem,'usar Agua Quente'.",
+	Tooltip_EmptyThermos = "Pode ser usado para guardar agua, bebidas e sopas cozinhadas.",
+	Tooltip_CookedBowls = "Pode ser colocado em tigelas após cozinhar.",
+	Tooltip_CookedSlices = "Pode ser cortado após cozinhar.",
+	Tooltip_CornPopcorn = "Podem ser usados para fazer Pipoca.",
+	Tooltip_Stock = "Pode ser usado em sopas, caldos ou guisados.",
+	Tooltip_IceCubes = "Se estiver com agua, podem ser feitos Gelo, em uma Geladeira com Energia",
+	Tooltip_SausagesMagazine = "Ensina como preparar e fazer Salsichas.",
+
 	
 } 	

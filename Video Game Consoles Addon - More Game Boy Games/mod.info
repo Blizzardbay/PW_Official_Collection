@@ -1,0 +1,5 @@
+name=Video Game Consoles Addon - More Game Boy Games
+id=VGC_Addon_GameBoyGames
+description=Adds 55 more Game Boy games to the VGC mod.
+poster=poster_VGC_Addon_GameBoyGames.png
+require=Video_Game_Consoles

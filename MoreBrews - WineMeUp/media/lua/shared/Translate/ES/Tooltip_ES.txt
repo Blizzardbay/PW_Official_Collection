@@ -53,4 +53,6 @@ Tooltip_ES = {
 	Tooltip_item_HardCiderBase = "Usar estos ingredientes base con azúcar<br>y levadura para fermentar sidra fuerte",
 	Tooltip_item_EmptyWine = "Botellas de vino vacías o las cajas pueden ser reutilizadas<br>para llevar luego más vino o agua.",
     Tooltip_BookTitle_WineMaking = "Enología - fabricación de vinos",
+	Tooltip_Recipe_WineMakingSkillBonus = "Recibirá cantidades de bonificación según la habilidad de elaboración de vino.",
+	Tooltip_item_WineMakingInstructions = "Lee estas instrucciones para aprender a hacer vino.",
 }

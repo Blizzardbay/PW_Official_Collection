@@ -1,6 +1,95 @@
 MoreBrews = MoreBrews or {};
 
 local sVars = SandboxVars.MoreBrewsWineMeUp;
+sVars.TotalAmount = sVars.TotalAmount or 3;
+
+Events.OnGameStart.Add(function()
+    local useDeltaSmallBarrel = 0.2
+    local useDeltaLargeBarrel = 0.05
+
+    if sVars.TotalAmount == 1 then
+        useDeltaSmallBarrel = 0.3333;
+        useDeltaLargeBarrel = 0.0833;
+    elseif sVars.TotalAmount == 2 then
+        useDeltaSmallBarrel = 0.25;
+        useDeltaLargeBarrel = 0.0625;
+    elseif sVars.TotalAmount == 4 then
+        useDeltaSmallBarrel = 0.1667;
+        useDeltaLargeBarrel = 0.0417;
+    elseif sVars.TotalAmount == 5 then
+        useDeltaSmallBarrel = 0.1429;
+        useDeltaLargeBarrel = 0.0357;   
+    end
+
+    local changeDeltaSmallBarrel = function(food)
+        if sVars.TotalAmount ~= 3 then
+            local item = ScriptManager.instance:getItem(food)
+            if item then
+                item:DoParam("UseDelta = " .. useDeltaSmallBarrel)
+            end
+        else
+            return
+        end
+    end
+
+    local smallBarrelDelta = {
+        "MoreBrews.BarrelDispenserSmallRedWine",
+        "MoreBrews.BarrelDispenserSmallRedWineAged",
+        "MoreBrews.BarrelDispenserSmallRedWineAgedFully",
+        "MoreBrews.BarrelDispenserSmallWhiteWine",
+        "MoreBrews.BarrelDispenserSmallWhiteWineAged",
+        "MoreBrews.BarrelDispenserSmallWhiteWineAgedFully",
+        "MoreBrews.BarrelDispenserSmallHoneyMead",
+        "MoreBrews.BarrelDispenserSmallHardCider",
+        "MoreBrews.BarrelDispenserSmallWildBerryWine",
+        "MoreBrews.BarrelDispenserSmallRosehipWine",
+        "MoreBrews.BarrelDispenserSmallPineappleWine",
+        "MoreBrews.BarrelDispenserSmallStrawberryWine",
+        "MoreBrews.BarrelDispenserSmallPeachWine",
+        "MoreBrews.BarrelDispenserSmallPearWine",
+        "MoreBrews.BarrelDispenserSmallBananaWine"
+    }
+
+    for _, food in ipairs(smallBarrelDelta) do
+        changeDeltaSmallBarrel(food)
+    end
+
+    local changeDeltaLargeBarrel = function(food)
+        if sVars.TotalAmount ~= 3 then
+            local item = ScriptManager.instance:getItem(food)
+            if item then
+                item:DoParam("UseDelta = " .. useDeltaLargeBarrel)
+            end
+        else
+            return
+        end
+    end
+
+    local largeBarrelDelta = {
+        "MoreBrews.BarrelDispenserLargeRedWine",
+        "MoreBrews.BarrelDispenserLargeRedWineAged",
+        "MoreBrews.BarrelDispenserLargeRedWineAgedFully",
+        "MoreBrews.BarrelDispenserLargeWhiteWine",
+        "MoreBrews.BarrelDispenserLargeWhiteWineAged",
+        "MoreBrews.BarrelDispenserLargeWhiteWineAgedFully",
+        "MoreBrews.BarrelDispenserLargeHoneyMead",
+        "MoreBrews.BarrelDispenserLargeHardCider",
+        "MoreBrews.BarrelDispenserLargeWildBerryWine",
+        "MoreBrews.BarrelDispenserLargeRosehipWine",
+        "MoreBrews.BarrelDispenserLargePineappleWine",
+        "MoreBrews.BarrelDispenserLargeStrawberryWine",
+        "MoreBrews.BarrelDispenserLargePeachWine",
+        "MoreBrews.BarrelDispenserLargePearWine",
+        "MoreBrews.BarrelDispenserLargeBananaWine"
+    }
+
+    for _, food in ipairs(largeBarrelDelta) do
+        changeDeltaLargeBarrel(food)
+    end
+
+end);
+
+
 sVars.FermentChange = sVars.FermentChange or 10;
 
 Events.OnGameStart.Add(function()
@@ -9,163 +98,129 @@ Events.OnGameStart.Add(function()
     if SandboxVars.FoodRotSpeed == 1 then -- very fast
         rotSpeed = 1.7;
     elseif SandboxVars.FoodRotSpeed == 2 then -- fast
-        rotSpeed = -1.4;
+        rotSpeed = 1.4;
     elseif SandboxVars.FoodRotSpeed == 4 then -- slow
         rotSpeed = 0.7;
     elseif SandboxVars.FoodRotSpeed == 5 then -- very slow
         rotSpeed = 0.4;    
     end
     --this is to keep the fermenting time close to the intended length of days no matter the in game settings selected
+    local itemDataFerment = {
+        { name = "GallonCarboyFermentingRedWine", ferment = 1.2 * sVars.FermentChange},
+        { name = "GallonCarboyFermentingWhiteWine", ferment = 1.0 * sVars.FermentChange},
+        { name = "GallonCarboyFermentingWildBerryWine", ferment = 0.7 * sVars.FermentChange},
+        { name = "GallonCarboyFermentingRosehipWine", ferment = 0.7 * sVars.FermentChange},
+        { name = "GallonCarboyFermentingPineappleWine", ferment = 0.7 * sVars.FermentChange},
+        { name = "GallonCarboyFermentingStrawberryWine", ferment = 0.7 * sVars.FermentChange},
+        { name = "GallonCarboyFermentingPeachWine", ferment = 0.7 * sVars.FermentChange},
+        { name = "GallonCarboyFermentingPearWine", ferment = 0.7 * sVars.FermentChange},
+        { name = "GallonCarboyFermentingBananaWine", ferment = 0.7 * sVars.FermentChange},
+        { name = "GallonCarboyFermentingHoneyMead", ferment = 0.7 * sVars.FermentChange},
+        { name = "GallonCarboyFermentingHardCider", ferment = 0.7 * sVars.FermentChange},
+        { name = "CarboyFermentingRedWine", ferment = 1.2 * sVars.FermentChange},
+        { name = "CarboyFermentingWhiteWine", ferment = 1.0 * sVars.FermentChange},
+        { name = "BarrelRedWineAging", ferment = 1.0 * sVars.FermentChange},
+        { name = "BarrelRedWineAgingFully", ferment = 1.6 * sVars.FermentChange},
+        { name = "BarrelWhiteWineAging", ferment = 0.8 * sVars.FermentChange},
+        { name = "BarrelWhiteWineAgingFully", ferment = 1.2 * sVars.FermentChange},
+        { name = "BarrelRedWineAgingSmall", ferment = 1.0 * sVars.FermentChange},
+        { name = "BarrelRedWineAgingFullySmall", ferment = 1.6 * sVars.FermentChange},
+        { name = "BarrelWhiteWineAgingSmall", ferment = 0.8 * sVars.FermentChange},
+        { name = "BarrelWhiteWineAgingFullySmall", ferment = 1.2 * sVars.FermentChange},
+        { name = "FruitYeastStarter", ferment = 1.0 * sVars.FermentChange},
+        { name = "PotatoYeastStarter", ferment = 1.0 * sVars.FermentChange},
+        { name = "WildPlantsYeastStarter", ferment = 1.0 * sVars.FermentChange},
+    }
+
+    for _, data in ipairs(itemDataFerment) do
+        local item = ScriptManager.instance:getItem("MoreBrews." .. data.name)
+        if item then
+            item:DoParam("DaysTotallyRotten = " .. math.ceil(data.ferment * rotSpeed))
+            item:DoParam("DaysFresh = " .. math.ceil(data.ferment * rotSpeed))
+        end
+    end
+end);
+
+sVars.CalorieChange = sVars.CalorieChange or 10;
+sVars.Expired = sVars.Expired or false;
+sVars.ExpireChange = sVars.ExpireChange or 10;
+
+Events.OnGameStart.Add(function()
+
+    local setCalories = function(food, cals)
+        local item = ScriptManager.instance:getItem(food)
+        local calMulti = (sVars.CalorieChange or 10) * 0.1;
+        if item then
+            item:DoParam("Calories = " .. math.ceil(cals * calMulti))
+        end
+    end
+
+    local foodItems = {
+        { food = "MoreBrews.RedWine", calories = 560},
+        { food = "MoreBrews.RedWineAged", calories = 620},
+        { food = "MoreBrews.RedWineAgedFully", calories = 680},
+        { food = "MoreBrews.WineBoxSmall1", calories = 310},
+        { food = "MoreBrews.WineBoxSmall2", calories = 310},
+        { food = "MoreBrews.WineBoxSmall3", calories = 340},
+        { food = "MoreBrews.WhiteWine", calories = 510},
+        { food = "MoreBrews.WhiteWineAged", calories = 540},
+        { food = "MoreBrews.WhiteWineAgedFully", calories = 580},
+        { food = "MoreBrews.WineBoxSmall4", calories = 250},
+        { food = "MoreBrews.WineBoxSmall5", calories = 270},
+        { food = "MoreBrews.WineBoxSmall6", calories = 290},
+        { food = "MoreBrews.WildBerryWine", calories = 250},
+        { food = "MoreBrews.PineappleWine", calories = 320},
+        { food = "MoreBrews.StrawberryWine", calories = 280},
+        { food = "MoreBrews.PeachWine", calories = 220},
+        { food = "MoreBrews.PearWine", calories = 220},
+        { food = "MoreBrews.BananaWine", calories = 250},
+        { food = "MoreBrews.HoneyMead", calories = 420},
+        { food = "MoreBrews.HardCider", calories = 300},
+    }
+
+    for _, itemInfo in ipairs(foodItems) do
+        setCalories(itemInfo.food, itemInfo.calories)
+    end
+
+    if sVars.Expired then
+        local makeExpire = function(food)
+            local item = ScriptManager.instance:getItem(food)
+            local expireChange = sVars.ExpireChange or 10
+            print("sVars.ExpireChange: " .. tostring(sVars.ExpireChange))
+            print("expireChange: " .. expireChange)
+            local rottenChange = math.ceil((42 * expireChange) * 0.1)
+            local freshChange = math.ceil((21 * expireChange) * 0.1)
+            if item then
+                item:DoParam("DaysTotallyRotten = " .. rottenChange)
+                item:DoParam("DaysFresh = " .. freshChange)
+            end
+        end
     
-
-    local fermentSeven = math.ceil((0.7 * sVars.FermentChange) * rotSpeed);
-    local fermentEight = math.ceil((0.8 * sVars.FermentChange) * rotSpeed);
-    local fermentTen = math.ceil((1.0 * sVars.FermentChange) * rotSpeed);
-    local fermentTwelve = math.ceil((1.2 * sVars.FermentChange) * rotSpeed);
-    local fermentSixteen = math.ceil((1.6 * sVars.FermentChange) * rotSpeed);
-
-    local item1 = ScriptManager.instance:getItem("MoreBrews.GallonCarboyFermentingRedWine")
-    local item2 = ScriptManager.instance:getItem("MoreBrews.GallonCarboyFermentingWhiteWine")
-    local item3 = ScriptManager.instance:getItem("MoreBrews.GallonCarboyFermentingWildBerryWine")
-    local item4 = ScriptManager.instance:getItem("MoreBrews.GallonCarboyFermentingRosehipWine")
-    local item5 = ScriptManager.instance:getItem("MoreBrews.GallonCarboyFermentingPineappleWine")
-    local item6 = ScriptManager.instance:getItem("MoreBrews.GallonCarboyFermentingStrawberryWine")
-    local item7 = ScriptManager.instance:getItem("MoreBrews.GallonCarboyFermentingPeachWine")
-    local item8 = ScriptManager.instance:getItem("MoreBrews.GallonCarboyFermentingPearWine")
-    local item9 = ScriptManager.instance:getItem("MoreBrews.GallonCarboyFermentingBananaWine")
-    local item10 = ScriptManager.instance:getItem("MoreBrews.GallonCarboyFermentingHoneyMead")
-    local item11 = ScriptManager.instance:getItem("MoreBrews.GallonCarboyFermentingHardCider")
-    local item12 = ScriptManager.instance:getItem("MoreBrews.CarboyFermentingRedWine")
-    local item13 = ScriptManager.instance:getItem("MoreBrews.CarboyFermentingWhiteWine")
-    local item14 = ScriptManager.instance:getItem("MoreBrews.BarrelRedWineAging")
-    local item15 = ScriptManager.instance:getItem("MoreBrews.BarrelRedWineAgingFully")
-    local item16 = ScriptManager.instance:getItem("MoreBrews.BarrelWhiteWineAging")
-    local item17 = ScriptManager.instance:getItem("MoreBrews.BarrelWhiteWineAgingFully")
-    local item18 = ScriptManager.instance:getItem("MoreBrews.BarrelRedWineAgingSmall")
-    local item19 = ScriptManager.instance:getItem("MoreBrews.BarrelRedWineAgingFullySmall")
-    local item20 = ScriptManager.instance:getItem("MoreBrews.BarrelWhiteWineAgingSmall")
-    local item21 = ScriptManager.instance:getItem("MoreBrews.BarrelWhiteWineAgingFullySmall")
-    local item22 = ScriptManager.instance:getItem("MoreBrews.FruitYeastStarter")
-    local item23 = ScriptManager.instance:getItem("MoreBrews.PotatoYeastStarter")
-    local item24 = ScriptManager.instance:getItem("MoreBrews.WildPlantsYeastStarter")
-
-    if item1 then 
-        item1:DoParam("DaysTotallyRotten = "  .. fermentTwelve)
-        item1:DoParam("DaysFresh = "  .. fermentTwelve)
-    end
-
-    if item2 then
-        item2:DoParam("DaysTotallyRotten = "  .. fermentTen)
-        item2:DoParam("DaysFresh = " .. fermentTen)
-    end
-
-    if item3 then
-        item3:DoParam("DaysTotallyRotten = " .. fermentSeven)
-        item3:DoParam("DaysFresh = " .. fermentSeven)
-    end
-
-    if item4 then
-        item4:DoParam("DaysTotallyRotten = " .. fermentSeven)
-        item4:DoParam("DaysFresh = " .. fermentSeven)
-    end
-
-    if item5 then
-        item5:DoParam("DaysTotallyRotten = " .. fermentSeven)
-        item5:DoParam("DaysFresh = " .. fermentSeven)
-    end
-
-    if item6 then
-        item6:DoParam("DaysTotallyRotten = " .. fermentSeven)
-        item6:DoParam("DaysFresh = " .. fermentSeven)
-    end
-
-    if item7 then
-        item7:DoParam("DaysTotallyRotten = " .. fermentSeven)
-        item7:DoParam("DaysFresh = " .. fermentSeven)
-    end
-
-    if item8 then
-        item8:DoParam("DaysTotallyRotten = "  .. fermentSeven)
-        item8:DoParam("DaysFresh = " .. fermentSeven)
-    end
-
-    if item9 then
-        item9:DoParam("DaysTotallyRotten = " .. fermentSeven)
-        item9:DoParam("DaysFresh = " .. fermentSeven)
-    end
-
-    if item10 then
-        item10:DoParam("DaysTotallyRotten = " .. fermentSeven)
-        item10:DoParam("DaysFresh = " .. fermentSeven)
-    end
-
-    if item11 then
-        item11:DoParam("DaysTotallyRotten = " .. fermentSeven)
-        item11:DoParam("DaysFresh = " .. fermentSeven)
-    end
-
-    if item12 then
-        item12:DoParam("DaysTotallyRotten = " .. fermentTwelve)
-        item12:DoParam("DaysFresh = " .. fermentTwelve)
-    end
-
-    if item13 then
-        item13:DoParam("DaysTotallyRotten = " .. fermentTen)
-        item13:DoParam("DaysFresh = " .. fermentTen)
-    end
-
-    if item14 then 
-        item14:DoParam("DaysTotallyRotten = "  .. fermentTen)
-        item14:DoParam("DaysFresh = "  .. fermentTen)
-    end
-
-    if item15 then
-        item15:DoParam("DaysTotallyRotten = "  .. fermentSixteen)
-        item15:DoParam("DaysFresh = " .. fermentSixteen)
-    end
-
-    if item16 then
-        item16:DoParam("DaysTotallyRotten = " .. fermentEight)
-        item16:DoParam("DaysFresh = " .. fermentEight)
-    end
-
-    if item17 then
-        item17:DoParam("DaysTotallyRotten = " .. fermentTwelve)
-        item17:DoParam("DaysFresh = " .. fermentTwelve)
-    end
-
-    if item18 then
-        item18:DoParam("DaysTotallyRotten = " .. fermentTen)
-        item18:DoParam("DaysFresh = " .. fermentTen)
-    end
-
-    if item19 then
-        item19:DoParam("DaysTotallyRotten = " .. fermentSixteen)
-        item19:DoParam("DaysFresh = " .. fermentSixteen)
-    end
-
-    if item20 then
-        item20:DoParam("DaysTotallyRotten = " .. fermentEight)
-        item20:DoParam("DaysFresh = " .. fermentEight)
-    end
-
-    if item21 then
-        item21:DoParam("DaysTotallyRotten = "  .. fermentTwelve)
-        item21:DoParam("DaysFresh = " .. fermentTwelve)
-    end
-
-    if item22 then
-        item22:DoParam("DaysTotallyRotten = " .. fermentTen)
-        item22:DoParam("DaysFresh = " .. fermentTen)
-    end
-
-    if item23 then
-        item23:DoParam("DaysTotallyRotten = " .. fermentTen)
-        item23:DoParam("DaysFresh = " .. fermentTen)
-    end
-
-    if item24 then
-        item24:DoParam("DaysTotallyRotten = " .. fermentTen)
-        item24:DoParam("DaysFresh = " .. fermentTen)
+        local expiredFood = {
+            "MoreBrews.RedWine",
+            "MoreBrews.RedWineAged",
+            "MoreBrews.RedWineAgedFully",
+            "MoreBrews.WineBoxSmall1",
+            "MoreBrews.WineBoxSmall2",
+            "MoreBrews.WineBoxSmall3",
+            "MoreBrews.WhiteWine",
+            "MoreBrews.WhiteWineAged",
+            "MoreBrews.WhiteWineAgedFully",
+            "MoreBrews.WineBoxSmall4",
+            "MoreBrews.WineBoxSmall5",
+            "MoreBrews.WineBoxSmall6",
+            "MoreBrews.WildBerryWine",
+            "MoreBrews.PineappleWine",
+            "MoreBrews.StrawberryWine",
+            "MoreBrews.PeachWine",
+            "MoreBrews.PearWine",
+            "MoreBrews.BananaWine",
+            "MoreBrews.HoneyMead",
+            "MoreBrews.HardCider",
+        }
+    
+        for _, food in ipairs(expiredFood) do
+            makeExpire(food)
+        end
     end
 end);

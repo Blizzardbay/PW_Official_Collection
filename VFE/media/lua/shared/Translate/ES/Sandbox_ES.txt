@@ -1,0 +1,17 @@
+Sandbox_ES = {
+   Sandbox_VFE = "Expansión de Armas de Vanilia"
+	Sandbox_VFE_PoliceWeapons = "Armas de Policía Zombi"
+	Sandbox_VFE_PoliceWeapons_tooltip = "Armas de VFE que aparecen junto a zombis policías."
+	Sandbox_VFE_MilitaryWeapons = "Armas de Militar Zombi"
+	Sandbox_VFE_MilitaryWeapons_tooltip = "Armas que aparecen junto a zombis militares. (No solo específicas de VFE)"
+	Sandbox_VFE_SurvivorWeapons = "Armas de Sobreviviente Zombi"
+	Sandbox_VFE_SurvivorWeapons_tooltip = "Armas que aparecen junto a zombis sobrevivientes. (No solo específicas de VFE)"
+	Sandbox_VFE_OtherWeapons = "Armas de Otros Zombis"
+	Sandbox_VFE_OtherWeapons_tooltip = "Armas que aparecen junto a otros tipos de zombis, como motociclistas. (No solo específicas de VFE)"
+	Sandbox_VFE_CarWeapons = "Armas en Guantera/Baúl de Vehículo"
+	Sandbox_VFE_CarWeapons_tooltip = "Armas de VFE que aparecen en los inventarios de vehículos."
+	Sandbox_VFE_HouseWeapons = "Armas en Casa"
+	Sandbox_VFE_HouseWeapons_tooltip = "Armas de VFE que aparecen en casas normales."
+	Sandbox_VFE_HouseWeaponsMulti = "Multiplicador de Armas en Casa"
+	Sandbox_VFE_HouseWeaponsMulti_tooltip = "Multiplicador para armas que aparecen en casas (Requiere habilitar la opción anterior)"
+}

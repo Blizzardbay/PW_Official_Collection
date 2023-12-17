@@ -138,6 +138,19 @@
         WorldStaticModel = Gun_Magazine_Ground,
     }
 	
+	item 45Clip12
+    {
+        CanStack	=	FALSE,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	MK23 Magazine,
+        Icon	=	mk23clip,
+        MaxAmmo = 12,
+        AmmoType = Bullets45,
+        GunType = MK23,
+        WorldStaticModel = Magazine_glock,
+    }
+	
 	item 45Clip32
     {
         CanStack	=	FALSE,
@@ -151,7 +164,6 @@
         GunType = Base.MAC10Unfolded,
         WorldStaticModel = Magazine_MAC10,
     }
-
 
     item 9mmClip20
     {
@@ -178,6 +190,20 @@
         AmmoType = Base.Bullets9mm,
         StaticModel = Magazine_glock,
         GunType = Base.P229,
+        WorldStaticModel = Magazine_glock,
+    }
+	
+	item 9mmClip16
+    {
+        CanStack	=	FALSE,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	CZ 75 Magazine,
+        Icon	=	cz75clip,
+        MaxAmmo = 16,
+        AmmoType = Base.Bullets9mm,
+        StaticModel = Magazine_glock,
+        GunType = Base.CZ75,
         WorldStaticModel = Magazine_glock,
     }
 

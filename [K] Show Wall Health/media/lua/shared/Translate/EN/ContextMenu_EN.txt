@@ -1,0 +1,7 @@
+ContextMenu_EN = {
+
+	ContextMenu_Kamer_ShowWallHealth_Check_Status = "Check Status",
+	ContextMenu_Kamer_ShowWallHealth_Check = "Check %1",
+	ContextMenu_Kamer_ShowWallHealth_Health = "Health %1/%2",
+
+}

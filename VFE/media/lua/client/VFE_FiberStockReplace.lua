@@ -18,6 +18,10 @@ function ISRemoveWeaponUpgrade:perform()
 		self.weapon:detachWeaponPart(self.part)
 		self.character:getInventory():DoRemoveItem(self.part)
 		self.part = InventoryItemFactory.CreateItem("Base.Bipod")
+	elseif self.part:getFullType() == "Base.LaserOn" then
+		self.weapon:detachWeaponPart(self.part)
+		self.character:getInventory():DoRemoveItem(self.part)
+		self.part = InventoryItemFactory.CreateItem("Base.Laser")
 	end
     ISRemoveWeaponUpgrade_performHook(self)
 	VFESetWeaponModel(self.weapon, false)
@@ -38,6 +42,9 @@ function ISUpgradeWeapon:perform()
 	elseif self.part:getFullType() == "Base.Bipod_Fake" then
 		self.character:getInventory():DoRemoveItem(self.part)
 		self.part = InventoryItemFactory.CreateItem("Base.Bipod")
+	elseif self.part:getFullType() == "Base.LaserOn" then
+		self.character:getInventory():DoRemoveItem(self.part)
+		self.part = InventoryItemFactory.CreateItem("Base.Laser")
 	end
 	ISUpgradeWeapon_performHook(self)
 	VFESetWeaponModel(self.weapon, false)

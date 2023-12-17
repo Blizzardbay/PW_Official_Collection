@@ -1,0 +1,1676 @@
+module VGC_Addon_NESGames
+
+{
+	imports
+	{
+		Base,
+		Video_Game_Consoles
+	}
+
+/****************dummies****************/
+
+	item NES_Cartridge_Dummy1
+    {
+        DisplayName	            =	NES DummyItem1,
+        Weight	                =	0.1,
+        Icon	                =	DummyNES_i,
+        DisplayCategory 		=	Electronics,
+    }
+
+	item NES_Cartridge_Dummy2
+    {
+        DisplayName	            =	NES DummyItem2,
+        Weight	                =	0.1,
+        Icon	                =	DummyNES_i,
+        DisplayCategory 		=	Electronics,
+    }
+
+	item NES_Cartridge_Dummy3
+    {
+        DisplayName	            =	NES DummyItem3,
+        Weight	                =	0.1,
+        Icon	                =	DummyNES_i,
+        DisplayCategory 		=	Electronics,
+    }
+
+	item NES_Cartridge_Dummy4
+    {
+        DisplayName	            =	NES DummyItem4,
+        Weight	                =	0.1,
+        Icon	                =	DummyNES_i,
+        DisplayCategory 		=	Electronics,
+    }
+
+	item NES_Cartridge_Dummy5
+    {
+        DisplayName	            =	NES DummyItem5,
+        Weight	                =	0.1,
+        Icon	                =	DummyNES_i,
+        DisplayCategory 		=	Electronics,
+    }
+
+/****************games****************/
+
+	item NES_Cartridge_AdventureIsland
+    {
+        DisplayName	            =	NES Adventure Island,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_AdventureIsland_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_AdventureIsland,
+
+    }
+	
+	item NES_Cartridge_AdventureIsland2
+    {
+        DisplayName	            =	NES Adventure Island II,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_AdventureIsland2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_AdventureIsland2,
+
+    }
+	
+	item NES_Cartridge_BaseballStars
+    {
+        DisplayName	            =	NES Baseball Stars,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_BaseballStars_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_BaseballStars,
+
+    }
+	
+	item NES_Cartridge_Batman
+    {
+        DisplayName	            =	NES Batman: The Video Game,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Batman_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Batman,
+
+    }
+	
+	item NES_Cartridge_Battletoads
+    {
+        DisplayName	            =	NES Battletoads,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Battletoads_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Battletoads,
+
+    }
+	
+	item NES_Cartridge_BionicCommando
+    {
+        DisplayName	            =	NES Bionic Commando,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_BionicCommando_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_BionicCommando,
+
+    }
+	
+	item NES_Cartridge_BladesOfSteel
+    {
+        DisplayName	            =	NES Blades of Steel,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_BladesOfSteel_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_BladesOfSteel,
+
+    }
+	
+	item NES_Cartridge_BlasterMaster
+    {
+        DisplayName	            =	NES Blaster Master,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_BlasterMaster_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_BlasterMaster,
+
+    }
+	
+	item NES_Cartridge_Bomberman
+    {
+        DisplayName	            =	NES Bomberman,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Bomberman_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Bomberman,
+
+    }
+
+	item NES_Cartridge_BubbleBobble
+    {
+        DisplayName	            =	NES Bubble Bobble,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_BubbleBobble_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_BubbleBobble,
+
+    }
+	
+	item NES_Cartridge_Castlevania
+    {
+        DisplayName	            =	NES Castlevania,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Castlevania_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Castlevania,
+
+    }
+	
+	item NES_Cartridge_Castlevania2
+    {
+        DisplayName	            =	NES Castlevania II: Simon's Quest,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Castlevania2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Castlevania2,
+
+    }
+	
+	item NES_Cartridge_Castlevania3
+    {
+        DisplayName	            =	NES Castlevania III: Dracula's Curse,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Castlevania3_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Castlevania3,
+
+    }
+	
+	item NES_Cartridge_Contra
+    {
+        DisplayName	            =	NES Contra,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Contra_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Contra,
+
+    }
+	
+	item NES_Cartridge_Crystalis
+    {
+        DisplayName	            =	NES Crystalis,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Crystalis_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Crystalis,
+
+    }
+	
+	item NES_Cartridge_ChipNDale
+    {
+        DisplayName	            =	NES Disney's Chip 'n Dale: Rescue Rangers,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_ChipNDale_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_ChipNDale,
+
+    }
+	
+	item NES_Cartridge_DoubleDragon
+    {
+        DisplayName	            =	NES Double Dragon,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_DoubleDragon_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_DoubleDragon,
+
+    }
+	
+	item NES_Cartridge_DoubleDragon2
+    {
+        DisplayName	            =	NES Double Dragon II: The Revenge,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_DoubleDragon2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_DoubleDragon2,
+
+    }
+
+	item NES_Cartridge_DrMario
+    {
+        DisplayName	            =	NES Dr. Mario,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_DrMario_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_DrMario,
+
+    }
+	
+	item NES_Cartridge_DragonWarrior
+    {
+        DisplayName	            =	NES Dragon Warrior,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_DragonWarrior_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_DragonWarrior,
+
+    }
+	
+	item NES_Cartridge_DragonWarrior2
+    {
+        DisplayName	            =	NES Dragon Warrior II,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_DragonWarrior2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_DragonWarrior2,
+
+    }
+	
+	item NES_Cartridge_DragonWarrior3
+    {
+        DisplayName	            =	NES Dragon Warrior III,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_DragonWarrior3_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_DragonWarrior3,
+
+    }
+	
+	item NES_Cartridge_DragonWarrior4
+    {
+        DisplayName	            =	NES Dragon Warrior IV,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_DragonWarrior4_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_DragonWarrior4,
+
+    }
+	
+	item NES_Cartridge_DuckHunt
+    {
+        DisplayName	            =	NES Duck Hunt,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_DuckHunt_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_DuckHunt,
+
+    }
+	
+	item NES_Cartridge_DuckTales
+    {
+        DisplayName	            =	NES DuckTales,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_DuckTales_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_DuckTales,
+
+    }
+	
+	item NES_Cartridge_Excitebike
+    {
+        DisplayName	            =	NES Excitebike,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Excitebike_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Excitebike,
+
+    }
+
+	item NES_Cartridge_Faxanadu
+    {
+        DisplayName	            =	NES Faxanadu,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Faxanadu_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Faxanadu,
+
+    }
+	
+	item NES_Cartridge_FinalFantasy
+    {
+        DisplayName	            =	NES Final Fantasy,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_FinalFantasy_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_FinalFantasy,
+
+    }
+	
+	item NES_Cartridge_GhostsNGoblins
+    {
+        DisplayName	            =	NES Ghosts 'n Goblins,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_GhostsNGoblins_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_GhostsNGoblins,
+
+    }
+
+	item NES_Cartridge_Gradius
+    {
+        DisplayName	            =	NES Gradius,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Gradius_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Gradius,
+
+    }
+	
+	item NES_Cartridge_IceClimber
+    {
+        DisplayName	            =	NES Ice Climber,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_IceClimber_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_IceClimber,
+
+    }
+	
+	item NES_Cartridge_Jackal
+    {
+        DisplayName	            =	NES Jackal,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Jackal_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Jackal,
+
+    }
+	
+	item NES_Cartridge_KidIcarus
+    {
+        DisplayName	            =	NES Kid Icarus,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_KidIcarus_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_KidIcarus,
+
+    }
+	
+	item NES_Cartridge_Kirby
+    {
+        DisplayName	            =	NES Kirby's Adventure,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Kirby_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Kirby,
+
+    }
+	
+	item NES_Cartridge_KungFu
+    {
+        DisplayName	            =	NES Kung Fu,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_KungFu_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_KungFu,
+
+    }
+	
+	item NES_Cartridge_LifeForce
+    {
+        DisplayName	            =	NES Life Force,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_LifeForce_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_LifeForce,
+
+    }
+	
+	item NES_Cartridge_LodeRunner
+    {
+        DisplayName	            =	NES Lode Runner,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_LodeRunner_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_LodeRunner,
+
+    }
+	
+	item NES_Cartridge_ManiacMansion
+    {
+        DisplayName	            =	NES Maniac Mansion,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_ManiacMansion_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_ManiacMansion,
+
+    }
+	
+	item NES_Cartridge_MegaMan
+    {
+        DisplayName	            =	NES Mega Man,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_MegaMan_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_MegaMan,
+
+    }
+	
+	item NES_Cartridge_MegaMan2
+    {
+        DisplayName	            =	NES Mega Man 2,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_MegaMan2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_MegaMan2,
+
+    }
+
+	item NES_Cartridge_MegaMan3
+    {
+        DisplayName	            =	NES Mega Man 3,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_MegaMan3_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_MegaMan3,
+
+    }
+	
+	item NES_Cartridge_MetalGear
+    {
+        DisplayName	            =	NES Metal Gear,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_MetalGear_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_MetalGear,
+
+    }
+	
+	item NES_Cartridge_Metroid
+    {
+        DisplayName	            =	NES Metroid,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Metroid_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Metroid,
+
+    }
+	
+	item NES_Cartridge_PunchOut
+    {
+        DisplayName	            =	NES Mike Tyson's Punch-Out!!,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_PunchOut_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_PunchOut,
+
+    }
+	
+	item NES_Cartridge_NinjaGaiden
+    {
+        DisplayName	            =	NES Ninja Gaiden,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_NinjaGaiden_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_NinjaGaiden,
+
+    }
+	
+	item NES_Cartridge_NinjaGaiden2
+    {
+        DisplayName	            =	NES Ninja Gaiden II: The Dark Sword of Chaos,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_NinjaGaiden2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_NinjaGaiden2,
+
+    }
+	
+	item NES_Cartridge_RCProAm
+    {
+        DisplayName	            =	NES R.C. Pro-Am,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_RCProAm_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_RCProAm,
+
+    }
+	
+	item NES_Cartridge_RiverCityRansom
+    {
+        DisplayName	            =	NES River City Ransom,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_RiverCityRansom_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_RiverCityRansom,
+
+    }
+
+	item NES_Cartridge_StarTropics
+    {
+        DisplayName	            =	NES StarTropics,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_StarTropics_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_StarTropics,
+
+    }
+
+	item NES_Cartridge_SuperMarioBros
+    {
+        DisplayName	            =	NES Super Mario Bros.,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_SuperMarioBros_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_SuperMarioBros,
+
+    }
+	
+	item NES_Cartridge_SuperMarioBros2
+    {
+        DisplayName	            =	NES Super Mario Bros. 2,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_SuperMarioBros2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_SuperMarioBros2,
+
+    }
+	
+	item NES_Cartridge_SuperMarioBros3
+    {
+        DisplayName	            =	NES Super Mario Bros. 3,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Mario3_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Mario3,
+
+    }
+
+	item NES_Cartridge_TecmoBowl
+    {
+        DisplayName	            =	NES Tecmo Bowl,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_TecmoBowl_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_TecmoBowl,
+
+    }
+	
+	item NES_Cartridge_TecmoSuperBowl
+    {
+        DisplayName	            =	NES Tecmo Super Bowl,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_TecmoSuperBowl_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_TecmoSuperBowl,
+
+    }
+
+	item NES_Cartridge_TMNT
+    {
+        DisplayName	            =	NES Teenage Mutant Ninja Turtles,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_TMNT_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_TMNT,
+
+    }
+	
+	item NES_Cartridge_TMNT2
+    {
+        DisplayName	            =	NES Teenage Mutant Ninja Turtles II: The Arcade Game,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_TMNT2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_TMNT2,
+
+    }
+	
+	item NES_Cartridge_TMNT3
+    {
+        DisplayName	            =	NES Teenage Mutant Ninja Turtles III: The Manhattan Project,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_TMNT3_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_TMNT3,
+
+    }
+	
+	item NES_Cartridge_Tetris
+    {
+        DisplayName	            =	NES Tetris,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Tetris_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Tetris,
+
+    }
+	
+	item NES_Cartridge_Zelda
+    {
+        DisplayName	            =	NES The Legend of Zelda,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Zelda_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Zelda,
+
+    }
+	
+	item NES_Cartridge_Zelda2
+    {
+        DisplayName	            =	NES Zelda II: The Adventure of Link,
+        Weight	                =	0.1,
+        Icon	                =	NES_Cartridge_Zelda2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	NES_Cartridge_Zelda2,
+
+    }
+	
+/****************recipes****************/
+
+	recipe Play Adventure Island
+    {
+       NES_Cartridge_AdventureIsland,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_AdventureIsland,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:AdventureIsland_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Adventure Island II
+    {
+       NES_Cartridge_AdventureIsland2,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_AdventureIsland2,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:AdventureIsland2_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Baseball Stars
+    {
+       NES_Cartridge_BaseballStars,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_BaseballStars,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:BaseballStars_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Batman: The Video Game
+    {
+       NES_Cartridge_Batman,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_Batman,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Batman_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Battletoads
+    {
+       NES_Cartridge_Battletoads,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_Battletoads,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Battletoads_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Bionic Commando
+    {
+       NES_Cartridge_BionicCommando,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_BionicCommando,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:BionicCommando_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Blades of Steel
+    {
+       NES_Cartridge_BladesOfSteel,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_BladesOfSteel,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:BladesOfSteel_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Blaster Master
+    {
+       NES_Cartridge_BlasterMaster,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_BlasterMaster,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:BlasterMaster_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Bomberman
+    {
+       NES_Cartridge_Bomberman,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_Bomberman,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Bomberman_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Bubble Bobble
+    {
+       NES_Cartridge_BubbleBobble,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_BubbleBobble,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:BubbleBobble_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Castlevania
+    {
+       NES_Cartridge_Castlevania,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_Castlevania,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Castlevania_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Castlevania II: Simon's Quest
+    {
+       NES_Cartridge_Castlevania2,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_Castlevania2,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Castlevania2_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Castlevania III: Dracula's Curse
+    {
+       NES_Cartridge_Castlevania3,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_Castlevania3,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Castlevania3_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Contra
+    {
+       NES_Cartridge_Contra,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_Contra,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Contra_game_NES,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Crystalis
+    {
+       NES_Cartridge_Crystalis,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_Crystalis,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Crystalis_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Disney's Chip 'n Dale: Rescue Rangers
+    {
+       NES_Cartridge_ChipNDale,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_ChipNDale,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:ChipNDale_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Double Dragon
+    {
+       NES_Cartridge_DoubleDragon,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_DoubleDragon,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:DoubleDragon_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Double Dragon II: The Revenge
+    {
+       NES_Cartridge_DoubleDragon2,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_DoubleDragon2,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:DoubleDragon2_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Dr. Mario
+    {
+       NES_Cartridge_DrMario,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_DrMario,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:DrMario_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Dragon Warrior
+    {
+       NES_Cartridge_DragonWarrior,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_DragonWarrior,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:DragonWarrior_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Dragon Warrior II
+    {
+       NES_Cartridge_DragonWarrior2,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_DragonWarrior2,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:DragonWarrior2_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Dragon Warrior III
+    {
+       NES_Cartridge_DragonWarrior3,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_DragonWarrior3,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:DragonWarrior3_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Dragon Warrior IV
+    {
+       NES_Cartridge_DragonWarrior4,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_DragonWarrior4,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:DragonWarrior4_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Duck Hunt
+    {
+       NES_Cartridge_DuckHunt,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_DuckHunt,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:DuckHunt_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play DuckTales
+    {
+       NES_Cartridge_DuckTales,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_DuckTales,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:DuckTales_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Excitebike
+    {
+       NES_Cartridge_Excitebike,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_Excitebike,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Excitebike_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Faxanadu
+    {
+       NES_Cartridge_Faxanadu,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_Faxanadu,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Faxanadu_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Final Fantasy
+    {
+       NES_Cartridge_FinalFantasy,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_FinalFantasy,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:FinalFantasy_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Ghosts 'n Goblins
+    {
+       NES_Cartridge_GhostsNGoblins,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_GhostsNGoblins,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:GhostsNGoblins_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Gradius
+    {
+       NES_Cartridge_Gradius,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_Gradius,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Gradius_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Ice Climber
+    {
+       NES_Cartridge_IceClimber,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_IceClimber,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:IceClimber_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Jackal
+    {
+       NES_Cartridge_Jackal,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_Jackal,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Jackal_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Kid Icarus
+    {
+       NES_Cartridge_KidIcarus,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_KidIcarus,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:KidIcarus_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Kirby's Adventure
+    {
+       NES_Cartridge_Kirby,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_Kirby,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Kirby_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Kung Fu
+    {
+       NES_Cartridge_KungFu,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_KungFu,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:KungFu_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Life Force
+    {
+       NES_Cartridge_LifeForce,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_LifeForce,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:LifeForce_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Lode Runner
+    {
+       NES_Cartridge_LodeRunner,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_LodeRunner,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:LodeRunner_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Maniac Mansion
+    {
+       NES_Cartridge_ManiacMansion,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_ManiacMansion,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:ManiacMansion_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Mega Man
+    {
+       NES_Cartridge_MegaMan,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_MegaMan,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Megaman_game_NES,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Mega Man 2
+    {
+       NES_Cartridge_MegaMan2,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_MegaMan2,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:MegaMan2_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Mega Man 3
+    {
+       NES_Cartridge_MegaMan3,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_MegaMan3,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:MegaMan3_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Metal Gear
+    {
+       NES_Cartridge_MetalGear,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_MetalGear,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:MetalGear_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Metroid
+    {
+       NES_Cartridge_Metroid,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_Metroid,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Metroid_game_NES,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Mike Tyson's Punch-Out!!
+    {
+       NES_Cartridge_PunchOut,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_PunchOut,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:PunchOut_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Ninja Gaiden
+    {
+       NES_Cartridge_NinjaGaiden,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_NinjaGaiden,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:NinjaGaiden_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Ninja Gaiden II: The Dark Sword of Chaos
+    {
+       NES_Cartridge_NinjaGaiden2,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_NinjaGaiden2,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:NinjaGaiden2_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play R.C. Pro-Am
+    {
+       NES_Cartridge_RCProAm,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_RCProAm,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:RCProAm_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play River City Ransom
+    {
+       NES_Cartridge_RiverCityRansom,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_RiverCityRansom,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:RiverCityRansom_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play StarTropics
+    {
+       NES_Cartridge_StarTropics,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_StarTropics,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:StarTropics_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Super Mario Bros.
+    {
+       NES_Cartridge_SuperMarioBros,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_SuperMarioBros,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:SuperMarioBros_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Super Mario Bros. 2
+    {
+       NES_Cartridge_SuperMarioBros2,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_SuperMarioBros2,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:SuperMarioBros2_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Super Mario Bros. 3
+    {
+       NES_Cartridge_SuperMarioBros3,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_SuperMarioBros3,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Mario_game_NES,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Tecmo Bowl
+    {
+       NES_Cartridge_TecmoBowl,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_TecmoBowl,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:TecmoBowl_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Tecmo Super Bowl
+    {
+       NES_Cartridge_TecmoSuperBowl,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_TecmoSuperBowl,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:TecmoSuperBowl_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Teenage Mutant Ninja Turtles
+    {
+       NES_Cartridge_TMNT,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_TMNT,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:TMNT_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Teenage Mutant Ninja Turtles II: The Arcade Game
+    {
+       NES_Cartridge_TMNT2,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_TMNT2,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:TMNT2_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Teenage Mutant Ninja Turtles III: The Manhattan Project
+    {
+       NES_Cartridge_TMNT3,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_TMNT3,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:TMNT3_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Tetris
+    {
+       NES_Cartridge_Tetris,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_Tetris,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Tetris_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play The Legend of Zelda
+    {
+       NES_Cartridge_Zelda,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_Zelda,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Zelda_game_NES,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+	recipe Play Zelda II: The Adventure of Link
+    {
+       NES_Cartridge_Zelda2,
+       keep NES,
+       Time:920.0,
+	   Result:NES_Cartridge_Zelda2,
+	   
+       Category:Leisure,
+	   OnCanPerform:VGC_Scripts.OnCanPerform.RequireElectricityToPerform,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.NES_Controller_A,
+       Sound:Zelda2_game_nes,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+
+}

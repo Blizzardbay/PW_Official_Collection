@@ -1,0 +1,8 @@
+Recipes_FR = {
+        Recipe_Make_Cloth_Hand_Wrappings = "Faire des gants en tissu improvisés",
+        Recipe_Make_Denim_Hand_Wrappings = "Faire des gants en denim improvisés",
+        Recipe_Make_Leather_Hand_Wrappings = "Faire des gants improvisés",
+        Recipe_Improve_to_Leather_Hand_Wrappings = "Faire des gants improvisés",
+        Recipe_Cut_Leather_Gloves_into_Fingerless_Leather_Gloves, = "Couper les doigts aux gants en cuir",
+		Recipe_Cut_Leather_Gloves_into_Fingerless_Leather_Gloves = "Couper les doigts aux gants en cuir",
+}

@@ -5,5 +5,13 @@ Tooltip_CN = {
 	Tooltip_AsiaFoodMagazine = "教你如何做亚洲菜的一本杂志",
 	Tooltip_EuropeFoodMagazine = "教你如何做欧洲菜的一本杂志",
 	Tooltip_PastaDoughMagazine = "教你如何做意式菜的一本杂志",
+	Tooltip_HotWater = "说明书写着, '需要用热水'.",
+	Tooltip_EmptyThermos = "可以用来储存水、饮料或煮好的汤",
+	Tooltip_CookedBowls = "煮好后可以倒进碗里.",
+	Tooltip_CookedSlices = "煮熟后可以切片.",
+	Tooltip_CornPopcorn = "烹饪后可以变成爆米花.",
+	Tooltip_Stock = "可用于高汤，汤或炖菜.",
+	Tooltip_IceCubes = "如果有水，可以塞进通电的冰箱来做成冰块.",
+	Tooltip_SausagesMagazine = "教你如何制作香肠",
 	
 } 	

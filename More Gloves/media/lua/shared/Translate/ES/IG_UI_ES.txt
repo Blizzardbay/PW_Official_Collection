@@ -1,4 +1,5 @@
 IG_UI_ES = {
 	IGUI_CraftCategory_Tailoring = "Sastrería",
+	IGUI_ItemCat_ClothArm = "Ropa - Brazos/Manos",
 }
 

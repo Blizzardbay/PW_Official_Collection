@@ -1,0 +1,8 @@
+Sandbox_EN = {
+	
+	Sandbox_TrueMusicJukebox = "TrueMusic Jukebox",
+
+	Sandbox_TrueMusicJukebox_TMJJukeboxAttractZombies = "Enable Jukebox Music To Attract Zombies",
+	Sandbox_TrueMusicJukebox_TMJJukeboxAttractZombies_tooltip = "Disabling this will remove the possibility of zombies being attracted to the Jukebox music playing.",
+
+}

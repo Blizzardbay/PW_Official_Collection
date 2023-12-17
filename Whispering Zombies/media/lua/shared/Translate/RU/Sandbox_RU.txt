@@ -1,0 +1,21 @@
+Sandbox_RU = {
+    Sandbox_WhisperingZombies = "Whispering Zombies",
+
+    Sandbox_WhisperingZombies_ZombiesReactToPhrases = "Зомби реагируют на фразы",
+    Sandbox_WhisperingZombies_ZombiesReactToPhrases_tooltip = "Зомби реагируют на фразы, сказанные другими зомби и идут на звук",
+
+    Sandbox_WhisperingZombies_MinimumDelayBetweenSpecificPhrasesTimeInSeconds = "Мин. задержка в секундах между особыми фразами",
+    Sandbox_WhisperingZombies_MinimumDelayBetweenSpecificPhrasesTimeInSeconds_tooltip = "Особые фразы - это фразы атаки и фразы поедания игрока. Рекомендуется ставить меньше задержки фраз состояния",
+
+    Sandbox_WhisperingZombies_MaximumDelayBetweenSpecificPhrasesTimeInSeconds = "Макс. задержка в секундах между особыми фразами",
+    Sandbox_WhisperingZombies_MaximumDelayBetweenSpecificPhrasesTimeInSeconds_tooltip = "Особые фразы - это фразы атаки и фразы поедания игрока. Рекомендуется ставить меньше задержки фраз состояния",
+
+    Sandbox_WhisperingZombies_MinimumDelayBetweenStatePhrasesTimeInSeconds = "Мин. задержка в секундах между фразами состояния",
+    Sandbox_WhisperingZombies_MinimumDelayBetweenStatePhrasesTimeInSeconds_tooltip = "Фразы состояния - это все остальные фразы, наподобии idle-анимации зомби, удары по двери, а также прочее",
+
+    Sandbox_WhisperingZombies_MaximumDelayBetweenStatePhrasesTimeInSeconds = "Макс. задержка в секундах между фразами состояния",
+    Sandbox_WhisperingZombies_MaximumDelayBetweenStatePhrasesTimeInSeconds_tooltip = "Фразы состояния - это все остальные фразы, наподобии idle-анимации зомби, удары по двери, а также прочее",
+
+
+    Sandbox_WhisperingZombies_OnHitZombieChance = "Шанс зомби-фразы, когда зомби получает урон",
+}

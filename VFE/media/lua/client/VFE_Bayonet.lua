@@ -2,13 +2,13 @@ require "ISUI/ISInventoryPaneContextMenu"
 
 VFEBayonetContext = {}
 
-VFEBayonetContext.callAction = function(item, player, bayonet) --when you click the action this gets called first
+VFEBayonetContext.callAction = function(item, index, player, bayonet) --when you click the action this gets called first
 	--if stuff not in main inv grab them
 	if player:getPrimaryHandItem() ~= item or player:getSecondaryHandItem() ~= item then
 		ISTimedActionQueue.add(ISEquipWeaponAction:new(player, item, 50, true, true));
 	end
 	if item and item:getContainer() == player:getInventory() then 
-		ISTimedActionQueue.add(VFEBayonetContextAction:new(item, player, bayonet, CharacterActionAnims.Craft, 15))
+		ISTimedActionQueue.add(VFEBayonetContextAction:new(item, index, player, bayonet, CharacterActionAnims.Craft, 15))
 	end
 	
 end
@@ -16,12 +16,13 @@ end
 --------------  Timed Action
 VFEBayonetContextAction = ISBaseTimedAction:derive("VFEBayonetContextAction");
 
-function VFEBayonetContextAction:new(item, character, bayonet, anim, time) --definition
+function VFEBayonetContextAction:new(item, index, character, bayonet, anim, time) --definition
 	local o = {}
 	setmetatable(o, self)
 	self.__index = self
 	o.character = character;
     o.item = item;
+	o.index = index;
 	o.bayonet = bayonet;
 	o.stopOnWalk = false;
 	o.stopOnRun = true;
@@ -37,14 +38,15 @@ end
 
 function VFEBayonetContextAction:isValid() --if items move or get deleted abort the action
 	local returnvalue = true
-	if self.item:getFullType() == "Base.AssaultRifle" then
-		if not self.item or self.item:getContainer() ~= self.character:getInventory() and not self.bayonet or self.bayonet:getContainer() ~= self.character:getInventory() then 
-			returnvalue = false;
+	if self.index % 3 == 1 then
+		if VFEBayonetSet[self.index + 2] ~= "NULL" then
+			if not self.bayonet or self.bayonet:getContainer() ~= self.character:getInventory() then 
+				returnvalue = false;
+			end
 		end
-	else
+	end
 	if not self.item or self.item:getContainer() ~= self.character:getInventory() then 
-			returnvalue = false;
-		end
+		returnvalue = false;
 	end
 	return returnvalue;
 end
@@ -61,7 +63,7 @@ function VFEBayonetContextAction:start() -- when it starts
 end
 
 function VFEBayonetContextAction:perform() --the action itself, gets called when it's completed
-	VFEBayonet(self.item, self.character, self.bayonet)
+	VFEBayonet(self.item, self.index, self.character, self.bayonet)
 
     -- needed to remove from queue / start next.
 	ISBaseTimedAction.perform(self);
@@ -77,32 +79,51 @@ function VFEBayonetContextAction:stop()
     self.item:setJobDelta(0.0);
 end
 
-function VFEBayonetSetup(modData)
-	modData.rifle = {}
-	modData.bayonet = {}
+local function BayonetModifierRecalc(item)
+	item:getModData().scriptStats = {
+		ScriptName = item:getDisplayName() or "",
+		MinDamage = item:getMinDamage() or nil,
+		MaxDamage = item:getMaxDamage() or nil,
+		TreeDamage = item:getTreeDamage() or nil,
+		DoorDamage = item:getDoorDamage() or nil,
+		PushBackMod = item:getPushBackMod() or nil,
+		KnockdownMod = item:getKnockdownMod() or nil,
+		MaxRange = item:getMaxRange() or nil,
+		MinRange = item:getMinRange() or nil,
+		BaseSpeed = item:getBaseSpeed() or nil,
+		EnduranceMod = item:getEnduranceMod() or nil,
+		CriticalChance = item:getCriticalChance() or nil,
+		ConditionLowerChance = item:getConditionLowerChance() or nil,
+		HitChance = item:getHitChance() or nil,
+		SoundRadius = item:getSoundRadius() or nil,
+		SoundVolume = item:getSoundVolume() or nil,
+		SoundGain = item:getSoundGain() or nil,
+		RecoilDelay = item:getRecoilDelay() or nil,
+		AimingTime = item:getAimingTime() or nil,
+		ReloadTime = item:getReloadTime() or nil,
+		AimingPerkRangeModifier = item:getAimingPerkRangeModifier() or nil,
+		AimingPerkCritModifier = item:getAimingPerkCritModifier() or nil,
+		AimingPerkHitChanceModifier= item:getAimingPerkHitChanceModifier() or nil,
+	}
 end
 
-
-function VFEBayonet(item, player, bayonet)
+function VFEBayonet(item, index, player, bayonet)
 
 	local hotBar = getPlayerHotbar(player:getPlayerNum())
 	local result = nil
-	local seperateBayonet = false
+	local seperateBayonet = nil
+	local bayonetName = ""
 	
 	if item:getSubCategory() == "Firearm" then
-		if item:getFullType() == "Base.AssaultRifle" then
-			seperateBayonet = true
-			result = player:getInventory():AddItem("Base.AssaultRifleBayonet")
-		else
-			result = player:getInventory():AddItem("Base.SKSSpikerBayonet")
+		if VFEBayonetSet[index + 2] ~= "NULL" then
+			seperateBayonet = VFEBayonetSet[index + 2]
 		end
+			result = player:getInventory():AddItem(VFEBayonetSet[index + 1])
 	else
-		if item:getFullType() == "Base.AssaultRifleBayonet" then
-			seperateBayonet = true
-			result = player:getInventory():AddItem("Base.AssaultRifle")
-		else
-			result = player:getInventory():AddItem("Base.SKSSpiker")
+		if VFEBayonetSet[index + 1] ~= "NULL" then
+			seperateBayonet = VFEBayonetSet[index + 1]
 		end
+		result = player:getInventory():AddItem(VFEBayonetSet[index - 1])
 	end
 	
 	result:setBloodLevel(item:getBloodLevel())
@@ -113,8 +134,11 @@ function VFEBayonet(item, player, bayonet)
 			modData[k] = v
 		end
 		
-	if modData.rifle == nil or modData.bayonet == nil then
-		VFEBayonetSetup(modData)
+	if modData.rifle == nil then
+		modData.rifle = {}
+	end
+	if modData.bayonet == nil then
+		modData.bayonet = {}
 	end
 	
 	if item:getSubCategory() == "Firearm" then -- Rifle to Bayonet
@@ -122,6 +146,10 @@ function VFEBayonet(item, player, bayonet)
 		-- Save Rifle Data
 		modData.rifle.Condition = item:getCondition()		
 		result:setCurrentAmmoCount(item:getCurrentAmmoCount())
+		
+		if(modData.modifier) then
+			modData.rifle.modifier = modData.modifier
+		end
 		
 		if result:haveChamber() and item:isRoundChambered() then -- Chamber Check
 			result:setRoundChambered(true)
@@ -221,13 +249,18 @@ function VFEBayonet(item, player, bayonet)
 				result:setHaveBeenRepaired(modData.bayonet.HaveBeenRepaired)
 			end 
 		end
-	
+		if(modData.bayonet.modifier) then
+			modData.modifier = modData.bayonet.modifier
+		else
+			modData.modifier = nil
+		end
+
 	else -- Bayonet to Rifle
 		
 		-- Save Bayonet Data
 		if seperateBayonet then
 			local playerModData = player:getModData()
-			local newBayonet = player:getInventory():AddItem("Base.M16Bayonet")
+			local newBayonet = player:getInventory():AddItem(seperateBayonet)
 			if modData.bayonet.Favorite then
 				newBayonet:setFavorite(modData.bayonet.Favorite)
 			end
@@ -256,6 +289,9 @@ function VFEBayonet(item, player, bayonet)
 			if modData.bayonet.HaveBeenRepaired then
 				modData.bayonet.HaveBeenRepaired = item:getHaveBeenRepaired()
 			end 
+		end
+		if(modData.modifier) then
+			modData.bayonet.modifier = modData.modifier
 		end
 		
 		-- This doesn't work with a for loop for some reason
@@ -319,6 +355,13 @@ function VFEBayonet(item, player, bayonet)
 		if modData.rifle.FireMode then
 			result:setFireMode(modData.rifle.FireMode)
 		end
+		
+		if(modData.rifle.modifier) then
+			modData.modifier = modData.rifle.modifier
+		else
+			modData.modifier = nil
+		end
+		
 	end
 			
 	if hotBar:isInHotbar(item) then -- hotbar
@@ -335,5 +378,9 @@ function VFEBayonet(item, player, bayonet)
 	if result:isTwoHandWeapon() then
 		player:setSecondaryHandItem(result);
 	end
-		
+	-- If the weapon has a modifier, give it new base stats
+	if(modData.modifier) then
+		BayonetModifierRecalc(result)
+	end
+	VFESetWeaponModel(result,false) -- Sets the model corretly incase of attachments that change weapon model
 end

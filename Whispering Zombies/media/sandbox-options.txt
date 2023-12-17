@@ -1,0 +1,60 @@
+VERSION = 1,
+
+option WhisperingZombies.ZombiesReactToPhrases
+{
+    type = boolean,
+    default = true,
+    page = WhisperingZombies,
+    translation = WhisperingZombies_ZombiesReactToPhrases,
+}
+
+option WhisperingZombies.MinimumDelayBetweenSpecificPhrasesTimeInSeconds
+{
+    type = integer,
+    min = 0,
+    default = 5,
+    max = 6000,
+    page = WhisperingZombies,
+    translation = WhisperingZombies_MinimumDelayBetweenSpecificPhrasesTimeInSeconds,
+}
+
+option WhisperingZombies.MaximumDelayBetweenSpecificPhrasesTimeInSeconds
+{
+    type = integer,
+    min = 0,
+    default = 180,
+    max = 6000,
+    page = WhisperingZombies,
+    translation = WhisperingZombies_MaximumDelayBetweenSpecificPhrasesTimeInSeconds,
+}
+
+option WhisperingZombies.MinimumDelayBetweenStatePhrasesTimeInSeconds
+{
+    type = integer,
+    min = 0,
+    default = 10,
+    max = 6000,
+    page = WhisperingZombies,
+    translation = WhisperingZombies_MinimumDelayBetweenStatePhrasesTimeInSeconds,
+}
+
+option WhisperingZombies.MaximumDelayBetweenStatePhrasesTimeInSeconds
+{
+    type = integer,
+    min = 0,
+    default = 360,
+    max = 6000,
+    page = WhisperingZombies,
+    translation = WhisperingZombies_MaximumDelayBetweenStatePhrasesTimeInSeconds,
+}
+
+
+option WhisperingZombies.OnHitZombieChance
+{
+    type = integer,
+    min = 0,
+    default = 5,
+    max = 100,
+    page = WhisperingZombies,
+    translation = WhisperingZombies_OnHitZombieChance,
+}

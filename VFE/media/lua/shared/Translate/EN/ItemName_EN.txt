@@ -5,8 +5,8 @@ ItemName_EN = {
 	ItemName_Base.AK47Folded = "AK47 Assault Rifle",
 	
 	ItemName_Base.SKS = "SKS Rifle",
-	ItemName_Base.SKSSpiker = "SKS Rifle",
-	ItemName_Base.SKSSpikerBayonet = "SKS Rifle",
+	ItemName_Base.SKSSpiker = "SKS-45 Rifle",
+	ItemName_Base.SKSSpikerBayonet = "SKS-45 Rifle",
 	
 	ItemName_Base.Mini14 = "Mini-14 Rifle",	
 	ItemName_Base.Mini14Unfolded = "Mini-14 Rifle",
@@ -25,6 +25,7 @@ ItemName_EN = {
 	
 	ItemName_Base.Shotgun = "M500 Shotgun",
 	ItemName_Base.Shotgun2 = "M590 Shotgun",
+	ItemName_Base.Shotgun2Bayonet = "M590 Shotgun",
 	ItemName_Base.ShotgunSemi = "R1187 Shotgun",
 	ItemName_Base.ShotgunSemi2 = "R1187 Shotgun",
 	ItemName_Base.ShotgunSilent = "Coin Toss",
@@ -44,6 +45,8 @@ ItemName_EN = {
 	ItemName_Base.Glock = "G17 Pistol",
 	ItemName_Base.Glock18 = "G18 Pistol",
 	ItemName_Base.P229 = "P229 Pistol",
+	ItemName_Base.CZ75 = "CZ 75 Pistol",
+	ItemName_Base.MK23SOCOM = "MK23 Pistol",
 	
 	ItemName_Base.MP5 = "MP5 Submachinegun",
 	ItemName_Base.MP5SD = "MP5SD Submachinegun",
@@ -63,13 +66,13 @@ ItemName_EN = {
 	ItemName_Base.FAL = "FAL Battle Rifle",
 	ItemName_Base.FALClassic = "FAL Battle Rifle",
 	
-	ItemName_Base.AssaultRiflM1 = "M1 Rifle",
+	ItemName_Base.AssaultRifle2 = "M14 Battle Rifle",
+	ItemName_Base.AssaultRifleM1 = "M1 Rifle",
 	
 	/*Ammo*/	
 	ItemName_Base.762Box = "Box of 7.62 Rounds",
 	ItemName_Base.762Bullets = "7.62 Rounds",
 
-	
 	ItemName_Base.22Box = "Box of .22 Rounds",
 	ItemName_Base.22Bullets = ".22 Rounds",
 	
@@ -80,6 +83,7 @@ ItemName_EN = {
 	ItemName_Base.9mmClip20 = "TEC9 Magazine",
 	ItemName_Base.9mmClip30 = "MP5 Magazine",
 	ItemName_Base.45Clip32 = "M10 Magazine",
+	ItemName_Base.45Clip12 = "MK23 Magazine",
 	
 	ItemName_Base.22ClipRifle = "R1022 Magazine",
 	
@@ -90,6 +94,7 @@ ItemName_EN = {
 	ItemName_Base.556Clip = "M16 Magazine",
 	ItemName_Base.M14Clip = "M14 Magazine",
 	ItemName_Base.FALClip = "FAL Magazine",
+	ItemName_Base.9mmClip16 = "CZ 75 Magazine",
 	ItemName_Base.9mmClip17 = "G17 Magazine",
 	
 	/*Attachments*/
@@ -101,6 +106,8 @@ ItemName_EN = {
 	ItemName_Base.x2Scope_Fake = "x2 Scope",
     ItemName_Base.x4Scope_Fake = "x4 Scope",
     ItemName_Base.x8Scope_Fake = "x8 Scope",
+	ItemName_Base.Sling = "Leather Sling",
+	ItemName_Base.Sling2 = "Nylon Sling",
 	
 	/*Items*/
 	ItemName_Base.CleaningKit = "Gun Cleaning Kit",

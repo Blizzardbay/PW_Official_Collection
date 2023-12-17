@@ -1,4 +1,4 @@
-module ImprovisedSilencers
+module Base
 {
 	imports
 	{
@@ -15,9 +15,27 @@ module ImprovisedSilencers
 		RecoilDelayModifier = -1,
         WeightModifier = 1.2,
 		PartType = Canon,
-        MountOn = Pistol; Pistol2; Pistol3; VarmintRifle; HuntingRifle; Shotgun; ShotgunSawnoff; ShotgunSawnoffNoStock; Spas12; Spas12Folded; AssaultRifle; AssaultRifle2; AK47; AK47Folded; SKS; 1022; Mini14; Mini14Folded; CAR15; LeverRifle; MP5; Glock; Tec9; P229; Revolver; Revolver_Short; Revolver_Long,
+        MountOn = SilencerMountOn,
 		Tooltip = Tooltip_Silencer,
-		WorldStaticModel = ImprovisedSilencers.Silencer_Ground,
+		WorldStaticModel = Silencer_Ground,
+    }
+
+	item SilencerMountOn
+    {
+        Weight	=	20,
+        Type	=	Normal,
+        DisplayName	=	most guns.,
+        DisplayCategory = Junk,
+        Icon	=	IntentionallyInvalid,
+    }
+
+	item CraftedSilencerMountOn
+    {
+        Weight	=	20,
+        Type	=	Normal,
+        DisplayName	=	all guns except revolvers and shotguns.,
+        DisplayCategory = Junk,
+        Icon	=	IntentionallyInvalid,
     }
 
 	item MetalPipeSilencer
@@ -30,9 +48,9 @@ module ImprovisedSilencers
 		RecoilDelayModifier = -1,
         WeightModifier = 1.4,
 		PartType = Canon,
-        MountOn = Pistol; Pistol2; Pistol3; VarmintRifle; HuntingRifle; Shotgun; ShotgunSawnoff; ShotgunSawnoffNoStock; Spas12; Spas12Folded; AssaultRifle; AssaultRifle2; AK47; AK47Folded; SKS; 1022; Mini14; Mini14Folded; CAR15; LeverRifle; MP5; Glock; Tec9; P229; Revolver; Revolver_Short; Revolver_Long,
+        MountOn = SilencerMountOn,
 		Tooltip = Tooltip_MetalPipeSilencer,
-		WorldStaticModel = ImprovisedSilencers.MetalPipeSilencer_Ground,
+		WorldStaticModel = MetalPipeSilencer_Ground,
     }
 
 	item TorchSilencer
@@ -42,12 +60,12 @@ module ImprovisedSilencers
         Icon = TorchSilencer,
         Weight = 1,
 		MaxRangeModifier = -2,
-		RecoilDelayModifier = -1,
+		RecoilDelayModifier = -1, 
         WeightModifier = 1.4,
 		PartType = Canon,
-        MountOn = Pistol; Pistol2; Pistol3; VarmintRifle; HuntingRifle; AssaultRifle; AssaultRifle2; AK47; AK47Folded; SKS; 1022; Mini14; Mini14Folded; CAR15; LeverRifle; MP5; Glock; Tec9; P229,
+        MountOn = CraftedSilencerMountOn,
 		Tooltip = Tooltip_TorchSilencer,
-		WorldStaticModel = ImprovisedSilencers.TorchSilencer_Ground,
+		WorldStaticModel = TorchSilencer_Ground,
     }
 	
 	item WaterBottleSilencer
@@ -60,9 +78,9 @@ module ImprovisedSilencers
 		RecoilDelayModifier = -1,
         WeightModifier = 1.2,
 		PartType = Canon,
-        MountOn = Pistol; Pistol2; Pistol3; VarmintRifle; HuntingRifle; AssaultRifle; AssaultRifle2; AK47; AK47Folded; SKS; 1022; Mini14; Mini14Folded; CAR15; LeverRifle; MP5; Glock; Tec9; P229,
+        MountOn = CraftedSilencerMountOn,
 		Tooltip = Tooltip_WaterBottleSilencer,
-		WorldStaticModel = ImprovisedSilencers.WaterBottleSilencer_Ground,
+		WorldStaticModel = WaterBottleSilencer_Ground,
     }
 	
 	recipe Craft Silencer

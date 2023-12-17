@@ -1,0 +1,1436 @@
+module AccPoster
+{
+	item AkiraPoster
+	{
+
+		DisplayName	=	Akira Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Akira_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_0,
+	}
+
+	item AliceInWorderlandPoster
+	{
+
+		DisplayName	=	Alice in Wonderland Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Alice_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_2,
+	}
+
+	item AlienPoster
+	{
+
+		DisplayName	=	Alien Movie Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Alien_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_4,
+	}
+
+	item ApplePoster
+	{
+
+		DisplayName	=	Apple Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Apple_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_6,
+	}
+
+
+	item ATeamPoster
+	{
+
+		DisplayName	=	A-Team Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	ATeam_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_8,
+	}
+
+	item AtkOf50ftWomanPoster
+	{
+
+		DisplayName	=	50ft Woman Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	50ftWoman_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_10,
+	}
+
+	item BackToTheFuturePoster
+	{
+
+		DisplayName	=	Back to The Future Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	BackFuture_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_12,
+	}
+
+
+	item BartSimpsonPoster
+	{
+
+		DisplayName	=	Bart Simpson Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Bart_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_14,
+	}
+
+
+	item BatmanMoviePoster
+	{
+
+		DisplayName	=	Batman Movie Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Batman_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_16,
+	}
+
+
+	item BeavisAndButtheadPoster
+	{
+
+		DisplayName	=	Beavis and Butt-Head Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Beavis_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_18,
+	}
+
+	item BettlejuicePoster
+	{
+
+		DisplayName	=	Bettlejuice Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Bettlejuice_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_20,
+	}
+
+	item BeverlyHills90210Poster
+	{
+
+		DisplayName	=	Beverly Hills 90210 Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	BH90210_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_22,
+	}
+
+	item BladeRunnerPoster
+	{
+
+		DisplayName	=	Blade Runner Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	BladeRunner_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_24,
+	}
+
+
+	item BohemianRhapsodyPoster
+	{
+
+		DisplayName	=	Bohemian Rhapsody Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	BohemianRhapsody_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_26,
+	}
+
+
+	item BugsBunnyPoster
+	{
+
+		DisplayName	=	Bugs Bunny Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	BugsBunny_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_28,
+	}
+
+
+	item CalvinKleinPoster
+	{
+
+		DisplayName	=	Calvin Klein Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	CalvinKlein_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_30,
+	}
+
+	item CamelLightsPoster
+	{
+
+		DisplayName	=	Camel Lights Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	CamelLights_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_32,
+	}
+
+	item CheersPoster
+	{
+
+		DisplayName	=	Cheers Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Cheers_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_34,
+	}
+
+	item ChevyPoster
+	{
+
+		DisplayName	=	Chevy Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Chevy_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_36,
+	}
+
+	item ClockworkOrangePoster
+	{
+
+		DisplayName	=	Clockwork Orange Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	ClockworkOrange_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_38,
+	}
+
+	item CocaColaPoster
+	{
+
+		DisplayName	=	Coca Cola Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	CocaCola_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_40,
+	}
+
+	item ContraPoster
+	{
+
+		DisplayName	=	Contra Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Contra_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_42,
+	}
+
+	item DaiconIVPoster
+	{
+
+		DisplayName	=	Daicon IV Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Daicon_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_44,
+	}
+
+	item DSotMPoster
+	{
+
+		DisplayName	=	Dark Side of the Moon Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	DSotM_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_46,
+	}
+
+	item DawnOfTheDeadPoster
+	{
+
+		DisplayName	=	Dawn of the Dead Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	DotD_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_48,
+	}
+
+	item DirtyHarryPoster
+	{
+
+		DisplayName	=	Dirty Harry Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	DirtyHarry_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_50,
+	}
+
+	item DirtyPairPoster
+	{
+
+		DisplayName	=	Dirty Pair Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	DirtyPair_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_52,
+	}
+
+	item DoomPoster
+	{
+
+		DisplayName	=	Doom Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Doom_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_54,
+	}
+
+	item DragonBallPoster
+	{
+
+		DisplayName	=	Dragon Ball Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	DragonBall_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_56,
+	}
+
+	item DragonBallZPoster
+	{
+
+		DisplayName	=	Dragon Ball Z Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	DragonBallZ_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_58,
+	}
+
+	item DucktalesPoster
+	{
+
+		DisplayName	=	Ducktales Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Ducktales_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_60,
+	}
+
+	item ETPoster
+	{
+
+		DisplayName	=	E.T. Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	ET_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_01_62,
+	}
+
+	item ATTPoster
+	{
+
+		DisplayName	=	AT&T Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	ATT_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_0,
+	}
+
+	item CasablancaPoster
+	{
+
+		DisplayName	=	Casablanca Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Casablanca_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_2,
+	}
+
+	item EscapeNewYorkPoster
+	{
+
+		DisplayName	=	Escape From New York Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	EscapeFromNY_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_4,
+	}
+
+	item FallingDownPoster
+	{
+
+		DisplayName	=	Falling Down Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	FallingDown_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_6,
+	}
+
+	item FantasiaPoster
+	{
+
+		DisplayName	=	Fantasia Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Fantasia_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_8,
+	}
+
+	item FarrahFawcettPoster
+	{
+
+		DisplayName	=	Farrah Fawcett Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	FarrahFawcett_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_10,
+	}
+
+	item FFIVPoster
+	{
+
+		DisplayName	=	Final Fantasy IV Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	FFIV_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_12,
+	}
+
+	item FireAndIcePoster
+	{
+
+		DisplayName	=	Fire and Ice Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	FireAndIce_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_14,
+	}
+
+	item FreshPrincePoster
+	{
+
+		DisplayName	=	Fresh Prince of Bel-Air Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	FreshPrince_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_16,
+	}
+
+	item GIJoePoster
+	{
+
+		DisplayName	=	G.I. Joe Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	GIJoe_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_18,
+	}
+
+
+	item GalaxyExpress999Poster
+	{
+
+		DisplayName	=	Galaxy Express 999 Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	GalaxyExpress999_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_20,
+	}
+
+
+	item GhostbustersPoster
+	{
+
+		DisplayName	=	Ghostbusters Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Ghostbusters_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_22,
+	}
+
+	item GhibliPoster
+	{
+
+		DisplayName	=	Ghibli Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Ghibli_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_24,
+	}
+
+	item GodfatherPoster
+	{
+
+		DisplayName	=	Godfather Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Godfather_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_26,
+	}
+
+	item GoneWindPoster
+	{
+
+		DisplayName	=	Gone With The Wind Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	GwtW_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_28,
+	}
+
+	item GundamPoster
+	{
+
+		DisplayName	=	Gundam Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Gundam_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_30,
+	}
+
+
+
+	item GunsNRosesPoster
+	{
+
+		DisplayName	=	Guns N' Roses Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	GunsNRoses_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_32,
+	}
+
+
+	item HangInTherePoster
+	{
+
+		DisplayName	=	Hang in There Baby Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	HangInThere_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_34,
+	}
+
+
+	item HEMANPoster
+	{
+
+		DisplayName	=	He-Man Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Heman_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_36,
+	}
+
+
+	item HokutoNoKenPoster
+	{
+
+		DisplayName	=	Hokuto no Ken Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	HokutoNoKen_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_38,
+	}
+
+
+	item HolyDiverPoster
+	{
+
+		DisplayName	=	Holy Diver Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	HolyDiver_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_40,
+	}
+
+
+	item HomeAlone2Poster
+	{
+
+		DisplayName	=	Home Alone 2 Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	HomeAlone2_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_42,
+	}
+
+
+	item IndianaJonesPoster
+	{
+
+		DisplayName	=	Indiana Jones Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	IndianaJones_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_44,
+	}
+
+
+	item IronMaidenPoster
+	{
+
+		DisplayName	=	Iron Maiden Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	IronMaiden_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_46,
+	}
+
+	item JamesBondPoster
+	{
+
+		DisplayName	=	James Bond Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	JamesBond_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_48,
+	}
+
+	item JawsPoster
+	{
+
+		DisplayName	=	Jaws Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Jaws_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_50,
+	}
+
+	item JimiHendrixPoster
+	{
+
+		DisplayName	=	Jimi Hendrix Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	JimiHendrix_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_52,
+	}
+
+	item KillingJokePoster
+	{
+
+		DisplayName	=	Killing Joke Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	KillingJoke_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_54,
+	}
+
+	item LegendOfZeldaPoster
+	{
+
+		DisplayName	=	Legend of Zelda Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Zelda_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_56,
+	}
+
+	item LittleCaesarsPoster
+	{
+
+		DisplayName	=	Little Caesar's Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	LittleCaesars_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_58,
+	}
+
+	item LittleMermaidPoster
+	{
+
+		DisplayName	=	Little Mermaid Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	LittleMermaid_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_60,
+	}
+
+	item LotGHPoster
+	{
+
+		DisplayName	=	Legend of the Galactic Heroes Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	LotGH_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_02_62,
+	}
+
+	item KingKongPoster
+	{
+
+		DisplayName	=	King Kong Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	KingKong_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_0,
+	}
+
+	item LouisvilleCardinalsPoster
+	{
+
+		DisplayName	=	Louisville Cardinals Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	LVCardinals_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_2,
+	}
+
+	item LupinIIIPoster
+	{
+
+		DisplayName	=	Lupin the Third Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	LupinIII_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_4,
+	}
+
+	item LyndaCarterPoster
+	{
+
+		DisplayName	=	Lynda Carter Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	LyndaCarter_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_6,
+	}
+
+	item MadMaxPoster
+	{
+
+		DisplayName	=	Mad Max Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	MadMax_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_8,
+	}
+
+	item MadonnaPoster
+	{
+
+		DisplayName	=	Madonna Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Madonna_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_10,
+	}
+
+	item MarilynPoster
+	{
+
+		DisplayName	=	Marilyn Monroe Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Marilyn_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_12,
+	}
+
+	item MarlboroPoster
+	{
+
+		DisplayName	=	Marlboro Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Marlboro_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_14,
+	}
+
+	item McDonaldsPoster
+	{
+
+		DisplayName	=	McDonald's Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	McDonalds_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_16,
+	}
+
+	item MetallicaPoster
+	{
+
+		DisplayName	=	Metallica Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Metallica_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_18,
+	}
+
+	item MiamiVicePoster
+	{
+
+		DisplayName	=	Miami Vice Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	MiamiVice_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_20,
+	}
+
+	item MichaelJacksonPoster
+	{
+
+		DisplayName	=	Michael Jackson Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	MichaelJackson_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_22,
+	}
+
+	item MortalKombatPoster
+	{
+
+		DisplayName	=	Mortal Kombat Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	MortalKombat_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_24,
+	}
+
+	item MST3KPoster
+	{
+
+		DisplayName	=	MST3K Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	MST3K_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_26,
+	}
+
+	item MTVPoster
+	{
+
+		DisplayName	=	MTV Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	MTV_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_28,
+	}
+
+	item NadiaPoster
+	{
+
+		DisplayName	=	Fushigi no Umi no Nadia Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Nadia_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_30,
+	}
+
+	item NotLDPoster
+	{
+
+		DisplayName	=	Night of the Living Dead Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	NotLD_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_32,
+	}
+
+	item NinjaScrollPoster
+	{
+
+		DisplayName	=	Ninja Scroll Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	NinjaScroll_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_34,
+	}
+
+	item PatlaborPoster
+	{
+
+		DisplayName	=	Patlabor Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Patlabor_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_36,
+	}
+
+	item PepsiPoster
+	{
+
+		DisplayName	=	Pepsi Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Pepsi_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_38,
+	}
+
+	item PopeyePoster
+	{
+
+		DisplayName	=	Popeye Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Popeye_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_40,
+	}
+
+	item ProjectAkoPoster
+	{
+
+		DisplayName	=	Project A-Ko Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	ProjectAko_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_42,
+	}
+
+	item PsychoPoster
+	{
+
+		DisplayName	=	Psycho Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Psycho_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_44,
+	}
+
+	item RamboPoster
+	{
+
+		DisplayName	=	Rambo Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Rambo_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_46,
+	}
+
+	item RHCPPoster
+	{
+
+		DisplayName	=	Red Hot Chili Peppers Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	RHCP_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_48,
+	}
+
+	item RenStimpyPoster
+	{
+
+		DisplayName	=	Ren and Stimpy Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	RenStimpy_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_50,
+	}
+
+	item RotLDPoster
+	{
+
+		DisplayName	=	Return of the Living Dead Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	RotLD_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_52,
+	}
+
+	item RollingStonesPoster
+	{
+
+		DisplayName	=	Rolling Stones Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	RollingStones_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_54,
+	}
+
+	item SaintSeiyaPoster
+	{
+
+		DisplayName	=	Saint Seiya Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	SaintSeiya_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_56,
+	}
+
+	item SailorMoonRPoster
+	{
+
+		DisplayName	=	Sailor Moon R Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	SailorMoon_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_58,
+	}
+
+	item SamuraiShowdownPoster
+	{
+
+		DisplayName	=	Samurai Showdown Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	SamuraiShowdown_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_60,
+	}
+
+	item SexPistolsPoster
+	{
+
+		DisplayName	=	Sex Pistols Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	SexPistols_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_03_62,
+	}
+
+
+	item ShinMegamiPoster
+	{
+
+		DisplayName	=	Shin Megami Tensei Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	ShinMegami_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_0,
+	}
+
+	item SilenceOfLambsPoster
+	{
+
+		DisplayName	=	Silence of the Lambs Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	SilenceLambs_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_2,
+	}
+
+	item SinginRainPoster
+	{
+
+		DisplayName	=	Singin' in the Rain Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	SinginRain_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_4,
+	}
+
+	item SonicPoster
+	{
+
+		DisplayName	=	Sonic The Hedgehog Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Sonic_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_6,
+	}
+
+	item SonicYouthPoster
+	{
+
+		DisplayName	=	Sonic Youth Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	SonicYouth_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_8,
+	}
+
+	item StarTrekPoster
+	{
+
+		DisplayName	=	Star Trek Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	StarTrek_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_10,
+	}
+
+	item StreetFighterIIPoster
+	{
+
+		DisplayName	=	Street Fighter II Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	SFII_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_12,
+	}
+
+	item SuperMario3Poster
+	{
+
+		DisplayName	=	Super Mario 3 Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	SuperMario3_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_14,
+	}
+
+
+	item SupermanPoster
+	{
+
+		DisplayName	=	Superman Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Superman_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_16,
+	}
+
+
+	item TMNTPoster
+	{
+
+		DisplayName	=	T.M.N.T. Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	TMNT_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_18,
+	}
+
+
+	item TaxiDriverPoster
+	{
+
+		DisplayName	=	Taxi Driver Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	TaxiDriver_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_20,
+	}
+
+
+	item TerminatorPoster
+	{
+
+		DisplayName	=	Terminator Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Terminator_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_22,
+	}
+
+	item TexasChainsawPoster
+	{
+
+		DisplayName	=	Texas Chainsaw Massacre Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	TexasChainsaw_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_24,
+	}
+
+	item TheCurePoster
+	{
+
+		DisplayName	=	The Cure Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	TheCure_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_26,
+	}
+
+	item TheEmpireSBPoster
+	{
+
+		DisplayName	=	The Empire Strikes Back Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	TheEmpire_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_28,
+	}
+
+	item TheExorcistPoster
+	{
+
+		DisplayName	=	The Exorcist Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	TheExorcist_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_30,
+	}
+
+	item TheDogGoblinPoster
+	{
+
+		DisplayName	=	The Dog Goblin Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	TheDogGoblin_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_32,
+	}
+
+	item TheShiningPoster
+	{
+
+		DisplayName	=	The Shining Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	TheShining_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_34,
+	}
+
+	item TheThingPoster
+	{
+
+		DisplayName	=	The Thing Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	TheThing_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_36,
+	}
+
+	item ThundercatsPoster
+	{
+
+		DisplayName	=	Thundercats Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Thundercats_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_38,
+	}
+
+	item TrainBombPoster
+	{
+
+		DisplayName	=	Train Bomb Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	TrainBomb_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_40,
+	}
+
+	item TwilightZonePoster
+	{
+
+		DisplayName	=	The Twilight Zone Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	TwilightZone_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_42,
+	}
+
+	item TopGunPoster
+	{
+
+		DisplayName	=	Top Gun Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	TopGun_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_44,
+	}
+
+	item TotoroPoster
+	{
+
+		DisplayName	=	Tonari no Totoro Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Totoro_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_46,
+	}
+
+	item TransformersPoster
+	{
+
+		DisplayName	=	Transformers Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Transformers_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_48,
+	}
+
+	item UniversalSoldierPoster
+	{
+
+		DisplayName	=	Universal Soldier Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	UniversalSoldier_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_50,
+	}
+
+	item UruseiYatsuraPoster
+	{
+
+		DisplayName	=	Urusei Yatsura Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	UruseiYatsura_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_52,
+	}
+
+	item VampireHunterDPoster
+	{
+
+		DisplayName	=	Vampire Hunter D Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	VampireHunterD_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_54,
+	}
+
+
+
+	item YouAreDeadPoster
+	{
+
+		DisplayName	=	You Are Dead Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	YouAreDead_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_56,
+	}
+
+	item WalkmanPoster
+	{
+
+		DisplayName	=	Walkman Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Walkman_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_58,
+	}
+
+	item WatchmenPoster
+	{
+
+		DisplayName	=	Watchmen Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	Watchmen_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_60,
+	}
+
+	item 2001Poster
+	{
+
+		DisplayName	=	2001 Space Odyssey Poster,
+		DisplayCategory = Furniture,
+		Type	=	Moveable,
+		Icon	=	2001_Poster,
+		Weight	=	0.2,	
+		WorldObjectSprite =	posters_period_accurate_04_62,
+	}
+
+}

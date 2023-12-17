@@ -70,7 +70,7 @@ if sBvars.MagazinesSpawnOption then
         ["MoreBrews.MagazineWineMaking2"] = RecipesRarity,
         ["MoreBrews.MagazineWineMaking3"] = RecipesRarity,
         ["MoreBrews.MagazineWineMaking4"] = RecipesRarity,
-        ["MoreBrews.MagazineWineMaking5"] = RecipesRarity,
+        ["MoreBrews.MagazineYeastMaking"] = RecipesRarity,
     }, {
         "BookstoreBooks", 
         "BookstoreMisc",
@@ -87,7 +87,7 @@ else
         ["MoreBrews.MagazineWineMaking2"] = RecipesRarity,
         ["MoreBrews.MagazineWineMaking3"] = RecipesRarity,
         ["MoreBrews.MagazineWineMaking4"] = RecipesRarity,
-        ["MoreBrews.MagazineWineMaking5"] = RecipesRarity,
+        ["MoreBrews.MagazineYeastMaking"] = RecipesRarity,
     }, {
     });
 end

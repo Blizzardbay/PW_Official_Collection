@@ -1,0 +1,103 @@
+module Base
+{
+    imports    
+    {
+		Base
+	}
+
+    item RogueSniperRifle
+	{
+        ImpactSound	=	null,
+        MaxRange	=	25,
+        WeaponSprite	=	RogueSniperRifle,
+        SoundVolume	=	30,
+        MinAngle	=	0.998,
+        Type	=	Weapon,
+        MinimumSwingTime	=	7,
+        ToHitModifier	=	1.5,
+        NPCSoundBoost	=	1.5,
+        KnockBackOnNoDeath	=	TRUE,
+        Ranged	=	TRUE,
+        SwingAmountBeforeImpact	=	0,
+        ProjectileCount	=	6,
+        ConditionLowerChanceOneIn	=	60,
+        Weight	=	12,
+        SplatNumber	=	5,
+        PushBackMod	=	8,
+        MaxDamage	=	5,
+        SubCategory	=	Firearm,
+        ConditionMax	=	10,
+        ShareDamage	=	FALSE,
+        MaxHitCount	=	6,
+        IsAimedFirearm	=	TRUE,
+        DoorDamage	=	200,
+        UseEndurance	=	FALSE,
+        SwingAnim	=	Rifle,
+        DisplayName	=	T-Gewehr Rifle,
+        MinRange	=	0.81,
+        SwingTime	=	1,
+	    AngleFalloff	=	TRUE
+        MultipleHitConditionAffected	=	FALSE,
+        SwingSound	=	RSRshot,
+        SoundRadius	=	40,
+        MinDamage	=	2,
+        TreeDamage  =   100,
+        SplatSize	=	5,
+        KnockdownMod	=	8,
+        SplatBloodOnNoDeath	=	TRUE,
+        Icon	=	RogueSniperRifle,
+        RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+        CriticalChance = 50,
+        CritDmgMultiplier = 10,
+        AimingPerkCritModifier = 2,
+        HitChance = 5,
+        AimingPerkHitChanceModifier = 9,
+        AimingPerkMinAngleModifier = 0,
+        AimingPerkRangeModifier = 3,
+        RecoilDelay = 95,
+        PiercingBullets = FALSE,
+        SoundGain = 1,
+        ReloadTime = 50,
+        AimingTime = 35,
+        RequiresEquippedBothHands = TRUE,
+        BreakSound  =   BreakMetalItem,
+        MetalValue = 45,
+        TwoHandWeapon = TRUE,
+        AmmoBox = 132Box,
+        MaxAmmo = 1,
+        InsertAmmoSound = RSRrack,
+        EjectAmmoSound = Stormy9mmClipEject,
+        RackSound = RSRrack,
+        AmmoType = Base.132Bullets,
+        WeaponReloadType = shotgun,
+        RackAfterShoot = FALSE,
+        JamGunChance = 0,
+        AttachmentType = Rifle,
+        haveChamber = False,
+    }
+
+	item 132Bullets
+    {
+        Count	=	5,
+        Weight	=	0.08,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	13.2 Ammo,
+        DisplayCategory = Ammo,
+        Icon	=	132loose,
+        MetalValue = 1,
+    }
+
+	item 132Box
+    {
+        Weight	=	0.5,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	Box of 13.2 Bullets,
+        DisplayCategory = Ammo,
+        Icon	=	Ammo132,
+        MetalValue = 40,
+    }
+    
+}

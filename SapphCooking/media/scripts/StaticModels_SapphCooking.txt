@@ -876,6 +876,16 @@ module Base
 		mesh = Worlditems/H_MessTray,
 		texture = Worlditems/DevAluminum,
 		scale = 0.0045,
+		attachment shovel_back
+		{
+			offset = 0.0000 0.5430 0.0000,
+			rotate = 2.0000 0.0000 -171.0000,
+		}
+		attachment shovel_back_bag
+		{
+			offset = -0.0510 0.5000 -0.0600,
+			rotate = 0.0000 -5.0000 180.0000,
+		}
 	}
 	model H_IcecreamSandwich
 	{
@@ -1009,6 +1019,201 @@ module Base
 		texture = Worlditems/BreadEgg,
 		scale = 0.0045,
 	}
+	model H_CanofKernelCorn
+	{
+		mesh = Worlditems/H_GenericCan,
+		texture = Worlditems/CannedCornKernels,
+		scale = 0.0045,
+	}
+	model H_HotdogBunEvolved
+	{
+		mesh = Worlditems/H_HotdogEvolved,
+		texture = Worlditems/HotdogBun,
+		scale = 0.0045,
+	}
+	model H_IceCubes
+	{
+		mesh = Worlditems/H_IceCubes,
+		texture = Worlditems/IceCubes,
+		scale = 0.0045,
+	}
+	model H_IceTray
+	{
+		mesh = Worlditems/H_IceCubes_Tray,
+		texture = Worlditems/DarkBlueWater,
+		scale = 0.0045,
+	}
+	model H_OilBottle
+	{
+		mesh = Worlditems/H_OilBottleVanila,
+		texture = Worlditems/OilVegetableVanila,
+		scale = 0.0045,
+	}
+	model H_GrindedCoffee
+	{
+		mesh = Worlditems/H_GrindedCoffee,
+		texture = Worlditems/CoffeeGrinded,
+		scale = 0.0045,
+	}
+	model H_Syrup_Chocolate
+	{
+		mesh = Worlditems/H_SyrupBottle,
+		texture = Worlditems/Syrup_Chocolate,
+		scale = 0.0045,
+	}
+	model H_Syrup_Strawberry
+	{
+		mesh = Worlditems/H_SyrupBottle,
+		texture = Worlditems/Syrup_Strawberry,
+		scale = 0.0045,
+	}
+	model H_Syrup_Caramel
+	{
+		mesh = Worlditems/H_SyrupBottle,
+		texture = Worlditems/Syrup_Caramel,
+		scale = 0.0045,
+	}
+	model H_BowlShavedIce
+	{
+		mesh = Worlditems/BowlFoodHand,
+		texture = Worlditems/BowlShavedIce,
+		scale = 0.0045,
+	}
+	model H_ScotchEgg
+	{
+		mesh = Worlditems/H_ScotchEgg,
+		texture = Worlditems/ScotchEgg,
+		scale = 0.0045,
+	}
+	model H_BowlArrozLeche
+	{
+		mesh = Worlditems/BowlDipHand,
+		texture = Worlditems/BowlArrozLeche,
+		scale = 0.0045,
+	}
+	model H_SaucepanArrozLeche
+	{
+		mesh = Worlditems/SaucepanOilHand,
+		texture = Worlditems/SaucePanArrozLeche,
+		scale = 0.0045,
+	}
+	model H_SausageMag
+	{
+		mesh = Worlditems/H_Magazine,
+		texture = Worlditems/MagazineSausageOpen,
+		scale = 0.0045,
+	}
+	model H_BrothChicken
+	{
+		mesh = Worlditems/H_Broth,
+		texture = Worlditems/BrothCarton,
+		scale = 0.0045,
+	}
+	model H_Springroll
+	{
+		mesh = Worlditems/H_Springroll,
+		texture = Worlditems/SpringrollDev,
+		scale = 0.0045,
+	}
+	model H_CevicheBowl
+	{
+		mesh = Worlditems/H_BowlCeviche,
+		texture = Worlditems/BowlCeviche,
+		scale = 0.0045,
+	}
+	model H_SpearChefKnife1
+	{
+		mesh = weapons/SpearChefKnife,
+		texture = Weapons/SpearChefKnife1,
+		scale = 0.0045,
+		attachment world
+		{
+			offset = 0.0000 0.1300 0.00610,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model H_SpearChefKnife2
+	{
+		mesh = weapons/SpearChefKnife,
+		texture = Weapons/SpearChefKnife2,
+		scale = 0.0045,
+		attachment world
+		{
+			offset = 0.0000 0.1300 0.00610,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model H_SpearChefKnife3
+	{
+		mesh = weapons/SpearChefKnife,
+		texture = Weapons/SpearChefKnife3,
+		scale = 0.0045,
+		attachment world
+		{
+			offset = 0.0000 0.1300 0.00610,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model H_SpearSpork
+	{
+		mesh = weapons/SpearSpork,
+		texture = Weapons/SpearSpork,
+		scale = 0.0045,
+		attachment world
+		{
+			offset = 0.0000 0.1300 0.00610,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model H_MetalSpork
+	{
+		mesh = Worlditems/H_PlasticSpork,
+		texture = Worlditems/MetalSheetDev,
+		scale = 0.0045,
+		attachment world
+		{
+			offset = 0.0000 0.1300 0.00610,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+
+	model H_CocktailMixer
+	{
+		mesh = Worlditems/H_CocktailMixer,
+		texture = Worlditems/MetalSheetDev,
+		scale = 0.0045,
+	}
+
+	model H_CocktailMixerDrink
+	{
+		mesh = Worlditems/H_CocktailMixerDrink,
+		texture = Worlditems/MetalSheetDev_Orange,
+		scale = 0.0045,
+	}
+	model H_LowBallEvolved
+	{
+		mesh = Worlditems/H_LowBallDrink,
+		texture = Worlditems/LowBallEvolved,
+		scale = 0.0045,
+	}
+	model H_CocktailGlassEvolved
+	{
+		mesh = Worlditems/H_CocktailGlassDrink,
+		texture = Worlditems/LowBallEvolved,
+		scale = 0.0045,
+	}
+	model H_Mochi
+	{
+		mesh = Worlditems/H_Snack_Mochi,
+		texture = Worlditems/WontonWrapper,
+		scale = 0.0045,
+	}
+	model H_ButterChurnBot
+	{
+		mesh = Worlditems/H_ButterChurn_Bot,
+		texture = Worlditems/GenericWoodLight,
+		scale = 0.0045,
+	}
 
 
 
@@ -1025,7 +1230,32 @@ module Base
 
 
 
+	model Cooking_ButterChurnBot
+	{
+		mesh = Worlditems/ButterChurn_Bot,
+		texture = Worlditems/GenericWoodLight,
+		scale = 0.0045,
+	}
+	model Cooking_ButterChurnTop
+	{
+		mesh = Worlditems/ButterChurn_Top,
+		texture = Worlditems/GenericWoodLight,
+		scale = 0.0045,
+	}
 
+	model Cooking_ArrozLeche
+	{
+		mesh = Worlditems/C_SaucepanOil,
+		texture = Worlditems/SaucePanArrozLeche,
+		scale = 0.0045,
+	}
+
+	model Cooking_IceTray
+	{
+		mesh = Worlditems/C_IceCubes_Tray,
+		texture = Worlditems/DarkBlueWater,
+		scale = 0.0045,
+	}
 	model Cooking_SaucepanOil
 	{
 		mesh = Worlditems/C_SaucepanOil,
@@ -1095,7 +1325,7 @@ module Base
 	model Cooking_CoffeeThermos
 	{
 		mesh = Worlditems/C_CoffeeThermos,
-		texture = Worlditems/DevAluminum,
+		texture = Worlditems/ThermosBrew,
 		scale = 0.0045,
 	}
 	model Cooking_CakeCandleCarrot
@@ -1122,4 +1352,5 @@ module Base
 		texture = Worlditems/Meatgrinder,
 		scale = 0.0045,
 	}
+	
 }

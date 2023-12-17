@@ -1,0 +1,62 @@
+module SapphCooking
+{
+	imports
+	{
+		Base,
+	}
+	item Gloves_OvenMitten_White
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Oven Mittens,
+		ClothingItem = SapphOvenMitten_White,
+		BodyLocation = Hands,
+		Icon = OvenMittensIcon,
+		ColorRed = 235,
+        ColorGreen = 235,
+        ColorBlue = 235,
+		BloodLocation = Hands,
+		ScratchDefense = 40,
+        BiteDefense = 10,
+        Weight = 0.1,
+        Insulation = 0.75,
+        WindResistance = 0.75,
+        FabricType = Cotton,
+        WorldStaticModel = WhiteMitten_Ground,
+	}
+	item Gloves_OvenMitten_Udderly
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Udderly Oven Mittens,
+		ClothingItem = SapphOvenMitten_Udderly,
+		BodyLocation = Hands,
+		Icon = OvenMittensUdderlyIcon,
+		BloodLocation = Hands,
+		ScratchDefense = 40,
+        BiteDefense = 10,
+        Weight = 0.1,
+        Insulation = 0.75,
+        WindResistance = 0.75,
+        FabricType = Cotton,
+        WorldStaticModel = UdderlyMitten_Ground,
+	}
+
+	item Mouth_Toothpick
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Toothpick,
+		ClothingItem = Sapph_Toothpick,
+		BodyLocation = Mask,
+		Icon = ToothpickIcon,
+		BloodLocation = Head,
+		CanHaveHoles = false,
+		ScratchDefense = 0,
+        BiteDefense = 0,
+        Weight = 0.01,
+        Insulation = 0,
+        WindResistance = 0,
+        WorldStaticModel = Toothpick_Ground,
+	}
+}

@@ -1,19 +1,7 @@
---This code is for adding animations.
-
-
-
-local onKeyStartPressed = function(key)
-	local source = getPlayer(); if not source then return end
-
-	if key == Keyboard.KEY_NUMPAD1 then
-        source:setVariable("IsAnimationGuide", "true")
-	end
-
-    if key == Keyboard.KEY_NUMPAD2 then
-        source:setVariable("IsAnimationGuide", "false")
-    end
-
-end
-
-Events.OnKeyStartPressed.Add(onKeyStartPressed);
-
+--This code is for testing animations.
+--sapph:theres nothing here, probably cause they are working.
+--hmm... sounds wrong to leave this here doesn't it?
+--just an empty page, with some nonsensical ramblings.
+--...
+--maybe if you check in the future, you'll find something neat?
+--until then... see ya around.

@@ -37,3 +37,7 @@ table.insert(ZombiesZoneDefinition.Default,{name = "SpongieDenim", chance=15});
 --SpongieGothChick
 table.insert(ZombiesZoneDefinition.Default,{name = "SpongieGothChick", gender="female", chance=1});
 table.insert(ZombiesZoneDefinition.School,{name = "SpongieGothChick", gender="female", chance=1});
+
+--SpongieCoat
+table.insert(ZombiesZoneDefinition.Rich,{name="SpongieCoat",chance=10,});
+table.insert(ZombiesZoneDefinition.Default,{name = "SpongieCoat", chance=10});

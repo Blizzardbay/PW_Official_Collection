@@ -12,6 +12,12 @@ P4HasBeenRead.alreadyReadTexture = nil
 P4HasBeenRead.selfMarkingTexture = P4HasBeenRead.textureBookSM
 P4HasBeenRead.currentTargetTexture = P4HasBeenRead.textureBookCT
 
+P4HasBeenRead.recordedMediaResult = {}
+
+P4HasBeenRead.status = nil
+P4HasBeenRead.marking = nil
+P4HasBeenRead.current = nil
+
 -- *****************************************************************************
 -- * Options
 -- *****************************************************************************
@@ -37,20 +43,18 @@ end
 -- * ModData functions
 -- *****************************************************************************
 
-P4HasBeenRead.getMarkedList = function()
+P4HasBeenRead.getMarkedMap = function()
 	local modData = getPlayer():getModData()
 	if not modData.P4HasBeenRead then
 		modData.P4HasBeenRead = {}
-		modData.P4HasBeenRead.markedList = {}
+		modData.P4HasBeenRead.markedMap = {}
 	end
-	return modData.P4HasBeenRead.markedList
+	return modData.P4HasBeenRead.markedMap
 end
 
 P4HasBeenRead.marked = function(type)
-	local markedList = P4HasBeenRead.getMarkedList()
-	if not P4HasBeenRead.contains(markedList, type) then
-		table.insert(markedList, type)
-	end
+	local markedMap = P4HasBeenRead.getMarkedMap()
+	markedMap[type] = ""
 end
 
 P4HasBeenRead.markedAll = function(types)
@@ -60,13 +64,8 @@ P4HasBeenRead.markedAll = function(types)
 end
 
 P4HasBeenRead.unmarked = function(type)
-	local markedList = P4HasBeenRead.getMarkedList()
-	for i = 1, #markedList do
-		if markedList[i] == type then
-			table.remove(markedList, i)
-			break
-		end
-	end
+	local markedMap = P4HasBeenRead.getMarkedMap()
+	markedMap[type] = nil
 end
 
 P4HasBeenRead.unmarkedAll = function(types)
@@ -109,9 +108,22 @@ SetTextures = function()
 end
 Events.OnGameStart.Add(SetTextures)
 
+P4HasBeenRead.OnCreatePlayer = function(playerIndex, player)
+	-- Conversion markedList to markedMap
+	local modData = getPlayer():getModData()
+	if modData.P4HasBeenRead and modData.P4HasBeenRead.markedList then
+		modData.P4HasBeenRead.markedMap = {}
+		for i,v in ipairs(modData.P4HasBeenRead.markedList) do
+			modData.P4HasBeenRead.markedMap[v] = ""
+		end
+		modData.P4HasBeenRead.markedList = nil
+	end
+end
+Events.OnCreatePlayer.Add(P4HasBeenRead.OnCreatePlayer)
+
 P4HasBeenRead.OnFillInventoryObjectContextMenu = function(player, contextMenu, items)
 	if P4HasBeenRead.options.showSM then
-		local markedList = P4HasBeenRead.getMarkedList()
+		local markedMap = P4HasBeenRead.getMarkedMap()
 		if #items == 1 then
 			local item = nil
 			if not instanceof(items[1], "InventoryItem") then
@@ -123,7 +135,7 @@ P4HasBeenRead.OnFillInventoryObjectContextMenu = function(player, contextMenu, i
 			local category = item:getCategory()
 			if category == "Literature" then
 				if P4HasBeenRead.isTargetLiterature(item) then
-					if P4HasBeenRead.contains(markedList, type) then
+					if markedMap[type] then
 						local menuText = "UI_P4HasBeenRead_Unmarked_Book"
 						if P4HasBeenRead.options.reverseMarkDisplay then
 							menuText = "UI_P4HasBeenRead_Marked_Book"
@@ -139,7 +151,7 @@ P4HasBeenRead.OnFillInventoryObjectContextMenu = function(player, contextMenu, i
 				end
 			elseif type == "Base.Disc_Retail" then
 				type = "Base.RM-" .. item:getMediaData():getIndex()
-				if P4HasBeenRead.contains(markedList, type) then
+				if markedMap[type] then
 					local menuText = "UI_P4HasBeenRead_Unmarked_CD"
 					if P4HasBeenRead.options.reverseMarkDisplay then
 						menuText = "UI_P4HasBeenRead_Marked_CD"
@@ -154,7 +166,7 @@ P4HasBeenRead.OnFillInventoryObjectContextMenu = function(player, contextMenu, i
 				end
 			elseif type == "Base.VHS_Retail" or type == "Base.VHS_Home" then
 				type = "Base.RM-" .. item:getMediaData():getIndex()
-				if P4HasBeenRead.contains(markedList, type) then
+				if markedMap[type] then
 					local menuText = "UI_P4HasBeenRead_Unmarked_VHS"
 					if P4HasBeenRead.options.reverseMarkDisplay then
 						menuText = "UI_P4HasBeenRead_Marked_VHS"
@@ -205,17 +217,140 @@ P4HasBeenRead.OnFillInventoryObjectContextMenu = function(player, contextMenu, i
 end
 Events.OnFillInventoryObjectContextMenu.Add(P4HasBeenRead.OnFillInventoryObjectContextMenu)
 
+-- For Inventory Tetris
+if ItemGridUI then
+	P4HasBeenRead.ItemGridUI_renderGridItem = ItemGridUI._renderGridItem
+	function ItemGridUI._renderGridItem(drawingContext, playerObj, item, stack, x, y, rotate, alphaMult, force1x1, isBuried)
+		P4HasBeenRead.ItemGridUI_renderGridItem(drawingContext, playerObj, item, stack, x, y, rotate, alphaMult, force1x1, isBuried)
+		P4HasBeenRead.SetTextures(playerObj, item)
+		if P4HasBeenRead.status or P4HasBeenRead.marking or P4HasBeenRead.current then
+			local options = require "InventoryTetris/Settings"
+			local h = nil
+			if force1x1 then
+				h = 1
+			else
+				_, h = TetrisItemData.getItemSize(item, rotate)
+			end
+			local yoff = options.CELL_SIZE * h
+			if P4HasBeenRead.status then
+				drawingContext:drawTexture(P4HasBeenRead.status, x+2, y+yoff-19, alphaMult, 1, 1, 1)
+			end
+			if P4HasBeenRead.marking then
+				drawingContext:drawTexture(P4HasBeenRead.marking, x+12, y+yoff-13, alphaMult, 1, 1, 1)
+			end
+			if P4HasBeenRead.current then
+				drawingContext:drawTexture(P4HasBeenRead.current, x+1, y+yoff-31, alphaMult, 1, 1, 1)
+			end
+		end
+	end
+end
+
 -- *****************************************************************************
 -- * Main functions
 -- *****************************************************************************
 
-P4HasBeenRead.original_render = ISInventoryPane.renderdetails
-function ISInventoryPane:renderdetails(doDragged)
-	P4HasBeenRead.original_render(self, doDragged)
+P4HasBeenRead.SetTextures = function(player, item)
+	local type = item:getFullType()
 
 	local recordedMedia = getZomboidRadio():getRecordedMedia()
-	local recordedMediaResult = {}
-	local markedList = P4HasBeenRead.getMarkedList()
+	local markedMap = P4HasBeenRead.getMarkedMap()
+
+	local statusTexture = nil
+	local selfMarkingTexture = nil
+	local currentTargetTexture = nil
+	if item:getCategory() == "Literature" then
+		if P4HasBeenRead.isTargetLiterature(item) then
+			local skillBook = SkillBook[item:getSkillTrained()]
+			if skillBook then
+				local perkLevel = player:getPerkLevel(skillBook.perk)
+				local minLevel = item:getLvlSkillTrained()
+				local maxLevel = item:getMaxLevelTrained()
+				if (minLevel <= perkLevel + 1) and (perkLevel + 1 <= maxLevel) then
+					currentTargetTexture = P4HasBeenRead.currentTargetTexture
+				end
+				local readPages = player:getAlreadyReadPages(item:getFullType())
+				if readPages >= item:getNumberOfPages() then
+					statusTexture = P4HasBeenRead.alreadyReadTexture
+				elseif perkLevel >= maxLevel then
+					statusTexture = P4HasBeenRead.alreadyReadTexture
+				elseif readPages > 0 then
+					statusTexture = P4HasBeenRead.notCompletedTexture
+				else
+					statusTexture = P4HasBeenRead.notReadTexture
+				end
+			elseif item:getTeachedRecipes() and not item:getTeachedRecipes():isEmpty() then
+				if player:getKnownRecipes():containsAll(item:getTeachedRecipes()) then
+					statusTexture = P4HasBeenRead.alreadyReadTexture
+				else
+					statusTexture = P4HasBeenRead.notReadTexture
+				end
+			end
+			if P4HasBeenRead.options.showSM then
+				if markedMap[type] then
+					if not P4HasBeenRead.options.reverseMarkDisplay then
+						selfMarkingTexture = P4HasBeenRead.selfMarkingTexture
+					end
+				else
+					if P4HasBeenRead.options.reverseMarkDisplay then
+						selfMarkingTexture = P4HasBeenRead.selfMarkingTexture
+					end
+				end
+			end
+		end
+	elseif recordedMedia then
+		local mediaData = item:getMediaData()
+		if mediaData then
+			local isTarget = false
+			local index = mediaData:getIndex()
+			local category = mediaData:getCategory()
+			if P4HasBeenRead.options.enableCD and category == "CDs" then
+				isTarget = true
+			elseif P4HasBeenRead.options.enableVHS and category == "Retail-VHS" then
+				isTarget = true
+			elseif P4HasBeenRead.options.enableHVHS and category == "Home-VHS" then
+				isTarget = true
+			end
+			if isTarget then
+				statusTexture = P4HasBeenRead.recordedMediaResult[index]
+				if statusTexture then
+					if statusTexture == "mynil" then
+						statusTexture = nil
+					end
+				else
+					if recordedMedia:hasListenedToAll(player, mediaData) then
+						statusTexture = P4HasBeenRead.alreadyReadTexture
+					else
+						statusTexture = P4HasBeenRead.notReadTexture
+					end
+					if statusTexture then
+						P4HasBeenRead.recordedMediaResult[index] = statusTexture
+					else
+						P4HasBeenRead.recordedMediaResult[index] = "mynil"
+					end
+				end
+			end
+			if P4HasBeenRead.options.showSM then
+				if markedMap["Base.RM-" .. index] then
+					if not P4HasBeenRead.options.reverseMarkDisplay then
+						selfMarkingTexture = P4HasBeenRead.selfMarkingTexture
+					end
+				else
+					if P4HasBeenRead.options.reverseMarkDisplay then
+						selfMarkingTexture = P4HasBeenRead.selfMarkingTexture
+					end
+				end
+			end
+		end
+	end
+	P4HasBeenRead.status = statusTexture
+	P4HasBeenRead.marking = selfMarkingTexture
+	P4HasBeenRead.current = currentTargetTexture
+end
+
+P4HasBeenRead.ISInventoryPane_renderdetails = ISInventoryPane.renderdetails
+function ISInventoryPane:renderdetails(doDragged)
+	P4HasBeenRead.ISInventoryPane_renderdetails(self, doDragged)
+	P4HasBeenRead.recordedMediaResult = {}
 
 	-- [NOTICE]
 	-- The source code below is the basicaly same as the vanilla code in Build 41.50.
@@ -231,95 +366,8 @@ function ISInventoryPane:renderdetails(doDragged)
 		local count = 1
 		for k2, v2 in ipairs(v.items) do
 			local item = v2
-			local type = item:getFullType()
-			local statusTexture = nil
-			local selfMarkingTexture = nil
-			local currentTargetTexture = nil
-			if item:getCategory() == "Literature" then
-				if P4HasBeenRead.isTargetLiterature(item) then
-					local skillBook = SkillBook[item:getSkillTrained()]
-					if skillBook then
-						local perkLevel = player:getPerkLevel(skillBook.perk)
-						local minLevel = item:getLvlSkillTrained()
-						local maxLevel = item:getMaxLevelTrained()
-						if (minLevel <= perkLevel + 1) and (perkLevel + 1 <= maxLevel) then
-							currentTargetTexture = P4HasBeenRead.currentTargetTexture
-						end
-						local readPages = player:getAlreadyReadPages(item:getFullType())
-						if readPages >= item:getNumberOfPages() then
-							statusTexture = P4HasBeenRead.alreadyReadTexture
-						elseif perkLevel >= maxLevel then
-							statusTexture = P4HasBeenRead.alreadyReadTexture
-						elseif readPages > 0 then
-							statusTexture = P4HasBeenRead.notCompletedTexture
-						else
-							statusTexture = P4HasBeenRead.notReadTexture
-						end
-					elseif item:getTeachedRecipes() and not item:getTeachedRecipes():isEmpty() then
-						if player:getKnownRecipes():containsAll(item:getTeachedRecipes()) then
-							statusTexture = P4HasBeenRead.alreadyReadTexture
-						else
-							statusTexture = P4HasBeenRead.notReadTexture
-						end
-					end
-					if P4HasBeenRead.options.showSM then
-						if P4HasBeenRead.contains(markedList, type) then
-							if not P4HasBeenRead.options.reverseMarkDisplay then
-								selfMarkingTexture = P4HasBeenRead.selfMarkingTexture
-							end
-						else
-							if P4HasBeenRead.options.reverseMarkDisplay then
-								selfMarkingTexture = P4HasBeenRead.selfMarkingTexture
-							end
-						end
-					end
-				end
-			elseif recordedMedia then
-				local mediaData = item:getMediaData()
-				if mediaData then
-					local isTarget = false
-					local index = mediaData:getIndex()
-					local category = mediaData:getCategory()
-					if P4HasBeenRead.options.enableCD and category == "CDs" then
-						isTarget = true
-					elseif P4HasBeenRead.options.enableVHS and category == "Retail-VHS" then
-						isTarget = true
-					elseif P4HasBeenRead.options.enableHVHS and category == "Home-VHS" then
-						isTarget = true
-					end
-					if isTarget then
-						statusTexture = recordedMediaResult[index]
-						if statusTexture then
-							if statusTexture == "mynil" then
-								statusTexture = nil
-							end
-						else
-							if recordedMedia:hasListenedToAll(player, mediaData) then
-								statusTexture = P4HasBeenRead.alreadyReadTexture
-							else
-								statusTexture = P4HasBeenRead.notReadTexture
-							end
-							if statusTexture then
-								recordedMediaResult[index] = statusTexture
-							else
-								recordedMediaResult[index] = "mynil"
-							end
-						end
-					end
-					if P4HasBeenRead.options.showSM then
-						if P4HasBeenRead.contains(markedList, ("Base.RM-" .. index)) then
-							if not P4HasBeenRead.options.reverseMarkDisplay then
-								selfMarkingTexture = P4HasBeenRead.selfMarkingTexture
-							end
-						else
-							if P4HasBeenRead.options.reverseMarkDisplay then
-								selfMarkingTexture = P4HasBeenRead.selfMarkingTexture
-							end
-						end
-					end
-				end
-			end
-			if statusTexture or selfMarkingTexture or currentTargetTexture then
+			P4HasBeenRead.SetTextures(player, item)
+			if P4HasBeenRead.status or P4HasBeenRead.marking or P4HasBeenRead.current then
 				local doIt = true
 				local xoff = 0
 				local yoff = 0
@@ -346,24 +394,24 @@ function ISInventoryPane:renderdetails(doDragged)
 					if tex ~= nil then
 						local texWH = math.min(self.itemHgt-2,32)
 						if count == 1  then
-							if statusTexture then
-								self:drawTexture(statusTexture, xoff+5, (y*self.itemHgt)+self.headerHgt+yoff+texWH-16, 1, 1, 1, 1)
+							if P4HasBeenRead.status then
+								self:drawTexture(P4HasBeenRead.status, xoff+5, (y*self.itemHgt)+self.headerHgt+yoff+texWH-16, 1, 1, 1, 1)
 							end
-							if selfMarkingTexture then
-								self:drawTexture(selfMarkingTexture, xoff+15, (y*self.itemHgt)+self.headerHgt+yoff+texWH-10, 1, 1, 1, 1)
+							if P4HasBeenRead.marking then
+								self:drawTexture(P4HasBeenRead.marking, xoff+15, (y*self.itemHgt)+self.headerHgt+yoff+texWH-10, 1, 1, 1, 1)
 							end
-							if currentTargetTexture then
-								self:drawTexture(currentTargetTexture, xoff+4, (y*self.itemHgt)+self.headerHgt+yoff-3, 1, 1, 1, 1)
+							if P4HasBeenRead.current then
+								self:drawTexture(P4HasBeenRead.current, xoff+4, (y*self.itemHgt)+self.headerHgt+yoff-3, 1, 1, 1, 1)
 							end
 						elseif v.count > 2 or (doDragged and count > 1 and self.selected[(y+1) - (count-1)] == nil) then
-							if statusTexture then
-								self:drawTexture(statusTexture, xoff+21, (y*self.itemHgt)+self.headerHgt+yoff+texWH-16, 0.3, 1, 1, 1)
+							if P4HasBeenRead.status then
+								self:drawTexture(P4HasBeenRead.status, xoff+21, (y*self.itemHgt)+self.headerHgt+yoff+texWH-16, 0.3, 1, 1, 1)
 							end
-							if selfMarkingTexture then
-								self:drawTexture(selfMarkingTexture, xoff+31, (y*self.itemHgt)+self.headerHgt+yoff+texWH-10, 0.3, 1, 1, 1)
+							if P4HasBeenRead.marking then
+								self:drawTexture(P4HasBeenRead.marking, xoff+31, (y*self.itemHgt)+self.headerHgt+yoff+texWH-10, 0.3, 1, 1, 1)
 							end
-							if currentTargetTexture then
-								self:drawTexture(currentTargetTexture, xoff+20, (y*self.itemHgt)+self.headerHgt+yoff-3, 0.3, 1, 1, 1)
+							if P4HasBeenRead.current then
+								self:drawTexture(P4HasBeenRead.current, xoff+20, (y*self.itemHgt)+self.headerHgt+yoff-3, 0.3, 1, 1, 1)
 							end
 						end
 					end
@@ -379,17 +427,6 @@ function ISInventoryPane:renderdetails(doDragged)
 			count = count + 1
 		end
 	end
-end
-
-P4HasBeenRead.contains = function(table, element)
-	if table then
-		for _,v in pairs(table) do
-			if v == element then
-				return true
-			end
-		end
-	end
-	return false
 end
 
 P4HasBeenRead.isTargetLiterature = function(item)

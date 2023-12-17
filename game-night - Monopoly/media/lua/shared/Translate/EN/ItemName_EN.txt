@@ -1,0 +1,7 @@
+ItemName_EN = {
+
+    ItemName_Base.MonopolyChance = "Chance"
+    ItemName_Base.MonopolyCommunityChest = "Community Chest"
+    ItemName_Base.MonopolyDeed = "Deed"
+
+}

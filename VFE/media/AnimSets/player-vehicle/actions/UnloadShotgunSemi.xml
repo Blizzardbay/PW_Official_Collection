@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="loadShotgunSemi.xml">
+<animNode x_extends="LoadShotgunSemi.xml">
 	<m_Name>UnloadShotgunSemi</m_Name>
 	<m_AnimReverse>true</m_AnimReverse>
 	<m_Conditions />

@@ -1,4 +1,4 @@
-module ImprovisedSilencers
+module Base
 {
 
 	imports

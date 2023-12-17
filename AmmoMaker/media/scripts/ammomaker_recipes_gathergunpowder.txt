@@ -19,7 +19,35 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 5.45x39
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		Bullets545=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 5.45x39
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		CJ545=3,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -33,7 +61,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -47,7 +75,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -61,7 +89,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -75,7 +103,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -89,7 +117,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -103,7 +131,77 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .22 LR
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		Bullets22LR=40,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .22 LR
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		CJ22LR=40,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder Salvaged Bullets
+	{
+		OnTest:Recipe.OnTest.isActivated_SG,
+
+		SBullets=10,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x25 Tok
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		Bullets762Tokarev=10,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x38 R Nag
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		Bullets762Nagant=20,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -117,7 +215,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -131,7 +229,21 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x51 NATO
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		762NATO=2,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -145,7 +257,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -159,7 +271,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -173,7 +285,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -187,7 +299,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -201,7 +313,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -215,7 +327,35 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x39
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		Bullets762AK=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x39
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		CJ762=3,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -229,7 +369,35 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x54 R
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		Bullets762PKM=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x54 R
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		762_54R=2,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -243,7 +411,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -257,7 +425,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -271,7 +439,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -285,7 +453,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -299,7 +467,63 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .357 Mag
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		357Magnum=9,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 9x39
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		Bullets939=10,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 9x18 Mak
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		Bullets9x18mm=24,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder Scrap Bullets
+	{
+		OnTest:Recipe.OnTest.isActivated_SG,
+
+		ScrapBullets=10,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -313,7 +537,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -327,7 +551,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -343,7 +567,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -357,7 +581,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -371,7 +595,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -385,7 +609,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -399,7 +623,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -413,7 +637,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -427,7 +651,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -441,7 +665,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -455,7 +679,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -471,7 +695,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -485,7 +709,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -499,7 +723,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -513,7 +737,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -527,7 +751,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -541,7 +765,21 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 4 Gauge
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		23x75ShotgunShells=4,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -555,7 +793,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -569,7 +807,7 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 
@@ -583,7 +821,63 @@ module ammomaker {
 		RemoveResultItem:true,
 		OnCreate:Recipe.OnCreate.GatherGunpowder,
 		Time:30.0,
-        Category:Ammo Maker,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder Nail Bomb
+	{
+		OnTest:Recipe.OnTest.isActivated_SG,
+
+		NailBomb=1,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder Glass Bomb
+	{
+		OnTest:Recipe.OnTest.isActivated_SG,
+
+		GlassBomb=1,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder Pipe Bomb
+	{
+		OnTest:Recipe.OnTest.isActivated_SG,
+
+		HPB=1,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder Decoy
+	{
+		OnTest:Recipe.OnTest.isActivated_SG,
+
+		HD=1,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
 		NeedToBeLearn:false,
 	}
 

@@ -9,5 +9,5 @@
     <m_AttachBone></m_AttachBone>
 	<m_Masks>13</m_Masks>
 	<m_Masks>14</m_Masks>
-	<textureChoices>clothes/Spongie/Jumper/Jumper_PoloneckVest</textureChoices>
+	<textureChoices>Clothes\Jumper/Jumper_Poloneck</textureChoices>
 </clothingItem>

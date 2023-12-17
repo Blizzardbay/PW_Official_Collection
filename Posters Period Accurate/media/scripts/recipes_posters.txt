@@ -1,0 +1,1387 @@
+module AccPoster
+{
+
+recipe Make 2001 Space Odyssey Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:2001Poster,
+	Time:100,
+	}
+
+recipe Make Akira Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:AkiraPoster,
+	Time:100,
+	}
+
+recipe Make Alice in Wonderland Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:AliceInWorderlandPoster,
+	Time:100,
+	}
+
+recipe Make Alien Movie Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:AlienPoster,
+	Time:100,
+	}
+
+recipe Make Apple Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:ApplePoster,
+	Time:100,
+	}
+
+recipe Make AT&T Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:ATTPoster,
+	Time:100,
+	}
+
+recipe Make A-Team Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:ATeamPoster,
+	Time:100,
+	}
+
+recipe Make Attack of the 50ft Woman Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:AtkOf50ftWomanPoster,
+	Time:100,
+	}
+
+recipe Make Back to the Future Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:BackToTheFuturePoster,
+	Time:100,
+	}
+
+recipe Make Bart Simpson Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:BartSimpsonPoster,
+	Time:100,
+	}
+
+recipe Make Batman Movie Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:BatmanMoviePoster,
+	Time:100,
+	}
+
+recipe Make Beavis Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:BeavisAndButtheadPoster,
+	Time:100,
+	}
+
+recipe Make Bettlejuice Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:BettlejuicePoster,
+	Time:100,
+	}
+
+recipe Make Beverly Hills 90210 Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:BeverlyHills90210Poster,
+	Time:100,
+	}
+
+recipe Make Blade Runner Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:BladeRunnerPoster,
+	Time:100,
+	}
+
+recipe Make Bohemian Rhapsody Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:BohemianRhapsodyPoster,
+	Time:100,
+	}
+
+recipe Make Bugs Bunny Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:BugsBunnyPoster,
+	Time:100,
+	}
+
+recipe Make Calvin Klein Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:CalvinKleinPoster,
+	Time:100,
+	}
+
+recipe Make Camel Lights Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:CamelLightsPoster,
+	Time:100,
+	}
+
+recipe Make Casablanca Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:CasablancaPoster,
+	Time:100,
+	}
+
+recipe Make Cheers Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:CheersPoster,
+	Time:100,
+	}
+
+
+recipe Make Chevy Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:ChevyPoster,
+	Time:100,
+	}
+
+recipe Make Clockwork Orange Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:ClockworkOrangePoster,
+	Time:100,
+	}
+
+recipe Make CocaColaPoster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:CocaColaPoster,
+	Time:100,
+	}
+
+recipe Make Contra Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:ContraPoster,
+	Time:100,
+	}
+
+recipe Make Daicon IV Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:DaiconIVPoster,
+	Time:100,
+	}
+
+recipe Make Dark Side of the Moon Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:DSotMPoster,
+	Time:100,
+	}
+
+recipe Make Dawn of the Dead Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:DawnOfTheDeadPoster,
+	Time:100,
+	}
+
+recipe Make Dirty Harry Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:DirtyHarryPoster,
+	Time:100,
+	}
+
+recipe Make Dirty Pair Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:DirtyPairPoster,
+	Time:100,
+	}
+
+recipe Make Doom Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:DoomPoster,
+	Time:100,
+	}
+
+recipe Make Dragon Ball Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:DragonBallPoster,
+	Time:100,
+	}
+
+recipe Make Dragon Ball Z Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:DragonBallZPoster,
+	Time:100,
+	}
+
+recipe Make Ducktales Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:DucktalesPoster,
+	Time:100,
+	}
+
+recipe Make E.T. Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:ETPoster,
+	Time:100,
+	}
+
+recipe Make Escape From New York Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:EscapeNewYorkPoster,
+	Time:100,
+	}
+
+recipe Make Falling Down Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:FallingDownPoster,
+	Time:100,
+	}
+
+recipe Make Fantasia Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:FantasiaPoster,
+	Time:100,
+	}
+
+recipe Make Farrah Fawcett Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:FarrahFawcettPoster,
+	Time:100,
+	}
+
+recipe Make Final Fantasy IV Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:FFIVPoster,
+	Time:100,
+	}
+
+recipe Make Fire and Ice Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:FireAndIcePoster,
+	Time:100,
+	}
+
+
+recipe Make Fresh Prince of Bel-Air Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:FreshPrincePoster,
+	Time:100,
+	}
+
+recipe Make Fushigi no Umi no Nadia Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:NadiaPoster,
+	Time:100,
+	}
+
+recipe Make G.I. Joe
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:GIJoePoster,
+	Time:100,
+	}
+
+
+recipe Make Galaxy Express 999 Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:GalaxyExpress999Poster,
+	Time:100,
+	}
+
+
+recipe Make Ghostbusters Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:GhostbustersPoster,
+	Time:100,
+	}
+
+recipe Make Ghibli Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:GhibliPoster,
+	Time:100,
+	}
+
+recipe Make Godfather Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:GodfatherPoster,
+	Time:100,
+	}
+
+recipe Make Gone With The Wind Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:GoneWindPoster,
+	Time:100,
+	}
+
+recipe Make Gundam Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:GundamPoster,
+	Time:100,
+	}
+
+recipe Make Guns N' Roses Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:GunsNRosesPoster,
+	Time:100,
+	}
+
+recipe Make Hang in There Baby Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:HangInTherePoster,
+	Time:100,
+	}
+
+recipe Make He-Man Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:HEMANPoster,
+	Time:100,
+	}
+
+recipe Make Hokuto no Ken Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:HokutoNoKenPoster,
+	Time:100,
+	}
+
+recipe Make Holy Diver Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:HolyDiverPoster,
+	Time:100,
+	}
+
+recipe Make Home Alone 2 Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:HomeAlone2Poster,
+	Time:100,
+	}
+
+recipe Make Indiana Jones Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:IndianaJonesPoster,
+	Time:100,
+	}
+
+recipe Make Iron Maiden Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:IronMaidenPoster,
+	Time:100,
+	}
+
+recipe Make James Bond Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:JamesBondPoster,
+	Time:100,
+	}
+
+recipe Make Jaws Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:JawsPoster,
+	Time:100,
+	}
+
+recipe Make Jimi Hendrix Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:JimiHendrixPoster,
+	Time:100,
+	}
+
+recipe Make Killing Joke Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:KillingJokePoster,
+	Time:100,
+	}
+
+recipe Make King Kong Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:KingKongPoster,
+	Time:100,
+	}
+
+recipe Make Legend of Zelda Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:LegendOfZeldaPoster,
+	Time:100,
+	}
+
+recipe Make Little Caesar's Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:LittleCaesarsPoster,
+	Time:100,
+	}
+
+recipe Make Little Mermaid
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:LittleMermaidPoster,
+	Time:100,
+	}
+
+recipe Make Legend of the Galactic Heroes Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:LotGHPoster,
+	Time:100,
+	}
+
+
+recipe Make Louisville Cardinals Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:LouisvilleCardinalsPoster,
+	Time:100,
+	}
+
+recipe Make Lupin the Third Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:LupinIIIPoster,
+	Time:100,
+	}
+
+recipe Make Lynda Carter Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:LyndaCarterPoster,
+	Time:100,
+	}
+
+recipe Make Mad Max Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:MadMaxPoster,
+	Time:100,
+	}
+
+recipe Make Madonna Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:MadonnaPoster,
+	Time:100,
+	}
+
+recipe Make Marilyn Monroe Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:MarilynPoster,
+	Time:100,
+	}
+
+recipe Make Marlboro Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:MarlboroPoster,
+	Time:100,
+	}
+
+recipe Make McDonald's Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:McDonaldsPoster,
+	Time:100,
+	}
+
+recipe Make Metallica Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:MetallicaPoster,
+	Time:100,
+	}
+
+recipe Make Miami Vice Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:MiamiVicePoster,
+	Time:100,
+	}
+
+recipe Make Michael Jackson Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:MichaelJacksonPoster,
+	Time:100,
+	}
+
+recipe Make Mortal Kombat Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:MortalKombatPoster,
+	Time:100,
+	}
+
+recipe Make Mystery Science Theater 3000 Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:MST3KPoster,
+	Time:100,
+	}
+
+recipe Make MTV Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:MTVPoster,
+	Time:100,
+	}
+
+recipe Make Night of the Living Dead Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:NotLDPoster,
+	Time:100,
+	}
+
+recipe Make Ninja Scroll Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:NinjaScrollPoster,
+	Time:100,
+	}
+
+recipe Make Patlabor Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:PatlaborPoster,
+	Time:100,
+	}
+
+recipe Make Pepsi Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:PepsiPoster,
+	Time:100,
+	}
+
+recipe Make Popeye Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:PopeyePoster,
+	Time:100,
+	}
+
+recipe Make Project A-Ko Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:ProjectAkoPoster,
+	Time:100,
+	}
+
+recipe Make Psycho Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:PsychoPoster,
+	Time:100,
+	}
+
+recipe Make Rambo Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:RamboPoster,
+	Time:100,
+	}
+
+recipe Make Red Hot Chili Peppers Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:RHCPPoster,
+	Time:100,
+	}
+
+recipe Make Ren and Stimpy Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:RenStimpyPoster,
+	Time:100,
+	}
+
+recipe Make Return of the Living Dead Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:RotLDPoster,
+	Time:100,
+	}
+
+recipe Make Rolling Stones Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:RollingStonesPoster,
+	Time:100,
+	}
+
+recipe Make Saint Seiya Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:SaintSeiyaPoster,
+	Time:100,
+	}
+
+recipe Make Sailor Moon R Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:SailorMoonRPoster,
+	Time:100,
+	}
+
+recipe Make Samurai Showdown Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:SamuraiShowdownPoster,
+	Time:100,
+	}
+
+recipe Make Sex Pistols Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:SexPistolsPoster,
+	Time:100,
+	}
+
+
+recipe Make Shin Megami Tensei Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:ShinMegamiPoster,
+	Time:100,
+	}
+
+recipe Make Silence of the Lambs Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:SilenceOfLambsPoster,
+	Time:100,
+	}
+
+recipe Make Singin' in the Rain Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:SinginRainPoster,
+	Time:100,
+	}
+
+recipe Make Sonic the Hedgehog Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:SonicPoster,
+	Time:100,
+	}
+
+recipe Make Sonic Youth Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:SonicYouthPoster,
+	Time:100,
+	}
+
+recipe Make Star Trek Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:StarTrekPoster,
+	Time:100,
+	}
+
+recipe Make Street Fighter II Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:StreetFighterIIPoster,
+	Time:100,
+	}
+
+recipe Make Super Mario 3 Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:SuperMario3Poster,
+	Time:100,
+	}
+
+recipe Make Superman Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:SupermanPoster,
+	Time:100,
+	}
+
+recipe Make T.M.N.T. Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:TMNTPoster,
+	Time:100,
+	}
+
+recipe Make Taxi Driver Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:TaxiDriverPoster,
+	Time:100,
+	}
+
+recipe Make Terminator Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:TerminatorPoster,
+	Time:100,
+	}
+
+recipe Make Texas Chainsaw Massacre Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:TexasChainsawPoster,
+	Time:100,
+	}
+
+recipe Make The Cure Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:TheCurePoster,
+	Time:100,
+	}
+
+recipe Make The Empire Strikes Back Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:TheEmpireSBPoster,
+	Time:100,
+	}
+
+recipe Make The Exorcist Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:TheExorcistPoster,
+	Time:100,
+	}
+
+
+recipe Make The Shining Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:TheShiningPoster,
+	Time:100,
+	}
+
+recipe Make The Thing Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:TheThingPoster,
+	Time:100,
+	}
+
+recipe Make Thundercats Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:ThundercatsPoster,
+	Time:100,
+	}
+
+recipe Make The Twilight Zone Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:TwilightZonePoster,
+	Time:100,
+	}
+
+recipe Make Top Gun Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:TopGunPoster,
+	Time:100,
+	}
+
+recipe Make Tonari no Totoro Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:TotoroPoster,
+	Time:100,
+	}
+
+recipe Make Transformers Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:TransformersPoster,
+	Time:100,
+	}
+
+recipe Make Universal Soldier Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:UniversalSoldierPoster,
+	Time:100,
+	}
+
+recipe Make Urusei Yatsura Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:UruseiYatsuraPoster,
+	Time:100,
+	}
+
+recipe Make Vampire Hunter D Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:VampireHunterDPoster,
+	Time:100,
+	}
+
+
+recipe Make Walkman Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:WalkmanPoster,
+	Time:100,
+	}
+
+recipe Make Watchmen Poster
+	{
+	keep Pencil,
+	keep Pen,
+	Crayons,
+	Scotchtape,
+	SheetPaper2=4,
+	Result:WatchmenPoster,
+	Time:100,
+	}
+
+}

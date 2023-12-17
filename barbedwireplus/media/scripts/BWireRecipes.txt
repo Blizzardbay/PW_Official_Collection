@@ -1,0 +1,27 @@
+module Base {
+	recipe Make Barbed Wire
+	{
+		keep Base.Hammer,
+		Plank=2,
+		Nails=8,
+		Wire=2,
+
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:true,
+		StopOnWalk:true,
+		Result:BarbedWire,
+		Sound:Hammering,
+		Time:1000.0,
+		Category:Carpentry,
+	}
+	item BarbedWire
+	{
+		DisplayCategory = Material,
+		Weight	=	3,
+		Type	=	Normal,
+		DisplayName	=	Barbed Wire,
+		Icon	=	BarbedWire,
+		MetalValue = 20,
+		WorldStaticModel = BarbedWire,
+	}	
+}

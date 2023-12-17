@@ -804,6 +804,16 @@
 				<itemGUID>7c0b26d8-8008-448c-a594-79d5309ba993</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Vest-->
+		<m_items>
+			<probability>0.2</probability>
+				<!--Vest_Puffy-->
+			<itemGUID>spongiec-94de-4137-a498-3c09e77a5cab</itemGUID>
+			<subItems>
+				<!--Vest_PuffyOPEN-->
+				<itemGUID>spongiec-OPEN-4137-a498-3c09e77a5cab</itemGUID>
+			</subItems>
+		</m_items>
 		<!--Jacket-->
 		<m_items>
 			<probability>0.75</probability>
@@ -820,6 +830,14 @@
 			<subItems>
 				<!--Jacket_FieldOPEN-->
 				<itemGUID>spongiec-OPEN-49ca-field-c6e77d78ea87</itemGUID>
+			</subItems>
+			<subItems>
+				<!--Jacket_Quilted-->
+				<itemGUID>spongiec-1ead-49ca-quilt-c6e77d78ea87</itemGUID>
+			</subItems>
+			<subItems>
+				<!--Jacket_QuiltedOPEN-->
+				<itemGUID>spongiec-OPEN-49ca-quilt-c6e77d78ea87</itemGUID>
 			</subItems>
 		</m_items>
 		<!--Shoes-->
@@ -840,12 +858,19 @@
 		</m_items>
 		<!--Shirt-->
 		<m_items>
-			<probability>0.3</probability>
 				<!--Jumper_Military-->
 			<itemGUID>spongiec-0f63-4e23-8a17-010b5332a398</itemGUID>
 			<subItems>
 				<!--Shirt_Denim-->
 				<itemGUID>ceead19e-1c55-4d89-8a59-864dd72d0c93</itemGUID>
+			</subItems>
+			<subItems>
+				<!--Shirt_Quilted-->
+				<itemGUID>spongiec-5a37-quil-9322-2504bff33433</itemGUID>
+			</subItems>
+			<subItems>
+				<!--Shirt_QuiltedROLL-->
+				<itemGUID>spongiec-5a37-quil-ROLL-2504bff33433</itemGUID>
 			</subItems>
 		</m_items>
 	</m_FemaleOutfits>
@@ -864,6 +889,16 @@
 				<itemGUID>7c0b26d8-8008-448c-a594-79d5309ba993</itemGUID>
 			</subItems>
 		</m_items>
+		<!--Vest-->
+		<m_items>
+			<probability>0.2</probability>
+				<!--Vest_Puffy-->
+			<itemGUID>spongiec-94de-4137-a498-3c09e77a5cab</itemGUID>
+			<subItems>
+				<!--Vest_PuffyOPEN-->
+				<itemGUID>spongiec-OPEN-4137-a498-3c09e77a5cab</itemGUID>
+			</subItems>
+		</m_items>
 		<!--Jacket-->
 		<m_items>
 			<probability>0.75</probability>
@@ -880,6 +915,14 @@
 			<subItems>
 				<!--Jacket_FieldOPEN-->
 				<itemGUID>spongiec-OPEN-49ca-field-c6e77d78ea87</itemGUID>
+			</subItems>
+			<subItems>
+				<!--Jacket_Quilted-->
+				<itemGUID>spongiec-1ead-49ca-quilt-c6e77d78ea87</itemGUID>
+			</subItems>
+			<subItems>
+				<!--Jacket_QuiltedOPEN-->
+				<itemGUID>spongiec-OPEN-49ca-quilt-c6e77d78ea87</itemGUID>
 			</subItems>
 		</m_items>
 		<!--Shoes-->
@@ -900,12 +943,146 @@
 		</m_items>
 		<!--Shirt-->
 		<m_items>
-			<probability>0.3</probability>
 				<!--Jumper_Military-->
 			<itemGUID>spongiec-0f63-4e23-8a17-010b5332a398</itemGUID>
 			<subItems>
 				<!--Shirt_Denim-->
 				<itemGUID>ceead19e-1c55-4d89-8a59-864dd72d0c93</itemGUID>
+			</subItems>
+			<subItems>
+				<!--Shirt_Quilted-->
+				<itemGUID>spongiec-5a37-quil-9322-2504bff33433</itemGUID>
+			</subItems>
+			<subItems>
+				<!--Shirt_QuiltedROLL-->
+				<itemGUID>spongiec-5a37-quil-ROLL-2504bff33433</itemGUID>
+			</subItems>
+		</m_items>
+	</m_MaleOutfits>
+
+
+<!--SpongieCoat-->
+	<m_FemaleOutfits>
+		<m_Name>SpongieCoat</m_Name>
+		<m_Guid>spongiec-coat-mcb6-a4c8-604a4a407015</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>true</m_AllowPantsHue>
+		<m_AllowTopTint>true</m_AllowTopTint>
+		<!--Glasses-->
+		<m_items>
+			<probability>0.1</probability>
+			<itemGUID>0b210a48-3044-4f17-b35a-57d1d119363b</itemGUID>
+			<subItems>
+				<itemGUID>7c0b26d8-8008-448c-a594-79d5309ba993</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Jacket-->
+		<m_items>
+				<!--Jacket_PeaCoat-->
+			<itemGUID>spongiec-e7a5-45b6-9c59-dbffefe8555b</itemGUID>
+			<subItems>
+				<!--Jacket_PeaCoatOPEN-->
+				<itemGUID>spongiec-OPEN-45b6-9c59-dbffefe8555b</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Shoes-->
+		<m_items>
+			<itemGUID>593bea3d-c127-4574-ac1e-2197dc56e486</itemGUID>
+			<subItems>
+				<itemGUID>c0a3a194-2ee9-4ce5-9d7a-aa1d5e031cea</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Trousers-->
+		<m_items>
+				<!--Trousers_Suit-->
+			<itemGUID>52acd769-424a-4cbb-b02a-441cb723b747</itemGUID>
+			<subItems>
+				<!--Trousers_SuitTEXTURE-->
+				<itemGUID>ac44bda8-2501-4b7b-8bf9-4d3b2b8da737</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Shirt-->
+		<m_items>
+				<!--Shirt_FormalWhite_ShortSleeve-->
+			<itemGUID>00d77803-6b57-453b-89b6-135d2d642719</itemGUID>
+			<subItems>
+				<!--Shirt_FormalWhite-->
+				<itemGUID>ac7976de-2c73-44ea-9392-5d24ac1fb649</itemGUID>
+			</subItems>
+			<subItems>
+				<!--Jumper_TurtleVest-->
+				<itemGUID>spongiec-0086-4c09-8cf5-c7d739a43d81</itemGUID>
+			</subItems>
+			<subItems>
+				<!--Jumper_PoloNeck-->
+				<itemGUID>5574c07e-1381-49d8-a0ba-40e5b2cf55cd</itemGUID>
+			</subItems>
+			<subItems>
+				<!--Jumper_RoundNeck-->
+				<itemGUID>7a5f7b89-9de9-4c05-afb6-e62dca97b8a2</itemGUID>
+			</subItems>
+		</m_items>
+	</m_FemaleOutfits>
+	<m_MaleOutfits>
+		<m_Name>SpongieCoat</m_Name>
+		<m_Guid>spongiec-coat-mcb6-a4c8-604a4a407015</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>true</m_AllowPantsHue>
+		<m_AllowTopTint>true</m_AllowTopTint>
+		<!--Glasses-->
+		<m_items>
+			<probability>0.1</probability>
+			<itemGUID>0b210a48-3044-4f17-b35a-57d1d119363b</itemGUID>
+			<subItems>
+				<itemGUID>7c0b26d8-8008-448c-a594-79d5309ba993</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Jacket-->
+		<m_items>
+				<!--Jacket_PeaCoat-->
+			<itemGUID>spongiec-e7a5-45b6-9c59-dbffefe8555b</itemGUID>
+			<subItems>
+				<!--Jacket_PeaCoatOPEN-->
+				<itemGUID>spongiec-OPEN-45b6-9c59-dbffefe8555b</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Shoes-->
+		<m_items>
+			<itemGUID>593bea3d-c127-4574-ac1e-2197dc56e486</itemGUID>
+			<subItems>
+				<itemGUID>c0a3a194-2ee9-4ce5-9d7a-aa1d5e031cea</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Trousers-->
+		<m_items>
+				<!--Trousers_Suit-->
+			<itemGUID>52acd769-424a-4cbb-b02a-441cb723b747</itemGUID>
+			<subItems>
+				<!--Trousers_SuitTEXTURE-->
+				<itemGUID>ac44bda8-2501-4b7b-8bf9-4d3b2b8da737</itemGUID>
+			</subItems>
+		</m_items>
+		<!--Shirt-->
+		<m_items>
+				<!--Shirt_FormalWhite_ShortSleeve-->
+			<itemGUID>00d77803-6b57-453b-89b6-135d2d642719</itemGUID>
+			<subItems>
+				<!--Shirt_FormalWhite-->
+				<itemGUID>ac7976de-2c73-44ea-9392-5d24ac1fb649</itemGUID>
+			</subItems>
+			<subItems>
+				<!--Jumper_TurtleVest-->
+				<itemGUID>spongiec-0086-4c09-8cf5-c7d739a43d81</itemGUID>
+			</subItems>
+			<subItems>
+				<!--Jumper_PoloNeck-->
+				<itemGUID>5574c07e-1381-49d8-a0ba-40e5b2cf55cd</itemGUID>
+			</subItems>
+			<subItems>
+				<!--Jumper_RoundNeck-->
+				<itemGUID>7a5f7b89-9de9-4c05-afb6-e62dca97b8a2</itemGUID>
 			</subItems>
 		</m_items>
 	</m_MaleOutfits>

@@ -1,7 +1,6 @@
 require 'recipecode'
 
 MoreBrews = MoreBrews or {}
--- Wine Kit Unpack 
 
 MoreBrews.wineOptions = {
     WineBase = {"RedWineBase", "WhiteWineBase"},
@@ -54,6 +53,7 @@ function MoreBrews.WineSupplies(items, result, player)
     end
     player:getInventory():AddItem("Sugar")
     player:getInventory():AddItem("Yeast")
+    player:getInventory():AddItem("MoreBrews.WineMakingInstructions")
 end
 
 function Recipe.GetItemTypes.EmptyWineBox(scriptItems)
@@ -139,26 +139,44 @@ function Recipe.OnGiveXP.WineMaking50(recipe, ingredients, result, player)
     player:getXp():AddXP(Perks.WineMaking, 50);
 end
 
+function Recipe.OnCreate.WineAge(items, result, player)
+    result:setAge(items:get(0):getAge());
+end
+
 -- drinking crafted wine with Vintner trait reduces boredom
 function OnEat_Wine(food, character, percent)
-    local script = food:getScriptItem();
-    local bodyDamage = character:getBodyDamage();
-    local stats = character:getStats();
-    if character:HasTrait("Vintner") then
-        bodyDamage:setBoredomLevel(bodyDamage:getBoredomLevel() - (10 * percent));
-        if bodyDamage:getBoredomLevel() > 100 then
-            bodyDamage:setBoredomLevel(100);
+    local script = food:getScriptItem()
+    local bodyDamage = character:getBodyDamage()
+    local stats = character:getStats()
+
+    if getActivatedMods():contains("SimpleOverhaulTraitsAndOccupations") then
+        if character:HasTrait("SOAlcoholic") then
+            if character:getModData().SOtenminutesSinceLastDrink then
+                character:getModData().SOtenminutesSinceLastDrink = character:getModData().SOtenminutesSinceLastDrink + 1
+            else
+                character:getModData().SOtenminutesSinceLastDrink = 0;
+            end
+        end
+        if not character:HasTrait("SOAlcoholic") then
+            if character:getModData().SOtenminutesToObtainAlcoholic then
+                character:getModData().SOtenminutesToObtainAlcoholic = character:getModData().SOtenminutesToObtainAlcoholic - 1
+            else
+                character:getModData().SOtenminutesToObtainAlcoholic = 0;
+            end
         end
     end
-    if getActivatedMods():contains("jiggasGreenfireMod") then
-            OnDrink_Wine(food, character, percent) --launching the function of drinking beer - GreenFire mod
-        return
+
+    if getActivatedMods():contains("jiggasGreenfireMod") and not getActivatedMods():contains("DynamicTraits") then
+        -- Execute OnDrink_Wine from GreenFire mod
+        OnDrink_Wine(food, character, percent);
+    elseif getActivatedMods():contains("DynamicTraits") then
+        -- Execute OnEat_Alcohol from Dynamic Traits Mod
+        OnEat_Alcohol(food, character);
     end
-    if getActivatedMods():contains("DynamicTraits") then
-        function OnEat_Alcohol(food, player) --launching the function of OnEat_Alcohol to function with overdoes mechanic - Dynamic Traits Mod
-        return
+
+    if character:HasTrait("Vintner") and bodyDamage:getBoredomLevel() > 15 then
+        bodyDamage:setBoredomLevel(bodyDamage:getBoredomLevel() - 10)
     end
-end
 end
 
 local sVars = SandboxVars.MoreBrewsWineMeUp;
@@ -202,3 +220,5 @@ function MoreBrews.onWineMakingPerkCorks(items, character, player)
         player:getInventory():AddItems("Base.Cork", (1 + sVars.WineMakingBonus))
     end
 end
+
+

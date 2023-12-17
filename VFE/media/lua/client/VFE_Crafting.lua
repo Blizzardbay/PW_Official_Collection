@@ -19,6 +19,15 @@ function onMagazineSeperate_OnCreate(items, result, player, firstHand, secondHan
 	player:getInventory():AddItem(result:getType())
 end
 
+-- Helper method --
+local function tryAttachPart(weapon, part, player)
+	if part:getMountOn():contains(weapon:getFullType()) then
+		weapon:attachWeaponPart(part)
+	elseif player then
+		player:getInventory():AddItem(part)
+	end
+end
+
 -- Sawn-off recipe callback, copies modData to the new sawn-off.
 function VFEShotgunSawnoff_OnCreate(items, result, player)
 	for i=0,items:size()-1 do
@@ -40,15 +49,8 @@ function VFEShotgunSawnoff_OnCreate(items, result, player)
 		else
 			player:getInventory():AddItem("UnusableMetal")
 		end
+		VFESetWeaponModel(result,false) -- Sets the model corretly incase of attachments that change weapon model
 		return
     end
 end
 
--- Helper method --
-local function tryAttachPart(weapon, part, player)
-	if part:getMountOn():contains(weapon:getFullType()) then
-		weapon:attachWeaponPart(part)
-	elseif player then
-		player:getInventory():AddItem(part)
-	end
-end

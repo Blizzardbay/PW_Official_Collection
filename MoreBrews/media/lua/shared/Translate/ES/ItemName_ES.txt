@@ -126,4 +126,5 @@ ItemName_ES =
 	ItemName_MoreBrews.BookBrewing3 = "Fabricación de cervezas Vol. 3",
 	ItemName_MoreBrews.BookBrewing4 = "Fabricación de cervezas Vol. 4",
 	ItemName_MoreBrews.BookBrewing5 = "Fabricación de cervezas Vol. 5",
+	ItemName_MoreBrews.BrewingInstructions = "Instrucciones de preparación",
 }

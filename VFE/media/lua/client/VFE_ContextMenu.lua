@@ -16,9 +16,11 @@ VFEContext.inventoryMenu = function(playerid, context, items)
 		end
 		local isInInventory = item:getContainer() == player:getInventory()
 		-- Bayonet weapons
-		if item:getFullType() == "Base.SKSSpiker" or item:getFullType() == "Base.SKSSpikerBayonet" or item:getFullType() == "Base.AssaultRifle" or item:getFullType() == "Base.AssaultRifleBayonet" then
-			local isInInventory = item:getContainer() == player:getInventory()
-			VFEContext:Bayonet(item, player, context, isInInventory)
+		for index, preset in ipairs(VFEBayonetSet) do
+			if index % 3 > 0 and preset == item:getFullType() then
+				local isInInventory = item:getContainer() == player:getInventory()
+				VFEContext:Bayonet(item, index, player, context, isInInventory)
+			end
 		end
 		-- Folding weapon stock and upgrade actions
 		for index, preset in ipairs(VFEFoldingWeaponPair) do
@@ -45,6 +47,7 @@ VFEContext.inventoryMenu = function(playerid, context, items)
 		end
 		if not blacklisted then
 			VFEContext:UpgradeSling(item, index, indexMod, player, context)	
+			VFEContext:UpgradeSling2(item, index, indexMod, player, context)	
 		end
 		
 		blacklisted = false
@@ -184,19 +187,51 @@ function VFEContext:UpgradeSling(item, index, indexMod, player, context)
 	end
 end
 
-function VFEContext:Bayonet(item, player, context, enabled)
-	local bayonetFound
-	local bayonet = nil
-	if item:getFullType() == "Base.AssaultRifle" then
-		local playerItems = player:getInventory():getItems()
-		for i=1,playerItems:size() do
-			bayonet = playerItems:get(i-1)
-			if bayonet:getFullType() == "Base.M16Bayonet" and not bayonet:isBroken() then
-				bayonetFound = true
-				break
+function VFEContext:UpgradeSling2(item, index, indexMod, player, context)
+	local hasScrewdriver = player:getInventory():containsTagEvalRecurse("Screwdriver", predicateNotBroken)
+	if item and instanceof(item, "HandWeapon") and item:isRanged() and hasScrewdriver then
+		-- add parts
+		local weaponParts = player:getInventory():getItemsFromCategory("WeaponPart");
+		if weaponParts and not weaponParts:isEmpty() then
+			for i=0, weaponParts:size() - 1 do
+				local part = weaponParts:get(i);
+				if (part:getType() == "Sling2") and not item:getSling() then
+					-- To do: Localization
+					local listEntry = context:addOption(getText("IGUI_ContextMenu_AddSling2"), item, ISInventoryPaneContextMenu.onUpgradeWeapon, part, player);
+					local tooltip = ISInventoryPaneContextMenu.addToolTip();
+					tooltip.description = getText("IGUI_ContextMenu_AddSlingDescription")
+					tooltip:setName(part:getDisplayName())
+					tooltip.texture = part:getTex()
+					listEntry.toolTip = tooltip;
+					break
+				end
 			end
 		end
+	end
+end
+
+function VFEContext:Bayonet(item, index, player, context, enabled)
+	local bayonetFound
+	local bayonet = nil
+	local bayonetScript = nil
+	if index % 3 == 1 then
+		if VFEBayonetSet[index + 2] ~= "NULL" then
+			bayonetScript = getScriptManager():getItem(VFEBayonetSet[index + 2])
+			local playerItems = player:getInventory():getItems()
+			for i=1,playerItems:size() do
+				bayonet = playerItems:get(i-1)
+				if bayonet:getFullType() == VFEBayonetSet[index + 2] and not bayonet:isBroken() then
+					bayonetFound = true
+					break
+				end
+			end
+		else
+			bayonetFound = true
+		end
 	else
+		if VFEBayonetSet[index + 1] ~= "NULL" then
+			bayonetScript = getScriptManager():getItem(VFEBayonetSet[index + 1])
+		end
 		bayonetFound = true
 	end
 
@@ -207,12 +242,16 @@ function VFEContext:Bayonet(item, player, context, enabled)
 		actionString = getText("IGUI_FirearmRadial_UseRifle")
 	end
 	
-	local listEntry = context:addOption(actionString, item, VFEBayonetContext.callAction, player, bayonet)
+	local listEntry = context:addOption(actionString, item, VFEBayonetContext.callAction, index, player, bayonet)
 	
 	local tooltip = ISInventoryPaneContextMenu.addToolTip();
 	tooltip.description = ""
 	tooltip:setName(tostring(actionString))
-	tooltip.texture = item:getTex()
+	if bayonetScript then
+		tooltip.texture = getTexture("media/textures/Item_" .. bayonetScript:getIcon() .. ".png")
+	else
+		tooltip.texture = item:getTex()
+	end
 	
 	if enabled then
 		if bayonetFound then
@@ -223,7 +262,7 @@ function VFEContext:Bayonet(item, player, context, enabled)
 			end
 		else
 			listEntry.notAvailable = true
-			tooltip.description = tooltip.description .. getText("IGUI_ContextMenu_RequiresBayonet", getScriptManager():getItem("Base.M16Bayonet"):getDisplayName())
+			tooltip.description = tooltip.description .. getText("IGUI_ContextMenu_RequiresBayonet", bayonetScript:getDisplayName())
 		end
 	else 
 		listEntry.notAvailable = true

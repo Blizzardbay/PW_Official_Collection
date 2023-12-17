@@ -1,0 +1,21 @@
+Sandbox_IT = {
+    Sandbox_WhisperingZombies = "Whispering Zombies",
+
+    Sandbox_WhisperingZombies_ZombiesReactToPhrases = "Gli Zombie reagiscono alle frasi",
+    Sandbox_WhisperingZombies_ZombiesReactToPhrases_tooltip = "Gli zombie reagiscono alle frasi reciprocamente",
+
+    Sandbox_WhisperingZombies_MinimumDelayBetweenSpecificPhrasesTimeInSeconds = "Minimo ritardo in secondi tra le frasi specifiche",
+    Sandbox_WhisperingZombies_MinimumDelayBetweenSpecificPhrasesTimeInSeconds_tooltip = "Frasi specifiche durante gli attacchi degli zombie e mentre divorano i giocatori. Raccomandato meno del ritardo delle frasi di stato",
+
+    Sandbox_WhisperingZombies_MaximumDelayBetweenSpecificPhrasesTimeInSeconds = "Massimo ritardo in secondi tra le frasi specifiche",
+    Sandbox_WhisperingZombies_MaximumDelayBetweenSpecificPhrasesTimeInSeconds_tooltip = "Frasi specifiche durante gli attacchi degli zombie e mentre divorano i giocatori. Raccomandato meno del ritardo delle frasi di stato",
+
+    Sandbox_WhisperingZombies_MinimumDelayBetweenStatePhrasesTimeInSeconds = "Minimo ritardo in secondi tra le frasi di stato",
+    Sandbox_WhisperingZombies_MinimumDelayBetweenStatePhrasesTimeInSeconds_tooltip = "Le frasi di stato sono le frasi degli zombie inattivi, o che stanno sfondando, o che sono in altri specifici stati",
+
+    Sandbox_WhisperingZombies_MaximumDelayBetweenStatePhrasesTimeInSeconds = "Massimo ritardo in secondi tra le frasi di stato",
+    Sandbox_WhisperingZombies_MaximumDelayBetweenStatePhrasesTimeInSeconds_tooltip = "Le frasi di stato sono le frasi degli zombie inattivi, o che stanno sfondando, o che sono in altri specifici stati",
+
+
+    Sandbox_WhisperingZombies_OnHitZombieChance = "Probabilità in percentuale di frasi mentre danneggi uno zombie",
+}

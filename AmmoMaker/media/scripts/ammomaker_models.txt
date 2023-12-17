@@ -7,6 +7,27 @@ module ammomaker {
 		Base
 	}
 
+	model ammomaker_BirdExcrement
+	{
+		mesh = WorldItems/ammomaker_BirdExcrement,
+		texture = WorldItems/ammomaker_BirdExcrement,
+		scale = 0.02,
+	}
+
+	model ammomaker_PotOfBridExcrement
+	{
+		mesh = WorldItems/ammomaker_PotOfBridExcrement,
+		texture = WorldItems/ammomaker_PotOfBridExcrement,
+		scale = 0.4,
+	}
+
+	model ammomaker_Nitre
+	{
+		mesh = WorldItems/ammomaker_Nitre,
+		texture = WorldItems/ammomaker_Nitre,
+		scale = 0.02,
+	}
+
 	model ammomaker_Sulfur
 	{
 		mesh = WorldItems/ammomaker_Sulfur,
@@ -14,10 +35,10 @@ module ammomaker {
 		scale = 0.02,
 	}
 
-	model ammomaker_BirdExcrement
+	model ammomaker_CharcoalPowder
 	{
-		mesh = WorldItems/ammomaker_BirdExcrement,
-		texture = WorldItems/ammomaker_BirdExcrement,
+		mesh = WorldItems/ammomaker_CharcoalPowder,
+		texture = WorldItems/ammomaker_CharcoalPowder,
 		scale = 0.02,
 	}
 

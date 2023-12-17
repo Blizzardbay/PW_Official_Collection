@@ -1,0 +1,108 @@
+module Base
+{
+
+    model Grimoire
+	{
+		mesh = Book,
+        texture = Grimoire,
+	}
+
+    model grimoireclosed
+	{
+		mesh = grimoireclosed,
+        texture = Grimoire,
+	}
+
+    model GrimoireUse
+	{
+		mesh = Book,
+        texture = GrimoireUse,
+	}
+	
+    model WitchyStaff
+    {
+        mesh = weapons/2handed/WitchyStaff,
+    }	
+
+    model EWitchyStaff
+    {
+        mesh = weapons/2handed/WitchyStaff,
+        texture = Weapons/2handed/ethereal,
+    }	
+
+    model ETKSword
+    {
+        mesh = weapons/2handed/TKSword,
+        texture = Weapons/2handed/ethereal,
+    }	
+
+    model ERogueSword
+    {
+        mesh = weapons/2handed/RogueSword,
+        texture = Weapons/2handed/ethereal,
+    }	
+
+    model EClericMace
+    {
+        mesh = weapons/2handed/ClericMace,
+        texture = Weapons/2handed/ethereal,
+    }	
+
+    model Tanto
+    {
+        mesh = weapons/1handed/Tanto,
+    }	
+
+        model Tanto3
+    {
+        mesh = weapons/1handed/Tanto3,
+        texture = weapons/1handed/Tanto,
+    }	
+
+    model mp5GL
+    {
+        mesh = weapons/firearm/mp5GL,
+
+        		attachment muzzle
+		{
+			offset = 0.002 0.04 0.265437,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }	
+
+    model mp5GL2
+    {
+        mesh = weapons/firearm/mp5GL,
+
+        texture = Weapons/firearm/mp5GL,
+
+        		attachment muzzle
+		{
+			offset = 0.000858 0.010275 0.350416,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }	
+
+    model vulcan
+    {
+        mesh = weapons/firearm/vulcan,
+
+        		attachment muzzle
+		{
+			offset = -0.002 -0.067 0.615896,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }	
+
+    model AutoCannon
+    {
+        mesh = weapons/firearm/AutoCannon,
+
+        		attachment muzzle
+		{
+			offset = -0.002649 -0.07237 0.617774,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }	
+    
+}

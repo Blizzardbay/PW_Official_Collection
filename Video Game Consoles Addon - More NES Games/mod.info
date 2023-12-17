@@ -1,0 +1,5 @@
+name=Video Game Consoles Addon - More NES Games
+id=VGC_Addon_NESGames
+description=Adds 55 more NES games to the VGC mod.
+poster=poster_VGC_Addon_NESGames.png
+require=Video_Game_Consoles

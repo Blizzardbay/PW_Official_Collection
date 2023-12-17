@@ -339,4 +339,17 @@ module CAR {
 		WorldStaticModel            = WelchBox,
 		Tags                        = HasMetal,
 	}
+
+	item BigRedBox
+	{
+		DisplayName                 = 12 Pack of Big Red,
+		DisplayCategory             = Food,
+		Type                        = Normal,
+		Weight                      = 3,
+		Icon                        = BigRedBox,
+		CantBeFrozen                = TRUE,
+		Packaged                    = TRUE,
+		WorldStaticModel            = BigRedBox,
+		Tags                        = HasMetal,
+	}
 }

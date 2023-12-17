@@ -108,4 +108,8 @@ function VFESurvivorAmmo(zombie)
 	end
 end
 
-Events.OnZombieDead.Add(VFESurvivorAmmo)
+function VFESurvivorAmmoSandboxLoader()
+	if SandboxVars.VFE.SurvivorWeapons then Events.OnZombieDead.Add(VFESurvivorAmmo) end
+end
+
+Events.OnGameStart.Add(VFESurvivorAmmoSandboxLoader);

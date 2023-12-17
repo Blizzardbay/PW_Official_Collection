@@ -1,5 +1,4 @@
 Tooltip_RU = {   
-
 	Tooltip_item_MagazineWineMaking1 = "Инструкция по основам виноделия.<br>Узнайте, как делать красные и белые вина.",
 	Tooltip_item_MagazineWineMaking2 = "Знакомство с царством фруктовых вин.<br>Изучите рецепты различных сладких вин.",
 	Tooltip_item_MagazineWineMaking3 = "Рецепты медовухи и крепкого сидра.",
@@ -53,5 +52,7 @@ Tooltip_RU = {
 	Tooltip_item_HoneyMeadBase = "Используйте эти базовые ингредиенты с сахаром и дрожжами для брожения медовухи.",
 	Tooltip_item_HardCiderBase = "Используйте эти базовые ингредиенты с сахаром и дрожжами для брожения крепкого сидра.",
 	Tooltip_item_EmptyWine = "Пустые винные бутылки или пакеты можно использовать для вина или воды.",
-    	Tooltip_BookTitle_WineMaking = "Виноделие",
+    Tooltip_BookTitle_WineMaking = "Виноделие",
+	Tooltip_Recipe_WineMakingSkillBonus = "Получите бонусные суммы в зависимости от навыка виноделия.",
+	Tooltip_item_WineMakingInstructions = "Прочтите эти инструкции, чтобы научиться делать вино.",
 }

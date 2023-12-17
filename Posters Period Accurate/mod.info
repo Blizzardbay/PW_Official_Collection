@@ -1,0 +1,6 @@
+name=Posters - Period Accurate
+poster=poster.png
+id=posters_period_accurate
+description=Adds 120+ posters. 
+tiledef=posters_period_accurate 2601
+pack=posters_period_accurate

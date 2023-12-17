@@ -1,185 +1,232 @@
 MoreBrews = MoreBrews or {};
 
 local sVars = SandboxVars.MoreBrews;
+sVars.TotalAmount = sVars.TotalAmount or 3;
+
+Events.OnGameStart.Add(function()
+    local useDeltaCarboy = 0.05
+    local useDeltaKeg = 0.04
+
+    if sVars.TotalAmount == 1 then
+        useDeltaCarboy = 0.1;
+        useDeltaKeg = 0.06667;
+    elseif sVars.TotalAmount == 2 then
+        useDeltaCarboy = 0.06667;
+        useDeltaKeg = 0.05;
+    elseif sVars.TotalAmount == 4 then
+        useDeltaCarboy = 0.04;
+        useDeltaKeg = 0.03333;
+    elseif sVars.TotalAmount == 5 then
+        useDeltaCarboy = 0.03333;
+        useDeltaKeg = 0.0286;    
+    end
+
+    local changeDeltaKeg = function(food)
+        if sVars.TotalAmount ~= 3 then
+            local item = ScriptManager.instance:getItem(food)
+            if item then
+                item:DoParam("UseDelta = " .. useDeltaKeg)
+            end
+        else
+            return
+        end
+    end
+
+    local kegDelta = {
+        "MoreBrews.KegAmericanLager",
+        "MoreBrews.KegAPA1",
+        "MoreBrews.KegAPA2",
+        "MoreBrews.KegIPA1",
+        "MoreBrews.KegIPA2",
+        "MoreBrews.KegLightLager",
+        "MoreBrews.KegPilsner",
+        "MoreBrews.KegPorter",
+        "MoreBrews.KegStout",
+        "MoreBrews.KegSkunked"
+    }
+
+    for _, food in ipairs(kegDelta) do
+        changeDeltaKeg(food)
+    end
+
+    local changeDeltaCarboy = function(food)
+        if sVars.TotalAmount ~= 3 then
+            local item = ScriptManager.instance:getItem(food)
+            if item then
+                item:DoParam("UseDelta = " .. useDeltaCarboy)
+            end
+        else
+            return
+        end
+    end
+
+    local carboyDelta = {
+        "MoreBrews.CarboyAmericanLagerTapped",
+        "MoreBrews.CarboyAPA1DryHoppedTapped",
+        "MoreBrews.CarboyAPA2DryHoppedTapped",
+        "MoreBrews.CarboyIPA1DryHoppedTapped",
+        "MoreBrews.CarboyIPA2DryHoppedTapped",
+        "MoreBrews.CarboyLightLagerTapped",
+        "MoreBrews.CarboyPilsnerTapped",
+        "MoreBrews.CarboyPorterTapped",
+        "MoreBrews.CarboyStoutTapped",
+        "MoreBrews.CarboySkunkedDarkTapped",
+        "MoreBrews.CarboySkunkedLightTapped"
+    }
+
+    for _, food in ipairs(carboyDelta) do
+        changeDeltaCarboy(food)
+    end
+
+end);
+
+
 sVars.FermentChange = sVars.FermentChange or 10;
 sVars.RottenChange = sVars.RottenChange or 10;
 
 Events.OnGameStart.Add(function()
-    local rotSpeed = 1;
+    local rotSpeed = 1
 
-    if SandboxVars.FoodRotSpeed == 1 then -- very fast
-        rotSpeed = 1.7;
-    elseif SandboxVars.FoodRotSpeed == 2 then -- fast
-        rotSpeed = -1.4;
-    elseif SandboxVars.FoodRotSpeed == 4 then -- slow
-        rotSpeed = 0.7;
-    elseif SandboxVars.FoodRotSpeed == 5 then -- very slow
-        rotSpeed = 0.4;    
+    if SandboxVars.FoodRotSpeed == 1 then
+        rotSpeed = 1.7
+    elseif SandboxVars.FoodRotSpeed == 2 then
+        rotSpeed = 1.4
+    elseif SandboxVars.FoodRotSpeed == 4 then
+        rotSpeed = 0.7
+    elseif SandboxVars.FoodRotSpeed == 5 then
+        rotSpeed = 0.4
     end
-    --this is to keep the fermenting time close to the intended length of days no matter the in game settings selected
+
+    -- Define item names and their corresponding fermenting/rotting values
+    local itemDataFerment = {
+        { name = "CarboyFermentingAmericanLager", ferment = 0.7 * sVars.FermentChange },
+        { name = "CarboyFermentingAPA1", ferment = 0.7 * sVars.FermentChange },
+        { name = "CarboyFermentingAPA1DryHopped", ferment = 0.4 * sVars.FermentChange },
+        { name = "CarboyFermentingAPA2", ferment = 0.7 * sVars.FermentChange },
+        { name = "CarboyFermentingAPA2DryHopped", ferment = 0.4 * sVars.FermentChange },
+        { name = "CarboyFermentingIPA1", ferment = 0.7 * sVars.FermentChange },
+        { name = "CarboyFermentingIPA1DryHopped", ferment = 0.4 * sVars.FermentChange },
+        { name = "CarboyFermentingIPA2", ferment = 0.7 * sVars.FermentChange },
+        { name = "CarboyFermentingIPA2DryHopped", ferment = 0.5 * sVars.FermentChange },
+        { name = "CarboyFermentingLightLager", ferment = 0.5 * sVars.FermentChange },
+        { name = "CarboyFermentingPilsner", ferment = 0.5 * sVars.FermentChange },
+        { name = "CarboyFermentingPorter", ferment = 0.7 * sVars.FermentChange },
+        { name = "CarboyFermentingStout", ferment = 0.7 * sVars.FermentChange },
+    }
+
+    for _, data in ipairs(itemDataFerment) do
+        local item = ScriptManager.instance:getItem("MoreBrews." .. data.name)
+        if item then
+            item:DoParam("DaysTotallyRotten = " .. math.ceil(data.ferment * rotSpeed))
+            item:DoParam("DaysFresh = " .. math.ceil(data.ferment * rotSpeed))
+        end
+    end
+
+    local itemDataRotten = {
+        { name = "CarboyAmericanLager", rotten = 1.8 * sVars.RottenChange },
+        { name = "CarboyAPA1", rotten = 1.8 * sVars.RottenChange },
+        { name = "CarboyAPA1DryHopped", rotten = 2.2 * sVars.RottenChange },
+        { name = "CarboyAPA2", rotten = 1.4 * sVars.RottenChange },
+        { name = "CarboyAPA2DryHopped", rotten = 1.8 * sVars.RottenChange },
+        { name = "CarboyIPA1", rotten = 1.4 * sVars.RottenChange },
+        { name = "CarboyIPA1DryHopped", rotten = 1.8 * sVars.RottenChange },
+        { name = "CarboyIPA2", rotten = 1.8 * sVars.RottenChange },
+        { name = "CarboyIPA2DryHopped", rotten = 2.2 * sVars.RottenChange },
+        { name = "CarboyLightLager", rotten = 1.4 * sVars.RottenChange },
+        { name = "CarboyPilsner",  rotten = 1.4 * sVars.RottenChange },
+        { name = "CarboyPorter", rotten = 1.8 * sVars.RottenChange },
+        { name = "CarboyStout", rotten = 1.8 * sVars.RottenChange }
+    }
+
+    for _, data in ipairs(itemDataRotten) do
+        local item = ScriptManager.instance:getItem("MoreBrews." .. data.name)
+        if item then
+            item:DoParam("DaysTotallyRotten = " .. math.ceil(data.rotten * rotSpeed))
+            item:DoParam("DaysFresh = " .. math.ceil(data.rotten * rotSpeed))
+        end
+    end
+end);
+
+sVars.CalorieChange = sVars.CalorieChange or 10;
+sVars.Expired = sVars.Expired or false;
+sVars.ExpireChange = sVars.ExpireChange or 10;
+
+Events.OnGameStart.Add(function()
+
+    local setCalories = function(food, cals)
+        local item = ScriptManager.instance:getItem(food)
+        local calMulti = (sVars.CalorieChange or 10) * 0.1;
+        if item then
+            item:DoParam("Calories = " .. math.ceil(cals * calMulti))
+        end
+    end
+
+    local foodItems = {
+        { food = "MoreBrews.BeerBottleAmericanLager", calories = 145 },
+        { food = "MoreBrews.BeerBottleAPA1", calories = 185 },
+        { food = "MoreBrews.BeerBottleAPA2", calories = 170 },
+        { food = "MoreBrews.BeerBottleIPA1", calories = 220 },
+        { food = "MoreBrews.BeerBottleIPA2", calories = 240 },
+        { food = "MoreBrews.BeerBottleLightLager", calories = 145 },
+        { food = "MoreBrews.BeerBottlePilsner", calories = 165 },
+        { food = "MoreBrews.BeerBottlePorter", calories = 155 },
+        { food = "MoreBrews.BeerBottleStout", calories = 200 },
+        { food = "MoreBrews.BeerBottleSkunked", calories = 150 },
+        { food = "MoreBrews.BeerCanAmericanLager", calories = 145 },
+        { food = "MoreBrews.BeerCanAPA1", calories = 185 },
+        { food = "MoreBrews.BeerCanAPA2", calories = 170 },
+        { food = "MoreBrews.BeerCanIPA1", calories = 220 },
+        { food = "MoreBrews.BeerCanIPA2", calories = 240 },
+        { food = "MoreBrews.BeerCanLightLager", calories = 145 },
+        { food = "MoreBrews.BeerCanPilsner", calories = 165 },
+        { food = "MoreBrews.BeerCanPorter", calories = 155 },
+        { food = "MoreBrews.BeerCanStout", calories = 200 },
+        { food = "MoreBrews.BeerCanSkunked", calories = 150 },
+    }
+
+    for _, itemInfo in ipairs(foodItems) do
+        setCalories(itemInfo.food, itemInfo.calories)
+    end
+
+    if sVars.Expired then
+        local makeExpire = function(food)
+            local item = ScriptManager.instance:getItem(food)
+            local expireChange = sVars.ExpireChange or 10
+            print("sVars.ExpireChange: " .. tostring(sVars.ExpireChange))
+            print("expireChange: " .. expireChange)
+            local rottenChange = math.ceil((28 * expireChange) * 0.1)
+            local freshChange = math.ceil((14 * expireChange) * 0.1)
+            if item then
+                item:DoParam("DaysTotallyRotten = " .. rottenChange)
+                item:DoParam("DaysFresh = " .. freshChange)
+            end
+        end
     
-    local fermentFour = math.ceil((0.4 * sVars.FermentChange) * rotSpeed);
-    local fermentFive = math.ceil((0.5 * sVars.FermentChange) * rotSpeed);
-    local fermentSeven = math.ceil((0.7 * sVars.FermentChange) * rotSpeed);
-
-    local rottenFourteen = math.ceil((1.4 * sVars.RottenChange) * rotSpeed);
-    local rottenEighteen = math.ceil((1.8 * sVars.RottenChange) * rotSpeed);
-    local rottenTwentyTwo = math.ceil((2.2 * sVars.RottenChange) * rotSpeed);
-
-    local item1 = ScriptManager.instance:getItem("MoreBrews.CarboyFermentingAmericanLager")
-    local item2 = ScriptManager.instance:getItem("MoreBrews.CarboyFermentingAPA1")
-    local item3 = ScriptManager.instance:getItem("MoreBrews.CarboyFermentingAPA1DryHopped")
-    local item4 = ScriptManager.instance:getItem("MoreBrews.CarboyFermentingAPA2")
-    local item5 = ScriptManager.instance:getItem("MoreBrews.CarboyFermentingAPA2DryHopped")
-    local item6 = ScriptManager.instance:getItem("MoreBrews.CarboyFermentingIPA1")
-    local item7 = ScriptManager.instance:getItem("MoreBrews.CarboyFermentingIPA1DryHopped")
-    local item8 = ScriptManager.instance:getItem("MoreBrews.CarboyFermentingIPA2")
-    local item9 = ScriptManager.instance:getItem("MoreBrews.CarboyFermentingIPA2DryHopped")
-    local item10 = ScriptManager.instance:getItem("MoreBrews.CarboyFermentingLightLager")
-    local item11 = ScriptManager.instance:getItem("MoreBrews.CarboyFermentingPilsner")
-    local item12 = ScriptManager.instance:getItem("MoreBrews.CarboyFermentingPorter")
-    local item13 = ScriptManager.instance:getItem("MoreBrews.CarboyFermentingStout")
-    local item14 = ScriptManager.instance:getItem("MoreBrews.CarboyAmericanLager")
-    local item15 = ScriptManager.instance:getItem("MoreBrews.CarboyAPA1")
-    local item16 = ScriptManager.instance:getItem("MoreBrews.CarboyAPA1DryHopped")
-    local item17 = ScriptManager.instance:getItem("MoreBrews.CarboyAPA2")
-    local item18 = ScriptManager.instance:getItem("MoreBrews.CarboyAPA2DryHopped")
-    local item19 = ScriptManager.instance:getItem("MoreBrews.CarboyIPA1")
-    local item20 = ScriptManager.instance:getItem("MoreBrews.CarboyIPA1DryHopped")
-    local item21 = ScriptManager.instance:getItem("MoreBrews.CarboyIPA2")
-    local item22 = ScriptManager.instance:getItem("MoreBrews.CarboyIPA2DryHopped")
-    local item23 = ScriptManager.instance:getItem("MoreBrews.CarboyLightLager")
-    local item24 = ScriptManager.instance:getItem("MoreBrews.CarboyPilsner")
-    local item25 = ScriptManager.instance:getItem("MoreBrews.CarboyPorter")
-    local item26 = ScriptManager.instance:getItem("MoreBrews.CarboyStout")
-
-    if item1 then 
-        item1:DoParam("DaysTotallyRotten = "  .. fermentSeven)
-        item1:DoParam("DaysFresh = "  .. fermentSeven)
-    end
-
-    if item2 then
-        item2:DoParam("DaysTotallyRotten = "  .. fermentSeven)
-        item2:DoParam("DaysFresh = " .. fermentSeven)
-    end
-
-    if item3 then
-        item3:DoParam("DaysTotallyRotten = " .. fermentFour)
-        item3:DoParam("DaysFresh = " .. fermentFour)
-    end
-
-    if item4 then
-        item4:DoParam("DaysTotallyRotten = " .. fermentSeven)
-        item4:DoParam("DaysFresh = " .. fermentSeven)
-    end
-
-    if item5 then
-        item5:DoParam("DaysTotallyRotten = " .. fermentFour)
-        item5:DoParam("DaysFresh = " .. fermentFour)
-    end
-
-    if item6 then
-        item6:DoParam("DaysTotallyRotten = " .. fermentSeven)
-        item6:DoParam("DaysFresh = " .. fermentSeven)
-    end
-
-    if item7 then
-        item7:DoParam("DaysTotallyRotten = " .. fermentFour)
-        item7:DoParam("DaysFresh = " .. fermentFour)
-    end
-
-    if item8 then
-        item8:DoParam("DaysTotallyRotten = "  .. fermentSeven)
-        item8:DoParam("DaysFresh = " .. fermentSeven)
-    end
-
-    if item9 then
-        item9:DoParam("DaysTotallyRotten = " .. fermentFive)
-        item9:DoParam("DaysFresh = " .. fermentFive)
-    end
-
-    if item10 then
-        item10:DoParam("DaysTotallyRotten = " .. fermentFive)
-        item10:DoParam("DaysFresh = " .. fermentFive)
-    end
-
-    if item11 then
-        item11:DoParam("DaysTotallyRotten = " .. fermentFive)
-        item11:DoParam("DaysFresh = " .. fermentFive)
-    end
-
-    if item12 then
-        item12:DoParam("DaysTotallyRotten = " .. fermentSeven)
-        item12:DoParam("DaysFresh = " .. fermentSeven)
-    end
-
-    if item13 then
-        item13:DoParam("DaysTotallyRotten = " .. fermentSeven)
-        item13:DoParam("DaysFresh = " .. fermentSeven)
-    end
-
-    if item14 then 
-        item14:DoParam("DaysTotallyRotten = "  .. rottenEighteen)
-        item14:DoParam("DaysFresh = "  .. rottenEighteen)
-    end
-
-    if item15 then
-        item15:DoParam("DaysTotallyRotten = "  .. rottenEighteen)
-        item15:DoParam("DaysFresh = " .. rottenEighteen)
-    end
-
-    if item16 then
-        item16:DoParam("DaysTotallyRotten = " .. rottenTwentyTwo)
-        item16:DoParam("DaysFresh = " .. rottenTwentyTwo)
-    end
-
-    if item17 then
-        item17:DoParam("DaysTotallyRotten = " .. rottenFourteen)
-        item17:DoParam("DaysFresh = " .. rottenFourteen)
-    end
-
-    if item18 then
-        item18:DoParam("DaysTotallyRotten = " .. rottenEighteen)
-        item18:DoParam("DaysFresh = " .. rottenEighteen)
-    end
-
-    if item19 then
-        item19:DoParam("DaysTotallyRotten = " .. rottenFourteen)
-        item19:DoParam("DaysFresh = " .. rottenFourteen)
-    end
-
-    if item20 then
-        item20:DoParam("DaysTotallyRotten = " .. rottenEighteen)
-        item20:DoParam("DaysFresh = " .. rottenEighteen)
-    end
-
-    if item21 then
-        item21:DoParam("DaysTotallyRotten = "  .. rottenEighteen)
-        item21:DoParam("DaysFresh = " .. rottenEighteen)
-    end
-
-    if item22 then
-        item22:DoParam("DaysTotallyRotten = " .. rottenTwentyTwo)
-        item22:DoParam("DaysFresh = " .. rottenTwentyTwo)
-    end
-
-    if item23 then
-        item23:DoParam("DaysTotallyRotten = " .. rottenFourteen)
-        item23:DoParam("DaysFresh = " .. rottenFourteen)
-    end
-
-    if item24 then
-        item24:DoParam("DaysTotallyRotten = " .. rottenFourteen)
-        item24:DoParam("DaysFresh = " .. rottenFourteen)
-    end
-
-    if item25 then
-        item25:DoParam("DaysTotallyRotten = " .. rottenEighteen)
-        item25:DoParam("DaysFresh = " .. rottenEighteen)
-    end
-
-    if item26 then
-        item26:DoParam("DaysTotallyRotten = " .. rottenEighteen)
-        item26:DoParam("DaysFresh = " .. rottenEighteen)
+        local expiredFood = {
+            "MoreBrews.BeerBottleAmericanLager",
+            "MoreBrews.BeerBottleAPA1",
+            "MoreBrews.BeerBottleAPA2",
+            "MoreBrews.BeerBottleIPA1",
+            "MoreBrews.BeerBottleIPA2",
+            "MoreBrews.BeerBottleLightLager",
+            "MoreBrews.BeerBottlePilsner",
+            "MoreBrews.BeerBottlePorter",
+            "MoreBrews.BeerBottleStout",
+            "MoreBrews.BeerBottleSkunked",
+            "MoreBrews.BeerCanAmericanLager",
+            "MoreBrews.BeerCanAPA1",
+            "MoreBrews.BeerCanAPA2",
+            "MoreBrews.BeerCanIPA1",
+            "MoreBrews.BeerCanIPA2",
+            "MoreBrews.BeerCanLightLager",
+            "MoreBrews.BeerCanPilsner",
+            "MoreBrews.BeerCanPorter",
+            "MoreBrews.BeerCanStout",
+            "MoreBrews.BeerCanSkunked",
+        }
+    
+        for _, food in ipairs(expiredFood) do
+            makeExpire(food)
+        end
     end
 end);

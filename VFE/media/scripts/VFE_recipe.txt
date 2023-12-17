@@ -59,6 +59,24 @@ module Base
 	   
 	   Override:true,
 	}
+	
+	recipe Gather Gunpowder
+    {
+       Bullets38/Bullets44/Bullets45/Bullets9mm/556Bullets/308Bullets/223Bullets/ShotgunShells/762Bullets,
+
+       Result:GunPowder,
+       Time:30.0,
+	   
+	   Override:true,
+    }
+	
+	recipe Gather Gunpowder from .22
+    {
+       22Bullets=5,
+
+       Result:GunPowder,
+       Time:30.0,
+    }
 
     recipe Open Box of 7.62 Ammo
     {

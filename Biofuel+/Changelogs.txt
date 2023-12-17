@@ -1,0 +1,13 @@
+Here is the changlog for Biofuel+
+
+Update 1.0
+
+Added 2 traits, Biofuel Expert and Biofuel Master
+Added 3 skill magizines, How to make Biofuel 101, How to make Biofuel 102, How to make Biofuel 103
+Added 27 Recipes for Biofuel
+
+Update 1.0.1
+Changed the mod description
+
+update 1.0.2
+i hate magazines

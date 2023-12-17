@@ -18,7 +18,11 @@ Tooltip_ES =
 	Tooltip_item_FinishedBeer = "Transferir a un barril vacío para poder cargar botellas, latas o servirse.",
 	Tooltip_item_FilledKeg = "Resguardará cerveza por un mes y medio de manera segura.",
 	Tooltip_item_Skunked = "El tiempo no estaba de tu lado, aún puedes tomarlo, pero, ¿Deberías?",
+	Tooltip_item_FinishedBeerTapped		= "Ya está aprovechado para que puedas llenar botellas y latas directamente; no se puede usar para llenar un barril en este momento.",
+	Tooltip_item_SkunkedTapped			= "Dejas que la cerveza se eche a perder, pero aún puedes llenar botellas y latas directamente; no se puede usar para llenar un barril en este momento.",
 	Tooltip_item_Empty = "No me tires a la basura! Guárdame para tus próximas cervezas caseras!",
 	Tooltip_item_Keg = "La mejor manera para almacenar cerveza casera a largo plazo.",	
     Tooltip_BookTitle_Brewing = "Homebrewing - fabricación de cervezas caseras",
+	Tooltip_Recipe_BrewingSkillBonus 	= "Recibirá cantidades de bonificación según la habilidad de elaboración de cerveza.",
+	Tooltip_item_BrewingInstructions 	= "Lea estas instrucciones para aprender a preparar una cerveza.",
 }

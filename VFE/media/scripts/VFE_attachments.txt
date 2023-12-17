@@ -46,7 +46,7 @@ module Base
         WeightModifier = 0.4,
         MaxRangeModifier = 10,
         MinRangeModifier = 8,
-        MountOn = HuntingRifle; SniperRifle; LeverRifle; 1022; VarmintRifle; Mini14; Mini14Unfolded; AssaultRifle2; SKS; AK47; AK47Unfolded; FAL,
+        MountOn = HuntingRifle; SniperRifle; LeverRifle; 1022; VarmintRifle; Mini14; Mini14Unfolded; AssaultRifle2; SKS; SKSSpiker; AK47; AK47Unfolded; FAL,
         PartType = Scope,
         Tooltip = Tooltip_Scope,
         MetalValue = 22,
@@ -62,7 +62,7 @@ module Base
         WeightModifier = 0.4,
         MaxRangeModifier = 10,
         MinRangeModifier = 8,
-        MountOn = HuntingRifle; SniperRifle; LeverRifle; 1022; VarmintRifle; Mini14; Mini14Unfolded; AssaultRifle2; SKS; AK47; AK47Unfolded; FAL,
+        MountOn = HuntingRifle; SniperRifle; LeverRifle; 1022; VarmintRifle; Mini14; Mini14Unfolded; AssaultRifle2; SKS; SKSSpiker; AK47; AK47Unfolded; FAL,
         PartType = Scope,
         Tooltip = Tooltip_Scope,
         MetalValue = 22,
@@ -105,7 +105,7 @@ module Base
     item Sling
     {
         Type = WeaponPart,
-        DisplayName = Sling,
+        DisplayName = Leather Sling,
         Icon = GunSling,
         Weight = 0.5,
         WeightModifier = -1.0,
@@ -113,6 +113,19 @@ module Base
         PartType = Sling,
         Tooltip = Tooltip_Sling,
 		WorldStaticModel = Sling_Ground,
+    }
+	
+	item Sling2
+    {
+        Type = WeaponPart,
+        DisplayName = Nylon Sling,
+        Icon = GunSling2,
+        Weight = 0.5,
+        WeightModifier = -1.0,
+        MountOn = FakeItemSling,
+        PartType = Sling,
+        Tooltip = Tooltip_Sling,
+		WorldStaticModel = Sling2_Ground,
     }
 
     item RecoilPad
@@ -124,7 +137,7 @@ module Base
         WeightModifier = 0.1,
         RecoilDelayModifier = -10.0,
 		AimingTimeModifier = 5,
-        MountOn = SKS; HuntingRifle; VarmintRifle; AssaultRifle2,
+        MountOn = SKS; SKSSpiker; HuntingRifle; VarmintRifle; AssaultRifle2,
         PartType = RecoilPad,
         Tooltip = Tooltip_RecoilPad,
         WorldStaticModel = Rifle_RecoilPad_Ground,
@@ -207,7 +220,23 @@ module Base
         WeightModifier = 0.2,
         HitChanceModifier = 10,
 		AimingTimeModifier = 5,
-        MountOn = Pistol; Pistol2; Pistol3; Glock; Glock18; P229; 1022; LeverRifle; MP5; MP5Unfolded; MP5SD; AssaultRifle; CAR15; CAR15D; AssaultRifle2; SniperRifle; Mini14; Mini14Unfolded; Spas12; FAL,
+        MountOn = Pistol; Pistol2; Pistol3; Glock; Glock18; P229; CZ75; 1022; LeverRifle; MP5; MP5Unfolded; MP5SD; AssaultRifle; CAR15; CAR15D; AssaultRifle2; SniperRifle; Mini14; Mini14Unfolded; Spas12; FAL,
+        PartType = Canon,
+        Tooltip = Tooltip_Laser,
+        MetalValue = 15,
+        WorldStaticModel = Handgun_Laser_Ground,
+    }
+	
+	item LaserOn
+    {
+        Type = WeaponPart,
+        DisplayName = Laser,
+        Icon = HandgunLaser,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        HitChanceModifier = 10,
+		AimingTimeModifier = 5,
+        MountOn = Pistol; Pistol2; Pistol3; Glock; Glock18; P229; CZ75; 1022; LeverRifle; MP5; MP5Unfolded; MP5SD; AssaultRifle; CAR15; CAR15D; AssaultRifle2; SniperRifle; Mini14; Mini14Unfolded; Spas12; FAL,
         PartType = Canon,
         Tooltip = Tooltip_Laser,
         MetalValue = 15,
@@ -286,7 +315,7 @@ module Base
         Weight = 0.4,
         WeightModifier = 0.4,
         ReloadTimeModifier = -5,
-        MountOn = HuntingRifle; VarmintRifle; SniperRifle; LeverRifle; SKS; AssaultRifleM1,
+        MountOn = HuntingRifle; VarmintRifle; SniperRifle; LeverRifle; SKS; SKSSpiker; AssaultRifleM1,
         PartType = RecoilPad,
         Tooltip = Tooltip_AmmoStrap,
         WorldStaticModel = BulletLoops_Ground,

@@ -1,0 +1,303 @@
+module CAR 
+{
+    imports 
+	{
+        Base
+    }
+    item Empty7upCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	Empty7upCan,
+        MetalValue = 10,
+        WorldStaticModel = Empty7upCan,
+    }
+
+    item EmptyAriZonaCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyAriZonaCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyAriZonaCan,
+    }
+
+    item EmptyRootBeerCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyRootBeerCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyRootBeerCan,
+    }
+
+    item EmptyBriskCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyBriskCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyBriskCan,
+    }
+
+    item EmptyCherryCokeCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyCherryCokeCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyCherryCokeCan,
+    }
+
+    item EmptyCokeCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyCokeCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyCokeCan,
+    }
+
+    item EmptyDietCokeCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyDietCokeCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyDietCokeCan,
+    }
+
+    item EmptyDietPepsiCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyDietPepsiCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyDietPepsiCan,
+    }
+
+    item EmptyDrPepperCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyDrPepperCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyDrPepperCan,
+    }
+
+    item EmptyFantaGrapeCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyFantaGrapeCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyFantaGrapeCan,
+    }
+
+    item EmptyFantaOrangeCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyFantaOrangeCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyFantaOrangeCan,
+    }
+
+    item EmptyFantaPineappleCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyFantaPineappleCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyFantaPineappleCan,
+    }
+
+    item EmptyFantaRedCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyFantaRedCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyFantaRedCan,
+    }
+
+    item EmptyFantaStrawberryCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyFantaStrawberryCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyFantaStrawberryCan,
+    }
+
+    item EmptyGatoradeCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyGatoradeCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyGatoradeCan,
+    }
+
+    item EmptyJoltCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyJoltCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyJoltCan,
+    }
+
+    item EmptyMinuteMaidCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyMinuteMaidCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyMinuteMaidCan,
+    }
+
+    item EmptyMountainDewCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyMountainDewCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyMountainDewCan,
+    }
+
+    item EmptyMrPibbCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyMrPibbCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyMrPibbCan,
+    }
+
+    item EmptyPepsiCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyPepsiCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyPepsiCan,
+    }
+
+    item EmptyRCcolaCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyRCcolaCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyRCcolaCan,
+    }
+
+    item EmptyRedBullCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyRedBullCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyRedBullCan,
+    }
+
+    item EmptySpriteCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptySpriteCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptySpriteCan,
+    }
+
+    item EmptyTabCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyTabCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyTabCan,
+    }
+
+    item EmptyDrThunderCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyDrThunderCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyDrThunderCan,
+    }
+
+    item EmptyWelch
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyWelchCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyWelch,
+    }
+
+    item EmptyBigRedCan
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Can,
+        Icon	=	EmptyBigRedCan,
+        MetalValue = 10,
+        WorldStaticModel = EmptyBigRedCan,
+    }
+}

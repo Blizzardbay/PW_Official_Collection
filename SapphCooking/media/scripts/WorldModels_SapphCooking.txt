@@ -34,7 +34,7 @@ module Base
 	model AlcoholGinWater
 	{
 		mesh = Worlditems/AlcoholBottle,
-		texture = Worlditems/GinBottleWater,
+		texture = Worlditems/GinWaterBottle,
 		scale = 0.0045,
 	}
 	model SapphAlcoholVodka
@@ -67,10 +67,10 @@ module Base
 		texture = Worlditems/TequilaBottleEmpty,
 		scale = 0.0045,
 	}
-	model AlcoholCachacaWater
+	model AlcoholTequilaWater
 	{
 		mesh = Worlditems/AlcoholBottle,
-		texture = Worlditems/TequilaBottleWater,
+		texture = Worlditems/TequilaWaterBottle,
 		scale = 0.0045,
 	}
 	model BakedPotato_Ground
@@ -596,7 +596,7 @@ module Base
 		mesh = Worlditems/MRE_Open,
 		texture = Worlditems/MRE_Chilli,
 		scale = 0.0045,
-	}w
+	}
 	model MRE_Tortellini
 	{
 		mesh = Worlditems/MRE_Open,
@@ -1930,6 +1930,174 @@ module Base
 
 
 
+	model WhiteMitten_Ground
+	{
+		mesh = Worlditems/SapphMittens,
+		texture = Worlditems/OvenMitt_White,
+		scale = 0.0045,
+	}
+	model UdderlyMitten_Ground
+	{
+		mesh = Worlditems/SapphMittens,
+		texture = Worlditems/OvenMitt_Udderly,
+		scale = 0.0045,
+	}
 
+	model CanofKernelCorn_Ground
+	{
+		mesh = Worlditems/GenericCan,
+		texture = Worlditems/CannedCornKernels,
+		scale = 0.0045,
+	}
+	model CanofKernelCornOpen_Ground
+	{
+		mesh = Worlditems/GenericCanOpened,
+		texture = Worlditems/CannedCornKernels,
+		scale = 0.0045,
+	}
+	model HotdogBunEvolved_Ground
+	{
+		mesh = Worlditems/HotdogEvolved,
+		texture = Worlditems/HotdogBun,
+		scale = 0.0045,
+	}
+	model IceCubes_Ground
+	{
+		mesh = Worlditems/IceCubes,
+		texture = Worlditems/IceCubes,
+		scale = 0.0045,
+	}
+	model IceTray_Ground
+	{
+		mesh = Worlditems/IceCubes_Tray,
+		texture = Worlditems/DarkBlue,
+		scale = 0.0045,
+	}
+	model IceTrayWater_Ground
+	{
+		mesh = Worlditems/IceCubes_TrayWater,
+		texture = Worlditems/DarkBlueWater,
+		scale = 0.0045,
+	}
+	model Syrup_Chocolate_Ground
+	{
+		mesh = Worlditems/SyrupBottle,
+		texture = Worlditems/Syrup_Chocolate,
+		scale = 0.0045,
+	}
+	model Syrup_Strawberry_Ground
+	{
+		mesh = Worlditems/SyrupBottle,
+		texture = Worlditems/Syrup_Strawberry,
+		scale = 0.0045,
+	}
+	model Syrup_Caramel_Ground
+	{
+		mesh = Worlditems/SyrupBottle,
+		texture = Worlditems/Syrup_Caramel,
+		scale = 0.0045,
+	}
+	model BowlShavedIce_Ground
+	{
+		mesh = Worlditems/BowlFood,
+		texture = Worlditems/BowlShavedIce,
+		scale = 0.0045,
+	}
+	model ScotchEgg_Ground
+	{
+		mesh = Worlditems/ScotchEgg,
+		texture = Worlditems/ScotchEgg,
+		scale = 0.0045,
+	}
+	model BowlArrozLeche_Ground
+	{
+		mesh = Worlditems/BowlDip,
+		texture = Worlditems/BowlArrozLeche,
+		scale = 0.0045,
+	}
+	model SaucepanArrozLeche_Ground
+	{
+		mesh = Worlditems/SaucepanOil,
+		texture = Worlditems/SaucePanArrozLeche,
+		scale = 0.0045,
+	}
+	model SausageCasing_Ground
+	{
+		mesh = Worlditems/SausageCasing,
+		texture = Worlditems/SausageCasing,
+		scale = 0.0045,
+	}
+	model MincedMeatChicken_Ground
+	{
+		mesh = Worlditems/MincedMeatVan,
+		texture = Worlditems/MincedMeatChicken,
+		scale = 0.0045,
+	}
+	model SausageMag_Ground
+	{
+		mesh = Worlditems/Magazine_Ground,
+		texture = Worlditems/MagazineSausage,
+		scale = 0.0045,
+	}
+	model Toothpick_Ground
+	{
+		mesh = Worlditems/Toothpick,
+		texture = Clothes/Toothpick,
+		scale = 0.0045,
+	}
+	model ToothpickBox_Ground
+	{
+		mesh = Worlditems/ToothpickBox,
+		texture = Worlditems/BoxofToothpicks,
+		scale = 0.0045,
+	}
+	model CevicheBowl_Ground
+	{
+		mesh = Worlditems/BowlCeviche,
+		texture = Worlditems/BowlCeviche,
+		scale = 0.0045,
+	}
+	model ButterChurn_Ground
+	{
+		mesh = Worlditems/ButterChurn_Ground,
+		texture = Worlditems/GenericWoodLight,
+		scale = 0.0045,
+	}
+	model LowBallEvolved_Ground
+	{
+		mesh = Worlditems/LowBallDrink,
+		texture = Worlditems/LowBallEvolved,
+		scale = 0.0045,
+	}
+	model CocktailEvolved_Ground
+	{
+		mesh = Worlditems/CocktailGlassDrink,
+		texture = Worlditems/LowBallEvolved,
+		scale = 0.0045,
+	}
+	model InstantNoodles_Beef_Ground
+	{
+		mesh = Worlditems/InstantNoodlesPackage_Ground,
+		texture = Worlditems/InstantNoodles_Beef,
+		scale = 0.0045,
+	}
+	model InstantNoodles_Chicken_Ground
+	{
+		mesh = Worlditems/InstantNoodlesPackage_Ground,
+		texture = Worlditems/InstantNoodles_Chicken,
+		scale = 0.0045,
+	}
+	model Noodles_Sachet_Ground
+	{
+		mesh = Worlditems/Sachet2,
+		texture = Worlditems/SachetNoodles,
+		scale = 0.0045,
+	}
+	model Mochi_Ground
+	{
+		mesh = Worlditems/Snack_Mochi,
+		texture = Worlditems/WontonWrapper,
+		scale = 0.0045,
+	}
 
 }

@@ -5,8 +5,8 @@ local StoveSmoking = {}
 local function LightCigOnStove(_player, context, worldObjects, _test)
     if _test then return true end
 
-	local player = getSpecificPlayer(_player);
-	local smokables = CheckInventoryForCigarette(player)
+	local player = getSpecificPlayer(_player);	
+	local smokables = IDNALCheckInventoryForCigarette(player)
 	ContextDrawing(player, context, whatIsUnderTheMouse(worldObjects, player), smokables)
 end
 
@@ -26,7 +26,7 @@ function ContextDrawing(player, context, stove, smokables)
 		--return	
 
 	--If we have only one smokable type in the array 
-	elseif getTableSize(smokables) == 1 then
+	elseif IDNALgetTableSize(smokables) == 1 then
 		option = context:addOptionOnTop(getText('ContextMenu_Smoke') .."  ".. smokables[0]:getDisplayName(), player, OnStoveSmoking, stove, smokables[0])
 	return
 	end
@@ -34,7 +34,7 @@ function ContextDrawing(player, context, stove, smokables)
 	--We have more than on type, we need to draw a sub-menu
 	local smokeOption = context:addOptionOnTop(getText('ContextMenu_Smoke'), stove, nil);		
 	local subMenu = ISContextMenu:getNew(context)
-	for i=0,getTableSize(smokables) -1 do	
+	for i=0,IDNALgetTableSize(smokables) -1 do	
 
 		option = subMenu:addOptionOnTop(smokables[i]:getDisplayName(), player, OnStoveSmoking, stove, smokables[i])
 		context:addSubMenu(smokeOption, subMenu);		
@@ -87,9 +87,21 @@ function OnStoveSmoking(_player, stove, _cigarette)
 			ISTimedActionQueue.add(ISInventoryTransferAction:new (_player,  _cigarette, _cigarette:getContainer(), _player:getInventory(), 5))
 		end
 	end
-	 
-	--Let's light what we've found
-	local time
+
+	--Are we wearing a mask that should be preventing us from smoking ?
+	local wornItems = _player:getWornItems();
+	local itemToRemove = 0;
+	for i=0,wornItems:size() -1 do
+		local itemLocation = wornItems:get(i):getLocation()
+		if(itemLocation == "MaskEyes"  or itemLocation == "FullHat" or itemLocation == "Mask") then 			
+			itemToRemove = wornItems:get(i):getItem()
+			ISTimedActionQueue.add(ISUnequipAction:new(_player,itemToRemove,50))
+			break;
+		end				
+	end	
+		
+
+	--Let's light what we've found	
 	if luautils.walkAdj(_player, stove:getSquare(), true) then 
 		if instanceof(stove, 'IsoStove') and not stove:isMicrowave() then ISTimedActionQueue.add(IsStoveLighting:new (_player, stove, _cigarette, 100))
 		elseif instanceof(stove, 'IsoStove') and stove:isMicrowave() then ISTimedActionQueue.add(IsStoveLighting:new (_player, stove, _cigarette, 3000)) 
@@ -109,5 +121,10 @@ function OnStoveSmoking(_player, stove, _cigarette)
 	--Now it's lit, let's smoke it
 	if luautils.walkAdj(_player, stove:getSquare(), true) then 	
 		ISTimedActionQueue.add(IsStoveSmoking:new(_player, stove, _cigarette, 460))
+	end
+
+	--We should put back our mask if we had one
+	if(itemToRemove ~= 0) then
+		ISTimedActionQueue.add(ISWearClothing:new(_player,itemToRemove,50))
 	end
 end

@@ -5,8 +5,8 @@ ItemName_RU = {
 	ItemName_Base.AK47Folded = "Штурмовая винтовка AK47",
 	
 	ItemName_Base.SKS = "Винтовка SKS",
-	ItemName_Base.SKSSpiker = "Винтовка SKS",
-	ItemName_Base.SKSSpikerBayonet = "Винтовка SKS",
+	ItemName_Base.SKSSpiker = "Винтовка SKS-45",
+	ItemName_Base.SKSSpikerBayonet = "Винтовка SKS-45",
 	
 	ItemName_Base.Mini14 = "Винтовка Mini-14",	
 	ItemName_Base.Mini14Unfolded = "Винтовка Mini-14",
@@ -25,6 +25,7 @@ ItemName_RU = {
 	
 	ItemName_Base.Shotgun = "Дробовик M500",
 	ItemName_Base.Shotgun2 = "Дробовик M590",
+	ItemName_Base.Shotgun2Bayonet = "Дробовик M590",
 	ItemName_Base.ShotgunSemi = "Дробовик R1187",
 	ItemName_Base.ShotgunSemi2 = "Дробовик R1187",
 	ItemName_Base.ShotgunSilent = "Подбрасывание монеты",
@@ -44,6 +45,8 @@ ItemName_RU = {
 	ItemName_Base.Glock = "Пистолет G17",
 	ItemName_Base.Glock18 = "Пистолет G18",
 	ItemName_Base.P229 = "Пистолет P229",
+	ItemName_Base.CZ75 = "Пистолет CZ 75",
+	ItemName_Base.MK23SOCOM = "Пистолет MK23",
 	
 	ItemName_Base.MP5 = "Пистолет-пулемет MP5",
 	ItemName_Base.MP5SD = "Пистолет-пулемет MP5SD",
@@ -63,7 +66,8 @@ ItemName_RU = {
 	ItemName_Base.FAL = "Боевая винтовка FAL",
 	ItemName_Base.FALClassic = "Боевая винтовка FAL",
 	
-	ItemName_Base.AssaultRiflM1 = "Винтовка M1",
+	ItemName_Base.AssaultRifle2 = "Боевая винтовка M14",
+	ItemName_Base.AssaultRifleM1 = "Винтовка M1",
 	
 	/*Ammo*/	
 	ItemName_Base.762Box = "Коробка патронов 7.62",
@@ -79,6 +83,7 @@ ItemName_RU = {
 	ItemName_Base.9mmClip20 = "Магазин от TEC9",
 	ItemName_Base.9mmClip30 = "Магазин от MP5",
 	ItemName_Base.45Clip32 = "Магазин от M10",
+	ItemName_Base.45Clip12 = "Магазин от MK23",
 	
 	ItemName_Base.22ClipRifle = "Магазин от R1022",
 	
@@ -89,6 +94,7 @@ ItemName_RU = {
 	ItemName_Base.556Clip = "Магазин от M16",
 	ItemName_Base.M14Clip = "Магазин от M14",
 	ItemName_Base.FALClip = "Магазин от FAL",
+	ItemName_Base.9mmClip16 = "Магазин от CZ 75",
 	ItemName_Base.9mmClip17 = "Магазин от G17",
 	
 	/*Attachments*/
@@ -100,6 +106,8 @@ ItemName_RU = {
 	ItemName_Base.x2Scope_Fake = "Прицел x2",
     ItemName_Base.x4Scope_Fake = "Прицел x4",
     ItemName_Base.x8Scope_Fake = "Прицел x8",
+	ItemName_Base.Sling = "Кожаный ремень для винтовки",
+	ItemName_Base.Sling2 = "Нейлоновый ремень для винтовки",
 	
 	/*Items*/
 	ItemName_Base.CleaningKit = "Набор для чистки оружия",

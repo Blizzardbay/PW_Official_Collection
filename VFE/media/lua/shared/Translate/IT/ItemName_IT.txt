@@ -5,8 +5,8 @@ ItemName_IT = {
 	ItemName_Base.AK47Folded = "Fucile d'assalto AK47",
 	
 	ItemName_Base.SKS = "Fucile SKS",
-	ItemName_Base.SKSSpiker = "Fucile SKS",
-	ItemName_Base.SKSSpikerBayonet = "Fucile SKS",
+	ItemName_Base.SKSSpiker = "Fucile SKS-45",
+	ItemName_Base.SKSSpikerBayonet = "Fucile SKS-45",
 	
 	ItemName_Base.Mini14 = "Fucile Mini-14",	
 	ItemName_Base.Mini14Unfolded = "Fucile Mini-14",
@@ -25,12 +25,14 @@ ItemName_IT = {
 	
 	ItemName_Base.Shotgun = "Fucile a pompa M500",
 	ItemName_Base.Shotgun2 = "Fucile a pompa M590",
+	ItemName_Base.Shotgun2Bayonet = "Fucile a pompa M590",
 	ItemName_Base.ShotgunSemi = "Fucile a pompa R1187",
 	ItemName_Base.ShotgunSemi2 = "Fucile a pompa R1187",
 	ItemName_Base.ShotgunSilent = "Lancio della moneta",
 	
 	ItemName_Base.ShotgunSawnoff = "Fucile a canne mozze M500",
 	ItemName_Base.ShotgunSawnoffNoStock = "Fucile a canne mozze M500",
+	
 	
     ItemName_Base.DoubleBarrelShotgunSawnoff = "Fucile a doppia canna a canne mozze",
 	ItemName_Base.DoubleBarrelShotgunSawnoffNoStock = "Fucile a doppia canna a canne mozze",
@@ -43,6 +45,8 @@ ItemName_IT = {
 	ItemName_Base.Glock = "Pistola G17",
 	ItemName_Base.Glock18 = "Pistola G18",
 	ItemName_Base.P229 = "Pistola P229",
+	ItemName_Base.CZ75 = "Pistola CZ 75",
+	ItemName_Base.MK23SOCOM = "Pistola MK23",
 	
 	ItemName_Base.MP5 = "Mitraglietta MP5",
 	ItemName_Base.MP5SD = "Mitraglietta MP5SD",
@@ -62,7 +66,8 @@ ItemName_IT = {
 	ItemName_Base.FAL = "Fucile da battaglia FAL",
 	ItemName_Base.FALClassic = "Fucile da battaglia FAL",
 	
-	ItemName_Base.AssaultRiflM1 = "Fucile M1",
+	ItemName_Base.AssaultRifle2 = "Fucile da battaglia M14",
+	ItemName_Base.AssaultRifleM1 = "Fucile M1",
 	
 	/*Ammo*/	
 	ItemName_Base.762Box = "Scatola di munizioni 7.62",
@@ -78,6 +83,7 @@ ItemName_IT = {
 	ItemName_Base.9mmClip20 = "Caricatore per proiettili TEC9",
 	ItemName_Base.9mmClip30 = "Caricatore per proiettili MP5",
 	ItemName_Base.45Clip32 = "Caricatore per proiettili M10",
+	ItemName_Base.45Clip12 = "Caricatore per proiettili MK23",
 	
 	ItemName_Base.22ClipRifle = "Caricatore per proiettili R1022",
 	
@@ -88,6 +94,7 @@ ItemName_IT = {
 	ItemName_Base.556Clip = "Caricatore per proiettili M16",
 	ItemName_Base.M14Clip = "Caricatore per proiettili M14",
 	ItemName_Base.FALClip = "Caricatore per proiettili FAL",
+	ItemName_Base.9mmClip16 = "Caricatore per proiettili CZ 75",
 	ItemName_Base.9mmClip17 = "Caricatore per proiettili G17",
 	
 	/*Attachments*/
@@ -99,6 +106,8 @@ ItemName_IT = {
 	ItemName_Base.x2Scope_Fake = "Mirino x2",
     ItemName_Base.x4Scope_Fake = "Mirino x4",
     ItemName_Base.x8Scope_Fake = "Mirino x8",
+	ItemName_Base.Sling = "Tracolla in Pelle",
+	ItemName_Base.Sling2 = "Fettuccia in Nylon",
 	
 	/*Items*/
 	ItemName_Base.CleaningKit = "kit per la pulizia delle armi",

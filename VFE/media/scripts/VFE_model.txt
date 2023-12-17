@@ -279,6 +279,24 @@ module Base
 			offset = 0.0120 0.5000 0.0150,
 			rotate = -90.0000 0.0000 0.0000,
 		}
+		
+		attachment scope
+		{
+			offset = 0.0120 0.0597 0.0456,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment recoilpad
+		{
+			offset = 0.0120 -0.1770 -0.0360,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+		
+		attachment bulletloops
+		{
+			offset = 0.0082 -0.0313 -0.0145,
+			rotate = 0.0000 0.0000 0.0000,
+		}
     }
 	model SKSSpikerBayonet
     {
@@ -296,6 +314,24 @@ module Base
 		{
 			offset = 0.0120 0.5000 0.0150,
 			rotate = -90.0000 0.0000 0.0000,
+		}
+		
+		attachment scope
+		{
+			offset = 0.0120 0.0597 0.0456,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment recoilpad
+		{
+			offset = 0.0120 -0.1770 -0.0360,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+		
+		attachment bulletloops
+		{
+			offset = 0.0082 -0.0313 -0.0145,
+			rotate = 0.0000 0.0000 0.0000,
 		}
     }
 	model M14
@@ -1949,6 +1985,23 @@ module Base
 			rotate = 0.0000 180.0000 0.0000,
 		}
 	}
+	model CZ75
+	{
+		mesh = weapons/firearm/cz75_model,
+		texture = weapons/firearm/cz75_texture,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.1490 0.0185,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.0790 -0.0090,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+	}
 	model P229
 	{
 		mesh = weapons/firearm/p229_model,
@@ -1983,6 +2036,17 @@ module Base
 			rotate = 0.0000 180.0000 0.0000,
 		}
 
+	}
+	model MK23SOCOM
+	{
+		mesh = weapons/firearm/mk23SOCOM_model,
+		texture = weapons/firearm/mk23_texture,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.2750 0.0244,
+			rotate = -90.0000 0.0000 0.0000,
+		}
 	}
 	model Handgun03
 	{
@@ -2260,6 +2324,126 @@ module Base
 	model Shotgun2FGSSH
 	{
 		mesh = Weapons/Firearm/Shotgun2,
+        texture = weapons/firearm/Shotgunfiberglass_texture,
+		
+		attachment muzzle
+		{
+			offset = 0.0000 -0.4850 0.0255,
+			rotate = 90.0000 0.0000 -180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.1660 0.0000,
+			rotate = -180.0000 180.0000 -180.0000,
+		}
+
+		attachment choketube
+		{
+			offset = 0.0000 -0.4930 0.0255,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment shellholder
+		{
+			offset = 0.0000 0.0000 0.0230,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	
+	model Shotgun2M9
+	{
+		mesh = Weapons/Firearm/Shotgun2M9,
+		texture = weapons/firearm/Shotgun,
+
+		attachment muzzle
+		{
+			offset = 0.0000 -0.4850 0.0255,
+			rotate = 90.0000 0.0000 -180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.1660 0.0000,
+			rotate = -180.0000 1.0000 -180.0000,
+		}
+
+		attachment choketube
+		{
+			offset = 0.0000 -0.4930 0.0255,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment shellholder
+		{
+			offset = 0.0000 0.0000 0.0230,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	
+	model Shotgun2M9SH
+	{
+		mesh = Weapons/Firearm/Shotgun2M9,
+		texture = weapons/firearm/Shotgun,
+
+		attachment muzzle
+		{
+			offset = 0.0000 -0.4850 0.0255,
+			rotate = 90.0000 0.0000 -180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.1660 0.0000,
+			rotate = -180.0000 180.0000 -180.0000,
+		}
+
+		attachment choketube
+		{
+			offset = 0.0000 -0.4930 0.0255,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment shellholder
+		{
+			offset = 0.0000 0.0000 0.0230,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	
+	model Shotgun2M9FGS
+	{
+		mesh = Weapons/Firearm/Shotgun2M9,
+        texture = weapons/firearm/Shotgunfiberglass_texture,
+		
+		attachment muzzle
+		{
+			offset = 0.0000 -0.4850 0.0255,
+			rotate = 90.0000 0.0000 -180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.1660 0.0000,
+			rotate = -180.0000 1.0000 -180.0000,
+		}
+
+		attachment choketube
+		{
+			offset = 0.0000 -0.4930 0.0255,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment shellholder
+		{
+			offset = 0.0000 0.0000 0.0230,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	
+	model Shotgun2M9FGSSH
+	{
+		mesh = Weapons/Firearm/Shotgun2M9,
         texture = weapons/firearm/Shotgunfiberglass_texture,
 		
 		attachment muzzle

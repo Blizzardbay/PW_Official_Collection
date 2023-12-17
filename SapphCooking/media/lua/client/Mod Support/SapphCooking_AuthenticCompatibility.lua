@@ -3,125 +3,51 @@
 
 
 --Thanks Authentic Peach for the mod!
+--Huge thanks to Glytch3r for the help optimizing the code!!
+
+--Sapph: Hi, it's sapph from... 29/06/23 here, just wanna explain this really quick.
+--it basically checks to see if  the ID authenticZ is activated, and if it is, it adds on the local items,  the attatchment for Canteen.
+--that allows it to be compatible with that mod!
 
 if getActivatedMods():contains("Authentic Z - Current") or getActivatedMods():contains("AuthenticZLite") or getActivatedMods():contains("AuthenticZBackpacks+") then
 
---Thermos
-	local item = ScriptManager.instance:getItem("SapphCooking.FullWaterThermos")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
+local items = {
+  "SapphCooking.FullWaterThermos",
+  "SapphCooking.EmptyThermos",
+  "SapphCooking.ThermosBeverage",
+  "SapphCooking.ThermosCoffee",
+  "SapphCooking.ColaBottlewithMilk",
+  "SapphCooking.WaterColaBottle",
+  "SapphCooking.ColaBottleEmpty",
+  "SapphCooking.ColaBottle",
+  "SapphCooking.ColaBottlewithProteinShake",
+  "SapphCooking.GinFull",
+  "SapphCooking.GinEmpty",
+  "SapphCooking.GinWaterFull",
+  "SapphCooking.VodkaFull",
+  "SapphCooking.VodkaEmpty",
+  "SapphCooking.VodkaWaterFull",
+  "SapphCooking.TequilaFull",
+  "SapphCooking.TequilaEmpty",
+  "SapphCooking.TequilaWaterFull",
+  "SapphCooking.SakeFull",
+  "SapphCooking.SakeEmpty",
+  "SapphCooking.SakeWaterFull",
+  "SapphCooking.EnergyDrink",
+  "SapphCooking.ThermosCoffeeEvolved",
+  "SapphCooking.ThermosSoup",
+  "SapphCooking.Syrup_Chocolate",
+  "SapphCooking.Syrup_Strawberry",
+  "SapphCooking.Syrup_Caramel",
+}
 
-	local item = ScriptManager.instance:getItem("SapphCooking.EmptyThermos")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
+local manager = ScriptManager.instance
 
-	local item = ScriptManager.instance:getItem("SapphCooking.ThermosBeverage")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-
-	local item = ScriptManager.instance:getItem("SapphCooking.ThermosCoffee")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
---Cola Bottle
-	
-	local item = ScriptManager.instance:getItem("SapphCooking.ColaBottlewithMilk")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-	
-	local item = ScriptManager.instance:getItem("SapphCooking.WaterColaBottle")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-
-	local item = ScriptManager.instance:getItem("SapphCooking.ColaBottleEmpty")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-
-		local item = ScriptManager.instance:getItem("SapphCooking.ColaBottle")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-
-	local item = ScriptManager.instance:getItem("SapphCooking.ColaBottlewithProteinShake")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-
---Gin
-
-	local item = ScriptManager.instance:getItem("SapphCooking.GinFull")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-
-	local item = ScriptManager.instance:getItem("SapphCooking.GinEmpty")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-
-	local item = ScriptManager.instance:getItem("SapphCooking.GinWaterFull")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-
---Vodka
-	local item = ScriptManager.instance:getItem("SapphCooking.VodkaFull")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-
-	local item = ScriptManager.instance:getItem("SapphCooking.VodkaEmpty")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-
-	local item = ScriptManager.instance:getItem("SapphCooking.VodkaWaterFull")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-
---Tequila
-	local item = ScriptManager.instance:getItem("SapphCooking.TequilaFull")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-
-	local item = ScriptManager.instance:getItem("SapphCooking.TequilaEmpty")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-
-	local item = ScriptManager.instance:getItem("SapphCooking.TequilaWaterFull")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-
---Sake
-	local item = ScriptManager.instance:getItem("SapphCooking.SakeFull")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-
-	local item = ScriptManager.instance:getItem("SapphCooking.SakeEmpty")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-
-	local item = ScriptManager.instance:getItem("SapphCooking.SakeWaterFull")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
-
---Energy Drink
-	local item = ScriptManager.instance:getItem("SapphCooking.EnergyDrink")
-	if item then 
-		item:DoParam("AttachmentType = Canteen")
-	end
+for _, item_name in pairs(items) do
+  local item = manager:getItem(item_name)
+  if item then
+    item:DoParam("AttachmentType = Canteen")
+  end
+end
 
 end

@@ -17,22 +17,6 @@ module Spongie {
         FabricType = Cotton,
         WorldStaticModel = GlovesLong_Ground,
 	}
-	item Gloves_LeatherFingerless
-	{
-	    DisplayCategory = Accessory,
-		Type = Clothing,
-		DisplayName = Fingerless Leather Gloves,
-		ClothingItem = Gloves_LeatherFingerless,
-		BodyLocation = Hands,
-		BloodLocation = Hands,
-		Icon = GloveMilitaryFingerless1,
-		ScratchDefense = 20,
-        BiteDefense = 10,
-        Weight = 0.1,
-        Insulation = 0.55,
-        WindResistance = 0.55,
-        WorldStaticModel = Gloves_Ground,
-	}
 	item Gloves_MilitaryFingerless
 	{
 	    DisplayCategory = Accessory,
@@ -48,6 +32,7 @@ module Spongie {
         Weight = 0.1,
         Insulation = 0.35,
         WindResistance = 0.45,
+        FabricType = Leather,
         WorldStaticModel = Gloves_Ground,
 	}
 }

@@ -1,58 +1,11 @@
 module MG
 {
-	model MetalWelderGrey_Ground
+	model MetalWelder_Ground
     {
         mesh = WorldItems/Clothing/MetalWelder_Ground,
-		texture = clothes/Gloves/MetalWelderGrey,
     }
-	model MetalWelderOrange_Ground
-    {
-        mesh = WorldItems/Clothing/MetalWelder_Ground,
-		texture = clothes/Gloves/MetalWelderOrange,
-    }
-	model MetalWelderRed_Ground
-    {
-        mesh = WorldItems/Clothing/MetalWelder_Ground,
-		texture = clothes/Gloves/MetalWelderRed,
-    }
-	model MetalWelderWhite_Ground
-    {
-        mesh = WorldItems/Clothing/MetalWelder_Ground,
-		texture = clothes/Gloves/MetalWelderWhite,
-    }
-	model MetalWelderYellow_Ground
-    {
-        mesh = WorldItems/Clothing/MetalWelder_Ground,
-		texture = clothes/Gloves/MetalWelderYellow,
-    }
-	model Kickboxing01_ground
+	model Kickboxing_ground
     {
         mesh = WorldItems/Clothing/KickBoxing_Ground,
-		texture = clothes/Gloves/Kickboxing01,
-    }
-	model Kickboxing02_ground
-    {
-        mesh = WorldItems/Clothing/Kickboxing_ground,
-		texture = clothes/Gloves/Kickboxing02,
-    }
-	model Kickboxing03_ground
-    {
-        mesh = WorldItems/Clothing/Kickboxing_ground,
-		texture = clothes/Gloves/Kickboxing03,
-    }
-	model Kickboxing04_ground
-    {
-        mesh = WorldItems/Clothing/Kickboxing_ground,
-		texture = clothes/Gloves/Kickboxing04,
-    }
-	model Kickboxing05_ground
-    {
-        mesh = WorldItems/Clothing/Kickboxing_ground,
-		texture = clothes/Gloves/Kickboxing05,
-    }
-	model Kickboxing06_ground
-    {
-        mesh = WorldItems/Clothing/Kickboxing_ground,
-		texture = clothes/Gloves/Kickboxing06,
     }
 }

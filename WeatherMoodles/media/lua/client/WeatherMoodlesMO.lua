@@ -1,3 +1,5 @@
+--by B O B c a t (https://steamcommunity.com/id/the_bobcat/)
+
 require "WeatherMoodles"
 
 if ModOptions and ModOptions.getInstance then

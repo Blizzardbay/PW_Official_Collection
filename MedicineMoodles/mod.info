@@ -1,0 +1,5 @@
+name=Medicine Moodles
+id=MedicineMoodles
+description=Tell you duration of pills.
+poster=poster.png
+require=MoodleFramework

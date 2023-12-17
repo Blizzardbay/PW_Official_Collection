@@ -69,6 +69,27 @@ function MoreBrews.BrewingSupplies(items, result, player)
     end
     player:getInventory():AddItem("Sugar")
     player:getInventory():AddItem("Yeast")
+    player:getInventory():AddItem("MoreBrews.BrewingInstructions")
+end
+
+function Recipe.GetItemTypes.EmptyBeerCan(scriptItems)
+    scriptItems:addAll(getScriptManager():getItemsTag("EmptyBeerCan"))
+end
+
+function Recipe.GetItemTypes.EmptyBeerBottle(scriptItems)
+    scriptItems:addAll(getScriptManager():getItemsTag("EmptyBeerBottle"))
+end
+
+function Recipe.GetItemTypes.BeerWort(scriptItems)
+    scriptItems:addAll(getScriptManager():getItemsTag("BeerWort"))
+end
+
+function Recipe.GetItemTypes.BeerCarboy(scriptItems)
+    scriptItems:addAll(getScriptManager():getItemsTag("BeerCarboy"))
+end
+
+function Recipe.GetItemTypes.BeerKeg(scriptItems)
+    scriptItems:addAll(getScriptManager():getItemsTag("BeerKeg"))
 end
 
 -- Adds  empty cooking pot back to inventory after making primary fermenter
@@ -103,13 +124,77 @@ function Recipe.OnGiveXP.Brewing50(recipe, ingredients, result, player)
     player:getXp():AddXP(Perks.Brewing, 50);
 end
 
--- drinking crafted beer with brewer trait reduces boredom
-function OnEat_Beer(food, character, player)
-    local player = getPlayer();
-    local stats = player:getStats();
-    local bodyDamage = player:getBodyDamage();
-    local brewing = player:getPerkLevel(Perks.Brewing);
-    local script = food:getScriptItem();
+function Recipe.OnTest.FullCarboy(item)
+    if item:getType() == "Carboy" then
+        return item:getUsedDelta() == 1
+    end
+    return true
+end
+
+local sVars = SandboxVars.MoreBrews;
+sVars.TotalAmount = sVars.TotalAmount or 3;
+
+function Recipe.OnCreate.CarboyTapped(items, result, player)
+    local carboy = nil;
+    for i=0,items:size() - 1 do
+        if instanceof(items:get(i), "Food") then
+            carboy = items:get(i);
+            break;
+        end
+    end
+    if carboy then
+        local ItemName = carboy:getType()
+        local tappedCarboyName = "MoreBrews." .. ItemName .. "Tapped"
+        player:getInventory():Remove(sourceItem)
+        local tappedCarboy = InventoryItemFactory.CreateItem(tappedCarboyName)
+
+        local useDeltaCarboy = 0.95  -- Default value for carboy (20% less than keg)
+        if sVars.TotalAmount == 1 then
+            useDeltaCarboy = 0.9;
+        elseif sVars.TotalAmount == 2 then
+            useDeltaCarboy = 0.93333;
+        elseif sVars.TotalAmount == 4 then
+            useDeltaCarboy = 0.96;
+        elseif sVars.TotalAmount == 5 then
+            useDeltaCarboy = 0.96667;
+        end
+
+        tappedCarboy:setUsedDelta(useDeltaCarboy)
+        player:getInventory():AddItem(tappedCarboy)
+    end
+    result:setAge(items:get(0):getAge());
+end
+
+function OnEat_Beer(food, character, percent)
+    local script = food:getScriptItem()
+    local bodyDamage = character:getBodyDamage()
+    local stats = character:getStats()
+    local brewing = character:getPerkLevel(Perks.Brewing);
+
+    if getActivatedMods():contains("SimpleOverhaulTraitsAndOccupations") then
+        if character:HasTrait("SOAlcoholic") then
+            if character:getModData().SOtenminutesSinceLastDrink then
+                character:getModData().SOtenminutesSinceLastDrink = character:getModData().SOtenminutesSinceLastDrink + 1
+            else
+                character:getModData().SOtenminutesSinceLastDrink = 0;
+            end
+        end
+        if not character:HasTrait("SOAlcoholic") then
+            if character:getModData().SOtenminutesToObtainAlcoholic then
+                character:getModData().SOtenminutesToObtainAlcoholic = character:getModData().SOtenminutesToObtainAlcoholic - 1
+            else
+                character:getModData().SOtenminutesToObtainAlcoholic = 0;
+            end
+        end
+    end
+
+    if getActivatedMods():contains("jiggasGreenfireMod") and not getActivatedMods():contains("DynamicTraits") then
+        -- Execute OnDrink_Beer from GreenFire mod
+        OnDrink_Beer(food, character, percent);
+    elseif getActivatedMods():contains("DynamicTraits") then
+        -- Execute OnEat_Alcohol from Dynamic Traits Mod
+        OnEat_Alcohol(food, character);
+    end 
 
     if brewing >= 7 then
         if stats:getHunger() > 0.05 then
@@ -127,22 +212,11 @@ function OnEat_Beer(food, character, player)
         end
     end
 
-    if player:HasTrait("Brewer") and bodyDamage:getBoredomLevel() > 15 then
+    if character:HasTrait("Brewer") and bodyDamage:getBoredomLevel() > 15 then
         bodyDamage:setBoredomLevel(bodyDamage:getBoredomLevel() - 10)
     end
-
-    if getActivatedMods():contains("jiggasGreenfireMod") then
-            OnDrink_Beer(food, character, percent) --launching the function of drinking beer to interact with alcoholic trait - GreenFire mod
-        return
-    end
-    if getActivatedMods():contains("DynamicTraits") then
-        function OnEat_Alcohol(food, player) --launching the function of OnEat_Alcohol to function with overdoes mechanic - Dynamic Traits Mod
-        return
-    end
-end
 end
 
-local sVars = SandboxVars.MoreBrews;
 sVars.BrewingBonus = sVars.BrewingBonus or 0;
 
 function MoreBrews.onBrewerPerkCans(items, character, player)

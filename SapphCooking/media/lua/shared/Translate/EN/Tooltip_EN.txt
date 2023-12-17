@@ -5,7 +5,12 @@ Tooltip_EN = {
 	Tooltip_AsiaFoodMagazine = "Teaches cooking recipes from the Asian Region.",
 	Tooltip_EuropeFoodMagazine = "Teaches cooking recipes from the European Region.",
 	Tooltip_PastaDoughMagazine = "Teaches Pasta recipes.",
-	Tooltip_HotWater = "Combine with hot water.",
-	
-	
+	Tooltip_HotWater = "Instructions say, 'use it with Hot Water'.",
+	Tooltip_EmptyThermos = "Can be used to store water, drinks or cooked soups",
+	Tooltip_CookedBowls = "Can be placed into bowls after Cooking.",
+	Tooltip_CookedSlices = "Can be Sliced after Cooking.",
+	Tooltip_CornPopcorn = "Can be cooked into Popcorn.",
+	Tooltip_Stock = "Can be used in stock,soups or stews.",
+	Tooltip_IceCubes = "When filled with Water, can be made into Ice Cubes when near a Fridge with Power.",
+	Tooltip_SausagesMagazine = "Teaches how to butcher and how to make Sausages",
 } 	

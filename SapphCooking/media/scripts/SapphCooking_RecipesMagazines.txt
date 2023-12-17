@@ -10,7 +10,7 @@ module SapphCooking
 		Type = Literature,
 		DisplayName = Foods around the World Vol.1,
 		Icon = MagazineVol1Icon,
-		TeachedRecipes = Fill Dumplings with Minced Meat;Fill Dumplings with Vegetables;Make Saucepan with Shui Zhu Yu in Stock;Cook Kung Pao Chicken in Wok Pan;Cook Yakisoba in Wok Pan;Make Saucepan of Japanese Chicken Curry;Cook Borscht in Saucepan with Stock,
+		TeachedRecipes = Make Flour Dough Wrapper;Fill Dumplings with Minced Meat;Fill Dumplings with Vegetables;Make Saucepan with Shui Zhu Yu in Stock;Cook Kung Pao Chicken in Wok Pan;Cook Yakisoba in Wok Pan;Make Saucepan of Japanese Chicken Curry;Cook Borscht in Saucepan with Stock,
 		StaticModel = H_AsianMag,
 		ReplaceOnUse    =   AsianFoodMagazine,
 		WorldStaticModel = AsianMag_Ground,
@@ -41,6 +41,19 @@ module SapphCooking
 		ReplaceOnUse    =   PastaDoughMagazine,
 		WorldStaticModel = PastaMag_Ground,
 		Tooltip             = Tooltip_PastaDoughMagazine,
+		DisplayCategory = SkillBook,
+	}
+	item SausageMakingMagazine
+	{
+		Weight = 0.1,
+		Type = Literature,
+		DisplayName = The Hows of Sausage Making,
+		Icon = MagazineSausageIcon,
+		TeachedRecipes = Make Sausage Casings;Make Sausage Casings2;Make Sausage Casings3,
+		StaticModel = H_SausageMag,
+		ReplaceOnUse    =   SausageMakingMagazine,
+		WorldStaticModel = SausageMag_Ground,
+		Tooltip             = Tooltip_SausagesMagazine,
 		DisplayCategory = SkillBook,
 	}
 

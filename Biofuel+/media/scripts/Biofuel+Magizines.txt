@@ -1,0 +1,47 @@
+module BiofuelTEST
+{
+	imports
+	{
+		Base,
+	}
+	item BiofuelMagazine
+	{
+		Weight = 0.1,
+		Type = Literature,
+		DisplayName = How To Make Biofuel 101,
+		Icon = BiofuelMag,
+		TeachedRecipes = Make Biofuel From Cabbages;Make Biofuel From Potatos;Make Biofuel From Radishes;Make Biofuel From Carrots;Make Biofuel From Tomatos;Make Biofuel From Broccoli;Make Biofuel From Strawberries,
+		StaticModel = Magazine,
+		ReplaceOnUse    = BiofuelMagazine,
+		WorldStaticModel = MagazineBiofuel,
+		Tooltip = Tooltip_BiofuelMag1,
+		DisplayCategory = SkillBook,
+	}
+	item BiofuelMagazine2
+	{
+		Weight = 0.1,
+		Type = Literature,
+		DisplayName = How To Make Biofuel 102,
+		Icon = BiofuelMag,
+		TeachedRecipes = Make Biofuel From Avaocados;Make Biofuel From Bell Peppers;Make Biofuel From Corn;Make Biofuel From Eggplants;Make Biofuel From Leeks;Make Biofuel From Lettuce;Make Biofuel From Onions;Make Biofuel From Zucchinis,
+		StaticModel = Magazine,
+		ReplaceOnUse    = BiofuelMagazine2,
+		WorldStaticModel = MagazineBiofuel,
+		Tooltip = Tooltip_BiofuelMag2,
+		DisplayCategory = SkillBook,
+	}
+	item BiofuelMagazine3
+	{
+		Weight = 0.1,
+		Type = Literature,
+		DisplayName = How To Make Biofuel 103,
+		Icon = BiofuelMag,
+		TeachedRecipes = Make Biofuel From Apples;Make Biofuel From Bananas;Make Biofuel From Cherrys;Make Biofuel From Grapefruit;Make Biofuel From Grapes;Make Biofuel From Mangos;Make Biofuel From Oranges;Make Biofuel From Peachs;Make Biofuel From Pears;Make Biofuel From Pinapples;Make Biofuel From Pumpkin;Make Biofuel From Watermelon,
+		StaticModel = Magazine,
+		ReplaceOnUse    = BiofuelMagazine3,
+		WorldStaticModel = MagazineBiofuel,
+		Tooltip = Tooltip_BiofuelMag3,
+		DisplayCategory = SkillBook,
+	}
+
+}

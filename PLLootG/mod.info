@@ -1,0 +1,5 @@
+name=Paw Low Loot Guns
+id=PLLootG
+require=PLLoot
+description=Adds new guns/gun types to the drop table.
+poster=poster.png

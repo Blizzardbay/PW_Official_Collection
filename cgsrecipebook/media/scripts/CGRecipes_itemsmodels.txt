@@ -1,0 +1,128 @@
+module CGRecipes
+{
+model CGRockSalt
+    {
+        mesh = WorldItems/CGRockSalt,
+		texture = WorldItems/CGRockSalt,
+	        
+    }
+	
+	model CGSyrup
+    {
+        mesh = WorldItems/CGSyrup,
+		texture = WorldItems/CGSyrup,
+        
+    }
+	
+	model CGSmokedFish
+    {
+        mesh = WorldItems/CGSmokedFish,
+		texture = WorldItems/CGSmokedFish,
+        
+    }
+	
+	model CGFishToSmoke
+    {
+        mesh = WorldItems/CGFishToSmoke,
+		texture = WorldItems/CGFishToSmoke,
+        
+    }
+	
+	model CGDebonedSmallGame
+    {
+        mesh = WorldItems/CGDebonedSmallGame,
+		texture = WorldItems/CGDebonedSmallGame,
+        
+    }
+	
+	model CGCuredMeat
+    {
+        mesh = WorldItems/CGCuredMeat,
+		texture = WorldItems/CGCuredMeat,
+        
+    }
+	
+	model CGHardDriedMeat
+    {
+        mesh = WorldItems/CGHardDriedMeat,
+		texture = WorldItems/CGHardDriedMeat,
+        
+    }
+	
+	model CGFirewood
+    {
+        mesh = WorldItems/CGFirewood,
+		texture = WorldItems/CGFirewood,
+        
+    }
+	
+	model CGRawNitrates
+    {
+        mesh = WorldItems/CGRawNitrates,
+		texture = WorldItems/CGRawNitrates,
+        
+    }
+	
+	model CGNitrate
+    {
+        mesh = WorldItems/CGNitrate,
+		texture = WorldItems/CGNitrate,
+        
+    }
+	
+	model CGWort
+    {
+        mesh = WorldItems/CGWort,
+		texture = WorldItems/CGWort,
+        
+    }
+	
+	model CGMust
+    {
+        mesh = WorldItems/CGMust,
+		texture = WorldItems/CGMust,
+        
+    }
+	
+	model CGPreservedFruits
+    {
+        mesh = WorldItems/CGPreservedFruits,
+		texture = WorldItems/CGPreservedFruits,
+        
+    }
+	
+	model CGPreservedCitrics
+    {
+        mesh = WorldItems/CGPreservedFruits,
+		texture = WorldItems/CGPreservedCitrics,
+        
+    }
+	
+	model CGPreservedBerries
+    {
+        mesh = WorldItems/CGPreservedFruits,
+		texture = WorldItems/CGPreservedBerries,
+        
+    }
+	
+	model CGPickledMushrooms
+    {
+        mesh = WorldItems/CGPreservedFruits,
+		texture = WorldItems/CGPickledMushrooms,
+        
+    }
+	
+	model CGUnprocessedGlue
+    {
+        mesh = WorldItems/CGUnprocessedGlue,
+		texture = WorldItems/CGUnprocessedGlue,
+        
+    }
+	
+	model CGProcessedGlue
+    {
+        mesh = WorldItems/CGUnprocessedGlue,
+		texture = WorldItems/CGProcessedGlue,
+        
+    }
+}	

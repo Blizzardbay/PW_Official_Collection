@@ -1,0 +1,246 @@
+ Sapph: hello! this file is a way to help track/plan changelogs, future updates and... uh, i dunno, stuff
+ so, if youre reading this, hope you're doing well.
+
+Changelog (06/08/23):
+Bit of a smaller update, but lots of fixes/reworks (and some custom animations)!
+New Things:
+- Instant Noodles: Can be found in kitchens/stores, and can be prepared with Saucepan with Water.
+- Cocktail Mixing: You can now do custom drinks and cocktails using a Mixer.
+- Churn: Can be made with Woodworking 5, allowing the player to make:
+    - Butter/Buttermilk: Made with Milk and Salt.
+    - Mochi: Rice Cakes made with Rice.
+    - Wine: Made with Grapes.
+- Reworked Spaghetti.
+- Reworked Huevos Rancheros.
+
+Tweaks/Fixes:
+- Updated Korean Translations (thanks 이스트!).
+- Updated Japanese Translations (thanks Suzue!)
+- Updated French Translations (thanks Zunder!)
+- Drinks now give happyness and stress reduction.
+- Fixed Boiled Egg recipe giving lua errors.
+- Fixed Lua errors with vegetable broth.
+- Fixed infinite pots glitch with vegetable broth.
+- Fixed Pot vanishing after pouring out water. (thanks 이스트 for reporting it on discord!).
+- Fixed Fried rice recipe in Frying Pan.
+- Fixed Cooking Bonus not being applied on the Thermos Soup.
+- Changed Small Dough Recipe.
+- Some recipes are now Hidden (mainly the add stuff), this may help when browsing the craft menu!
+- Tweaked Empty Thermos Weight.
+
+
+
+
+18/07/23 
+
+New things:
+    - Not really mod related, but i created a Discord Channel, this may help with bug fixing/suggestions/translations, so if you're interested, feel free to join!
+    i'll leave a link at the end of the mod page!
+	- Chef Knives can now be attatched on Wooden Spears.
+    - Added Metal Spork.
+    - Lard can be used as oil (thanks Balrock for suggesting it!).
+
+    Other stuff/fixes:
+    - Updated Russian translations (thanks to Boris The Blade).
+    - Updated Chinese translations (thanks to BEIBIAO).
+    - Fixed some problems with Brazilian Portuguese Translations (thanks peteR for reporting it!)
+    - Fixed missing recipe to open Kernel Corn. (thanks to Nyx2330)
+    - Fixed some missing commas in the code (Thanks Dan39 for the help!)
+    - Fixed Filled Pasta not giving any calories/hunger.
+    - Fixed Rodent Meat not giving any calories/hunger when being grinded.
+    - Fixed missing Evolved Recipe for Frying Pan with Fried Rice. (thanks BLUmountain) 
+    - Added a way to pour out water of the Vegetable Stock recipe.
+    - Fixed MRE still spawning after being disabled... i hope...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14/07/23:
+     Reworks:
+     Since this is a big update, there's a unfortunate chance that several items will vanish from your saves.
+- Reworked certain dishes, now you'll be able to add your own ingredients on:
+    1. Fried Rice (Wok/Frying Pan)
+    2. Baked Potatoes
+    3. Lasagna
+    4. Ratatouille
+    5. Yakisoba
+    6. Maki
+    7. Hotdogs
+    8. Dumplings
+    9. Coffee Thermos
+- Reworked Food calorie values of every item added, this should make recipes worth the effort, but this also means that a lot of changes may happen if things
+don't work out that much.
+- You can now make Hotdog Bun Sandwiches.
+- You can now Add Soups to Thermos.
+- You can now eat Grinded Coffee.
+- Reworked Stocks/Broths, they are easier to make, and you can now drink them and use it in Soups and Stews.
+- You can now eat Kernel Corn.
+- Rework on Oils, it is now drinkable.
+- Added Tooltips that can help players on "confusing" recipes, like Jell-o, Coffee, Broths and Popcorn.
+- Potato peels can be used in Soups, Stews and Stocks.
+
+ 
+     New things:
+	- Ice Cubes: Can be done with "Ice Tray with Water" when near fridges with power, They can also be put into drinks for some bonus happyness.
+			1. Shaved Ice.
+    - Syrups: Chocolate/Strawberry/Caramel can be used in drinks or shaved Ice.
+    - Meat Grinder: Allows the player to grind meat, "If I chop you up in a meat grinder, and the only thing that comes out, that's left of you, is your eyeball,
+    you'r- you're PROBABLY DEAD!".
+         - Sausages: 
+             1.Sausage Making Book - Teaches how the basics to sausage making.
+             2.Sausage Casings - Can be gathered when skinning animals.
+             3.Custom Sausages.
+    - Oven Mittens - Gives insulation and warmth.
+    - Ceviche - Can be made with lime/lemon and fish.
+    - Arroz con leche - Dessert made with Rice and Milk.
+    - Scotch Eggs - Deep fried boiled eggs wrapped in meat.
+    - Toothpicks.
+    - Spring rolls.
+
+    Other stuff/fixes:
+    - Updated Chinese,Polish and added Japanese and Italian translations (thanks Suzue,Nozownik
+    ,冷沔泠-35P and Eternity!) 
+    - Tweaked some issues with sandbox settings.
+    - Tweaked some recipes where stuff appears greyed out.
+    - Tweaked recipes with melted chocolate.
+    - Changed textures of Cups/Buckets/Bottles.
+    - Fixed some issues with the taggings recipes.
+    - Fixed Chocolate Cake Recipe.
+    - Fixed missing 3D model for Vodka Bottle, Garlic Bread and Popcorn Kernels.
+    - Fixed Tiramisu consuming baking pan.
+    - Fixed missing Chicken nuggets Recipe.
+    - Fixed not being able to remove Pretzels from Tray.
+    - Fixed MRE's still spawning, after disabling them via sandbox options.
+    - May have fixed a bug with a "ç" unicode causing errors...?
+    - Removed several obsolete recipes.
+ 
+ 
+/*************ADD***********************/
+- Icons.
+- Models.
+- Spawns.
+- BetterSorting Patch.
+- Cooking animations.
+        - Adding Oil on Pot/Bowl.
+        - Frying Pan/Wok Pan Frying.
+		- Ice Cubes Breaking. +Sound
+		- Meat Grinding.
+        - Coffee Brewing.
+        - Toothpicks.
+
+ 
+/************************Translations****************************/
+    item Meatgrinder
+    item SlicedChickenBatter    
+    item WokFriedRiceEvolved    
+	item FryingPanFriedRiceEvolved    
+    item BakedPotato_Evolved   
+    item ThermosSoup    
+    item WokPan_YakisobaEvolve    
+    item SushiEvolved    
+    item SushiRecipe    
+    item HotdogCustom    
+    item HotdogSandwichEvolved    
+    item HotdogEvolved    
+	item IceTray    
+	item IceTrayWater    
+	item IceCubes    
+    item MincedMeat_Chicken    
+    item SausageEvolved   
+    item SausageCasing    
+    item ThermosCoffeeEvolved
+    item SausageMakingMagazine
+    item BowlShavedIce
+    item BowlShavedIceEvolved
+    item Syrup_Chocolate   
+    item Syrup_Strawberry 
+    item Syrup_Caramel 
+    item CevicheBowl    
+    item CevicheBowlEvolved   
+	item ScotchEggRaw    
+	item ScotchEgg    
+    item Gloves_OvenMitten_Udderly
+    item Gloves_OvenMitten_White
+    item Mouth_Toothpicks
+    item BagofToothpicks
+    item Saucepan_ArrozLecheUn
+    item Saucepan_ArrozLeche
+    item SpringrollEvolved
+    item SpringrollWrapper
+
+
+    recipe Submerge Chicken Slice in Batter
+    recipe Prepare Fried Rice
+    recipe Prepare Fried Rice2
+    recipe Make 4 Bowls of Fried Rice
+    recipe Make 4 Bowls of Fried Rice2
+    recipe Cut Lasagna Piece2
+    recipe Put Soup in Thermos
+    recipe Make 4 Bowls of Yakisoba
+    recipe Prepare Yakisoba in Wok Pan
+    recipe Prepare Sushi
+	recipe Make Ice Cubes
+    recipe Tenderize Meat
+    recipe Grind Meat
+    recipe Grind Chicken
+    recipe Make Sausage Casings
+    recipe Make Sausage Casings2
+    recipe Make Sausage Casings3
+    recipe Make Bowl of Shaved Ice
+    recipe Prepare Ceviche
+    recipe Prepare Scotch Egg
+	recipe Fry Scotch Egg
+    recipe Take Toothpick from Box
+    recipe Prepare Arroz con Leche
+    recipe Make 2 Bowls of Arroz con Leche
+    recipe Boil Eggs
+    recipe Make Flour Dough Wrapper
+
+
+
+
+  	ContextMenu_EvolvedRecipe_SapphCooking.FriedRiceWok = "Fried Rice",
+  	ContextMenu_EvolvedRecipe_SapphCooking.FryingPanwithFriedRice = "Fried Rice",
+	ContextMenu_EvolvedRecipe_SapphCooking.BakedPotatoEvolved = "Baked Potato",
+	ContextMenu_EvolvedRecipe_SapphCooking.LasagnaEvolved = "Lasagna",
+	ContextMenu_EvolvedRecipe_SapphCooking.RatatouilleEvolved = "Ratatouille",
+	ContextMenu_EvolvedRecipe_SapphCooking.YakisobaEvolved = "Yakisoba",
+    ContextMenu_EvolvedRecipe_SapphCooking.SushiEvolved = "Maki",
+	ContextMenu_EvolvedRecipe_SapphCooking.HotdogSandwich = "Sandwich",
+	ContextMenu_EvolvedRecipe_SapphCooking.HotdogEvolved = "Hotdog",
+	ContextMenu_EvolvedRecipe_SapphCooking.StockEvolved = "Stock",
+    ContextMenu_EvolvedRecipe_SapphCooking.DumplingsEvolved = "Dumpling",
+    ContextMenu_EvolvedRecipe_SapphCooking.CoffeeThermosEvolved = "Coffee",
+    ContextMenu_EvolvedRecipe_SapphCooking.SausageEvolved = "Sausage",
+    ContextMenu_EvolvedRecipe_SapphCooking.ShavedIceEvolved = "Shaved Ice",
+    ContextMenu_EvolvedRecipe_SapphCooking.CevicheEvolved = "Ceviche",
+    ContextMenu_EvolvedRecipe_SapphCooking.ArrozLecheEvolved = "Arroz con Leche",
+    ContextMenu_EvolvedRecipe_SapphCooking.SpringrollEvolved = "Spring roll",       
+
+
+    Tooltip_HotWater = "Instructions say, 'use it with Hot Water'.",
+	Tooltip_EmptyThermos = "Can be used to store water, drinks or cooked soups",
+	Tooltip_CookedBowls = "Can be placed into bowls after Cooking.",
+	Tooltip_CookedSlices = "Can be Sliced after Cooking.",
+	Tooltip_CornPopcorn = "Can be cooked into Popcorn.",
+    Tooltip_Stock = "Can be used in stock,soups or stews.",
+    Tooltip_IceCubes = "If it has Water, can be made into Ice Cubes when near a Fridge with Power.",
+    Tooltip_SausagesMagazine = "Teaches how to butcher and how to make Sausages",
+
+
+
+
+Scrapped:
+    - New tiles: - Kitchen Knife Holder(Storage)
+
+sapph: i just scrapped this, cause i wasnt really in the mood to learn how tiles work. maybe in the future i can look back into this!

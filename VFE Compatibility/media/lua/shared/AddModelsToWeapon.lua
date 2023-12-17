@@ -3,18 +3,18 @@ for weaponname,siltype in pairs(SUFVsilencerWeaponTable) do
 	local item = ScriptManager.instance:getItem(weaponname)
 	if item then 
 		if siltype == 0 then -- Pistols
-			item:DoParam("ModelWeaponPart = ImprovisedSilencers.Silencer ImprovisedSilencers.SilencerRifle muzzle muzzle")
-			item:DoParam("ModelWeaponPart = ImprovisedSilencers.MetalPipeSilencer ImprovisedSilencers.MetalPipeSilencer muzzle muzzle")
-			item:DoParam("ModelWeaponPart = ImprovisedSilencers.TorchSilencer ImprovisedSilencers.TorchSilencer muzzle muzzle")
-			item:DoParam("ModelWeaponPart = ImprovisedSilencers.WaterBottleSilencer ImprovisedSilencers.WaterBottleSilencer muzzle muzzle")
+			item:DoParam("ModelWeaponPart = Silencer SilencerRifle muzzle muzzle")
+			item:DoParam("ModelWeaponPart = MetalPipeSilencer MetalPipeSilencer muzzle muzzle")
+			item:DoParam("ModelWeaponPart = TorchSilencer TorchSilencer muzzle muzzle")
+			item:DoParam("ModelWeaponPart = WaterBottleSilencer WaterBottleSilencer muzzle muzzle")
 		elseif siltype == 1 then -- Shotguns
-			item:DoParam("ModelWeaponPart = ImprovisedSilencers.Silencer ImprovisedSilencers.SilencerBig muzzle muzzle")
-			item:DoParam("ModelWeaponPart = ImprovisedSilencers.MetalPipeSilencer ImprovisedSilencers.MetalPipeSilencerBig muzzle muzzle")
+			item:DoParam("ModelWeaponPart = Silencer SilencerBig muzzle muzzle")
+			item:DoParam("ModelWeaponPart = MetalPipeSilencer MetalPipeSilencerBig muzzle muzzle")
 		elseif siltype == 2 then -- Rifles
-			item:DoParam("ModelWeaponPart = ImprovisedSilencers.Silencer ImprovisedSilencers.SilencerRifle muzzle muzzle")
-			item:DoParam("ModelWeaponPart = ImprovisedSilencers.MetalPipeSilencer ImprovisedSilencers.MetalPipeSilencerRifle muzzle muzzle")
-			item:DoParam("ModelWeaponPart = ImprovisedSilencers.TorchSilencer ImprovisedSilencers.TorchSilencerRifle muzzle muzzle")
-			item:DoParam("ModelWeaponPart = ImprovisedSilencers.WaterBottleSilencer ImprovisedSilencers.WaterBottleSilencerRifle muzzle muzzle")
+			item:DoParam("ModelWeaponPart = Silencer SilencerRifle muzzle muzzle")
+			item:DoParam("ModelWeaponPart = MetalPipeSilencer MetalPipeSilencerRifle muzzle muzzle")
+			item:DoParam("ModelWeaponPart = TorchSilencer TorchSilencerRifle muzzle muzzle")
+			item:DoParam("ModelWeaponPart = WaterBottleSilencer WaterBottleSilencerRifle muzzle muzzle")
 		end
 	end
 end

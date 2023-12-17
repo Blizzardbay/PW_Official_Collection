@@ -38,7 +38,7 @@ module Spongie {
         Type = Clothing,
         DisplayName = Winter Jacket,
         ClothingItem = Jacket_SheepWoolOPEN,
-        BodyLocation = Jacket,
+        BodyLocation = Jacket_Bulky,
         IconsForTexture = SheepWoolJacket;SheepWoolJacket_Black;SheepWoolJacket_Green,
         BloodLocation = Jacket,
         FabricType = Leather,
@@ -122,7 +122,7 @@ module Spongie {
         DisplayName = Flight Jacket,
         ClothingItem = Jacket_Flight,
         BodyLocation = Jacket,
-        IconsForTexture = FlightJacket1;FlightJacket2;FlightJacket3;FlightJacket4;FlightJacket5;FlightJacket6,
+        IconsForTexture = FlightJacket1;FlightJacket2;FlightJacket3;FlightJacket4;FlightJacket5;FlightJacket6;FlightJacket7;FlightJacket4,
         BloodLocation = Jacket,
         FabricType = Cotton,
 		
@@ -149,8 +149,8 @@ module Spongie {
         Type = Clothing,
         DisplayName = Flight Jacket,
         ClothingItem = Jacket_FlightOPEN,
-        BodyLocation = Jacket,
-        IconsForTexture = FlightJacket1;FlightJacket2;FlightJacket3;FlightJacket4;FlightJacket5;FlightJacket6,
+        BodyLocation = Jacket_Bulky,
+        IconsForTexture = FlightJacket1;FlightJacket2;FlightJacket3;FlightJacket4;FlightJacket5;FlightJacket6;FlightJacket7;FlightJacket4,
         BloodLocation = Jacket,
         FabricType = Cotton,
 		
@@ -178,9 +178,10 @@ module Spongie {
         Type = Clothing,
         DisplayName = Flight Jacket Sleeveless,
         ClothingItem = Jacket_FlightVest,
-        BodyLocation = Jacket,
-        IconsForTexture = FlightJacketVest1;FlightJacketVest2;FlightJacketVest3;FlightJacketVest4;FlightJacketVest5;FlightJacketVest6,
+        BodyLocation = TorsoExtraVest,
+        IconsForTexture = FlightJacketVest1;FlightJacketVest2;FlightJacketVest3;FlightJacketVest4;FlightJacketVest5;FlightJacketVest6;FlightJacketVest7;FlightJacketVest4,
         BloodLocation = ShirtNoSleeves;Neck,
+        FabricType = Cotton,
 		
         ClothingItemExtra = Spongie.Jacket_FlightVestOPEN,
         ClothingItemExtraOption = OpenJacket,
@@ -203,9 +204,10 @@ module Spongie {
         Type = Clothing,
         DisplayName = Flight Jacket Sleeveless,
         ClothingItem = Jacket_FlightVestOPEN,
-        BodyLocation = Jacket,
-        IconsForTexture = FlightJacketVest1;FlightJacketVest2;FlightJacketVest3;FlightJacketVest4;FlightJacketVest5;FlightJacketVest6,
+        BodyLocation = TorsoExtraVest,
+        IconsForTexture = FlightJacketVest1;FlightJacketVest2;FlightJacketVest3;FlightJacketVest4;FlightJacketVest5;FlightJacketVest6;FlightJacketVest7;FlightJacketVest4,
         BloodLocation = ShirtNoSleeves;Neck,
+        FabricType = Cotton,
 		
         ClothingItemExtra = Spongie.Jacket_FlightVest,
         ClothingItemExtraOption = CloseJacket,
@@ -254,7 +256,7 @@ module Spongie {
         Type = Clothing,
         DisplayName = Denim Jacket,
         ClothingItem = Jacket_DenimOPEN,
-        BodyLocation = Jacket,
+        BodyLocation = Jacket_Bulky,
 		IconsForTexture = ShirtDenimBlue;ShirtDenimLightBlack;ShirtDenimLightBlue,
         BloodLocation = Jacket,
         FabricType = Denim,
@@ -280,10 +282,11 @@ module Spongie {
         Type = Clothing,
         DisplayName = Winter Coat,
         ClothingItem = Jacket_WinterCoat,
-        BodyLocation = JacketHat,
+        BodyLocation = JacketHat_Bulky,
 		IconsForTexture = WinterCoat1;WinterCoat2;WinterCoat3;WinterCoat4;WinterCoat5;WinterCoat6;WinterCoat7;WinterCoat8;WinterCoat9;WinterCoat10,
         BloodLocation = Jumper;FullHelmet,
-        RunSpeedModifier = 0.85,
+        FabricType = Cotton,
+        RunSpeedModifier = 0.80,
         CombatSpeedModifier = 0.85,
 		
         ClothingItemExtra = Spongie.Jacket_WinterCoatDOWN,
@@ -293,7 +296,7 @@ module Spongie {
         BiteDefense = 20,
         ScratchDefense = 25,
 		
-        Insulation = 0.9,
+        Insulation = 1.0,
         WindResistance = 1.0,
         WaterResistance = 0.8,
 		
@@ -306,10 +309,11 @@ module Spongie {
         Type = Clothing,
         DisplayName = Winter Coat,
         ClothingItem = Jacket_WinterCoatDOWN,
-        BodyLocation = Jacket,
+        BodyLocation = Jacket_Bulky,
 		IconsForTexture = WinterCoat1;WinterCoat2;WinterCoat3;WinterCoat4;WinterCoat5;WinterCoat6;WinterCoat7;WinterCoat8;WinterCoat9;WinterCoat10,
         BloodLocation = Jacket,
-        RunSpeedModifier = 0.80,
+        FabricType = Cotton,
+        RunSpeedModifier = 0.85,
         CombatSpeedModifier = 0.85,
 		
         ClothingItemExtra = Spongie.Jacket_WinterCoat,
@@ -320,7 +324,7 @@ module Spongie {
         BiteDefense = 20,
         ScratchDefense = 25,
 		
-        Insulation = 1.0,
+        Insulation = 0.9,
         WindResistance = 1.0,
         WaterResistance = 0.8,
 		
@@ -359,7 +363,7 @@ module Spongie {
         Type = Clothing,
         DisplayName = Field Jacket,
         ClothingItem = Jacket_FieldOPEN,
-        BodyLocation = Jacket,
+        BodyLocation = Jacket_Bulky,
         Icon = FieldJacket,
         BloodLocation = Jacket,
         RunSpeedModifier = 0.90,
@@ -384,8 +388,8 @@ module Spongie {
         DisplayCategory = Clothing,
         Type = Clothing,
         DisplayName = Bomber Jacket,
-        ClothingItem = Jacket_Bomber,
-        BodyLocation = Jacket,
+        ClothingItem = Jacket_BomberThick,
+        BodyLocation = Jacket_Bulky,
 		IconsForTexture = BomberJacket1;BomberJacket2;BomberJacket3;BomberJacket4,
         BloodLocation = Jacket,
         RunSpeedModifier = 0.85,
@@ -394,8 +398,8 @@ module Spongie {
         ScratchDefense = 40,
         NeckProtectionModifier = 0.75,
         Insulation = 0.65,
-        WindResistance = 0.55,
-        WaterResistance = 0.55,
+        WindResistance = 0.8,
+        WaterResistance = 0.7,
         FabricType = Leather,
         Weight = 3,
         WorldStaticModel = Jacket_Ground,
@@ -409,8 +413,8 @@ module Spongie {
         DisplayCategory = Clothing,
         Type = Clothing,
         DisplayName = Bomber Jacket,
-        ClothingItem = Jacket_BomberOPEN,
-        BodyLocation = Jacket,
+        ClothingItem = Jacket_BomberThickOPEN,
+        BodyLocation = Jacket_Bulky,
 		IconsForTexture = BomberJacket1;BomberJacket2;BomberJacket3;BomberJacket4,
         BloodLocation = Jacket,
         RunSpeedModifier = 0.85,
@@ -419,8 +423,8 @@ module Spongie {
         ScratchDefense = 40,
         NeckProtectionModifier = 0.75,
         Insulation = 0.45,
-        WindResistance = 0.35,
-        WaterResistance = 0.35,
+        WindResistance = 0.6,
+        WaterResistance = 0.5,
         FabricType = Leather,
         Weight = 3,
         WorldStaticModel = Jacket_Ground,
@@ -429,4 +433,161 @@ module Spongie {
         ClothingItemExtraOption = CloseJacket,
         clothingExtraSubmenu = OpenJacket,
     }
+	
+    item Vest_Puffy
+    {
+	    DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Puffy Vest,
+        ClothingItem = Vest_Puffy,
+        BodyLocation = TorsoExtraVest,
+        IconsForTexture = PuffyVest,
+        BloodLocation = ShirtNoSleeves;Neck,
+        FabricType = Cotton,
+		
+        ClothingItemExtra = Spongie.Vest_PuffyOPEN,
+        ClothingItemExtraOption = OpenJacket,
+        clothingExtraSubmenu = CloseJacket,
+		
+        BiteDefense = 10,
+        ScratchDefense = 20,
+        NeckProtectionModifier = 0.5,
+		
+        Insulation = 0.3,
+        WindResistance = 0.4,
+        WaterResistance = 0.5,
+        Weight = 1.5,
+		
+        WorldStaticModel = BulletVest_Ground,
+    }
+	item Vest_PuffyOPEN
+    {
+	    DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Puffy Vest,
+        ClothingItem = Vest_PuffyOPEN,
+        BodyLocation = TorsoExtraVest,
+        IconsForTexture = PuffyVest,
+        BloodLocation = ShirtNoSleeves;Neck,
+        FabricType = Cotton,
+		
+        ClothingItemExtra = Spongie.Vest_Puffy,
+        ClothingItemExtraOption = CloseJacket,
+        clothingExtraSubmenu = OpenJacket,
+		
+        BiteDefense = 10,
+        ScratchDefense = 20,
+        NeckProtectionModifier = 0.5,
+		
+        Insulation = 0.2,
+        WindResistance = 0.25,
+        WaterResistance = 0.3,
+        Weight = 1.5,
+		
+        WorldStaticModel = BulletVest_Ground,
+    }
+	
+    item Jacket_Quilted
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Quilted Jacket,
+        ClothingItem = Jacket_Quilted,
+        BodyLocation = Jacket,
+        Icon = FieldJacket,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.95,
+        BiteDefense = 10,
+        ScratchDefense = 20,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.5,
+        WindResistance = 0.4,
+        WaterResistance = 0.2,
+        FabricType = Cotton,
+        Weight = 2,
+        WorldStaticModel = JacketCoat_Ground,
+		
+        ClothingItemExtra = Spongie.Jacket_QuiltedOPEN,
+        ClothingItemExtraOption = OpenJacket,
+        clothingExtraSubmenu = CloseJacket,
+    }
+    item Jacket_QuiltedOPEN
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Quilted Jacket,
+        ClothingItem = Jacket_QuiltedOPEN,
+        BodyLocation = Jacket_Bulky,
+        Icon = FieldJacket,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.95,
+        BiteDefense = 10,
+        ScratchDefense = 20,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.4,
+        WindResistance = 0.3,
+        WaterResistance = 0.1,
+        FabricType = Cotton,
+        Weight = 2,
+        WorldStaticModel = JacketCoat_Ground,
+		
+        ClothingItemExtra = Spongie.Jacket_Quilted,
+        ClothingItemExtraOption = CloseJacket,
+        clothingExtraSubmenu = OpenJacket,
+    }
+	
+    item Jacket_PeaCoat
+    {
+	    DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Pea Coat,
+        ClothingItem = Jacket_PeaCoat,
+        BodyLocation = Jacket,
+		IconsForTexture = JacketSuitWhite;JacketSuitWhite,
+        BloodLocation = Jacket,
+        FabricType = Cotton,
+		
+        ClothingItemExtra = Spongie.Jacket_PeaCoatOPEN,
+        ClothingItemExtraOption = OpenJacket,
+        clothingExtraSubmenu = CloseJacket,
+		
+        RunSpeedModifier = 0.9,
+        CombatSpeedModifier = 0.95,
+		
+        BiteDefense = 15,
+        ScratchDefense = 25,
+        Insulation = 0.7,
+        WindResistance = 0.4,
+        WaterResistance = 0.2,
+		
+        Weight = 2,
+		
+        WorldStaticModel = JacketLong_Ground,
+    }
+    item Jacket_PeaCoatOPEN
+    {
+	    DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Pea Coat,
+        ClothingItem = Jacket_PeaCoatOPEN,
+        BodyLocation = Jacket_Bulky,
+		IconsForTexture = JacketSuitWhite;JacketSuitWhite,
+        BloodLocation = Jacket,
+        FabricType = Cotton,
+		
+        ClothingItemExtra = Spongie.Jacket_PeaCoat,
+        ClothingItemExtraOption = CloseJacket,
+        clothingExtraSubmenu = OpenJacket,
+		
+        CombatSpeedModifier = 0.9,
+		BiteDefense = 7,
+        ScratchDefense = 15,
+        Insulation = 0.25,
+        WindResistance = 0.35,
+		
+        Weight = 2,
+		
+        WorldStaticModel = JacketLong_Ground,
+    }
+	
 }

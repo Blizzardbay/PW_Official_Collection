@@ -52,5 +52,13 @@ ContextMenu_CH = {
 	ContextMenu_EvolvedRecipe_SapphCooking.MRE_10 = "添加",
 	ContextMenu_EvolvedRecipe_SapphCooking.MRE_11 = "添加",
   	ContextMenu_EvolvedRecipe_SapphCooking.MRE_12 = "添加",
+
+	ContextMenu_EvolvedRecipe_SapphCooking.SkewersMeat = "Skewer",
+	ContextMenu_EvolvedRecipe_SapphCooking.SkewersVegetable = "Skewer",
+	ContextMenu_EvolvedRecipe_SapphCooking.SkewersInsect = "Skewer",
+	ContextMenu_EvolvedRecipe_SapphCooking.ThermosBeverage = "Thermos",
+	ContextMenu_EvolvedRecipe_SapphCooking.SapphCrackers = "咸餅乾",
+  	ContextMenu_EvolvedRecipe_SapphCooking.SapphCrackers2 = "全麥餅乾",
+
   
 } 

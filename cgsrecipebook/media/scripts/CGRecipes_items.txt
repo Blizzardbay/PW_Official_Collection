@@ -1,0 +1,389 @@
+module CGRecipes 
+{   
+
+imports
+    {
+        Base
+    }
+	
+	item CGRockSalt 
+	{
+    Type = Normal,
+	DisplayCategory = Material,
+    DisplayName = Rock Salt,
+    Icon = RockSalt_icon,
+    Weight = 0.1,
+    WorldStaticModel = CGRecipes.CGRockSalt,
+    }
+	
+	item CGSyrup
+	{
+		DisplayName = Raw Syrup,
+		DisplayCategory = Food,
+		Type = Food,
+		IsCookable = TRUE,
+		MinutesToCook = 360,
+		MinutesToBurn = 500,
+		DangerousUncooked = TRUE,
+		Weight = 0.2,
+		Icon = Syrup,
+		CantBeFrozen = TRUE,
+		UnhappyChange = -20,
+		Calories = 500,
+		Carbohydrates = 270,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = CGRecipes.CGSyrup,
+		FoodType = NoExplicit,
+		ReplaceOnCooked = Sugar,
+	}
+	
+	item CGFishToSmoke
+	{
+		DisplayName = Fish To Smoke,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = FishFillet,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		FoodType = Fish,
+		GoodHot = true,
+		IsCookable = TRUE,
+		MinutesToCook = 720,
+		MinutesToBurn = 1200,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -25,
+		Calories = 205,
+		Carbohydrates = 1,
+		Lipids = 12,
+		Proteins = 30,
+		WorldStaticModel = CGRecipes.CGFishToSmoke,
+		Tags = FishMeat,
+		ReplaceOnCooked = CGRecipes.CGSmokedFish,
+	}
+	
+	item CGSmokedFish
+	{
+		DisplayName = Smoked Fish,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = FishFried,
+		BadInMicrowave = true,
+		FoodType = Fish,
+		GoodHot = true,
+		DaysFresh = 14,
+		DaysTotallyRotten = 21,
+		HungerChange = -25,
+		Calories = 205,
+		Carbohydrates = 1,
+		Lipids = 12,
+		Proteins = 30,
+		WorldStaticModel = CGRecipes.CGSmokedFish,
+		EvolvedRecipe = Pizza:15;Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10|Cooked;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15;Taco:10|Cooked;Burrito:15|Cooked,
+	}
+	
+	item CGDebonedSmallGame
+	{
+		DisplayName = Meat to Cure,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1,
+		Icon = DebonedSmallGame,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		FoodType = Game,
+		GoodHot = true,
+		IsCookable = TRUE,
+		MinutesToCook = 720,
+		MinutesToBurn = 1440,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -30,
+		Calories = 750,
+		Carbohydrates = 20,
+		Lipids = 20,
+		Proteins = 185,
+		WorldStaticModel = CGRecipes.CGDebonedSmallGame,
+		ReplaceOnCooked = CGRecipes.CGCuredMeat,
+	}
+	
+	item CGCuredMeat
+	{
+		DisplayName = Cured Meat,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.7,
+		Icon = CuredMeat,
+		BadInMicrowave = true,
+		FoodType = Meat,
+		GoodHot = true,
+		IsCookable = TRUE,
+		MinutesToCook = 1400,
+		MinutesToBurn = 2800,
+		DaysFresh = 70,
+		DaysTotallyRotten = 20,
+		HungerChange = -25,
+		Calories = 680,
+		Carbohydrates = 20,
+		Lipids = 12,
+		Proteins = 185,
+		WorldStaticModel = CGRecipes.CGCuredMeat,
+		EvolvedRecipe = Pizza:20;Stew:20;Stir fry Griddle Pan:20;Stir fry:20;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Salad:10|Cooked;Roasted Vegetables:20;PastaPot:20;PastaPan:20;RicePot:20;RicePan:20;Taco:20|Cooked;Burrito:20|Cooked,
+		ReplaceOnCooked = CGRecipes.CGHardDriedMeat,
+	}
+	
+	item CGHardDriedMeat
+	{
+		DisplayName = Hard Dried Meat,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = HardDriedMeat,
+		FoodType = Meat,
+		GoodHot = true,
+		IsCookable = TRUE,
+		MinutesToCook = 1400,
+		MinutesToBurn = 2800,
+		DaysFresh = 14,
+		DaysTotallyRotten = 21,
+		HungerChange = -40,
+		Calories = 660,
+		Carbohydrates = 20,
+		Lipids = 10,
+		Proteins = 185,
+		WorldStaticModel = CGRecipes.CGHardDriedMeat,
+		EvolvedRecipe = Pizza:20;Stew:20;Stir fry Griddle Pan:20;Stir fry:20;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Salad:10|Cooked;Roasted Vegetables:20;PastaPot:20;PastaPan:20;RicePot:20;RicePan:20;Taco:20|Cooked;Burrito:20|Cooked,
+		Tags = AlreadyCooked;HideCooked,
+	}
+	
+	item CGFirewood
+	{
+		DisplayName = Firewood,
+		DisplayCategory = Material,
+		Type = Food,
+		IsCookable = TRUE,
+		MinutesToCook = 20,
+		MinutesToBurn = 2800,
+		Weight = 8,
+		Icon = Firewood,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = CGRecipes.CGFirewood,
+		ReplaceOnCooked = Charcoal,
+	}
+	
+	item CGUnprocessedNitrates
+	{
+		DisplayName = Unprocessed Nitrates,
+		DisplayCategory = Material,
+		Type = Food,
+		IsCookable = TRUE,
+		MinutesToCook = 120,
+		MinutesToBurn = 2400,
+		Weight = 3,
+		Icon = RawNitrates,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = CGRecipes.CGRawNitrates,
+		ReplaceOnCooked = CGRecipes.CGNitrate,
+	}
+	
+	item CGNitrate
+	{
+		DisplayName = Nitrate,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = Nitrate,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = CGRecipes.CGNitrate,
+	}
+	
+	item CGWort
+	{
+		DisplayName = Wort,
+		DisplayCategory = Food,
+		Type = Food,
+		IsCookable = TRUE,
+		MinutesToCook = 360,
+		MinutesToBurn = 500,
+		DangerousUncooked = TRUE,
+		Weight = 1,
+		Icon = Wort,
+		CantBeFrozen = TRUE,
+		UnhappyChange = 20,
+		Calories = 500,
+		Carbohydrates = 270,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = CGRecipes.CGWort,
+		FoodType = NoExplicit,
+		ReplaceOnCooked = CGRecipes.CGFermentedWort,
+	}
+	
+	item CGFermentedWort
+	{
+		DisplayName = Fermented Wort,
+		DisplayCategory = Food,
+		Type = Food,
+		IsCookable = TRUE,
+		MinutesToCook = 360,
+		MinutesToBurn = 500,
+		Weight = 0.2,
+		Icon = Wort,
+		CantBeFrozen = TRUE,
+		UnhappyChange = 50,
+		Calories = 600,
+		Carbohydrates = 270,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = CGRecipes.CGWort,
+		FoodType = NoExplicit,
+		Tags = AlreadyCooked;HideCooked,
+	}
+	
+	item CGMust
+	{
+		DisplayName = Must,
+		DisplayCategory = Food,
+		Type = Food,
+		IsCookable = TRUE,
+		MinutesToCook = 360,
+		MinutesToBurn = 500,
+		DangerousUncooked = TRUE,
+		Weight = 0.2,
+		Icon = Must,
+		CantBeFrozen = TRUE,
+		UnhappyChange = 20,
+		Calories = 500,
+		Carbohydrates = 270,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = CGRecipes.CGMust,
+		FoodType = NoExplicit,
+		ReplaceOnCooked = CGRecipes.CGFermentedMust,
+	}
+	
+	item CGFermentedMust
+	{
+		DisplayName = Fermented Must,
+		DisplayCategory = Food,
+		Type = Food,
+		IsCookable = TRUE,
+		MinutesToCook = 360,
+		MinutesToBurn = 500,
+		Weight = 0.2,
+		Icon = Must,
+	    UnhappyChange = 50,
+		Calories = 600,
+		Carbohydrates = 270,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = CGRecipes.CGMust,
+		FoodType = NoExplicit,
+		Tags = AlreadyCooked;HideCooked,
+	}
+	
+	item CGPreservedFruits
+	{
+		DisplayName = Preserved Fruits,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = PreservedFruits,
+		FoodType = NoExplicit,
+		HungerChange = -30,
+		UnhappyChange = -10,
+		Calories = 550,
+		Carbohydrates = 130,
+		Lipids = 0,
+		Proteins = 1,
+		WorldStaticModel = CGRecipes.CGPreservedFruits,
+		EvolvedRecipe = Sandwich:3;Sandwich Baguette:3;Pancakes:5;Waffles:5;ConeIcecream:5;Cake:15;Toast:3;Bread:15;Oatmeal:3,
+	}
+	
+	item CGPreservedBerries
+	{
+		DisplayName = Preserved Berries,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = PreservedBerries,
+		FoodType = NoExplicit,
+		HungerChange = -30,
+		UnhappyChange = -10,
+		Calories = 450,
+		Carbohydrates = 130,
+		Lipids = 0,
+		Proteins = 1,
+		WorldStaticModel = CGRecipes.CGPreservedBerries,
+		EvolvedRecipe = Sandwich:3;Sandwich Baguette:3;Pancakes:5;Waffles:5;ConeIcecream:5;Cake:15;Toast:3;Bread:15;Oatmeal:3,
+	}
+	
+	item CGPreservedCitrics
+	{
+		DisplayName = Preserved Citrics,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = PreservedCitrics,
+		FoodType = NoExplicit,
+		HungerChange = -30,
+		UnhappyChange = -10,
+		Calories = 450,
+		Carbohydrates = 130,
+		Lipids = 0,
+		Proteins = 1,
+		WorldStaticModel = CGRecipes.CGPreservedCitrics,
+		EvolvedRecipe = Sandwich:3;Sandwich Baguette:3;Pancakes:5;Waffles:5;ConeIcecream:5;Cake:15;Toast:3;Bread:15;Oatmeal:3,
+	}
+	
+	item CGPickledMushrooms
+	{
+		DisplayName = Pickled Mushrooms,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = PickledMushrooms,
+		FoodType = NoExplicit,
+		HungerChange = -30,
+		UnhappyChange = -10,
+		Calories = 220,
+		Carbohydrates = 130,
+		Lipids = 30,
+		Proteins = 70,
+		WorldStaticModel = CGRecipes.CGPickledMushrooms,
+		EvolvedRecipe = Pizza:13;Burger:13;Omelette:13;Stir fry Griddle Pan:13;Stir fry:13;Stew:13;Pie:13;Soup:13;Sandwich:13;Sandwich Baguette:13;Salad:13;Roasted Vegetables:13;RicePot:13;RicePan:13;PastaPot:13;PastaPan:13,
+	}
+	
+	item CGUnprocessedGlue
+	{
+		DisplayName = Unprocessed Glue,
+		DisplayCategory = Material,
+		Type = Food,
+		IsCookable = TRUE,
+		MinutesToCook = 120,
+		MinutesToBurn = 2400,
+		Weight = 3,
+		Icon = UnprocessedGlue,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = CGRecipes.CGUnprocessedGlue,
+		ReplaceOnCooked = CGRecipes.CGProcessedGlue,
+	}
+	
+	item CGProcessedGlue
+	{
+		DisplayName = Processed Glue,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = ProcessedGlue,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = CGRecipes.CGProcessedGlue,
+	}
+	
+}
+
+	

@@ -32,7 +32,7 @@ module Base
 		{
 			file = media/sound/mp5sdshot.ogg,
 			distanceMax = 15,
-			volume = 0.2,
+			volume = 0.5,
 		}
 	}
 

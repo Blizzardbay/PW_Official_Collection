@@ -1,0 +1,96 @@
+module Base
+{
+    imports    
+    {
+		Base
+	}
+
+    item ClericRevolver
+    {
+        ImpactSound	=	null,
+        MaxRange	=	14,
+        WeaponSprite	=	ClericRevolver,
+        SoundVolume	=	85,
+        MinAngle	=	0.97,
+        Type	=	Weapon,
+        MinimumSwingTime	=	0.5,
+        ToHitModifier	=	1.5,
+        NPCSoundBoost	=	1.5,
+        KnockBackOnNoDeath	=	TRUE,
+        Ranged	=	TRUE,
+        SwingAmountBeforeImpact	=	0,
+        ProjectileCount	=	1,
+        ConditionLowerChanceOneIn	=	60,
+        Weight	=	2,
+        SplatNumber	=	3,
+        PushBackMod	=	0.6,
+        SubCategory	=	Firearm,
+        ConditionMax	=	10,
+        ShareDamage	=	FALSE,
+        MaxHitCount	=	2,
+        IsAimedFirearm	=	TRUE,
+        DoorDamage	=	8,
+        UseEndurance	=	FALSE,
+        SwingAnim	=	Handgun,
+        DisplayName	=	500 Revolver,
+        MinRange	=	0.61,
+        SwingTime	=	0.5,
+        MultipleHitConditionAffected	=	FALSE,
+        SoundRadius	=	75,
+        MinDamage	=	1.5,
+        MaxDamage	=	2.5,
+        SplatSize	=	3,
+        KnockdownMod	=	4,
+        SplatBloodOnNoDeath	=	TRUE,
+        Icon	=	ClericRevolver,
+        RunAnim	=	Run_Weapon2,
+        CriticalChance	=	30,
+        CritDmgMultiplier = 6,
+        AimingPerkCritModifier = 10,
+        AimingPerkRangeModifier = 1.5,
+        HitChance = 20,
+        AimingPerkHitChanceModifier = 10,
+        RecoilDelay = 45,
+        SoundGain = 1,
+        ClipSize = 5,
+        ReloadTime = 99,
+        AimingTime = 35,
+        BreakSound  =   BreakMetalItem,
+        MetalValue = 30,
+        AmmoBox = 500Box,
+        MaxAmmo = 5,
+        SwingSound	=	CRShot,
+        InsertAmmoSound = stormyRevolverInsertRound,
+        EjectAmmoSound = stormyRevolverSpin,
+        RackSound = stormyRevolverClick,
+        AmmoType = Base.500Bullets,
+        WeaponReloadType = revolver,
+        JamGunChance = 0,
+        haveChamber = FALSE,
+        AttachmentType = Holster,
+    }
+
+	item 500Bullets
+    {
+        Count	=	10,
+        Weight	=	0.06,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	.500 Ammo,
+        DisplayCategory = Ammo,
+        Icon	=	500loose,
+        MetalValue = 1,
+    }
+
+	item 500Box
+    {
+        Weight	=	0.5,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	Box of .500 Bullets,
+        DisplayCategory = Ammo,
+        Icon	=	Ammo500,
+        MetalValue = 40,
+    }
+    
+}

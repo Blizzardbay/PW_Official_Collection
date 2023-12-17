@@ -1,0 +1,10 @@
+name=Sleep in Dumpsters
+id=SID3404
+description=Lets the player sleep in blue and orange Dumpsters as if they were (bad quality) beds.
+description=
+description=Modifies trashcontainers_01.
+description=
+description=SP/MP supported, mod must be present on client and server.
+description=
+poster=poster.png
+tiledef=sleepindumpsters 3403

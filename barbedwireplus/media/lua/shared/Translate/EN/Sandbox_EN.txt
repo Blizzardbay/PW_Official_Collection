@@ -1,0 +1,23 @@
+Sandbox_EN = {
+	Sandbox_BarbedWirePlus = "Barbed Wire +",
+
+	Sandbox_BarbedWirePlus_CarpentryLevel = "Carpentry",
+	Sandbox_BarbedWirePlus_CarpentryLevel_tooltip = "Level of carpentry required to build barbed wires.",
+	Sandbox_BarbedWirePlus_ZombieKnockChance = "Zombie: Knockdown chance",
+	Sandbox_BarbedWirePlus_ZombieKnockChance_tooltip = "Chance for zombie to trip over wire",
+	Sandbox_BarbedWirePlus_ZombieCrawlChance = "Zombie: Crawler chance",
+	Sandbox_BarbedWirePlus_ZombieCrawlChance_tooltip = "Chance for zombie to be handicapped to crawling state",
+	Sandbox_BarbedWirePlus_ZombieRipChance = "Zombie: Ripping chance",
+	Sandbox_BarbedWirePlus_ZombieRipChance_tooltip = "Chance to rip zombie clothing and tear them apart visually\nWARNING! Increasing this value to 100 may cause performance issues!",
+	Sandbox_BarbedWirePlus_LacerateChance = "Player: Laceration chance",
+	Sandbox_BarbedWirePlus_LacerateChance_tooltip = "Chance to receive laceration while moving through barbed fence",
+	Sandbox_BarbedWirePlus_ScratchChance = "Player: Scratch chance",
+	Sandbox_BarbedWirePlus_ScratchChance_tooltip = "Chance to receive scratch while moving through barbed fence",
+	Sandbox_BarbedWirePlus_RipClothChance = "Player: Ripping chance",
+	Sandbox_BarbedWirePlus_RipClothChance_tooltip = "Chance to rip players clothes while moving through barbed fence",
+	Sandbox_BarbedWirePlus_ZombieTickTime = "(Advanced) Zombie tick time",
+	Sandbox_BarbedWirePlus_ZombieTickTime_tooltip = "Time in seconds to trigger checks on all events for zombies\nIncrease this value if you experience performance issues.",
+	Sandbox_BarbedWirePlus_PlayerTickTime = "(Advanced) Player tick time",
+	Sandbox_BarbedWirePlus_PlayerTickTime_tooltip = "Time in seconds to trigger checks on all events for players\nDo not impact performance, decreasing this value will kill players faster.",
+
+}

@@ -9,6 +9,7 @@ MF.Moodles = {}--moodles map (for getPlayer only, for now)
 MF.verbose = false
 MF.TooLargeValue = 100000
 MF.ModDataClean = false
+MF.scale = 1
 
 --moodle creation for user (beware character & MF.Moodles management prohibit local coop correct handling)
 function MF.createMoodle(moodleName)
@@ -31,7 +32,6 @@ function MF.ISMoodle:setValue(value)
     
     local previousLevel = self:getLevel();
     local previousGoodBadNeutral = self:getGoodBadNeutral();
-    local wasWiggling = self.enableWiggle;
     
     local moodleMD = self.char:getModData().Moodles[self.name]--star optim to test
     moodleMD.Value = value;
@@ -200,7 +200,7 @@ function MF.ISMoodle:updateOscilatorXOffset()
         if self.MoodleOscilationLevel > 0 then
             self.OscilatorStep = self.OscilatorStep + self.OscilatorRate / fpsFrac;
             local Oscilator = math.sin(self.OscilatorStep);
-            self.OscilatorXOffset = Oscilator * self.OscilatorScalar * self.MoodleOscilationLevel;
+            self.OscilatorXOffset = Oscilator * self.OscilatorScalar * self.MoodleOscilationLevel * MF.scale;
         else
             self.OscilatorXOffset = 0
             self.OscilatorStep    = 0
@@ -222,23 +222,24 @@ function MF.ISMoodle:render()
         local moodleLevel = self:getLevel();
         
         --moodle texture background
-        self:drawTexture(self.bkg[goodBadNeutral][moodleLevel], wiggleOffset, 0, 1, 1, 1, 1);
+        self:drawTextureScaledUniform(self.bkg[goodBadNeutral][moodleLevel], wiggleOffset, 0, MF.scale, 1, 1, 1, 1);
         
         --moodle tooltip
         self:mouseOverMoodle(goodBadNeutral,moodleLevel);
 
         --moodle picture
-        self:drawTexture(self:getPicture(goodBadNeutral,moodleLevel), wiggleOffset, 0, 1, 1, 1, 1);
+        self:drawTextureScaledUniform(self:getPicture(goodBadNeutral,moodleLevel), wiggleOffset, 0, MF.scale, 1, 1, 1, 1);
 
         --moodle chevrons
         for nbChevron =1, self.chevronCount do
-            local chevronYOffset = nbChevron * 4;
+            local chevronYOffset = 8  * MF.scale + 4 - nbChevron * 4;
+            local chevronXOffset = 24 * MF.scale + wiggleOffset
             if self.chevronIsUp then
-                self:drawTexture(self.chevronUp,       16+wiggleOffset, 20 - chevronYOffset, 1,1,1,1);
-                self:drawTexture(self.chevronUpBorder, 16+wiggleOffset, 20 - chevronYOffset, 1,1,1,1);
+                self:drawTextureScaledUniform(self.chevronUp,         chevronXOffset, chevronYOffset, MF.scale, 1,1,1,1);
+                self:drawTextureScaledUniform(self.chevronUpBorder,   chevronXOffset, chevronYOffset, MF.scale, 1,1,1,1);
             else
-                self:drawTexture(self.chevronDown,       16+wiggleOffset, 20 - chevronYOffset, 1,1,1,1);
-                self:drawTexture(self.chevronDownBorder, 16+wiggleOffset, 20 - chevronYOffset, 1,1,1,1);
+                self:drawTextureScaledUniform(self.chevronDown,       chevronXOffset, chevronYOffset, MF.scale, 1,1,1,1);
+                self:drawTextureScaledUniform(self.chevronDownBorder, chevronXOffset, chevronYOffset, MF.scale, 1,1,1,1);
             end
         end
     end
@@ -251,8 +252,8 @@ end
 
 --compensates vanilla bug of missing the top or botton moodle in its java item
 function MF.ISMoodle:isMouseOverMoodle()
-    local estimatedX = 30
-    local estimatedY = 30
+    local estimatedX = 30 * MF.scale
+    local estimatedY = 30 * MF.scale
     local x = getMouseX();
     if x >= self:getX() then
         if x <= self:getX() + estimatedX then--todo check size
@@ -290,7 +291,7 @@ function MF.ISMoodle:mouseOverMoodle(goodBadNeutral,moodleLevel)
 end
 
 function MF.ISMoodle:getXYPosition()
-    local x = (getCore():getScreenWidth() - self:getWidth()) - 19;
+    local x = (getCore():getScreenWidth() - self:getWidth() * MF.scale) - 18;
     local y = 101;--y of first moodle
 
     if self.disable then if MF.verbose then print("MF.ISMoodle:getXYPosition while disabled. "..self.name) end; return x,y; end--design by contract
@@ -298,7 +299,7 @@ function MF.ISMoodle:getXYPosition()
     if self:getLevel() ~= 0 then--bypass when not displayed (this is bad design)
         for i = 0, 23 do--vanilla moodles first
             if self.char:getMoodles():getMoodleLevel(MoodleType.FromIndex(i)) ~= 0 then
-                y = y + 36;
+                y = y + 36 * MF.scale;
             end
         end
         
@@ -311,7 +312,7 @@ function MF.ISMoodle:getXYPosition()
                     local lvl = moodleObj:getLevel()
                     if lvl > 0 then
                         nbMoodlesAiteron = nbMoodlesAiteron + 1
-                        y = y + 36;
+                        y = y + 36 * MF.scale;
                     end
                 end
             end
@@ -325,7 +326,7 @@ function MF.ISMoodle:getXYPosition()
                 break--found
             else
                 if v.Level ~= 0 then--this is why we need to share level in player mod data
-                    y = y + 36;
+                    y = y + 36 * MF.scale;
                 end
             end
         end
@@ -351,8 +352,8 @@ function MF.ISMoodle:new(moodleName,character)
     end
     
     local o = {};
-    local width = 31;
-    local height = 31;
+    local width = 32 * MF.scale;
+    local height = 32 * MF.scale;
     o = ISUIElement:new(0, 0, width, height);
     setmetatable(o, self);
     self.__index = self;

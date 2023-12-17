@@ -1,6 +1,4 @@
 
--- TODO add CrateMaps to distributions (procedural loot)
-
 -- Definitions of the reveal areas of each map, as well as legends and badges
 
 local function initMapReveals()
@@ -213,7 +211,7 @@ local function initMapReveals()
 	--	overlayPNG(mapUI, 10524, 9222, 0.666, "lootMapPNG", "media/ui/LootableMaps/muldraughmap.png", 0.5)
 	end
 
-	-- LouisvillePhoenixHillMap -- TODO correct map coordonates
+	-- LouisvillePhoenixHillMap
 	LootMaps.Init.LouisvillePhoenixHillMap = function(mapUI)
 		local mapAPI = mapUI.javaObject:getAPIv1()
 		MapUtils.initDirectoryMapData(mapUI, 'media/maps/Muldraugh, KY')
@@ -658,20 +656,20 @@ local function initMapReveals()
 	--	overlayPNG(mapUI, 10524, 9222, 0.666, "lootMapPNG", "media/ui/LootableMaps/muldraughmap.png", 0.5)
 	end
 
-	--  Complete Raven Creek Map, (rare) TODO
+	--  Complete Raven Creek Map, (rare)
 	LootMaps.Init.RavenCreekMap = function(mapUI)
 		local mapAPI = mapUI.javaObject:getAPIv1()
 		MapUtils.initDirectoryMapData(mapUI, 'media/maps/RavenCreek')
 		MapUtils.initDefaultStyleV1(mapUI)
 		replaceWaterStyle(mapUI)
-		mapAPI:setBoundsInSquares(3000, 11100, 5400, 13200)
+		mapAPI:setBoundsInSquares(3000, 11100, 5400, 13500)
 		-- overlayPNG(mapUI, 11093, 9222, 0.666, "badge", "media/textures/worldMap/MuldraughBadge.png")
 		overlayPNG(mapUI, 3005, 4205, 0.6, "legend", "media/textures/worldMap/Legend.png")
 		MapUtils.overlayPaper(mapUI)
 	--	overlayPNG(mapUI, 10524, 9222, 0.666, "lootMapPNG", "media/ui/LootableMaps/muldraughmap.png", 0.5)
 	end
 
-	--  North Raven Creek Map: Center,TODO
+	--  North Raven Creek Map: Center
 	LootMaps.Init.NorthRavenCreekMap = function(mapUI)
 		local mapAPI = mapUI.javaObject:getAPIv1()
 		MapUtils.initDirectoryMapData(mapUI, 'media/maps/RavenCreek')
@@ -686,7 +684,7 @@ local function initMapReveals()
 
 
 
-	--  South East Raven Creek Map,TODO
+	--  South East Raven Creek Map
 	LootMaps.Init.SouthEastRavenCreekMap = function(mapUI)
 		local mapAPI = mapUI.javaObject:getAPIv1()
 		MapUtils.initDirectoryMapData(mapUI, 'media/maps/RavenCreek')
@@ -700,20 +698,30 @@ local function initMapReveals()
 	end
 
 
-	--  Raven Creek's Harbor facilities Map TODO
+	--  Raven Creek's Harbor facilities Map
 	LootMaps.Init.RavenCreekPortFacilitiesMap = function(mapUI)
 		local mapAPI = mapUI.javaObject:getAPIv1()
 		MapUtils.initDirectoryMapData(mapUI, 'media/maps/RavenCreek')
 		MapUtils.initDefaultStyleV1(mapUI)
 		replaceWaterStyle(mapUI)
 		mapAPI:setBoundsInSquares(3000, 11500, 3800, 12950)
-		-- overlayPNG(mapUI, 11093, 9222, 0.666, "badge", "media/textures/worldMap/MuldraughBadge.png")
 		overlayPNG(mapUI, 3350, 11600, 0.7, "legend", "media/textures/worldMap/Legend.png")
 		MapUtils.overlayPaper(mapUI)
-	--	overlayPNG(mapUI, 10524, 9222, 0.666, "lootMapPNG", "media/ui/LootableMaps/muldraughmap.png", 0.5)
 	end
 
-	--  Survivor Warehouse Location -- TODO
+	-- Raven Creek South Town
+	-- (3630, 12790, 4900, 13500)
+	LootMaps.Init.RavenCreekSouthernTownMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, 'media/maps/RavenCreek')
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(3630, 12790, 4900, 13500)
+		--overlayPNG(mapUI, 3350, 11600, 0.7, "legend", "media/textures/worldMap/Legend.png")
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	--  Survivor Warehouse Location --
 	LootMaps.Init.SurvivorWarehouseLocation = function(mapUI)
 		local mapAPI = mapUI.javaObject:getAPIv1()
 		MapUtils.initDirectoryMapData(mapUI, 'media/maps/survivorwarehouse')
@@ -1431,10 +1439,1076 @@ local function initMapReveals()
 		MapUtils.overlayPaper(mapUI)
 	end
 
-	-- TODO
-	-- Firecamp, KY whent it is added
-	-- westwood when it is added
-	-- Frankfort, KY when it is added
+
+
+
+
+	-- westwood Remake
+	-- (7200, 11400, 7800, 11700)
+	LootMaps.Init.WestwoodMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, 'media/maps/Westwood')
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(7200, 11400, 7800, 11700)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+	-- Anthem, KY
+	-- (11100, 8100, 11400, 8400)
+	LootMaps.Init.AnthemMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, 'media/maps/Anthem, KY')
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(11100, 8100, 11400, 8400)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- laconia, KY (conflicts with coryerdon)
+	-- (8100, 6000, 9000, 7200)
+	LootMaps.Init.LaconiaMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, 'media/maps/Laconia')
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(8100, 6000, 9000, 7200)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+	-- ashenwood
+	-- (11400, 11100, 11700, 11700)
+	LootMaps.Init.AshenwoodMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, 'media/maps/Ashenwood')
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(11400, 11100, 11700, 11700)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	
+
+	-- elysium island
+	-- (10550, 6600, 10730, 6890)
+	LootMaps.Init.ElysiumIslandMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, 'media/maps/Elysium_Island')
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(10550, 6600, 10730, 6890)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Hopewell, KY -- ids : hopewell_eng_orig , hopewell_eng_zombies, hopewell_esp_zombies, hopewell_esp_orig
+	-- (14700, 2900, 15000, 3400)
+	LootMaps.Init.HopewellMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, 'media/maps/Hopewell, KY')
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(14700, 2900, 15000, 3400)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Walnut Ridge
+	-- (7800, 7200, 8700, 7800)
+	LootMaps.Init.WalnutRidgeMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, 'media/maps/Walnut_ridge')
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(7800, 7200, 8700, 7800)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Heavens Hill Mansion
+	-- (7530, 7820, 7790, 8040)
+	LootMaps.Init.HeavensHillMansionAddress = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, 'media/maps/Heavens Hill')
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(7530, 7820, 7790, 8040)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Chestown
+	-- (4500, 6600, 4800, 6900)
+	LootMaps.Init.ChestownMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, 'media/maps/Chestown')
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(4500, 6600, 4800, 6900)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- nashville, Ky
+	-- (3610, 7630, 3810, 8090)
+	LootMaps.Init.NashvilleMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, 'media/maps/Nashville')
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(3610, 7630, 3810, 8090)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- overlook hotel
+	-- (4500, 6300, 4800, 6600)
+	LootMaps.Init.OverlookHotelMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, 'media/maps/OverlookHotel')
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(4500, 6300, 4800, 6600)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Perfect shelter
+	-- (11120, 11380, 8110, 8380)
+	LootMaps.Init.PerfectShelterMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, 'media/maps/Fishing base')
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(11160, 8160, 11370, 8360)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- O'Connor Farm
+	-- (8130, 8100, 8110, 8040)
+	LootMaps.Init.OConnorFarmAddress = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/O'Connor Farm")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(8130, 7570, 8360, 8070)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Lincoln Regional Airport
+	-- (3900, 9000, 4200, 9300)
+	LootMaps.Init.LincolnRegionalAirportMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Lincoln Regional Airport")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(3900, 9000, 4200, 9300)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Muldraugh - West outskirts Shipping Company.
+	-- (9600, 9600, 9900, 9900)
+	LootMaps.Init.MuldraughWesternShippingCompanyMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Westoutskirts-shippingCo")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(9600, 9600, 9900, 9900)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+	---
+
+
+	-- Rosewood Military Hospital
+	-- (7670, 11440, 7800, 11570)
+	LootMaps.Init.RosewoodMilitaryHospitalMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Rosewood Military Hospital")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(7670, 11440, 7800, 11570)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- The Museum
+	-- 35x27 = (10540, 8100, 10800, 8400)
+	LootMaps.Init.TheMuseumMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/The Museum")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(10540, 8100, 10800, 8400)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- The Eye Lake
+	-- 49_16 = (14700, 4800, 15000, 5100)
+	LootMaps.Init.TheEyeLakeMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/TheEyeLake")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(14700, 4800, 15000, 5100)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Addams Family Mansion
+	-- 37, 31 = (11200, 9350, 11400, 9580)
+	LootMaps.Init.AddamsFamilyMansionMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Addams Mansion")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(11200, 9350, 11400, 9580)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Jeffersonville, Mansion (Louisville River Expansion)
+	-- (12300, 530, 12900, 900)
+	LootMaps.Init.JeffersonvilleMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Louisville, River Expansion (Mansion)")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(12300, 530, 12900, 900)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+	-- Cherokee Lake
+	-- (11100, 8100, 11400, 8400)
+	LootMaps.Init.CherokeeLakeMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/CherokeeLake")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(11100, 8100, 11400, 8400)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Riverside Mansion
+	-- 18,17 = (5550, 5180, 5700, 5400)
+	LootMaps.Init.RiversideMansionMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/riversidemansion")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(5550, 5180, 5700, 5400)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+	-- Finnegan Mental Asylum
+	LootMaps.Init.FinneganMentalAsylumMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/FinneganAsylum")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(3995, 9670, 4400, 9860)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	
+	-- Papaville
+	-- (10800, 8100, 11100, 8400)
+	LootMaps.Init.PapavilleMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/PapaVilleModMap")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(10800, 8100, 11100, 8400)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+	-- SouthTown
+	-- (10800, 11100, 11100, 11700)
+	LootMaps.Init.SouthTownMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Southtown")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(10800, 11100, 11100, 11700)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Chinatown Extension
+	-- (10800, 8400, 11100, 8700)
+	LootMaps.Init.ChinatownMapExpansionMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Chinatown_EX")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(10800, 8400, 11100, 8700)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Louisville Bunker Location
+	-- (14850, 3300, 15000, 3550)
+	LootMaps.Init.LouisvilleBunkerLocationMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Mbase")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(14850, 3300, 15000, 3550)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+	-- Orchidwood(official version)
+	-- (8100, 9600, 8700, 10200)
+	LootMaps.Init.OrchidwoodMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/orchidwood")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(8100, 9600, 8700, 10200)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+
+	---
+	-- Winchester, KY
+	-- (2220, 6650, 3890, 8520)
+	LootMaps.Init.WinchesterMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Winchester, KY")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(2220, 6650, 3890, 8520)
+		MapUtils.overlayPaper(mapUI)
+	end
+	
+	-- Breakpoint
+	-- (12700, 4820, 12890, 5090)
+	LootMaps.Init.BreakpointMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Breakpoint")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(12700, 4820, 12890, 5090)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Wilbore, KY
+	-- (4500, 9900, 5100, 10500)
+	LootMaps.Init.WilboreMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Wilbore")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(4500, 9900, 5100, 10500)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Petroville
+	-- (10500, 11700, 11400, 12600)
+	LootMaps.Init.PetrovilleMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Petroville")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(10500, 11700, 11400, 12600)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Cedar Hill
+	-- (4800, 5700, 5100, 6000)
+	LootMaps.Init.CedarHillMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Cedar Hill")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(4800, 5700, 5100, 6000)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Cathaya Valley,KY
+	-- (3900, 9000, 4200, 9300)
+	LootMaps.Init.CathayaValleyMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Cathaya Valley")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(3900, 9000, 4200, 9300)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Springwood
+	-- (10200, 8000, 10500, 8400)
+	LootMaps.Init.SpringwoodMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Springwood")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(10200, 8000, 10500, 8400)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Nature's Vengeance Township
+	-- (6300, 10800, 6600, 11100)
+	LootMaps.Init.NaturesVengeanceTownshipMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/nv_township_v1")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(6300, 10800, 6600, 11100)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Big Bear Lake
+	-- West Side : (6000, 7200, 9600, 8100)
+	LootMaps.Init.BigBearLakeEastMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/BBL")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(6000, 7200, 6900, 8100)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- East Side : (4800, 7200, 6000, 8100)
+	LootMaps.Init.BigBearLakeWestMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/BBL")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(4800, 7200, 6000, 8100)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- Full Map : (4800, 7200, 9600, 8100)
+	LootMaps.Init.BigBearLakeMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/BBL")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(4800, 7200, 6900, 8100)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- The Sims Zomboid
+	-- (15000, 3980, 15500, 4500)
+	LootMaps.Init.SimsZomboidMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/The Sims Zomboid")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(15000, 3980, 15500, 4500)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Dirkerdam
+	-- Florius: (1800, 2100, 3000, 3000)
+	LootMaps.Init.FloriusMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Dirkerdam")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(1800, 2100, 3000, 3000)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- Pertville (8700, 4500, 9600, 5100)
+	LootMaps.Init.PertvilleMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Dirkerdam")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(8700, 4500, 9600, 5100)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- Tashtego (8700, 5400, 9280, 6270)
+	LootMaps.Init.TashtegoMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Dirkerdam")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(8700, 5400, 9280, 6270)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- Fallen survivor colony(9900, 3300, 10200, 3900)
+	LootMaps.Init.FallenSurvivorColonyMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Dirkerdam")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(9900, 3300, 10200, 3900)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- Dirkerdam West (6000, 1930, 7625, 4500)
+	LootMaps.Init.DirkerdamWestMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Dirkerdam")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(6000, 1930, 7635, 4500)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- Dirkerdam East (7625, 1930, 9300, 4500)
+	LootMaps.Init.DirkerdamEastMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Dirkerdam")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(7635, 1930, 9300, 4500)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- Full Dirkerdam(5500, 1930, 9600, 5100)
+	LootMaps.Init.DirkerdamMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Dirkerdam")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(5500, 1930, 9600, 5100)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Lake Cumberland (old location)
+	-- West : (12300, 8100 , 13500, 9900)
+	LootMaps.Init.LakeCumberlandWestMapOld = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/LC")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(12300, 8100 , 13500, 9900)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- NorthEast :(13500, 8100 , 15300, 8700)
+	LootMaps.Init.LakeCumberlandNorthEastMapOld = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/LC")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(13500, 8100 , 15300, 8700)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- SouthEast :(13500, 8700 , 15300, 9900)
+	LootMaps.Init.LakeCumberlandSouthEastMapOld = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/LC")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(13500, 8700 , 15300, 9900)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- Full : (12300, 8100 , 15300, 9900)
+	LootMaps.Init.LakeCumberlandMapOld = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/LC")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(12300, 8100 , 15300, 9900)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+	-- Waterlocked Pharmaceutical Factory
+	-- (8100, 9000, 8400, 9300)
+	LootMaps.Init.PharmaceuticalFactoryMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Waterlocked Pharmaceutical Factory")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(8100, 9000, 8400, 9300)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+	----
+	-- print("x="..getPlayer():getSquare():getX().." and y="..getPlayer():getSquare():getY())
+	-- Nettle Township 
+	-- (6600, 9000, 7200, 9600)
+	LootMaps.Init.NettleTownshipMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Nettle Township")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(6600, 9000, 7200, 9600)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- St Moose Hospital Area
+	-- (10800, 12000, 11100, 12400)
+	LootMaps.Init.StMooseHospitalMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		if getActivatedMods():contains("MKHospitalArea_Horde") then
+			MapUtils.initDirectoryMapData(mapUI, "media/maps/MK_Hospital_Area_Horde")
+		elseif getActivatedMods():contains("MKHospitalArea_Normal") then
+			MapUtils.initDirectoryMapData(mapUI, "media/maps/MK_Hospital_Area")
+		else
+			MapUtils.initDirectoryMapData(mapUI, "media/maps/MK_Hospital_Area")
+		end
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(10800, 12000, 11100, 12400)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Shortrest County
+	-- (13350, 6900, 13900, 7200)
+	LootMaps.Init.ShortrestCountyMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Shortrest County")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(13350, 6900, 13900, 7200)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+	-- Leavenburg (riverside)
+	-- (5100, 3600, 6900, 4800)
+	LootMaps.Init.LeavenburgMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Leavenburg")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(5100, 3600, 6900, 4800)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Bunker - Day of the dead
+	-- (6000, 10500, 6300, 10800)
+	LootMaps.Init.BunkerDayOfTheDeadMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/DayOfTheDead")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(6000, 10500, 6300, 10800)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- SuperGigaMart
+	-- (3600, 6300, 3800, 6500)
+	LootMaps.Init.SuperGigaMartMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/SuperGigaMart")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(3600, 6300, 3800, 6500)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Lake Cumberland (new location)
+	-- West : (15000, 6300, 16200, 8100)
+	LootMaps.Init.LakeCumberlandWestMapNew = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/LCV2")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(15000, 6300, 16200, 8100)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- NorthEast :(16200, 6300, 18000, 6900)
+	LootMaps.Init.LakeCumberlandNorthEastMapNew = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/LCV2")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(16200, 6300, 18000, 6900)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- SouthEast :(16200, 7200, 18000, 8100)
+	LootMaps.Init.LakeCumberlandSouthEastMapNew = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/LCV2")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(16200, 7200, 18000, 8100)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- Full : (15000, 6300, 18000, 8100)
+	LootMaps.Init.LakeCumberlandMapNew = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/LCV2")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(15000, 6300, 18000, 8100)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Ztardew Valley
+	-- (12150, 9450, 12900, 10200)
+	LootMaps.Init.ZtardewValleyMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/ZtardewValley")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(12150, 9450, 12900, 10200)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- The Walking Dead: Prison
+	-- (9600, 9300, 9900, 9600)
+	LootMaps.Init.TheWalkingDeadPrisonMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/PrisonTWD")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(9600, 9300, 9900, 9600)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- The Walking Dead: Terminus
+	-- (11700, 10500, 12000, 10800)
+	LootMaps.Init.TheWalkingDeadTerminusMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/TerminusTWD")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(11700, 10500, 12000, 10800)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Hunter's Base
+	-- (6050, 5750, 6250, 5950)
+	LootMaps.Init.HuntersBaseMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Hunter'sBase_map")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(6050, 5750, 6250, 5950)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	--- 
+
+	-- PortCity KY
+	-- (9300, 6600, 9900, 7200)
+	LootMaps.Init.PortCityMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/PortCityKY")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(9300, 6600, 9900, 7200)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+	---
+
+	-- SpringValley KY
+	-- (10800, 11100, 11100, 11400)
+	LootMaps.Init.SpringValleyMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/SpringValleyKY")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(10800, 11100, 11100, 11400)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Oakshire
+	-- (8100, 7500, 9000, 8400)
+	LootMaps.Init.OakshireMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Oakshire")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(8100, 7500, 9000, 8400)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Ranger's Homestead
+	-- (9700, 9950, 9900, 10110)
+	LootMaps.Init.RangersHomesteadMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/ranger's_homestead_map")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(9700, 9950, 9900, 10110)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- The Frigate
+	-- (12300, 6500, 12500, 6600)
+	LootMaps.Init.FrigateMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/The Frigate")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(12300, 6500, 12500, 6600)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Bunker: Last Minute Prepper
+	-- (13270, 3680, 13450, 3900)
+	LootMaps.Init.BunkerLastMinutePrepperMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		if getActivatedMods():contains("LastMinutePrepper") then
+			MapUtils.initDirectoryMapData(mapUI, "media/maps/LastMinutePrepper")
+		elseif getActivatedMods():contains("LastMinutePrepperReloaded") then
+			MapUtils.initDirectoryMapData(mapUI, "media/maps/LastMinutePrepperReloaded")
+		end
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(13270, 3680, 13450, 3900)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Louisville Quarantine Zone
+	-- (13400, 3900, 14000, 4200)
+	LootMaps.Init.LouisvilleQuarantineZoneMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Louisville_Quarantine_Zone")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(13400, 3900, 14000, 4200)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- LV International Airport
+	-- (12800, 4200, 13465, 4799)
+	LootMaps.Init.LVInternationalAirport = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/lvinternationalairport")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(12800, 4200, 13465, 4799)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Muldraugh Checkpoint + [H]
+	-- (10530, 8720, 10730, 8900)
+	LootMaps.Init.MuldraughCheckpointMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		
+		if getActivatedMods():contains("MuldraughCheckpoint") then
+			MapUtils.initDirectoryMapData(mapUI, "media/maps/MuldraughCheckpoint")
+		elseif getActivatedMods():contains("MuldraughCheckpoint[HARDMODE]") then
+			MapUtils.initDirectoryMapData(mapUI, "media/maps/MuldraughCheckpoint[H]")
+		else
+			MapUtils.initDirectoryMapData(mapUI, "media/maps/MuldraughCheckpoint")
+		end
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(10530, 8720, 10730, 8900)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Speck
+	-- (9000, 12300, 9220, 12540)
+	LootMaps.Init.SpeckMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Speck")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(9000, 12300, 9220, 12540)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Homestead Windy
+	-- (8100, 8400, 8300, 8600)
+	LootMaps.Init.HomesteadWindyMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/homesteadmap")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(8100, 8400, 8300, 8600)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Military Fuel Depot
+	-- (10200, 12900, 10800, 13500)
+	LootMaps.Init.MilitaryFuelDepotMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Military Fuel Depot")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(10200, 12900, 10800, 13500)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+	---
+
+	-- Spencer-Mansion-lootable
+	-- (6300, 5700, 6600, 5900)
+	LootMaps.Init.SpencerMansionMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		if getActivatedMods():contains("SimonMDSpencerMansionLootable") then
+			MapUtils.initDirectoryMapData(mapUI, "media/maps/spencermansionlootable")
+		elseif getActivatedMods():contains("SimonMDSpencerMansionNoLoot") then
+			MapUtils.initDirectoryMapData(mapUI, "media/maps/spencermansionnoloot")
+		end
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(6300, 5700, 6600, 5900)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Uncle Red's Bunker Redux
+	-- (10800, 10835, 11100, 11070)
+	LootMaps.Init.UncleRedsBunkerMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		if getActivatedMods():contains("UncleRedsBunker") then
+			MapUtils.initDirectoryMapData(mapUI, "media/maps/UncleRedsBunker")
+		elseif getActivatedMods():contains("UncleRedsBunkerRedux") then
+			MapUtils.initDirectoryMapData(mapUI, "media/maps/UncleRedsBunkerRedux")
+		end
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(10800, 10835, 11100, 11070)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Hopefalls
+	-- (9600, 6600, 9900, 6900)
+	LootMaps.Init.HopefallsMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/hopefalls")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(9600, 6600, 9900, 6900)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- [Legacy] Vine Grove, KY
+	-- (14775, 1915, 16000, 2775)
+	LootMaps.Init.VineGroveMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Legacy_VineGrove")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(14775, 1915, 15599, 2775)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	
+	-- [Legacy] Louisiana, KY
+	-- (15600, 2100, 16200, 2700)
+	LootMaps.Init.LouisianaMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Legacy_Louisiana")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(15600, 2100, 16200, 2700)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+	-- [Legacy] California, KY
+	-- Full(15600, 300, 17400, 2100)
+	LootMaps.Init.CaliforniaMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Legacy_California")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(15600, 300, 17400, 2100)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- North(15600, 300, 17400, 1050)
+	LootMaps.Init.CaliforniaMapNorth = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Legacy_California")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(15600, 300, 17400, 1050)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- South(15600, 1050, 17400, 2100)
+	LootMaps.Init.CaliforniaMapSouth = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Legacy_California")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(15600, 1050, 17400, 2100)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+
+	-- Weyhausen, KY
+	-- (5100, 9300, 5400, 9600)
+	LootMaps.Init.WeyhausenMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/weyhausen")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(5100, 9300, 5400, 9600)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+	-- Daisy County
+	-- (9900, 7200, 10500, 8100)
+	LootMaps.Init.DaisyCountyMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Daisy County")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(9900, 7200, 10500, 8100)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+	-- McCoy's Bunker
+	-- (13245, 4285, 13360, 4410)
+	LootMaps.Init.McCoysBunkerMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/McCoysBunker")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(13245, 4285, 13360, 4410)
+		MapUtils.overlayPaper(mapUI)
+	end
+	---
+	-- Otter Creek
+	-- (6000, 7800, 6600, 8400)
+	-- Mod ID: OtterCreek
+	-- Map Folder: ottercreek
+	LootMaps.Init.OtterCreekMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/ottercreek")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(6000, 7800, 6600, 8400)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Wellsburg Lake
+	-- (7500, 10200, 7800, 10500)
+	-- Mod ID: Wellsburg
+	-- Map Folder: Wellsburg Lake
+	LootMaps.Init.WellsburgLakeMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Wellsburg Lake")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(7500, 10200, 7800, 10500)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Fort Boonesborough 
+	-- (14000, 1850, 14300, 2080)
+	-- Mod ID: Fort_Boonesborough
+	-- Map Folder: Fort_Boonesborough
+	LootMaps.Init.FortBoonesboroughMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Fort_Boonesborough")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(14000, 1850, 14300, 2080)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	--------------------------------------------------
+	-- will do later maybe
+	-- Wolford
+	-- Sulejkow 43x36
+	-- Southwood 2.0, KY
+	-- taibeiroad
+	--------------------------------------------------
+	-- Mods with the ingame map not supported yet !!
+	-- Firecamp, KY 
+	-- South Muldraugh's Mall
+	-- Frankfort, KY 
+	-- western town
+	-- Cigaro little town
+	-- Villa in forest
+	-- Base in the Archipelago
+	-- Liberty City
+	-- East Riverside
+	-- Peles mansion
+	-- Daegu Metropolitan City (vanilla)
+	-- Drayton
+	-- The Walking Dead Project
 end 
 
 

@@ -1,0 +1,1557 @@
+module VGC_Addon_GameBoyGames
+
+{
+	imports
+	{
+		Base,
+		Video_Game_Consoles
+	}
+
+/****************dummies****************/
+
+	item GB_Cartridge_Dummy1
+    {
+        DisplayName	            =	GB DummyItem1,
+        Weight	                =	0.02,
+        Icon	                =	Dummy_i,
+        DisplayCategory 		=	Electronics,
+    }
+
+	item GB_Cartridge_Dummy2
+    {
+        DisplayName	            =	GB DummyItem2,
+        Weight	                =	0.02,
+        Icon	                =	Dummy_i,
+        DisplayCategory 		=	Electronics,
+    }
+
+	item GB_Cartridge_Dummy3
+    {
+        DisplayName	            =	GB DummyItem3,
+        Weight	                =	0.02,
+        Icon	                =	Dummy_i,
+        DisplayCategory 		=	Electronics,
+    }
+
+	item GB_Cartridge_Dummy4
+    {
+        DisplayName	            =	GB DummyItem4,
+        Weight	                =	0.02,
+        Icon	                =	Dummy_i,
+        DisplayCategory 		=	Electronics,
+    }
+
+	item GB_Cartridge_Dummy5
+    {
+        DisplayName	            =	GB DummyItem5,
+        Weight	                =	0.02,
+        Icon	                =	Dummy_i,
+        DisplayCategory 		=	Electronics,
+    }
+
+/****************games****************/
+
+	item GB_Cartridge_Alleyway
+    {
+        DisplayName	            =	GB Alleyway,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Alleyway_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Alleyway,
+
+    }
+	
+	item GB_Cartridge_AvengingSpirit
+    {
+        DisplayName	            =	GB Avenging Spirit,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_AvengingSpirit_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_AvengingSpirit,
+
+    }
+	
+	item GB_Cartridge_BalloonKid
+    {
+        DisplayName	            =	GB Balloon Kid,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_BalloonKid_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_BalloonKid,
+
+    }
+	
+	item GB_Cartridge_Baseball
+    {
+        DisplayName	            =	GB Baseball,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Baseball_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Baseball,
+
+    }
+	
+	item GB_Cartridge_Batman
+    {
+        DisplayName	            =	GB Batman: The Video Game,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Batman_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Batman,
+
+    }
+	
+	item GB_Cartridge_Battletoads
+    {
+        DisplayName	            =	GB Battletoads,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Battletoads_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Battletoads,
+
+    }
+	
+	item GB_Cartridge_BionicCommando
+    {
+        DisplayName	            =	GB Bionic Commando,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_BionicCommando_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_BionicCommando,
+
+    }
+	
+	item GB_Cartridge_BubbleBobble
+    {
+        DisplayName	            =	GB Bubble Bobble,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_BubbleBobble_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_BubbleBobble,
+
+    }
+	
+	item GB_Cartridge_Castlevania
+    {
+        DisplayName	            =	GB Castlevania: The Adventure,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Castlevania_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Castlevania,
+
+    }
+
+	item GB_Cartridge_Castlevania2
+    {
+        DisplayName	            =	GB Castlevania II: Belmont's Revenge,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Castlevania2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Castlevania2,
+
+    }
+	
+	item GB_Cartridge_Catrap
+    {
+        DisplayName	            =	GB Catrap,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Catrap_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Catrap,
+
+    }
+	
+	item GB_Cartridge_Dexterity
+    {
+        DisplayName	            =	GB Dexterity,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Dexterity_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Dexterity,
+
+    }
+	
+	item GB_Cartridge_DoubleDragon
+    {
+        DisplayName	            =	GB Double Dragon,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_DoubleDragon_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_DoubleDragon,
+
+    }
+	
+	item GB_Cartridge_DoubleDragon2
+    {
+        DisplayName	            =	GB Double Dragon II,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_DoubleDragon2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_DoubleDragon2,
+
+    }
+	
+	item GB_Cartridge_DrMario
+    {
+        DisplayName	            =	GB Dr. Mario,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_DrMario_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_DrMario,
+
+    }
+	
+	item GB_Cartridge_DuckTales
+    {
+        DisplayName	            =	GB DuckTales,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_DuckTales_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_DuckTales,
+
+    }
+	
+	item GB_Cartridge_F1Race
+    {
+        DisplayName	            =	GB F-1 Race,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_F1Race_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_F1Race,
+
+    }
+	
+	item GB_Cartridge_Fantasy
+    {
+        DisplayName	            =	GB Final Fantasy Adventure,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Fantasy_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Fantasy,
+
+    }
+
+	item GB_Cartridge_FFLegend
+    {
+        DisplayName	            =	GB Final Fantasy Legend,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_FFLegend_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_FFLegend,
+
+    }
+	
+	item GB_Cartridge_FFLegend2
+    {
+        DisplayName	            =	GB Final Fantasy Legend II,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_FFLegend2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_FFLegend2,
+
+    }
+	
+	item GB_Cartridge_FortifiedZone
+    {
+        DisplayName	            =	GB Fortified Zone,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_FortifiedZone_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_FortifiedZone,
+
+    }
+	
+	item GB_Cartridge_GargoylesQuest
+    {
+        DisplayName	            =	GB Gargoyle's Quest,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_GargoylesQuest_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_GargoylesQuest,
+
+    }
+	
+	item GB_Cartridge_Golf
+    {
+        DisplayName	            =	GB Golf,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Golf_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Golf,
+
+    }
+	
+	item GB_Cartridge_KidDracula
+    {
+        DisplayName	            =	GB Kid Dracula,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_KidDracula_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_KidDracula,
+
+    }
+	
+	item GB_Cartridge_KidIcarus
+    {
+        DisplayName	            =	GB Kid Icarus: Of Myths and Monsters,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_KidIcarus_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_KidIcarus,
+
+    }
+	
+	item GB_Cartridge_Kirby
+    {
+        DisplayName	            =	GB Kirby's Dream Land,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Kirby_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Kirby,
+
+    }
+
+	item GB_Cartridge_LittleMermaid
+    {
+        DisplayName	            =	GB Disney's The Little Mermaid,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_LittleMermaid_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_LittleMermaid,
+
+    }
+	
+	item GB_Cartridge_Mario
+    {
+        DisplayName	            =	GB Super Mario Land,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Mario_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Mario,
+
+    }
+	
+	item GB_Cartridge_MegaMan
+    {
+        DisplayName	            =	GB Mega Man: Dr. Wily's Revenge,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_MegaMan_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_MegaMan,
+
+    }
+
+	item GB_Cartridge_MegaMan2
+    {
+        DisplayName	            =	GB Mega Man II,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_MegaMan2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_MegaMan2,
+
+    }
+	
+	item GB_Cartridge_MegaMan3
+    {
+        DisplayName	            =	GB Mega Man III,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_MegaMan3_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_MegaMan3,
+
+    }
+	
+	item GB_Cartridge_Metroid2
+    {
+        DisplayName	            =	GB Metroid II: Return of Samus,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Metroid2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Metroid2,
+
+    }
+	
+	item GB_Cartridge_Mickey
+    {
+        DisplayName	            =	GB Mickey's Dangerous Chase,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Mickey_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Mickey,
+
+    }
+	
+	item GB_Cartridge_MotocrossManiacs
+    {
+        DisplayName	            =	GB Motocross Maniacs,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_MotocrossManiacs_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_MotocrossManiacs,
+
+    }
+	
+	item GB_Cartridge_Nemesis
+    {
+        DisplayName	            =	GB Nemesis,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Nemesis_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Nemesis,
+
+    }
+	
+	item GB_Cartridge_NinjaGaiden
+    {
+        DisplayName	            =	GB Ninja Gaiden Shadow,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_NinjaGaiden_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_NinjaGaiden,
+
+    }
+	
+	item GB_Cartridge_OperationC
+    {
+        DisplayName	            =	GB Operation C,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_OperationC_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_OperationC,
+
+    }
+	
+	item GB_Cartridge_QIX
+    {
+        DisplayName	            =	GB QIX,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_QIX_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_QIX,
+
+    }
+	
+	item GB_Cartridge_RolansCurse
+    {
+        DisplayName	            =	GB Rolan's Curse,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_RolansCurse_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_RolansCurse,
+
+    }
+	
+	item GB_Cartridge_RolansCurse2
+    {
+        DisplayName	            =	GB Rolan's Curse II,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_RolansCurse2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_RolansCurse2,
+
+    }
+
+	item GB_Cartridge_RType
+    {
+        DisplayName	            =	GB R-Type,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_RType_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_RType,
+
+    }
+	
+	item GB_Cartridge_SolarStriker
+    {
+        DisplayName	            =	GB SolarStriker,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_SolarStriker_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_SolarStriker,
+
+    }
+	
+	item GB_Cartridge_SolomonsClub
+    {
+        DisplayName	            =	GB Solomon's Club,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_SolomonsClub_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_SolomonsClub,
+
+    }
+	
+	item GB_Cartridge_StarWars
+    {
+        DisplayName	            =	GB Star Wars,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_StarWars_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_StarWars,
+
+    }
+	
+	item GB_Cartridge_StarWars2
+    {
+        DisplayName	            =	GB Star Wars: The Empire Strikes Back,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_StarWars2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_StarWars2,
+
+    }
+	
+	item GB_Cartridge_SuperMario2
+    {
+        DisplayName	            =	GB Super Mario Land 2: 6 Golden Coins,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_SuperMario2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_SuperMario2,
+
+    }
+	
+	item GB_Cartridge_SuperRC
+    {
+        DisplayName	            =	GB Super R.C. Pro-Am,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_SuperRC_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_SuperRC,
+
+    }
+	
+	item GB_Cartridge_TailGator
+    {
+        DisplayName	            =	GB Tail 'Gator,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_TailGator_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_TailGator,
+
+    }
+
+	item GB_Cartridge_TMNT
+    {
+        DisplayName	            =	GB Teenage Mutant Ninja Turtles: Fall of the Foot Clan,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_TMNT_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_TMNT,
+
+    }
+
+	item GB_Cartridge_TMNT2
+    {
+        DisplayName	            =	GB Teenage Mutant Ninja Turtles II: Back from the Sewers,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_TMNT2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_TMNT2,
+
+    }
+	
+	item GB_Cartridge_Tennis
+    {
+        DisplayName	            =	GB Tennis,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Tennis_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Tennis,
+
+    }
+	
+	item GB_Cartridge_Tetris
+    {
+        DisplayName	            =	GB Tetris,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Tetris_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Tetris,
+
+    }
+
+	item GB_Cartridge_BugsBunny
+    {
+        DisplayName	            =	GB The Bugs Bunny Crazy Castle,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_BugsBunny_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_BugsBunny,
+
+    }
+	
+	item GB_Cartridge_BugsBunny2
+    {
+        DisplayName	            =	GB The Bugs Bunny Crazy Castle 2,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_BugsBunny2_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_BugsBunny2,
+
+    }
+
+	item GB_Cartridge_SwordOfHope
+    {
+        DisplayName	            =	GB The Sword of Hope,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_SwordOfHope_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_SwordOfHope,
+
+    }
+	
+	item GB_Cartridge_Trax
+    {
+        DisplayName	            =	GB Trax,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Trax_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Trax,
+
+    }
+	
+	item GB_Cartridge_WaveRace
+    {
+        DisplayName	            =	GB Wave Race,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_WaveRace_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_WaveRace,
+
+    }
+	
+	item GB_Cartridge_Yoshi
+    {
+        DisplayName	            =	GB Yoshi,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Yoshi_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Yoshi,
+
+    }
+	
+	item GB_Cartridge_YoshisCookie
+    {
+        DisplayName	            =	GB Yoshi's Cookie,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_YoshisCookie_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_YoshisCookie,
+
+    }
+	
+	item GB_Cartridge_Zelda
+    {
+        DisplayName	            =	GB The Legend of Zelda: Link's Awakening,
+        Weight	                =	0.02,
+        Icon	                =	GB_Cartridge_Zelda_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	GB_Cartridge_Zelda,
+
+    }
+	
+/****************recipes****************/
+
+	recipe Play Alleyway
+    {
+       GameBoy,
+       keep GB_Cartridge_Alleyway,
+       Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:Alleyway_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Avenging Spirit
+    {
+       GameBoy,
+       keep GB_Cartridge_AvengingSpirit,
+       Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:AvengingSpirit_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Balloon Kid
+    {
+       GameBoy,
+       keep GB_Cartridge_BalloonKid,
+       Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:BalloonKid_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Baseball
+    {
+       GameBoy,
+       keep GB_Cartridge_Baseball,
+       Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:Baseball_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Batman: The Video Game
+    {
+       GameBoy,
+       keep GB_Cartridge_Batman,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:Batman_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Battletoads
+    {
+       GameBoy,
+       keep GB_Cartridge_Battletoads,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:Battletoads_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Bionic Commando
+    {
+       GameBoy,
+       keep GB_Cartridge_BionicCommando,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:BionicCommando_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Bubble Bobble
+    {
+       GameBoy,
+       keep GB_Cartridge_BubbleBobble,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:BubbleBobble_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+
+	recipe Play Castlevania: The Adventure
+    {
+       GameBoy,
+       keep GB_Cartridge_Castlevania,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:Castlevania_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+
+	recipe Play Castlevania II: Belmont's Revenge
+    {
+       GameBoy,
+       keep GB_Cartridge_Castlevania2,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:Castlevania2_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Catrap
+    {
+       GameBoy,
+       keep GB_Cartridge_Catrap,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:Catrap_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Dexterity
+    {
+       GameBoy,
+       keep GB_Cartridge_Dexterity,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:Dexterity_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+
+	recipe Play Disney's The Little Mermaid
+    {
+       GameBoy,
+       keep GB_Cartridge_LittleMermaid,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:LittleMermaid_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Double Dragon
+    {
+       GameBoy,
+       keep GB_Cartridge_DoubleDragon,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:DoubleDragon_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Double Dragon II
+    {
+       GameBoy,
+       keep GB_Cartridge_DoubleDragon2,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:DoubleDragon2_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Dr. Mario
+    {
+       GameBoy,
+       keep GB_Cartridge_DrMario,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:DrMario_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play DuckTales
+    {
+       GameBoy,
+       keep GB_Cartridge_DuckTales,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:DuckTales_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play F-1 Race
+    {
+       GameBoy,
+       keep GB_Cartridge_F1Race,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:F1Race_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+
+	recipe Play Final Fantasy Adventure
+    {
+       GameBoy,
+       keep GB_Cartridge_Fantasy,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:fantasy_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+
+	recipe Play Final Fantasy Legend
+    {
+       GameBoy,
+       keep GB_Cartridge_FFLegend,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:FFLegend_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Final Fantasy Legend II
+    {
+       GameBoy,
+       keep GB_Cartridge_FFLegend2,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:FFLegend2_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Fortified Zone
+    {
+       GameBoy,
+       keep GB_Cartridge_FortifiedZone,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:FortifiedZone_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Gargoyle's Quest
+    {
+       GameBoy,
+       keep GB_Cartridge_GargoylesQuest,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:GargoylesQuest_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Golf
+    {
+       GameBoy,
+       keep GB_Cartridge_Golf,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:Golf_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Kid Dracula
+    {
+       GameBoy,
+       keep GB_Cartridge_KidDracula,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:KidDracula_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Kid Icarus: Of Myths and Monsters
+    {
+       GameBoy,
+       keep GB_Cartridge_KidIcarus,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:KidIcarus_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Kirby's Dream Land
+    {
+       GameBoy,
+       keep GB_Cartridge_Kirby,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:kirby_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Mega Man: Dr. Wily's Revenge
+    {
+       GameBoy,
+       keep GB_Cartridge_MegaMan,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:MegaMan_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+
+	recipe Play Mega Man II
+    {
+       GameBoy,
+       keep GB_Cartridge_MegaMan2,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:MegaMan2_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Mega Man III
+    {
+       GameBoy,
+       keep GB_Cartridge_MegaMan3,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:MegaMan3_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Metroid II: Return of Samus
+    {
+       GameBoy,
+       keep GB_Cartridge_Metroid2,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:Metroid2_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Mickey's Dangerous Chase
+    {
+       GameBoy,
+       keep GB_Cartridge_Mickey,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:Mickey_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Motocross Maniacs
+    {
+       GameBoy,
+       keep GB_Cartridge_MotocrossManiacs,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:MotocrossManiacs_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Nemesis
+    {
+       GameBoy,
+       keep GB_Cartridge_Nemesis,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:Nemesis_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Ninja Gaiden Shadow
+    {
+       GameBoy,
+       keep GB_Cartridge_NinjaGaiden,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:NinjaGaiden_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Operation C
+    {
+       GameBoy,
+       keep GB_Cartridge_OperationC,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:OperationC_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play QIX
+    {
+       GameBoy,
+       keep GB_Cartridge_QIX,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:QIX_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Rolan's Curse
+    {
+       GameBoy,
+       keep GB_Cartridge_RolansCurse,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:RolansCurse_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Rolan's Curse II
+    {
+       GameBoy,
+       keep GB_Cartridge_RolansCurse2,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:RolansCurse2_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+
+	recipe Play R-Type
+    {
+       GameBoy,
+       keep GB_Cartridge_RType,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:RType_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play SolarStriker
+    {
+       GameBoy,
+       keep GB_Cartridge_SolarStriker,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:SolarStriker_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Solomon's Club
+    {
+       GameBoy,
+       keep GB_Cartridge_SolomonsClub,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:SolomonsClub_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Star Wars
+    {
+       GameBoy,
+       keep GB_Cartridge_StarWars,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:StarWars_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Star Wars: The Empire Strikes Back
+    {
+       GameBoy,
+       keep GB_Cartridge_StarWars2,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:StarWars2_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+
+	recipe Play Super Mario Land
+    {
+       GameBoy,
+       keep GB_Cartridge_Mario,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:mario_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Super Mario Land 2
+    {
+       GameBoy,
+       keep GB_Cartridge_SuperMario2,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:SuperMario2_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Super R.C. Pro-Am
+    {
+       GameBoy,
+       keep GB_Cartridge_SuperRC,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:SuperRC_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Tail 'Gator
+    {
+       GameBoy,
+       keep GB_Cartridge_TailGator,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:TailGator_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+
+	recipe Play Teenage Mutant Ninja Turtles: FotFC
+    {
+       GameBoy,
+       keep GB_Cartridge_TMNT,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:TMNT_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+
+	recipe Play Teenage Mutant Ninja Turtles II: BftS
+    {
+       GameBoy,
+       keep GB_Cartridge_TMNT2,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:TMNT2_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Tennis
+    {
+       GameBoy,
+       keep GB_Cartridge_Tennis,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:Tennis_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Tetris
+    {
+       GameBoy,
+       keep GB_Cartridge_Tetris,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:tetris_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+
+	recipe Play The Bugs Bunny Crazy Castle
+    {
+       GameBoy,
+       keep GB_Cartridge_BugsBunny,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:BugsBunny_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play The Bugs Bunny Crazy Castle 2
+    {
+       GameBoy,
+       keep GB_Cartridge_BugsBunny2,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:BugsBunny2_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+
+	recipe Play The Legend of Zelda: Link's Awakening
+    {
+       GameBoy,
+       keep GB_Cartridge_Zelda,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:zelda_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+
+	recipe Play The Sword of Hope
+    {
+       GameBoy,
+       keep GB_Cartridge_SwordOfHope,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:SwordOfHope_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Trax
+    {
+       GameBoy,
+       keep GB_Cartridge_Trax,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:Trax_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Wave Race
+    {
+       GameBoy,
+       keep GB_Cartridge_WaveRace,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:WaveRace_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Yoshi
+    {
+       GameBoy,
+       keep GB_Cartridge_Yoshi,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:Yoshi_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+	
+	recipe Play Yoshi's Cookie
+    {
+       GameBoy,
+       keep GB_Cartridge_YoshisCookie,
+	   Result: GameBoy,
+       Time:920.0,
+       Category:Leisure,
+       OnCreate:VGC_PlayGB,
+       AnimNode:Craft,
+	   Prop2:Video_Game_Consoles.GameBoy_A,
+       Sound:YoshisCookie_game_gb,
+	   IsHidden:true,
+	   RemoveResultItem:true
+    }
+
+}
+

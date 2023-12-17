@@ -1,0 +1,328 @@
+module Base
+{
+
+    recipe Fix Armour Part
+    {
+       Gloves_TKnight,
+       SmallSheetMetal=2,
+       BlowTorch=5,
+       keep [Recipe.GetItemTypes.Hammer],
+
+        Result:Gloves_TKnight,
+        NeedToBeLearn:false,
+        SkillRequired:MetalWelding=5,
+        Time:750.0,
+        Category: Misc,
+        OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+    }
+
+    recipe Fix Armour Part
+    {
+       Shoes_TKnight,
+       SmallSheetMetal=2,
+       BlowTorch=5,
+       keep [Recipe.GetItemTypes.Hammer],
+
+        Result:Shoes_TKnight,
+        NeedToBeLearn:false,
+        SkillRequired:MetalWelding=5,
+        Time:750.0,
+        Category: Misc,
+        OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+    }
+
+    recipe Fix Armour Part
+    {
+       KnightGreaves,
+       SmallSheetMetal=4,
+       BlowTorch=10,
+       keep [Recipe.GetItemTypes.Hammer],
+
+        Result:KnightGreaves,
+        NeedToBeLearn:false,
+        SkillRequired:MetalWelding=5,
+        Time:750.0,
+        Category: Misc,
+        OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+    }
+
+    recipe Fix Armour Part
+    {
+       KnightArms,
+       SmallSheetMetal=4,
+       BlowTorch=10,
+       keep [Recipe.GetItemTypes.Hammer],
+
+        Result:KnightArms,
+        NeedToBeLearn:false,
+        SkillRequired:MetalWelding=5,
+        Time:750.0,
+        Category: Misc,
+        OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+    }
+
+    recipe Fix Armour Part
+    {
+       KnightWaist,
+       SmallSheetMetal=2,
+       BlowTorch=5,
+       keep [Recipe.GetItemTypes.Hammer],
+
+        Result:KnightWaist,
+        NeedToBeLearn:false,
+        SkillRequired:MetalWelding=5,
+        Time:750.0,
+        Category: Misc,
+        OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+    }
+
+    recipe Fix Armour Part
+    {
+       Vest_Tknight,
+       SmallSheetMetal=4,
+       BlowTorch=10,
+       keep [Recipe.GetItemTypes.Hammer],
+
+        Result:Vest_Tknight,
+        NeedToBeLearn:false,
+        SkillRequired:MetalWelding=5,
+        Time:750.0,
+        Category: Misc,
+        OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+    }
+
+    recipe Fix Armour Part
+    {
+       ChainMail,
+       SmallSheetMetal=6,
+       BlowTorch=20,
+       keep [Recipe.GetItemTypes.Hammer],
+
+        Result:ChainMail,
+        NeedToBeLearn:false,
+        SkillRequired:MetalWelding=5,
+        Time:950.0,
+        Category: Misc,
+        OnGiveXP:Recipe.OnGiveXP.MetalWelding35,
+    }
+
+    recipe Fix Armour Part
+    {
+       Hat_Tknight,
+       SmallSheetMetal=2,
+       BlowTorch=5,
+       keep [Recipe.GetItemTypes.Hammer],
+
+        Result:Hat_Tknight,
+        NeedToBeLearn:false,
+        SkillRequired:MetalWelding=5,
+        Time:750.0,
+        Category: Misc,
+        OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+    }
+
+    recipe Close Grimoire
+    {
+       Grimoire,
+
+        Result:grimoireclosed,
+        NeedToBeLearn:false,
+        Time:30.0,
+        AnimNode:RipSheets,
+        Category: Misc,
+        Prop1:grimoireclosed,
+    }
+
+    recipe Open Grimoire
+    {
+       grimoireclosed,
+
+        Result:Grimoire,
+        NeedToBeLearn:false,
+        Time:30.0,
+        AnimNode:RipSheets,
+        Category: Misc,
+        Prop1:grimoireclosed,
+    }
+
+    recipe Summon Rogue Sword
+    {
+       Grimoire,
+
+        Result:RogueSword,
+        NeedToBeLearn:true,
+        SkillRequired:LongBlade=5,
+        Sound:grimoiresfx,
+        Time:50.0,
+        AnimNode:RipSheets,
+        Category: Misc,
+        Prop1:GrimoireUse,
+        Prop2:ERogueSword,
+    }
+
+    recipe Summon Witchy Staff
+    {
+       Grimoire,
+
+        Result:WitchyStaff,
+        NeedToBeLearn:true,
+        SkillRequired:Spear=5,
+        Sound:grimoiresfx,
+        Time:50.0,
+        AnimNode:RipSheets,
+        Category: Misc,
+        Prop1:GrimoireUse,
+        Prop2:EWitchyStaff,
+    }
+
+    recipe Summon Great Sword
+    {
+       Grimoire,
+
+        Result:TKSword,
+        NeedToBeLearn:true,
+        SkillRequired:LongBlade=5,
+        Sound:grimoiresfx,
+        Time:50.0,
+        AnimNode:RipSheets,
+        Category: Misc,
+        Prop1:GrimoireUse,
+        Prop2:ETKSword,
+    }
+
+    recipe Summon Antique Mace
+    {
+       Grimoire,
+
+        Result:ClericMace,
+        NeedToBeLearn:true,
+        SkillRequired:Blunt=5,
+        Sound:grimoiresfx,
+        Time:50.0,
+        AnimNode:RipSheets,
+        Category: Misc,
+        Prop1:GrimoireUse,
+        Prop2:EClericMace,
+    }
+
+    recipe Swap to M203
+    {
+       MP5GL,
+
+        Result:MP5GL2,
+        NeedToBeLearn:false,
+        Sound:vulejectHigh,
+        Category: Misc,
+        Time:15.0,
+        OnCreate:Universal_LauncherPLL,
+    }
+
+    recipe Swap to MP5
+    {
+       MP5GL2,
+
+        Result:MP5GL,
+        NeedToBeLearn:false,
+        Sound:vulejectHigh,
+        Category: Misc,
+        Time:15.0,
+        OnCreate:Universal_LauncherPLL,
+    }
+
+    recipe Swap to Angled Aim (Auto Cannon)
+    {
+       AutoCannon,
+
+        Result:AutoCannonA,
+        NeedToBeLearn:false,
+        Sound:vuleject,
+        Category: Misc,
+        Time:20.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Swap to Straight Aim (Auto Cannon)
+    {
+       AutoCannonA,
+
+        Result:AutoCannon,
+        NeedToBeLearn:false,
+        Sound:vuleject,
+        Category: Misc,
+        Time:20.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Detach Belt of 5.56MM
+    {
+        556HMGBelt,
+
+        Result:Base.556Bullets=40,
+        Sound:PutItemInBag,
+        Time:5.0,
+    }
+
+    recipe Place 5.56MM Rounds in Belt
+    {
+        Base.556Bullets=200,
+
+        Result:556HMGBelt,
+        Sound:PutItemInBag,
+        Time:5.0,
+    }
+
+    recipe Change Style (Slash)
+    {
+       Tanto,
+        Category: Misc,
+        Result:Tanto2,
+        NeedToBeLearn:false,
+        Prop1:Tanto,
+        Time:10.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Change Style (Stab)
+    {
+       Tanto2,
+        Category: Misc,
+        Result:Tanto,
+        NeedToBeLearn:false,
+        Prop1:Tanto,
+        Time:10.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Unsheathe Dagger
+    {
+       Tanto3,
+        Category: Misc,
+        Result:Tanto,
+        NeedToBeLearn:false,
+        Sound:knifeUNS,
+        Time:15.0,
+        OnCreate:Universal_TransformPLL,
+    }
+
+    recipe Sheathe Dagger
+    {
+       Tanto,
+        Category: Misc,
+        Result:Tanto3,
+        NeedToBeLearn:false,
+        Sound:knifeSH,
+        Prop1:Tanto,
+        Time:15.0,
+    }
+
+    recipe Sheathe Dagger
+    {
+       Tanto2,
+        Category: Misc,
+        Result:Tanto3,
+        NeedToBeLearn:false,
+        Prop1:Tanto,
+        Sound:knifeSH,
+        Time:15.0,
+    }
+}

@@ -1,13 +1,15 @@
 ContextMenu_TR = {
-	ContextMenu_LightCigaretteWithOven = "SigaranÄ± Ocakta Yak"
-	ContextMenu_LightCigaretteWithFireplace = ""SigaranÄ± Sominede Yak"
-	ContextMenu_LightCigaretteWithBarbecue = ""SigaranÄ± Barbeku OcagÄ±nda Yak"
-	ContextMenu_LightCigaretteWithCampFire = "SigaranÄ± Kamp Atesinde Yak"
-	ContextMenu_LightCigaretteWithFire = "SigaranÄ± Ateste Yak"
-	ContextMenu_StartCarSmoking = "Araba CakmagÄ±nÄ± Kullan "
-	ContextMenu_Smoke = "Sigara ic"	
-	ContextMenu_CarLighter = "Araba cakmagi"
-	ContextMenu_CarOutOfCigarette = " <br> Sigara icecek bir sey yok."
-	ContextMenu_CarNoBattery = "<br> Aku yok ya da bitmis. "
-	ContextMenu_CarNoKeyOrWire = "<br> Anahtar yok veya kisa devre yapilmamis."
+	ContextMenu_LightCigaretteWithOven = "Ocakta sigara yak"
+	ContextMenu_LightCigaretteWithFireplace = "Þöminede sigara yak"
+	ContextMenu_LightCigaretteWithBarbecue = "Barbeküde sigara yak"
+	ContextMenu_LightCigaretteWithCampFire = "Kamp ateþinde sigara yak"
+	ContextMenu_LightCigaretteWithFire = "Ateþte sigara yak"
+	ContextMenu_StartCarSmoking = "Arabada sigara yak "
+
+	ContextMenu_Smoke = "Ýç"
+
+	ContextMenu_CarLighter = "Araba çakmaðý"
+	ContextMenu_CarOutOfCigarette = "<br> Ýçecek sigara Yok"
+	ContextMenu_CarNoBattery = "<br> Akü yok ya da kayýp"
+	ContextMenu_CarNoKeyOrWire = "<br> Anahtar yok / Düz kontak yapýlmamýþ"
 }

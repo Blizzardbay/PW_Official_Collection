@@ -1,0 +1,18 @@
+Tooltip_JP = {
+--
+	Tooltip_OilPan = "使用するには加熱が必要です。",
+	Tooltip_WaterPan = "調理する必要があります。",
+	Tooltip_AsiaFoodMagazine = "アジア地域の料理レシピを教えます。",
+	Tooltip_EuropeFoodMagazine = "ヨーロッパ地域の料理レシピを教えます。",
+	Tooltip_PastaDoughMagazine = "パスタのレシピを教えます。",
+	Tooltip_HotWater = "熱湯と組み合わせます。",
+	
+	Tooltip_HotWater = "説明書には『熱湯と一緒に使用する』と書いてあります。",
+	Tooltip_EmptyThermos = "水、飲み物、調理したスープの保存に使用できます。",
+	Tooltip_CookedBowls = "調理後、ボウルに入れることができます。",
+	Tooltip_CookedSlices = "調理後、スライスすることができます。",
+	Tooltip_CornPopcorn = "ポップコーンに調理できます。",
+	Tooltip_Stock = "ストック（出汁）やスープ、またはシチューに使用できます。",
+	Tooltip_IceCubes = "水を入れておくと、電源のある冷蔵庫の近くでは角氷を作ることができます。",
+	Tooltip_SausagesMagazine = "屠殺の仕方とソーセージの作り方を教えます。"
+} 	

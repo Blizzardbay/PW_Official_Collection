@@ -174,4 +174,5 @@ ItemName_RU = {
 	ItemName_MoreBrews.DriedFruitYeast = "Высушенная закваска [фруктовая]",
 	ItemName_MoreBrews.DriedPotatoYeast = "Высушенная закваска [картофельная]",
 	ItemName_MoreBrews.DriedWildPlantsYeast = "Высушенная закваска [из диких растений]",
+	ItemName_MoreBrews.WineMakingInstructions = "Инструкции по приготовлению вина",
 }

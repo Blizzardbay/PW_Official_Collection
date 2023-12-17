@@ -1,0 +1,193 @@
+module CAR 
+{
+    imports 
+	{
+        Base
+    }
+    
+    model Empty7upCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/7upCan,
+		scale = .01,
+	}
+ model EmptyAriZonaCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/AriZonaCan,
+		scale = .01,
+	}
+
+     model EmptyRootBeerCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/AWRootBeerCan,
+		scale = .01,
+	}
+
+     model EmptyBriskCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/BriskCan,
+		scale = .01,
+	}
+
+     model EmptyCherryCokeCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/CherryCokeCan,
+		scale = .01,
+	}
+
+     model EmptyCokeCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/CokeCan,
+		scale = .01,
+	}
+
+     model EmptyDietCokeCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/DietCokeCan,
+		scale = .01,
+	}
+
+     model EmptyDietPepsiCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/DietPepsiCan,
+		scale = .01,
+	}
+
+     model EmptyDrPepperCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/DrPepperCan,
+		scale = .01,
+	}
+
+     model EmptyFantaGrapeCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/FantaGrapeCan,
+		scale = .01,
+	}
+
+     model EmptyFantaOrangeCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/FantaOrangeCan,
+		scale = .01,
+	}
+
+     model EmptyFantaPineappleCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/FantaPineappleCan,
+		scale = .01,
+	}
+
+     model EmptyFantaRedCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/FantaRedCan,
+		scale = .01,
+	}
+
+     model EmptyFantaStrawberryCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/FantaStrawberryCan,
+		scale = .01,
+	}
+
+     model EmptyGatoradeCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/GatoradeCan,
+		scale = .01,
+	}
+
+     model EmptyJoltCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/JoltColaCan,
+		scale = .01,
+	}
+
+     model EmptyMinuteMaidCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/MinuteMaidCan,
+		scale = .01,
+	}
+
+     model EmptyMountainDewCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/MountainDewCan,
+        scale = .01,
+	}
+
+     model EmptyMrPibbCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/MrPibbCan,
+		scale = .01,
+	}
+
+     model EmptyPepsiCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/PepsiCan,
+		scale = .01,
+	}
+
+     model EmptyRCcolaCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/RCcolaCan,
+		scale = .01,
+	}
+
+     model EmptyRedBullCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/RedBullCan,
+		scale = .01,
+	}
+
+     model EmptySpriteCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/SpriteCan,
+		scale = .01,
+	}
+
+     model EmptyTabCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/TabCan,
+		scale = .01,
+	}
+	model EmptyDrThunderCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/DrThunderCan,
+		scale = .01,
+	}
+	model EmptyWelch
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/welchs,
+		scale = .01,
+	}
+
+    model EmptyBigRedCan
+	{
+		mesh = Items/EmptyPopCan,
+		texture = Items/BigRedCan,
+		scale = .01,
+	}
+}

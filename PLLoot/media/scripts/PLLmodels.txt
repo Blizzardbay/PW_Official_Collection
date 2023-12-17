@@ -1,0 +1,204 @@
+module Base
+{
+
+    model M32R
+    {
+        mesh = weapons/firearm/M32R,
+        texture = Weapons/firearm/M32R,
+
+            attachment muzzle
+
+        {
+			offset = -0.001507 -0.03251 0.156202,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }	
+
+    model WitchySMG
+    {
+        mesh = weapons/firearm/WitchySMG,
+
+
+    }	
+
+    model MAS38
+    {
+        mesh = weapons/firearm/MAS38,
+
+            attachment muzzle
+
+        {
+			offset = -0.001052 -0.028106 0.300000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }	
+
+    model JERICHOP
+    {
+        mesh = weapons/firearm/JERICHOP,
+        texture = Weapons/firearm/JERICHOP,
+
+            attachment muzzle
+
+        {
+			offset = -0.000217 -0.028046 0.159097,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }	
+
+    model p88p
+    {
+        mesh = weapons/firearm/p88p,
+        texture = Weapons/firearm/p88p,
+
+            attachment muzzle
+
+        {
+			offset = -0.000217 -0.028046 0.159097,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }	
+
+    model WitchySMGE
+    {
+        mesh = weapons/firearm/WitchySMGE,
+        texture = Weapons/firearm/WitchySMG,
+
+    }	
+
+    model WitchySMGN
+    {
+        mesh = weapons/firearm/WitchySMGN,
+        texture = Weapons/firearm/WitchySMG,
+
+            attachment muzzle
+
+        {
+			offset = -0.0000 -0.0200 0.205581,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }	
+
+    model WitchySMGEN
+    {
+        mesh = weapons/firearm/WitchySMGEN,
+        texture = Weapons/firearm/WitchySMG,
+
+            attachment muzzle
+
+        {
+			offset = -0.0000 -0.0200 0.205581,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }	
+
+
+    model TKShotgun
+    {
+        mesh = weapons/firearm/TKShotgun,
+
+            attachment muzzle
+
+        {
+			offset = -0.002723 0.042636 0.301209,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }
+
+    model RogueSniperRifle
+    {
+        mesh = weapons/firearm/RogueSniperRifle,
+
+            attachment muzzle
+
+        {
+			offset = -0.009558 0.03248 0.853504,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }	
+
+    model ClericRevolver
+    {
+        mesh = weapons/firearm/ClericRevolver,
+
+        		attachment muzzle
+		{
+			offset = 0.000806 -0.035199 0.248591,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+    }	
+
+    model m79
+    {
+        mesh = weapons/firearm/m79,
+
+        		attachment muzzle
+		{
+			offset = 0.00656 0.006649 0.308162,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }	
+
+    model m79D
+    {
+        mesh = weapons/firearm/m79D,
+        texture = Weapons/firearm/m79,
+
+        		attachment muzzle
+		{
+			offset = 0.00656 0.006649 0.308162,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }	
+
+    model PPSH
+    {
+        mesh = weapons/firearm/PPSH,
+
+        		attachment muzzle
+		{
+			offset = -0.001085 0.013 0.351005,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }	
+
+    model Lewis
+    {
+        mesh = weapons/firearm/Lewis,
+
+        		attachment muzzle
+		{
+			offset = -0.00005 0.026829 0.585977,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }	
+
+    model TKSword
+    {
+        mesh = weapons/2handed/TKSword,
+    }	
+
+    model TKSword2
+    {
+        mesh = weapons/2handed/TKSword2,
+        texture = Weapons/2handed/TKSword,
+    }	
+
+    model RogueSword
+    {
+        mesh = weapons/2handed/RogueSword,
+    }
+
+    model RogueSword2
+    {
+        mesh = weapons/2handed/RogueSword2,
+        texture = Weapons/2handed/RogueSword,
+    }
+
+    model ClericMace
+    {
+        mesh = weapons/2handed/ClericMace,
+    }	
+    
+}

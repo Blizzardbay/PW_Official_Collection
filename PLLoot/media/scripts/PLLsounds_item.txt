@@ -1,0 +1,126 @@
+module Base
+{
+    sound m32firesure
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/m32firesure1.ogg,
+            distanceMax = 20,
+        }
+        clip
+        {
+            file = media/sound/m32firesure2.ogg,
+            distanceMax = 20,
+        }
+        clip
+        {
+            file = media/sound/m32firesure3.ogg,
+            distanceMax = 20,
+        }
+    }
+
+    sound PPShshots
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/PPSHshot.ogg,
+            distanceMax = 80,
+        }
+        clip
+        {
+            file = media/sound/PPSHshot2.ogg,
+            distanceMax = 80,
+        }
+        clip
+        {
+            file = media/sound/PPSHshot.ogg,
+            distanceMax = 80,
+        }
+        clip
+        {
+            file = media/sound/PPSHshot3.ogg,
+            distanceMax = 80,
+        }
+    }
+
+    sound TKShots
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/TKShot.ogg,
+            distanceMax = 150,
+        }
+        
+        clip
+        {
+            file = media/sound/TKShot2.ogg,
+            distanceMax = 150,
+        }
+        clip
+        {
+            file = media/sound/TKShot.ogg,
+            distanceMax = 150,
+        }
+        clip
+        {
+            file = media/sound/TKShot3.ogg,
+            distanceMax = 150,
+        }
+    }
+
+    sound PLLBlade
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/RSswing.ogg,
+        }
+        clip
+        {
+            file = media/sound/RSswing2.ogg,
+        }
+        clip
+        {
+            file = media/sound/RSswing3.ogg,
+        }
+    }
+
+    sound PLLLongBlade
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/TKswing.ogg,
+        }
+        clip
+        {
+            file = media/sound/TKswing2.ogg,
+        }
+        clip
+        {
+            file = media/sound/TKswing3.ogg,
+        }
+    }
+
+    sound PLLLongBladeFloor
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/TKfloor.ogg,
+        }
+        clip
+        {
+            file = media/sound/TKfloor2.ogg,
+        }
+        clip
+        {
+            file = media/sound/TKfloor3.ogg,
+        }
+    }
+
+}
+

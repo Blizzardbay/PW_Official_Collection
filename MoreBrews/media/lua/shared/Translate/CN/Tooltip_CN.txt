@@ -17,7 +17,11 @@ Tooltip_CN = {
 	Tooltip_item_FinishedBeer = "转移到空桶以获得最长的储存寿命，<br>或者在它发臭之前直接从大瓶装满罐子和瓶子",
 	Tooltip_item_FilledKeg = "将啤酒安全储存一个半月",
 	Tooltip_item_Skunked = "酿造还没好，你还能喝，但你应该吗？",
+	Tooltip_item_FinishedBeerTapped	= "已经敲击，因此您可以直接填充瓶子和罐子，此时不能用于填充小桶",
+	Tooltip_item_SkunkedTapped = "你让啤酒变质了，但你仍然可以直接灌装瓶子和罐头，此时不能用来灌装小桶",
 	Tooltip_item_Empty = "别把我扔掉，留着我以后酿造！",
 	Tooltip_item_Keg = "最适合长期储存酿造的啤酒",
 	Tooltip_BookTitle_Brewing = "酿酒",
+	Tooltip_Recipe_BrewingSkillBonus 	= "将根据酿造技能获得奖金金额",
+	Tooltip_item_BrewingInstructions = "阅读这些说明以了解如何酿造啤酒",
 }

@@ -1,0 +1,5 @@
+ItemName_EN = {
+	/*Fake items for silencers*/
+	ItemName_Base.SilencerMountOn = "most guns.",
+	ItemName_Base.CraftedSilencerMountOn = "all guns except revolvers and shotguns.",
+}

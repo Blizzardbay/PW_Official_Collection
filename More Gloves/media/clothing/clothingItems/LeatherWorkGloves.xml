@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+    <m_MaleModel>media\models_X\Skinned\Clothes\Leather_Work_Gloves_M.fbx</m_MaleModel>
+    <m_FemaleModel>media\models_X\Skinned\Clothes\Leather_Work_Gloves_F.fbx</m_FemaleModel>
+	<m_GUID>99a17ebf-dd7d-4e48-ba95-91d34d583ff2</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+    <m_Masks>4</m_Masks>
+    <m_Masks>6</m_Masks>
+	<textureChoices>clothes\gloves\LeatherWork01</textureChoices>
+	<textureChoices>clothes\gloves\LeatherWork02</textureChoices>
+	<textureChoices>clothes\gloves\LeatherWork03</textureChoices>	
+</clothingItem>

@@ -125,4 +125,5 @@ ItemName_RU = {
 	ItemName_MoreBrews.BookBrewing3 = "Пивоварение. Том 3",
 	ItemName_MoreBrews.BookBrewing4 = "Пивоварение. Том 4",
 	ItemName_MoreBrews.BookBrewing5 = "Пивоварение. Том 5",
+	ItemName_MoreBrews.BrewingInstructions = "Инструкции по завариванию",
 }

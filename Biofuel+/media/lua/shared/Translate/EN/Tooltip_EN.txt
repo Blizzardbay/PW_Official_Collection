@@ -1,0 +1,6 @@
+Tooltip_EN = {
+--
+	Tooltip_BiofuelMag1 = "Learn How To Make Biofuel From Garden Crops.",
+	Tooltip_BiofuelMag2 = "Learn How To Make Biofuel From Veggies.",
+	Tooltip_BiofuelMag3 = "Learn How To Make Biofuel From Fruits.",
+}

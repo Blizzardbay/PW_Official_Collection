@@ -5,6 +5,7 @@ Tooltip_CH = {
 	Tooltip_AsiaFoodMagazine = "一本教你如何做亞洲料理的雜誌.",
 	Tooltip_EuropeFoodMagazine = "一本教你如何做歐式料理的雜誌.",
 	Tooltip_PastaDoughMagazine = "一本教你如何做義大利料理的雜誌.",
+
 	
 	
 } 	

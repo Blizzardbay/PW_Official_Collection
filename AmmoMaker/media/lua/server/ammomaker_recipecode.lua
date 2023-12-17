@@ -34,9 +34,27 @@ function Recipe.OnTest.isActivated_FA(recipe, playerObj, item)
 
 end
 
+function Recipe.OnTest.isActivated_PSA(recipe, playerObj, item)
+
+    return getActivatedMods():contains("PRitemtest");
+
+end
+
 function Recipe.OnTest.isActivated_VFE(recipe, playerObj, item)
 
     return getActivatedMods():contains("VFExpansion1");
+
+end
+
+function Recipe.OnTest.isActivated_SG(recipe, playerObj, item)
+
+    return getActivatedMods():contains("ScrapGuns(new version)");
+
+end
+
+function Recipe.OnTest.isActivated_CJ(recipe, playerObj, item)
+
+    return getActivatedMods():contains("CaptainJuezo1");
 
 end
 
@@ -51,6 +69,18 @@ end
 function Recipe.OnCreate.Make_A26GF_545x39(items, result, player)
 
 	player:getInventory():AddItems("Base.545x39Bullets", 1);
+
+end
+
+function Recipe.OnCreate.Make_PSA_545x39(items, result, player)
+
+	player:getInventory():AddItems("Base.Bullets545", 1);
+
+end
+
+function Recipe.OnCreate.Make_CJ_545x39(items, result, player)
+
+	player:getInventory():AddItems("Base.CJ545", 3);
 
 end
 
@@ -90,6 +120,30 @@ function Recipe.OnCreate.Make_VFE_22LR(items, result, player)
 
 end
 
+function Recipe.OnCreate.Make_PSA_22LR(items, result, player)
+
+	player:getInventory():AddItems("Base.Bullets22LR", 4);
+
+end
+
+function Recipe.OnCreate.Make_CJ_22LR(items, result, player)
+
+	player:getInventory():AddItems("Base.CJ22LR", 40);
+
+end
+
+function Recipe.OnCreate.Make_PSA_762x25Tok(items, result, player)
+
+	player:getInventory():AddItems("Base.Bullets762Tokarev", 2);
+
+end
+
+function Recipe.OnCreate.Make_PSA_762x38RNag(items, result, player)
+
+	player:getInventory():AddItems("Base.Bullets762Nagant", 10);
+
+end
+
 function Recipe.OnCreate.Make_A26GF_762x51NATO(items, result, player)
 
 	player:getInventory():AddItems("Base.762x51Bullets", 1);
@@ -99,6 +153,12 @@ end
 function Recipe.OnCreate.Make_FA_762x51NATO(items, result, player)
 
 	player:getInventory():AddItems("firearmmod.762x51Bullets", 1);
+
+end
+
+function Recipe.OnCreate.Make_CJ_762x51NATO(items, result, player)
+
+	player:getInventory():AddItems("Base.762NATO", 2);
 
 end
 
@@ -138,9 +198,33 @@ function Recipe.OnCreate.Make_VFE_762x39(items, result, player)
 
 end
 
+function Recipe.OnCreate.Make_PSA_762x39(items, result, player)
+
+	player:getInventory():AddItems("Base.Bullets762AK", 1);
+
+end
+
+function Recipe.OnCreate.Make_CJ_762x39(items, result, player)
+
+	player:getInventory():AddItems("Base.CJ762", 3);
+
+end
+
 function Recipe.OnCreate.Make_A26GF_762x54R(items, result, player)
 
 	player:getInventory():AddItems("Base.762x54rBullets", 1);
+
+end
+
+function Recipe.OnCreate.Make_PSA_762x54R(items, result, player)
+
+	player:getInventory():AddItems("Base.Bullets762PKM", 1);
+
+end
+
+function Recipe.OnCreate.Make_CJ_762x54R(items, result, player)
+
+	player:getInventory():AddItems("Base.762_54R", 2);
 
 end
 
@@ -171,6 +255,24 @@ end
 function Recipe.OnCreate.Make_FA_357Mag(items, result, player)
 
 	player:getInventory():AddItems("firearmmod.Bullets357", 2);
+
+end
+
+function Recipe.OnCreate.Make_CJ_357Mag(items, result, player)
+
+	player:getInventory():AddItems("Base.357Magnum", 9);
+
+end
+
+function Recipe.OnCreate.Make_PSA_9x39(items, result, player)
+
+	player:getInventory():AddItems("Base.Bullets939", 2);
+
+end
+
+function Recipe.OnCreate.Make_PSA_9x18Mak(items, result, player)
+
+	player:getInventory():AddItems("Base.Bullets9x18mm", 6);
 
 end
 
@@ -282,6 +384,12 @@ function Recipe.OnCreate.Make_A26GF_4Gauge(items, result, player)
 
 end
 
+function Recipe.OnCreate.Make_PSA_4Gauge(items, result, player)
+
+	player:getInventory():AddItems("Base.23x75ShotgunShells", 1);
+
+end
+
 function Recipe.OnCreate.Make_A26GF_40mmHE(items, result, player)
 
 	player:getInventory():AddItems("Base.40HERound", 1);
@@ -306,25 +414,25 @@ function Recipe.OnCreate.GatherGunpowder(items, result, player)
 
 	local item = items:get(0)
 	
-	if item:getType() == "Bullets57" or item:getType() == "Bullets22" or item:getType() == "22Bullets" or item:getType() == "Bullets380" or item:getType() == "Bullets9mm" or item:getType() == "Bullets38" or item:getType() == "Bullets357" or item:getType() == "410gShotgunShells" or item:getType() == "Bullets4440" or item:getType() == "Bullets44" or item:getType() == "Bullets45" or item:getType() == "Bullets45LC" or item:getType() == "20gShotgunShells" or item:getType() == "Flare" then
+	if item:getType() == "CJ545" or item:getType() == "Bullets57" or item:getType() == "Bullets22" or item:getType() == "22Bullets" or item:getType() == "Bullets22LR" or item:getType() == "CJ22LR" or item:getType() == "762NATO" or item:getType() == "Bullets762Tokarev" or item:getType() == "Bullets762Nagant" or item:getType() == "CJ762" or item:getType() == "762_54R" or item:getType() == "Bullets380" or item:getType() == "Bullets9mm" or item:getType() == "Bullets38" or item:getType() == "Bullets357" or item:getType() == "357Magnum" or item:getType() == "Bullets939" or item:getType() == "Bullets9x18mm" or item:getType() == "410gShotgunShells" or item:getType() == "Bullets4440" or item:getType() == "Bullets44" or item:getType() == "Bullets45" or item:getType() == "Bullets45LC" or item:getType() == "20gShotgunShells" or item:getType() == "Flare" or item:getType() == "ScrapBullets" then
 
 		local gunpowder1 = InventoryItemFactory.CreateItem("Base.GunPowder", 0.1);
 
 		player:getInventory():AddItem(gunpowder1);
 
-	elseif item:getType() == "545x39Bullets" or item:getType() == "223Bullets" or item:getType() == "556Bullets" or item:getType() == "762x39Bullets" or item:getType() == "762Bullets" or item:getType() == "Bullets50MAG" or item:getType() == "ShotgunShells" then
+	elseif item:getType() == "545x39Bullets" or item:getType() == "Bullets545" or item:getType() == "223Bullets" or item:getType() == "556Bullets" or item:getType() == "762x39Bullets" or item:getType() == "762Bullets" or item:getType() == "Bullets762AK" or item:getType() == "Bullets50MAG" or item:getType() == "ShotgunShells" then
 
 		local gunpowder2 = InventoryItemFactory.CreateItem("Base.GunPowder", 0.2);
 	
 		player:getInventory():AddItem(gunpowder2);
 
-	elseif item:getType() == "762x51Bullets" or item:getType() == "3006Bullets" or item:getType() == "Bullets3006" or item:getType() == "308Bullets" or item:getType() == "762x54rBullets" or item:getType() == "Bullets4570" or item:getType() == "10gShotgunShells" then
+	elseif item:getType() == "762x51Bullets" or item:getType() == "3006Bullets" or item:getType() == "Bullets3006" or item:getType() == "308Bullets" or item:getType() == "762x54rBullets" or item:getType() == "Bullets762PKM" or item:getType() == "Bullets4570" or item:getType() == "10gShotgunShells" or item:getType() == "23x75ShotgunShells" or item:getType() == "SBullets" then
 
 		local gunpowder3 = InventoryItemFactory.CreateItem("Base.GunPowder", 0.3);
 	
 		player:getInventory():AddItem(gunpowder3);
 
-	elseif item:getType() == "4gShotgunShells" or item:getType() == "40HERound" or item:getType() == "40INCRound" then
+	elseif item:getType() == "4gShotgunShells" or item:getType() == "40HERound" or item:getType() == "40INCRound" or item:getType() == "HD" then
 
 		local gunpowder4 = InventoryItemFactory.CreateItem("Base.GunPowder", 0.4);
 	
@@ -336,9 +444,26 @@ function Recipe.OnCreate.GatherGunpowder(items, result, player)
 	
 		player:getInventory():AddItem(gunpowder7);
 
+	elseif item:getType() == "NailBomb" then
+
+		local gunpowder7 = InventoryItemFactory.CreateItem("Base.GunPowder", 0.7);
+
+		player:getInventory():AddItem(gunpowder7);
+		player:getInventory():AddItems("Base.Nails", 25);
+
+	elseif item:getType() == "GlassBomb" then
+
+		player:getInventory():AddItems("Base.GunPowder", 1);
+
+	elseif item:getType() == "HPB" then
+
+		player:getInventory():AddItems("Base.GunPowder", 2);
+		player:getInventory():AddItems("Base.MetalPipe", 1);
+
 	elseif item:getType() == "HERocket" then
 
 		player:getInventory():AddItems("Base.GunPowder", 4);
+		player:getInventory():AddItems("Base.ScrapMetal", 4);
 
 	end
 
@@ -349,6 +474,12 @@ end
 function Recipe.OnCreate.ExtractSulfur(items, result, player)
 
 	player:getInventory():AddItems("Base.Gravelbag", 1);
+
+end
+
+function Recipe.OnCreate.ExtractNitre(items, result, player)
+
+	player:getInventory():AddItems("Base.Pot", 1);
 
 end
 

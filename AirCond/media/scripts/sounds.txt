@@ -1,0 +1,36 @@
+module Base {
+
+    sound ACRunning {
+        category = Object, 
+        loop = true, 
+        is3D = true,
+        clip { 
+            file = media/sound/acrunning.wav, 
+            distanceMin = 4, 
+            distanceMax = 10, 
+            reverbFactor = 0.1, volume = 1, 
+        } 
+    }
+
+    sound ACStart {
+        category = Object, 
+        loop = false
+        is3D = true,
+        clip { 
+            file = media/sound/acstart.wav, 
+            distanceMax = 13, 
+            reverbFactor = 0.1, volume = 0.8, 
+        } 
+    }
+
+    sound ACStartSlow {
+        category = Object, 
+        loop = false
+        is3D = true,
+        clip { 
+            file = media/sound/acstartslow.wav, 
+            distanceMax = 13, 
+            reverbFactor = 0.1, volume = 0.8, 
+        } 
+    }
+}
