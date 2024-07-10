@@ -98,4 +98,46 @@ Sandbox_EN = {
 	Sandbox_FunctionalAppliances_FACCSTheatreChance_option5 = "Abundant",
 	Sandbox_FunctionalAppliances_FACCSTheatreChance_option6 = "None",
 
+	Sandbox_FunctionalAppliances_FA24HRWallClocks = "Switch Wall Clocks to 24HR Format",
+	Sandbox_FunctionalAppliances_FA24HRWallClocks = "Enabling this will make wall clocks read 0-24 Hours instead of 0-12 Hours.",
+
+	Sandbox_FunctionalAppliances_FAEnableSiloGenerators = "Enable Silo Generator Spawns",
+	Sandbox_FunctionalAppliances_FAEnableSiloGenerators = "Disabling this will remove the possibility silos t be converted into generators.",
+
+	Sandbox_FunctionalAppliances_FAGeneratorMagazineSpawnChance = "Generator magazine spawn chance in Silo Generators",
+	Sandbox_FunctionalAppliances_FAGeneratorMagazineSpawnChance_tooltip = "How often generator magazines spawn in silo generators.",
+	Sandbox_FunctionalAppliances_FAGeneratorMagazineSpawnChance_option1 = "Extremely Rare",
+	Sandbox_FunctionalAppliances_FAGeneratorMagazineSpawnChance_option2 = "Rare",
+	Sandbox_FunctionalAppliances_FAGeneratorMagazineSpawnChance_option3 = "Normal",
+	Sandbox_FunctionalAppliances_FAGeneratorMagazineSpawnChance_option4 = "Common",
+	Sandbox_FunctionalAppliances_FAGeneratorMagazineSpawnChance_option5 = "Abundant",
+	Sandbox_FunctionalAppliances_FAGeneratorMagazineSpawnChance_option6 = "None",
+
+	Sandbox_FunctionalAppliances_FAAutoPowerOnChance = "Silo Generator auto power on setting by default",
+	Sandbox_FunctionalAppliances_FAAutoPowerOnChance_tooltip = "The chances that a silo generator will be set to auto power on by default.",
+	Sandbox_FunctionalAppliances_FAAutoPowerOnChance_option1 = "Extremely Rare",
+	Sandbox_FunctionalAppliances_FAAutoPowerOnChance_option2 = "Rare",
+	Sandbox_FunctionalAppliances_FAAutoPowerOnChance_option3 = "Normal",
+	Sandbox_FunctionalAppliances_FAAutoPowerOnChance_option4 = "Common",
+	Sandbox_FunctionalAppliances_FAAutoPowerOnChance_option5 = "Always",
+	Sandbox_FunctionalAppliances_FAAutoPowerOnChance_option6 = "Never",
+
+	Sandbox_FunctionalAppliances_FAFuelTankFilledAmount = "Silo Generator fuel tanks spawn",
+	Sandbox_FunctionalAppliances_FAFuelTankFilledAmount_tooltip = "How full are the silo generator fuel tanks when they spawn.",
+	Sandbox_FunctionalAppliances_FAFuelTankFilledAmount_option1 = "Low",
+	Sandbox_FunctionalAppliances_FAFuelTankFilledAmount_option2 = "Medium",
+	Sandbox_FunctionalAppliances_FAFuelTankFilledAmount_option3 = "High",
+	Sandbox_FunctionalAppliances_FAFuelTankFilledAmount_option4 = "Full",
+	Sandbox_FunctionalAppliances_FAFuelTankFilledAmount_option5 = "Completely Random",
+	Sandbox_FunctionalAppliances_FAFuelTankFilledAmount_option6 = "Empty",
+
+	Sandbox_FunctionalAppliances_FAConditionAmount = "Silo Generators spawn with condition",
+	Sandbox_FunctionalAppliances_FAConditionAmount_tooltip = "How much condition the silo generators start with when they spawn.",
+	Sandbox_FunctionalAppliances_FAConditionAmount_option1 = "Low",
+	Sandbox_FunctionalAppliances_FAConditionAmount_option2 = "Medium",
+	Sandbox_FunctionalAppliances_FAConditionAmount_option3 = "High",
+	Sandbox_FunctionalAppliances_FAConditionAmount_option4 = "Full",
+	Sandbox_FunctionalAppliances_FAConditionAmount_option5 = "Completely Random",
+	Sandbox_FunctionalAppliances_FAConditionAmount_option6 = "At Zero",
+
 }

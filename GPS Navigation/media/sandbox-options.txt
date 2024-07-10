@@ -1,0 +1,36 @@
+VERSION = 1,
+
+option NavigationVoice {
+	type = boolean, default = true,
+	page = Navigation, translation = Navigation_Voice,
+}
+
+option NavigationVolume
+{
+	type = double, min = 0, max = 10, default = 1,
+	page = Navigation, translation = Navigation_Volume,
+}
+
+option NavigationGTA4Voice {
+	type = boolean, default = false,
+	page = Navigation, translation = Navigation_GTA4_Voice,
+}
+
+option NavigationR
+{
+	type = integer, min = 0, max = 255, default = 255,
+	page = Navigation, translation = Navigation_R,
+}
+
+option NavigationG
+{
+	type = integer, min = 0, max = 255, default = 0,
+	page = Navigation, translation = Navigation_G,
+}
+
+option NavigationB
+{
+	type = integer, min = 0, max = 255, default = 0,
+	page = Navigation, translation = Navigation_B,
+}
+

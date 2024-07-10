@@ -32,5 +32,13 @@ Events.OnInitGlobalModData.Add(function()
 		table.insert(ProceduralDistributions["list"]["GigamartSauce"].items, "PompsItems.StallionMilk");
 		table.insert(ProceduralDistributions["list"]["GigamartSauce"].items, 0.1);
     end
+
+    if SandboxVars.PompsItems.ZombieLoot then
+	--Mystery Food
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, "PompsItems.PIMysteryFoodIcon")
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, 3.0 * SandboxVars.PompsItems.ZombieLootSpawnRate)
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "PompsItems.PIMysteryFoodIcon")
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, 3.0 * SandboxVars.PompsItems.ZombieLootSpawnRate)
+    end
     ItemPickerJava.Parse()
 end)

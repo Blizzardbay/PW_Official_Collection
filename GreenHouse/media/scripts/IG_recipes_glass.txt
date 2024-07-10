@@ -20,9 +20,8 @@ module ImprovisedGlass {
     recipe IGRemoveGlassPane {
         ImprovisedGlass.PanWithGlassPane,
         Time: 30.0,
-        Result: ImprovisedGlass.GlassPane,
-        OnCreate: ImprovisedGlass_GiveBackRoastingPan,
-        OnGiveXP: Recipe.OnGiveXP.ImprovisedGlass_XPMakeGlass,
+        Result: ImprovisedGlass.GlassPane = 5,
+	OnCreate: ImprovisedGlass_GiveBackRoastingPan,
         Sound:EmptyPan,
     }
 

@@ -21,7 +21,7 @@ Greenhouse.wallsWhiteMenuBuilder = function(subMenu, player)
     },
     {
       Material = 'ImprovisedGlass.GlassPane',
-      Amount = 2
+      Amount = 1
     }
   }
 
@@ -89,7 +89,7 @@ Greenhouse.onBuildwallsWhite = function(ignoreThisArgument, sprite, player, name
   _window.name = name
 
   _window.modData['need:Base.Plank'] = 4  
-  _window.modData['need:ImprovisedGlass.GlassPane'] = 2
+  _window.modData['need:ImprovisedGlass.GlassPane'] = 1
   _window.modData['need:Base.Screws'] = 4
   _window.modData['xp:Woodwork'] = 15
 

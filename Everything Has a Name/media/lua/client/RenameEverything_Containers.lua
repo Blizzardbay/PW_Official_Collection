@@ -10,7 +10,8 @@ function ISInventoryPage:createChildren()
 
     -- Create a button to rename the container
     local weightWid = math.max(90, getTextManager():MeasureStringX(UIFont.Small, "99.99 / 99") + 10)
-    self.titleButton = ISButton:new(self.width - 20 - weightWid, 0, 0, self:titleBarHeight(), "", self, ISInventoryPage.OnRenameContainer)
+    self.titleButton = ISButton:new(self.width - 20 - weightWid, 0, 0, self:titleBarHeight(), "", self,
+        ISInventoryPage.OnRenameContainer)
     self.titleButton:initialise()
     self.titleButton.borderColor.a = 0.0
     self.titleButton.backgroundColor.a = 0.0
@@ -20,19 +21,19 @@ function ISInventoryPage:createChildren()
     self.titleButton:setVisible(false)
 end
 
-
 local originalPrerender = ISInventoryPage.prerender
 
 
-disallowedTypes = {"floor", "TruckBed", "SeatFrontLeft", "SeatFrontRight", "SeatRearLeft", "SeatRearRight", "GloveBox"}
+local disallowedTypes = { "floor", "TruckBed", "SeatFrontLeft", "SeatFrontRight", "SeatRearLeft", "SeatRearRight",
+    "GloveBox" }
 
 function isItemTypeNotAllowed(itemType)
     for _, disallowedType in ipairs(disallowedTypes) do
         if itemType == disallowedType then
-            return false  -- The itemType is in the disallowedTypes list
+            return false -- The itemType is in the disallowedTypes list
         end
     end
-    return true  -- The itemType is not in the disallowedTypes list
+    return true -- The itemType is not in the disallowedTypes list
 end
 
 function ISInventoryPage:prerender()
@@ -69,17 +70,16 @@ function ISInventoryPage:prerender()
     end
 end
 
-
 function ISInventoryPage:OnRenameContainer()
     -- create a modal dialog box with a text input field
-    local modal = ISTextBox:new(0, 0, 280, 180, getText("ContextMenu_label_containers"), self.title, nil, ISInventoryPage.onRenameContainerClick, self.player, self.inventory)
+    local modal = ISTextBox:new(0, 0, 280, 180, getText("ContextMenu_label_containers"), self.title, nil,
+        ISInventoryPage.onRenameContainerClick, self.player, self.inventory)
     modal:initialise()
     modal:addToUIManager()
 
     -- set the focus to the text input field so the player can start typing right away
     modal.entry:focus()
 end
-
 
 function ISInventoryPage:onRenameContainerClick(button, inventory)
     -- Check if the OK button was clicked

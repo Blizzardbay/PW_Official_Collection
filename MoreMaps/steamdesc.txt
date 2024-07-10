@@ -1,26 +1,21 @@
-[h1]Update November 2023 [/h1]
+This mod adds map items of vanilla map locations and modded map locations.
 
+[hr][/hr]
+[h1]Update: June 2024 [/h1]
 [list]
-[*] Made new lootable map items for 77 modded maps.
-[*] Corrected some inconsistencies.
-[*] Nerfed loot of vanilla maps.
-[*] Now if louisville district maps are enabled, spawn chances of vanilla maps of louisville are heavily nerfed.
-[*] Nerfed loot chance of vanilla maps.
-[*] Fixed some typos.
-[*] Added Map of Raven Creek 's southern town .
-[*] Adjusted Map of Raven Creek.
-[*] Added maps to a few AuthenticZ outfit loot if AuthenticZ is enabled.
+[*] Made new lootable map items for 9 modded maps, bringing the number of mods accounted for to 131.
+[*] Heavier nerf of vannilla Louisville maps
+[*] Fixed some inconsistencies
 [/list]
 
 [hr][/hr]
-
-This mod adds map items of vanilla map locations and modded map locations.
 
 [h1]Sandbox Settings[/h1]
 Lootable map items can be removed through Sandbox Settings if you don't think a specific location should have a map.
 [b]Note:[/b] If the related mod is not enabled, the related lootable map items will be automatically be removed, EVEN if the tickbox is checked.
 
 Also, a loot multiplier is available to tweak how the maps' loot chances. 
+If you enable the Louisville District Maps option, the vanilla Louisville maps spawn chance will be heavily nerfed
 
 Maps can be removed from Foraging tables as well.
 
@@ -50,17 +45,20 @@ Maps can be removed from Foraging tables as well.
 
 [hr][/hr]
 
-[h1]Lootable map items of modded map locations: (122 mods) (77 new) [/h1]
-See the discussion: "List of lootable map items of modded locations".
+[h1]Lootable map items of modded map locations: [/h1]
+131 mods. (9 new)
+Not enough space here. See the discussion: [url=https://steamcommunity.com/workshop/filedetails/discussion/2729427093/4035850170399907541][u][b][i]"List of modded map locations accounted for"[/i][/b][/u][/url].
 
 [hr][/hr]
 
 Some mods have not added the ingame map feature to their map zones yet, so I can't make map items for them.
 Once they have mapped their mod, I will add the corresponding item (if they haven't already).
+
 [hr][/hr]
+
 [h1]WARNING : READ THIS[/h1]
-If you want to use one of these maps items:
-Eerie Country maps, Slocan Lake maps, Fort Knox linked to Eerie Country, West Point Expansion, Glenport,
+If you want to use one of these map items:
+Eerie Country maps, Slocan Lake maps, Fort Knox linked to Eerie Country, West Point Expansion, Glenport
 you will need the mod : "IngameMaps" by alree_unjammer.
 
 [hr][/hr]
@@ -77,3 +75,10 @@ you will need the mod : "IngameMaps" by alree_unjammer.
 [*] On the following zombies :raiders, hunters, survivalists, police officers, private militia, military soldiers and officers, mechanics, fishermen, campers, bikers, bandits, ambulance drivers, park rangers, cyclists, tourists, traders, postmen, air crew (varying chance for individual maps relative to the outfit : military maps and big maps on military zeds, town maps on town zeds, countryside maps on country side zeds):
 [*] through Foraging (as junk category, starting skill level 4, can be disabled in sandbox options)
 [/list]
+
+Some mods (Bedford Falls, Pineville, Taylorsville, Trelai, Monmouth County, St Bernard's Hill...) already have a lootable map item. When that's the case, I add it to the loot tables above, but only if the mod author hasn't already done so.
+
+[hr][/hr]
+
+Workshop ID: 2729427093
+Mod ID: MoreMaps

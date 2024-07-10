@@ -1,0 +1,9 @@
+Sandbox_EN = {
+    Sandbox_Navigation = "GPS",
+    Sandbox_Navigation_Voice = "GPS Voice Support",
+    Sandbox_Navigation_Volume = "Volume Settings",
+    Sandbox_Navigation_GTA4_Voice = "Switch to GTA4 Voice",
+    Sandbox_Navigation_R = "GPS Red",
+    Sandbox_Navigation_G = "GPS Green",
+    Sandbox_Navigation_B = "GPS Blue",
+}

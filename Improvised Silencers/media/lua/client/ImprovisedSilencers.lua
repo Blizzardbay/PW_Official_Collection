@@ -63,6 +63,7 @@ local silencerOnEquipPrimary = function(character, inventoryItem)
 end
 
 Events.OnEquipPrimary.Add(silencerOnEquipPrimary)
+
 Events.OnGameStart.Add(function()											 -- make sure our player is setup on game start
 	local player = getPlayer()
 	silencerOnEquipPrimary(player, player:getPrimaryHandItem())

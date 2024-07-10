@@ -1,6 +1,8 @@
---Ammo Maker by STIMP_TM
+--Ammo Maker by STIMP_TM, based on Project Zomboid ISForageAction by eris, tweaks by antonije
 
 require 'Foraging/ISForageAction'
+
+--tweaks to fix the forage icon issue on pick-up
 
 function ISForageAction:forage()
 	forageSystem.doFatiguePenalty(self.character);

@@ -4,9 +4,9 @@ ItemName_RU = {
 	ItemName_Base.AK47Unfolded = "Штурмовая винтовка AK47",	
 	ItemName_Base.AK47Folded = "Штурмовая винтовка AK47",
 	
-	ItemName_Base.SKS = "Винтовка SKS",
-	ItemName_Base.SKSSpiker = "Винтовка SKS-45",
-	ItemName_Base.SKSSpikerBayonet = "Винтовка SKS-45",
+	ItemName_Base.SKS = "Винтовка СКС",
+	ItemName_Base.SKSSpiker = "Винтовка СКС-45",
+	ItemName_Base.SKSSpikerBayonet = "Винтовка СКС-45",
 	
 	ItemName_Base.Mini14 = "Винтовка Mini-14",	
 	ItemName_Base.Mini14Unfolded = "Винтовка Mini-14",
@@ -17,8 +17,10 @@ ItemName_RU = {
 	ItemName_Base.SniperRifle = "Снайперская винтовка M24",
 	
 	ItemName_Base.LeverRifle = "Карабин W1866",
+	ItemName_Base.LeverRifle2 = "Карабин R92-44",
 	
 	ItemName_Base.1022 = "Винтовка R1022",
+	ItemName_Base.CampCarbine = "Карабин MC-45",
 	
 	ItemName_Base.Spas12 = "Дробовик SPAS-12",
 	ItemName_Base.Spas12Folded = "Дробовик SPAS-12",
@@ -54,14 +56,22 @@ ItemName_RU = {
 	ItemName_Base.MP5Folded = "Пистолет-пулемет MP5",
 	ItemName_Base.MAC10Unfolded = "Пистолет-пулемет M10",
 	ItemName_Base.MAC10Folded = "Пистолет-пулемет M10",
+	ItemName_Base.UziUnfolded = "Пистолет-пулемет Uzi",
+	ItemName_Base.UziFolded = "Пистолет-пулемет Uzi",
 	
 	ItemName_Base.CAR15 = "Штурмовая винтовка CAR-15", 
 	ItemName_Base.CAR15Folded = "Штурмовая винтовка CAR-15", 
 	ItemName_Base.CAR15D = "Тактическая штурмовая винтовка CAR-15",
 	ItemName_Base.CAR15DFolded = "Тактическая штурмовая винтовка CAR-15",
 	
+	ItemName_Base.M60MMG = "Митраљез М60",
+	ItemName_Base.M60MMG_Bipod = "Митраљез М60",
+	
 	ItemName_Base.AssaultRifleBayonet = "Штурмовая винтовка M16", 
 	ItemName_Base.M16Bayonet = "Штык-нож M9", 
+	
+	ItemName_Base.AssaultRifleMasterkey = "Штурмовая винтовка M16 с Masterkey",
+	ItemName_Base.AssaultRifleMasterkeyShotgun = "Штурмовая винтовка M16 с Masterkey",
 	
 	ItemName_Base.FAL = "Боевая винтовка FAL",
 	ItemName_Base.FALClassic = "Боевая винтовка FAL",
@@ -69,12 +79,57 @@ ItemName_RU = {
 	ItemName_Base.AssaultRifle2 = "Боевая винтовка M14",
 	ItemName_Base.AssaultRifleM1 = "Винтовка M1",
 	
+	ItemName_Base.M2400_Shotgun = "Комбинированное ружьё M2400",
+	ItemName_Base.M2400_Rifle = "Комбинированное ружьё M2400",
+	
+	ItemName_Base.EntrenchingTool_Blade = "Окопный инструмент",
+	ItemName_Base.EntrenchingTool_Blunt = "Окопный инструмент",
+	ItemName_Base.EntrenchingTool_Folded = "Окопный инструмент",
+	ItemName_Base.EntrenchingToolBlack_Blade = "Окопный инструмент",
+	ItemName_Base.EntrenchingToolBlack_Blunt = "Окопный инструмент",
+	ItemName_Base.EntrenchingToolBlack_Folded = "Окопный инструмент",
+	
 	/*Ammo*/	
+	ItemName_Base.556BattlePack = "Боевой комплект 5.56",
+
 	ItemName_Base.762Box = "Коробка патронов 7.62",
 	ItemName_Base.762Bullets = "Патрон 7.62",
 	
 	ItemName_Base.22Box = "Коробка патронов .22",
 	ItemName_Base.22Bullets = "Патрон .22",
+	
+	ItemName_Base.762Pack = "Упаковка коробок 7.62",
+	ItemName_Base.308Pack = "Упаковка коробок .308",
+	ItemName_Base.556Pack = "Упаковка коробок 5.56",
+	ItemName_Base.223Pack = "Упаковка коробок .223",
+	ItemName_Base.ShotgunShellsPack = "Упаковка коробок патронов для дробовика",
+	ItemName_Base.9mmPack = "Упаковка коробок 9мм",
+	ItemName_Base.22Pack = "Упаковка коробок .22",
+	ItemName_Base.38Pack = "Упаковка коробок .38 «Cпешиал»",
+	ItemName_Base.44Pack = "Упаковка коробок .44 «Магнум»",
+	ItemName_Base.45Pack = "Упаковка коробок .45 Авто",
+	
+	ItemName_Base.762Case = "Ящик коробок 7.62",
+	ItemName_Base.308Case = "Ящик коробок .308",
+	ItemName_Base.556Case = "Ящик коробок 5.56",
+	ItemName_Base.223Case = "Ящик коробок .223",
+	ItemName_Base.ShotgunShellsCase = "Ящик коробок патронов для дробовика",
+	ItemName_Base.9mmCase = "Ящик коробок 9мм",
+	ItemName_Base.22Case = "Ящик коробок .22",
+	ItemName_Base.38Case = "Ящик коробок .38 «Cпешиал»",
+	ItemName_Base.44Case = "Ящик коробок .44 «Магнум»",
+	ItemName_Base.45Case = "Ящик коробок .45 Авто",
+
+	ItemName_Base.762Crate = "Большой ящик коробок 7.62",
+	ItemName_Base.308Crate = "Большой ящик коробок .308",
+	ItemName_Base.556Crate = "Большой ящик коробок 5.56",
+	ItemName_Base.223Crate = "Большой ящик коробок .223",
+	ItemName_Base.ShotgunShellsCrate = "Большой ящик коробок патронов для дробовика",
+	ItemName_Base.9mmCrate = "Большой ящик коробок 9мм",
+	ItemName_Base.22Crate = "Большой ящик коробок .22",
+	ItemName_Base.38Crate = "Большой ящик коробок .38 «Cпешиал»",
+	ItemName_Base.44Crate = "Большой ящик коробок .44 «Магнум»",
+	ItemName_Base.45Crate = "Большой ящик коробок .45 Авто",
 	
 	/*Magazines*/
 	ItemName_Base.762Clip = "Магазин от AK47",
@@ -82,6 +137,7 @@ ItemName_RU = {
 	
 	ItemName_Base.9mmClip20 = "Магазин от TEC9",
 	ItemName_Base.9mmClip30 = "Магазин от MP5",
+	ItemName_Base.9mmClip32 = "Магазин от Uzi",
 	ItemName_Base.45Clip32 = "Магазин от M10",
 	ItemName_Base.45Clip12 = "Магазин от MK23",
 	
@@ -97,10 +153,15 @@ ItemName_RU = {
 	ItemName_Base.9mmClip16 = "Магазин от CZ 75",
 	ItemName_Base.9mmClip17 = "Магазин от G17",
 	
+	ItemName_Base.M60Belt = "Подсумок для ленты M60",
+	ItemName_Base.M60_Link = "Ссылка на боеприпасы M13",
+	ItemName_Base.M60_Links_Box = "Ящик боеприпасов M13",
+	
 	/*Attachments*/
 	ItemName_Base.Bipod = "Сошка",
 	ItemName_Base.IronSight = "Улучшенные прицельные приспособления",
 	ItemName_Base.ShellHolder = "Держатель патронов",
+	ItemName_Base.ShellStraps = "Патронные Подсумки",
 	ItemName_Base.Coupled556 = "Сдвоенные магазины 5,56",
 	ItemName_Base.Coupled762 = "Спаренные магазины 7,62",
 	ItemName_Base.x2Scope_Fake = "Прицел x2",
@@ -108,10 +169,55 @@ ItemName_RU = {
     ItemName_Base.x8Scope_Fake = "Прицел x8",
 	ItemName_Base.Sling = "Кожаный ремень для винтовки",
 	ItemName_Base.Sling2 = "Нейлоновый ремень для винтовки",
+	ItemName_Base.LightenedStock = "Облегченное Плечо",
+	ItemName_Base.M60BrassCatcher = "Ловушка для гильз",
+	
+	/*Multical Technical Attachments*/
+	ItemName_VFECombination.CombinationShotgunShellNoClip_1 = "Патрон с картечью",
+	ItemName_VFECombination.Combination308NoClip_1 = "Патрон .308",
+	ItemName_VFECombination.CombinationM500ShotgunShellNoClip_1 = "Подствольный M500 (1)",
+	ItemName_VFECombination.CombinationM500ShotgunShellNoClip_2 = "Подствольный M500 (2)",
+	ItemName_VFECombination.CombinationM500ShotgunShellNoClip_3 = "Подствольный M500 (3)",
+	ItemName_VFECombination.CombinationM500ShotgunShellNoClip_4 = "Подствольный M500 (4)",
+	ItemName_VFECombination.Combination556M16NoClip_1 = "M16 с одним в патроннике",
+	ItemName_VFECombination.Combination556M16Magazine_0 = "M16 с магазином (0)",
+	ItemName_VFECombination.Combination556M16Magazine_1 = "M16 с магазином (1)",
+	ItemName_VFECombination.Combination556M16Magazine_2 = "M16 с магазином (2)",
+	ItemName_VFECombination.Combination556M16Magazine_3 = "M16 с магазином (3)",
+	ItemName_VFECombination.Combination556M16Magazine_4 = "M16 с магазином (4)",
+	ItemName_VFECombination.Combination556M16Magazine_5 = "M16 с магазином (5)",
+	ItemName_VFECombination.Combination556M16Magazine_6 = "M16 с магазином (6)",
+	ItemName_VFECombination.Combination556M16Magazine_7 = "M16 с магазином (7)",
+	ItemName_VFECombination.Combination556M16Magazine_8 = "M16 с магазином (8)",
+	ItemName_VFECombination.Combination556M16Magazine_9 = "M16 с магазином (9)",
+	ItemName_VFECombination.Combination556M16Magazine_10 = "M16 с магазином (10)",
+	ItemName_VFECombination.Combination556M16Magazine_11 = "M16 с магазином (11)",
+	ItemName_VFECombination.Combination556M16Magazine_12 = "M16 с магазином (12)",
+	ItemName_VFECombination.Combination556M16Magazine_13 = "M16 с магазином (13)",
+	ItemName_VFECombination.Combination556M16Magazine_14 = "M16 с магазином (14)",
+	ItemName_VFECombination.Combination556M16Magazine_15 = "M16 с магазином (15)",
+	ItemName_VFECombination.Combination556M16Magazine_16 = "M16 с магазином (16)",
+	ItemName_VFECombination.Combination556M16Magazine_17 = "M16 с магазином (17)",
+	ItemName_VFECombination.Combination556M16Magazine_18 = "M16 с магазином (18)",
+	ItemName_VFECombination.Combination556M16Magazine_19 = "M16 с магазином (19)",
+	ItemName_VFECombination.Combination556M16Magazine_20 = "M16 с магазином (20)",
+	ItemName_VFECombination.Combination556M16Magazine_21 = "M16 с магазином (21)",
+	ItemName_VFECombination.Combination556M16Magazine_22 = "M16 с магазином (22)",
+	ItemName_VFECombination.Combination556M16Magazine_23 = "M16 с магазином (23)",
+	ItemName_VFECombination.Combination556M16Magazine_24 = "M16 с магазином (24)",
+	ItemName_VFECombination.Combination556M16Magazine_25 = "M16 с магазином (25)",
+	ItemName_VFECombination.Combination556M16Magazine_26 = "M16 с магазином (26)",
+	ItemName_VFECombination.Combination556M16Magazine_27 = "M16 с магазином (27)",
+	ItemName_VFECombination.Combination556M16Magazine_28 = "M16 с магазином (28)",
+	ItemName_VFECombination.Combination556M16Magazine_29 = "M16 с магазином (29)",
+	ItemName_VFECombination.Combination556M16Magazine_30 = "M16 с магазином (30)",
+	ItemName_VFECombination.Combination556M16Magazine_31 = "M16 с магазином (31)",
 	
 	/*Items*/
 	ItemName_Base.CleaningKit = "Набор для чистки оружия",
 	ItemName_Base.FireKlean = "Оружейное масло FireKlean",
+	ItemName_Base.M60_Link_Die = "Штамп звена M13",
+	ItemName_Base.VFECraftingMag1 = "Вьетнам: Неформальная огневая мощь",
 	
 	/*Gun Cases*/
 	ItemName_Base.VFERifleCase1 = "Оружейный кейс",
@@ -129,6 +235,10 @@ ItemName_RU = {
 	ItemName_Base.VFEPistolCase1 = "Оружейный кейс",
 	ItemName_Base.VFEPistolCase2 = "Оружейный кейс",
 	ItemName_Base.VFEPistolCase3 = "Оружейный кейс",
+	
+	ItemName_Base.VFEAmmoCanNarrow = "Ящик для патронов",
+	ItemName_Base.VFEAmmoCanNarrow_Toolkit = "Ящик для патронов",
+	ItemName_Base.VFEAmmoCanWide = "Широкий ящик для патронов",
 	
 	/*Fake items for attachments*/
 	ItemName_Base.FakeItemSling = "все длинные пушки.",

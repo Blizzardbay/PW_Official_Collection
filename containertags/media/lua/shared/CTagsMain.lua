@@ -3,9 +3,9 @@
 
 
 CTags = {}
-CTags.version = '1.0.0';
+CTags.version = '2.0.0';
+CTags.tagsVersion = '2';
 CTags.build = '41.78';
-CTags.drawData = {};
 
 function CTags:isMultiplayer() return getCore():getGameMode() == "Multiplayer" end
 
@@ -50,17 +50,45 @@ function CTags:sleepDo(seconds, func, condition)
 end
 
 function CTags:getFaction()
-	local factions = Faction.getFactions();
 	local player = getPlayer();
+	return Faction.getPlayerFaction(player);
+end
 
-	for i=0, factions:size()-1 do
-		local userName = player:getUsername();
-		local faction = factions:get(i);
-		local isPlayerMember = faction:isPlayerMember(player) or faction:isOwner(userName);
-
-		if isPlayerMember then
-			return faction
+function CTags:getCustomName(obj, translated)
+	if not obj then return nil end
+	if not obj:getSprite() then return nil end
+	local props = obj:getSprite():getProperties()
+	if props:Is("CustomName") then
+		if props:Is("CustomName") then
+			if translated then return Translator.getMoveableDisplayName(props:Val("CustomName")) end
+			return props:Val("CustomName")
 		end
 	end
-	return
+	return ""
+end
+
+function CTags:getCustomGroup(obj, translated)
+	if not obj then return nil end
+	if not obj:getSprite() then return nil end
+	local props = obj:getSprite():getProperties()
+	if props:Is("GroupName") then
+		if translated then return Translator.getMoveableDisplayName(props:Val("GroupName")) end
+		return props:Val("GroupName")
+	end
+	return ""
+end
+
+function CTags:getSquareFromScreen()
+	local player = getPlayer();
+	local playerNum = player:getPlayerNum();
+	local worldX = screenToIsoX(playerNum, getMouseX(), getMouseY(), 0)
+	local worldY = screenToIsoY(playerNum, getMouseX(), getMouseY(), 0)
+	return getCell():getGridSquare(worldX, worldY, player:getZ());
+end
+
+function CTags:formSquareID(square, offset, spriteName)
+	if square and offset and spriteName then
+		local ID = "" .. square:getX() .. "." .. square:getY() .. "." .. square:getZ() .. '.' .. offset .. '.' .. spriteName;
+		return ID
+	end
 end

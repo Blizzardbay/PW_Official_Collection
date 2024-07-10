@@ -4,9 +4,10 @@ require "ISUI/ISControllerTestPanel"
 require "ISUI/ISVolumeControl"
 require "defines"
 
-local modCountSystem = require "chuckleberryFinnModding_modCountSystem"
-if modCountSystem then modCountSystem.pullAndAddModID()
-else print("ERR: MISSING MOD: `ChuckleberryFinnAlertSystem` (Workshop ID: `3077900375`)") end
+if getActivatedMods():contains("ChuckleberryFinnAlertSystem") then
+	local modCountSystem = require "chuckleberryFinnModding_modCountSystem"
+	if modCountSystem then modCountSystem.pullAndAddModID() end
+else print("WARNING: Highly recommended to install `ChuckleberryFinnAlertSystem` (Workshop ID: `3077900375`) for latest news and updates.") end
 
 
 local GameOption = ISBaseObject:derive("GameOption")
@@ -127,6 +128,43 @@ function MainOptions:create() -- override
 		return box
 	end
 
+	function addSlider(text, min, max, step)
+		-- layout: label, slider, currentValue 
+		local label = ISLabel:new(x,y+self.addY,height, text, 1,1,1,1, UIFont.Small, false)
+		label:initialise()
+		self.mainPanel:addChild(label)
+		
+		local box = ISTextEntryBox:new("", x+230,y+self.addY, 50,20)
+		box.font = UIFont.Small
+		box:initialise()
+		box:instantiate()
+		box:setOnlyNumbers(true)
+		self.mainPanel:addChild(box)
+
+		local sliderHandler = function(target, newvalue, self)
+			box:setText(tostring(newvalue))
+		end
+		
+		local slider = ISSliderPanel:new(x+20,y+self.addY, 200,20, nil, sliderHandler) 
+		slider:initialise()
+		slider:instantiate()
+		slider.valueLabel = false
+		slider.isSlider = true
+
+		box.onCommandEntered = function(self)
+			local value = tonumber(self:getText())
+			if value then
+				slider:setCurrentValue(value)
+			end
+		end
+		
+		self.mainPanel:addChild(slider)
+		self.mainPanel:insertNewLineOfButtons(slider)
+		
+		self.addY = self.addY + height +5
+		return slider
+	end	
+
 	--new addSpace
 	function addSpace()
 		self.addY = self.addY + height +5
@@ -224,6 +262,22 @@ function MainOptions:create() -- override
 							self.gameOptions:add(gameOption)
 							--self.addY = self.addY - 8
 						end
+					end
+
+					-- SLIDER ---
+					if menuEntry.type == "Slider" then
+						local title = ecc_getText(gameOptionName, menuEntry.noTranslate)
+						local slider = addSlider(title, menuEntry.min, menuEntry.max, menuEntry.step)
+						local gameOption = GameOption:new(gameOptionName, slider)
+						function gameOption.toUI(self)
+							local slider = self.control
+							slider:setCurrentValue(menuEntry.selectedValue)
+						end
+						function gameOption.apply(self)
+							local slider = self.control
+							menuEntry.selectedValue = slider.currentValue
+						end
+						self.gameOptions:add(gameOption)
 					end
 
 					--[[

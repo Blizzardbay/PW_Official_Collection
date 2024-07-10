@@ -2113,6 +2113,22 @@ table.insert(SuburbsDistributions["Lunchbox"].items, "PompsItems.PIFazbar");
 table.insert(SuburbsDistributions["Lunchbox"].items, 0.4 * SandboxVars.PompsItems.CandySpawnRate);
 table.insert(SuburbsDistributions["Lunchbox2"].items, "PompsItems.PIFazbar");
 table.insert(SuburbsDistributions["Lunchbox2"].items, 0.4 * SandboxVars.PompsItems.CandySpawnRate);
+
+	--Gummy Frogs
+table.insert(ProceduralDistributions["list"]["CrateCandyPackage"].items, "PompsItems.PIGummyFrogs");
+table.insert(ProceduralDistributions["list"]["CrateCandyPackage"].items, 0.3 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["GigamartCandy"].items, "PompsItems.PIGummyFrogs");
+table.insert(ProceduralDistributions["list"]["GigamartCandy"].items, 0.6 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["StoreShelfCombo"].items, "PompsItems.PIGummyFrogs");
+table.insert(ProceduralDistributions["list"]["StoreShelfCombo"].items, 0.3 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["StoreShelfSnacks"].items, "PompsItems.PIGummyFrogs");
+table.insert(ProceduralDistributions["list"]["StoreShelfSnacks"].items, 0.2 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["TheatreSnacks"].items, "PompsItems.PIGummyFrogs");
+table.insert(ProceduralDistributions["list"]["TheatreSnacks"].items, 0.2 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, "PompsItems.PIGummyFrogs");
+table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, 0.6 * SandboxVars.PompsItems.CandySpawnRate);
+table.insert(SuburbsDistributions["all"]["vendingsnack"].items, "PompsItems.PIGummyFrogs");
+table.insert(SuburbsDistributions["all"]["vendingsnack"].items, 0.01 * SandboxVars.PompsItems.CandySpawnRate);
 ---------------------- DRINKS - ALCOHOL ----------------------
 
 	--Wild Pegasus

@@ -706,6 +706,9 @@
 		</m_items>
 		<m_items> <!-- Tactical Gloves -->
 			<itemGUID>a8445787-2034-4f08-b390-9fca4d38e7d6</itemGUID>
+				<subItems> <!-- Tactical Gloves Fingerless-->
+					<itemGUID>6ed501a6-eae7-4c5e-8f36-c516eab1a691</itemGUID>
+				</subItems>	
 		</m_items> 		
 		<m_items> <!-- Briefs -->
 			<itemGUID>2d034cf9-6d0c-48d2-9a44-cfc844cef8b5</itemGUID>
@@ -750,6 +753,9 @@
 		</m_items>
 		<m_items> <!-- Tactical Gloves -->
 			<itemGUID>a8445787-2034-4f08-b390-9fca4d38e7d6</itemGUID>
+				<subItems> <!-- Tactical Gloves Fingerless-->
+					<itemGUID>6ed501a6-eae7-4c5e-8f36-c516eab1a691</itemGUID>
+				</subItems>				
 		</m_items> 		
 		<m_items> <!-- Briefs -->
 			<itemGUID>2d034cf9-6d0c-48d2-9a44-cfc844cef8b5</itemGUID>
@@ -810,6 +816,9 @@
 		</m_items>
 		<m_items> <!-- Tactical Gloves -->
 			<itemGUID>a8445787-2034-4f08-b390-9fca4d38e7d6</itemGUID>
+				<subItems> <!-- Tactical Gloves Fingerless-->
+					<itemGUID>6ed501a6-eae7-4c5e-8f36-c516eab1a691</itemGUID>
+				</subItems>	
 		</m_items> 		
 		<m_items> <!-- Briefs -->
 			<itemGUID>2d034cf9-6d0c-48d2-9a44-cfc844cef8b5</itemGUID>

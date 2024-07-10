@@ -68,7 +68,6 @@ module SapphCooking
 		Proteins 		= 17.7,
 		Lipids 		= 6.66,
 		Calories 		= 408,
-		DaysFresh 		= 4,
 		WorldStaticModel 		= WontonWrappers_Ground,
 	}
 	item DumplingsMeatUn
@@ -88,7 +87,6 @@ module SapphCooking
 		Proteins 		= 18.7,
 		Lipids 		= 7.66,
 		Calories 		= 432,
-		DaysFresh 		= 4,
 		WorldStaticModel 		= Dumplings_Ground,
 	}
 	/*************OBSOLETE******************/
@@ -234,6 +232,8 @@ module SapphCooking
 		UnhappyChange 		= -3,
 		BoredomChange 		= -3,
 		ReplaceOnUse 		= WaterBottleEmpty,
+		EvolvedRecipeName = Lemon,
+		Tags = Juice,
 	}
 	item BottleofOrangeJuice
 	{
@@ -258,6 +258,8 @@ module SapphCooking
 		UnhappyChange 		= -3,
 		BoredomChange 		= -3,
 		ReplaceOnUse 		= WaterBottleEmpty,
+		EvolvedRecipeName = Orange,
+		Tags = Juice,
 	}
 	item CocktailGlass
 	{
@@ -1056,6 +1058,7 @@ module SapphCooking
 		UnhappyChange = 10,
 		ThirstChange = 10,
 		FatigueChange 		= -10,
+		EvolvedRecipe = Pancakes:2;Waffles:2;Muffin:2;PieSweet:2;Oatmeal:2;Cake:2,
 		Calories = 10,
 		Carbohydrates = 0,
 		Lipids = 0,
@@ -1238,7 +1241,7 @@ module SapphCooking
 		StressChange 		= -15,
 		WorldStaticModel 		= LowballGlass_Black,
 		CustomContextMenu 		= Drink,
-		Tags = CoffeeCup,
+		Tags = Coffee;CoffeeMaker,
 	}
 	item MugBrewCoffee
 	{
@@ -1259,7 +1262,7 @@ module SapphCooking
 		GoodHot 		= true,
 		StaticModel 		= Mug,
 		WorldStaticModel 		= Mug,
-		Tags = CoffeeCup,
+		Tags = CoffeeCup;CoffeeMaker,
 	}
 	item MugBrewCoffee2
 	{
@@ -1280,7 +1283,7 @@ module SapphCooking
 		GoodHot 		= true,
 		StaticModel 		= MugWhite,
 		WorldStaticModel 		= MugWhite,
-		Tags = CoffeeCup,
+		Tags = CoffeeCup;CoffeeMaker,
 	}
 	item MugBrewCoffee3
 	{
@@ -1301,7 +1304,7 @@ module SapphCooking
 		GoodHot 		= true,
 		StaticModel 		= MugRed,
 		WorldStaticModel 		= MugRed,
-		Tags = CoffeeCup,
+		Tags = CoffeeCup;CoffeeMaker,
 	}
 	item MugBrewCoffee4
 	{
@@ -1322,7 +1325,7 @@ module SapphCooking
 		GoodHot 		= true,
 		StaticModel 		= MugSpiffo,
 		WorldStaticModel 		= MugSpiffo,
-		Tags = CoffeeCup,
+		Tags = CoffeeCup;CoffeeMaker,
 	}
 
 
@@ -1572,6 +1575,7 @@ module SapphCooking
 		StaticModel = H_CoffeeThermos,
 		WorldStaticModel = CoffeeThermos_Ground,
 		CustomEatSound = DrinkingFromGeneric,
+		Tags = HasMetal,
 	}
 
 	item FullWaterThermos
@@ -1593,6 +1597,7 @@ module SapphCooking
 		StaticModel = H_CoffeeThermos,
 		EatType = Kettle,
 		WorldStaticModel = CoffeeThermos_Ground,
+		Tags = HasMetal,
 	}
 	item ThermosCoffee
 	{
@@ -1604,7 +1609,7 @@ module SapphCooking
 		CustomEatSound 		= PZ_DrinkingFromBottle,
 		Icon 		= CoffeeThermosIcon,
 		ThirstChange 		= -100,
-		HungerChange 		= -50,
+		HungerChange 		= -20,
 		UnhappyChange 		= -100,
 		FatigueChange 		= -100,
 		StressChange 		= -100,
@@ -1613,7 +1618,7 @@ module SapphCooking
 		CustomEatSound 		= DrinkingFromMug,
 		StaticModel 		= H_CoffeeThermos,
 		WorldStaticModel 		= CoffeeThermos_Ground,
-		Tags = Thermos;CoffeeCup,
+		Tags = Thermos;CoffeeCup;HideUncooked;HideCooked;CoffeeMaker;HasMetal,
 	}
 	item ThermosCoffeeEvolved
 	{
@@ -1625,7 +1630,7 @@ module SapphCooking
 		CustomEatSound 		= PZ_DrinkingFromBottle,
 		Icon 		= CoffeeThermosIcon,
 		ThirstChange 		= -100,
-		HungerChange 		= -50,
+		HungerChange 		= -20,
 		UnhappyChange 		= -100,
 		FatigueChange 		= -100,
 		StressChange 		= -100,
@@ -1634,7 +1639,7 @@ module SapphCooking
 		CustomEatSound 		= DrinkingFromMug,
 		StaticModel 		= H_CoffeeThermos,
 		WorldStaticModel 		= CoffeeThermos_Ground,
-		Tags = Thermos;CoffeeCup,
+		Tags = Thermos;CoffeeCup;HideUncooked;HideCooked;CoffeeMaker;HasMetal,
 	}
 	item MugCoffee
 	{
@@ -1645,7 +1650,7 @@ module SapphCooking
 		CustomEatSound 		= PZ_DrinkingFromBottle,
 		Icon 		= Mugl,
 		ThirstChange 		= -10,
-		HungerChange 		= -10,
+		HungerChange 		= -5,
 		FatigueChange 		= -5,
 		StressChange 		= -5,
 		UnhappyChange 		= -10,
@@ -1657,6 +1662,7 @@ module SapphCooking
 		GoodHot 		= true,
 		StaticModel 		= Mug,
 		WorldStaticModel 		= Mug,
+		Tags = CoffeeMaker,
 	}
 	item MugCoffee2
 	{
@@ -1667,7 +1673,7 @@ module SapphCooking
 		DisplayName 		= Mug of Coffee,
 		Icon 		= MugWhiteFull,
 		ThirstChange 		= -10,
-		HungerChange 		= -10,
+		HungerChange 		= -5,
 		FatigueChange 		= -5,
 		StressChange 		= -5,
 		UnhappyChange 		= -10,
@@ -1679,6 +1685,7 @@ module SapphCooking
 		GoodHot 		= true,
 		StaticModel 		= MugWhite,
 		WorldStaticModel 		= MugWhite,
+		Tags = CoffeeMaker,
 	}
 	item MugCoffee3
 	{
@@ -1689,7 +1696,7 @@ module SapphCooking
 		DisplayName 		= Mug of Coffee,
 		Icon 		= MugRedFull,
 		ThirstChange 		= -10,
-		HungerChange 		= -10,
+		HungerChange 		= -5,
 		FatigueChange 		= -5,
 		StressChange 		= -5,
 		UnhappyChange 		= -10,
@@ -1701,6 +1708,7 @@ module SapphCooking
 		GoodHot 		= true,
 		StaticModel 		= MugRed,
 		WorldStaticModel 		= MugRed,
+		Tags = CoffeeMaker,
 	}
 	item MugCoffee4
 	{
@@ -1711,7 +1719,7 @@ module SapphCooking
 		CustomEatSound 		= PZ_DrinkingFromBottle,
 		Icon 		= MugSpiffoFull,
 		ThirstChange 		= -10,
-		HungerChange 		= -10,
+		HungerChange 		= -5,
 		FatigueChange 		= -5,
 		StressChange 		= -5,
 		UnhappyChange 		= -10,
@@ -1723,6 +1731,7 @@ module SapphCooking
 		GoodHot 		= true,
 		StaticModel 		= MugSpiffo,
 		WorldStaticModel 		= MugSpiffo,
+		Tags = CoffeeMaker,
 	}
 	item LowballGlassPilk
 	{
@@ -1776,10 +1785,10 @@ module SapphCooking
 	{
 	    DisplayCategory = Food,
 		HungerChange	=	-40,
+		UnhappyChange = -10,
 		Weight	=	0.15,
 		Type	=	Food,
-		IsCookable	=	TRUE,
-		DangerousUncooked	=	TRUE,
+		IsCookable	=	true,
 		DaysTotallyRotten	=	4,
 		MinutesToBurn	=	50,
 		DisplayName	= Schnitzel,
@@ -1791,9 +1800,6 @@ module SapphCooking
         Proteins = 18,
         Lipids = 6,
         Calories = 390,
-        BadInMicrowave = true,
-        GoodHot = true,
-        BadCold = true,
         WorldStaticModel = Schnitzel_Ground,
 		StaticModel = H_Schnitzel,
 	}
@@ -1928,8 +1934,11 @@ module SapphCooking
 		Lipids 		= 15,
 		Calories 		= 317,
 		WorldStaticModel 		= Doughnut_Ground,
+		StaticModel = H_Bagel,
 		StressChange 		= -5,
 		BoredomChange 		= -5,
+		DaysFresh = 3,
+		DaysTotallyRotten = 7,
 	}
 	item SapphDoughnutChocolate
 	{
@@ -1946,6 +1955,8 @@ module SapphCooking
 		WorldStaticModel 		= Doughnut_Chocolate_Ground,
 		StressChange 		= -15,
 		BoredomChange 		= -15,
+		DaysFresh = 3,
+		DaysTotallyRotten = 7,
 	}
 	item SapphOnigiri
 	{
@@ -1982,6 +1993,7 @@ module SapphCooking
 		DaysFresh		= 2,
 		DaysTotallyRotten	= 4,
 		WorldStaticModel 		= Croissant_Ground,
+		StaticModel 		= H_Croissant,
 		StressChange 		= -15,
 		BoredomChange 		= -15,
 		CustomEatSound 		= EatingCrispy,
@@ -2022,6 +2034,7 @@ module SapphCooking
 		Proteins 		= 5.55,
 		Lipids 		= 4.18,
 		Calories 		= 243,
+		ThirstChange 		= -5,
 		UnhappyChange 		= -6,
 		BoredomChange 		= -6,
 		WorldStaticModel 		= FriedEgg,
@@ -2264,7 +2277,7 @@ module SapphCooking
 		Weight 		= 0.3,
 		AlwaysWelcomeGift 		= true,
 		Type 		= Food,
-		DisplayName 		= Fried Bird Meat,
+		DisplayName 		= Fried Chicken,
 		Icon 		= ChickenFried,
 		DaysFresh 		= 2,
 		DaysTotallyRotten 		= 4,
@@ -2290,7 +2303,7 @@ module SapphCooking
 		Carbohydrates 		= 15,
 		Proteins 		= 0,
 		Lipids 		= 0,
-		Calories 		= 60,
+		Calories 		= 45,
 		WorldStaticModel 		= CandyCigaretteSingle,
 		StaticModel 		= H_CandyCigaretteSingle,
 		EatType 		= Cigarettes,
@@ -2299,12 +2312,21 @@ module SapphCooking
 	}
 	item PackofCandyCigarretes
 	{
+		DisplayCategory 		= Food,
 		DisplayName 		= Pack of Candy Cigarette,
-		Type 		= Drainable,
-		UseDelta 		= 0.1,
-		UseWhileEquipped 		= false,
+		Type 		= Food,
 		Icon 		= CandyCigarettePackIcon,
 		WorldStaticModel 		= CandyCigarettePack_Ground,
+		StaticModel 		= H_CandyCigarettePack,
+		HungerChange 		= -10,
+		UnhappyChange 		= -25,
+		StressChange 		= -15,
+		CustomEatSound 		= EatingCrispy,
+		Carbohydrates 		= 75,
+		Proteins 		= 0,
+		EatType = 2handforced,
+		Lipids 		= 0,
+		Calories 		= 225,
 		Weight 		= 0.05,
 	}
 	item StrawberryMilk
@@ -2383,6 +2405,7 @@ module SapphCooking
 		GoodHot 		= true,
 		BadCold 		= true,
 		WorldStaticModel 		= ViennaSausage,
+		StaticModel = H_Sausage,
 		UnhappyChange 		= -5,
 		BoredomChange 		= -5,
 		Tags = Sausage,
@@ -2430,6 +2453,7 @@ module SapphCooking
 		GoodHot 		= true,
 		BadCold 		= true,
 		WorldStaticModel 		= ViennaSausage,
+		StaticModel = H_Sausage,
 		UnhappyChange 		= -5,
 		BoredomChange 		= -5,
 		Tags = Sausage,
@@ -2456,6 +2480,7 @@ module SapphCooking
 		GoodHot 		= true,
 		BadCold 		= true,
 		WorldStaticModel 		= Sausage_Ground,
+		StaticModel = H_Sausage,
 	}
 	item CoconutOil
 	{
@@ -2708,8 +2733,9 @@ module SapphCooking
 		Proteins 		= 6.4,
 		Lipids 		= 9.33,
 		Calories 		= 260,
-		WorldStaticModel 		= CheeseSapph,
-		Tags 		= SapphCookingCheese,
+		WorldStaticModel 		= ParmesanSlice_Ground,
+		StaticModel = H_ParmesanSlice,
+		Tags 		= SapphCookingCheese;Cheese,
 	}
 	item MozzarelaCheese
 	{
@@ -2728,6 +2754,8 @@ module SapphCooking
 		Lipids 		= 9.33,
 		Calories 		= 283,
 		WorldStaticModel 		= CheeseSapph,
+		StaticModel 		= H_MozzarelaSapph,
+		Tags 		= SapphCookingCheese;Cheese,
 	}
 	item ChickenBroth
 	{
@@ -2873,21 +2901,23 @@ module SapphCooking
 	}
 	item CanofPowderedMilk
 	{
-		Type 		= Drainable,
+		DisplayCategory 		= Food,
+		Type 		= Food,
 		Weight 		= 0.8,
+		HungerChange 		= -20,
+		ThirstChange 		= +60,
 		DisplayName 		= Can of Evaporated Milk,
 		Icon 		= CanofPowderedMilkIcon,
-		StaticModel 		= CanClosed,
+		StaticModel 		= H_CanPowderedMilk,
 		WorldStaticModel 		= CanPowderedMilk,
 		DisplayCategory 		= Food,
 		CannedFood 		= true,
 		Packaged 		= true,
-		Calories 		= 200,
+		EatType 		= 2hand,
+		Calories 		= 300,
 		Carbohydrates 		= 90,
 		Proteins 		= 13,
-		Lipids 		= 4,
-		UseDelta 		= 0.5,
-		UseWhileEquipped 		= false,
+		Lipids 		= 12,
 	}
 	item BottlewithMilk
 	{
@@ -2969,20 +2999,23 @@ module SapphCooking
 	}
 	item CanofProteinPowder
 	{
-		Type 		= Drainable,
+		DisplayCategory 		= Food,
+		Type 		= Food,
 		Weight 		= 0.8,
+		HungerChange 		= -20,
+		ThirstChange 		= +60,
 		DisplayName 		= Can of Protein Powder,
 		Icon 		= CanofProteinPowderIcon,
-		StaticModel 		= CanClosed,
+		StaticModel 		= H_CanProteinPowder,
 		WorldStaticModel 		= CanProteinPowder,
 		DisplayCategory 		= Food,
+		EatType 		= 2hand,
 		CannedFood 		= true,
 		Packaged 		= true,
-		Calories 		= 1,
+		Calories 		= 20,
 		Carbohydrates 		= 2,
-		Proteins 		= 1200,
-		Lipids 		= 2,
-		UseDelta 		= 0.2,
+		Proteins 		= 1000,
+		Lipids 		= 4,
 	}
 	item BottlewithProteinShake
 	{
@@ -2999,7 +3032,7 @@ module SapphCooking
 		CustomEatSound 		= DrinkingFromCarton,
 		FoodType 		= NoExplicit,
 		Carbohydrates 		= 30,
-		Proteins 		= 500,
+		Proteins 		= 250,
 		Lipids 		= 2.5,
 		Calories 		= 50,
 		Packaged 		= TRUE,
@@ -3026,7 +3059,7 @@ module SapphCooking
 		CustomEatSound 		= DrinkingFromCarton,
 		FoodType 		= NoExplicit,
 		Carbohydrates 		= 30,
-		Proteins 		= 500,
+		Proteins 		= 250,
 		Lipids 		= 2.5,
 		Calories 		= 50,
 		Packaged 		= TRUE,
@@ -3053,7 +3086,7 @@ module SapphCooking
 		CustomEatSound 		= DrinkingFromCarton,
 		FoodType 		= NoExplicit,
 		Carbohydrates 		= 40,
-		Proteins 		= 615,
+		Proteins 		= 400,
 		Lipids 		= 2.5,
 		Calories 		= 50,
 		Packaged 		= TRUE,
@@ -3147,6 +3180,7 @@ module SapphCooking
 		Lipids 		= 15,
 		Calories 		= 150,
 		WorldStaticModel 		= DoughnutDough,
+		StaticModel 		= H_Bagel,
 	}
 	item WhiteChocolate
 	{
@@ -3216,7 +3250,7 @@ module SapphCooking
 		Carbohydrates 		= 25,
 		Proteins 		= 4,
 		Lipids 		= 3,
-		Calories 		= 150,
+		Calories 		= 180,
 		UnhappyChange 		= -18,
 		StressChange 		= -18,
 		CantBeFrozen 		= TRUE,
@@ -3232,7 +3266,7 @@ module SapphCooking
 		HungerChange 		= -15,
 		UnhappyChange 		= 10,
 		ThirstChange 		= 15,
-		RemoveNegativeEffectOnCooked 		= TRUE,
+		RemoveNegativeEffectOnCooked  		= TRUE,
 		DaysTotallyRotten 		= 9,
 		Carbohydrates 		= 99,
 		Proteins 		= 17.7,
@@ -3450,13 +3484,13 @@ module SapphCooking
 		Type 		= Food,
 		IsCookable 		= TRUE,
 		DangerousUncooked 		= TRUE,
+		RemoveNegativeEffectOnCooked = TRUE,
 		DaysTotallyRotten 		= 4,
-		MinutesToBurn 		= 70,
 		DisplayName 		= Meatballs,
 		Icon 		= MeatballsIcon,
 		DaysFresh 		= 2,
 		MinutesToCook 		= 30,
-		EvolvedRecipe 		= Stew:15;Pie:15;Burger:10;Taco:10|Cooked;Burrito:10,
+		MinutesToBurn 		= 70,
 		FoodType 		= Meat,
 		Carbohydrates 		= 0,
 		Proteins 		= 15,
@@ -3467,7 +3501,6 @@ module SapphCooking
 		BadCold 		= true,
 		WorldStaticModel 		= MeatballsUncooked_Ground,
 		StaticModel 		= H_Meatballs,
-		ReplaceOnCooked 		= SapphCooking.MeatballsCooked,
 	}
 	item VegetableSushi
 	{
@@ -3630,7 +3663,7 @@ module SapphCooking
 		StressChange 		= -5,
 		FatigueChange 		= -5,
 	}
-		item BagelShapedDough
+	item BagelShapedDough
 	{
 		Type 		= Food,
 		DisplayName 		= Bagel Shaped Dough,
@@ -3787,6 +3820,7 @@ module SapphCooking
 		BadCold 		= TRUE,
 		CustomEatSound 		= EatingCrispy,
 	}
+	/*************OBSOLETE******************/
 	item MeatballsCooked
 	{
 		DisplayCategory 		= Food,
@@ -3970,6 +4004,7 @@ module SapphCooking
 		UnhappyChange 		= -3,
 		BoredomChange 		= -3,
 		ReplaceOnUse 		= WaterBottleEmpty,
+		EvolvedRecipeName = Grape,
 	}
 	item BottleofWatermelonJuice
 	{
@@ -3994,6 +4029,8 @@ module SapphCooking
 		UnhappyChange 		= -3,
 		BoredomChange 		= -3,
 		ReplaceOnUse 		= WaterBottleEmpty,
+		EvolvedRecipeName = Watermelon,
+		Tags = Juice,
 	}
 	item BottleofPeachJuice
 	{
@@ -4018,6 +4055,8 @@ module SapphCooking
 		UnhappyChange 		= -3,
 		BoredomChange 		= -3,
 		ReplaceOnUse 		= WaterBottleEmpty,
+		EvolvedRecipeName = Peach,
+		Tags = Juice,
 	}
 	item LowBallGlassCoffee
 	{
@@ -4037,9 +4076,7 @@ module SapphCooking
 		WorldStaticModel 		= LowballGlass_Black,
 		CustomContextMenu 		= Drink,
 		CustomEatSound 		=  DrinkingFromMug,
-		FatigueChange 		= -20,
-		StressChange 		= -20,
-		Tags = CoffeeCup,
+		Tags = CoffeeCup;CoffeeMaker,
 	}
 	item BottleofStrawberryJuice
 	{
@@ -4064,6 +4101,8 @@ module SapphCooking
 		UnhappyChange 		= -3,
 		BoredomChange 		= -3,
 		ReplaceOnUse 		= WaterBottleEmpty,
+		EvolvedRecipeName = Strawberry,
+		Tags = Juice,
 	}
 	item BottleofPineappleJuice
 	{
@@ -4088,6 +4127,8 @@ module SapphCooking
 		UnhappyChange 		= -3,
 		BoredomChange 		= -3,
 		ReplaceOnUse 		= WaterBottleEmpty,
+		EvolvedRecipeName = Pineapple,
+		Tags = Juice,
 	}
 	item BottleofAppleJuice
 	{
@@ -4112,6 +4153,8 @@ module SapphCooking
 		UnhappyChange 		= -3,
 		BoredomChange 		= -3,
 		ReplaceOnUse 		= WaterBottleEmpty,
+		EvolvedRecipeName = Apple,
+		Tags = Juice,
 	}
 	item TortillaChipsinChili
 	{
@@ -4159,7 +4202,7 @@ module SapphCooking
 	}
 	item BreadCrumbs
 	{
-                DisplayCategory         = Food,
+        DisplayCategory         = Food,
 		HungerChange		= -10,
 		Weight			= 0.1,
 		Type			= Food,
@@ -4167,11 +4210,11 @@ module SapphCooking
 		DisplayName		= Bread Crumbs,
 		Icon			= BreadCrumbsIcon,
 		DaysFresh		= 1,
-        	Carbohydrates 		= 33,
-        	Proteins 		= 5.9,
-        	Lipids 			= 2.22,
-       		Calories 		= 177,
-                WorldStaticModel        = BreadCrumbs_Ground,
+        Carbohydrates 		= 33,
+        Proteins 		= 5.9,
+        Lipids 			= 2.22,
+       	Calories 		= 177,
+        WorldStaticModel        = BreadCrumbs_Ground,
 	}
 	item BreadedTenderizedMeat
 	{
@@ -4217,8 +4260,8 @@ module SapphCooking
 	{
 		DisplayCategory = Food,
 		HungerChange	=	-45,
-		StressChange 		= -10,
-		FatigueChange 		= -10,
+		StressChange 		= -20,
+		FatigueChange 		= -20,
 		Weight	=	0.3,
 		Type	=	Food,
 		DaysTotallyRotten	=	6,
@@ -4235,8 +4278,8 @@ module SapphCooking
 	{
 		DisplayCategory = Food,
 		HungerChange	=	-15,
-		StressChange 		= -5,
-		FatigueChange 		= -5,
+		StressChange 		= -10,
+		FatigueChange 		= -10,
 		Weight	=	0.3,
 		Type	=	Food,
 		DaysTotallyRotten	=	6,
@@ -4706,7 +4749,7 @@ module SapphCooking
 		DisplayName = Sliced Chicken,
 		DisplayCategory = Food,
 		Type = Food,
-		Weight = 0.3,
+		Weight = 0.2,
 		Icon = SlicedChickenIcon,
 		BadInMicrowave = true,
 		DangerousUncooked = TRUE,
@@ -4761,7 +4804,7 @@ module SapphCooking
 		DaysFresh 		= 7,
 		DaysTotallyRotten 		= 20,
 		DisplayName 		= Sour Cream,
-		EvolvedRecipe = Pizza:5;Soup:5;Stew:5;Pie:5;Stir fry Griddle Pan:5;Stir fry:5;Sandwich:5;Sandwich Baguette:5;Burger:5;Salad:5;Roasted Vegetables:5;RicePot:5;RicePan:5;PastaPot:5;PastaPan:5;Taco:5;Burrito:5,
+		EvolvedRecipe = SapphCooking.BakedPotatoEvolved:5;Pizza:5;Soup:5;Stew:5;Pie:5;Stir fry Griddle Pan:5;Stir fry:5;Sandwich:5;Sandwich Baguette:5;Burger:5;Salad:5;Roasted Vegetables:5;RicePot:5;RicePan:5;PastaPot:5;PastaPan:5;Taco:5;Burrito:5,
 		Icon 		=  SourCreamIcon,
 		Carbohydrates 		= 5,
 		Proteins 		= 19,
@@ -4933,6 +4976,8 @@ module SapphCooking
 		UnhappyChange 		= -2,
 		StressChange 		= -2,
 		BoredomChange 		= -2,
+		MinutesToCook 		= 20,
+		MinutesToBurn 		= 60,
 		DaysFresh = 3,
 		DaysTotallyRotten = 4,
 		Calories = 120,
@@ -4950,6 +4995,8 @@ module SapphCooking
 		UnhappyChange 		= -2,
 		StressChange 		= -2,
 		BoredomChange 		= -2,
+		MinutesToCook 		= 20,
+		MinutesToBurn 		= 60,
 		Weight = 0.1,
 		Icon = WoodenSkewerVegetableIcon,
 		DaysFresh = 3,
@@ -4968,6 +5015,8 @@ module SapphCooking
 		Type = Food,
 		Weight = 0.1,
 		Icon = WoodenSkewerInsectIcon,
+		MinutesToCook 		= 20,
+		MinutesToBurn 		= 60,
 		HungerChange = -1,
 		BoredomChange 		= 10,
 		ThirstChange = 10,
@@ -4986,6 +5035,8 @@ module SapphCooking
 		IsCookable = TRUE,
 		MinutesToCook = 30,
 		MinutesToBurn = 60,
+		MinutesToCook 		= 20,
+		MinutesToBurn 		= 60,
 		Type = Food,
 		Weight = 0.1,
 		Icon = WoodenSkewerMarshmallowIcon,
@@ -5009,7 +5060,7 @@ module SapphCooking
 		UnhappyChange	=	30,
 		DisplayName	= Rat on a Stick,
 		Icon	=	WoodenSkewerRatIcon,
-        	IsCookable	=	TRUE,
+        IsCookable	=	TRUE,
 		DangerousUncooked	=	TRUE,
 		DaysTotallyRotten	=	10,
 		MinutesToBurn	=	60,
@@ -5445,6 +5496,7 @@ module SapphCooking
 		EatType 		= 2hand,
 		WorldStaticModel 		= SaucepanYellow,
 		StaticModel 		= SaucepanYellowHand,
+		Tags = Custard,
 	}
 	item PipingBag_PastryCream
 	{
@@ -5463,6 +5515,7 @@ module SapphCooking
 		StaticModel = H_PipingBag,
 		WorldStaticModel 		=  PipingBagFull_Ground,
 		EatType 		= 2hand,
+		Tags = PastryCream,
 	}
 	item PipingBag_Icing
 	{
@@ -5484,7 +5537,7 @@ module SapphCooking
 		StaticModel = H_PipingBag,
 		WorldStaticModel 		=  PipingBagFull_Ground,
 		EatType 		= 2hand,
-		
+		Tags = Icing,
 	}
 	item BakingTray_Eclair
 	{
@@ -5588,13 +5641,14 @@ module SapphCooking
         	Icon	=	DoughnutChocolate,
         	Weight	=	0.1,
         	HungerChange 	=	-12,
-		StressChange 		= -10,
+			StressChange 		= -10,
         	UnhappyChange	    =	    -15,
         	Carbohydrates = 40,
         	Proteins = 5,
         	Lipids = 18,
         	Calories = 290,
         	WorldStaticModel = Doughnut_Chocolate_Ground,
+			StaticModel = H_DoughnutChocolate,
 	}
 	item ChocolateEgg_Small
 	{
@@ -5603,8 +5657,6 @@ module SapphCooking
 		Type = Food,
 		Weight = 0.1,
 		Icon = ChocolateEggSmallIcon,
-		DaysFresh = 8,
-		DaysTotallyRotten = 12,
 		HungerChange = -5,
 		UnhappyChange = -5,
 		StressChange = -5,
@@ -5624,8 +5676,6 @@ module SapphCooking
 		Icon = ChocolateEggIcon,
 		BadInMicrowave = true,
 		IsCookable = TRUE,
-		DaysFresh = 10,
-		DaysTotallyRotten = 15,
 		HungerChange = -10,
 		UnhappyChange = -10,
 		StressChange = -10,
@@ -5643,8 +5693,6 @@ module SapphCooking
 		Type = Food,
 		Weight = 0.5,
 		Icon = ChocolateEggLargeIcon,
-		DaysFresh = 10,
-		DaysTotallyRotten = 15,
 		HungerChange = -20,
 		UnhappyChange = -20,
 		StressChange = -20,
@@ -5773,14 +5821,13 @@ module SapphCooking
 		EvolvedRecipe = Muffin:2;ConeIcecream:2;Cake:2;Pancakes:2;Waffles:2;PieSweet:2;Bread:2;ConeIcecream:2,
 		FoodType = Chocolate,
 		HungerChange = -4,
-		UnhappyChange	= -4,
+		UnhappyChange	= -6,
+		StressChange = -5,
 		Calories = 285,
 		Carbohydrates = 20,
 		Lipids = 10,
 		Proteins = 2,
 		CustomEatSound = EatingCrispy,
-		Alcoholic	=	TRUE,
-		AlcoholPower = 0.2,
 		WorldStaticModel 		= Bonbon_Ground,
 		StaticModel = H_Bonbon,
 	}
@@ -6034,7 +6081,7 @@ module SapphCooking
 		DisplayName = Egg in a Nest,
 		DisplayCategory = Food,
 		Type = Food,
-		Weight = 0.1,
+		Weight = 0.2,
 		Icon = EgginNestIcon,
 		FoodType = Bread,
 		DaysFresh = 3,
@@ -6068,6 +6115,7 @@ module SapphCooking
 		CustomEatSound 		= DrinkingFromMug,
 		StaticModel 		= H_CoffeeThermos,
 		WorldStaticModel 		= CoffeeThermos_Ground,
+		Tags = CoffeeMaker;HasMetal,
 	}
 	item CrackersEvolved
 	{
@@ -6125,6 +6173,7 @@ module SapphCooking
 		Proteins 		= 20,
 		IsCookable 		= TRUE,
 		EatType 		= 2hand,
+		
 	}
 	item FryingPanFriedRiceEvolved
 	{
@@ -6189,6 +6238,8 @@ module SapphCooking
 		UnhappyChange 		= -5,
 		FatigueChange 		= -5,
 		StressChange 		= -5,
+		DaysFresh = 5,
+		DaysTotallyRotten = 10,
 		ReplaceOnUse 		= EmptyThermos,
 		CustomContextMenu 		= Drink,
 		CustomEatSound 		= DrinkingFromMug,
@@ -6198,6 +6249,7 @@ module SapphCooking
 		Carbohydrates 		= 10,
 		Lipids 		= 10,
 		Proteins 		= 10,
+		Tags = HasMetal,
 	}
 	
 	item WokPan_YakisobaEvolved
@@ -6215,6 +6267,8 @@ module SapphCooking
 		StressChange 		= -5,
 		HungerChange 		= -24,
 		ReplaceOnUse 		= WokPan,
+		MinutesToBurn 		= 60,
+		MinutesToCook 		= 30,
 		Calories 		= 460,
 		EatType = 2hand,
 		Carbohydrates 		= 400,
@@ -6248,6 +6302,8 @@ module SapphCooking
 		Type = Food,
 		Weight = 0.3,
 		Icon = HotdogCrafted,
+		MinutesToCook = 60,
+		MinutesToBurn = 20,
 		FoodType = Meat,
 		EatType = 2handforced,
 		DaysFresh = 3,
@@ -6267,6 +6323,8 @@ module SapphCooking
 		Type = Food,
 		Weight = 0.3,
 		Icon = HotdogBunSandwichIcon,
+		MinutesToCook = 60,
+		MinutesToBurn = 20,
 		FoodType = Meat,
 		EatType = 2handforced,
 		DaysFresh = 3,
@@ -6286,6 +6344,8 @@ module SapphCooking
 		Type = Food,
 		Weight = 0.3,
 		Icon = HotdogCrafted,
+		MinutesToCook = 60,
+		MinutesToBurn = 20,
 		FoodType = Meat,
 		EatType = 2handforced,
 		DaysFresh = 3,
@@ -6317,6 +6377,7 @@ module SapphCooking
 		Calories 		= 0,
 		StaticModel 		= H_IceCubes,
 		WorldStaticModel 		=  IceCubes_Ground,
+		CantBeFrozen = TRUE,
 		CustomEatSound 		= EatingIce,
 	}
 
@@ -6372,8 +6433,8 @@ module SapphCooking
 		IsCookable 		= TRUE,
 		DangerousUncooked 		= FALSE,
 		DaysTotallyRotten 		= 4,
-		MinutesToBurn 		= 70,
-		MinutesToCook 		= 50,
+		MinutesToBurn 		= 60,
+		MinutesToCook 		= 20,
 		DisplayName 		= Sausage,
 		Icon 		= Sausage,
 		DaysFresh 		= 2,
@@ -6386,6 +6447,7 @@ module SapphCooking
 		GoodHot 		= true,
 		BadCold 		= true,
 		WorldStaticModel 		= ViennaSausage,
+		StaticModel = H_Sausage,
 		UnhappyChange 		= -5,
 		BoredomChange 		= -5,
 		Tags = Sausage,
@@ -6410,7 +6472,7 @@ module SapphCooking
 		WorldStaticModel = Syrup_Chocolate_Ground,
 		CustomEatSound 		= DrinkingFromCarton,
 		StaticModel = H_Syrup_Chocolate,
-		Tags = MeltedChocolate,
+		Tags = MeltedChocolate;Syrup,
 	}
 	item Syrup_Strawberry
 	{
@@ -6432,6 +6494,7 @@ module SapphCooking
 		CustomEatSound 		= DrinkingFromCarton,
 		WorldStaticModel = Syrup_Strawberry_Ground,
 		StaticModel = H_Syrup_Strawberry,
+		Tags = Syrup,
 	}
 	item Syrup_Caramel
 	{
@@ -6453,6 +6516,7 @@ module SapphCooking
 		CustomEatSound 		= DrinkingFromCarton,
 		WorldStaticModel = Syrup_Caramel_Ground,
 		StaticModel = H_Syrup_Caramel,
+		Tags = Syrup,
 	}
 	item ScotchEggRaw
 	{
@@ -6482,7 +6546,6 @@ module SapphCooking
 		StressChange 	= -10,
 		Weight 		= 0.1,
 		Type 		= Food,
-		DangerousUncooked 		= TRUE,
 		DaysFresh 		= 8,
 		DaysTotallyRotten 		= 15,
 		DisplayName 		= Scotch Egg,
@@ -6687,7 +6750,7 @@ module SapphCooking
 		Weight 		= 0.4,
 		Type 		= Food,
 		DisplayName 		= Drink,
-		ReplaceOnUse 		= LowballGlass,
+		ReplaceOnUse 		= CocktailGlass,
 		IsCookable = FALSE,
 		Icon 		= CocktailGlassOrangeIcon,
 		RainFactor 		= 0.1,
@@ -6740,6 +6803,1466 @@ module SapphCooking
 		Proteins = 1.8,
         WorldStaticModel = Mochi_Ground,
 		StaticModel = H_Mochi, 
+	}
+
+	item FrenchToast_Prep
+	{
+		DisplayName = French Toast,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = FrenchToastIcon,
+		FoodType = Bread,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -10,
+		Calories = 250,
+		Carbohydrates = 35,
+		Lipids = 4.22,
+		Proteins = 6.9,
+		WorldStaticModel = FrenchToast_Sapph_Ground,
+		StaticModel = H_FrenchToast_Sapph,
+		Tags = HideCooked,
+	}
+	item FrenchToast_Evolved
+	{
+		DisplayName = French Toast,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = FrenchToastIcon,
+		FoodType = Bread,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -10,
+		Calories = 250,
+		Carbohydrates = 35,
+		Lipids = 4.22,
+		Proteins = 6.9,
+		WorldStaticModel = FrenchToast_Sapph_Ground,
+		StaticModel = H_FrenchToast_Sapph,
+		Tags = HideCooked,
+	}
+	
+	item FlatbreadDough
+	{
+		DisplayName = Flatbread,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = DoughRolled,
+		IsCookable = TRUE,
+		RemoveNegativeEffectOnCooked = TRUE,
+		ReplaceOnCooked = SapphCooking.Flatbread,
+		MinutesToCook = 20,
+		MinutesToBurn = 50,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -24,
+		ThirstChange = 15,
+		UnhappyChange = 10,
+		Calories = 532,
+		Carbohydrates = 99,
+		Lipids = 6.66,
+		Proteins = 17.7,
+		WorldStaticModel = BreadDough,
+	}
+
+	item Flatbread
+	{
+		DisplayName = Flatbread,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = FlatbreadIcon,
+		EvolvedRecipe = Soup:5;Stew:5;Salad:5,
+		FoodType = Bread,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -30,
+		Calories = 532,
+		Carbohydrates = 99,
+		Lipids = 6.66,
+		Proteins = 17.7,
+		WorldStaticModel = Sapph_Flatbread_Ground,
+		StaticModel = H_Sapph_Flatbread,
+	}
+	item FlatbreadEvolved
+	{
+		DisplayName = Flatbread,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = CrepeEvolvedIcon,
+		EvolvedRecipe = Soup:5;Stew:5;Salad:5,
+		FoodType = Bread,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -30,
+		Calories = 532,
+		Carbohydrates = 99,
+		Lipids = 6.66,
+		Proteins = 17.7,
+		WorldStaticModel = Sapph_FlatbreadEvolved_Ground,
+		StaticModel = H_Sapph_Flatbread,
+	}
+	item CandyApple
+	{
+		DisplayName = Candy Apple,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = CandyAppleIcon,
+		EvolvedRecipe = Cake:16;FruitSalad:8;Pancakes:8;Waffles:8;Muffin:8;PieSweet:16;Oatmeal:4;Salad:8,
+		FoodType = Fruits,
+		DaysFresh = 5,
+		DaysTotallyRotten = 8,
+		HungerChange = -25,
+		ThirstChange = -12,
+		UnhappyChange = -10,
+		StressChange = -5,
+		BoredomChange = -5,
+		Calories = 163,
+		Carbohydrates = 25.13,
+		Lipids = 0.51,
+		Proteins = 0.77,
+		CustomEatSound = EatingFruit,
+		StaticModel = H_CandyApple,
+		WorldStaticModel = CandyApple_Ground,
+	}
+
+	
+	item Crepe
+	{
+		DisplayName = Crepe,
+		DisplayCategory = Food,
+		IsCookable = false,
+		Type = Food,
+		Weight = 0.3,
+		Icon = CrepeIcon,
+		FoodType = Bread,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -10,
+		Calories = 194,
+		Carbohydrates = 33,
+		Lipids = 2.16,
+		Proteins = 2.7,
+		WorldStaticModel = Sapph_Crepes_Ground,
+		StaticModel = H_Sapph_Crepes,
+	}
+	item CrepeEvolved
+	{
+		DisplayName = Crepe,
+		DisplayCategory = Food,
+		IsCookable = false,
+		Type = Food,
+		Weight = 0.3,
+		Icon = CrepeEvolvedIcon,
+		FoodType = Bread,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -10,
+		Calories = 194,
+		Carbohydrates = 33,
+		Lipids = 2.16,
+		Proteins = 2.7,
+		WorldStaticModel = Sapph_CrepeEvolved_Ground,
+		StaticModel = H_Sapph_Crepes,
+	}
+	item BloomingOnion
+	{
+		DisplayName = Blooming Onion,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = BloomingOnionIcon,
+		EvolvedRecipe = Omelette:10;Soup:10;Stew:10;Pie:10;Stir fry Griddle Pan:10;Stir fry:10;Sandwich:5;Sandwich Baguette:5;Burger:10;Salad:10;Roasted Vegetables:10;RicePot:10;RicePan:10;PastaPot:10;PastaPan:10;Taco:10;Burrito:10,
+		FoodType = Vegetables,
+		DaysFresh = 7,
+		DaysTotallyRotten = 9,
+		HungerChange = -18,
+		StressChange = -5,
+		BoredomChange = -5,
+		UnhappyChange = -5,
+		Calories = 190,
+		Carbohydrates = 7.54,
+		Lipids = 0.2,
+		Proteins = 1.3,
+		StaticModel = RoundFood_Peach,
+		WorldStaticModel = BloomingOnion_Ground,
+	}
+	item FriedEggplant
+	{
+		DisplayName = Fried Eggplant,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = FriedEggplantIcon,
+		EvolvedRecipe = SapphCooking.SkewersVegetable:8;Pizza:8;Omelette:8;Soup:16;Stew:16;Pie:16;Stir fry Griddle Pan:16;Stir fry:16;Burger:8;Sandwich:4;Sandwich Baguette:4;Salad:8;Roasted Vegetables:16;RicePot:16;RicePan:16;PastaPot:16;PastaPan:16,
+		FoodType = Vegetables,
+		DaysFresh = 5,
+		DaysTotallyRotten = 8,
+		HungerChange = -21,
+		ThirstChange = -10,
+		UnhappyChange = -5,
+		StressChange = -5,
+		BoredomChange = -5,
+		Calories = 180,
+		Carbohydrates = 32.93,
+		Lipids = 1.1,
+		Proteins = 4.9,
+		StaticModel = CylinderFood_Purple,
+		WorldStaticModel = FriedEggplant_Ground,
+	}
+	item Falafel_Uncooked
+	{
+		DisplayCategory 		= Food,
+		HungerChange 		= -10,
+		Weight 		= 0.3,
+		Type 		= Food,
+		DisplayName 		= Falafel,
+		Icon 		= FalafelIcon,
+		DaysTotallyRotten 		= 4,
+		DaysFresh 		= 2,
+		FoodType 		= Meat,
+		Carbohydrates 		= 2,
+		Proteins 		= 70,
+		Lipids 		= 7,
+		Calories 		= 266,
+		BadInMicrowave 		= true,
+		StaticModel 		= H_Falafel,
+		WorldStaticModel 		= Falafel_Ground,
+	}
+	item Falafel_Fried
+	{
+		DisplayCategory 		= Food,
+		HungerChange 		= -18,
+		Weight 		= 0.3,
+		Type 		= Food,
+		DisplayName 		= Falafel,
+		Icon 		= MeatballsCookedIcon,
+		DaysTotallyRotten 		= 4,
+		DaysFresh 		= 2,
+		FoodType 		= Meat,
+		Carbohydrates 		= 5,
+		Proteins 		= 100,
+		Lipids 		= 11,
+		Calories 		= 305,
+		BadInMicrowave 		= true,
+		StaticModel 		= H_MeatballsCooked,
+		WorldStaticModel 		= MeatballsCooked_Ground,
+	}
+	
+	item CottonCandy_White
+	{
+		DisplayName = Cotton Candy,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = CottonCandyIcon,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		StressChange = -10,
+		BoredomChange = -10,
+		Calories = 80,
+		Carbohydrates = 60,
+		Lipids = 0.1,
+		Proteins = 0.4,
+		WorldStaticModel = CottonCandy_White_Ground,
+		StaticModel = H_CottonCandy_White,
+	}
+	item CottonCandy_Pink
+	{
+		DisplayName = Cotton Candy,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		ColorRed = 255,
+        ColorGreen = 190,
+        ColorBlue = 200,
+		Icon = CottonCandyIcon,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		StressChange = -10,
+		BoredomChange = -10,
+		Calories = 80,
+		Carbohydrates = 60,
+		Lipids = 0.1,
+		Proteins = 0.4,
+		WorldStaticModel = CottonCandy_Pink_Ground,
+		StaticModel = H_CottonCandy_Pink,
+	}
+	item CottonCandy_Blue
+	{
+		DisplayName = Cotton Candy,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		ColorRed = 0,
+        ColorGreen = 190,
+        ColorBlue = 255,
+		Icon = CottonCandyIcon,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		StressChange = -10,
+		BoredomChange = -10,
+		Calories = 80,
+		Carbohydrates = 60,
+		Lipids = 0.1,
+		Proteins = 0.4,
+		WorldStaticModel = CottonCandy_Blue_Ground,
+		StaticModel = H_CottonCandy_Blue,
+	}
+	item CottonCandy_Green
+	{
+		DisplayName = Cotton Candy,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		ColorRed = 160,
+     	ColorGreen = 255,
+        ColorBlue = 50,
+		Icon = CottonCandyIcon,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		StressChange = -10,
+		BoredomChange = -10,
+		Calories = 80,
+		Carbohydrates = 60,
+		Lipids = 0.1,
+		Proteins = 0.4,
+		WorldStaticModel = CottonCandy_Green_Ground,
+		StaticModel = H_CottonCandy_Green,
+	}
+	item CottonCandy_Purple
+	{
+		DisplayName = Cotton Candy,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+        ColorRed = 230,
+        ColorGreen = 130,
+        ColorBlue = 230,
+		Icon = CottonCandyIcon,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		StressChange = -10,
+		BoredomChange = -10,
+		Calories = 80,
+		Carbohydrates = 60,
+		Lipids = 0.1,
+		Proteins = 0.4,
+		WorldStaticModel = CottonCandy_Purple_Ground,
+		StaticModel = H_CottonCandy_Purple,
+	}
+	item CottonCandy_Red
+	{
+		DisplayName = Cotton Candy,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+        ColorRed = 255,
+        ColorGreen = 20,
+        ColorBlue = 60,
+		Icon = CottonCandyIcon,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		StressChange = -10,
+		BoredomChange = -10,
+		Calories = 80,
+		Carbohydrates = 60,
+		Lipids = 0.1,
+		Proteins = 0.4,
+		WorldStaticModel = CottonCandy_Red_Ground,
+		StaticModel = H_CottonCandy_Red,
+	}
+	item CottonCandy_Orange
+	{
+		DisplayName = Cotton Candy,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+        ColorRed = 255,
+        ColorGreen = 160,
+        ColorBlue = 0,
+		Icon = CottonCandyIcon,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		StressChange = -10,
+		BoredomChange = -10,
+		Calories = 80,
+		Carbohydrates = 60,
+		Lipids = 0.1,
+		Proteins = 0.4,
+		WorldStaticModel = CottonCandy_Orange_Ground,
+		StaticModel = H_CottonCandy_Orange,
+	}
+	item CottonCandy_Yellow
+	{
+		DisplayName = Cotton Candy,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+        ColorRed = 240,
+        ColorGreen = 230,
+        ColorBlue = 140,
+		Icon = CottonCandyIcon,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		StressChange = -10,
+		BoredomChange = -10,
+		Calories = 80,
+		Carbohydrates = 60,
+		Lipids = 0.1,
+		Proteins = 0.4,
+		WorldStaticModel = CottonCandy_Yellow_Ground,
+		StaticModel = H_CottonCandy_Yellow,
+	}
+	item FortuneCookie
+	{
+		DisplayName = Fortune Cookie,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = FortuneCookieIcon,
+		FoodType 		= NoExplicit,
+		Calories = 30,
+		Carbohydrates = 50,
+		Lipids = 0.1,
+		Proteins = 0.4,
+		WorldStaticModel = FortuneCookie_Ground,
+	}
+	item Broken_FortuneCookie
+	{
+		DisplayName = Broken Fortune Cookie,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = FortuneCookieBrokenIcon,
+		FoodType 		= NoExplicit,
+		HungerChange = -2,
+		UnhappyChange = -2,
+		StressChange = -2,
+		BoredomChange = -2,
+		Calories = 30,
+		Carbohydrates = 50,
+		Lipids = 0.1,
+		Proteins = 0.4,
+		WorldStaticModel = FortuneCookieBroken_Ground,
+	}
+	item SmashBurger
+	{
+		DisplayCategory 		= Food,
+		HungerChange 		= -20,
+		Weight 		= 0.3,
+		Type 		= Food,
+		IsCookable 		= TRUE,
+		RemoveNegativeEffectOnCooked = TRUE,
+		DaysFresh 		= 2,
+		DaysTotallyRotten 		= 4,
+		DisplayName 		= Smash Burger,
+		Icon 		= MeatballsIcon,
+		MinutesToCook 		= 30,
+		MinutesToBurn 		= 70,
+		FoodType 		= Meat,
+		Carbohydrates 		= 0,
+		Proteins 		= 15,
+		Lipids 		= 15,
+		Calories 		= 320,
+		BadInMicrowave 		= true,
+		GoodHot 		= true,
+		BadCold 		= true,
+		WorldStaticModel 		= SmashBurger_Ground,
+		StaticModel 		= H_Meatballs,
+	}
+	item Popsicle_White
+	{
+		DisplayName = Fruit Popsicle,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = PopsicleIcon,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		DaysFresh = 1,
+		DaysTotallyRotten = 2,
+		HungerChange = -5,
+		UnhappyChange = -5,
+		StressChange = -5,
+		BoredomChange = -5,
+		Calories = 120,
+		Carbohydrates = 10,
+		Lipids = 0.2,
+		Proteins = 0.8,
+		WorldStaticModel = PopsicleWhite_Ground,
+		StaticModel = H_Popsicle_White,
+		CustomEatSound 		= EatingIce,
+	}
+	item Popsicle_Pink
+	{
+		DisplayName = Fruit Popsicle,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = PopsicleIcon,
+		DaysFresh = 1,
+		DaysTotallyRotten = 2,
+		ColorRed = 255,
+        ColorGreen = 190,
+        ColorBlue = 200,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -5,
+		StressChange = -5,
+		BoredomChange = -5,
+		Calories = 120,
+		Carbohydrates = 10,
+		Lipids = 0.2,
+		Proteins = 0.8,
+		WorldStaticModel = PopsiclePink_Ground,
+		StaticModel = H_Popsicle_Pink,
+		CustomEatSound 		= EatingIce,
+	}
+	item Popsicle_Green
+	{
+		DisplayName = Fruit Popsicle,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		ColorRed = 170,
+        ColorGreen = 255,
+        ColorBlue = 50,
+		DaysFresh = 1,
+		DaysTotallyRotten = 2,
+		Icon = PopsicleIcon,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -5,
+		StressChange = -5,
+		BoredomChange = -5,
+		Calories = 120,
+		Carbohydrates = 10,
+		Lipids = 0.2,
+		Proteins = 0.8,
+		WorldStaticModel = PopsicleGreen_Ground,
+		StaticModel = H_Popsicle_Green,
+		CustomEatSound 		= EatingIce,
+	}
+	item Popsicle_Blue
+	{
+		DisplayName = Fruit Popsicle,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = PopsicleIcon,
+		DaysFresh = 1,
+		DaysTotallyRotten = 2,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		ColorRed = 135,
+        ColorGreen = 205,
+        ColorBlue = 250,
+		HungerChange = -5,
+		UnhappyChange = -5,
+		StressChange = -5,
+		BoredomChange = -5,
+		Calories = 120,
+		Carbohydrates = 10,
+		Lipids = 0.2,
+		Proteins = 0.8,
+		WorldStaticModel = PopsicleBlue_Ground,
+		StaticModel = H_Popsicle_Blue,
+		CustomEatSound 		= EatingIce,
+	}
+	item Popsicle_Purple
+	{
+		DisplayName = Fruit Popsicle,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		DaysFresh = 1,
+		DaysTotallyRotten = 2,
+		ColorRed = 240,
+        ColorGreen = 130,
+        ColorBlue = 220,
+		Icon = PopsicleIcon,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -5,
+		StressChange = -5,
+		BoredomChange = -5,
+		Calories = 120,
+		Carbohydrates = 10,
+		Lipids = 0.2,
+		Proteins = 0.8,
+		WorldStaticModel = PopsiclePurple_Ground,
+		StaticModel = H_Popsicle_Purple,
+		CustomEatSound 		= EatingIce,
+	}
+	item Popsicle_Red
+	{
+		DisplayName = Fruit Popsicle,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		DaysFresh = 1,
+		DaysTotallyRotten = 2,
+		ColorRed = 220,
+        ColorGreen = 20,
+        ColorBlue = 60,
+		Icon = PopsicleIcon,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -5,
+		StressChange = -5,
+		BoredomChange = -5,
+		Calories = 120,
+		Carbohydrates = 10,
+		Lipids = 0.2,
+		Proteins = 0.8,
+		WorldStaticModel = PopsicleRed_Ground,
+		StaticModel = H_Popsicle_Red,
+		CustomEatSound 		= EatingIce,
+	}
+	item Popsicle_Orange
+	{
+		DisplayName = Fruit Popsicle,
+		DisplayCategory = Food,
+		Type = Food,
+		DaysFresh = 1,
+		DaysTotallyRotten = 2,
+		Weight = 0.1,
+		ColorRed = 255,
+        ColorGreen = 160,
+        ColorBlue = 0,
+		Icon = PopsicleIcon,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -5,
+		StressChange = -5,
+		BoredomChange = -5,
+		Calories = 120,
+		Carbohydrates = 10,
+		Lipids = 0.2,
+		Proteins = 0.8,
+		WorldStaticModel = PopsicleOrange_Ground,
+		StaticModel = H_Popsicle_Orange,
+		CustomEatSound 		= EatingIce,
+	}
+	item Popsicle_Yellow
+	{
+		DisplayName = Fruit Popsicle,
+		DisplayCategory = Food,
+		Type = Food,
+		DaysFresh = 1,
+		DaysTotallyRotten = 2,
+		Weight = 0.1,
+		ColorRed = 240,
+        ColorGreen = 230,
+        ColorBlue = 140,
+		Icon = PopsicleIcon,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -5,
+		StressChange = -5,
+		BoredomChange = -5,
+		Calories = 120,
+		Carbohydrates = 10,
+		Lipids = 0.2,
+		Proteins = 0.8,
+		WorldStaticModel = PopsicleYellow_Ground,
+		StaticModel = H_Popsicle_Yellow,
+		CustomEatSound 		= EatingIce,
+	}
+
+	item Tanghulu
+	{
+		DisplayName = Tanghulu,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = TanghuluIcon,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -10,
+		UnhappyChange = -10,
+		Calories = 90,
+		Carbohydrates = 60,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = Tanghulu_Sapph_Ground,
+		StaticModel = H_Tanghulu_Sapph,
+		Tooltip = Tooltip_LunarNewYear,
+	}
+
+	item Sausage_PigBlanket
+	{
+		HungerChange 		= -10,
+		ThirstChange		= -10,
+		UnhappyChange 		= -10,
+		BoredomChange 		= -10,
+		Weight 		= 0.1,
+		Type 		= Food,
+		IsCookable 		= TRUE,
+		DangerousUncooked 		= FALSE,
+		DaysTotallyRotten 		= 4,
+		MinutesToBurn 		= 60,
+		MinutesToCook 		= 20,
+		DisplayName 		= Pig in a Blanket,
+		Icon 		= PigBlanketIcon,
+		DaysFresh 		= 2,
+		FoodType 		= Meat,
+		Carbohydrates 		= 0,
+		Proteins 		= 15.62,
+		Lipids 		= 4.35,
+		Calories 		= 500,
+		GoodHot 		= true,
+		BadCold 		= true,
+		WorldStaticModel 		= PigsinBlanket_Ground,
+		StaticModel = H_PigsinBlanket,
+	}
+
+	item Spice_Furikake
+  	{
+		HungerChange	=	-10,
+		Weight	=	0.2,
+		Type	=	Food,
+		DisplayName	=	Furikake,
+		Icon	=	FurikakeIcon,
+		Spice   =   true,
+		ThirstChange	=	10,
+		UnhappyChange	=	-5,
+		Calories = 90,
+		Carbohydrates = 70,
+		Lipids = 0,
+		Proteins = 6,
+		EvolvedRecipe = Soup:1;Stew:1;Pie:1;Stir fry Griddle Pan:1;Stir fry:1;Burger:1;Salad:1;Roasted Vegetables:1;RicePot:1;RicePan:1;PastaPot:1;PastaPan:1;Sandwich:1,
+		CantBeFrozen = TRUE,
+		WorldStaticModel = Furikake_Ground,
+	}
+	item Spice_OysterSauce
+  	{
+		HungerChange	=	-10,
+		Weight	=	0.2,
+		Type	=	Food,
+		DisplayName	=	Oyster Sauce,
+		Icon	=	OysterSauceIcon,
+		Spice   =   true,
+		ThirstChange	=	-10,
+		CustomContextMenu 		= Drink,
+		CustomEatSound 		= DrinkingFromCarton,
+		EvolvedRecipe = Soup:1;Stew:1;Pie:1;Stir fry Griddle Pan:1;Stir fry:1;Burger:1;Salad:1;Roasted Vegetables:1;RicePot:1;RicePan:1;PastaPot:1;PastaPan:1;Sandwich:1,
+		CantBeFrozen = TRUE,
+		Calories = 210,
+		Carbohydrates = 40,
+		Lipids = 2,
+		Proteins = 8,
+		WorldStaticModel = OysterSauce_Ground,
+		StaticModel = H_OysterSauce,
+	}
+	item BottleofJuice
+	{
+		DisplayCategory 		= Food,
+		HungerChange 		= -10,
+		Weight 		= 1.0,
+		Type 		= Food,
+		ThirstChange 		= -50,
+		DisplayName 		= Bottle of Juice,
+		Icon 		= BottlewithPineappleJuiceIcon,
+		CustomContextMenu 		= Drink,
+		CustomEatSound 		= DrinkingFromCarton,
+		FoodType 		= NoExplicit,
+		Carbohydrates 		= 5,
+		Proteins 		= 40,
+		Lipids 		= 2.5,
+		Calories 		= 50,
+		CantBeFrozen 		= TRUE,
+		StaticModel 		= H_BottleDrinkmix_Pineapple,
+		WorldStaticModel 		= BottleDrinkmix_Pineapple,
+		UnhappyChange 		= -3,
+		BoredomChange 		= -3,
+		ReplaceOnUse 		= WaterBottleEmpty,
+		Tags = Juice,
+	}
+
+	item Corn_Cob
+	{
+		DisplayName = Corn on the Cob,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = CornCobIcon,
+		EvolvedRecipe = Soup:14;Stew:14;Stir fry Griddle Pan:14;Stir fry:14;Burger:7;Salad:7;Roasted Vegetables:14;RicePot:14;RicePan:14;PastaPot:14;PastaPan:14;Burrito:7;Taco:7,
+		FoodType = Vegetables,
+		DaysFresh = 5,
+		DaysTotallyRotten = 8,
+		HungerChange = -10,
+		ThirstChange = -10,
+		UnhappyChange = -5,
+		Calories = 68,
+		Carbohydrates = 15.74,
+		Lipids = 0.79,
+		Proteins = 3.68,
+		StaticModel = H_CornCob,
+		WorldStaticModel = CornCob_Ground,
+	}
+	item Corn_CobEvolved
+	{
+		DisplayName = Corn on the Cob,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = CornCobIcon,
+		EvolvedRecipe = Soup:14;Stew:14;Stir fry Griddle Pan:14;Stir fry:14;Burger:7;Salad:7;Roasted Vegetables:14;RicePot:14;RicePan:14;PastaPot:14;PastaPan:14;Burrito:7;Taco:7,
+		FoodType = Vegetables,
+		DaysFresh = 5,
+		DaysTotallyRotten = 8,
+		HungerChange = -10,
+		ThirstChange = -10,
+		UnhappyChange = -5,
+		Calories = 68,
+		Carbohydrates = 15.74,
+		Lipids = 0.79,
+		Proteins = 3.68,
+		StaticModel = H_CornCob,
+		WorldStaticModel = CornCob_Ground,
+	}
+
+	item SapphDoughnut_Evolved
+	{
+		Type 		= Food,
+		DisplayName 		= Doughnut,
+		Icon 		= DoughnutFrosted,
+		Weight 		= 0.1,
+		HungerChange 		= -12,
+		UnhappyChange 		= -15,
+		StressChange 		= -10,
+		BoredomChange 		= -10,
+		Carbohydrates 		= 50,
+		Proteins 		= 5,
+		Lipids 		= 20,
+		Calories 		= 290,
+		WorldStaticModel 		= Doughnut_Frosted_Ground,
+		StaticModel = 		StaticModel = H_DoughnutFrosted,
+		DaysFresh = 3,
+		DaysTotallyRotten = 7,
+,
+	}
+	item SapphDoughnutChocolate_Evolved
+    {
+        Type		=	Food,
+        DisplayName	=	Chocolate Doughnut,
+        Icon	=	DoughnutChocolate,
+        Weight	=	0.1,
+        HungerChange 	=	-14,
+		StressChange 		= -15,
+        UnhappyChange	    = -15,
+		BoredomChange 		= -15,
+        Carbohydrates = 40,
+        Proteins = 5,
+        Lipids = 18,
+        Calories = 340,
+        WorldStaticModel = Doughnut_Chocolate_Ground,
+		StaticModel = H_DoughnutChocolate,
+		DaysFresh = 3,
+		DaysTotallyRotten = 7,
+	}
+	item Eclair_Evolved
+	{
+		DisplayName = Eclair,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = EclairIcon,
+		HungerChange = -8,
+		UnhappyChange = -2,
+		Calories = 210,
+		Carbohydrates = 40,
+		Lipids = 20,
+		Proteins = 3,
+		WorldStaticModel = Eclair_Ground,
+		StaticModel = H_Eclair,
+	}
+	item Eclair_Chocolate_Evolved
+	{
+		DisplayName = Chocolate Eclair,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = EclairChocolateIcon,
+		HungerChange = -10,
+		UnhappyChange = -5,
+		Calories = 350,
+		Carbohydrates = 50,
+		Lipids = 24,
+		Proteins = 4,
+		WorldStaticModel = EclairChocolate_Ground,
+		StaticModel = H_EclairChocolate,
+	}
+	item Eclair_WhiteChocolate_Evolved
+	{
+		DisplayName = White Chocolate Eclair,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = EclairWhiteChocolateIcon,
+		HungerChange = -10,
+		UnhappyChange = -5,
+		Calories = 325,
+		Carbohydrates = 45,
+		Lipids = 22,
+		Proteins = 4,
+		WorldStaticModel = EclairWhite_Ground,
+		StaticModel = H_EclairWhite,
+	}
+
+	item ChurrosPlainEvolved
+	{
+		HungerChange		= -5,
+		UnhappyChange		= -5,
+		BoredomChange 		= -5,
+		StressChange 		= -5,
+		Weight			= 0.1,
+		Type			= Food,
+		DisplayName		= Churros,
+		DaysTotallyRotten	= 5,
+		DaysFresh 		= 3,
+		Icon			= ChurrosIcon,
+		Carbohydrates 		= 25,
+		Proteins 		= 5,
+		Lipids 			= 2,
+		Calories 		= 300,
+		StaticModel 		= H_Churros,
+		WorldStaticModel 	= Churros_Ground,
+
+	}
+	item ChurrosChocolateEvolved
+	{
+		HungerChange		= -10,
+		UnhappyChange		= -10,
+		BoredomChange 		= -10,
+		StressChange 		= -10,
+		Weight			= 0.1,
+		Type			= Food,
+		DisplayName		= Churros with Chocolate,
+		DaysTotallyRotten	= 5,
+		DaysFresh 		= 3,
+		Icon			= ChurrosChocolateIcon,
+		Carbohydrates 		= 32,
+		Proteins 		= 8,
+		Lipids 			= 4,
+		Calories 		= 378,
+		StaticModel 		= H_ChurrosChocolate,
+		WorldStaticModel 	= ChurrosChocolate_Ground,
+	}
+
+	item LettuceWrap
+	{
+		DisplayName = Lettuce Wrap,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = LettuceWrapIcon,
+		EvolvedRecipe = Sandwich:3;Burger:3;Salad:5;Sandwich Baguette:3;Taco:3;Burrito:3,
+		FoodType = Greens,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -10,
+		ThirstChange = -4,
+		Calories = 22,
+		Carbohydrates = 5.33,
+		Lipids = 0.29,
+		Proteins = 2.1,
+		StaticModel = H_LettuceWrap,
+		WorldStaticModel = LettuceWrap_Ground,
+	}
+	item LettuceWrap_Evolved
+	{
+		DisplayName = Lettuce Wrap,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = LettuceWrapEvolvedIcon,
+		FoodType = Greens,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -10,
+		ThirstChange = -4,
+		Calories = 22,
+		Carbohydrates = 5.33,
+		Lipids = 0.29,
+		Proteins = 2.1,
+		StaticModel = H_LettuceWrap,
+		WorldStaticModel = LettuceWrapEvolved_Ground,
+	}
+	item Stuffed_BellPepper
+	{
+		DisplayName = Stuffed Pepper,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = StuffedBellPepperIcon,
+		FoodType = Vegetables,
+		MinutesToCook 		= 30,
+		MinutesToBurn 		= 60,
+		DaysFresh = 5,
+		DaysTotallyRotten = 8,
+		HungerChange = -8,
+		ThirstChange = -2,
+		Calories = 30,
+		Carbohydrates = 7,
+		Lipids = 0,
+		Proteins = 1,
+		StaticModel = H_StuffedBellPepper,
+		WorldStaticModel = StuffedBellPepper_Ground,
+		EvolvedRecipeName = Pepper,
+	}
+
+	item WhippedCream_Can
+	{
+		DisplayName = Whipped Cream Can,
+		Type 		= Food,
+		Icon 		= WhippedCanIcon,
+		Weight 		= 0.5,
+		EvolvedRecipe = Cake:2;Pancakes:2;Waffles:2;Muffin:2;ConeIcecream:2;PieSweet:2;Toast:2;Bread:2,
+		HungerChange = -10,
+		UnhappyChange = -10,
+		Calories = 296,
+		Carbohydrates = 0,
+		Lipids = 22,
+		Proteins = 3,
+		CustomEatSound 		= EatingWhippedCream,
+		EatType = bottle,
+		EvolvedRecipeName = Icing,
+		StaticModel = H_WhippedCan,
+		WorldStaticModel 		=  WhippedCan_Ground,
+		EatType 		= Bourbon,
+		CustomContextMenu 		= Drink,
+		Tags = Icing,
+	}
+
+	item CheeseSpray_Can
+	{
+		DisplayName = Spray Cheese,
+		Type 		= Food,
+		Icon 		= SprayCheeseCanIcon,
+		Weight 		= 0.5,
+		EvolvedRecipe = Cake:2;Pancakes:2;Waffles:2;Muffin:2;ConeIcecream:2;PieSweet:2;Toast:2;Bread:2,
+		HungerChange = -10,
+		UnhappyChange = -10,
+		Calories = 210,
+		Carbohydrates = 0,
+		Lipids = 6,
+		Proteins = 8,
+		CustomEatSound 		= EatingWhippedCream,
+		EatType = bottle,
+		EvolvedRecipeName = Cheese,
+		StaticModel = H_CheeseCan,
+		WorldStaticModel 		=  CheeseCan_Ground,
+		EatType 		= Bourbon,
+		CustomContextMenu 		= Drink,
+		Tags = Cheese,
+	}
+
+	item Parmesan_CheeseWheel
+	{
+		DisplayName = Cheese Wheel,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = CheeseWheelIcon,
+		EvolvedRecipe = Pizza:15;Soup:10;Sandwich:5;Sandwich Baguette:5;Burger:5;Salad:5;PastaPot:10;PastaPan:10;Taco:5;Burrito:5;Bread:5;Toast:5,
+		FoodType = Cheese,
+		DaysFresh = 10,
+		DaysTotallyRotten = 20,
+		HungerChange = -50,
+		ThirstChange = -20,
+		UnhappyChange = -20,
+		Calories = 480,
+		Carbohydrates = 0.95,
+		Lipids = 15.8,
+		Proteins = 8.4,
+		EatType = 2handforced,
+		WorldStaticModel = CheeseWheel_Ground,
+		StaticModel = H_CheeseWheel,
+		Tags = Cheese,
+	}
+
+	item Blue_CheeseWheel
+	{
+		DisplayName = Blue Cheese Wheel,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = BlueCheeseWheelIcon,
+		EvolvedRecipe = Pizza:15;Soup:10;Sandwich:5;Sandwich Baguette:5;Burger:5;Salad:5;PastaPot:10;PastaPan:10;Taco:5;Burrito:5;Bread:5;Toast:5,
+		FoodType = Cheese,
+		DaysFresh = 10,
+		DaysTotallyRotten = 20,
+		HungerChange = -60,
+		ThirstChange = -20,
+		UnhappyChange = -20,
+		Calories = 500,
+		Carbohydrates = 0.95,
+		Lipids = 15.8,
+		Proteins = 8.4,
+		EatType = 2handforced,
+		WorldStaticModel = BlueCheeseWheel_Ground,
+		StaticModel = H_BlueCheeseWheel,
+		Tags = Cheese,
+	}
+	item BlueCheese
+	{
+		DisplayCategory 		= Food,
+		HungerChange 		= -15,
+		Weight 		= 0.2,
+		Type 		= Food,
+		DaysTotallyRotten 		= 30,
+		DisplayName 		= Blue Cheese,
+		Icon 		= BlueCheeseSliceIcon,
+		DaysFresh 		= 60,
+		EvolvedRecipe 		= Soup:15;Sandwich:5;Sandwich Baguette:5;Burger:5;Salad:5;PastaPot:15;PastaPan:15;Taco:5;Burrito:5,
+		FoodType 		= NoExplicit,
+		Carbohydrates 		= 0.87,
+		Proteins 		= 6.4,
+		Lipids 		= 9.33,
+		Calories 		= 260,
+		WorldStaticModel 		= BlueCheeseSlice_Ground,
+		StaticModel = H_BlueCheeseSlice,
+		Tags 		= SapphCookingCheese;Cheese,
+	}
+
+	item CrabStick
+	{
+		DisplayName = Crab Stick,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = CrabSticksIcon,
+		EvolvedRecipe = Pizza:15;Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5;Sandwich Baguette:5;Burger:10;Salad:10;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15;Taco:10;Burrito:15,
+		FoodType = Fish,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -10,
+		Calories = 100,
+		Carbohydrates = 1,
+		Lipids = 12,
+		Proteins = 28.52,
+		WorldStaticModel = Crabsticks_Ground,
+		StaticModel = H_Crabsticks,
+		Tags = FishMeat,
+		EvolvedRecipeName = Fish,
+	}
+
+	item Truffle
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Truffle,
+		Icon				=		TruffleIcon,
+		Weight				=		0.2,
+		HungerChange 		=		-5,
+		UnhappyChange 		=		-5,
+		DaysFresh 			=		20,
+		DaysTotallyRotten 	=	 	60,
+        EvolvedRecipe       =       Omelette:9;Soup:18;Stew:18;Pie:18;Stir fry Griddle Pan:18;Stir fry:18;Salad:9;Roasted Vegetables:18,
+        ThirstChange	=	-7,
+        FoodType    =   Vegetables,
+        Carbohydrates = 11,
+        Proteins = 2.88,
+        Lipids = 0.15,
+        Calories = 68,
+        WorldStaticModel = Truffle_Ground,
+		StaticModel = H_Truffle,
+	}
+	item MozzarelaSticks
+	{
+		DisplayCategory 		= Food,
+		HungerChange 		= -15,
+		Weight 		= 0.2,
+		Type 		= Food,
+		DisplayName 		= Mozzarela Sticks,
+		Icon 		= MozzarelaStickIcon,
+		DaysFresh 		= 14,
+		DaysTotallyRotten 		= 20,
+		FoodType 		= NoExplicit,
+		Carbohydrates 		= 0.87,
+		Proteins 		= 6.4,
+		Lipids 		= 9.33,
+		Calories 		= 182,
+		WorldStaticModel 		= MozzarelaSticks_Ground,
+		StaticModel 		= H_MozzarelaSticks,
+	}
+
+	item Macaron_Cookies_Pink
+	{
+		DisplayCategory 		= Food,
+		Weight 		= 0.1,
+		Type 		= Food,
+		DisplayName 		= Macaron Cookies,
+		HungerChange 		= -5,
+		UnhappyChange = -2,
+		BoredomChange = -2,
+		Icon 		= MacaronCookiesRedIcon,
+		DaysFresh 		= 6,
+		DaysTotallyRotten 		= 10,
+		FoodType 		= NoExplicit,
+		Carbohydrates 		= 0.1,
+		Proteins 		= 0.4,
+		Lipids 		= 1.20,
+		Calories 		= 80,
+		WorldStaticModel 		= CookiesPink_Ground,
+		StaticModel 		= H_MacaronPink,
+	}
+	item Macaron_Cookies_Red
+	{
+		DisplayCategory 		= Food,
+		Weight 		= 0.1,
+		Type 		= Food,
+		DisplayName 		= Macaron Cookies,
+		HungerChange 		= -5,
+		UnhappyChange = -2,
+		BoredomChange = -2,
+		Icon 		= MacaronCookiesRedIcon,
+		DaysFresh 		= 6,
+		DaysTotallyRotten 		= 10,
+		FoodType 		= NoExplicit,
+		Carbohydrates 		= 0.1,
+		Proteins 		= 0.4,
+		Lipids 		= 1.20,
+		Calories 		= 80,
+		WorldStaticModel 		= CookiesRed_Ground,
+		StaticModel 		= H_MacaronRed,
+	}
+	item Macaron_Cookies_Blue
+	{
+		DisplayCategory 		= Food,
+		Weight 		= 0.1,
+		Type 		= Food,
+		DisplayName 		= Macaron Cookies,
+		HungerChange 		= -5,
+		UnhappyChange = -2,
+		BoredomChange = -2,
+		Icon 		= MacaronCookiesBlueIcon,
+		DaysFresh 		= 6,
+		DaysTotallyRotten 		= 10,
+		FoodType 		= NoExplicit,
+		Carbohydrates 		= 0.1,
+		Proteins 		= 0.4,
+		Lipids 		= 1.20,
+		Calories 		= 80,
+		WorldStaticModel 		= CookiesBlue_Ground,
+		StaticModel 		= H_MacaronBlue,
+	}
+	item Macaron_Cookies_Green
+	{
+		DisplayCategory 		= Food,
+		Weight 		= 0.1,
+		Type 		= Food,
+		DisplayName 		= Macaron Cookies,
+		HungerChange 		= -5,
+		UnhappyChange = -2,
+		BoredomChange = -2,
+		Icon 		= MacaronCookiesGreenIcon,
+		DaysFresh 		= 6,
+		DaysTotallyRotten 		= 10,
+		FoodType 		= NoExplicit,
+		Carbohydrates 		= 0.1,
+		Proteins 		= 0.4,
+		Lipids 		= 1.20,
+		Calories 		= 80,
+		WorldStaticModel 		= CookiesGreen_Ground,
+		StaticModel 		= H_MacaronGreen,
+	}
+	item Macaron_Cookies_Yellow
+	{
+		DisplayCategory 		= Food,
+		Weight 		= 0.1,
+		Type 		= Food,
+		DisplayName 		= Macaron Cookies,
+		HungerChange 		= -5,
+		UnhappyChange = -2,
+		BoredomChange = -2,
+		Icon 		= MacaronCookiesYellowIcon,
+		DaysFresh 		= 6,
+		DaysTotallyRotten 		= 10,
+		FoodType 		= NoExplicit,
+		Carbohydrates 		= 0.1,
+		Proteins 		= 0.4,
+		Lipids 		= 1.20,
+		Calories 		= 80,
+		WorldStaticModel 		= CookiesYellow_Ground,
+		StaticModel 		= H_MacaronYellow,
+	}
+	item Macaron_Cookies_Purple
+	{
+		DisplayCategory 		= Food,
+		Weight 		= 0.1,
+		Type 		= Food,
+		DisplayName 		= Macaron Cookies,
+		HungerChange 		= -5,
+		UnhappyChange = -2,
+		BoredomChange = -2,
+		Icon 		= MacaronCookiesPurpleIcon,
+		DaysFresh 		= 6,
+		DaysTotallyRotten 		= 10,
+		FoodType 		= NoExplicit,
+		Carbohydrates 		= 0.1,
+		Proteins 		= 0.4,
+		Lipids 		= 1.20,
+		Calories 		= 80,
+		WorldStaticModel 		= CookiesPurple_Ground,
+		StaticModel 		= H_MacaronPurple,
+	}
+
+	item Macaron_Pink
+	{
+		DisplayCategory 		= Food,
+		Weight 		= 0.1,
+		Type 		= Food,
+		DisplayName 		= Macaron,
+		HungerChange 		= -8,
+		UnhappyChange = -5,
+		BoredomChange = -5,
+		StressChange = -2,
+		Icon 		= MacaronPinkIcon,
+		DaysFresh 		= 14,
+		DaysTotallyRotten 		= 20,
+		FoodType 		= NoExplicit,
+		Carbohydrates 		= 0.3,
+		Proteins 		= 1.4,
+		Lipids 		= 3.20,
+		Calories 		= 120,
+		WorldStaticModel 		= MacaronPink_Ground,
+		StaticModel 		= H_MacaronPink,
+	}
+	item Macaron_Red
+	{
+		DisplayCategory 		= Food,
+		Weight 		= 0.1,
+		Type 		= Food,
+		DisplayName 		= Macaron,
+		HungerChange 		= -8,
+		UnhappyChange = -5,
+		BoredomChange = -5,
+		StressChange = -2,
+		Icon 		= MacaronRedIcon,
+		DaysFresh 		= 14,
+		DaysTotallyRotten 		= 20,
+		FoodType 		= NoExplicit,
+		Carbohydrates 		= 0.3,
+		Proteins 		= 1.4,
+		Lipids 		= 3.20,
+		Calories 		= 120,
+		WorldStaticModel 		= MacaronRed_Ground,
+		StaticModel 		= H_MacaronRed,
+	}
+	item Macaron_Blue
+	{
+		DisplayCategory 		= Food,
+		Weight 		= 0.1,
+		Type 		= Food,
+		DisplayName 		= Macaron,
+		HungerChange 		= -8,
+		UnhappyChange = -5,
+		BoredomChange = -5,
+		StressChange = -2,
+		Icon 		= MacaronBlueIcon,
+		DaysFresh 		= 14,
+		DaysTotallyRotten 		= 20,
+		FoodType 		= NoExplicit,
+		Carbohydrates 		= 0.3,
+		Proteins 		= 1.4,
+		Lipids 		= 3.20,
+		Calories 		= 120,
+		WorldStaticModel 		= MacaronBlue_Ground,
+		StaticModel 		= H_MacaronBlue,
+	}
+	item Macaron_Green
+	{
+		DisplayCategory 		= Food,
+		Weight 		= 0.1,
+		Type 		= Food,
+		DisplayName 		= Macaron,
+		HungerChange 		= -8,
+		UnhappyChange = -5,
+		BoredomChange = -5,
+		StressChange = -2,
+		Icon 		= MacaronGreenIcon,
+		DaysFresh 		= 14,
+		DaysTotallyRotten 		= 20,
+		FoodType 		= NoExplicit,
+		Carbohydrates 		= 0.3,
+		Proteins 		= 1.4,
+		Lipids 		= 3.20,
+		Calories 		= 120,
+		WorldStaticModel 		= MacaronGreen_Ground,
+		StaticModel 		= H_MacaronGreen,
+	}
+	item Macaron_Yellow
+	{
+		DisplayCategory 		= Food,
+		Weight 		= 0.1,
+		Type 		= Food,
+		DisplayName 		= Macaron,
+		HungerChange 		= -8,
+		UnhappyChange = -5,
+		BoredomChange = -5,
+		StressChange = -2,
+		Icon 		= MacaronYellowIcon,
+		DaysFresh 		= 14,
+		DaysTotallyRotten 		= 20,
+		FoodType 		= NoExplicit,
+		Carbohydrates 		= 0.3,
+		Proteins 		= 1.4,
+		Lipids 		= 3.20,
+		Calories 		= 120,
+		WorldStaticModel 		= MacaronYellow_Ground,
+		StaticModel 		= H_MacaronYellow,
+	}
+	item Macaron_Purple
+	{
+		DisplayCategory 		= Food,
+		Weight 		= 0.1,
+		Type 		= Food,
+		DisplayName 		= Macaron,
+		HungerChange 		= -8,
+		UnhappyChange = -5,
+		BoredomChange = -5,
+		StressChange = -2,
+		Icon 		= MacaronPurpleIcon,
+		DaysFresh 		= 14,
+		DaysTotallyRotten 		= 20,
+		FoodType 		= NoExplicit,
+		Carbohydrates 		= 0.3,
+		Proteins 		= 1.4,
+		Lipids 		= 3.20,
+		Calories 		= 120,
+		WorldStaticModel 		= MacaronPurple_Ground,
+		StaticModel 		= H_MacaronPurple,
 	}
 
 }

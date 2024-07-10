@@ -145,6 +145,9 @@ local function initForageableMaps()
             if SandboxVars.MoreMaps.WesternMilitaryComplexMap and getActivatedMods():contains("MilitaryComplex") then
                 addMapToForageDefs("WesternMilitaryComplexMap", 20);
             end
+            if SandboxVars.MoreMaps.FortLoidMap and getActivatedMods():contains("FortLoid") then
+                addMapToForageDefs("FortLoidMap", 20);
+            end
         end
         if SandboxVars.MoreMaps.GrapeseedMap and getActivatedMods():contains("Grapeseed") then
             addMapToForageDefs("GrapeseedMap", 20);
@@ -290,33 +293,11 @@ local function initForageableMaps()
 
 
 
-        -------------------------------
-        ---- Already existing maps ----
-        -------------------------------
-        if getActivatedMods():contains("Trelai_4x4_Steam") then
-            addMapToForageDefs("trelaimap", 15);
-        end
-        if getActivatedMods():contains("BedfordFalls") then 
-            addMapToForageDefs("BedfordMap", 20);
-        end
-        if getActivatedMods():contains("Fantasiado ST. Bernard's Hill") then
-            addMapToForageDefs("STBernardHillMap", 20);
-        end
-        if getActivatedMods():contains("MonmouthCounty") then
-            addMapToForageDefs("monmouthcountymap", 20);
-        end
-        if getActivatedMods():contains("DeadinHongKong") then
-            addMapToForageDefs("HongKongYauMaTeiMap", 20);
-        end
-
 
         if SandboxVars.MoreMaps.WestwoodMap and getActivatedMods():contains("westwoodremake") then
             addMapToForageDefs("WestwoodMap", 20);
         end
         
-        if getActivatedMods():contains("RabbitHashKY") then
-            addMapToForageDefs("RabbitHashMap", 20);
-        end
     
         if SandboxVars.MoreMaps.AnthemMap and getActivatedMods():contains("Anthem") then
             addMapToForageDefs("AnthemMap", 20);
@@ -610,9 +591,6 @@ local function initForageableMaps()
             addMapToForageDefs("DaisyCountyMap", 20);
         end
         
-        if getActivatedMods():contains("Myhometown") then
-            addMapToForageDefs("Homepie", 20);
-        end
         
         if SandboxVars.MoreMaps.McCoysBunkerMap and getActivatedMods():contains("McCoysBunker") then
             addMapToForageDefs("McCoysBunkerMap", 10);
@@ -629,7 +607,114 @@ local function initForageableMaps()
         if SandboxVars.MoreMaps.FortBoonesboroughMap and getActivatedMods():contains("Fort_Boonesborough") then
             addMapToForageDefs("FortBoonesboroughMap", 20);
         end
+
+        
+        if SandboxVars.MoreMaps.CrowlakeMap and getActivatedMods():contains("Crowlake") then
+            addMapToForageDefs("CrowlakeMap", 20);
+        end
+
+        if SandboxVars.MoreMaps.GustonMap and getActivatedMods():contains("Guston") then
+            addMapToForageDefs("GustonMap", 20);
+        end
+
+        if SandboxVars.MoreMaps.JaspervilleMap and getActivatedMods():contains("Jasperville") then
+            addMapToForageDefs("JaspervilleMap", 20);
+            addMapToForageDefs("JaspervilleTrainStationMap", 20);
+            addMapToForageDefs("JaspervilleIndustrialMap", 20);
+        end
+        
+        if SandboxVars.MoreMaps.YakamaStateParkMap and getActivatedMods():contains("YakamaStatePark") then
+            addMapToForageDefs("YakamaStateParkMap", 20);
+        end
+        
+        if SandboxVars.MoreMaps.ValuTechAmusementParkMap and getActivatedMods():contains("SimonMDValuTechAmusementPark") then
+            addMapToForageDefs("ValuTechAmusementParkMap", 20);
+        end
+        
+        if SandboxVars.MoreMaps.CanvasbackStudiosMap and getActivatedMods():contains("Canvasback Studios") then
+            addMapToForageDefs("CanvasbackStudiosMap", 20);
+        end
+        
+        if SandboxVars.MoreMaps.PlefordSpringsMap and getActivatedMods():contains("PlefordSpringsMapMod") then
+            addMapToForageDefs("PlefordSpringsMap", 20);
+        end
+        
+        
+        if SandboxVars.MoreMaps.FoxWoodMap and getActivatedMods():contains("One cell life") then
+            addMapToForageDefs("FoxWoodMap", 20);
+        end
+        
+        if SandboxVars.MoreMaps.BrazilMap and getActivatedMods():contains("mapa brasil") then
+            addMapToForageDefs("BrazilMap", 20);
+        end
+        
+        
+        if SandboxVars.MoreMaps.HavenRidgeMap and getActivatedMods():contains("LastOfUs") then
+            addMapToForageDefs("HavenRidgeMap", 20);
+        end
+
+
+
+        
+
+        -------------------------------
+        ---- Already existing maps ----
+        -------------------------------
+        if getActivatedMods():contains("Trelai_4x4_Steam") then
+            addMapToForageDefs("trelaimap", 10);
+            addMapToForageDefs("trelaimap4", 20);
+            addMapToForageDefs("trelaimap3", 20);
+        end
+        if getActivatedMods():contains("BedfordFalls") then 
+            addMapToForageDefs("BedfordMap", 20);
+        end
+        if getActivatedMods():contains("Fantasiado ST. Bernard's Hill") then
+            addMapToForageDefs("STBernardHillMap", 20);
+        end
+        if getActivatedMods():contains("MonmouthCounty") then
+            addMapToForageDefs("monmouthcountymap", 20);
+        end
+        if getActivatedMods():contains("Taylorsville") then 
+            addMapToForageDefs("TaylorsvilleMap", 20);
+        end
+        if getActivatedMods():contains("pineville") then 
+            addMapToForageDefs("PinevilleMap", 20);
+        end
+        if getActivatedMods():contains("RabbitHashKY") then
+            addMapToForageDefs("RabbitHashMap", 20);
+        end
+        -- if getActivatedMods():contains("DeadinHongKong") then
+        --     addMapToForageDefs("HongKongYauMaTeiMap", 20);
+        -- end
+        if getActivatedMods():contains("Bourstrange") then 
+            addMapToForageDefs("BourstrangeMap", 20);
+        end
+        if getActivatedMods():contains("NewTersh") then 
+            addMapToForageDefs("NewTershLootableMap", 20);
+        end
+        if getActivatedMods():contains("Tandil") then 
+            addMapToForageDefs("TandilLootableMap", 20);
+        end
+        if getActivatedMods():contains("Myhometown") then
+            addMapToForageDefs("Homepie", 20);
+        end
+        if getActivatedMods():contains("tikitown") then
+            addMapToForageDefs("Tikitown.TikitownLootableMap", 20);
+        end
+        if getActivatedMods():contains("Greenport") then
+            addMapToForageDefs("Base.GreenportLootableMap", 20);
+        end
+        if getActivatedMods():contains("SPH") then
+            addMapToForageDefs("Base.StPauloHammerMap", 20);
+        end
+        if getActivatedMods():contains("Utopia") then
+            addMapToForageDefs("Base.UtopiaMap", 20);
+        end
+        if getActivatedMods():contains("Diggertown") then
+            addMapToForageDefs("DTownRoadMap", 20);
+            addMapToForageDefs("DTownTunnelMap", 20);
+        end
     end
 end
 
-Events.OnGameStart.Add(initForageableMaps);
+Events.preAddItemDefs.Add(initForageableMaps);

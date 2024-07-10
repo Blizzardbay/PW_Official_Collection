@@ -18,6 +18,7 @@ function TAConnectAC:start()
 end
 
 function TAConnectAC:stop()
+    self.character:stopOrTriggerSound(self.sound)
 	ISBaseTimedAction.stop(self)
 end
 
@@ -26,18 +27,16 @@ function TAConnectAC:perform()
     
     local cell = self.square:getCell()
 
-    local spriteName = "industry_01_4"
-    if self.orientation == "V" then
-        spriteName = "industry_01_5"
-    end
+    local spriteName = self.object:getSprite():getName()
 
     cd = IsoClothingDryer.new(self.square:getCell(), self.square, getSprite(spriteName))
     cd:setActivated(false)
-    cd:setMovedThumpable(true)
+    cd:setMovedThumpable(false)
     cd:createContainersFromSpriteProperties()
-    cd:getModData()["orientation"] = self.orientation
+    
+    --[[cd:getModData()["orientation"] = self.orientation
     cd:getModData()["targetTemp"] = 20
-    cd:getModData()["targetFan"] = 3
+    cd:getModData()["targetFan"] = 3--]]
     
     -- self.square:RemoveTileObject(self.object)
     -- self.square:transmitRemoveItemFromSquareOnServer(self.object)
@@ -49,6 +48,7 @@ function TAConnectAC:perform()
 
     self.square:AddSpecialObject(cd)
     cd:transmitCompleteItemToServer()
+    VirtualAC.Add(cd)
 
 	ISBaseTimedAction.perform(self)
 end

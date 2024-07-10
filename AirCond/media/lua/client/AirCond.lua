@@ -22,74 +22,28 @@ AC_SPRITE_1 = "industry_01_4"
 AC_SPRITE_2 = "industry_01_5"
 REMOTE_RANGE_LIMIT = 8
 
-function getACId (square)
-    local x = square:getX()
-    local y = square:getY()
-    local z = square:getZ()
-    local id = tonumber(tostring(x) .. tostring(y) .. tostring(z))
-    return id
-end
+function ACToggle(object, state, character)
+    if state ~= object:isActivated() then
+        
+        object:setActivated(state)
 
-local function isConnectedAC (obj)
-    local isAC = false
-    local objName = obj:getObjectName()
-    if objName == "ClothingDryer" then
-        local sprite = obj:getSprite();
-        if sprite then
-            local objectSpriteName = sprite:getName();
-            if objectSpriteName == AC_SPRITE_1 or objectSpriteName == AC_SPRITE_2 then
-                isAC = true
-            end
-        end
-    end
-    return isAC
-end
+        local x = object:getX()
+        local y = object:getY()
+        local z = object:getZ()
 
-local function isUnconnectedAC (obj)
-    local isAC = false
-    local objName = obj:getObjectName()
-    if objName ~= "ClothingDryer" then
-        local sprite = obj:getSprite();
-        if sprite then
-            local objectSpriteName = sprite:getName();
-            if objectSpriteName == AC_SPRITE_1 or objectSpriteName == AC_SPRITE_2 then
-                isAC = true
-            end
+        if isClient() then
+            local args = {x=x, y=y, z=z}
+            sendClientCommand(character, 'ac_commands', 'toggle', args)
         end
+        VirtualAC.Toggle(x, y, z, true)
+        
+        updateAC()
     end
-    return isAC
-end
-
-local function detectOrientationAC (obj)
-    local sprite = obj:getSprite();
-    local orientation = ""
-    if sprite then
-        local objectSpriteName = sprite:getName();
-        if objectSpriteName == AC_SPRITE_1 then
-            orientation = "H"
-        elseif objectSpriteName == AC_SPRITE_2 then
-            orientation = "V"
-        else
-            print ("[ERR] Not AC unit!")
-        end
-    end
-    return orientation
 end
 
 function updateAC()
 
-    -- game saves ac units and its activation state
-    -- however heat sources and sound emitters are not saved
-    -- so they need to be synchronized manually
-
-    -- if ticker == 3 then
-    --     ticker = 0
-    -- else
-    --    ticker = ticker + 1
-    --    return
-    -- end
-
-    -- print ("--- AC SCAN BEGIN ----")
+    if isServer() then return end
 
     local player = getPlayer()
     local cell = getCell()
@@ -108,190 +62,176 @@ function updateAC()
         cf:setEnableOverride(false)
     end
 
-    local x_min = tonumber(math.floor(player:getX())) - 16
-    local x_max = tonumber(math.floor(player:getX())) + 16
+    local globalModData = GetAirCondModDataModData()
 
-    local y_min = tonumber(math.floor(player:getY())) - 16
-    local y_max = tonumber(math.floor(player:getY())) + 16
+    for k, vac in pairs(globalModData.WorkingUnits) do
 
-    local z_min = 0
-    local z_max = 3
+        local square = cell:getGridSquare(vac.x, vac.y, vac.z)
+        if square then
+            local objects = square:getSpecialObjects();
+            local haveElectricity = square:haveElectricity() or world:isHydroPowerOn()
+            local hasObject = false
+            local id = getACId(square)
 
-    local nothingFound = true
+            for i=0, objects:size()-1 do
+                
+                local obj = objects:get(i);
 
-    local scannedObjCnt = 0
+                if isConnectedAC(obj) then
+                    hasObject = true
 
-    for z=z_min, z_max do
-        for y=y_min, y_max do
-            for x=x_min, x_max do
-                local square = cell:getGridSquare(x, y, z)
-                if square then
-                    local objects = square:getSpecialObjects();
-                    local haveElectricity = square:haveElectricity() or world:isHydroPowerOn()
-                    for i=0, objects:size()-1 do
-                        scannedObjCnt = scannedObjCnt + 1
-                        local obj = objects:get(i);
+                    -- power loss
+                    if not haveElectricity then
+                        obj:setActivated(false)
+                    end
 
-                        if isConnectedAC(obj) then
-                            local id = getACId(square)
+                    if obj:isActivated() then
 
-                            -- power loss
-                            if not haveElectricity then
-                                obj:setActivated(false)
+                        local tempOffset = 7.1
+                        local targetTemp = vac.temp
+                        if not targetTemp then
+                            targetTemp = 20
+                        end
+
+                        local fanMultiplier = 5
+                        local targetFan = vac.fanspeed
+                        if not targetFan then
+                            targetFan = 3
+                        end
+
+                        if acunits[id] then
+                            -- print (string.format("HEATSOURCE EXISTS AT x:%i y:%i z:%i, NEWTEMP: %i, NEWFAN:%i", x, y, z, targetTemp, targetFan))
+                            local acunit = acunits[id]
+                            local heatSource = acunit.heatsource
+                            cell:removeHeatSource(heatSource)
+
+                            heatSource:setTemperature(targetTemp + tempOffset)
+                            heatSource:setRadius(targetFan * fanMultiplier)
+                            cell:addHeatSource(heatSource)
+                            -- cell:updateHeatSources()
+
+                            if not isMultiplayer then
+                                if player:isInARoom() then
+
+                                    local gt = cm:getTemperature()
+                                    -- print ("---gt---")
+                                    -- print (gt)
+
+                                    local ht = cell:getHeatSourceHighestTemperature(0, player:getX(), player:getY(), player:getZ())
+                                    -- print ("---ht---")
+                                    -- print (ht)
+
+                                    if ht > 1 then
+                                        local playerTemp = cm:getAirTemperatureForCharacter(player)
+                                        -- print (string.format("PLAYER TEMP: %f, TARGET TEMP: %f", playerTemp, targetTemp))
+                                        
+                                        local newOverride = cf:getOverride()
+                                        if playerTemp > targetTemp then
+                                            newOverride = newOverride - 0.5
+                                        else
+                                            newOverride = newOverride + 0.5
+                                        end
+                                        cf:setEnableOverride(true)
+                                        cf:setOverride(newOverride, 1)
+                                        -- print (string.format("NEW OVERRIDE: %f", newOverride))
+                                    else
+                                        cf:setEnableOverride(false)
+                                        -- print ("OVERRIDE DISABLED")
+                                    end
+                                    
+                                else -- outside room
+                                    cf:setEnableOverride(false)
+                                    -- print ("OVERRIDE DISABLED2")
+                                end 
                             end
 
-                            if obj:isActivated() then
-
-                                nothingFound = false
-
-                                local tempOffset = 7.1
-                                local targetTemp = obj:getModData()["targettemp"]
-                                if not targetTemp then
-                                    targetTemp = 20
-                                end
-
-                                local fanMultiplier = 5
-                                local targetFan = obj:getModData()["targetfan"]
-                                if not targetFan then
-                                    targetFan = 3
-                                end
-
-                                if acunits[id] then
-                                    -- print (string.format("HEATSOURCE EXISTS AT x:%i y:%i z:%i, NEWTEMP: %i, NEWFAN:%i", x, y, z, targetTemp, targetFan))
-                                    local acunit = acunits[id]
-                                    local heatSource = acunit.heatsource
-                                    cell:removeHeatSource(heatSource)
-
-                                    heatSource:setTemperature(targetTemp + tempOffset)
-                                    heatSource:setRadius(targetFan * fanMultiplier)
-                                    cell:addHeatSource(heatSource)
-                                    -- cell:updateHeatSources()
-
-                                    if not isMultiplayer then
-                                        if player:isInARoom() then
-
-                                            local gt = cm:getTemperature()
-                                            -- print ("---gt---")
-                                            -- print (gt)
-    
-                                            local ht = cell:getHeatSourceHighestTemperature(0, player:getX(), player:getY(), player:getZ())
-                                            -- print ("---ht---")
-                                            -- print (ht)
-    
-                                            if ht > 1 then
-                                                local playerTemp = cm:getAirTemperatureForCharacter(player)
-                                                -- print (string.format("PLAYER TEMP: %f, TARGET TEMP: %f", playerTemp, targetTemp))
-                                                
-                                                local newOverride = cf:getOverride()
-                                                if playerTemp > targetTemp then
-                                                    newOverride = newOverride - 0.5
-                                                else
-                                                    newOverride = newOverride + 0.5
-                                                end
-                                                cf:setEnableOverride(true)
-                                                cf:setOverride(newOverride, 1)
-                                                -- print (string.format("NEW OVERRIDE: %f", newOverride))
-                                            else
-                                                cf:setEnableOverride(false)
-                                                -- print ("OVERRIDE DISABLED")
-                                            end
-                                            
-                                        else -- outside room
-                                            cf:setEnableOverride(false)
-                                            -- print ("OVERRIDE DISABLED2")
-                                        end 
-                                    end
-
-                                    local soundEmitter = acunit.emitter
-                                    soundEmitter:setVolumeAll(targetFan / 5)
-                                    -- player:setVehicle(nil)
-                                    
-                                else
-                                    
-                                    local acunit = {}
-                                    acunit.heatSource = nil
-                                    acunit.emitter = nil
-
-                                    local orientation = obj:getModData()["orientation"]
-
-                                    -- print (string.format("ADDING HEATSOURCE AT x:%i y:%i z:%i, t:%i, f:%i", x, y, z, targetTemp, targetFan))
-
-                                    local hs_x
-                                    local hs_y
-
-                                    if orientation == "H" then
-                                        hs_x = x
-                                        hs_y = y - 2
-                                    end
-                                    if orientation == "V" then
-                                        hs_x = x - 2
-                                        hs_y = y
-                                    end
-
-                                    -- local heatSquare = cell:getGridSquare(hs_x, hs_y, z)
-
-                                    --print ("--temp--")
-                                    --print (cm:getAirTemperatureForSquare(heatSquare, nil, true))
-                                    --print ("--temp--")
-                                    
-                                    local heatSource = IsoHeatSource.new(hs_x, hs_y, z, targetFan * fanMultiplier, targetTemp + tempOffset)
-                                    cell:addHeatSource(heatSource)
-                                    acunit.heatsource = heatSource
-
-                                    local soundEmitter = world:getFreeEmitter(hs_x, hs_y, z)
-                                    soundEmitter:playSoundLooped("ACRunning");
-                                    soundEmitter:setVolumeAll(targetFan / 5)
-                                    acunit.emitter = soundEmitter
-
-                                    acunits[id] = acunit
-                                end
-                            else
-                                if acunits[id] then
-                                    -- print (string.format("REMOVING HEATSOURCE AT x:%i y:%i z:%i", x, y, z))
-                                    
-                                    local acunit = acunits[id]
-
-                                    local heatSource = acunit.heatsource
-                                    cell:removeHeatSource(heatSource)
-
-                                    local soundEmitter = acunit.emitter
-                                    soundEmitter:setVolumeAll(0)
-                                    soundEmitter:stopAll()
-
-                                    -- soundEmitter:playSound("ACSlowDown");
-
-                                    acunits[id] = nil
-                                end
-                            end
-
+                            local soundEmitter = acunit.emitter
+                            soundEmitter:setVolumeAll(targetFan / 5)
+                            -- player:setVehicle(nil)
                             
+                        else
+                            
+                            local acunit = {}
+                            acunit.heatSource = nil
+                            acunit.emitter = nil
+
+                            local orientation = vac.orientation
+
+                            -- print (string.format("ADDING HEATSOURCE AT x:%i y:%i z:%i, t:%i, f:%i", x, y, z, targetTemp, targetFan))
+
+                            local hs_x
+                            local hs_y
+                            local hs_z = vac.z
+
+                            if orientation == "H" then
+                                hs_x = vac.x
+                                hs_y = vac.y - 2
+                            end
+                            if orientation == "V" then
+                                hs_x = vac.x - 2
+                                hs_y = vac.y
+                            end
+
+                            -- local heatSquare = cell:getGridSquare(hs_x, hs_y, z)
+
+                            --print ("--temp--")
+                            --print (cm:getAirTemperatureForSquare(heatSquare, nil, true))
+                            --print ("--temp--")
+                            
+                            local heatSource = IsoHeatSource.new(hs_x, hs_y, hs_z, targetFan * fanMultiplier, targetTemp + tempOffset)
+                            cell:addHeatSource(heatSource)
+                            acunit.heatsource = heatSource
+
+                            local soundEmitter = world:getFreeEmitter(vac.x, vac.y, vac.z)
+                            soundEmitter:playSoundLooped("ACRunning");
+                            soundEmitter:setVolumeAll(targetFan / 5)
+                            acunit.emitter = soundEmitter
+
+                            acunits[id] = acunit
+                        end
+                    else
+                        if acunits[id] then
+                            -- print (string.format("REMOVING HEATSOURCE AT x:%i y:%i z:%i", x, y, z))
+                            
+                            local acunit = acunits[id]
+
+                            local heatSource = acunit.heatsource
+                            cell:removeHeatSource(heatSource)
+
+                            local soundEmitter = acunit.emitter
+                            soundEmitter:setVolumeAll(0)
+                            soundEmitter:stopAll()
+
+                            -- soundEmitter:playSound("ACSlowDown");
+
+                            acunits[id] = nil
                         end
                     end
                 end
             end
+
+            -- gmd indicates ac should be here, but it is not
+            -- probably taken or destroyed, so we must unregister it
+            -- remove heatsource and sound emmitter
+            if not hasObject then
+                print ("unregistering missing AC")
+                VirtualAC.Remove(vac.x, vac.y, vac.z)
+
+                local acunit = acunits[id]
+                if acunit then
+                    local heatSource = acunit.heatsource
+                    cell:removeHeatSource(heatSource)
+
+                    local soundEmitter = acunit.emitter
+                    soundEmitter:setVolumeAll(0)
+                    soundEmitter:stopAll()
+                    print ("removed!!!")
+                    acunits[id] = nil
+                end
+                
+            end
         end
     end
-
-    -- print ("SCANNED OBJ CNT: " .. scannedObjCnt)
-    -- remove all if no ac around 
-    -- maybe not needed
-    if nothingFound then
-        -- print ("REMOVING ALL HS AND EMITTERS")
-        for id, acunit in pairs(acunits) do
-            local heatSource = acunit.heatsource
-            cell:removeHeatSource(heatSource)
-
-            local soundEmitter = acunit.emitter
-            soundEmitter:setVolumeAll(0)
-            soundEmitter:stopAll()
-            print ("removed!!!")
-            acunits[id] = nil
-        end
-    end
-    
-    -- print ("--- AC SCAN END----")
-
-
 end
 
 local function GameStart (isNewGame)
@@ -301,13 +241,13 @@ end
 -- CONTEXT MENU FUNCTIONS
 -- 
 
-local function connectAC (playerObj, ACSquare, isoObject, orientation)
+local function connectAC (playerObj, ACSquare, isoObject)
     
     -- remove standard iso object and replace it with clothing dryer object
     -- we need clothing dryer because this way game will count is as electrical appliance
 
     if luautils.walkAdj(playerObj, ACSquare) then
-        ISTimedActionQueue.add(TAConnectAC:new(playerObj, ACSquare, isoObject, orientation))
+        ISTimedActionQueue.add(TAConnectAC:new(playerObj, ACSquare, isoObject))
     end
 end
 
@@ -338,7 +278,7 @@ end
 local function RemoteContextMenu(player, context, items)
     
     for i, v in ipairs(items) do
-        if v.name == "TV Remote" then
+        if v.name == getItemNameFromFullType("Base.Remote") then
             -- print ("-- this is TV remote")
             local playerObj = getSpecificPlayer(player)
             local cell = getCell()
@@ -347,25 +287,22 @@ local function RemoteContextMenu(player, context, items)
             local y_pl = playerObj:getY()
             local z_pl = playerObj:getZ()
 
-            local x_min = tonumber(math.floor(x_pl)) - REMOTE_RANGE_LIMIT
-            local x_max = tonumber(math.floor(x_pl)) + REMOTE_RANGE_LIMIT
-
-            local y_min = tonumber(math.floor(y_pl)) - REMOTE_RANGE_LIMIT
-            local y_max = tonumber(math.floor(y_pl)) + REMOTE_RANGE_LIMIT
+            local globalModData = GetAirCondModDataModData()
 
             local winner_found = false
             local winner_dist = 1000
             local winner_obj = nil
             local winner_square = nil
 
-            for y=y_min, y_max do
-                for x=x_min, x_max do
-                    local square = cell:getGridSquare(x, y, z_pl)
+            for k, vac in pairs(globalModData.WorkingUnits) do
+
+                local square = cell:getGridSquare(vac.x, vac.y, vac.z)
+                if square and z_pl == vac.z then
                     local objects = square:getSpecialObjects();
                     for i=0, objects:size()-1 do
                         local obj = objects:get(i);
                         if isConnectedAC(obj) then
-                            local dist = math.sqrt(math.pow(x - x_pl, 2) + math.pow(y - y_pl, 2))
+                            local dist = math.sqrt(math.pow(vac.x - x_pl, 2) + math.pow(vac.y - y_pl, 2))
                             
                             if dist < winner_dist then
                                 winner_found = true
@@ -378,8 +315,16 @@ local function RemoteContextMenu(player, context, items)
                     end
                 end
             end
+
             if winner_found then
                 context:addOption(getText("ContextMenu_StoveSetting"), playerObj, SettingsRemoteAC, winner_square, winner_obj)
+            else
+                local tooltipSettings = ISToolTip:new()
+                tooltipSettings.description = "No AC unit found nearby"
+
+                local optionSettings = context:addOption(getText("ContextMenu_StoveSetting"), playerObj, SettingsRemoteAC, winner_square, winner_obj)
+                optionSettings.notAvailable = true
+                optionSettings.toolTip = tooltipSettings
             end
         end
     end
@@ -408,8 +353,7 @@ local function ACContextMenu(player, context, worldobjects, test)
             end
 
             if isUnconnectedAC(isoObject) then
-                local orientation = detectOrientationAC(isoObject)
-                context:addOption(getText("ContextMenu_Attach"), playerObj, connectAC, ACSquare, isoObject, orientation)
+                context:addOption(getText("ContextMenu_Attach"), playerObj, connectAC, ACSquare, isoObject)
             end
         end
     end

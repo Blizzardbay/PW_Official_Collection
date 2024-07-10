@@ -31,45 +31,53 @@ function ISToolTipInv:render()
     if Coolbag.isTooltipOn() and (not ISContextMenu.instance or not ISContextMenu.instance.visibleCheck) then
         local itemObj = self.item;
         if itemObj and itemObj:getFullType() == "Base.IcePocket" then
-            local pocketModData = getCoolbagPocketConfig(itemObj)
-            
-            if pocketModData == nil or pocketModData.freezingRatio == nil then
+            if itemObj:getContainer() == nil then
                 self:drawIcePocketToolTip(getText("UI_Coolbag_TT_Bug"))
-            elseif Coolbag.isFreezing(itemObj) then
-                local hours = (1-pocketModData.freezingRatio)*Coolbag.getFreezingTime()
-                local minutes = 0
-                hours, minutes = math.modf(hours)
-                minutes = minutes * 60
-                minutes = math.modf(minutes)
-                self:drawIcePocketToolTip(getText("UI_Coolbag_TT_FullFreezing",hours,minutes));
             else
-                local hours = (pocketModData.freezingRatio)*Coolbag.getMeltingTime()
-                local minutes = 0
-                hours, minutes = math.modf(hours)
-                minutes = minutes * 60
-                minutes = math.modf(minutes)
-                self:drawIcePocketToolTip(getText("UI_Coolbag_TT_Melting",hours,minutes));
+                local pocketModData = getCoolbagPocketConfig(itemObj)
+                
+                if pocketModData == nil or pocketModData.freezingRatio == nil then
+                    self:drawIcePocketToolTip(getText("UI_Coolbag_TT_Bug"))
+                elseif Coolbag.isFreezing(itemObj) then
+                    local hours = (1-pocketModData.freezingRatio)*Coolbag.getFreezingTime()
+                    local minutes = 0
+                    hours, minutes = math.modf(hours)
+                    minutes = minutes * 60
+                    minutes = math.modf(minutes)
+                    self:drawIcePocketToolTip(getText("UI_Coolbag_TT_FullFreezing",hours,minutes));
+                else
+                    local hours = (pocketModData.freezingRatio)*Coolbag.getMeltingTime()
+                    local minutes = 0
+                    hours, minutes = math.modf(hours)
+                    minutes = minutes * 60
+                    minutes = math.modf(minutes)
+                    self:drawIcePocketToolTip(getText("UI_Coolbag_TT_Melting",hours,minutes));
+                end
             end
         end
         if itemObj and itemObj:getFullType() == "Base.WaterPocket" then
-            local pocketModData = getCoolbagPocketConfig(itemObj)
-            
-            if pocketModData.freezingRatio == nil then
+            if itemObj:getContainer() == nil then
                 self:drawIcePocketToolTip(getText("UI_Coolbag_TT_Bug"))
-            elseif Coolbag.isFreezing(itemObj) then
-                local hours = (1-pocketModData.freezingRatio)*Coolbag.getFreezingTime()
-                local minutes = 0
-                hours, minutes = math.modf(hours)
-                minutes = minutes * 60
-                minutes = math.modf(minutes)
-                self:drawIcePocketToolTip(getText("UI_Coolbag_TT_Freezing",hours,minutes));
             else
-                local hours = (pocketModData.freezingRatio)*Coolbag.getMeltingTime()
-                local minutes = 0
-                hours, minutes = math.modf(hours)
-                minutes = minutes * 60
-                minutes = math.modf(minutes)
-                self:drawIcePocketToolTip(getText("UI_Coolbag_TT_FullMelting",hours,minutes));
+                local pocketModData = getCoolbagPocketConfig(itemObj)
+                
+                if pocketModData == nil or pocketModData.freezingRatio == nil then
+                    self:drawIcePocketToolTip(getText("UI_Coolbag_TT_Bug"))
+                elseif Coolbag.isFreezing(itemObj) then
+                    local hours = (1-pocketModData.freezingRatio)*Coolbag.getFreezingTime()
+                    local minutes = 0
+                    hours, minutes = math.modf(hours)
+                    minutes = minutes * 60
+                    minutes = math.modf(minutes)
+                    self:drawIcePocketToolTip(getText("UI_Coolbag_TT_Freezing",hours,minutes));
+                else
+                    local hours = (pocketModData.freezingRatio)*Coolbag.getMeltingTime()
+                    local minutes = 0
+                    hours, minutes = math.modf(hours)
+                    minutes = minutes * 60
+                    minutes = math.modf(minutes)
+                    self:drawIcePocketToolTip(getText("UI_Coolbag_TT_FullMelting",hours,minutes));
+                end
             end
         end
     end

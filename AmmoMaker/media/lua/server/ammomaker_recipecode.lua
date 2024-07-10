@@ -2,29 +2,49 @@
 
 require 'recipecode'
 
---Recipe on test activated mods
+--recipe on test general
 
-function Recipe.OnTest.isActivated_A26GF(recipe, playerObj, item)
+function Recipe.OnTest.disabled(recipe, playerObj, item)
+
+    return false;
+
+end
+
+function Recipe.OnTest.isActivated_Charcoal(recipe, playerObj, item)
+
+    return not SandboxVars.ammomakerOptions.DeactivateCharcoalRecipes;
+
+end
+
+function Recipe.OnTest.isActivated_Archery(recipe, playerObj, item)
+
+    return SandboxVars.ammomakerOptions.ActivateArchery;
+
+end
+
+--recipe on test mods active
+
+function Recipe.OnTest.isActivated_AGF(recipe, playerObj, item)
 
     return getActivatedMods():contains("Arsenal(26)GunFighter") or getActivatedMods():contains("Arsenal(26)GunFighter[MAIN MOD 2.0]");
 
 end
 
-function Recipe.OnTest.isActivated_A26GF2(recipe, playerObj, item)
+function Recipe.OnTest.isActivated_AGF2(recipe, playerObj, item)
 
     return getActivatedMods():contains("Arsenal(26)GunFighter[MAIN MOD 2.0]");
 
 end
 
-function Recipe.OnTest.isNotActivated_A26GF(recipe, playerObj, item)
+function Recipe.OnTest.isActivated_CJ(recipe, playerObj, item)
 
-    return not (getActivatedMods():contains("Arsenal(26)GunFighter") or getActivatedMods():contains("Arsenal(26)GunFighter[MAIN MOD 2.0]"));
+    return getActivatedMods():contains("CaptainJuezo1") or getActivatedMods():contains("CaptainJuezo1_WIP");
 
 end
 
-function Recipe.OnTest.isNotActivated_A26GF_FA(recipe, playerObj, item)
+function Recipe.OnTest.isActivated_CJWIP(recipe, playerObj, item)
 
-    return not (getActivatedMods():contains("Arsenal(26)GunFighter") or getActivatedMods():contains("Arsenal(26)GunFighter[MAIN MOD 2.0]") or getActivatedMods():contains("firearmmod"));
+    return getActivatedMods():contains("CaptainJuezo1_WIP");
 
 end
 
@@ -34,15 +54,27 @@ function Recipe.OnTest.isActivated_FA(recipe, playerObj, item)
 
 end
 
+function Recipe.OnTest.isActivated_FAR(recipe, playerObj, item)
+
+    return getActivatedMods():contains("firearmmodRevamp");
+
+end
+
 function Recipe.OnTest.isActivated_PSA(recipe, playerObj, item)
 
     return getActivatedMods():contains("PRitemtest");
 
 end
 
-function Recipe.OnTest.isActivated_VFE(recipe, playerObj, item)
+function Recipe.OnTest.isActivated_RFG(recipe, playerObj, item)
 
-    return getActivatedMods():contains("VFExpansion1");
+    return getActivatedMods():contains("RainsFirearmsandGunParts") or getActivatedMods():contains("RainsFirearmsandGunPartsApocalyPZe");
+
+end
+
+function Recipe.OnTest.isActivated_SP(recipe, playerObj, item)
+
+    return getActivatedMods():contains("Swatpack");
 
 end
 
@@ -52,452 +84,726 @@ function Recipe.OnTest.isActivated_SG(recipe, playerObj, item)
 
 end
 
-function Recipe.OnTest.isActivated_CJ(recipe, playerObj, item)
+function Recipe.OnTest.isActivated_THC(recipe, playerObj, item)
 
-    return getActivatedMods():contains("CaptainJuezo1");
-
-end
-
---Recipe on create ammo
-
-function Recipe.OnCreate.Make_A26GF_177BB(items, result, player)
-
-	player:getInventory():AddItems("Base.BB177", 5);
+    return getActivatedMods():contains("TIHFP");
 
 end
 
-function Recipe.OnCreate.Make_A26GF_545x39(items, result, player)
+function Recipe.OnTest.isActivated_THWW2(recipe, playerObj, item)
 
-	player:getInventory():AddItems("Base.545x39Bullets", 1);
-
-end
-
-function Recipe.OnCreate.Make_PSA_545x39(items, result, player)
-
-	player:getInventory():AddItems("Base.Bullets545", 1);
+    return getActivatedMods():contains("TIHFPWW2AF");
 
 end
 
-function Recipe.OnCreate.Make_CJ_545x39(items, result, player)
+function Recipe.OnTest.isActivated_TEB(recipe, playerObj, item)
 
-	player:getInventory():AddItems("Base.CJ545", 3);
-
-end
-
-function Recipe.OnCreate.Make_Base_223Rem(items, result, player)
-
-	player:getInventory():AddItems("Base.223Bullets", 1);
+    return getActivatedMods():contains("TEBFP");
 
 end
 
-function Recipe.OnCreate.Make_Base_556x45NATO(items, result, player)
+function Recipe.OnTest.isActivated_VFE(recipe, playerObj, item)
 
-	player:getInventory():AddItems("Base.556Bullets", 1);
-
-end
-
-function Recipe.OnCreate.Make_A26GF_57x28(items, result, player)
-
-	player:getInventory():AddItems("Base.Bullets57", 2);
+    return getActivatedMods():contains("VFExpansion1");
 
 end
 
-function Recipe.OnCreate.Make_A26GF_22LR(items, result, player)
+function Recipe.OnTest.isActivated_GWP(recipe, playerObj, item)
 
-	player:getInventory():AddItems("Base.Bullets22", 8);
-
-end
-
-function Recipe.OnCreate.Make_FA_22LR(items, result, player)
-
-	player:getInventory():AddItems("firearmmod.Bullets22", 8);
+    return getActivatedMods():contains("GunrunnersWeaponPack");
 
 end
 
-function Recipe.OnCreate.Make_VFE_22LR(items, result, player)
+function Recipe.OnTest.isActivated_VFE2(recipe, playerObj, item)
 
-	player:getInventory():AddItems("VFExpansion1.22Bullets", 4);
-
-end
-
-function Recipe.OnCreate.Make_PSA_22LR(items, result, player)
-
-	player:getInventory():AddItems("Base.Bullets22LR", 4);
+    return getActivatedMods():contains("VFExpansion2");
 
 end
 
-function Recipe.OnCreate.Make_CJ_22LR(items, result, player)
+function Recipe.OnTest.isActivated_G93(recipe, playerObj, item)
 
-	player:getInventory():AddItems("Base.CJ22LR", 40);
-
-end
-
-function Recipe.OnCreate.Make_PSA_762x25Tok(items, result, player)
-
-	player:getInventory():AddItems("Base.Bullets762Tokarev", 2);
+    return getActivatedMods():contains("Guns93");
 
 end
 
-function Recipe.OnCreate.Make_PSA_762x38RNag(items, result, player)
+function Recipe.OnTest.isActivated_AFR(recipe, playerObj, item)
 
-	player:getInventory():AddItems("Base.Bullets762Nagant", 10);
-
-end
-
-function Recipe.OnCreate.Make_A26GF_762x51NATO(items, result, player)
-
-	player:getInventory():AddItems("Base.762x51Bullets", 1);
+    return getActivatedMods():contains("AdditonalFirearmsR") or getActivatedMods():contains("AdditonalFirearmsR rebalance");
 
 end
 
-function Recipe.OnCreate.Make_FA_762x51NATO(items, result, player)
+function Recipe.OnTest.isActivated_AGF_CJWIP(recipe, playerObj, item)
 
-	player:getInventory():AddItems("firearmmod.762x51Bullets", 1);
-
-end
-
-function Recipe.OnCreate.Make_CJ_762x51NATO(items, result, player)
-
-	player:getInventory():AddItems("Base.762NATO", 2);
+    return (getActivatedMods():contains("Arsenal(26)GunFighter") or getActivatedMods():contains("Arsenal(26)GunFighter[MAIN MOD 2.0]")) or getActivatedMods():contains("CaptainJuezo1_WIP");
 
 end
 
-function Recipe.OnCreate.Make_A26GF_3006Spring(items, result, player)
+function Recipe.OnTest.isActivated_AGF_CJ_THC(recipe, playerObj, item)
 
-	player:getInventory():AddItems("Base.3006Bullets", 1);
-
-end
-
-function Recipe.OnCreate.Make_FA_3006Spring(items, result, player)
-
-	player:getInventory():AddItems("firearmmod.Bullets3006", 1);
+    return (getActivatedMods():contains("Arsenal(26)GunFighter") or getActivatedMods():contains("Arsenal(26)GunFighter[MAIN MOD 2.0]")) or getActivatedMods():contains("CaptainJuezo1") or getActivatedMods():contains("TIHFP");
 
 end
 
-function Recipe.OnCreate.Make_Base_308Win(items, result, player)
+function Recipe.OnTest.isActivated_AGF_CJ_FA_FAR_G93_PSA_VFE(recipe, playerObj, item)
 
-	player:getInventory():AddItems("Base.308Bullets", 1);
-
-end
-
-function Recipe.OnCreate.Make_A26GF_762x39(items, result, player)
-
-	player:getInventory():AddItems("Base.762x39Bullets", 1);
+    return (getActivatedMods():contains("Arsenal(26)GunFighter") or getActivatedMods():contains("Arsenal(26)GunFighter[MAIN MOD 2.0]")) or getActivatedMods():contains("CaptainJuezo1") or getActivatedMods():contains("firearmmod") or getActivatedMods():contains("firearmmodRevamp") or getActivatedMods():contains("Guns93") or getActivatedMods():contains("PRitemtest") or getActivatedMods():contains("VFExpansion1");
 
 end
 
-function Recipe.OnCreate.Make_FA_762x39(items, result, player)
+function Recipe.OnTest.isActivated_AGF_PSA(recipe, playerObj, item)
 
-	player:getInventory():AddItems("firearmmod.762x39Bullets", 1);
-
-end
-
-function Recipe.OnCreate.Make_VFE_762x39(items, result, player)
-
-	player:getInventory():AddItems("VVFExpansion1.762Bullets", 1);
+    return (getActivatedMods():contains("Arsenal(26)GunFighter") or getActivatedMods():contains("Arsenal(26)GunFighter[MAIN MOD 2.0]")) or getActivatedMods():contains("PRitemtest");
 
 end
 
-function Recipe.OnCreate.Make_PSA_762x39(items, result, player)
+function Recipe.OnTest.isActivated_Archery_AGF(recipe, playerObj, item)
 
-	player:getInventory():AddItems("Base.Bullets762AK", 1);
-
-end
-
-function Recipe.OnCreate.Make_CJ_762x39(items, result, player)
-
-	player:getInventory():AddItems("Base.CJ762", 3);
+    return SandboxVars.ammomakerOptions.ActivateArchery and (getActivatedMods():contains("Arsenal(26)GunFighter") or getActivatedMods():contains("Arsenal(26)GunFighter[MAIN MOD 2.0]"));
 
 end
 
-function Recipe.OnCreate.Make_A26GF_762x54R(items, result, player)
+--recipe on create recycle ammo
 
-	player:getInventory():AddItems("Base.762x54rBullets", 1);
+function Recipe.OnCreate.Recycle177BB(items, result, player)
 
-end
-
-function Recipe.OnCreate.Make_PSA_762x54R(items, result, player)
-
-	player:getInventory():AddItems("Base.Bullets762PKM", 1);
+	player:getInventory():AddItems("Base.ScrapMetal", 1);
 
 end
 
-function Recipe.OnCreate.Make_CJ_762x54R(items, result, player)
+function Recipe.OnCreate.Recycle545x39(items, result, player)
 
-	player:getInventory():AddItems("Base.762_54R", 2);
+	local grains56 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.56);
+	player:getInventory():AddItem(grains56);
 
-end
-
-function Recipe.OnCreate.Make_A26GF_380ACP(items, result, player)
-
-	player:getInventory():AddItems("Base.Bullets380", 5);
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckS", 1);
 
 end
 
-function Recipe.OnCreate.Make_Base_9mmLuger(items, result, player)
+function Recipe.OnCreate.Recycle223Rem(items, result, player)
 
-	player:getInventory():AddItems("Base.Bullets9mm", 3);
+    local grains48 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.48);
+	player:getInventory():AddItem(grains48);
 
-end
-
-function Recipe.OnCreate.Make_Base_38SP(items, result, player)
-
-	player:getInventory():AddItems("Base.Bullets38", 3);
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckS", 1);
 
 end
 
-function Recipe.OnCreate.Make_A26GF_357Mag(items, result, player)
+function Recipe.OnCreate.Recycle556x45NATO(items, result, player)
 
-	player:getInventory():AddItems("Base.Bullets357", 2);
+    local grains50 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.50);
+	player:getInventory():AddItem(grains50);
 
-end
-
-function Recipe.OnCreate.Make_FA_357Mag(items, result, player)
-
-	player:getInventory():AddItems("firearmmod.Bullets357", 2);
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckS", 1);
 
 end
 
-function Recipe.OnCreate.Make_CJ_357Mag(items, result, player)
+function Recipe.OnCreate.Recycle57x28(items, result, player)
 
-	player:getInventory():AddItems("Base.357Magnum", 9);
+    local grains12 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.12);
+	player:getInventory():AddItem(grains12);
 
-end
-
-function Recipe.OnCreate.Make_PSA_9x39(items, result, player)
-
-	player:getInventory():AddItems("Base.Bullets939", 2);
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckS", 1);
 
 end
 
-function Recipe.OnCreate.Make_PSA_9x18Mak(items, result, player)
+function Recipe.OnCreate.Recycle22LR(items, result, player)
 
-	player:getInventory():AddItems("Base.Bullets9x18mm", 6);
+    local grains4 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.04);
+	player:getInventory():AddItem(grains4);
 
-end
-
-function Recipe.OnCreate.Make_A26GF_410Gauge(items, result, player)
-
-	player:getInventory():AddItems("Base.410gShotgunShells", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightSRim", 1);
 
 end
 
-function Recipe.OnCreate.Make_FA_4440WCF(items, result, player)
+function Recipe.OnCreate.Recycle25ACP(items, result, player)
 
-	player:getInventory():AddItems("firearmmod.Bullets4440", 2);
+    local grains4 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.04);
+	player:getInventory():AddItem(grains4);
 
-end
-
-function Recipe.OnCreate.Make_Base_44Mag(items, result, player)
-
-	player:getInventory():AddItems("Base.Bullets44", 2);
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightS", 1);
 
 end
 
-function Recipe.OnCreate.Make_A26GF_44Mag(items, result, player)
+function Recipe.OnCreate.Recycle65x50SRAris(items, result, player)
 
-	player:getInventory():AddItems("Base.Bullets44", 1);
+    local grains66 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.66);
+	player:getInventory():AddItem(grains66);
 
-end
-
-function Recipe.OnCreate.Make_FA_44Mag(items, result, player)
-
-	player:getInventory():AddItems("firearmmod.Bullets44", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckM", 1);
 
 end
 
-function Recipe.OnCreate.Make_Base_45ACP(items, result, player)
+function Recipe.OnCreate.Recycle65x52Carc(items, result, player)
 
-	player:getInventory():AddItems("Base.Bullets45", 2);
+    local grains64 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.64);
+	player:getInventory():AddItem(grains64);
 
-end
-
-function Recipe.OnCreate.Make_A26GF_45LC(items, result, player)
-
-	player:getInventory():AddItems("Base.Bullets45LC", 2);
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckM", 1);
 
 end
 
-function Recipe.OnCreate.Make_A26GF_4570Gov(items, result, player)
+function Recipe.OnCreate.RecycleSalvagedBullets(items, result, player)
 
-	player:getInventory():AddItems("Base.Bullets4570", 1);
+    local grains50 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.50);
+	player:getInventory():AddItem(grains50);
 
-end
-
-function Recipe.OnCreate.Make_A26GF_50AE(items, result, player)
-
-	player:getInventory():AddItems("Base.Bullets50MAG", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckM", 1);
 
 end
 
-function Recipe.OnCreate.Make_A26GF_50BMG(items, result, player)
+function Recipe.OnCreate.Recycle3030Win(items, result, player)
 
-	player:getInventory():AddItems("Base.50BMGBullets", 1);
+    local grains60 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.60);
+	player:getInventory():AddItem(grains60);
 
-end
-
-function Recipe.OnCreate.Make_A26GF_20Gauge(items, result, player)
-
-	player:getInventory():AddItems("Base.20gShotgunShells", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckMRim", 1);
 
 end
 
-function Recipe.OnCreate.Make_A26GF_68PB(items, result, player)
+function Recipe.OnCreate.Recycle30Carbine(items, result, player)
 
-	player:getInventory():AddItems("Base.PB68", 3);
+    local grains26 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.26);
+	player:getInventory():AddItem(grains26);
 
-end
-
-function Recipe.OnCreate.Make_Base_12Gauge(items, result, player)
-
-	player:getInventory():AddItems("Base.ShotgunShells", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightM", 1);
 
 end
 
-function Recipe.OnCreate.Make_A26GF_12Gauge(items, result, player)
+function Recipe.OnCreate.Recycle762x25Tok(items, result, player)
 
-	player:getInventory():AddItems("Base.ShotgunShells", 1);
+    local grains12 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.12);
+	player:getInventory():AddItem(grains12);
 
-end
-
-function Recipe.OnCreate.Make_FA_12Gauge(items, result, player)
-
-	player:getInventory():AddItems("firearmmod.ShotgunShells", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckS", 1);
 
 end
 
-function Recipe.OnCreate.Make_A26GF_Flare(items, result, player)
+function Recipe.OnCreate.Recycle762x38RNag(items, result, player)
 
-	player:getInventory():AddItems("Base.Flare", 2);
+    local grains8 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.08);
+	player:getInventory():AddItem(grains8);
 
-end
-
-function Recipe.OnCreate.Make_A26GF_10Gauge(items, result, player)
-
-	player:getInventory():AddItems("Base.10gShotgunShells", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightMRim", 1);
 
 end
 
-function Recipe.OnCreate.Make_A26GF_4Gauge(items, result, player)
+function Recipe.OnCreate.Recycle762x51NATO(items, result, player)
 
-	player:getInventory():AddItems("Base.4gShotgunShells", 1);
+    local grains86 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.86);
+	player:getInventory():AddItem(grains86);
 
-end
-
-function Recipe.OnCreate.Make_PSA_4Gauge(items, result, player)
-
-	player:getInventory():AddItems("Base.23x75ShotgunShells", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckM", 1);
 
 end
 
-function Recipe.OnCreate.Make_A26GF_40mmHE(items, result, player)
+function Recipe.OnCreate.Recycle3006Spring(items, result, player)
 
-	player:getInventory():AddItems("Base.40HERound", 1);
+    local grains4 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.04);
+	player:getInventory():AddItem(grains4);
+    player:getInventory():AddItems("ammomaker.ammomaker_GunPowderGrains", 1);
 
-end
-
-function Recipe.OnCreate.Make_A26GF_40mmINC(items, result, player)
-
-	player:getInventory():AddItems("Base.40INCRound", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckM", 1);
 
 end
 
-function Recipe.OnCreate.Make_A26GF_HERocket(items, result, player)
+function Recipe.OnCreate.Recycle308Win(items, result, player)
 
-	player:getInventory():AddItems("Base.HERocket", 1);
+    local grains90 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.90);
+	player:getInventory():AddItem(grains90);
 
-end
-
-----Recipe on create gather gunpowder
-
-function Recipe.OnCreate.GatherGunpowder(items, result, player)
-
-	local item = items:get(0)
-	
-	if item:getType() == "CJ545" or item:getType() == "Bullets57" or item:getType() == "Bullets22" or item:getType() == "22Bullets" or item:getType() == "Bullets22LR" or item:getType() == "CJ22LR" or item:getType() == "762NATO" or item:getType() == "Bullets762Tokarev" or item:getType() == "Bullets762Nagant" or item:getType() == "CJ762" or item:getType() == "762_54R" or item:getType() == "Bullets380" or item:getType() == "Bullets9mm" or item:getType() == "Bullets38" or item:getType() == "Bullets357" or item:getType() == "357Magnum" or item:getType() == "Bullets939" or item:getType() == "Bullets9x18mm" or item:getType() == "410gShotgunShells" or item:getType() == "Bullets4440" or item:getType() == "Bullets44" or item:getType() == "Bullets45" or item:getType() == "Bullets45LC" or item:getType() == "20gShotgunShells" or item:getType() == "Flare" or item:getType() == "ScrapBullets" then
-
-		local gunpowder1 = InventoryItemFactory.CreateItem("Base.GunPowder", 0.1);
-
-		player:getInventory():AddItem(gunpowder1);
-
-	elseif item:getType() == "545x39Bullets" or item:getType() == "Bullets545" or item:getType() == "223Bullets" or item:getType() == "556Bullets" or item:getType() == "762x39Bullets" or item:getType() == "762Bullets" or item:getType() == "Bullets762AK" or item:getType() == "Bullets50MAG" or item:getType() == "ShotgunShells" then
-
-		local gunpowder2 = InventoryItemFactory.CreateItem("Base.GunPowder", 0.2);
-	
-		player:getInventory():AddItem(gunpowder2);
-
-	elseif item:getType() == "762x51Bullets" or item:getType() == "3006Bullets" or item:getType() == "Bullets3006" or item:getType() == "308Bullets" or item:getType() == "762x54rBullets" or item:getType() == "Bullets762PKM" or item:getType() == "Bullets4570" or item:getType() == "10gShotgunShells" or item:getType() == "23x75ShotgunShells" or item:getType() == "SBullets" then
-
-		local gunpowder3 = InventoryItemFactory.CreateItem("Base.GunPowder", 0.3);
-	
-		player:getInventory():AddItem(gunpowder3);
-
-	elseif item:getType() == "4gShotgunShells" or item:getType() == "40HERound" or item:getType() == "40INCRound" or item:getType() == "HD" then
-
-		local gunpowder4 = InventoryItemFactory.CreateItem("Base.GunPowder", 0.4);
-	
-		player:getInventory():AddItem(gunpowder4);
-
-	elseif item:getType() == "50BMGBullets" then
-
-		local gunpowder7 = InventoryItemFactory.CreateItem("Base.GunPowder", 0.7);
-	
-		player:getInventory():AddItem(gunpowder7);
-
-	elseif item:getType() == "NailBomb" then
-
-		local gunpowder7 = InventoryItemFactory.CreateItem("Base.GunPowder", 0.7);
-
-		player:getInventory():AddItem(gunpowder7);
-		player:getInventory():AddItems("Base.Nails", 25);
-
-	elseif item:getType() == "GlassBomb" then
-
-		player:getInventory():AddItems("Base.GunPowder", 1);
-
-	elseif item:getType() == "HPB" then
-
-		player:getInventory():AddItems("Base.GunPowder", 2);
-		player:getInventory():AddItems("Base.MetalPipe", 1);
-
-	elseif item:getType() == "HERocket" then
-
-		player:getInventory():AddItems("Base.GunPowder", 4);
-		player:getInventory():AddItems("Base.ScrapMetal", 4);
-
-	end
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckM", 1);
 
 end
 
-----Recipe on create items
+function Recipe.OnCreate.Recycle762x39(items, result, player)
+
+    local grains50 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.50);
+	player:getInventory():AddItem(grains50);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckS", 1);
+
+end
+
+function Recipe.OnCreate.Recycle303British(items, result, player)
+
+    local grains74 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.74);
+	player:getInventory():AddItem(grains74);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckMRim", 1);
+
+end
+
+function Recipe.OnCreate.Recycle762x54R(items, result, player)
+
+    player:getInventory():AddItems("ammomaker.ammomaker_GunPowderGrains", 1);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckMRim", 1);
+
+end
+
+function Recipe.OnCreate.Recycle32ACP(items, result, player)
+
+    local grains6 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.06);
+	player:getInventory():AddItem(grains6);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightS", 1);
+
+end
+
+function Recipe.OnCreate.Recycle792x33Kurz(items, result, player)
+
+    local grains42 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.42);
+	player:getInventory():AddItem(grains42);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckS", 1);
+
+end
+
+function Recipe.OnCreate.Recycle792x57Maus(items, result, player)
+
+    local grains92 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.92);
+	player:getInventory():AddItem(grains92);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckM", 1);
+
+end
+
+function Recipe.OnCreate.Recycle380ACP(items, result, player)
+
+    local grains6 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.06);
+	player:getInventory():AddItem(grains6);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightS", 1);
+
+end
+
+function Recipe.OnCreate.Recycle9x25Maus(items, result, player)
+
+    local grains12 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.12);
+	player:getInventory():AddItem(grains12);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightS", 1);
+
+end
+
+function Recipe.OnCreate.Recycle9mmLuger(items, result, player)
+
+    local grains10 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.10);
+	player:getInventory():AddItem(grains10);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightS", 1);
+
+end
+
+function Recipe.OnCreate.Recycle38SP(items, result, player)
+
+    local grains12 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.12);
+	player:getInventory():AddItem(grains12);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightMRim", 1);
+
+end
+
+function Recipe.OnCreate.Recycle357Mag(items, result, player)
+
+    local grains18 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.18);
+	player:getInventory():AddItem(grains18);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightMRim", 1);
+
+end
+
+function Recipe.OnCreate.Recycle9x39(items, result, player)
+
+    local grains20 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.20);
+	player:getInventory():AddItem(grains20);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckS", 1);
+
+end
+
+function Recipe.OnCreate.Recycle9x18Mak(items, result, player)
+
+    local grains6 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.06);
+	player:getInventory():AddItem(grains6);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightS", 1);
+
+end
+
+function Recipe.OnCreate.RecycleScrapBullets(items, result, player)
+
+    local grains14 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.14);
+	player:getInventory():AddItem(grains14);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightS", 1);
+
+end
+
+function Recipe.OnCreate.Recycle410GBuck00(items, result, player)
+
+    local grains24 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.24);
+	player:getInventory():AddItem(grains24);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_HullShotgunS", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_Ball00", 6);
+
+end
+
+function Recipe.OnCreate.Recycle10mmAuto(items, result, player)
+
+    local grains18 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.18);
+	player:getInventory():AddItem(grains18);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightM", 1);
+
+end
+
+function Recipe.OnCreate.Recycle40SW(items, result, player)
+
+    local grains14 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.14);
+	player:getInventory():AddItem(grains14);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightM", 1);
+
+end
+
+function Recipe.OnCreate.Recycle4440WCF(items, result, player)
+
+    local grains20 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.20);
+	player:getInventory():AddItem(grains20);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightMRim", 1);
+
+end
+
+function Recipe.OnCreate.Recycle44Mag(items, result, player)
+
+    local grains30 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.30);
+	player:getInventory():AddItem(grains30);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightMRim", 1);
+
+end
+
+function Recipe.OnCreate.Recycle45ACP(items, result, player)
+
+    local grains16 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.16);
+	player:getInventory():AddItem(grains16);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightM", 1);
+
+end
+
+function Recipe.OnCreate.Recycle45LC(items, result, player)
+
+    local grains16 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.16);
+	player:getInventory():AddItem(grains16);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightMRim", 1);
+
+end
+
+function Recipe.OnCreate.Recycle4570Gov(items, result, player)
+
+    local grains90 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.90);
+	player:getInventory():AddItem(grains90);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightLRim", 1);
+
+end
+
+function Recipe.OnCreate.Recycle50AE(items, result, player)
+
+    local grains60 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.60);
+	player:getInventory():AddItem(grains60);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsStraightL", 1);
+
+end
+
+function Recipe.OnCreate.Recycle50BMG(items, result, player)
+
+    local grains40 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.40);
+	player:getInventory():AddItem(grains40);
+    player:getInventory():AddItems("ammomaker.ammomaker_GunPowderGrains", 4);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsBottleneckL", 1);
+
+end
+
+function Recipe.OnCreate.Recycle20GBuck00(items, result, player)
+
+    local grains32 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.32);
+	player:getInventory():AddItem(grains32);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_HullShotgunS", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_Ball00", 8);
+
+end
+
+function Recipe.OnCreate.Recycle12GBuck00(items, result, player)
+
+    local grains40 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.40);
+	player:getInventory():AddItem(grains40);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_HullShotgunS", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_Ball00", 10);
+
+end
+
+function Recipe.OnCreate.Recycle12GRubber(items, result, player)
+
+    local grains40 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.40);
+	player:getInventory():AddItem(grains40);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_HullShotgunS", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_RecRubber", 1);
+
+end
+
+function Recipe.OnCreate.Recycle12GSlug(items, result, player)
+
+    local grains40 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.40);
+	player:getInventory():AddItem(grains40);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_HullShotgunS", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_Slug12", 1);
+
+end
+
+function Recipe.OnCreate.Recycle12GFlare(items, result, player)
+
+    local grains80 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.80);
+	player:getInventory():AddItem(grains80);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_HullShotgunS", 1);
+
+end
+
+function Recipe.OnCreate.Recycle10GBuck00(items, result, player)
+
+    local grains90 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.90);
+	player:getInventory():AddItem(grains90);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_HullShotgunL", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_Ball00", 12);
+
+end
+
+function Recipe.OnCreate.Recycle4GBuck00(items, result, player)
+
+    local grains20 = InventoryItemFactory.CreateItem("ammomaker.ammomaker_GunPowderGrains", 0.20);
+	player:getInventory():AddItem(grains20);
+    player:getInventory():AddItems("ammomaker.ammomaker_GunPowderGrains", 1);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_HullShotgunL", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_Ball00", 30);
+
+end
+
+function Recipe.OnCreate.Recycle40mmHE(items, result, player)
+
+    local gunpowderU4 = InventoryItemFactory.CreateItem("Base.GunPowder", 0.4);
+	player:getInventory():AddItem(gunpowderU4);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsGrenade", 1);
+
+end
+
+function Recipe.OnCreate.Recycle40mmINC(items, result, player)
+
+    local gunpowderU4 = InventoryItemFactory.CreateItem("Base.GunPowder", 0.4);
+	player:getInventory():AddItem(gunpowderU4);
+
+	player:getInventory():AddItems("ammomaker.ammomaker_PartsGrenade", 1);
+
+end
+
+function Recipe.OnCreate.RecycleHERocket(items, result, player)
+
+    player:getInventory():AddItems("Base.GunPowder", 4);
+
+	player:getInventory():AddItems("Base.ElectronicsScrap", 5);
+	player:getInventory():AddItems("Base.ScrapMetal", 4);
+	player:getInventory():AddItems("Base.SheetMetal", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_RecPlastic", 2);
+
+end
+
+function Recipe.OnCreate.RecycleNailBomb(items, result, player)
+
+    local gunpowderU7 = InventoryItemFactory.CreateItem("Base.GunPowder", 0.7);
+	player:getInventory():AddItem(gunpowderU7);
+
+	player:getInventory():AddItems("Base.Nails", 25);
+	local twineU1 = InventoryItemFactory.CreateItem("Base.Twine", 0.2);
+	player:getInventory():AddItem(twineU1);
+	player:getInventory():AddItems("Base.TinCanEmpty", 1);
+
+end
+
+function Recipe.OnCreate.RecycleGlassBomb(items, result, player)
+
+    player:getInventory():AddItems("Base.GunPowder", 1);
+
+	local twineU1 = InventoryItemFactory.CreateItem("Base.Twine", 0.2);
+	player:getInventory():AddItem(twineU1);
+	player:getInventory():AddItems("Base.EmptyJar", 1);
+
+end
+
+function Recipe.OnCreate.RecyclePipeBomb(items, result, player)
+
+    player:getInventory():AddItems("Base.GunPowder", 2);
+
+	local twineU1 = InventoryItemFactory.CreateItem("Base.Twine", 0.2);
+	player:getInventory():AddItem(twineU1);
+	player:getInventory():AddItems("Base.MetalPipe", 1);
+
+end
+
+function Recipe.OnCreate.RecycleDecoy(items, result, player)
+
+    local gunpowderU4 = InventoryItemFactory.CreateItem("Base.GunPowder", 0.4);
+	player:getInventory():AddItem(gunpowderU4);
+
+	local twineU1 = InventoryItemFactory.CreateItem("Base.Twine", 0.2);
+	player:getInventory():AddItem(twineU1);
+	player:getInventory():AddItems("Base.TinCanEmpty", 1);
+
+end
+
+function Recipe.OnCreate.RecycleArrowWoodenAM(items, result, player)
+
+	player:getInventory():AddItems("ammomaker.ammomaker_ArrowFletching", 3);
+	player:getInventory():AddItems("ammomaker.ammomaker_ArrowHead", 1);
+	player:getInventory():AddItems("Base.Twigs", 1);
+
+end
+
+function Recipe.OnCreate.RecycleBoltWoodenAM(items, result, player)
+
+	player:getInventory():AddItems("ammomaker.ammomaker_ArrowFletching", 6);
+	player:getInventory():AddItems("ammomaker.ammomaker_ArrowHead", 2);
+	player:getInventory():AddItems("Base.Twigs", 1);
+
+end
+
+--recipe on create recycle ammo parts
+
+function Recipe.OnCreate.RecycleHullShotgunS(items, result, player)
+
+	player:getInventory():AddItems("Base.ScrapMetal", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_RecPlastic", 1);
+
+end
+
+function Recipe.OnCreate.RecycleHullShotgunL(items, result, player)
+
+	player:getInventory():AddItems("Base.ScrapMetal", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_RecPlastic", 1);
+
+end
+
+function Recipe.OnCreate.RecyclePartsGrenade(items, result, player)
+
+	player:getInventory():AddItems("Base.ScrapMetal", 1);
+	player:getInventory():AddItems("ammomaker.ammomaker_RecPlastic", 1);
+
+end
+
+--recipe on create items
+
+function Recipe.OnCreate.WeighGunpowderUnit(items, result, player)
+
+	local gunpowderU1 = InventoryItemFactory.CreateItem("Base.GunPowder", 0.1);
+	player:getInventory():AddItem(gunpowderU1);
+
+end
 
 function Recipe.OnCreate.ExtractSulfur(items, result, player)
 
+	player:getInventory():AddItems("ammomaker.ammomaker_Sulfur", 10);
 	player:getInventory():AddItems("Base.Gravelbag", 1);
 
 end
 
 function Recipe.OnCreate.ExtractNitre(items, result, player)
 
+	player:getInventory():AddItems("ammomaker.ammomaker_Nitre", SandboxVars.ammomakerOptions.NitreYield);
 	player:getInventory():AddItems("Base.Pot", 1);
 
 end
 
 function Recipe.OnCreate.RecyclePlastic(items, result, player)
 
-	local item = items:get(0)
+	local item = items:get(0);
 		
-	if item:getType() == "BleachEmpty" or item:getType() == "Cube" or item:getType() == "Razor" then
+	if item:getType() == "BleachEmpty"
+	or item:getType() == "Cube"
+	or item:getType() == "Razor" then
 
-		player:getInventory():AddItems("ammomaker.ammomaker_RecPlastic", 1);
+		player:getInventory():AddItems("ammomaker.ammomaker_RecPlastic", 2);
 
-	elseif item:getType() == "Lunchbox" or item:getType() == "Lunchbox2" or item:getType() == "BucketEmpty" then
+	elseif item:getType() == "CuttingBoardPlastic" then
 
-		player:getInventory():AddItems("ammomaker.ammomaker_RecPlastic", 9);
+		player:getInventory():AddItems("ammomaker.ammomaker_RecPlastic", 3);
+
+	elseif item:getType() == "Lunchbox"
+	or item:getType() == "Lunchbox2"
+	or item:getType() == "BucketEmpty" then
+
+		player:getInventory():AddItems("ammomaker.ammomaker_RecPlastic", 10);
 		
 	elseif item:getType() == "Cooler" then
 
-		player:getInventory():AddItems("ammomaker.ammomaker_RecPlastic", 14);
+		player:getInventory():AddItems("ammomaker.ammomaker_RecPlastic", 15);
+
+	else
+		
+		player:getInventory():AddItems("ammomaker.ammomaker_RecPlastic", 1);
+
+	end
+
+end
+
+function Recipe.OnCreate.RecycleRubber(items, result, player)
+
+	local item = items:get(0);
+		
+	if item:getType() == "OldTire1"
+	or item:getType() == "OldTire2"
+	or item:getType() == "OldTire3"
+	or item:getType() == "NormalTire1"
+	or item:getType() == "NormalTire2"
+	or item:getType() == "NormalTire3"
+	or item:getType() == "ModernTire1"
+	or item:getType() == "ModernTire2"
+	or item:getType() == "ModernTire3" then
+
+		player:getInventory():AddItems("ammomaker.ammomaker_RecRubber", 49);
+		player:getInventory():AddItems("Base.ScrapMetal", 50);
+
+	end
+
+end
+
+function Recipe.OnCreate.MakeFilterPaper(items, result, player)
+
+	local item = items:get(0);
+
+	if item:getType() == "SheetPaper2" then
+
+		player:getInventory():AddItems("ammomaker.ammomaker_FilterPaper", 1);
+
+	elseif item:getType() == "Notebook" then
+
+		player:getInventory():AddItems("ammomaker.ammomaker_FilterPaper", 10);
+		
+	elseif item:getType() == "Journal" then
+
+		player:getInventory():AddItems("ammomaker.ammomaker_FilterPaper", 20);
 
 	end
 
@@ -505,17 +811,56 @@ end
 
 function Recipe.OnCreate.RecycleMetal(items, result, player)
 
-	local item = items:get(0)
+	local item = items:get(0);
 	
-	if item:getType() == "UnusableMetal" then
+	if item:getType() == "TinCanEmpty" then
 
-		player:getInventory():AddItems("Base.ScrapMetal", 8);
+		player:getInventory():AddItems("Base.ScrapMetal", 2);
+
+	elseif item:getType() == "UnusableMetal" then
+
+		player:getInventory():AddItems("Base.ScrapMetal", 10);
 	
 	end
 
 end
 
---Recipe on give xp
+function Recipe.OnCreate.RecycleJewelryChain(items, result, player)
+
+	local item = items:get(0);
+		
+	if item:getType() == "Bracelet_ChainRightGold"
+	or item:getType() == "Bracelet_ChainLeftGold"
+	or item:getType() == "Bracelet_ChainRightSilver"
+	or item:getType() == "Bracelet_ChainLeftSilver" then
+
+		player:getInventory():AddItems("ammomaker.ammomaker_JewelryChain", 1);
+
+	elseif item:getType() == "Necklace_Gold"
+	or item:getType() == "Necklace_Silver"
+	or item:getType() == "Necklace_DogTag"
+	or item:getType() == "Necklace_GoldRuby"
+	or item:getType() == "Necklace_GoldDiamond"
+	or item:getType() == "Necklace_SilverSapphire"
+	or item:getType() == "Necklace_SilverCrucifix"
+	or item:getType() == "Necklace_SilverDiamond" then
+
+		player:getInventory():AddItems("ammomaker.ammomaker_JewelryChain", 2);
+
+	elseif item:getType() == "NecklaceLong_Gold"
+	or item:getType() == "NecklaceLong_Silver"
+	or item:getType() == "NecklaceLong_GoldDiamond"
+	or item:getType() == "NecklaceLong_SilverEmerald"
+	or item:getType() == "NecklaceLong_SilverSapphire"
+	or item:getType() == "NecklaceLong_SilverDiamond" then
+
+		player:getInventory():AddItems("ammomaker.ammomaker_JewelryChain", 3);
+
+	end
+
+end
+
+--recipe on give xp
 
 function Recipe.OnGiveXP.MetalWelding5(recipe, ingredients, result, player)
 
@@ -523,9 +868,9 @@ function Recipe.OnGiveXP.MetalWelding5(recipe, ingredients, result, player)
 
 end
 
-function Recipe.OnGiveXP.Reloading5(recipe, ingredients, result, player)
+function Recipe.OnGiveXP.Reloading3(recipe, ingredients, result, player)
 
-    player:getXp():AddXP(Perks.Reloading, 5);
+    player:getXp():AddXP(Perks.Reloading, 3);
 
 end
 

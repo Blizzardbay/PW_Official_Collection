@@ -1,13 +1,18 @@
 local c = require "EquipmentUI/Settings"
+require "InventoryAndLoot"
 
 local og_createChildren = ISInventoryPage.createChildren
-function ISInventoryPage:createChildren()  
+function ISInventoryPage:createChildren()
     og_createChildren(self)
-    
+
     if self.onCharacter then
         self.equipmentUi = EquipmentUIWindow:new(0, 0, self.inventoryPane, self.player);
         self.equipmentUi:initialise()
         self.equipmentUi:addToUIManager()
+
+        local playerObj = getSpecificPlayer(self.player)
+        local isController = playerObj:getJoypadBind() ~= -1
+        self.equipmentUi.isClosed = isController
 
         local toggleButton = EquipmentUIToggle:new(self.equipmentUi, self.inventoryPane)
         toggleButton:initialise()
@@ -20,17 +25,21 @@ function ISInventoryPage:createChildren()
             dragRenderer:addToUIManager()
         end
 
-        Events.OnPlayerDeath.Add(function(player)
-            if not player:isLocalPlayer() or player:getPlayerNum() ~= self.player then
-                return
-            end
-
+        self.destroyEquipmentUi = function()
             self.equipmentUi:removeFromUIManager()
             toggleButton:removeFromUIManager()
             if dragRenderer then
                 dragRenderer:removeFromUIManager()
             end
+        end
+
+        Events.OnPlayerDeath.Add(function(player)
+            if not player:isLocalPlayer() or player:getPlayerNum() ~= self.player then
+                return
+            end
+            self.destroyEquipmentUi()
         end);
+
     end
 end
 

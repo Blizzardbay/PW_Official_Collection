@@ -1,0 +1,3 @@
+Tooltip_FR = {
+    Tooltip_GPSNav = Peut etre fixe sur un vehicule ou utilise en le fixant a la ceinture apres avoir insere la batterie.,
+}

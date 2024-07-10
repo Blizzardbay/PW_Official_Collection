@@ -7,6 +7,13 @@ VFESilencerBlacklist = {
 	"Base.MK23SOCOM",
 	"Base.CAR15D",
 	"Base.CAR15DFolded",
+	"Base.ShotgunSilent",
+	"Base.MK2SD",
+	"Base.M60MMG",
+	"Base.AssaultRifleMasterkey",
+	"Base.AssaultRifleMasterkeyShotgun",
+	"Base.M2400_Shotgun",
+	"Base.M2400_Rifle",
 }
 
 VFECraftedSilencerBlacklist = {
@@ -27,4 +34,11 @@ VFECraftedSilencerBlacklist = {
 	"Base.MK23SOCOM",
 	"Base.CAR15D",
 	"Base.CAR15DFolded",
+	"Base.ShotgunSilent",
+	"Base.MK2SD",
+	"Base.M60MMG",
+	"Base.AssaultRifleMasterkey",
+	"Base.AssaultRifleMasterkeyShotgun",
+	"Base.M2400_Shotgun",
+	"Base.M2400_Rifle",
 }

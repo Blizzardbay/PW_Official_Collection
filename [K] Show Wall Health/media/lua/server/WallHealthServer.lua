@@ -18,6 +18,14 @@ function HandleServerRequestsK(module, command, player, args)
                 end
             end
             args.newHealth = ob:getHealth()
+
+            local objMaxHealth = ob:getMaxHealth()
+            if objMaxHealth and args.newHealth > objMaxHealth then
+                if ob.setMaxHealth then
+                    ob:setMaxHealth(args.newHealth)
+                end
+            end
+
             sendServerCommand("KAMER_WallHealth_Server", "updateHealth", args)
         end
     end

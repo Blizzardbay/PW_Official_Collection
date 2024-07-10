@@ -13,4 +13,22 @@ Tooltip_FR = {
 	Tooltip_Stock = "Peut être utilisé pour le stockage, les soupes ou les ragoûts.",
 	Tooltip_IceCubes = "Quand remplit avec de l'eau, peut faire des glaçons si placé près d'un réfrigérateur électrifié.",
 	Tooltip_SausagesMagazine = "Enseigne l'art de la boucherie et comment faire des saucisses."	
+
+	Tooltip_Fortune1 = "'L'experience est le meilleur professeur de la vie.'",
+	Tooltip_Fortune2 = "'Vis ce jour comme si c'était le dernier.'",
+	Tooltip_Fortune3 = "'Il n'y a aucun regrets dans la vie. Que des leçons.'",
+	Tooltip_Fortune4 = "'Laissez vous rêver à nouveau.'",
+	Tooltip_Fortune5 = "'Transformez vos blessures en savoir.'",
+	Tooltip_Fortune6 = "'Regardez jusqu'où vous êtes allé.'",
+	Tooltip_Fortune7 = "'Attention au Chien goblin.'",
+	Tooltip_Fortune8 = "'Quel est l'intérêt de vivre si vous n'êtes pas vous-même ?'",
+	Tooltip_Fortune9 = "'À quoi servent des ailes, sans le courage de voler.'",
+	Tooltip_Fortune10 = "'Petit à petit, l'oiseau fait son nid.'",
+	
+	Tooltip_LunarNewYear = "Communément consommé lors du nouvel an chinois, si c'est le cas, bonne année !",
+	
+/* July 2024 additions */
+	Tooltip_CheeseCurds = "Peut être affiné en meule de Parmesan dans une marmite, un moule à fromage ou un seau, ou transformé en Mozzarella.",
+	Tooltip_BlueCheese = "Peut être affiné en fromage bleu dans une marmite, un moule à fromage ou un seau.",
+	
 } 	

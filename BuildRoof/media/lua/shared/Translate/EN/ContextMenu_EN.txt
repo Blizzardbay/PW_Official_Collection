@@ -1,0 +1,7 @@
+ContextMenu_EN = {
+    --adds roof
+    ContextMenu_Wooden_Roof = "Wooden Roof",
+    ContextMenu_MetalRoof2 = "Metal Roof",
+    --corrects vanilla calling a floor a roof
+    ContextMenu_MetalRoof = "Metal Floor",
+} 

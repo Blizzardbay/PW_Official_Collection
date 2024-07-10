@@ -29,6 +29,7 @@ P4HasBeenRead.options = {
 	showNCasNR = false,
 	showSM = true,
 	showCT = true,
+	enableMap = true,
 	enableCD = true,
 	enableVHS = true,
 	enableHVHS = true,
@@ -42,6 +43,14 @@ end
 -- *****************************************************************************
 -- * ModData functions
 -- *****************************************************************************
+
+P4HasBeenRead.getReadMap = function()
+	local modData = ModData.getOrCreate("P4HasBeenRead")
+	if not modData.readMap then
+		modData.readMap = {}
+	end
+	return modData.readMap
+end
 
 P4HasBeenRead.getMarkedMap = function()
 	local modData = getPlayer():getModData()
@@ -149,6 +158,23 @@ P4HasBeenRead.OnFillInventoryObjectContextMenu = function(player, contextMenu, i
 						contextMenu:addOption(getText(menuText), type, P4HasBeenRead.marked)
 					end
 				end
+			elseif instanceof(item, "MapItem") then
+				type = item:getMapID()
+				if type then
+					if markedMap[type] then
+						local menuText = "UI_P4HasBeenRead_Unmarked_Map"
+						if P4HasBeenRead.options.reverseMarkDisplay then
+							menuText = "UI_P4HasBeenRead_Marked_Map"
+						end
+						contextMenu:addOption(getText(menuText), type, P4HasBeenRead.unmarked)
+					else
+						local menuText = "UI_P4HasBeenRead_Marked_Map"
+						if P4HasBeenRead.options.reverseMarkDisplay then
+							menuText = "UI_P4HasBeenRead_Unmarked_Map"
+						end
+						contextMenu:addOption(getText(menuText), type, P4HasBeenRead.marked)
+					end
+				end
 			elseif type == "Base.Disc_Retail" then
 				type = "Base.RM-" .. item:getMediaData():getIndex()
 				if markedMap[type] then
@@ -193,6 +219,11 @@ P4HasBeenRead.OnFillInventoryObjectContextMenu = function(player, contextMenu, i
 				local category = item:getCategory()
 				if category == "Literature" then
 					if P4HasBeenRead.isTargetLiterature(item) then
+						table.insert(types, type)
+					end
+				elseif instanceof(item, "MapItem") then
+					type = item:getMapID()
+					if type then
 						table.insert(types, type)
 					end
 				elseif type == "Base.Disc_Retail" then
@@ -253,6 +284,7 @@ P4HasBeenRead.SetTextures = function(player, item)
 	local type = item:getFullType()
 
 	local recordedMedia = getZomboidRadio():getRecordedMedia()
+	local readMap = P4HasBeenRead.getReadMap()
 	local markedMap = P4HasBeenRead.getMarkedMap()
 
 	local statusTexture = nil
@@ -293,6 +325,28 @@ P4HasBeenRead.SetTextures = function(player, item)
 				else
 					if P4HasBeenRead.options.reverseMarkDisplay then
 						selfMarkingTexture = P4HasBeenRead.selfMarkingTexture
+					end
+				end
+			end
+		end
+	elseif instanceof(item, "MapItem") then
+		if P4HasBeenRead.options.enableMap then
+			local mapId = item:getMapID()
+			if mapId then
+				if readMap[mapId] then
+					statusTexture = P4HasBeenRead.alreadyReadTexture
+				else
+					statusTexture = P4HasBeenRead.notReadTexture
+				end
+				if P4HasBeenRead.options.showSM then
+					if markedMap[mapId] then
+						if not P4HasBeenRead.options.reverseMarkDisplay then
+							selfMarkingTexture = P4HasBeenRead.selfMarkingTexture
+						end
+					else
+						if P4HasBeenRead.options.reverseMarkDisplay then
+							selfMarkingTexture = P4HasBeenRead.selfMarkingTexture
+						end
 					end
 				end
 			end
@@ -426,6 +480,16 @@ function ISInventoryPane:renderdetails(doDragged)
 			end
 			count = count + 1
 		end
+	end
+end
+
+P4HasBeenRead.ISInventoryPaneContextMenu_onCheckMap = ISInventoryPaneContextMenu.onCheckMap
+function ISInventoryPaneContextMenu.onCheckMap(map, player)
+	P4HasBeenRead.ISInventoryPaneContextMenu_onCheckMap(map, player)
+	local mapId = map:getMapID()
+	if mapId then
+		local readMap = P4HasBeenRead.getReadMap()
+		readMap[mapId] = ""
 	end
 end
 

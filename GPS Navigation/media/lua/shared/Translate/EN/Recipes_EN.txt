@@ -1,0 +1,6 @@
+Recipes_EN = {
+	Recipe_Make GPS = "Making GPS",
+        Recipe_Remove GPSBattery = "Remove the battery from the GPS",
+        Recipe_Insert Battery into GPS = "Insert the battery into the GPS",
+        Recipe_Dismantle GPS = "Dismantle GPS",
+ }

@@ -78,4 +78,18 @@ ContextMenu_EvolvedRecipe_SapphCooking.CevicheEvolved = "酸橘汁腌鱼",
 ContextMenu_EvolvedRecipe_SapphCooking.ArrozLecheEvolved = "奶油布丁",
 ContextMenu_EvolvedRecipe_SapphCooking.SpringrollEvolved = "春卷",
   
+
+ContextMenu_EvolvedRecipe_SapphCooking.BorschtEvolved = "罗宋汤",
+ContextMenu_EvolvedRecipe_SapphCooking.BlenderShake = "奶昔",
+ContextMenu_EvolvedRecipe_SapphCooking.BlenderSmoothie = "加奶冰激凌奶昔",
+ContextMenu_EvolvedRecipe_SapphCooking.BlenderPuree = "果泥",
+ContextMenu_EvolvedRecipe_SapphCooking.BlenderSorbet = "果子冰糕",
+ContextMenu_EvolvedRecipe_SapphCooking.WokRoastVeg = "烤蔬菜",
+ContextMenu_EvolvedRecipe_SapphCooking.FrenchToastEvolved = "法式吐司",
+ContextMenu_EvolvedRecipe_SapphCooking.WokCacioePepe = "起司胡椒意大利面",
+ContextMenu_EvolvedRecipe_SapphCooking.FlatbreadEvolved = "小面包干",
+ContextMenu_EvolvedRecipe_SapphCooking.CrepesEvolved = "可丽饼",
+ContextMenu_EvolvedRecipe_SapphCooking.BowlSorbet = "一碗果汁冰糕",
+ContextMenu_EvolvedRecipe_SapphCooking.CornCob = "玉米棒",
+
 } 

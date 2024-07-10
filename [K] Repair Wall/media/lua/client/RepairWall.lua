@@ -34,18 +34,19 @@ function KAMER_RepairWall.Repair(playerIN, context, worldObjects, test)
     local d = 1
 
     for _, k in ipairs(worldObjects) do
-
-        if instanceof(k, "IsoThumpable") and saveK[k] == nil then
+        local walldata = k:getModData()
+        if (instanceof(k, "IsoThumpable") and walldata.wallType ~= "doorframe") and saveK[k] == nil then
             saveK[k] = true
 
             local objectMaterial = KAMER_RepairWallsUtils:ModData(k)
+
             local objHealth = k:getHealth()
             local objMaxHealth = k:getMaxHealth()
-            if objHealth == 0 or objHealth == objMaxHealth then return end
+            if objHealth == 0 or objHealth == objMaxHealth or objHealth > objMaxHealth then return end
 
             if d == 1 then
                 if getActivatedMods():contains("KAMER_WallHealth") then
-                    SubMenuOption = context:insertOptionAfter(getText("ContextMenu_Kamer_ShowWallHealth_Check_Status"), getText("ContextMenu_Kamer_RepairWall_Repair"), worldObjects, nil)
+                    SubMenuOption = context:insertOptionAfter(getText("ContextMenu_Check_Status"), getText("ContextMenu_Kamer_RepairWall_Repair"), worldObjects, nil)
                 else
                     SubMenuOption = context:addOptionOnTop(getText("ContextMenu_Kamer_RepairWall_Repair"), worldObjects, nil)
                 end

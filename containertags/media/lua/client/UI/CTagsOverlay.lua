@@ -6,28 +6,24 @@ end
 
 function CTagsOverlay:prerender()
 	if CTags.drawData then
-		for i=1, #CTags.drawData do
-			local tag = CTags.drawData[i];
+		for i=0, CTags.drawData:size() - 1 do
+			local tag = CTags.drawData:get(i);
 			if tag and tag.square then
 				local x = isoToScreenX(self.playerNumber, tag.coords[1], tag.coords[2], tag.coords[3]);
 				local y = isoToScreenY(self.playerNumber, tag.coords[1], tag.coords[2], tag.coords[3]);
 				if (x < self.screenW or x > -200) or (y < self.screenH or y > -200) then
-					self:drawTextCentre(tag.text, x + 2, y + 2, 0, 0, 0, 1, self.font or UIFont.Small);
-					self:drawTextCentre(tag.text, x, y, tag.color[1], tag.color[2], tag.color[3], 1, self.font or UIFont.Small);
+					self:drawTextCentre(tag.text, x + 2, y - (tag.coords[4] / self.core:getZoom(self.playerNumber) * 1.65) + 2, 0, 0, 0, 1, self.font or UIFont.Small);
+					self:drawTextCentre(tag.text, x, y - (tag.coords[4] / self.core:getZoom(self.playerNumber) * 1.65), tag.color[1], tag.color[2], tag.color[3], 1, self.font or UIFont.Small);
 				end
 			end
 		end 
 	end
 end
 
-function CTagsOverlay:createChildren()
-
-end
-
 function CTagsOverlay:loop()
 	local window = CTagsOverlay.window; 
 	window.zoom = window.core:getZoom(window.playerNumber);
-	if window.zoom >= 1 then window.font = UIFont.Small else window.font = UIFont.Large end
+	if window.zoom >= 1 then window.font = UIFont[CTags.settings.fontSmall] or UIFont.Small else window.font = UIFont[CTags.settings.fontBig] or UIFont.Large end
 	CTags:sleepDo(0.1, CTagsOverlay.loop);
 end
 

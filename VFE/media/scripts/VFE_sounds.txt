@@ -78,30 +78,32 @@ module Base
 		}
 	}
 	
+	sound Mk2shoot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
+		{
+			file = media/sound/MK2shot.ogg,
+		}
+	}
+	
+	sound Mk2SDshoot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
+		{
+			file = media/sound/MK2SDshot.ogg,
+		}
+	}
+	
 	sound M1Ping
 	{
 		category = Item,
 		clip
 		{
 			file = media/sound/M1Ping.ogg,
-		}
-	}
-	
-	sound FALMagOut
-	{
-		category = Item,
-		clip
-		{
-			file = media/sound/FALMagOut.ogg,
-		}
-	}
-
-	sound FALMagIn
-	{
-		category = Item,
-		clip
-		{
-			file = media/sound/FALMagIn.ogg,
 		}
 	}
 
@@ -156,6 +158,15 @@ module Base
 		clip
 		{
 			file = media/sound/AK47Rack.ogg,
+		}
+	}
+	
+	sound M60Rack
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/M60Rack.ogg,
 		}
 	}
 }

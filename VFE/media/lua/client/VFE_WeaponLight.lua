@@ -24,7 +24,7 @@ local function WeaponLightBeam()
 		weapon:setLightStrength(0.0)
 	end
 	
-	if  weapon:getCat() == ItemType.valueOf("Weapon") then
+	if  instanceof(weapon, "HandWeapon") then
 		if ( weapon:getCanon()) then
 			if attacker:isAiming() and weapon then
 				if  weapon:getCanon():getFullType() == "Base.Laser" and weapon:getSubCategory() == "Firearm" then

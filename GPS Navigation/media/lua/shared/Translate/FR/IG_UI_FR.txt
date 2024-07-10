@@ -1,0 +1,12 @@
+IG_UI_FR = {
+    IGUI_PlayerText_st = "Definir la destination.",
+    IGUI_PlayerText_in = "Destination a proximite.",
+    IGUI_PlayerText_end = "Vous etes arrive a destination.",
+    IGUI_PlayerText_left = "Virage a gauche imminent.",
+    IGUI_PlayerText_right = "Virage a droite imminent.",
+    IGUI_PlayerText_autoon = "Passage en mode conduite autonome.",
+    IGUI_PlayerText_auttooff = "Arret du mode conduite autonome.",
+    IGUI_PlayerText_stop = "Arret en raison d'un vehicule devant.",
+    IGUI_PlayerText_Navout = "Vous vous ecartez de l'itineraire.",
+    IGUI_Tutorial_NavGPS = " <CENTRE> <SIZE:large> Comment utiliser la navigation! <LINE> <LINE> <SIZE:medium> [Shift gauche (Bouton de stick gauche sur la manette)] : Vous pouvez definir une destination! Il est recommande de marquer des points de passage au milieu pour creer un itineraire precis. <LINE> <LINE> [X (Bouton LT sur la manette)] : Supprime une des destinations definies dans l'ordre recent! <LINE> <LINE> [Espace (Bouton LB sur la manette)] : Vous pouvez supprimer toutes les destinations et points de passage definis! <LINE> <LINE>",
+}

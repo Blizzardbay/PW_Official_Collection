@@ -2,7 +2,6 @@ VERSION = 1,
 
 mods
 {
-	mod = Armored Doors and Windows,
 	mod = BetterSortCC,
 	mod = BookCollection,
 	mod = 1537876121,
@@ -46,10 +45,8 @@ mods
 	mod = UIAPI,
 	mod = snowiswaterbeta,
 	mod = SKLDairyMod,
-	mod = Amputation,
 	mod = WaterDispenser,
 	mod = TrombosNutritionHelper,
-	mod = Water Purification Tablets,
 	mod = TheStar,
 	mod = WeatherMoodles,
 	mod = POETRecycleEverything1,
@@ -165,6 +162,12 @@ mods
 	mod = KAMER_RepairWall,
 	mod = KAMER_WallHealth,
 	mod = errorMagnifier,
+	mod = BuildRoof,
+	mod = FunctionalAppliances2,
+	mod = ClothingLine,
+	mod = GPSNAVIGATION,
+	mod = SkillRecoveryJournal,
+	mod = VanillaVehiclesAnimated,
 }
 
 maps

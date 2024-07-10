@@ -1,4 +1,8 @@
 UI_EN = {
+	UI_WeatherMoodles_EnableSeason = "Enable Seasons",
+	UI_WeatherMoodles_EnableSeason_Tooltip = "Enables the seasons moodle.",
+	UI_WeatherMoodles_SeasonIs = "Seasons are",
+
 	UI_WeatherMoodles_EnableRain = "Enable Rain",
 	UI_WeatherMoodles_EnableRain_Tooltip = "Enables the rain moodle.",
 	UI_WeatherMoodles_RainIs = "Rain is",

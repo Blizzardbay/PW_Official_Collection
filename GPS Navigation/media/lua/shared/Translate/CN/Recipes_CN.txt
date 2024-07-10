@@ -1,0 +1,6 @@
+Recipes_CN = {
+ Recipe_Make GPS = "制作导航仪",
+ Recipe_Remove GPSBattery = "拆卸导航仪电池",
+ Recipe_Insert Battery into GPS = "将电池插入导航仪",
+ Recipe_Dismantle GPS = "拆解导航仪",
+}

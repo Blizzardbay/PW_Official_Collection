@@ -379,11 +379,10 @@ local function multiplyLootChances(_containerKey, _containerTable)
                     local itemId = _containerTable[i-1]
                     if matches[itemId] then
                         if SandboxVars.MoreMaps.LouisVilleDistrictMaps then
-                            _containerTable[i] = itemChance/25;
+                            _containerTable[i] = itemChance/200;
                         else
-                            _containerTable[i] = itemChance/4;
+                            _containerTable[i] = itemChance/5;
                         end
-                        
                     end
                     if matches2[itemId] then
                         _containerTable[i] = itemChance/4;
@@ -446,17 +445,17 @@ local function initMapDistributions()
     ---------- MODIFY THESE VALUES TO TWEAK LOOT DISTRIBUTIONS -------------------------------
     -------- These are the chance for each map item, not the chance to get one map. ----------
     ------------------------------------------------------------------------------------------
-    local globalLootTweaker = 1
-    local baseChanceZombies = 0.3 * SandboxVars.MoreMaps.MapLootMultiplier * globalLootTweaker;
-    local baseChanceMedicalZombies = 0.8 * SandboxVars.MoreMaps.MapLootMultiplier * globalLootTweaker;
-    local baseChanceMilitaryZombies = 0.8 * SandboxVars.MoreMaps.MapLootMultiplier * globalLootTweaker;
-    local baseChanceMagazineRacks = 20 * globalLootTweaker;
-    local baseChanceMechanics = 1.5 * SandboxVars.MoreMaps.MapLootMultiplier * globalLootTweaker;
+    local globalLootTweaker = 0.3
+    local baseChanceZombies = 0.4 * SandboxVars.MoreMaps.MapLootMultiplier * globalLootTweaker;
+    local baseChanceMedicalZombies = 0.9 * SandboxVars.MoreMaps.MapLootMultiplier * globalLootTweaker;
+    local baseChanceMilitaryZombies = 0.9 * SandboxVars.MoreMaps.MapLootMultiplier * globalLootTweaker;
+    local baseChanceMagazineRacks = 10 * globalLootTweaker;
+    local baseChanceMechanics = 1.2 * SandboxVars.MoreMaps.MapLootMultiplier * globalLootTweaker;
     local baseChanceGlovebox = 0.5 * SandboxVars.MoreMaps.MapLootMultiplier * globalLootTweaker; 
     local baseChanceSideTable = 0.1 * SandboxVars.MoreMaps.MapLootMultiplier * globalLootTweaker;
     local baseChanceSurvivorBag = 30 * SandboxVars.MoreMaps.MapLootMultiplier * globalLootTweaker;
-    local baseChanceMapFactoryCrate = 50 * globalLootTweaker;
-    local baseChanceCrateRandomJunk = 0.02 * SandboxVars.MoreMaps.MapLootMultiplier * globalLootTweaker;
+    local baseChanceMapFactoryCrate = 30 * globalLootTweaker;
+    local baseChanceCrateRandomJunk = 0.01 * SandboxVars.MoreMaps.MapLootMultiplier * globalLootTweaker;
     local baseChanceMilitaryVehicles = 1.2 * SandboxVars.MoreMaps.MapLootMultiplier * globalLootTweaker;
     -----------------------------------------------------------------------------------------
     -----------------------------------------------------------------------------------------    
@@ -986,6 +985,14 @@ local function initMapDistributions()
         end
 
         
+        if SandboxVars.MoreMaps.FortLoidMap and getActivatedMods():contains("FortLoid") then
+            addMapToMilitaryZombies("Base.FortLoidMap", baseChanceZombies);
+            addMapToSurvivorBag("Base.FortLoidMap", baseChanceSurvivorBag/2);
+            addMapToPoliceGlovebox("Base.FortLoidMap", baseChanceGlovebox/2);
+            addMapToMilitaryVehicles("Base.MuldraughMilitaryBaseMap", baseChanceMilitaryVehicles);
+        end
+
+        
     end
     if SandboxVars.MoreMaps.SmallTownWestMap then
         --SmallTownWestMap map
@@ -1199,7 +1206,7 @@ local function initMapDistributions()
         addMapToSurvivorBag("Base.TandilLootableMap", baseChanceSurvivorBag/2);
         addMapToGloveboxes("Base.TandilLootableMap", baseChanceGlovebox/2);
         addMapToMapCratesFactories("Base.TandilLootableMap", baseChanceMapFactoryCrate);
-        addMapToCrateRandomJunk("Base.TandilLootableMap", baseChanceCrateRandomJunk/2);
+        addMapToCrateRandomJunk("Base.TandilLootableMap", baseChanceCrateRandomJunk);
     end
     if getActivatedMods():contains("NewTersh") then
         addMapToTownZombies("Base.NewTershLootableMap", baseChanceZombies/2)
@@ -1209,7 +1216,7 @@ local function initMapDistributions()
         addMapToSurvivorBag("Base.NewTershLootableMap", baseChanceSurvivorBag/2);
         addMapToGloveboxes("Base.NewTershLootableMap", baseChanceGlovebox/2);
         addMapToMapCratesFactories("Base.NewTershLootableMap", baseChanceMapFactoryCrate);
-        addMapToCrateRandomJunk("Base.NewTershLootableMap", baseChanceCrateRandomJunk/2);
+        addMapToCrateRandomJunk("Base.NewTershLootableMap", baseChanceCrateRandomJunk);
     end
     if getActivatedMods():contains("Bourstrange") then
         addMapToTownZombies("Base.BourstrangeMap", baseChanceZombies/2)
@@ -1219,7 +1226,56 @@ local function initMapDistributions()
         addMapToSurvivorBag("Base.BourstrangeMap", baseChanceSurvivorBag/2);
         addMapToGloveboxes("Base.BourstrangeMap", baseChanceGlovebox/2);
         addMapToMapCratesFactories("Base.BourstrangeMap", baseChanceMapFactoryCrate);
-        addMapToCrateRandomJunk("Base.BourstrangeMap", baseChanceCrateRandomJunk/2);
+        addMapToCrateRandomJunk("Base.BourstrangeMap", baseChanceCrateRandomJunk);
+    end
+    if getActivatedMods():contains("pineville") then
+        addMapToTownZombies("Base.PinevilleMap", baseChanceZombies)
+        addMapToCountrySideZombies("Base.PinevilleMap", baseChanceZombies/4)
+        addMapToMechanics("Base.PinevilleMap", baseChanceMechanics/2);
+        addMapToMagazineRacks("Base.PinevilleMap", baseChanceMagazineRacks/4);
+        addMapToSidetables("Base.PinevilleMap", baseChanceSideTable);
+        addMapToSurvivorBag("Base.PinevilleMap", baseChanceSurvivorBag);
+        addMapToGloveboxes("Base.PinevilleMap", baseChanceGlovebox/2);
+        addMapToMapCratesFactories("Base.PinevilleMap", baseChanceMapFactoryCrate);
+        addMapToCrateRandomJunk("Base.PinevilleMap", baseChanceCrateRandomJunk);
+    end
+    if getActivatedMods():contains("Taylorsville") then
+        addMapToTownZombies("Base.TaylorsvilleMap", baseChanceZombies)
+        addMapToCountrySideZombies("Base.TaylorsvilleMap", baseChanceZombies/4)
+        addMapToMechanics("Base.TaylorsvilleMap", baseChanceMechanics/2);
+        addMapToMagazineRacks("Base.TaylorsvilleMap", baseChanceMagazineRacks/4);
+        addMapToSidetables("Base.TaylorsvilleMap", baseChanceSideTable);
+        addMapToSurvivorBag("Base.TaylorsvilleMap", baseChanceSurvivorBag);
+        addMapToGloveboxes("Base.TaylorsvilleMap", baseChanceGlovebox/2);
+        addMapToMapCratesFactories("Base.TaylorsvilleMap", baseChanceMapFactoryCrate);
+        addMapToCrateRandomJunk("Base.TaylorsvilleMap", baseChanceCrateRandomJunk);
+    end
+    if getActivatedMods():contains("Diggertown") then
+        -- addMapToMedicalZombies("Base.DTownTunnelMap", baseChanceZombies)
+        addMapToTownZombies("Base.DTownTunnelMap", baseChanceZombies/2)
+        addMapToCountrySideZombies("Base.DTownTunnelMap", baseChanceZombies/4)
+        -- addMapToMilitaryZombies("Base.DTownTunnelMap", baseChanceZombies);
+        addMapToMechanics("Base.DTownTunnelMap", baseChanceMechanics/2);
+        addMapToMagazineRacks("Base.DTownTunnelMap", baseChanceMagazineRacks);
+        addMapToSidetables("Base.DTownTunnelMap", baseChanceSideTable);
+        addMapToSurvivorBag("Base.DTownTunnelMap", baseChanceSurvivorBag);
+        -- addMapToPoliceGlovebox("Base.DTownTunnelMap", baseChanceGlovebox/4);
+        addMapToGloveboxes("Base.DTownTunnelMap", baseChanceGlovebox);
+        addMapToMapCratesFactories("Base.DTownTunnelMap", baseChanceMapFactoryCrate);
+        addMapToCrateRandomJunk("Base.DTownTunnelMap", baseChanceCrateRandomJunk);
+
+        -- addMapToMedicalZombies("Base.DTownTunnelMap", baseChanceZombies)
+        addMapToTownZombies("Base.DTownRoadMap", baseChanceZombies/2)
+        addMapToCountrySideZombies("Base.DTownRoadMap", baseChanceZombies/4)
+        -- addMapToMilitaryZombies("Base.DTownRoadMap", baseChanceZombies);
+        addMapToMechanics("Base.DTownRoadMap", baseChanceMechanics/2);
+        addMapToMagazineRacks("Base.DTownRoadMap", baseChanceMagazineRacks);
+        addMapToSidetables("Base.DTownRoadMap", baseChanceSideTable);
+        addMapToSurvivorBag("Base.DTownRoadMap", baseChanceSurvivorBag);
+        -- addMapToPoliceGlovebox("Base.DTownRoadMap", baseChanceGlovebox/4);
+        addMapToGloveboxes("Base.DTownRoadMap", baseChanceGlovebox);
+        addMapToMapCratesFactories("Base.DTownRoadMap", baseChanceMapFactoryCrate);
+        addMapToCrateRandomJunk("Base.DTownRoadMap", baseChanceCrateRandomJunk);
     end
 
     -- if getActivatedMods():contains("DeadinHongKong") then
@@ -3156,6 +3212,181 @@ local function initMapDistributions()
         addMapToGloveboxes("Base.FortBoonesboroughMap", baseChanceGlovebox/10);
         -- addMapToMapCratesFactories("Base.FortBoonesboroughMap", baseChanceMapFactoryCrate);
         addMapToCrateRandomJunk("Base.FortBoonesboroughMap", baseChanceCrateRandomJunk/10);
+    end
+    
+    if SandboxVars.MoreMaps.CrowlakeMap and getActivatedMods():contains("Wellsburg") then
+        -- addMapToMedicalZombies("Base.CrowlakeMap", baseChanceZombies)
+        addMapToTownZombies("Base.CrowlakeMap", baseChanceZombies/2)
+        addMapToCountrySideZombies("Base.CrowlakeMap", baseChanceZombies/4)
+        -- addMapToMilitaryZombies("Base.CrowlakeMap", baseChanceZombies);
+        addMapToMechanics("Base.CrowlakeMap", baseChanceMechanics/2);
+        addMapToMagazineRacks("Base.CrowlakeMap", baseChanceMagazineRacks/2);
+        addMapToSidetables("Base.CrowlakeMap", baseChanceSideTable/2);
+        addMapToSurvivorBag("Base.CrowlakeMap", baseChanceSurvivorBag/2);
+        -- addMapToPoliceGlovebox("Base.CrowlakeMap", baseChanceGlovebox/4);
+        addMapToGloveboxes("Base.CrowlakeMap", baseChanceGlovebox/2);
+        addMapToMapCratesFactories("Base.CrowlakeMap", baseChanceMapFactoryCrate);
+        addMapToCrateRandomJunk("Base.CrowlakeMap", baseChanceCrateRandomJunk/2);
+    end
+    if SandboxVars.MoreMaps.GustonMap and getActivatedMods():contains("Guston") then
+        -- addMapToMedicalZombies("Base.GustonMap", baseChanceZombies)
+        addMapToTownZombies("Base.GustonMap", baseChanceZombies/2)
+        addMapToCountrySideZombies("Base.GustonMap", baseChanceZombies/4)
+        -- addMapToMilitaryZombies("Base.GustonMap", baseChanceZombies);
+        addMapToMechanics("Base.GustonMap", baseChanceMechanics/2);
+        addMapToMagazineRacks("Base.GustonMap", baseChanceMagazineRacks/2);
+        addMapToSidetables("Base.GustonMap", baseChanceSideTable/2);
+        addMapToSurvivorBag("Base.GustonMap", baseChanceSurvivorBag/2);
+        -- addMapToPoliceGlovebox("Base.GustonMap", baseChanceGlovebox/4);
+        addMapToGloveboxes("Base.GustonMap", baseChanceGlovebox/2);
+        addMapToMapCratesFactories("Base.GustonMap", baseChanceMapFactoryCrate);
+        addMapToCrateRandomJunk("Base.GustonMap", baseChanceCrateRandomJunk/2);
+    end
+    if SandboxVars.MoreMaps.JaspervilleMap and getActivatedMods():contains("Jasperville") then
+        -- addMapToMedicalZombies("Base.GustonMap", baseChanceZombies)
+        addMapToTownZombies("Base.JaspervilleMap", baseChanceZombies/2)
+        -- addMapToCountrySideZombies("Base.JaspervilleMap", baseChanceZombies/4)
+        -- addMapToMilitaryZombies("Base.GustonMap", baseChanceZombies);
+        addMapToMechanics("Base.JaspervilleMap", baseChanceMechanics/2);
+        addMapToMagazineRacks("Base.JaspervilleMap", baseChanceMagazineRacks/2);
+        addMapToSidetables("Base.JaspervilleMap", baseChanceSideTable/2);
+        addMapToSurvivorBag("Base.JaspervilleMap", baseChanceSurvivorBag/2);
+        -- addMapToPoliceGlovebox("Base.GustonMap", baseChanceGlovebox/4);
+        addMapToGloveboxes("Base.JaspervilleMap", baseChanceGlovebox/2);
+        addMapToMapCratesFactories("Base.JaspervilleMap", baseChanceMapFactoryCrate);
+        addMapToCrateRandomJunk("Base.JaspervilleMap", baseChanceCrateRandomJunk/2);
+        
+        -- addMapToMedicalZombies("Base.JaspervilleIndustrialMap", baseChanceZombies)
+        addMapToTownZombies("Base.JaspervilleIndustrialMap", baseChanceZombies/2)
+        -- addMapToCountrySideZombies("Base.JaspervilleIndustrialMap", baseChanceZombies/4)
+        -- addMapToMilitaryZombies("Base.JaspervilleIndustrialMap", baseChanceZombies);
+        addMapToMechanics("Base.JaspervilleIndustrialMap", baseChanceMechanics);
+        -- addMapToMagazineRacks("Base.JaspervilleIndustrialMap", baseChanceMagazineRacks/5);
+        -- addMapToSidetables("Base.JaspervilleIndustrialMap", baseChanceSideTable/2);
+        -- addMapToSurvivorBag("Base.JaspervilleIndustrialMap", baseChanceSurvivorBag/2);
+        -- addMapToPoliceGlovebox("Base.JaspervilleIndustrialMap", baseChanceGlovebox/4);
+        addMapToGloveboxes("Base.JaspervilleIndustrialMap", baseChanceGlovebox/2);
+        -- addMapToMapCratesFactories("Base.JaspervilleIndustrialMap", baseChanceMapFactoryCrate);
+        addMapToCrateRandomJunk("Base.JaspervilleIndustrialMap", baseChanceCrateRandomJunk/2);
+        
+        
+        -- addMapToMedicalZombies("Base.JaspervilleTrainStationMap", baseChanceZombies)
+        addMapToTownZombies("Base.JaspervilleTrainStationMap", baseChanceZombies/2)
+        addMapToCountrySideZombies("Base.JaspervilleTrainStationMap", baseChanceZombies/10)
+        -- addMapToMilitaryZombies("Base.JaspervilleTrainStationMap", baseChanceZombies);
+        addMapToMechanics("Base.JaspervilleTrainStationMap", baseChanceMechanics/2);
+        addMapToMagazineRacks("Base.JaspervilleTrainStationMap", baseChanceMagazineRacks/5);
+        addMapToSidetables("Base.JaspervilleTrainStationMap", baseChanceSideTable/2);
+        addMapToSurvivorBag("Base.JaspervilleTrainStationMap", baseChanceSurvivorBag/2);
+        -- addMapToPoliceGlovebox("Base.JaspervilleTrainStationMap", baseChanceGlovebox/4);
+        addMapToGloveboxes("Base.JaspervilleTrainStationMap", baseChanceGlovebox/5);
+        -- addMapToMapCratesFactories("Base.JaspervilleTrainStationMap", baseChanceMapFactoryCrate);
+        addMapToCrateRandomJunk("Base.JaspervilleTrainStationMap", baseChanceCrateRandomJunk/2);
+
+    end
+    
+    if SandboxVars.MoreMaps.YakamaStateParkMap and getActivatedMods():contains("YakamaStatePark") then
+        -- addMapToMedicalZombies("Base.YakamaStatePark", baseChanceZombies)
+        addMapToTownZombies("Base.YakamaStatePark", baseChanceZombies/4)
+        addMapToCountrySideZombies("Base.YakamaStatePark", baseChanceZombies)
+        -- addMapToMilitaryZombies("Base.YakamaStatePark", baseChanceZombies);
+        -- addMapToMechanics("Base.YakamaStatePark", baseChanceMechanics/2);
+        addMapToMagazineRacks("Base.YakamaStatePark", baseChanceMagazineRacks/4);
+        addMapToSidetables("Base.YakamaStatePark", baseChanceSideTable/4);
+        addMapToSurvivorBag("Base.YakamaStatePark", baseChanceSurvivorBag/4);
+        -- addMapToPoliceGlovebox("Base.YakamaStatePark", baseChanceGlovebox/4);
+        addMapToGloveboxes("Base.YakamaStatePark", baseChanceGlovebox/4);
+        addMapToMapCratesFactories("Base.YakamaStatePark", baseChanceMapFactoryCrate/2);
+        addMapToCrateRandomJunk("Base.YakamaStatePark", baseChanceCrateRandomJunk/4);
+    end
+
+    
+    if SandboxVars.MoreMaps.ValuTechAmusementParkMap and getActivatedMods():contains("SimonMDValuTechAmusementPark") then
+        -- addMapToMedicalZombies("Base.ValuTechAmusementParkMap", baseChanceZombies)
+        addMapToTownZombies("Base.ValuTechAmusementParkMap", baseChanceZombies)
+        -- addMapToCountrySideZombies("Base.ValuTechAmusementParkMap", baseChanceZombies)
+        -- addMapToMilitaryZombies("Base.ValuTechAmusementParkMap", baseChanceZombies);
+        -- addMapToMechanics("Base.ValuTechAmusementParkMap", baseChanceMechanics/2);
+        addMapToMagazineRacks("Base.ValuTechAmusementParkMap", baseChanceMagazineRacks/2);
+        addMapToSidetables("Base.ValuTechAmusementParkMap", baseChanceSideTable/4);
+        addMapToSurvivorBag("Base.ValuTechAmusementParkMap", baseChanceSurvivorBag/4);
+        -- addMapToPoliceGlovebox("Base.ValuTechAmusementParkMap", baseChanceGlovebox/4);
+        addMapToGloveboxes("Base.ValuTechAmusementParkMap", baseChanceGlovebox/4);
+        addMapToMapCratesFactories("Base.ValuTechAmusementParkMap", baseChanceMapFactoryCrate/2);
+        addMapToCrateRandomJunk("Base.ValuTechAmusementParkMap", baseChanceCrateRandomJunk/4);
+    end
+    if SandboxVars.MoreMaps.CanvasbackStudiosMap and getActivatedMods():contains("Canvasback Studios") then
+        -- addMapToMedicalZombies("Base.CanvasbackStudiosMap", baseChanceZombies)
+        addMapToTownZombies("Base.CanvasbackStudiosMap", baseChanceZombies/2)
+        -- addMapToCountrySideZombies("Base.CanvasbackStudiosMap", baseChanceZombies)
+        -- addMapToMilitaryZombies("Base.CanvasbackStudiosMap", baseChanceZombies);
+        -- addMapToMechanics("Base.CanvasbackStudiosMap", baseChanceMechanics/2);
+        -- addMapToMagazineRacks("Base.CanvasbackStudiosMap", baseChanceMagazineRacks/2);
+        addMapToSidetables("Base.CanvasbackStudiosMap", baseChanceSideTable/4);
+        -- addMapToSurvivorBag("Base.CanvasbackStudiosMap", baseChanceSurvivorBag/4);
+        -- addMapToPoliceGlovebox("Base.CanvasbackStudiosMap", baseChanceGlovebox/4);
+        addMapToGloveboxes("Base.CanvasbackStudiosMap", baseChanceGlovebox/4);
+        -- addMapToMapCratesFactories("Base.CanvasbackStudiosMap", baseChanceMapFactoryCrate/2);
+        addMapToCrateRandomJunk("Base.CanvasbackStudiosMap", baseChanceCrateRandomJunk/4);
+    end
+    if SandboxVars.MoreMaps.PlefordSpringsMap and getActivatedMods():contains("PlefordSpringsMapMod") then
+        -- addMapToMedicalZombies("Base.PlefordSpringsMap", baseChanceZombies)
+        addMapToTownZombies("Base.PlefordSpringsMap", baseChanceZombies)
+        addMapToCountrySideZombies("Base.PlefordSpringsMap", baseChanceZombies/4)
+        -- addMapToMilitaryZombies("Base.PlefordSpringsMap", baseChanceZombies);
+        addMapToMechanics("Base.PlefordSpringsMap", baseChanceMechanics/2);
+        addMapToMagazineRacks("Base.PlefordSpringsMap", baseChanceMagazineRacks);
+        addMapToSidetables("Base.PlefordSpringsMap", baseChanceSideTable);
+        addMapToSurvivorBag("Base.PlefordSpringsMap", baseChanceSurvivorBag);
+        -- addMapToPoliceGlovebox("Base.PlefordSpringsMap", baseChanceGlovebox/4);
+        addMapToGloveboxes("Base.PlefordSpringsMap", baseChanceGlovebox);
+        addMapToMapCratesFactories("Base.PlefordSpringsMap", baseChanceMapFactoryCrate);
+        addMapToCrateRandomJunk("Base.PlefordSpringsMap", baseChanceCrateRandomJunk);
+    end
+    if SandboxVars.MoreMaps.FoxWoodMap and getActivatedMods():contains("One cell life") then
+        -- addMapToMedicalZombies("Base.FoxWoodMap", baseChanceZombies)
+        -- addMapToTownZombies("Base.FoxWoodMap", baseChanceZombies/2)
+        addMapToCountrySideZombies("Base.FoxWoodMap", baseChanceZombies*2)
+        -- addMapToMilitaryZombies("Base.FoxWoodMap", baseChanceZombies);
+        -- addMapToMechanics("Base.FoxWoodMap", baseChanceMechanics/2);
+        -- addMapToMagazineRacks("Base.FoxWoodMap", baseChanceMagazineRacks);
+        -- addMapToSidetables("Base.FoxWoodMap", baseChanceSideTable);
+        addMapToSurvivorBag("Base.FoxWoodMap", baseChanceSurvivorBag/2);
+        -- addMapToPoliceGlovebox("Base.FoxWoodMap", baseChanceGlovebox/4);
+        -- addMapToGloveboxes("Base.FoxWoodMap", baseChanceGlovebox);
+        -- addMapToMapCratesFactories("Base.FoxWoodMap", baseChanceMapFactoryCrate);
+        addMapToCrateRandomJunk("Base.FoxWoodMap", baseChanceCrateRandomJunk/4);
+    end
+
+    if SandboxVars.MoreMaps.BrazilMap and getActivatedMods():contains("mapa brasil") then
+        -- addMapToMedicalZombies("Base.BrazilMap", baseChanceZombies)
+        addMapToTownZombies("Base.BrazilMap", baseChanceZombies/2)
+        -- addMapToCountrySideZombies("Base.BrazilMap", baseChanceZombies/2)
+        -- addMapToMilitaryZombies("Base.BrazilMap", baseChanceZombies);
+        addMapToMechanics("Base.BrazilMap", baseChanceMechanics/5);
+        addMapToMagazineRacks("Base.BrazilMap", baseChanceMagazineRacks/2);
+        addMapToSidetables("Base.BrazilMap", baseChanceSideTable/2);
+        addMapToSurvivorBag("Base.BrazilMap", baseChanceSurvivorBag/4);
+        -- addMapToPoliceGlovebox("Base.BrazilMap", baseChanceGlovebox/4);
+        addMapToGloveboxes("Base.BrazilMap", baseChanceGlovebox/4);
+        addMapToMapCratesFactories("Base.BrazilMap", baseChanceMapFactoryCrate/2);
+        addMapToCrateRandomJunk("Base.BrazilMap", baseChanceCrateRandomJunk/4);
+    end
+    
+    
+    if SandboxVars.MoreMaps.HavenRidgeMap and getActivatedMods():contains("LastOfUs") then
+        -- addMapToMedicalZombies("Base.HavenRidgeMap", baseChanceZombies)
+        addMapToTownZombies("Base.HavenRidgeMap", baseChanceZombies/4)
+        addMapToCountrySideZombies("Base.HavenRidgeMap", baseChanceZombies/10)
+        addMapToMilitaryZombies("Base.HavenRidgeMap", baseChanceZombies);
+        -- addMapToMechanics("Base.HavenRidgeMap", baseChanceMechanics/5);
+        -- addMapToMagazineRacks("Base.HavenRidgeMap", baseChanceMagazineRacks/2);
+        addMapToSidetables("Base.HavenRidgeMap", baseChanceSideTable/10);
+        addMapToSurvivorBag("Base.HavenRidgeMap", baseChanceSurvivorBag/2);
+        addMapToPoliceGlovebox("Base.HavenRidgeMap", baseChanceGlovebox);
+        addMapToGloveboxes("Base.HavenRidgeMap", baseChanceGlovebox/4);
+        -- addMapToMapCratesFactories("Base.HavenRidgeMap", baseChanceMapFactoryCrate/2);
+        addMapToCrateRandomJunk("Base.HavenRidgeMap", baseChanceCrateRandomJunk/10);
     end
 
 end

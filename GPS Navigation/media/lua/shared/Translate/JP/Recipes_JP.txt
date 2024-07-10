@@ -1,0 +1,6 @@
+Recipes_JP = {
+	Recipe_Make GPS = "カーナビを作成する",
+        Recipe_Remove GPSBattery = "カーナビのバッテリーを取り外す",
+        Recipe_Insert Battery into GPS = "カーナビにバッテリーを挿入する",
+        Recipe_Dismantle GPS = "カーナビを分解する",
+}

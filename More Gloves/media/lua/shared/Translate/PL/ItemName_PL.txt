@@ -8,11 +8,14 @@ ItemName_PL = {
 	ItemName_MoreGloves.WeightliftingGloves = "Rêkawiczki na si³ownie",
 	ItemName_MoreGloves.MetalWelderGloves = "Rêkawice spawalnicze",
 	ItemName_MoreGloves.KickboxingGloves = "Rekawiczki bokserskie",
-    	ItemName_MoreGloves.HazmatGloves = "Rekawiczki hazmat",
+    ItemName_MoreGloves.HazmatGloves = "Rekawiczki hazmat",
 	ItemName_MoreGloves.WinterGloves = "Rekawiczki zimowe",
 	ItemName_MoreGloves.FirefighterGloves = "Rekawice strazy przeciwpozarnej",
 	ItemName_MoreGloves.TacticalGloves01 = "Rekawice taktyczne",
 	ItemName_MoreGloves.TacticalGloves02 = "Rekawice taktyczne",
 	ItemName_MoreGloves.TacticalGloves03 = "Rekawice taktyczne",
-	
+	ItemName_MoreGloves.LeatherWorkGloves = "Rekawice robocze",
+	ItemName_MoreGloves.FingerlessTacticalGloves01 = "Taktyczne rekawiczki bez palców",
+	ItemName_MoreGloves.FingerlessTacticalGloves02 = "Taktyczne rekawiczki bez palców",
+	ItemName_MoreGloves.FingerlessTacticalGloves03 = "Taktyczne rekawiczki bez palców",	
 }

@@ -115,7 +115,7 @@ end
 function ISACUI:initialise()
     ISPanelJoypad.initialise(self);
 
-    local md = self.object:getModData()
+    --[[local md = self.object:getModData()
 
     if md['targettemp'] then
         self.temperature = md['targettemp']
@@ -123,7 +123,20 @@ function ISACUI:initialise()
 
     if md['targetfan'] then
         self.fan = md['targetfan']
-    end
+    end]]
+
+    local globalModData = GetAirCondModDataModData()
+    
+    local x = self.object:getX()
+    local y = self.object:getY()
+    local z = self.object:getZ()
+
+    local vac = VirtualAC.Get(x, y, z)
+    self.temperature =  vac.temp
+    self.fan = vac.fanspeed
+
+    local test1 = self.temperature
+    local test2 = self.fan
 
     --power
     
@@ -258,10 +271,15 @@ end
 function ISACUI:powerOff(number)
     self.object:setActivated(false)
 
+    local x = self.object:getX()
+    local y = self.object:getY()
+    local z = self.object:getZ()
+
 	if isClient() then
-		local args = { x = self.object:getX(), y = self.object:getY(), z = self.object:getZ() }
+		local args = {x=x, y=y, z=z}
 		sendClientCommand(self.character, 'ac_commands', 'toggle', args)
 	end
+    VirtualAC.Toggle(x, y, z, false)
 		
     -- updateAC()
     self:updatePower()
@@ -272,10 +290,15 @@ end
 function ISACUI:powerOn(number)
     self.object:setActivated(true)
     
+    local x = self.object:getX()
+    local y = self.object:getY()
+    local z = self.object:getZ()
+
     if isClient() then
-        local args = { x = self.object:getX(), y = self.object:getY(), z = self.object:getZ() }
+        local args = {x=x, y=y, z=z}
         sendClientCommand(self.character, 'ac_commands', 'toggle', args)
     end
+    VirtualAC.Toggle(x, y, z, true)
 
     -- updateAC()
     self:updatePower()
@@ -347,14 +370,23 @@ function ISACUI:update()
 end
 
 function ISACUI:updateNow()
-    local md = self.object:getModData()
+
+    --[[local md = self.object:getModData()
     md['targettemp'] = self.temperature
-    md['targetfan'] = self.fan
+    md['targetfan'] = self.fan]]
     
-    if isClient() then
-        local args = { x = self.object:getX(), y = self.object:getY(), z = self.object:getZ(),  targettemp = self.temperature, targetfan = self.fan}
+    local x = self.object:getX()
+    local y = self.object:getY()
+    local z = self.object:getZ()
+    local temp = self.temperature
+    local fanspeed = self.fan
+
+    VirtualAC.Settings(x, y, z, temp, fanspeed)
+    
+    --[[if isClient() then
+        local args = {x=x, y=y, z=z, targettemp = self.temperature, targetfan = self.fan}
         sendClientCommand(self.character, 'ac_commands', 'settings', args)
-    end
+    end]]
 
     if self.character:DistTo(self.object:getX(), self.object:getY()) > self.rangeLimit then
         self:setVisible(false);

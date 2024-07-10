@@ -95,6 +95,7 @@ function SurvivorAddedWeapons()
 			"Base.Pistol3",
 			"Base.Revolver",
 			"Base.P229",
+			"Base.MK2",
 			"Base.ShotgunSawnoffNoStock",
 			"Base.DoubleBarrelShotgunSawnoffNoStock",
 		},
@@ -114,6 +115,7 @@ function SurvivorAddedWeapons()
 			"Base.Glock18",
 			"Base.MAC10Folded",
 			"Base.MK23SOCOM",
+			"Base.MK2SD",
 		},
 	}
 
@@ -135,10 +137,14 @@ function SurvivorAddedWeapons()
 			"Base.SKS",
 			"Base.1022",
 			"Base.1022",
+			"Base.LeverRifle",
+			"Base.LeverRifle2",
+			"Base.CampCarbine",
 			"Base.Mini14Unfolded",
 			"Base.Mini14",
 			"Base.HuntingRifle",
 			"Base.VarmintRifle",
+			"Base.M2400_Shotgun",
 		},
 	}
 
@@ -353,7 +359,7 @@ function MilitaryAddedWeapons()
 		weaponLocation =  {"Rifle On Back"},
 		bloodLocations = nil,
 		addHoles = false,
-		daySurvived = 60,
+		daySurvived = 0,
 		weapons = {
 			"Base.CAR15D",
 			"Base.MP5SD",
@@ -467,7 +473,7 @@ function PoliceAddedWeapons()
 		weaponLocation =  {"Rifle On Back"},
 		bloodLocations = nil,
 		addHoles = false,
-		daySurvived = 60,
+		daySurvived = 0,
 		weapons = {
 			"Base.CAR15",
 			"Base.MP5SD",

@@ -32,13 +32,30 @@ ContextMenu_PL = {
 	ContextMenu_EvolvedRecipe_SapphCooking.PlateBlue_HuevosRancheros = "Dodaj",
 	ContextMenu_EvolvedRecipe_SapphCooking.PlateOrange_HuevosRancheros = "Dodaj",
 	ContextMenu_EvolvedRecipe_SapphCooking.PlateFancy_HuevosRancheros = "Dodaj",
+	ContextMenu_EvolvedRecipe_SapphCooking.DoughnutsEvolved = "Ciasto",
+	ContextMenu_EvolvedRecipe_SapphCooking.DoughnutsChocolateEvolved = "Ciasto czekoladowe",
+	ContextMenu_EvolvedRecipe_SapphCooking.EclairEvolved = "Eklerka",
+	ContextMenu_EvolvedRecipe_SapphCooking.EclairChocolateEvolved = "Eklerka czekoladowa",
+	ContextMenu_EvolvedRecipe_SapphCooking.EclairWhiteChocolateEvolved = "Eclair z białej czekolady",
+	ContextMenu_EvolvedRecipe_SapphCooking.BagelPlainEvolved = "Bajgiel",
+	ContextMenu_EvolvedRecipe_SapphCooking.HomemadeSauceEvolved = "Sos",
+	ContextMenu_EvolvedRecipe_SapphCooking.ChurrosEvolved = "Churrosy",
+	ContextMenu_EvolvedRecipe_SapphCooking.ChurrosChocolateEvolved = "Churrosy",
+	ContextMenu_EvolvedRecipe_SapphCooking.LettuceWrapEvolved = "Zawijana sałata",
+	ContextMenu_EvolvedRecipe_SapphCooking.StuffedPepperEvolved = "Papryka Faszerowana",
+	ContextMenu_EvolvedRecipe_SapphCooking.Cake_Chocolate = "Tort czekoladowy",
+	ContextMenu_EvolvedRecipe_SapphCooking.Cake_Carrot = "Tort marchewkowy",
+	ContextMenu_EvolvedRecipe_SapphCooking.Cake_BlackForest = "Tort Czarny Las",
+	ContextMenu_EvolvedRecipe_SapphCooking.Cake_RedVelvet = "Tort Red Velvet",
+	ContextMenu_EvolvedRecipe_SapphCooking.Cake_Strawberry = "Tort truskawkowy",
+	ContextMenu_EvolvedRecipe_SapphCooking.SapphCooking.MacaronPink = "Makaron",
+	ContextMenu_EvolvedRecipe_SapphCooking.SapphCooking.MacaronRed = "Makaron",
+	ContextMenu_EvolvedRecipe_SapphCooking.SapphCooking.MacaronBlue = "Makaron",
+	ContextMenu_EvolvedRecipe_SapphCooking.SapphCooking.MacaronGreen = "Makaron",
+	ContextMenu_EvolvedRecipe_SapphCooking.SapphCooking.MacaronYellow = "Makaron",
+	ContextMenu_EvolvedRecipe_SapphCooking.SapphCooking.MacaronPurple = ""Makaron",
 
-
-
-
-
-
-
+	ContextMenu_Sapph_WearTied = "Nosić w pasie",
 
 	ContextMenu_EvolvedRecipe_SapphCooking.MRE_1 = "Dodaj",
 	ContextMenu_EvolvedRecipe_SapphCooking.MRE_2 = "Dodaj",

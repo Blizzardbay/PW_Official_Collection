@@ -26,5 +26,4 @@ do -- simple injection
         end
         return r_old_fn(self, ...)
     end
-
 end

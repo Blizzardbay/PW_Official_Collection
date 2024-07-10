@@ -1,0 +1,9 @@
+Sandbox_FR = {
+    Sandbox_Navigation = "Navigation GPS",
+    Sandbox_Navigation_Voice = "Support vocal de la navigation GPS",
+    Sandbox_Navigation_Volume = "Reglage du volume GPS",
+    Sandbox_Navigation_GTA4_Voice = "Changer en voix GPS GTA4",
+    Sandbox_Navigation_R = "Navigation GPS rouge",
+    Sandbox_Navigation_G = "Navigation GPS verte",
+    Sandbox_Navigation_B = "Navigation GPS bleue",
+}

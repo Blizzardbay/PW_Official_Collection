@@ -18,20 +18,14 @@ function TATurnACOff:start()
 end
 
 function TATurnACOff:stop()
+    self.character:stopOrTriggerSound(self.sound)
 	ISBaseTimedAction.stop(self)
 end
 
 function TATurnACOff:perform()
     self.character:stopOrTriggerSound(self.sound)
     
-    self.object:setActivated(false)
-    
-    if isClient() then
-        local args = { x = self.object:getX(), y = self.object:getY(), z = self.object:getZ() }
-        sendClientCommand(self.character, 'ac_commands', 'toggle', args)
-    end
-
-    updateAC()
+    ACToggle(self.object, false, self.character)
 
 	ISBaseTimedAction.perform(self)
 end

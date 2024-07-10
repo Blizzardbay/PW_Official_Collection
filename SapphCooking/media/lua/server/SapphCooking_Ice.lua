@@ -2,7 +2,7 @@
 HUGE thanks to poltergeist, cause he basically did everything here! --]]
 
 --this checks if the power is on.
-function CheckPoweredSquare(square)
+local function CheckPoweredSquare(square)
 	return (SandboxVars.AllowExteriorGenerator and square:haveElectricity() or (SandboxVars.ElecShutModifier > -1 and GameTime:getInstance():getNightsSurvived() < SandboxVars.ElecShutModifier))
 end
 

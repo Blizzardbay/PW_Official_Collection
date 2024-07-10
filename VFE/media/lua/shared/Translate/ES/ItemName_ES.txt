@@ -14,11 +14,13 @@ ItemName_ES = {
 	
 	ItemName_Base.HuntingRifle = "Rifle R788",	
 	ItemName_Base.VarmintRifle = "Rifle R700",
-	ItemName_Base.SniperRifle = "Eifle de Francotirador M24",
+	ItemName_Base.SniperRifle = "Rifle de Francotirador M24",
 	
 	ItemName_Base.LeverRifle = "Carabina W1866",
+	ItemName_Base.LeverRifle2 = "Carabina R92-44",
 	
 	ItemName_Base.1022 = "Rifle R1022",
+	ItemName_Base.CampCarbine = "Carabina MC-45",
 	
 	ItemName_Base.Spas12 = "Escopeta SPAS-12",
 	ItemName_Base.Spas12Folded = "Escopeta SPAS-12",
@@ -54,14 +56,22 @@ ItemName_ES = {
 	ItemName_Base.MP5Folded = "Subfusil MP5",
 	ItemName_Base.MAC10Unfolded = "Subfusil M10",
 	ItemName_Base.MAC10Folded = "Subfusil M10",
+	ItemName_Base.UziUnfolded = "Subfusil Uzi",
+	ItemName_Base.UziFolded = "Subfusil Uzi",
 	
 	ItemName_Base.CAR15 = "Rifle de asalto CAR-15", 
 	ItemName_Base.CAR15Folded = "Rifle de asalto CAR-15", 
 	ItemName_Base.CAR15D = "Rifle de asalto CAR-15",
 	ItemName_Base.CAR15DFolded = "Rifle de asalto CAR-15 Delta",
 	
+	ItemName_Base.M60MMG = "Ametralladora M60",
+	ItemName_Base.M60MMG_Bipod = "Ametralladora M60",
+	
 	ItemName_Base.AssaultRifleBayonet = "Rifle de asalto M16", 
 	ItemName_Base.M16Bayonet = "Bayoneta M9", 
+	
+	ItemName_Base.AssaultRifleMasterkey = "Rifle de Asalto M16 con Masterkey",
+	ItemName_Base.AssaultRifleMasterkeyShotgun = "Rifle de Asalto M16 con Masterkey",
 	
 	ItemName_Base.FAL = "Rifle de combate FAL",
 	ItemName_Base.FALClassic = "Rifle de combate FAL",
@@ -69,12 +79,57 @@ ItemName_ES = {
 	ItemName_Base.AssaultRifle2 = "Rifle de combate M14",
 	ItemName_Base.AssaultRifleM1 = "Rifle M1",
 	
-	/*Ammo*/	
+	ItemName_Base.M2400_Shotgun = "Arma de Combinación M2400",
+	ItemName_Base.M2400_Rifle = "Arma de Combinación M2400",
+	
+	ItemName_Base.EntrenchingTool_Blade = "Herramienta de trinchera",
+	ItemName_Base.EntrenchingTool_Blunt = "Herramienta de trinchera",
+	ItemName_Base.EntrenchingTool_Folded = "Herramienta de trinchera",
+	ItemName_Base.EntrenchingToolBlack_Blade = "Herramienta de trinchera",
+	ItemName_Base.EntrenchingToolBlack_Blunt = "Herramienta de trinchera",
+	ItemName_Base.EntrenchingToolBlack_Folded = "Herramienta de trinchera",
+	
+	/*Ammo*/
+	ItemName_Base.556BattlePack = "Paquete de batalla 5.56",
+
 	ItemName_Base.762Box = "Caja de munición 7,62",
 	ItemName_Base.762Bullets = "Balas 7,62",
 
 	ItemName_Base.22Box = "Caja de munición ,22",
 	ItemName_Base.22Bullets = "Balas ,22",
+	
+	ItemName_Base.762Pack = "Paquete de cajas de 7.62",
+	ItemName_Base.308Pack = "Paquete de cajas de .308",
+	ItemName_Base.556Pack = "Paquete de cajas de 5.56",
+	ItemName_Base.223Pack = "Paquete de cajas de .223",
+	ItemName_Base.ShotgunShellsPack = "Paquete de cajas de cartuchos de escopeta",
+	ItemName_Base.9mmPack = "Paquete de cajas de 9mm",
+	ItemName_Base.22Pack = "Paquete de cajas de .22",
+	ItemName_Base.38Pack = "Paquete de cajas de .38 Special",
+	ItemName_Base.44Pack = "Paquete de cajas de .44 Magnum",
+	ItemName_Base.45Pack = "Paquete de cajas de .45 Auto",
+	
+	ItemName_Base.762Case = "Caja de cajas de 7.62",
+	ItemName_Base.308Case = "Caja de cajas de .308",
+	ItemName_Base.556Case = "Caja de cajas de 5.56",
+	ItemName_Base.223Case = "Caja de cajas de .223",
+	ItemName_Base.ShotgunShellsCase = "Caja de cajas de cartuchos de escopeta",
+	ItemName_Base.9mmCase = "Caja de cajas de 9mm",
+	ItemName_Base.22Case = "Caja de cajas de .22",
+	ItemName_Base.38Case = "Caja de cajas de .38 Special",
+	ItemName_Base.44Case = "Caja de cajas de .44 Magnum",
+	ItemName_Base.45Case = "Caja de cajas de .45 Auto",
+
+	ItemName_Base.762Crate = "Gran caja de cajas de 7.62",
+	ItemName_Base.308Crate = "Gran caja de cajas de .308",
+	ItemName_Base.556Crate = "Gran caja de cajas de 5.56",
+	ItemName_Base.223Crate = "Gran caja de cajas de .223",
+	ItemName_Base.ShotgunShellsCrate = "Gran caja de cajas de cartuchos de escopeta",
+	ItemName_Base.9mmCrate = "Gran caja de cajas de 9mm",
+	ItemName_Base.22Crate = "Gran caja de cajas de .22",
+	ItemName_Base.38Crate = "Gran caja de cajas de .38 Special",
+	ItemName_Base.44Crate = "Gran caja de cajas de .44 Magnum",
+	ItemName_Base.45Crate = "Gran caja de cajas de .45 Auto",
 	
 	/*Magazines*/
 	ItemName_Base.762Clip = "Cargador para balas de AK47",
@@ -82,6 +137,7 @@ ItemName_ES = {
 	
 	ItemName_Base.9mmClip20 = "Cargador para balas de TEC9",
 	ItemName_Base.9mmClip30 = "Cargador para balas de MP5",
+	ItemName_Base.9mmClip32 = "Cargador para balas de Uzi",
 	ItemName_Base.45Clip32 = "Cargador para balas de M10",
 	ItemName_Base.45Clip12 = "Cargador para balas de MK23",
 	
@@ -97,10 +153,15 @@ ItemName_ES = {
 	ItemName_Base.9mmClip16 = "Cargador para balas de CZ 75",
 	ItemName_Base.9mmClip17 = "Cargador para balas de G17",
 	
+	ItemName_Base.M60Belt = "Bolsa de cinturón M60",
+	ItemName_Base.M60_Link = "Enlace de Munición M13",
+	ItemName_Base.M60_Links_Box = "Caja de Enlaces de Munición M13",
+	
 	/*Attachments*/
 	ItemName_Base.Bipod = "Bípode",
 	ItemName_Base.IronSight = "Miras de Hierro Mejoradas",
 	ItemName_Base.ShellHolder = "Portacartuchos",
+	ItemName_Base.ShellStraps = "Correas de Cartuchos",
 	ItemName_Base.Coupled556 = "Cargador acoplado para balas de 5,56",
 	ItemName_Base.Coupled762 = "Cargador acoplado para balas de 7,62",
 	ItemName_Base.x2Scope_Fake = "Mira 2x",
@@ -108,10 +169,56 @@ ItemName_ES = {
 	ItemName_Base.x8Scope_Fake = "Mira 8x",
 	ItemName_Base.Sling = "Honda de Cuero",
 	ItemName_Base.Sling2 = "Honda de Nailon",
+	ItemName_Base.LightenedStock = "Culata Aligerada",
+	ItemName_Base.M60BrassCatcher = "Recogedor de casquillos",
+	
+	/*Multical Technical Attachments*/
+	ItemName_VFECombination.CombinationShotgunShellNoClip_1 = "Cartuchos de escopeta",
+	ItemName_VFECombination.Combination308NoClip_1 = "Cartuchos .308",
+	ItemName_VFECombination.CombinationM500ShotgunShellNoClip_1 = "M500 bajo cañón (1)",
+	ItemName_VFECombination.CombinationM500ShotgunShellNoClip_2 = "M500 bajo cañón (2)",
+	ItemName_VFECombination.CombinationM500ShotgunShellNoClip_3 = "M500 bajo cañón (3)",
+	ItemName_VFECombination.CombinationM500ShotgunShellNoClip_4 = "M500 bajo cañón (4)",
+	ItemName_VFECombination.Combination556M16NoClip_1 = "M16 con una en la recámara",
+	ItemName_VFECombination.Combination556M16Magazine_0 = "M16 con cargador (0)",
+	ItemName_VFECombination.Combination556M16Magazine_1 = "M16 con cargador (1)",
+	ItemName_VFECombination.Combination556M16Magazine_2 = "M16 con cargador (2)",
+	ItemName_VFECombination.Combination556M16Magazine_3 = "M16 con cargador (3)",
+	ItemName_VFECombination.Combination556M16Magazine_4 = "M16 con cargador (4)",
+	ItemName_VFECombination.Combination556M16Magazine_5 = "M16 con cargador (5)",
+	ItemName_VFECombination.Combination556M16Magazine_6 = "M16 con cargador (6)",
+	ItemName_VFECombination.Combination556M16Magazine_7 = "M16 con cargador (7)",
+	ItemName_VFECombination.Combination556M16Magazine_8 = "M16 con cargador (8)",
+	ItemName_VFECombination.Combination556M16Magazine_9 = "M16 con cargador (9)",
+	ItemName_VFECombination.Combination556M16Magazine_10 = "M16 con cargador (10)",
+	ItemName_VFECombination.Combination556M16Magazine_11 = "M16 con cargador (11)",
+	ItemName_VFECombination.Combination556M16Magazine_12 = "M16 con cargador (12)",
+	ItemName_VFECombination.Combination556M16Magazine_13 = "M16 con cargador (13)",
+	ItemName_VFECombination.Combination556M16Magazine_14 = "M16 con cargador (14)",
+	ItemName_VFECombination.Combination556M16Magazine_15 = "M16 con cargador (15)",
+	ItemName_VFECombination.Combination556M16Magazine_16 = "M16 con cargador (16)",
+	ItemName_VFECombination.Combination556M16Magazine_17 = "M16 con cargador (17)",
+	ItemName_VFECombination.Combination556M16Magazine_18 = "M16 con cargador (18)",
+	ItemName_VFECombination.Combination556M16Magazine_19 = "M16 con cargador (19)",
+	ItemName_VFECombination.Combination556M16Magazine_20 = "M16 con cargador (20)",
+	ItemName_VFECombination.Combination556M16Magazine_21 = "M16 con cargador (21)",
+	ItemName_VFECombination.Combination556M16Magazine_22 = "M16 con cargador (22)",
+	ItemName_VFECombination.Combination556M16Magazine_23 = "M16 con cargador (23)",
+	ItemName_VFECombination.Combination556M16Magazine_24 = "M16 con cargador (24)",
+	ItemName_VFECombination.Combination556M16Magazine_25 = "M16 con cargador (25)",
+	ItemName_VFECombination.Combination556M16Magazine_26 = "M16 con cargador (26)",
+	ItemName_VFECombination.Combination556M16Magazine_27 = "M16 con cargador (27)",
+	ItemName_VFECombination.Combination556M16Magazine_28 = "M16 con cargador (28)",
+	ItemName_VFECombination.Combination556M16Magazine_29 = "M16 con cargador (29)",
+	ItemName_VFECombination.Combination556M16Magazine_30 = "M16 con cargador (30)",
+	ItemName_VFECombination.Combination556M16Magazine_31 = "M16 con cargador (31)",
+
 	
 	/*Items*/
 	ItemName_Base.CleaningKit = "Kit de Limpieza de Armas",
 	ItemName_Base.FireKlean = "Lubricante para pistolas FireKlean",
+	ItemName_Base.M60_Link_Die = "Troquel de eslabón M13",
+	ItemName_Base.VFECraftingMag1 = "Vietnam: Potencia de fuego improvisada",
 	
 	/*Gun Cases*/
 	ItemName_Base.VFERifleCase1 = "Estuche de armas",
@@ -130,6 +237,10 @@ ItemName_ES = {
 	ItemName_Base.VFEPistolCase2 = "Estuche de armas",
 	ItemName_Base.VFEPistolCase3 = "Estuche de armas",
 	
+	ItemName_Base.VFEAmmoCanNarrow = "Caja de munición",
+	ItemName_Base.VFEAmmoCanNarrow_Toolkit = "Caja de munición",
+	ItemName_Base.VFEAmmoCanWide = "Caja de munición ancha",
+
 	/*Fake items for attachments*/
 	ItemName_Base.FakeItemSling = "todas las armas largas.",
 	ItemName_Base.FakeItemSights = "todas las armas.",

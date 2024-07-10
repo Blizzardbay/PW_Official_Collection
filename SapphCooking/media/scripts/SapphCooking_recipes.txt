@@ -56,30 +56,32 @@ module SapphCooking
 	recipe Cook Kung Pao Chicken in Wok Pan
 	{
 		[Recipe.GetItemTypes.SapphCookingChicken];20,
-		[Recipe.GetItemTypes.SapphCookingPepper];16,
+		[Recipe.GetItemTypes.SapphCookingPepper];10,
 		keep Fork/Spoon/Spatula/WoodenSpoon/PlasticSpork/Laddle,
 		[Recipe.GetItemTypes.SapphCookingSoysauce];4,
 		destroy WokPan_Oil,
 		Result 		: WokPan_KungPaoChicken,
-		Time 		: 300,
+		Time 		: 500,
 		SkillRequired 		: Cooking=3,
 		NeedToBeLearn 		: true,
 		Sound 		: WokCook,
 		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
-		Heat 		: -0.22,
-		AnimNode:Disassemble,
-		Prop1:Source=3,
-		Prop2:Cooking_WokPan,
+		Heat 		: -0.1,
+		AnimNode:Sapph_CookingWok,
+		Prop2:Source=3,
+		Prop1:Cooking_WokYakisoba,
 		CanBeDoneFromFloor 		: true,
 	}
 	recipe Make 2 Bowls of Kung Pao Chicken
 	{
-		WokPan_KungPaoChicken;40,
+		destroy WokPan_KungPaoChicken,
 		Bowl=2,
 		Result 		: BowlofKungPaoChicken=2,
 		NeedToBeLearn 		: false,
 		Time 		: 80.0,
+		OnCreate:Recipe.OnCreate.MakeBowlofFood2Wok,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 	}
@@ -97,7 +99,7 @@ module SapphCooking
 		NeedToBeLearn 		: true,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		AnimNode:Disassemble,
 		Prop1:Source=4,
 		Prop2:Cooking_ShuiZhuYu,
@@ -114,9 +116,8 @@ module SapphCooking
 	}
 	recipe Make Saucepan of Japanese Chicken Curry
 	{
-		HomemadeKetchup;10,
-		CurryPowder;5,
-		Butter;5,
+		[Recipe.GetItemTypes.SapphCookingTomatoSauce];10,
+		CurryPowder;2,
 		DicedCarrots=1,
 		CutPeeledPotato=2,
 		[Recipe.GetItemTypes.SapphCookingChicken];20,
@@ -137,22 +138,21 @@ module SapphCooking
 	}
 	recipe Cook Borscht in Saucepan with Stock
 	{
-		HomemadeKetchup;10,
-		OpenCanofBeets;10,
-		DicedCarrots=1,
-		CutPeeledPotato;12,
-		[Recipe.GetItemTypes.SapphCookingMincedMeat];15,
-		CreamCheese;5,
+		[Recipe.GetItemTypes.SapphCookingTomatoSauce];10,
+		OpenCanofBeets;8,
+		[Recipe.GetItemTypes.SapphCookingMincedMeat];5,
+		[Recipe.GetItemTypes.SapphCookingCheese];2,
 		[Recipe.GetItemTypes.SapphCookingSalt];2,
 		keep Spoon/Fork/MetalWhisk/WoodenSpoon,
 		destroy SaucepanwithStock,
-		Result 		: SaucepanwithBorscht,
+		Result 		: SaucepanwithBorschtPrep,
 		Time 		: 300,
 		Category 		: Cooking,
 		SkillRequired 		: Cooking=4,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
 		NeedToBeLearn 		: true,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		CanBeDoneFromFloor 		: true,
 		AnimNode:Disassemble,
 		Prop1:Source=8,
@@ -160,22 +160,26 @@ module SapphCooking
 	}
 	recipe Make 2 Bowls of Japanese Curry
 	{
-		SaucepanwithJapaneseCurryCooked;50,
+		destroy SaucepanwithJapaneseCurry,
 		Bowl=2,
 		Result 		: BowlofJapaneseCurry=2,
 		Time 		: 80.0,
+		OnCreate:Recipe.OnCreate.MakeBowlofFood2Saucepan,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 	}
 	recipe Make 2 Bowls of Borscht
 	{
-		SaucepanwithBorscht;60,
+		destroy SaucepanwithBorscht,
 		Bowl=2,
 		Result 		: BowlofBorscht=2,
 		Time 		: 80.0,
 		Category 		: Cooking,
+		OnCreate: Recipe.OnCreate.MakeBowlofFood2Saucepan,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 	}
+	/**Obsolete**/
 	recipe Put Rice in Bowl of Japanese Curry
 	{
 		destroy BowlofJapaneseCurry=1,
@@ -184,6 +188,7 @@ module SapphCooking
 		Time 		: 80.0,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
+		obsolete:true,
 	}
 	recipe Dip Bread in Curry Bowl
 	{
@@ -195,13 +200,15 @@ module SapphCooking
 		OnGiveXP 		: NoXP_OnGiveXP,
 		StopOnWalk 		: true,
 		CanBeDoneFromFloor 		: true,
+		obsolete:true,
 	}
+	/**Obsolete**/
 	recipe Make Saucepan of Chicken Stroganoff
 	{
-		HomemadeKetchup;10,
-		Mustard;4,
+		[Recipe.GetItemTypes.SapphCookingTomatoSauce];8,
+		Mustard;2,
 MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5/MushroomGeneric6/MushroomGeneric7,
-		[Recipe.GetItemTypes.SapphCookingChicken];20,
+		[Recipe.GetItemTypes.SapphCookingChicken];5,
 		keep Spoon/Fork/MetalWhisk/WoodenSpoon,
 		[Recipe.GetItemTypes.SapphCookingMilk];5,
 		[Recipe.GetItemTypes.SapphCookingSalt];2,
@@ -217,7 +224,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Make 2 Bowls of Chicken Stroganoff
 	{
-		SaucepanwithChickenStroganoff;60,
+		destroy SaucepanwithChickenStroganoff,
 		Bowl=2,
 		Result 		: BowlofChickenStroganoff=2,
 		Time 		: 80.0,
@@ -484,7 +491,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	{
 		VodkaFull;5,
 		destroy LowballGlass,
-		HomemadeKetchup;5,
+		[Recipe.GetItemTypes.SapphCookingTomatoSauce];5,
 		HotsaucePacket;2,
 		Result 		: LowballGlassBloodyMary,
 		Time 		: 80.0,
@@ -537,8 +544,9 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Time 		: 250.0,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
+		OnCreate: Recipe.OnCreate.SapphAutoCook,
 		Sound 		: FilterDrip,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 	}
 	recipe Brew Coffee2
 	{
@@ -551,9 +559,11 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Time 		: 250.0,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
+		OnCreate: Recipe.OnCreate.SapphAutoCook,
 		Sound 		: FilterDrip,
 		CanBeDoneFromFloor 		: true,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
+		IsHidden:true,
 	}
 	recipe Brew Coffee3
 	{
@@ -566,9 +576,11 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Time 		: 250.0,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
+		OnCreate: Recipe.OnCreate.SapphAutoCook,
 		Sound 		: FilterDrip,
 		CanBeDoneFromFloor 		: true,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
+		IsHidden:true,
 	}
 	recipe Brew Coffee4
 	{
@@ -581,9 +593,11 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Time 		: 250,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
+		OnCreate: Recipe.OnCreate.SapphAutoCook,
 		Sound 		: FilterDrip,
 		CanBeDoneFromFloor 		: true,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
+		IsHidden:true,
 	}
 	recipe Brew Coffee5
 	{
@@ -596,11 +610,13 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Time 		: 250.0,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
+		OnCreate: Recipe.OnCreate.SapphAutoCook,
 		Sound 		: FilterDrip,
 		CanBeDoneFromFloor 		: true,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Prop2:Source=5,
 		Prop1:Source=4,
+		IsHidden:true,
 	}
 	recipe Make An Glass of Rum
 	{
@@ -649,7 +665,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Make Milk3
 	{
 		destroy WaterColaBottle,
-		CanofPowderedMilk,
+		CanofPowderedMilk;4,
 		Result 		: ColaBottlewithMilk,
 		Time 		: 80.0,
 		Category 		: Cooking,
@@ -659,7 +675,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Make Protein Shake4
 	{
 		destroy WaterColaBottle,
-		CanofProteinPowder,
+		CanofProteinPowder;5,
 		Result 		: ColaBottlewithProteinShake,
 		Time 		: 80.0,
 		Category 		: Cooking,
@@ -689,7 +705,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Brew Coffee on Thermos
 	{
-		destroy GrindedCoffee=5,
+		destroy GrindedCoffee=4,
 		destroy CoffeeFilter,
 		destroy EmptyThermos,
 		Water=5,
@@ -699,17 +715,18 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Time 		: 500,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
+		OnCreate: Recipe.OnCreate.SapphAutoCook,
 		Sound 		: FilterDrip,
 		CanBeDoneFromFloor 		: true,
 		StopOnWalk 		: false,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Prop1:Source=4,
 		Prop2:Cooking_CoffeeThermos,
 	}
 
 	recipe Make a Mug of Coffee Thermos1
 	{
-		[Recipe.GetItemTypes.SapphCookingThermos];10,
+		[Recipe.GetItemTypes.SapphCookingThermos];5,
 		destroy Mugl,
 		Result 		: MugCoffee,
 		Time 		: 150,
@@ -721,10 +738,11 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		OnCreate:Recipe.OnCreate.ThermosCups,
 		Prop1:H_CoffeeThermos,
 		Prop2:Source=2,
+		IsHidden:true,
 	}
 	recipe Make a Mug of Coffee Thermos2
 	{
-		[Recipe.GetItemTypes.SapphCookingThermos];10,
+		[Recipe.GetItemTypes.SapphCookingThermos];5,
 		destroy MugWhite,
 		Result 		: MugCoffee2,
 		Time 		: 150,
@@ -736,10 +754,11 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		OnCreate:Recipe.OnCreate.ThermosCups,
 		Prop1:H_CoffeeThermos,
 		Prop2:Source=2,
+		IsHidden:true,
 	}
 	recipe Make a Mug of Coffee Thermos3
 	{
-		[Recipe.GetItemTypes.SapphCookingThermos];10,
+		[Recipe.GetItemTypes.SapphCookingThermos];5,
 		destroy MugRed,
 		Result 		: MugCoffee3,
 		Time 		: 150,
@@ -751,10 +770,11 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		OnCreate:Recipe.OnCreate.ThermosCups,
 		Prop1:H_CoffeeThermos,
 		Prop2:Source=2,
+		IsHidden:true,
 	}
 	recipe Make a Mug of Coffee Thermos4
 	{
-		[Recipe.GetItemTypes.SapphCookingThermos];10,
+		[Recipe.GetItemTypes.SapphCookingThermos];5,
 		destroy MugSpiffo,
 		Result 		: MugCoffee4,
 		Time 		: 150,
@@ -766,10 +786,11 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		OnCreate:Recipe.OnCreate.ThermosCups,
 		Prop1:H_CoffeeThermos,
 		Prop2:Source=2,
+		IsHidden:true,
 	}
 	recipe Make a Cup of Coffee Thermos
 	{
-		[Recipe.GetItemTypes.SapphCookingThermos];10,
+		[Recipe.GetItemTypes.SapphCookingThermos];5,
 		destroy LowballGlass,
 		Result 		: LowBallGlassCoffee,
 		Time 		: 150,
@@ -781,6 +802,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		StopOnWalk 		: false,
 		Prop1:H_CoffeeThermos,
 		Prop2:Source=2,
+		IsHidden:true,
 	}
 	recipe Cook Tortellini
 	{
@@ -794,7 +816,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		SkillRequired 		: Cooking=2,
 		NeedToBeLearn 		: true,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		CanBeDoneFromFloor 		: true,
 		Prop2:Cooking_SaucepanOil,
 	}
@@ -809,7 +831,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		OnCreate: Recipe.OnCreate.PreparePasta,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		SkillRequired 		: Cooking=2,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		NeedToBeLearn 		: true,
 		CanBeDoneFromFloor 		: true,
 		Prop2:Cooking_SaucepanOil,
@@ -821,6 +843,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Result 		: BowlofTortellini=2,
 		Time 		: 80.0,
 		OnCreate: Recipe.OnCreate.MakeBowlofFood2Saucepan,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 	}
@@ -831,6 +854,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Result 		: BowlofRavioli=2,
 		Time 		: 80.0,
 		OnCreate: Recipe.OnCreate.MakeBowlofFood2Saucepan,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 	}
@@ -850,29 +874,30 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Fry Schnitzel
 	{
 		BreadedTenderizedMeat,
-		keep KitchenTongs/Fork/Chopsticks,
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
 		SaucepanwithOil,
 		CanBeDoneFromFloor 		: true,
 		Result 		: Schnitzel,
 		Time 		: 250,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Category 		: Cooking,
-		OnCreate:Recipe.OnCreate.FryingBatter,
+		OnCreate:Recipe.OnCreate.FryingCooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		Sound 		: FryingSounds,
 		Prop2:Cooking_SaucepanOil,
 	}
 	recipe Fry Small Bird Meat
 	{
-		keep KitchenTongs/Fork/Chopsticks,
-		destroy SmallBirdMeatinBatter=3,
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
+		FryBatter;1,
+		[Recipe.GetItemTypes.SapphCookingFriedChickenRecipe]=1,
 		SaucepanwithOil,
 		CanBeDoneFromFloor 		: true,
-		Result 		: FriedBirdMeat=3,
+		Result 		: FriedBirdMeat=1,
 		Time 		: 250,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Category 		: Cooking,
-		OnCreate:Recipe.OnCreate.FryingBatter,
+		OnCreate:Recipe.OnCreate.FryingCooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		Sound 		: FryingSounds,
 		AnimNode:Disassemble,
@@ -891,19 +916,37 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Cook Omelette
 	{
-		BowlwithBeatenEggs;14,
+		[Recipe.GetItemTypes.SapphCookingEgg]=2,
 		FryingPanwithOil,
 		keep Spatula/Spoon/Fork/ButterKnife/PlasticSpork,
 		Result 		: EggOmelette,
 		Time 		: 100,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
 		SkillRequired 		: Cooking=1,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		CanBeDoneFromFloor 		: true,
-		AnimNode:Disassemble,
-		Prop1: Source=3,
-		Prop2: Cooking_FryingPanOil,
+		AnimNode:Sapph_CookingWok,
+		Prop2: Source=3,
+		Prop1: Cooking_FryingPanOmelette,
+	}
+	recipe Cook Omelette
+	{
+		[Recipe.GetItemTypes.SapphCookingEgg]=2,
+		WokPan_Oil,
+		keep Spatula/Spoon/Fork/ButterKnife/PlasticSpork,
+		Result 		: EggOmelette,
+		Time 		: 100,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
+		SkillRequired 		: Cooking=1,
+		Heat 		: -0.1,
+		CanBeDoneFromFloor 		: true,
+		AnimNode:Sapph_CookingWok,
+		Prop2: Source=3,
+		Prop1: Cooking_WokOmelette,
 	}
 	recipe Make Tuna Sandwich
 	{
@@ -926,9 +969,10 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Category 		: Cooking,
 		Time 		: 100,
 	}
+	/**OBSOLETE!**/
 	recipe Submerge Small Bird Meat in Batter
 	{
-		FryBatter,
+		FryBatter;1,
 		Smallbirdmeat,
 		Result 		: SmallBirdMeatinBatter=3,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
@@ -936,6 +980,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		OnCreate:Recipe.OnCreate.FryingBatter,
 		Time 		: 100,
 		Sound 		: Battersound,
+		Obsolete:true,
 	}
 	recipe Fill Saucepan with Oil
 	{
@@ -948,13 +993,14 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Take Candy Cigarette from Pack
 	{
-		PackofCandyCigarretes,
+		PackofCandyCigarretes;2,
 		Result 		: CandyCigarette,
 		Time 		: 30.0,
 		NeedToBeLearn 		: false,
 		OnGiveXP 		: NoXP_OnGiveXP,
 		CanBeDoneFromFloor 		: false,
 		StopOnWalk 		: false,
+		Prop2: H_CigaretteBox,
 	}
 	recipe Make Hotdog
 	{
@@ -964,31 +1010,32 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Result 		: HotdogCustom,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		OnCreate:Recipe.OnCreate.HotdogEvolved,
-		OnTest:Recipe.OnTest.WholeSlicedVegetables,
 		Category 		: Cooking,
 		Time 		: 100,
 	}
 	recipe Submerge Sausage in Batter
 	{
-		FryBatter,
+		FryBatter;1,
 		[Recipe.GetItemTypes.SapphCookingSausages]=1,
 		Result 		: SausageinBatter,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.FryingBatter,
 		Category 		: Cooking,
 		Time 		: 100,
 		Sound 		: Battersound,
 	}
 	recipe Fry Sausage
 	{
-		keep KitchenTongs/Fork/Chopsticks,
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
 		SausageinBatter,
 		SaucepanwithOil,
 		CanBeDoneFromFloor 		: true,
 		Result 		: Corndog,
 		Time 		: 250,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
+		OnCreate:Recipe.OnCreate.FryingCooking,
 		Sound 		: FryingSounds,
 		AnimNode:Disassemble,
 		Prop1: Source=1,
@@ -1012,7 +1059,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	{
 		OpenCanofKernelCorn;10,
 		destroy Saucepan,
-		Butter;5,
+		Butter;1,
 		Result 		: SaucepanwithKernelCorn,
 		Time 		: 100,
 		Category 		: Cooking,
@@ -1021,35 +1068,39 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Open Can of Kernel Corn
 	{
 		CanofKernelCorn,
-		keep [Recipe.GetItemTypes.CanOpener],
+		keep [Recipe.GetItemTypes.CanOpener]/[Recipe.GetItemTypes.SapphCookingKnifes],
 		Result 		: OpenCanofKernelCorn,
 		Time 		: 80.0,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 		Sound 		: OpenCannedFood,
 	}
+	/**OBSOLETE!**/
 	recipe Submerge Dead Rat in Batter
 	{
-		FryBatter,
+		FryBatter;1,
 		DeadRat,
 		Result 		: DeadRatinBatter,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking3,
 		Category 		: Cooking,
 		Time 		: 100,
 		Sound 		: Battersound,
+		Obsolete:true,
 	}
 	recipe Fry Rat
 	{
-		keep KitchenTongs/Fork/Chopsticks,
-		DeadRatinBatter,
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
+		DeadRat,
+		FryBatter;1,
 		SaucepanwithOil,
 		CanBeDoneFromFloor 		: true,
 		Result 		: FriedRat,
 		Time 		: 250,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		Sound 		: FryingSounds,
+		OnCreate:Recipe.OnCreate.FryingCooking,
 		AnimNode:Disassemble,
 		Prop1: Source=1,
 		Prop2:Cooking_SaucepanOil,
@@ -1057,7 +1108,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Put Oil in Frying Pan
 	{
 		destroy Pan,
-		[Recipe.GetItemTypes.SapphCookingOil];2,
+		[Recipe.GetItemTypes.SapphCookingOil]/[Recipe.GetItemTypes.BakingFat];2,
 		Result 		: FryingPanwithOil,
 		OnGiveXP 		: NoXP_OnGiveXP,
 		Category 		: Cooking,
@@ -1083,7 +1134,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Make Homemade Ketchup
 	{
 		[Recipe.GetItemTypes.SapphCookingSugar];2,
-		Vinegar;5,
+		Vinegar;2,
 		keep MortarPestle,
 		destroy Bowl,
 		Tomato=3,
@@ -1106,16 +1157,17 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		SkillRequired 		: Cooking=2,
 		Sound 		: WhiskBowl,
 		StopOnWalk 		: false,
+		obsolete:true,
 	}
 	recipe Fry Potato Fries
 	{
-		keep KitchenTongs/Fork/Chopsticks,
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
 		CutPeeledPotato,
 		SaucepanwithOil,
 		CanBeDoneFromFloor 		: true,
 		Result 		: HomemadeFries,
 		Time 		: 250,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		Sound 		: FryingSounds,
@@ -1125,17 +1177,18 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Make 2 Bowls of Fried Rice
 	{
-		FryingPanFriedRiceEvolved,
+		destroy FryingPanFriedRiceEvolved,
 		Bowl=2,
 		Result 		: BowlofFriedRice=2,
 		Time 		: 80.0,
 		OnCreate:Recipe.OnCreate.MakeBowlofFood2Pan,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 	}
 	recipe Place Arborio Rice in Saucepan
 	{
-		ArborioRice;20,
+		ArborioRice;10,
 		destroy WaterSaucepan,
 		Result 		: WaterSaucepanArborioRice,
 		Time 		: 50.0,
@@ -1144,7 +1197,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Place Brown Rice in Saucepan
 	{
-		BrownRice;20,
+		BrownRice;10,
 		destroy WaterSaucepan,
 		Result 		: WaterSaucepanBrownRice,
 		Time 		: 50.0,
@@ -1170,9 +1223,9 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		CanBeDoneFromFloor 		: true,
-		AnimNode:Disassemble,
-		Prop1: Source=1,
-		Prop2: Cooking_FryingPanRice,
+		AnimNode:Sapph_CookingWok,
+		Prop2: Source=1,
+		Prop1: Cooking_FryingPanRice,
 	}
 	recipe Make a Bowl of Spaguetti
 	{
@@ -1182,12 +1235,13 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Time 		: 80.0,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
 	}
 	recipe Cook Risotto
 	{
 		destroy SaucepanwithStock,
-		ParmesanCheese;5,
-		Wine;5,
+		[Recipe.GetItemTypes.SapphCookingCheese];2,
+		Wine;2,
 		ArborioRice;10,
 		keep Fork/Spoon/Spatula/WoodenSpoon/PlasticSpork,
 		Result 		: SaucepanwithRisotto,
@@ -1195,8 +1249,9 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Category 		: Cooking,
 		NeedToBeLearn 		: true,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
 		SkillRequired 		: Cooking=2,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		AnimNode:Disassemble,
 		Prop1:Source=5,
 		Prop2:Cooking_SaucepanOil,
@@ -1204,9 +1259,10 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Make 2 Bowls of Risotto
 	{
-		SaucepanwithRisotto,
+		destroy SaucepanwithRisotto,
 		Bowl=2,
 		Result 		: BowlofRisotto=2,
+		OnCreate:Recipe.OnCreate.MakeBowlofFood2Saucepan,
 		Time 		: 80.0,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
@@ -1234,7 +1290,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Open Canned Bread
 	{
 		CannedBread,
-		keep [Recipe.GetItemTypes.CanOpener],
+		keep [Recipe.GetItemTypes.CanOpener]/[Recipe.GetItemTypes.SapphCookingKnifes],
 		Result 		: Bread,
 		Time 		: 80.0,
 		Category 		: Cooking,
@@ -1284,13 +1340,13 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Fry Nachos
 	{
-		keep KitchenTongs/Fork/Chopsticks,
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
 		CutTortilla=3,
 		SaucepanwithOil,
 		CanBeDoneFromFloor 		: true,
 		Result 		: TortillaChips=1,
 		Time 		: 250,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		Sound 		: FryingSounds,
@@ -1320,7 +1376,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Make Bowl of Guacamole
 	{
-		Pepper;5,
+		[Recipe.GetItemTypes.SapphCookingPepper];2,
 		[Recipe.GetItemTypes.SapphCookingSalt];5,
 		Bowl,
 		Avocado,
@@ -1361,6 +1417,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		CanBeDoneFromFloor 		: false,
 		StopOnWalk 		: true,
 		CanBeDoneFromFloor 		: true,
+		IsHidden:true,
 	}
 	recipe Dip Nacho in Saucepan of Queso
 	{
@@ -1373,11 +1430,12 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		CanBeDoneFromFloor 		: false,
 		StopOnWalk 		: true,
 		CanBeDoneFromFloor 		: true,
+		IsHidden:true,
 	}
 	recipe Make Milk
 	{
 		destroy WaterBottleFull,
-		CanofPowderedMilk,
+		CanofPowderedMilk;4,
 		Result 		: BottlewithMilk,
 		Time 		: 80.0,
 		Category 		: Cooking,
@@ -1387,7 +1445,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Make Milk2
 	{
 		destroy WaterPopBottle,
-		CanofPowderedMilk,
+		CanofPowderedMilk;4,
 		Result 		: PopbottlewithMilk,
 		Time 		: 80.0,
 		Category 		: Cooking,
@@ -1420,7 +1478,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Make Protein Shake
 	{
 		destroy WaterBottleFull,
-		CanofProteinPowder,
+		CanofProteinPowder;5,
 		Result 		: BottlewithProteinShake,
 		Time 		: 80.0,
 		Category 		: Cooking,
@@ -1430,7 +1488,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Make Protein Shake2
 	{
 		destroy WaterPopBottle,
-		CanofProteinPowder,
+		CanofProteinPowder;5,
 		Result 		: PopBottlewithProteinShake,
 		Time 		: 80.0,
 		Category 		: Cooking,
@@ -1440,7 +1498,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Make Protein Shake
 	{
 		destroy WaterBleachBottle,
-		CanofProteinPowder;2,
+		CanofProteinPowder;6,
 		Result 		: BleachBottlewithProteinShake,
 		Time 		: 80.0,
 		Category 		: Cooking,
@@ -1467,7 +1525,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Make Mashed Potato
 	{
-		Butter;5,
+		Butter;2,
 		keep Spoon/Fork/MetalWhisk/WoodenSpoon,
 		destroy SaucepanwithCookedCutPotatoes,
 		[Recipe.GetItemTypes.SapphCookingMilk];10,
@@ -1489,10 +1547,11 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Make 2 Bowls of Noodle Soup
 	{
-		SaucepanwithNoodleSoup;30,
+		destroy SaucepanwithNoodleSoup,
 		Bowl=2,
 		Result 		: SapphNoodleSoup=2,
 		Time 		: 80.0,
+		OnCreate:Recipe.OnCreate.MakeBowlofFood2Saucepan,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 	}
@@ -1526,13 +1585,13 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Fry Doughnut
 	{
-		keep KitchenTongs/Fork/Chopsticks,
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
 		DoughnutShapedDough,
 		SaucepanwithOil,
 		CanBeDoneFromFloor 		: true,
 		Result 		: DoughnutPlain,
 		Time 		: 250,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		Sound 		: FryingSounds,
@@ -1542,7 +1601,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Put Chocolate in Saucepan
 	{
-		Chocolate,
+		[Recipe.GetItemTypes.SapphCookingChocolate];6,
 		destroy Saucepan,
 		Result 		: SaucepanChocolate,
 		Time 		: 150,
@@ -1592,7 +1651,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	{
 		OpenCanofKernelCorn,
 		destroy Saucepan,
-		Butter;5,
+		Butter;1,
 		[Recipe.GetItemTypes.SapphCookingSugar];2,
 		Result 		: SaucepanwithSugarKernels,
 		Time 		: 100,
@@ -1601,7 +1660,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Make Pasta Dough
 	{
-		BowlwithBeatenEggs;10,
+		[Recipe.GetItemTypes.SapphCookingEgg]=1,
 		keep RollingPin,
 		Flour,
 		Result 		: PastaDough,
@@ -1697,12 +1756,12 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		SkillRequired 		: Cooking=2,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		CanBeDoneFromFloor 		: true,
 		AnimNode:Disassemble,
 		Prop1: Source=5,
 		Prop2: Cooking_BeefStew,
-		OnTest:Recipe.OnTest.WholeSlicedVegetables,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
 	}
 	recipe Cook Beef Stew with Canned Vegetables
 	{
@@ -1717,11 +1776,12 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		SkillRequired 		: Cooking=2,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		CanBeDoneFromFloor 		: true,
 		AnimNode:Disassemble,
 		Prop1: Source=6,
 		Prop2: Cooking_BeefStew,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
 	}
 	recipe Make Vegetable Broth
 	{
@@ -1735,10 +1795,11 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Make 2 Bowls of Beef Stew
 	{
-		SaucepanwithBeefStew;60,
+		destroy SaucepanwithBeefStew,
 		Bowl=2,
 		Result 		: BowlofBeefStew=2,
 		Time 		: 80.0,
+		OnCreate:Recipe.OnCreate.MakeBowlofFood2Saucepan,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 	}
@@ -1760,7 +1821,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	{
 		keep [Recipe.GetItemTypes.CanOpener],
 		destroy CannedPotato2/CannedPotato,
-		Butter;5,
+		Butter;1,
 		keep Spoon/Fork/MetalWhisk/WoodenSpoon,
 		destroy Saucepan,
 		[Recipe.GetItemTypes.SapphCookingMilk];10,
@@ -1782,18 +1843,19 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Cook Refried Beans
 	{
-		BeanBowl;25,
+		BeanBowl;8,
 		keep Fork/Spoon/Spatula/WoodenSpoon/PlasticSpork,
 		FryingPanwithOil,
 		Result 		: RefriedBeans,
 		Time 		: 200,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		CanBeDoneFromFloor 		: true,
-		AnimNode:Disassemble,
-		Prop1: Source=2,
-		Prop2: Cooking_FryingPanOil,
+		AnimNode:Sapph_CookingWok,
+		Prop2: Source=2,
+		Prop1: Cooking_FryingPanRefriedBean,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
 
 	}
 	recipe Cut Pasta Dough into Sheets
@@ -1808,7 +1870,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Roll out Croissaint Dough
 	{
-		Butter;5,
+		Butter;1,
 		keep RollingPin,
 		DoughRolled,
 		Result 		: CroissaintDough=3,
@@ -1835,6 +1897,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Time 		: 80.0,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
+		obsolete:true,
 	}
 	recipe Dip Nacho in Bowl of Refried Beans
 	{
@@ -1847,11 +1910,12 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		CanBeDoneFromFloor 		: false,
 		StopOnWalk 		: true,
 		CanBeDoneFromFloor 		: true,
+		obsolete:true,
 	}
 	recipe Open Can of Refried Beans
 	{
 		CanofRefriedBeans,
-		keep [Recipe.GetItemTypes.CanOpener],
+		keep [Recipe.GetItemTypes.CanOpener]/[Recipe.GetItemTypes.SapphCookingKnifes],
 		Result 		: RefriedBeans=2,
 		Time 		: 80.0,
 		Category 		: Cooking,
@@ -1860,15 +1924,15 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Fry Fish Fillet
 	{
-		keep KitchenTongs/Fork/Chopsticks,
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
 		FishFilletinBatter,
 		SaucepanwithOil,
 		CanBeDoneFromFloor 		: true,
 		Result 		: FishFried,
 		Time 		: 250,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Category 		: Cooking,
-		OnCreate:Recipe.OnCreate.FryingBatter,
+		OnCreate:Recipe.OnCreate.FryingCooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		Sound 		: FryingSounds,
 		AnimNode:Disassemble,
@@ -1877,7 +1941,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Submerge Fish Fillet in Batter
 	{
-		FryBatter,
+		FryBatter;1,
 		FishFillet,
 		Result 		: FishFilletinBatter,
 		OnCreate:Recipe.OnCreate.FryingBatter,
@@ -1886,19 +1950,21 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Time 		: 100,
 		Sound 		: Battersound,
 	}
+	/**OBSOLETE!!**/
 	recipe Submerge Chicken Slice in Batter
 	{
 		SlicedChicken;15,
-		FryBatter,
+		FryBatter;1,
 		Result 		: SlicedChickenBatter=1,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking3,
 		Category 		: Cooking,
 		Time 		: 100,
 		Sound 		: Battersound,
+		Obsolete:true,
 	}
 	recipe Cook Scrambled Eggs
 	{
-		BowlwithBeatenEggs;7,
+		[Recipe.GetItemTypes.SapphCookingEgg]=2,
 		FryingPanwithOil,
 		keep Spatula/Spoon/Fork/ButterKnife/PlasticSpork,
 		Result 		: Base.EggScrambled,
@@ -1906,20 +1972,39 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		SkillRequired 		: Cooking=1,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		CanBeDoneFromFloor 		: true,
-		AnimNode:Disassemble,
-		Prop1: Source=3,
-		Prop2: Cooking_FryingPanOil,
+		AnimNode:Sapph_CookingWok,
+		Prop2: Source=3,
+		Prop1: Cooking_FryingPanOmelette,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
+	}
+	recipe Cook Scrambled Eggs
+	{
+		[Recipe.GetItemTypes.SapphCookingEgg]=2,
+		WokPan_Oil,
+		keep Spatula/Spoon/Fork/ButterKnife/PlasticSpork,
+		Result 		: Base.EggScrambled,
+		Time 		: 100,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
+		SkillRequired 		: Cooking=1,
+		Heat 		: -0.1,
+		CanBeDoneFromFloor 		: true,
+		AnimNode:Sapph_CookingWok,
+		Prop2: Source=3,
+		Prop1: Cooking_WokOmelette,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
 	}
 	recipe Make Meatballs
 	{
-		[Recipe.GetItemTypes.SapphCookingEgg];7,
-		[Recipe.GetItemTypes.SapphCookingMincedMeat];40,
+		[Recipe.GetItemTypes.SapphCookingEgg]=1,
+		[Recipe.GetItemTypes.SapphCookingMincedMeat]=1,
 		Result 		: Meatballs=2,
 		Time 		: 200,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking3,
+		OnCreate: Recipe.OnCreate.MeatDivide2,
 		CanBeDoneFromFloor 		: true,
 	}
 	recipe Make Pan of Spaguetti
@@ -1931,7 +2016,6 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Time 		: 100,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
-		OnTest:Recipe.OnTest.WholeSlicedVegetables,
 	}
 	recipe Make Spaguetti and Meatballs
 	{
@@ -1972,11 +2056,10 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Result 		: SushiRecipe=1,
 		Category 		: Cooking,
 		Time 		: 150,
-		OnTest:Recipe.OnTest.WholeSlicedVegetables,
 	}
 	recipe Make 2 Bowls of Mashed Potatoes
 	{
-		SaucepanwithMashedPotatoes;40,
+		destroy SaucepanwithMashedPotatoes,
 		Bowl=2,
 		Result 		: BowlofMashedPotatoes=2,
 		Time 		: 80.0,
@@ -2009,26 +2092,30 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		FryingPanwithOil,
 		[Recipe.GetItemTypes.SapphCookingEgg];7,
 		Result 		: FriedEgg,
-		Time 		: 150,
+		Time 		: 250,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
+		AnimNode:Sapph_CookingWok,
 		CanBeDoneFromFloor 		: true,
 		Sound 		: FryingSounds,
-		Prop2: Cooking_FryingPanOil,
+		Prop1: Cooking_FryingPanEggs,
 	}
 	recipe Fry Egg2
 	{
 		WokPan_Oil,
 		[Recipe.GetItemTypes.SapphCookingEgg];7,
 		Result 		: FriedEgg,
-		Time 		: 150,
+		Time 		: 250,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		CanBeDoneFromFloor 		: true,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
 		Sound 		: FryingSounds,
-		Prop2: Cooking_WokPan,
+		AnimNode:Sapph_CookingWok,
+		Prop1: Cooking_WokFriedEgg,
 	}
 	recipe Cook Chicken Noodle Soup
 	{
@@ -2038,7 +2125,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		keep Fork/Spoon/Spatula/WoodenSpoon/PlasticSpork,
 		Result 		: SaucepanwithNoodleSoup,
 		Time 		: 150,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		SkillRequired 		: Cooking=2,
@@ -2046,6 +2133,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Prop1: Source=4,
 		Prop2:Cooking_SaucepanOil,
 		CanBeDoneFromFloor 		: true,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
 	}
 	recipe Cook Minced Beef Stew
 	{
@@ -2059,12 +2147,12 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		SkillRequired 		: Cooking=2,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		AnimNode:Disassemble,
 		Prop1: Source=5,
 		Prop2: Cooking_BeefStew,
 		CanBeDoneFromFloor 		: true,
-		OnTest:Recipe.OnTest.WholeSlicedVegetables,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
 	}
 	recipe Cut Lasagna Piece
 	{
@@ -2112,11 +2200,12 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	{
 		keep [Recipe.GetItemTypes.SapphCookingKnifes]/MeatCleaver,
 		BagelPlain,
-		CreamCheese;2,
+		[Recipe.GetItemTypes.SapphCookingCheese];2,
 		Result 		: BagelCreamCheese,
 		Time 		: 100,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking3,
+		Obsolete:true,
 	}
 	recipe Make a Bowl of Beef Stew
 	{
@@ -2132,7 +2221,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		[Recipe.GetItemTypes.SapphCookingCheese];10,
 		[Recipe.GetItemTypes.SapphCookingMilk];5,
 		destroy Saucepan,
-		Butter;5,
+		Butter;1,
 		Result 		: SaucepanwithCheese,
 		Time 		: 100,
 		Category 		: Cooking,
@@ -2186,11 +2275,13 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Put Oil in Wok Pan
 	{
 		WokPan,
-		[Recipe.GetItemTypes.SapphCookingOil];2,
+		[Recipe.GetItemTypes.SapphCookingOil]/[Recipe.GetItemTypes.BakingFat];2,
 		Result 		: WokPan_Oil,
 		OnGiveXP 		: NoXP_OnGiveXP,
 		Category 		: Cooking,
 		Time 		: 100,
+		Prop2:Cooking_Oil,
+		Prop1:Cooking_Wok,
 	}
 	recipe Prepare Fried Rice
 	{
@@ -2198,22 +2289,23 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		[Recipe.GetItemTypes.SapphCookingRice];20,
 		destroy WokPan_Oil,
 		Result 		: WokPanwithFriedRice,
-		Time 		: 200,
+		Time 		: 500,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		CanBeDoneFromFloor 		: true,
-		AnimNode:Disassemble,
-		Prop1:Source=1,
-		Prop2:Cooking_WokFriedRice,
+		AnimNode:Sapph_CookingWok,
+		Prop2:Source=1,
+		Prop1:Cooking_WokFriedRice,
 	}
 	recipe Make 2 Bowls of Fried Rice
 	{
-		WokFriedRiceEvolved,
+		destroy WokFriedRiceEvolved,
 		Bowl=2,
 		Result 		: BowlofFriedRice=2,
 		Time 		: 80.0,
 		Category 		: Cooking,
 		OnCreate:Recipe.OnCreate.MakeBowlofFood2Wok,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 	}
 	recipe Cut Cheese Sandwich in Half
@@ -2426,7 +2518,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	{
 		TenderizedMeat,
 		BreadCrumbs;5,
-		BowlwithBeatenEggs;5,
+		[Recipe.GetItemTypes.SapphCookingEgg];5,
 		Result 		: BreadedTenderizedMeat,
 		OnCreate:Recipe.OnCreate.FryingBatter,
 		Time 		: 100,
@@ -2438,8 +2530,8 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	{
 		Bread;30,
 		keep [Recipe.GetItemTypes.SapphCookingKnifes]/MeatCleaver,
-		WildGarlic=2,
-		Butter;5,
+		WildGarlic2=2,
+		Butter;1,
 		CanBeDoneFromFloor 		: true,
 		Result 		: WildGarlicBreadUn,
 		Time 		: 250,
@@ -2459,7 +2551,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Put Meatballs in Bowl of Mashed Potatoes
 	{
-		MeatballsCooked;15,
+		Meatballs;15,
 		BowlofMashedPotatoes;25,
 		Result 		: BowlofMashedPotatoes_Meatballs,
 		Time 		: 80.0,
@@ -2472,8 +2564,9 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		WokPanWater,
 		Result 		: AlcoholBandage,
 		Time 		: 80.0,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
 	}
 	recipe Sterilize SheetsWok
 	{
@@ -2481,8 +2574,9 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		WokPanWater,
 		Result 		: AlcoholRippedSheets,
 		Time 		: 80.0,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
 	}
 	recipe Make Bowl of Candy
 	{
@@ -2529,7 +2623,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Open Can of Beets
 	{
 		CanofBeets,
-		keep [Recipe.GetItemTypes.CanOpener],
+		keep [Recipe.GetItemTypes.CanOpener]/[Recipe.GetItemTypes.SapphCookingKnifes],
 		Result 		: OpenCanofBeets,
 		Time 		: 80.0,
 		Category 		: Cooking,
@@ -2553,7 +2647,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Make Plate of Bacon and Eggs
 	{
 		destroy Plate,
-		FryingPan_BaconandEggs;30,
+		[Recipe.GetItemTypes.SapphCookingBaconEggsPan];30,
 		Result 		: Plate_BaconandEggs,
 		Time 		: 50.0,
 		CanBeDoneFromFloor 		: true,
@@ -2561,7 +2655,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Make Plate of Bacon and Eggs2
 	{
 		destroy PlateBlue,
-		FryingPan_BaconandEggs;30,
+		[Recipe.GetItemTypes.SapphCookingBaconEggsPan];30,
 		Result 		: PlateBlue_BaconandEggs,
 		Time 		: 50.0,
 		CanBeDoneFromFloor 		: true,
@@ -2569,7 +2663,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Make Plate of Bacon and Eggs3
 	{
 		destroy PlateOrange,
-		FryingPan_BaconandEggs;30,
+		[Recipe.GetItemTypes.SapphCookingBaconEggsPan];30,
 		Result 		: PlateOrange_BaconandEggs,
 		Time 		: 50.0,
 		CanBeDoneFromFloor 		: true,
@@ -2577,7 +2671,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Make Plate of Bacon and Eggs4
 	{
 		destroy PlateFancy,
-		FryingPan_BaconandEggs;30,
+		[Recipe.GetItemTypes.SapphCookingBaconEggsPan];30,
 		Result 		: PlateFancy_BaconandEggs,
 		Time 		: 50.0,
 		CanBeDoneFromFloor 		: true,
@@ -2590,16 +2684,36 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		destroy FryingPanwithOil,
 		keep Spatula/Spoon/Fork/ButterKnife/PlasticSpork/WoodenSpoon,
 		Result 		: FryingPan_BaconandEggs,
-		Time 		: 250,
+		Time 		: 300,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking3,
 		SkillRequired 		: Cooking=1,
 		Sound 		: FryingSounds,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		CanBeDoneFromFloor 		: true,
-		AnimNode:Disassemble,
-		Prop1: Source=4,
-		Prop2: Cooking_FryingPanBaconEggs,
+		AnimNode:Sapph_CookingWok,
+		Prop2: Source=4,
+		Prop1: Cooking_FryingPanBaconEggs,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
+	}
+	recipe Cook Bacon and Eggs
+	{
+		[Recipe.GetItemTypes.SapphCookingEgg];14,
+		Bacon;12,
+		destroy WokPan_Oil,
+		keep Spatula/Spoon/Fork/ButterKnife/PlasticSpork/WoodenSpoon,
+		Result 		: Wokpan_BaconandEggs,
+		Time 		: 300,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.Cooking3,
+		SkillRequired 		: Cooking=1,
+		Sound 		: FryingSounds,
+		Heat 		: -0.1,
+		CanBeDoneFromFloor 		: true,
+		AnimNode:Sapph_CookingWok,
+		Prop2: Source=4,
+		Prop1: Cooking_WokFriedEggBacon,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
 	}
 	recipe Put Rice in Bowl of Beans
 	{
@@ -2618,7 +2732,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		[Recipe.GetItemTypes.SapphCookingMilk];5,
 		[Recipe.GetItemTypes.SapphCookingSugar];5,
 		keep Spatula/Spoon/Fork/ButterKnife/PlasticSpork/WoodenSpoon,
-		BowlwithBeatenEggs;21,
+		[Recipe.GetItemTypes.SapphCookingEgg]=2,
 		Result 		: BakingTray_CremeBrulee,
 		Time 		: 250.0,
 		Category 		: Cooking,
@@ -2636,7 +2750,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		[Recipe.GetItemTypes.SapphCookingMilk];5,
 		[Recipe.GetItemTypes.SapphCookingSugar];5,
 		keep Spatula/Spoon/Fork/ButterKnife/PlasticSpork/WoodenSpoon,
-		BowlwithBeatenEggs;21,
+		[Recipe.GetItemTypes.SapphCookingEgg]=2,
 		Result 		: BakingTray_CaramelPudding,
 		Time 		: 250.0,
 		Category 		: Cooking,
@@ -2654,7 +2768,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		[Recipe.GetItemTypes.SapphCookingMilk];5,
 		[Recipe.GetItemTypes.SapphCookingSugar];5,
 		keep Spatula/Spoon/Fork/ButterKnife/PlasticSpork/WoodenSpoon,
-		BowlwithBeatenEggs;21,
+		[Recipe.GetItemTypes.SapphCookingEgg]=2,
 		[Recipe.GetItemTypes.SapphCookingMeltedChocolate];10,
 		Result 		: BakingTray_ChocolatePudding,
 		Time 		: 250.0,
@@ -2676,7 +2790,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 		CanBeDoneFromFloor 		: true,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		AnimNode:Disassemble,
 		Prop1:Source=2,
 		Prop2:Source=3,
@@ -2691,7 +2805,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 		CanBeDoneFromFloor 		: true,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		AnimNode:Disassemble,
 		Prop1:Source=2,
 		Prop2:Source=3,
@@ -2706,7 +2820,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 		CanBeDoneFromFloor 		: true,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		AnimNode:Disassemble,
 		Prop1:Source=2,
 		Prop2:Source=3,
@@ -2721,7 +2835,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 		CanBeDoneFromFloor 		: true,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		AnimNode:Disassemble,
 		Prop1:Source=2,
 		Prop2:Source=3,
@@ -2736,7 +2850,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 		CanBeDoneFromFloor 		: true,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		AnimNode:Disassemble,
 		Prop1:Source=2,
 		Prop2:Source=3,
@@ -2744,7 +2858,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Make Tray of Ladyfingers
 	{
 		destroy BakingTray,
-		BowlwithBeatenEggs;21,
+		[Recipe.GetItemTypes.SapphCookingEgg]=2,
 		[Recipe.GetItemTypes.SapphCookingMilk];5,
 		[Recipe.GetItemTypes.SapphCookingSugar];5,
 		keep Spatula/Spoon/Fork/ButterKnife/PlasticSpork/WoodenSpoon,
@@ -2761,11 +2875,11 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Make Pan of Tiramisu
 	{
 		destroy BakingPan,
-		BowlwithBeatenEggs;21,
+		[Recipe.GetItemTypes.SapphCookingEgg]=2,
 		[Recipe.GetItemTypes.SapphCookingMilk];5,
 		[Recipe.GetItemTypes.SapphCookingSugar];5,
 		[Recipe.GetItemTypes.SapphCookingCoffeeCup];5,
-		CreamCheese;5,
+		[Recipe.GetItemTypes.SapphCookingCheese];5,
 		Ladyfingers;10,
 		CocoaPowder;5,
 		keep Spatula/Spoon/Fork/ButterKnife/PlasticSpork/WoodenSpoon,
@@ -2823,8 +2937,8 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Make Pastry Dough
 	{
-		BowlwithBeatenEggs;10,
-		Butter;5,
+		[Recipe.GetItemTypes.SapphCookingEgg]=1,
+		Butter;1,
 		SugarBrown;2,
 		keep RollingPin,
 		keep [Recipe.GetItemTypes.SapphCookingKnifes]/MeatCleaver,
@@ -2838,18 +2952,19 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Fry Churros
 	{
-		keep KitchenTongs/Fork/Chopsticks,
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
 		PipingBag_PastryDough;10,
 		SaucepanwithOil,
 		CanBeDoneFromFloor 		: true,
 		Result 		: ChurrosPlain=4,
 		Time 		: 250,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Category 		: Cooking,
 		Sound 		: FryingSounds,
 		AnimNode:Disassemble,
 		Prop1: Source=1,
 		Prop2:Cooking_SaucepanOil,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
 	}
 	recipe Dip Churros in Chocolate
 	{
@@ -2993,7 +3108,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Open Canned Bacon
 	{
 		CannedBacon,
-		keep [Recipe.GetItemTypes.CanOpener],
+		keep [Recipe.GetItemTypes.CanOpener]/[Recipe.GetItemTypes.SapphCookingKnifes],
 		Result 		: farming.Bacon = 2,
 		Time 		: 80.0,
 		Category 		: Cooking,
@@ -3307,7 +3422,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Make Tray of Eclairs
 	{
-		PipingBag_PastryCream;12,
+		[Recipe.GetItemTypes.SapphCookingPastryCream];10,
 		PipingBag_PastryDough;10,
 		destroy BakingTray,
 		Result 		: BakingTray_Eclair,
@@ -3335,6 +3450,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Time 		: 150,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
+		obsolete: true,
 	}
 	recipe Dip Eclair in White Chocolate
 	{
@@ -3442,7 +3558,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Make Gingerbread Dough
     	{
-		Butter;2,
+		Butter;1,
 		Water=1,
 		SugarBrown;2,
 		Flour=1,
@@ -3483,7 +3599,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Make Gingerbread House
 	{
 		Gingerbread_Wall;21,
-		PipingBag_Icing;5,
+		[Recipe.GetItemTypes.SapphCookingIcing];2,
 		Result 		: Gingerbread_House,
 		Time 		: 300,
 		Category 		: Cooking,
@@ -3506,6 +3622,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		AllowRottenItem:true,
         	OnGiveXP:Recipe.OnGiveXP.Cooking3,
     	}
+
 	recipe Beat Egg Yolks in a Bowl
 	{
 		EggYolk;21,
@@ -3518,7 +3635,9 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		SkillRequired 		: Cooking=2,
 		Sound 		: WhiskBowl,
 		StopOnWalk 		: false,
+		IsHidden:true,
 	}
+
 	recipe Cure Egg Yolks in a Bowl
 	{
 		EggYolk;5,
@@ -3538,26 +3657,28 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		[Recipe.GetItemTypes.SapphCookingEgg];7,
 		BreadSlices;10,
 		Result 		: Bread_Egginhole,
-		Time 		: 150,
+		Time 		: 300,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking3,
-		Heat 		: -0.22,
-		AnimNode:Disassemble,
+		Heat 		: -0.1,
+		AnimNode:Sapph_CookingWok,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
 		Sound 		: FryingSounds,
-		Prop1:Source=2,
-		Prop2:Cooking_FryingPanOil,
+		Prop2:Source=2,
+		Prop1:Cooking_FryingPanBreadEgg,
 		CanBeDoneFromFloor 		: true,
 	}
 	recipe Fry Chicken Nuggets
 	{
-		SlicedChickenBatter;15,
-		keep KitchenTongs/Fork/Chopsticks,
+		SlicedChicken,
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
 		SaucepanwithOil,
 		CanBeDoneFromFloor 		: true,
 		Result 		: ChickenNuggets=2,
 		Time 		: 250,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.MeatDivide2Cooked,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		Sound 		: FryingSounds,
 		Prop1:Source=3,
@@ -3567,20 +3688,20 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	{	
 		CutPeeledPotato=1,
 		BreadCrumbs;5,
-		keep KitchenTongs/Fork/Chopsticks,
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
 		FryingPanwithOil,
 		CanBeDoneFromFloor 		: true,
 		Result 		: PotatoPancakes=2,
 		Time 		: 250,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		Sound 		: FryingSounds,
-		AnimNode:Disassemble,
-		Prop1:Source=3,
-		Prop2:Cooking_FryingPanOil,
+		AnimNode:Sapph_CookingWok,
+		Prop2:Source=3,
+		Prop1:Cooking_FryingPanPotatoPancake,
 		CanBeDoneFromFloor 		: true,
-		OnTest:Recipe.OnTest.WholeSlicedVegetables,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
 	}
 	recipe Brew Coffee6
 	{
@@ -3593,10 +3714,10 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		CanBeDoneFromFloor 		: true,
 		Time 		: 250.0,
 		Category 		: Cooking,
-		OnCreate 		: recipe_BrewClothfilter,
+		OnCreate 		: Recipe.OnCreate.SapphBrewCoffee,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 		Sound 		: FilterDrip,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Prop2:Source=5,
 		Prop1:Source=4,
 	}
@@ -3606,15 +3727,15 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		keep ClothFilter,
 		Water=2,
 		keep PlasticFilterHolder,
-		destroy MugWhite,
+		destroy Mugl,
 		Result 		: MugBrewCoffee,
 		Time 		: 250.0,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
-		OnCreate 		: recipe_BrewClothfilter,
+		OnCreate 		: Recipe.OnCreate.SapphBrewCoffee,
 		Sound 		: FilterDrip,
 		CanBeDoneFromFloor 		: true,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Prop2:Source=5,
 		Prop1:Source=4,
 	}
@@ -3624,15 +3745,15 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		keep ClothFilter,
 		Water=2,
 		keep PlasticFilterHolder,
-		destroy MugRed,
+		destroy MugWhite,
 		Result 		: MugBrewCoffee2,
 		Time 		: 250.0,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
-		OnCreate 		: recipe_BrewClothfilter,
+		OnCreate 		: Recipe.OnCreate.SapphBrewCoffee,
 		Sound 		: FilterDrip,
 		CanBeDoneFromFloor 		: true,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Prop2:Source=5,
 		Prop1:Source=4,
 	}
@@ -3642,15 +3763,15 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		keep ClothFilter,
 		Water=2,
 		keep PlasticFilterHolder,
-		destroy MugSpiffo,
+		destroy MugRed,
 		Result 		: MugBrewCoffee3,
 		Time 		: 250,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
-		OnCreate 		: recipe_BrewClothfilter,
+		OnCreate 		: Recipe.OnCreate.SapphBrewCoffee,
 		Sound 		: FilterDrip,
 		CanBeDoneFromFloor 		: true,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Prop2:Source=5,
 		Prop1:Source=4,
 	}
@@ -3660,21 +3781,21 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		keep ClothFilter,
 		keep PlasticFilterHolder,
 		Water=2,
-		destroy Mugl,
+		destroy MugSpiffo,
 		Result 		: MugBrewCoffee4,
 		Time 		: 250.0,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
-		OnCreate 		: recipe_BrewClothfilter,
+		OnCreate 		: Recipe.OnCreate.SapphBrewCoffee,
 		Sound 		: FilterDrip,
 		CanBeDoneFromFloor 		: true,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Prop2:Source=5,
 		Prop1:Source=4,
 	}
 	recipe Brew Coffee on Thermos2
 	{
-		destroy GrindedCoffee=5,
+		destroy GrindedCoffee=4,
 		destroy ClothFilter,
 		destroy EmptyThermos,
 		Water=5,
@@ -3684,11 +3805,11 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Time 		: 500,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
-		OnCreate 		: recipe_BrewClothfilter,
+		OnCreate 		: Recipe.OnCreate.SapphBrewCoffee,
 		Sound 		: FilterDrip,
 		CanBeDoneFromFloor 		: true,
 		StopOnWalk 		: false,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Prop2:Cooking_CoffeeThermos,
 		Prop1:Source=4,
 	}
@@ -3737,6 +3858,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Time 		: 80.0,
 		Category 		: Cooking,
 		OnCreate:Recipe.OnCreate.MakeBowlofFood4Pan,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 	}
 	recipe Make 4 Bowls of Fried Rice2
@@ -3747,11 +3869,12 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Time 		: 80.0,
 		Category 		: Cooking,
 		OnCreate:Recipe.OnCreate.MakeBowlofFood4Wok,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 	}
 	recipe Put Soup in Thermos
 	{
-		PotOfSoup/PotOfSoupRecipe,
+		PotOfSoup/PotOfSoupRecipe/PotOfStew,
 		destroy EmptyThermos,
 		Result 		: ThermosSoup,
 		Time 		: 100,
@@ -3792,24 +3915,24 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		[Recipe.GetItemTypes.SapphCookingSoysauce];4,
 		destroy WokPan_Oil,
 		Result 		: WokPan_Yakisoba,
-		Time 		: 300,
+		Time 		: 400,
 		NeedToBeLearn 		: true,
 		Sound 		: WokCook,
 		SkillRequired 		: Cooking=3,
 		Category 		: Cooking,
-		AnimNode:Disassemble,
-		Prop1:Source=3,
-		Prop2:Cooking_WokPan,
+		AnimNode:Sapph_CookingWok,
+		Prop2:Source=3,
+		Prop1:Cooking_WokYakisoba,
 		CanBeDoneFromFloor 		: true,
-		OnTest:Recipe.OnTest.WholeSlicedVegetables,
 	}
 	recipe Make 2 Bowls of Yakisoba
 	{
-		WokPan_Yakisoba,
+		destroy WokPan_YakisobaEvolved,
 		Bowl=2,
 		Result 		: BowlofYakisoba=2,
 		Time 		: 80.0,
 		OnCreate:Recipe.OnCreate.MakeBowlofFood2Wok,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 	}
@@ -3820,12 +3943,13 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Result 		: BowlofYakisoba=4,
 		Time 		: 80.0,
 		OnCreate:Recipe.OnCreate.MakeBowlofFood4Wok,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.None,
 	}
 	recipe Tenderize Meat
 	{
-		keep MeatTenderizer,
+		keep MeatTenderizer/MeatTenderizer_Wood/WoodenMallet,
 		keep [Recipe.GetItemTypes.SapphCookingKnifes]/MeatCleaver,
 		Smallbirdmeat/Chicken/Steak/PorkChop/MuttonChop/SlicedSteak/Rabbitmeat,
 		Result 		: TenderizedMeat,
@@ -3867,7 +3991,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 
 	recipe Make Ice Cubes
 	{
-	   destroy IceTrayWater,
+	   Water=4,
 	   Result:IceCubes=6,
 	   CanBeDoneFromFloor:true,
 	   Sound:IceBreaking,
@@ -3876,7 +4000,6 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	   AnimNode:Sapph_BreakingIce,
 	   StopOnWalk 		: false,
 	   OnCanPerform:FridgeCraft,
-	   OnCreate: Recipe_IceTray,
 	   Prop2:Cooking_IceTray,
 	}
 
@@ -3967,16 +4090,17 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Fry Scotch Egg
 	{
 		ScotchEggRaw;20,
-		keep KitchenTongs/Fork/Chopsticks,
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
 		SaucepanwithOil,
 		CanBeDoneFromFloor 		: true,
 		Result 		: ScotchEgg,
 		Time 		: 250,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		Category 		: Cooking,
 		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
 		Sound 		: FryingSounds,
 		Prop2:Cooking_SaucepanOil,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
 	}
 	recipe Take Toothpick from Box
 	{
@@ -4021,7 +4145,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Water=2,
 		Result 		: Base.EggBoiled=1,
 		Time 		: 100,
-		Heat 		: -0.22,
+		Heat 		: -0.1,
 		CanBeDoneFromFloor 		: true,
 		StopOnWalk 		: false,
 		Category 		: Cooking,
@@ -4265,7 +4389,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	recipe Pour Buttermilk in Bottle
 	{
 		destroy WaterBottleEmpty/PopBottleEmpty,
-		Churn_Buttermilk,
+		destroy Churn_Buttermilk,
 		Result 		: ButtermilkBottle,
 		Time 		: 80.0,
 		OnCreate:Recipe.OnCreate.ChurnBottle,
@@ -4301,7 +4425,7 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 	}
 	recipe Pound Mochi
 	{
-		destroy ButterChurn,
+		keep ButterChurn,
 		Water=1,
 		[Recipe.GetItemTypes.SapphCookingRiceBowl];10,
 		Result 		: MochiPrep=3,
@@ -4315,6 +4439,1697 @@ MushroomGeneric2/MushroomGeneric1/MushroomGeneric3/MushroomGeneric4/MushroomGene
 		Prop1:Cooking_ButterChurnBot,
 		Prop2:Cooking_ButterChurnTop,
 	}
+
+	
+
+	recipe Convert Chopsticks
+	{
+		destroy Chopsticks,
+		Result 		: Chopsticks_Sapph,
+		Time 		: 5,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+	recipe Convert Chopsticks2
+	{
+		destroy Chopsticks_Sapph,
+		Result 		: Chopsticks,
+		Time 		: 5,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+	recipe Make Chopsticks
+	{
+		keep [Recipe.GetItemTypes.SapphCookingKnifes]/MeatCleaver,
+		Twigs,
+		Result 		: Chopsticks_Sapph,
+		Time 		: 100,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+	recipe Use as Chopsticks
+	{
+		WoodenSkewers=2,
+		Result 		: Chopsticks_Sapph,
+		Time 		: 100,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+	recipe Use as Skewers
+	{
+		destroy Chopsticks_Sapph,
+		Result 		: WoodenSkewers=2,
+		Time 		: 100,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+	recipe Dismantle Blender
+    {
+       Blender,
+       keep [Recipe.GetItemTypes.Screwdriver],
+
+       Result:ElectronicsScrap,
+       Time:30.0,
+       OnTest:Recipe.OnTest.DismantleElectronics,
+       OnCreate:Recipe.OnCreate.DismantleRadio,
+       OnGiveXP:Recipe.OnGiveXP.DismantleRadio,
+       Category:Electrical,
+       AnimNode:Disassemble,
+       Prop1:Screwdriver,
+       Prop2:CDplayer,
+       Sound:Dismantle,
+    }
+	recipe Remove Pretzels from Tray
+	{
+		destroy Pretzel_Tray,
+		Result 		: Pretzel=6,
+		Time 		: 10,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.SapphGiveTray,
+		OnCanPerform:Recipe.OnCanPerform.CheckCooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+	recipe Make Wooden Meat Tenderizer
+	{
+		keep [Recipe.GetItemTypes.SapphCookingKnifes]/MeatCleaver,
+		Log=1,
+		Result 		: MeatTenderizer_Wood,
+		Time 		: 200,
+		Category 		: Carpentry,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+	}
+	recipe Make Wooden Spork
+	{
+		keep [Recipe.GetItemTypes.SapphCookingKnifes]/MeatCleaver,
+		Plank=1,
+		Result 		: WoodSpork,
+		Time 		: 200,
+		Category 		: Carpentry,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+	}
+	recipe Make Wooden Bowl
+	{
+		keep [Recipe.GetItemTypes.SapphCookingKnifes]/MeatCleaver,
+		Plank=2,
+		Result 		: Bowl,
+		Time 		: 200,
+		Category 		: Carpentry,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+	}
+	recipe Make Wooden Ladle
+	{
+		keep [Recipe.GetItemTypes.SapphCookingKnifes]/MeatCleaver,
+		Plank=1,
+		Result 		: Ladle_Wood=2,
+		Time 		: 200,
+		Category 		: Carpentry,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+	}
+	recipe Make Takeout Boxes
+	{
+		SheetPaper2=4,
+		Result 		: TakeoutBox=2,
+		Time 		: 150,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+	}
+
+	recipe Convert As Weapon
+	{
+		CarvingFork,
+		Result:CarvingForkSapph,
+		Time:50.0,
+		Category:Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+
+	/**************rice & vegetables**************/
+	recipe Put Food in Takeout Boxes
+	{
+		WokPan_RoastVeg/SaucepanwithBorscht/Saucepan_ArrozLeche/FryingPanFriedRiceEvolved/WokFriedRiceEvolved/PanFriedVegetables,
+		destroy TakeoutBox=2,
+		Result 		: TakeoutBoxFood=2,
+		Time 		: 10,
+		Category 		: Cooking,
+		OnCreate: Recipe.OnCreate.TakeoutBox,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+	/**************noodles**************/
+	recipe Put Food in Takeout Boxes2
+	{
+		WokPan_YakisobaEvolved/SaucepanwithSpaguetti/Saucepan_InstantNoodlesEvolved/PastaPot,
+		destroy TakeoutBox=2,
+		Result 		: TakeoutBoxFood_Noodle=2,
+		Time 		: 10,
+		Category 		: Cooking,
+		OnCreate: Recipe.OnCreate.TakeoutBox,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+	/**************Soup & stew**************/
+	recipe Put Food in Takeout Boxes3
+	{
+		PotOfSoupRecipe/PotOfStew/Blender_Puree,
+		destroy TakeoutBox=2,
+		Result 		: TakeoutBoxFood_Soup=2,
+		Time 		: 10,
+		Category 		: Cooking,
+		OnCreate: Recipe.OnCreate.TakeoutBox,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+
+	recipe Prepare French Toast
+	{
+		BreadSlices,
+		[Recipe.GetItemTypes.SapphCookingMilk];5,
+		[Recipe.GetItemTypes.SapphCookingSugar];2,
+		[Recipe.GetItemTypes.SapphCookingEgg]=1,
+		Result 		: FrenchToast_Prep,
+		Time 		: 100,
+		Category 		: Cooking,
+		SkillRequired 		: Cooking=2,
+		AnimNode:Disassemble,
+		CanBeDoneFromFloor 		: true,
+	}
+
+	recipe Prepare Cacio e Pepe
+	{
+		Pasta;20,
+		keep Fork/Spoon/Spatula/WoodenSpoon/PlasticSpork/Laddle,
+		[Recipe.GetItemTypes.SapphCookingCheese];4,
+		destroy WokPan,
+		Result 		: WokPan_CacioPepePrep,
+		Time 		: 400,
+		NeedToBeLearn 		: true,
+		Sound 		: WokCook,
+		SkillRequired 		: Cooking=3,
+		Category 		: Cooking,
+		AnimNode:Sapph_CookingWok,
+		Prop2:Source=3,
+		Prop1:Cooking_WokYakisoba,
+		CanBeDoneFromFloor 		: true,
+	}
+
+	recipe Make Flatbread Dough
+    {
+	   keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+       [Recipe.GetItemTypes.Flour]=1,
+	   [Recipe.GetItemTypes.SapphCookingMilk];1,
+       Salt;1,
+       Yeast,
+       Result:FlatbreadDough,
+       SkillRequired 		: Cooking=3,
+       Time:100.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+	recipe Make Candy Apple
+	{
+		destroy WoodenSkewers=1,
+		Apple=1,
+		[Recipe.GetItemTypes.SapphCookingSyrup];2,
+		Result 		: CandyApple=1,
+		Time 		: 150,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+	}
+	recipe Blend Smoothie
+    {
+       destroy Blender_Prep_Smoothie,
+       Result:Blender_Smoothie,
+       Time:300.0,
+       OnCreate:Recipe.OnCreate.SmoothieMix,
+       Category:Cooking,
+       AnimNode:Sapph_BlenderMix,
+       Sound:BlenderOn,
+	   StopOnWalk 		: false,
+	   Prop2: Cooking_Blender_Pink,
+    }
+	recipe Blend Milkshake
+    {
+       destroy Blender_Prep_Shake,
+       Result:Blender_Milkshake,
+       Time:300.0,
+       OnCreate:Recipe.OnCreate.MilkshakeMix,
+       Category:Cooking,
+       AnimNode:Sapph_BlenderMix,
+       Sound:BlenderOn,
+	   StopOnWalk 		: false,
+	   Prop2: Cooking_Blender_Brown,
+    }
+	recipe Blend Puree
+    {
+       destroy Blender_Prep_Puree,
+       Result:Blender_Puree,
+       Time:300.0,
+       OnCreate:Recipe.OnCreate.PureeMix,
+       Category:Cooking,
+       AnimNode:Sapph_BlenderMix,
+       Sound:BlenderOn,
+       StopOnWalk 		: false,
+	   Prop2: Cooking_Blender_Yellow,
+    }
+	recipe Blend Sorbet
+    {
+       destroy Blender_Prep_Juice,
+	   IceCubes=3,
+       Result:Blender_Sorbet,
+       Time:300.0,
+       OnCreate:Recipe.OnCreate.SorbetMix,
+       Category:Cooking,
+       AnimNode:Sapph_BlenderMix,
+       Sound:BlenderOn,
+	   StopOnWalk 		: false,
+	   Prop2: Cooking_Blender_Pink,
+    }
+	recipe Blend Juice
+    {
+       destroy Blender_Prep_Juice,
+       Result:Blender_Juice,
+       Time:300.0,
+       OnCreate:Recipe.OnCreate.JuiceMix,
+       Category:Cooking,
+       AnimNode:Sapph_BlenderMix,
+       Sound:BlenderOn,
+	   StopOnWalk 		: false,
+	   Prop2: Cooking_Blender_Pink,
+    }
+	recipe Pour Milkshake in Lowball Glass
+	{
+		Blender_Milkshake,
+		destroy LowballGlass,
+		Result 		: LowBallMilkshake,
+		Time 		: 200.0,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Milkshake in Cocktail Glass
+	{
+		Blender_Milkshake,
+		destroy CocktailGlass,
+		Result 		: CocktailGlassMilkshake,
+		Time 		: 200.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Milkshake in Tumbler
+	{
+		Blender_Milkshake,
+		destroy GlassTumbler,
+		Result 		: BeverageMilkshake,
+		Time 		: 200.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+	}
+	recipe Pour Milkshake in Plastic Cup
+	{
+		Blender_Milkshake,
+		destroy PlasticCup,
+		Result 		: PlasticCup_Evolved,
+		Time 		: 200.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Milkshake in Mug1
+	{
+		Blender_Milkshake,
+		destroy Mugl,
+		Result 		: Mug_Milkshake,
+		Time 		: 50.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Milkshake in Mug2
+	{
+		Blender_Milkshake,
+		destroy MugWhite,
+		Result 		: MugWhite_Milkshake,
+		Time 		: 50.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Milkshake in Mug3
+	{
+		Blender_Milkshake,
+		destroy MugRed,
+		Result 		: MugRed_Milkshake,
+		Time 		: 50.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Milkshake in Mug4
+	{
+		Blender_Milkshake,
+		destroy MugSpiffo,
+		Result 		: MugSpiffo_Milkshake,
+		Time 		: 50.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Fry Crepes
+	{
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
+		FryBatter;1,
+		FryingPanwithOil,
+		CanBeDoneFromFloor 		: true,
+		Result 		: Crepe=2,
+		Time 		: 250,
+		Heat 		: -0.1,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
+		Sound 		: FryingSounds,
+		AnimNode:Sapph_CookingWok,
+		Prop2:Source=1,
+		Prop1: Cooking_FryingPanCrepe,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
+	}
+	recipe Fry Blooming Onion
+	{
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
+		FryBatter;1,
+		Onion=1,
+		SaucepanwithOil,
+		CanBeDoneFromFloor 		: true,
+		Result 		: BloomingOnion,
+		Time 		: 250,
+		Heat 		: -0.1,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
+		Sound 		: FryingSounds,
+		AnimNode:Disassemble,
+		Prop1:Source=1,
+		Prop2: Cooking_SaucepanOil,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
+	}
+	recipe Fry Eggplant
+	{
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
+		SlicedEggplant=1,
+		BreadCrumbs;2,
+		FryingPanwithOil,
+		Result 		: FriedEggplant,
+		CanBeDoneFromFloor 		: true,
+		Time 		: 150,
+		Heat 		: -0.1,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
+		Sound 		: FryingSounds,
+		AnimNode:Sapph_CookingWok,
+		Prop2:Source=1,
+		Prop1: Cooking_FryingPanEggplant,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
+	}
+	recipe Pour Smoothie in Lowball Glass
+	{
+		Blender_Smoothie,
+		destroy LowballGlass,
+		Result 		: LowBallSmoothie,
+		Time 		: 200.0,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Smoothie in Cocktail Glass
+	{
+		Blender_Smoothie,
+		destroy CocktailGlass,
+		Result 		: CocktailGlassSmoothie,
+		Time 		: 200.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Smoothie in Tumbler
+	{
+		Blender_Smoothie,
+		destroy GlassTumbler,
+		Result 		: BeverageSmoothie,
+		Time 		: 200.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+	}
+	recipe Pour Smoothie in Plastic Cup
+	{
+		Blender_Smoothie,
+		destroy PlasticCup,
+		Result 		: PlasticCup_Evolved,
+		Time 		: 200.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Smoothie in Mug1
+	{
+		Blender_Smoothie,
+		destroy Mugl,
+		Result 		: Mug_Evolved,
+		Time 		: 50.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Smoothie in Mug2
+	{
+		Blender_Smoothie,
+		destroy MugWhite,
+		Result 		: MugWhite_Evolved,
+		Time 		: 50.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Smoothie in Mug3
+	{
+		Blender_Smoothie,
+		destroy MugRed,
+		Result 		: MugRed_Evolved,
+		Time 		: 50.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Smoothie in Mug4
+	{
+		Blender_Smoothie,
+		destroy MugSpiffo,
+		Result 		: MugSpiffo_Evolved,
+		Time 		: 50.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Puree in Bowl
+	{
+		Blender_Puree,
+		destroy Bowl,
+		Result 		: Bowl_Puree,
+		Time 		: 50.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Sorbet in Bowl
+	{
+		Blender_Sorbet=1,
+		destroy Bowl,
+		Result 		: Bowl_Sorbet,
+		Time 		: 50.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Grind Falafel
+	{
+	   keep Meatgrinder,
+	   [Recipe.GetItemTypes.SapphCookingFalafel];8,
+	   Result:Falafel_Uncooked,
+	   CanBeDoneFromFloor:false,
+	   Sound:Sawing,
+	   Time:230.0,
+	   Category:Cooking,
+	   StopOnWalk 		: false,
+	   OnCreate:Recipe.OnCreate.GrindMeat,
+	   AnimNode:Sapph_Grind_Meatgrinder,
+	   Prop2:Cooking_Meatgrinder,
+	}
+	recipe Fry Falafel
+	{
+		Falafel_Uncooked,
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
+		SaucepanwithOil,
+		CanBeDoneFromFloor 		: true,
+		Result 		: Falafel_Fried,
+		Time 		: 250,
+		Heat 		: -0.1,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
+		Sound 		: FryingSounds,
+		Prop2:Cooking_SaucepanOil,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
+	}
+	recipe Make Meatgrinder
+    {
+       SheetMetal=2,
+	   SmallSheetMetal=2,
+       BlowTorch=1,
+       keep [Recipe.GetItemTypes.WeldingMask],
+
+       Result:Meatgrinder,
+       Time:250.0,
+       Category:Welding,
+       SkillRequired:MetalWelding=4,
+       OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+    }
+	recipe Brew Coffee on French Press
+	{
+		destroy GrindedCoffee=3,
+		destroy Empty_FrenchPress,
+		Water=3,
+		AnimNode:Sapph_CoffeePour,
+		Result 		: Coffee_FrenchPress,
+		Time 		: 300,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		OnCreate: Recipe.OnCreate.SapphAutoCook,
+		Sound 		: FilterDrip,
+		CanBeDoneFromFloor 		: true,
+		StopOnWalk 		: false,
+		Heat 		: -0.1,
+		Prop1:Source=3,
+		Prop2:Cooking_CoffeeFrenchPress,
+	}
+	recipe Make Cotton Candy
+	{
+		destroy WoodenSkewers=1,
+		Vinegar=1,
+		[Recipe.GetItemTypes.SapphCookingSugar];2,
+		WaterSaucepan;2,
+		Result 		: CottonCandy_White=1,
+		RemoveResultItem:true,
+		Time 		: 300,
+		Category 		: Cooking,
+		SkillRequired 		: Cooking=7,
+       	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		OnCreate:Recipe.OnCreate.SapphCottonCandy,
+		Prop1:Cooking_Skewer,
+		Prop2:Cooking_Saucepan,
+	}
+	recipe Open Fortune Cookie
+	{
+		destroy FortuneCookie,
+		Result 		: Broken_FortuneCookie=1,
+		Time 		: 50,
+		Category 		: Cooking,
+       	OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.SapphFortuneCookie,
+		IsHidden:true,
+	}
+
+	recipe Smash Burger
+	{
+		keep Spatula,
+		Meatballs=1,
+		FryingPanwithOil,
+		Result 		: SmashBurger=1,
+		Time 		: 150,
+		Heat 		: -0.1,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.Cooking3,
+		Sound 		: FryingSounds,
+		AnimNode:Sapph_CookingWok,
+		OnCreate:Recipe.OnCreate.PreparePasta,
+		CanBeDoneFromFloor 		: true,
+		Prop1: Cooking_FryingPanBurger,
+		
+	}
+	recipe Make Popsicle
+	{
+		[Recipe.GetItemTypes.SapphCookingJuice];10,
+		destroy WoodenSkewers=1,
+		IceCubes=3,
+		Result 		: Popsicle_White,
+		Time 		: 100.0,
+		RemoveResultItem:true,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.PopscicleCreate,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: false,
+	}
+
+	recipe Make New Year Cake
+    {
+	   keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+       [Recipe.GetItemTypes.Flour]=2,
+       [Recipe.GetItemTypes.SapphCookingSugar];8,
+	   [Recipe.GetItemTypes.SapphCookingSalt];5,
+       [Recipe.GetItemTypes.SapphCookingOil];2,
+	   [Recipe.GetItemTypes.SapphCookingMilk];2,
+	   BakingPan,
+
+       Result:Cake_NianGao,
+       Time:200.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+	recipe Slice New Year Cake
+    {
+        keep [Recipe.GetItemTypes.DullKnife]/[Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        Cake_NianGao,
+
+        Result:CakeSlice_NianGao=5,
+        Time:40.0,
+        OnCreate:Recipe.OnCreate.SapphSliceCakes,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+      	OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		IsHidden:true,
+    }
+
+	recipe Make Rock Candy
+	{
+		WoodenSkewers=1,
+		[Recipe.GetItemTypes.SapphCookingSugar];8,
+		Water=2,
+		Result 		: RockCandy,
+		Time 		: 250,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		SkillRequired 		: Cooking=8,
+		IsHidden:true,
+	}
+
+	recipe Make Tanghulu Candy
+	{
+		WoodenSkewers=1,
+		[Recipe.GetItemTypes.SapphCookingBerry];8,
+		[Recipe.GetItemTypes.SapphCookingSugar];8,
+		Water=2,
+		Result 		: Tanghulu,
+		Time 		: 250,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		SkillRequired 		: Cooking=8,
+		IsHidden:true,
+	}
+
+	recipe Make Pigs in a Blanket
+	{
+		[Recipe.GetItemTypes.SapphCookingSausages]=1,
+		SmallDough,
+		Result 		: Sausage_PigBlanket=3,
+		Time 		: 200,
+		OnCreate: Recipe.OnCreate.HotdogEvolved,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+	}
+	recipe Blend Pesto
+	{
+		[Recipe.GetItemTypes.SapphCookingCheese];2,
+		[Recipe.GetItemTypes.SapphCookingOil];1,
+		Basil=2,
+		keep Blender,
+		destroy Bowl,
+		Result 		: Spice_PestoBowl=1,
+		Time 		: 200,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		AnimNode:Sapph_BlenderMix,
+       	Sound:BlenderOn,
+	   	StopOnWalk 		: false,
+	   	Prop2: Cooking_Blender_Green,
+	}
+	recipe Blend Pesto2
+	{
+		[Recipe.GetItemTypes.SapphCookingCheese];2,
+		[Recipe.GetItemTypes.SapphCookingOil];1,
+		Basil=2,
+		keep MortarPestle,
+		destroy Bowl,
+		Result 		: Spice_PestoBowl=1,
+		Time 		: 200,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+	   	StopOnWalk 		: false,
+		IsHidden: true,
+	}
+	recipe Make Electrical Blender
+    {
+	   SmallSheetMetal=2,
+	   ElectronicsScrap=3,
+	   ElectricWire=1,
+	   Screws=3,
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+       Result:Blender,
+       Time:250.0,
+       Category:Electrical,
+       SkillRequired:MetalWelding=2;Electricity=1,
+    }
+
+	recipe Pour Juice in Lowball Glass
+	{
+		Blender_Juice,
+		destroy LowballGlass,
+		Result 		: LowBallEvolved,
+		Time 		: 200.0,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Juice in Empty Bottle
+	{
+		Blender_Juice,
+		destroy WaterBottleEmpty/PopBottleEmpty,
+		Result 		: BottleofJuice,
+		Time 		: 200.0,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Juice in Cocktail Glass
+	{
+		Blender_Juice,
+		destroy CocktailGlass,
+		Result 		: CocktailGlassEvolved,
+		Time 		: 200.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Juice in Tumbler
+	{
+		Blender_Juice,
+		destroy GlassTumbler,
+		Result 		: Beverage,
+		Time 		: 200.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+	}
+	recipe Pour Juice in Plastic Cup
+	{
+		Blender_Juice,
+		destroy PlasticCup,
+		Result 		: PlasticCup_Evolved,
+		Time 		: 200.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Juice in Mug1
+	{
+		Blender_Juice,
+		destroy Mugl,
+		Result 		: Mug_Evolved,
+		Time 		: 50.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Juice in Mug2
+	{
+		Blender_Juice,
+		destroy MugWhite,
+		Result 		: MugWhite_Evolved,
+		Time 		: 50.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Juice in Mug3
+	{
+		Blender_Juice,
+		destroy MugRed,
+		Result 		: MugRed_Evolved,
+		Time 		: 50.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Pour Juice in Mug4
+	{
+		Blender_Juice,
+		destroy MugSpiffo,
+		Result 		: MugSpiffo_Evolved,
+		Time 		: 50.0,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.BlenderAddBowl,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		StopOnWalk: false,
+		IsHidden: true,
+	}
+	recipe Put Food in Takeout Boxes4
+	{
+		GriddlePanFriedVegetables/PanFriedVegetables2,
+		destroy TakeoutBox=2,
+		Result 		: TakeoutBoxFood=2,
+		Time 		: 10,
+		Category 		: Cooking,
+		OnCreate: Recipe.OnCreate.RoastPanAddTwo,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+	recipe Make Corn on the Cob
+	{
+		Corn;14,
+		Water=2,
+		destroy WoodenSkewers,
+		Result 		: Corn_Cob=2,
+		Time 		: 250.0,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		CanBeDoneFromFloor 		: true,
+		Heat 		: -0.1,
+	}
+	recipe Prepare Chocolate Cake
+    {
+       CakeBatter,
+       BakingPan,
+	   [Recipe.GetItemTypes.SapphCookingChocolate];5,
+       Result:CakePrep_Chocolate,
+       OnCreate:Recipe.OnCreate.PutCakeBatterInBakingPan,
+       Time:100.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+	   SkillRequired 		: Cooking=3,
+    }
+
+	recipe Prepare Carrot Cake
+    {
+       CakeBatter,
+       BakingPan,
+	   DicedCarrots;8,
+
+       Result:CakePrep_Carrot,
+       OnCreate:Recipe.OnCreate.PutCakeBatterInBakingPan,
+       Time:100.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+	   SkillRequired 		: Cooking=3,
+    }
+
+	recipe Prepare Red Velvet Cake
+    {
+       CakeBatter,
+       BakingPan,
+	   CocoaPowder;2,
+
+       Result:CakePrep_RedVelvet,
+       OnCreate:Recipe.OnCreate.PutCakeBatterInBakingPan,
+       Time:100.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+	   SkillRequired 		: Cooking=3,
+    }
+
+	recipe Prepare Black Forest Cake
+    {
+       CakeBatter,
+       BakingPan,
+	   Cherry;2,
+	   [Recipe.GetItemTypes.SapphCookingIcing];2,
+
+       Result:CakePrep_BlackForestCake,
+       OnCreate:Recipe.OnCreate.PutCakeBatterInBakingPan,
+       Time:100.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+	   SkillRequired 		: Cooking=3,
+    }
+
+	recipe Prepare Strawberry Cake
+    {
+       CakeBatter,
+       BakingPan,
+	   Strewberrie;8,
+	   [Recipe.GetItemTypes.SapphCookingIcing];2,
+
+       Result:CakePrep_StrawberryCake,
+       OnCreate:Recipe.OnCreate.PutCakeBatterInBakingPan,
+       Time:100.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+	   SkillRequired 		: Cooking=3,
+    }
+
+	recipe Make Birthday Cake
+    {
+       destroy [Recipe.GetItemTypes.SapphCookingCakes],
+	   [Recipe.GetItemTypes.SapphCookingIcing];2,
+       Result:CakeRaw_Birthday,
+       Time:100.0,
+       Category:Cooking,
+	   OnCreate:Recipe.OnCreate.SapphBirthdayCake,
+	   OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+	   SkillRequired 		: Cooking=2,
+    }
+
+
+	/*******Slice Cakes*******/
+	recipe Slice Cake
+    {
+		destroy CakeRaw_Birthday,
+        keep [Recipe.GetItemTypes.DullKnife]/[Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+
+        Result:CakeSlice_Birthday=5,
+        Time:20.0,
+        OnCreate:Recipe.OnCreate.SapphSliceCakes,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		IsHidden:true,
+    }
+
+	recipe Slice Cake
+    {
+		destroy CakeRaw_Chocolate/CakePrep_Chocolate,
+        keep [Recipe.GetItemTypes.DullKnife]/[Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+
+        Result:CakeSlice_Chocolate=5,
+        Time:20.0,
+        OnCreate:Recipe.OnCreate.SapphSliceCakes,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		IsHidden:true,
+    }
+
+	recipe Slice Cake
+    {
+		destroy CakeRaw_Carrot/CakePrep_Carrot,
+        keep [Recipe.GetItemTypes.DullKnife]/[Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+
+        Result:CakeSlice_Carrot=5,
+        Time:20.0,
+        OnCreate:Recipe.OnCreate.SapphSliceCakes,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		IsHidden:true,
+    }
+	recipe Slice Cake
+    {
+		destroy CakeRaw_RedVelvet/CakePrep_RedVelvet,
+        keep [Recipe.GetItemTypes.DullKnife]/[Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+
+        Result:CakeSlice_RedVelvet=5,
+        Time:20.0,
+        OnCreate:Recipe.OnCreate.SapphSliceCakes,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		IsHidden:true,
+    }
+
+	recipe Slice Cake
+    {
+		destroy CakeRaw_BlackForestCake/CakePrep_BlackForestCake,
+        keep [Recipe.GetItemTypes.DullKnife]/[Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+
+        Result:CakeSlice_BlackForest=5,
+        Time:20.0,
+        OnCreate:Recipe.OnCreate.SapphSliceCakes,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		IsHidden:true,
+    }
+
+	recipe Slice Cake
+    {
+		destroy CakeRaw_Strawberry/CakePrep_StrawberryCake,
+        keep [Recipe.GetItemTypes.DullKnife]/[Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+
+        Result:CakeSlice_Strawberry=5,
+        Time:20.0,
+        OnCreate:Recipe.OnCreate.SapphSliceCakes,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		IsHidden:true,
+    }
+
+
+
+
+	recipe Light Candle
+    {
+       destroy HalfCandle,
+       [Recipe.GetItemTypes.StartFire],
+
+       Result:HalfCandleLit,
+       Time:30.0,
+       OnCreate:LightHalfCandle_OnCreate,
+       StopOnWalk:false,
+	   IsHidden:true,
+    }
+
+    recipe Extinguish Candle
+    {
+       destroy HalfCandleLit,
+
+       Result:HalfCandle,
+       Time:30.0,
+       OnCreate:ExtinguishHalfCandle_OnCreate,
+       StopOnWalk:false,
+	   IsHidden:true,
+    }
+	recipe Make Lettuce Wraps
+	{
+		Lettuce;6,
+		Result 		: LettuceWrap=1,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		Category 		: Cooking,
+		Time 		: 100,
+	}
+
+
+	/*************Candle Cakes Recipes***************/
+	recipe Add Candle on Cake
+	{
+		destroy CakeRaw,
+		destroy Candle,
+		Result 		: Cake_Candle,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.SapphCakeAddCandle,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		Time 		: 100,
+	}
+
+	recipe Add Candle on Cake
+	{
+		destroy CakeRaw_Chocolate/CakePrep_Chocolate,
+		destroy Candle,
+		Result 		: CakeChocolate_Candle,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.SapphCakeAddCandle,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		Time 		: 100,
+		IsHidden:true,
+	}
+	recipe Add Candle on Cake
+	{
+		destroy CakeRaw_Carrot/CakePrep_Carrot,
+		destroy Candle,
+		Result 		: CakeCarrot_Candle,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.SapphCakeAddCandle,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		Time 		: 100,
+		IsHidden:true,
+	}
+	recipe Add Candle on Cake
+	{
+		destroy CakeRaw_Strawberry/CakePrep_StrawberryCake,
+		destroy Candle,
+		Result 		: CakeStrawberry_Candle,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.SapphCakeAddCandle,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		Time 		: 100,
+		IsHidden:true,
+	}
+	recipe Add Candle on Cake
+	{
+		destroy CakeRaw_BlackForestCake/CakePrep_BlackForestCake,
+		destroy Candle,
+		Result 		: CakeBlackForest_Candle,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.SapphCakeAddCandle,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		Time 		: 100,
+		IsHidden:true,
+	}
+	recipe Add Candle on Cake
+	{
+		destroy CakeRaw_Birthday,
+		destroy Candle,
+		Result 		: CakeBirthday_Candle,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.SapphCakeAddCandle,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		Time 		: 100,
+		IsHidden:true,
+	}
+	recipe Add Candle on Cake
+	{
+		destroy CakeRaw_RedVelvet/CakePrep_RedVelvet,
+		destroy Candle,
+		Result 		: CakeRedVelvet_Candle,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		Category 		: Cooking,
+		OnCreate:Recipe.OnCreate.SapphCakeAddCandle,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		Time 		: 100,
+		IsHidden:true,
+	}
+
+
+
+	recipe Make a Wish
+	{
+		destroy Cake_Candle,
+		Result 		: CakeRaw,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		Category 		: Cooking,
+		AnimNode:Sapph_CakeWish,
+		OnCreate:Recipe.OnCreate.SapphCakeRemoveCandle,
+		Time 		: 80,
+		Sound:CandleBlow,
+		Prop1:Source=1,
+		IsHidden: true,
+	}
+	recipe Make a Wish
+	{
+		destroy CakeChocolate_Candle,
+		Result 		: CakeRaw_Chocolate,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		Category 		: Cooking,
+		AnimNode:Sapph_CakeWish,
+		OnCreate:Recipe.OnCreate.SapphCakeRemoveCandle,
+		Time 		: 80,
+		Sound:CandleBlow,
+		Prop1:Source=1,
+		IsHidden: true,
+	}
+	recipe Make a Wish
+	{
+		destroy CakeCarrot_Candle,
+		Result 		: CakeRaw_Carrot,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		Category 		: Cooking,
+		AnimNode:Sapph_CakeWish,
+		OnCreate:Recipe.OnCreate.SapphCakeRemoveCandle,
+		Time 		: 80,
+		Sound:CandleBlow,
+		Prop1:Source=1,
+		IsHidden: true,
+	}
+	recipe Make a Wish
+	{
+		destroy CakeRedVelvet_Candle,
+		Result 		: CakeRaw_RedVelvet,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		Category 		: Cooking,
+		AnimNode:Sapph_CakeWish,
+		OnCreate:Recipe.OnCreate.SapphCakeRemoveCandle,
+		Time 		: 80,
+		Sound:CandleBlow,
+		Prop1:Source=1,
+		IsHidden: true,
+	}
+	recipe Make a Wish
+	{
+		destroy CakeBlackForest_Candle,
+		Result 		: CakeRaw_BlackForestCake,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		Category 		: Cooking,
+		AnimNode:Sapph_CakeWish,
+		OnCreate:Recipe.OnCreate.SapphCakeRemoveCandle,
+		Time 		: 80,
+		Sound:CandleBlow,
+		Prop1:Source=1,
+		IsHidden: true,
+	}
+	recipe Make a Wish
+	{
+		destroy CakeStrawberry_Candle,
+		Result 		: CakeRaw_Strawberry,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		Category 		: Cooking,
+		AnimNode:Sapph_CakeWish,
+		OnCreate:Recipe.OnCreate.SapphCakeRemoveCandle,
+		Time 		: 80,
+		Sound:CandleBlow,
+		Prop1:Source=1,
+		IsHidden: true,
+	}
+	recipe Make a Wish
+	{
+		destroy CakeBirthday_Candle,
+		Result 		: CakeRaw_Birthday,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		Category 		: Cooking,
+		AnimNode:Sapph_CakeWish,
+		OnCreate:Recipe.OnCreate.SapphCakeRemoveCandle,
+		Sound:CandleBlow,
+		Time 		: 80,
+		Prop1:Source=1,
+		IsHidden: true,
+	}
+
+
+
+	recipe Make Chef Apron
+	{
+		Thread=2,
+		RippedSheets=2,
+		Sheet=2,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+		Result 		: Apron_Chef_White,
+		Time 		: 150,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		SkillRequired 		: Tailoring=5,
+		CanBeDoneFromFloor 		: true,
+	}
+
+	recipe Make Cheese Preparation
+    {
+       destroy Pot,
+	   [Recipe.GetItemTypes.SapphCookingMilk];8,
+	   [Recipe.GetItemTypes.SapphCookingSalt];2,
+	   Vinegar=1,
+       Result:Pot_CheesePreparation,
+       Time:100.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+	   SkillRequired 		: Cooking=4,
+    }
+
+	recipe Make Mozzarela Cheese
+    {
+       destroy Pot_CheeseCurds,
+	   keep ClothFilter,
+       Result:MozzarelaCheese,
+       Time:100.0,
+       Category:Cooking,
+	   OnCreate:Recipe.OnCreate.SapphGivePot,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+	   SkillRequired 		: Cooking=4,
+    }
+
+	recipe Make Mozzarela Cheese
+    {
+       destroy Wooden_CheeseMoldsCurds,
+	   keep ClothFilter,
+       Result:MozzarelaCheese,
+       Time:100.0,
+       Category:Cooking,
+	   OnCreate:Recipe.OnCreate.SapphGiveCheeseMold,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+	   SkillRequired 		: Cooking=4,
+	   IsHidden:true,
+    }
+	recipe Make Mozzarela Cheese
+    {
+       destroy Bucket_CheeseCurds,
+	   keep ClothFilter,
+       Result:MozzarelaCheese,
+       Time:100.0,
+       Category:Cooking,
+	   OnCreate:Recipe.OnCreate.SapphGiveBucket,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+	   SkillRequired 		: Cooking=4,
+	   IsHidden:true,
+    }
+
+	recipe Slice Cheese Wheel
+    {
+        keep [Recipe.GetItemTypes.DullKnife]/[Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        Parmesan_CheeseWheel,
+        Result:ParmesanCheese=5,
+        Time:150.0,
+        OnCreate:Recipe.OnCreate.SapphSliceIntoFives,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+
+	recipe Slice Cheese Wheel
+    {
+        keep [Recipe.GetItemTypes.DullKnife]/[Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        Blue_CheeseWheel,
+        Result:BlueCheese=5,
+        Time:150.0,
+        OnCreate:Recipe.OnCreate.SapphSliceIntoFives,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		IsHidden:true,
+    }
+	
+	recipe Pour Cheese Preparation
+    {
+       destroy Pot_CheeseCurds,
+	   destroy Wooden_CheeseMolds,
+       Result:Wooden_CheeseMoldsCurds,
+       Time:100.0,
+       Category:Cooking,
+	   OnCreate:Recipe.OnCreate.SapphGivePot,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+	   SkillRequired 		: Cooking=4,
+    }
+
+	recipe Pour Cheese Preparation
+    {
+       destroy Pot_CheeseCurds,
+	   destroy BucketEmpty,
+       Result:Bucket_CheeseCurds,
+       Time:100.0,
+       Category:Cooking,
+	   OnCreate:Recipe.OnCreate.SapphGiveBucket,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+	   SkillRequired 		: Cooking=4,
+    }
+
+	recipe Remove Cheese Wheel
+    {
+        destroy Pot_Cheese,
+        Result:Parmesan_CheeseWheel,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.SapphGivePot,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+
+	recipe Remove Cheese Wheel
+    {
+        destroy Pot_CheeseBlue,
+        Result:Blue_CheeseWheel,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.SapphGivePot,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+
+	recipe Remove Cheese Wheel
+    {
+        destroy Bucket_Cheese,
+        Result:Parmesan_CheeseWheel,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.SapphGiveBucket,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		IsHidden:true,
+    }
+	recipe Remove Cheese Wheel
+    {
+        destroy Bucket_CheeseBlue,
+        Result:Blue_CheeseWheel,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.SapphGiveBucket,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		IsHidden:true,
+    }
+	
+	recipe Remove Cheese Wheel
+    {
+        destroy Wooden_CheeseMoldsFull,
+        Result:Parmesan_CheeseWheel,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.SapphGiveCheeseMold,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		IsHidden:true,
+    }
+	recipe Remove Cheese Wheel
+    {
+        destroy Wooden_CheeseMoldsBlue,
+        Result:Blue_CheeseWheel,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.SapphGiveCheeseMold,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		IsHidden:true,
+    }
+
+	recipe Make Wooden Cheese Mold
+	{
+		Plank=2,
+		keep [Recipe.GetItemTypes.Hammer],
+		Nails=5,
+		Result 		: Wooden_CheeseMolds,
+		Time:150.0,
+		Category:Carpentry,
+		SkillRequired:Woodwork=5,
+		Sound:Hammering,
+		StopOnWalk: true,
+	}
+
+	recipe Make Taco Shell
+    {
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
+		SaucepanwithOil,
+        Tortilla,
+        Result:TacoShell,
+        Time:150.0,
+		CanBeDoneFromFloor 		: true,
+        OnCreate:Recipe.OnCreate.FryingCooking,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		Heat 		: -0.1,
+		Sound 		: FryingSounds,
+		AnimNode:Disassemble,
+		Prop1:Source=1,
+		Prop2: Cooking_SaucepanOil,
+    }
+
+	recipe Make Crab Sticks
+    {
+        FishFillet,
+		keep Meatgrinder,
+        Result:CrabStick=2,
+        Sound:Sawing,
+	   	Time:230.0,
+	   	StopOnWalk 		: false,
+        OnCreate:Recipe.OnCreate.MeatDivide2,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		AnimNode:Sapph_Grind_Meatgrinder,
+	   	Prop2:Cooking_Meatgrinder,
+    }
+
+	recipe Make Cocktail Mixer
+    {
+	   SmallSheetMetal=2,
+       BlowTorch=1,
+       keep [Recipe.GetItemTypes.WeldingMask],
+
+       Result:CocktailMixer,
+       Time:250.0,
+       Category:Welding,
+       SkillRequired:MetalWelding=2,
+       OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+    }
+
+	recipe Fry Mozzarela Sticks
+	{
+		keep KitchenTongs/Fork/Chopsticks/Chopsticks_Sapph,
+		FryBatter;1,
+		MozzarelaCheese;12,
+		SaucepanwithOil,
+		CanBeDoneFromFloor 		: true,
+		Result 		: MozzarelaSticks=2,
+		Time 		: 250,
+		Heat 		: -0.1,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.Cooking10,
+		Sound 		: FryingSounds,
+		AnimNode:Disassemble,
+		Prop1:Source=1,
+		Prop2: Cooking_SaucepanOil,
+		OnCreate:Recipe.OnCreate.SapphAutoCook,
+	}
+
+	recipe Make Macaron Cookies
+    {
+	   destroy BakingTray,
+	   [Recipe.GetItemTypes.Flour]=1,
+	   [Recipe.GetItemTypes.SapphCookingSugar];1,
+	   [Recipe.GetItemTypes.SapphCookingIcing];8,
+       Result:BakingTray_MacaronCookies4,
+       Time:150.0,
+       Category:Cooking,
+	   RemoveResultItem:true,
+	   OnCreate:Recipe.OnCreate.SapphMacaronTray,
+	   SkillRequired 		: Cooking=5,
+    }
+
+	recipe Remove from Tray
+	{
+		destroy BakingTray_CremeBrulee,
+		Result 		: CremeBruleeBowl=3,
+		Time 		: 10,
+		Category 		: Cooking,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		OnCreate: Recipe.OnCreate.SapphGiveTray,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+
+	recipe Remove from Tray
+	{
+		destroy BakingTray_CaramelPudding,
+		Result 		: CaramelPuddingBowl=3,
+		Time 		: 10,
+		Category 		: Cooking,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		OnCreate: Recipe.OnCreate.SapphGiveTray,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+
+	recipe Remove from Tray
+	{
+		destroy BakingTray_ChocolatePudding,
+		Result 		: ChocolatePuddingBowl=3,
+		Time 		: 10,
+		Category 		: Cooking,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		OnCreate: Recipe.OnCreate.SapphGiveTray,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+
+	recipe Remove from Tray
+	{
+		destroy BakingTray_Croissant,
+		Result 		: Croissant=3,
+		Time 		: 10,
+		Category 		: Cooking,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		OnCreate: Recipe.OnCreate.SapphGiveTray,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+
+	recipe Remove from Tray
+	{
+		destroy BakingTray_Bagel,
+		Result 		: BagelPlain=3,
+		Time 		: 10,
+		Category 		: Cooking,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		OnCreate: Recipe.OnCreate.SapphGiveTray,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+
+	recipe Remove from Tray
+	{
+		destroy BakingTray_Hotdog,
+		Result 		: HotdogBun=3,
+		Time 		: 10,
+		Category 		: Cooking,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		OnCreate: Recipe.OnCreate.SapphGiveTray,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+
+	recipe Remove from Tray
+	{
+		destroy BakingTray_Ladyfingers,
+		Result 		: Ladyfingers=5,
+		Time 		: 10,
+		Category 		: Cooking,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		OnCreate: Recipe.OnCreate.SapphGiveTray,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+
+	recipe Remove from Tray
+	{
+		destroy BakingTray_Eclair,
+		Result 		: Eclair=5,
+		Time 		: 10,
+		Category 		: Cooking,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		OnCreate: Recipe.OnCreate.SapphGiveTray,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+
+	recipe Remove from Tray
+	{
+		destroy BakingTray_Jerky,
+		Result 		: BeefJerky=4,
+		Time 		: 10,
+		Category 		: Cooking,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		OnCreate: Recipe.OnCreate.SapphGiveTray,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+
+	recipe Remove from Tray
+	{
+		destroy BakingTray_Jerky,
+		Result 		: BeefJerky=4,
+		Time 		: 10,
+		Category 		: Cooking,
+		OnCanPerform: Recipe.OnCanPerform.CheckCooking,
+		OnCreate: Recipe.OnCreate.SapphGiveTray,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+		IsHidden:true,
+	}
+
+
+
+
+
 	
 
 }

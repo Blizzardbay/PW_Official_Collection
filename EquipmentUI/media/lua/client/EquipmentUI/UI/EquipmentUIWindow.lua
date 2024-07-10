@@ -1,4 +1,4 @@
-require "ISUI/ISPanelJoypad"
+require "ISUI/ISPanel"
 local c = require "EquipmentUI/Settings"
 
 local FONT_HGT_SMALL = getTextManager():getFontHeight(UIFont.Small)
@@ -9,23 +9,24 @@ local CLOSE_TEX = getTexture("media/ui/equipmentui/close.png")
 local COLLAPSE_TEX = getTexture("media/ui/Panel_Icon_Collapse.png");
 local PIN_TEX = getTexture("media/ui/Panel_Icon_Pin.png");
 
-local function getLayoutModData(playerObj)
-    local modData = playerObj:getModData()["EquipmentUILayout"];
+local function getLayoutModData(playerObj, isController)
+    local postfix = isController and "_controller" or ""
+    local modData = playerObj:getModData()["EquipmentUILayout"..postfix];
     if not modData then
         modData = {
             isDocked = true,
             isClosed = false
         };
-        playerObj:getModData()["EquipmentUILayout"] = modData;
+        playerObj:getModData()["EquipmentUILayout"..postfix] = modData;
     end
     return modData;
 end
 
-EquipmentUIWindow = ISPanelJoypad:derive("EquipmentUIWindow");
+EquipmentUIWindow = ISPanel:derive("EquipmentUIWindow");
 
 function EquipmentUIWindow:new(x, y, inventoryPane, playerNum)
 	local o = {};
-	o = ISPanelJoypad:new(x, y, c.EQUIPMENT_WIDTH + 12, inventoryPane.parent:getHeight());
+	o = ISPanel:new(x, y, c.EQUIPMENT_WIDTH + 12, inventoryPane.parent:getHeight());
 	setmetatable(o, self);
     self.__index = self;
 
@@ -38,7 +39,7 @@ function EquipmentUIWindow:new(x, y, inventoryPane, playerNum)
 
     o.titlebarbkg = getTexture("media/ui/Panel_TitleBar.png");
 
-    local modData = getLayoutModData(o.char);
+    local modData = getLayoutModData(o.char, o:isController());
     o.isDocked = modData.isDocked;
     o.isClosed = modData.isClosed;
 
@@ -49,8 +50,12 @@ function EquipmentUIWindow:new(x, y, inventoryPane, playerNum)
     return o;
 end
 
+function EquipmentUIWindow:isController()
+    return JoypadState.players[self.playerNum + 1] and JoypadState.players[self.playerNum + 1].isActive
+end
+
 function EquipmentUIWindow:createChildren()
-    ISPanelJoypad.createChildren(self);
+    ISPanel.createChildren(self);
 
     local titleBarHeight = self.inventoryPane.parent:titleBarHeight()
 
@@ -116,12 +121,17 @@ function EquipmentUIWindow:createChildren()
     end);
 
     if self.playerNum == 0 then
-		ISLayoutManager.RegisterWindow('equipment_ui_mod', EquipmentUIWindow, self)
+        local postfix = self:isController() and "_controller" or ""
+		ISLayoutManager.RegisterWindow('equipment_ui_mod' .. postfix, EquipmentUIWindow, self)
 	end
+
+    NotlocControllerNode
+        :injectControllerNode(self, true)
+        :setChildrenNodeProvider(self.equipmentUi.getControllerNodes, self.equipmentUi)
 end
 
 function EquipmentUIWindow:prerender()
-    if self.isDocked and not self.inventoryPane.parent:isVisible() then 
+    if self.isDocked and not self.inventoryPane.parent:isVisible() then
         self:setVisible(false);
         return;
     end
@@ -145,7 +155,7 @@ function EquipmentUIWindow:prerender()
     self.equipmentUi:setX(xOffset);
 
     if not self.isCollapsed then
-	    ISPanelJoypad.prerender(self)
+	    ISPanel.prerender(self)
     end
 
     local titleBarHeight = self.inventoryPane.parent:titleBarHeight()
@@ -161,11 +171,15 @@ function EquipmentUIWindow:prerender()
 end
 
 function EquipmentUIWindow:render()
-    ISPanelJoypad.render(self)
+    ISPanel.render(self)
+    if self.joyfocus then
+        self:drawRectBorder(0, 0, self:getWidth(), self:getHeight(), 0.4, 0.2, 1.0, 1.0);
+        self:drawRectBorder(1, 1, self:getWidth()-2, self:getHeight()-2, 0.4, 0.2, 1.0, 1.0);
+    end
 end
 
 function EquipmentUIWindow:onInventoryVisibilityChanged(isVisible)
-    if not self.isDocked then return; end
+    if not self.isDocked and not self:isController() then return; end
     self:setVisible(isVisible and not self.isClosed);
 end
 
@@ -189,7 +203,7 @@ function EquipmentUIWindow:onPopoutOrAttach()
         self.collapseButton:setVisible(self.pin);
     end
 
-    local modData = getLayoutModData(self.char);
+    local modData = getLayoutModData(self.char, self:isController());
     modData.isDocked = self.isDocked;
 end
 
@@ -197,7 +211,7 @@ function EquipmentUIWindow:onClose()
     self.isClosed = true;
     self:setVisible(false);
 
-    local modData = getLayoutModData(self.char);
+    local modData = getLayoutModData(self.char, self:isController());
     modData.isClosed = true;
 
     self.inventoryPane.parent:bringToTop();
@@ -206,7 +220,7 @@ end
 function EquipmentUIWindow:toggleWindow()
     if self.isClosed or not self:isVisible() then
         self.isClosed = false;
-        if self.isDocked then
+        if self.isDocked or self:isController() then
             self:setVisible(self.inventoryPane.parent:isVisible());
             if self.inventoryPane.parent:isVisible() then
                 self.inventoryPane.parent:uncollapse();
@@ -218,7 +232,7 @@ function EquipmentUIWindow:toggleWindow()
         self:onClose();
     end
 
-    local modData = getLayoutModData(self.char);
+    local modData = getLayoutModData(self.char, self:isController());
     modData.isClosed = self.isClosed;
 end
 
@@ -375,4 +389,37 @@ end
 
 function EquipmentUIWindow:updateTooltip()
     self.equipmentUi:updateTooltip();
+end
+
+-- Controller Window focus handling
+function EquipmentUIWindow:onJoypadDirLeft(joypadData)
+    setJoypadFocus(self.playerNum, getPlayerLoot(self.playerNum));
+end
+
+function EquipmentUIWindow:onJoypadDirRight(joypadData)
+    setJoypadFocus(self.playerNum, getPlayerInventory(self.playerNum));
+end
+
+function EquipmentUIWindow:onJoypadDown(button)
+    -- Makes the ui close
+    if button == Joypad.YButton then
+        setJoypadFocus(self.playerNum, nil);
+        getPlayerInventory(self.playerNum):onLoseJoypadFocus(nil)
+    end
+
+    if button == c.TOGGLE_UI_CONTROLLER_BIND then
+        local inv = getPlayerInventory(self.playerNum)
+        inv:toggleEquipmentUIForController();
+        setJoypadFocus(self.playerNum, inv);
+    end
+
+    if InventoryTetris then
+        if button == Joypad.LBumper then
+            setJoypadFocus(self.playerNum, getPlayerInventory(self.playerNum));
+        end
+        if button == Joypad.RBumper then
+            setJoypadFocus(self.playerNum, getPlayerLoot(self.playerNum));
+        end
+    end
+
 end

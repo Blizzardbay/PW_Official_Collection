@@ -1,0 +1,15 @@
+module Base
+{
+	item VFECraftingMag1
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Vietnam: Improvised Firepower,
+        Icon	=	MagazineVFECrafting1,
+        TeachedRecipes  =   Make M13 Links;Make M13 Link Die;Make M60 Belt Pouch;Make M60 Brass Catcher,
+        ReplaceOnUse    =   VFECraftingMag1,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+    }
+}

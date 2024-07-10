@@ -5,8 +5,9 @@ function ImprovisedGlass_GiveBackRoastingPan(items, result, player)
     player:getInventory():AddItem("Base.RoastingPan");
 end
 
--- Give back a glass pane and the original responses
+--[[Give back a glass pane and the original responses
 function ImprovisedGlass_GiveBackGlassPane(items, result, player)
     player:getInventory():AddItem(result);
     player:getInventory():AddItem("ImprovisedGlass.GlassPane");
-end
+
+end]]

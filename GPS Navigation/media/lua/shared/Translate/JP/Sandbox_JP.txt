@@ -1,0 +1,9 @@
+Sandbox_JP = {
+ Sandbox_Navigation = "カーナビ",
+ Sandbox_Navigation_Voice = "カーナビ音声サポートの有無",
+ Sandbox_Navigation_Volume = "ボリューム設定",
+ Sandbox_Navigation_GTA4_Voice = "GTA4音声に変更",
+ Sandbox_Navigation_R = "カーナビ 赤",
+ Sandbox_Navigation_G = "カーナビ 緑",
+ Sandbox_Navigation_B = "カーナビ 青",
+}

@@ -45,9 +45,12 @@ table.insert(ProceduralDistributions.list.WardrobeMan.items, 0.2);
 
 --WardrobeRedneck
 table.insert(ProceduralDistributions.list.WardrobeRedneck.items, "MoreGloves.FingerlessLeatherGloves");
-table.insert(ProceduralDistributions.list.WardrobeRedneck.items, 2.5);
+table.insert(ProceduralDistributions.list.WardrobeRedneck.items, 1.5);
 
 table.insert(ProceduralDistributions.list.WardrobeRedneck.items, "MoreGloves.DottedGloves");
+table.insert(ProceduralDistributions.list.WardrobeRedneck.items, 1);
+
+table.insert(ProceduralDistributions.list.WardrobeRedneck.items, "MoreGloves.LeatherWorkGloves");
 table.insert(ProceduralDistributions.list.WardrobeRedneck.items, 1);
 
 --ClothingStoresGloves
@@ -102,6 +105,15 @@ table.insert(ProceduralDistributions.list.ArmySurplusFootwear.items, 3.5);
 table.insert(ProceduralDistributions.list.ArmySurplusFootwear.items, "MoreGloves.TacticalGloves03");
 table.insert(ProceduralDistributions.list.ArmySurplusFootwear.items, 3.5);
 
+table.insert(ProceduralDistributions.list.ArmySurplusFootwear.items, "MoreGloves.FingerlessTacticalGloves01");
+table.insert(ProceduralDistributions.list.ArmySurplusFootwear.items, 3.5);
+
+table.insert(ProceduralDistributions.list.ArmySurplusFootwear.items, "MoreGloves.FingerlessTacticalGloves02");
+table.insert(ProceduralDistributions.list.ArmySurplusFootwear.items, 3.5);
+
+table.insert(ProceduralDistributions.list.ArmySurplusFootwear.items, "MoreGloves.FingerlessTacticalGloves03");
+table.insert(ProceduralDistributions.list.ArmySurplusFootwear.items, 3.5);
+
 --Army storage
 table.insert(ProceduralDistributions.list.ArmyStorageOutfit.items, "MoreGloves.TacticalGloves01");
 table.insert(ProceduralDistributions.list.ArmyStorageOutfit.items, 2);
@@ -110,6 +122,15 @@ table.insert(ProceduralDistributions.list.ArmyStorageOutfit.items, "MoreGloves.T
 table.insert(ProceduralDistributions.list.ArmyStorageOutfit.items, 2);
 
 table.insert(ProceduralDistributions.list.ArmyStorageOutfit.items, "MoreGloves.TacticalGloves03");
+table.insert(ProceduralDistributions.list.ArmyStorageOutfit.items, 2);
+
+table.insert(ProceduralDistributions.list.ArmyStorageOutfit.items, "MoreGloves.FingerlessTacticalGloves01");
+table.insert(ProceduralDistributions.list.ArmyStorageOutfit.items, 2);
+
+table.insert(ProceduralDistributions.list.ArmyStorageOutfit.items, "MoreGloves.FingerlessTacticalGloves02");
+table.insert(ProceduralDistributions.list.ArmyStorageOutfit.items, 2);
+
+table.insert(ProceduralDistributions.list.ArmyStorageOutfit.items, "MoreGloves.FingerlessTacticalGloves03");
 table.insert(ProceduralDistributions.list.ArmyStorageOutfit.items, 2);
 
 --LockerArmyBedroom
@@ -122,11 +143,26 @@ table.insert(ProceduralDistributions.list.LockerArmyBedroom.items, 2);
 table.insert(ProceduralDistributions.list.LockerArmyBedroom.items, "MoreGloves.TacticalGloves03");
 table.insert(ProceduralDistributions.list.LockerArmyBedroom.items, 2);
 
+table.insert(ProceduralDistributions.list.LockerArmyBedroom.items, "MoreGloves.FingerlessTacticalGloves01");
+table.insert(ProceduralDistributions.list.LockerArmyBedroom.items, 2);
+
+table.insert(ProceduralDistributions.list.LockerArmyBedroom.items, "MoreGloves.FingerlessTacticalGloves02");
+table.insert(ProceduralDistributions.list.LockerArmyBedroom.items, 2);
+
+table.insert(ProceduralDistributions.list.LockerArmyBedroom.items, "MoreGloves.FingerlessTacticalGloves03");
+table.insert(ProceduralDistributions.list.LockerArmyBedroom.items, 2);
+
 --HuntingLockers
 table.insert(ProceduralDistributions.list.HuntingLockers.items, "MoreGloves.TacticalGloves01");
 table.insert(ProceduralDistributions.list.HuntingLockers.items, 2);
 
 table.insert(ProceduralDistributions.list.HuntingLockers.items, "MoreGloves.TacticalGloves02");
+table.insert(ProceduralDistributions.list.HuntingLockers.items, 2);
+
+table.insert(ProceduralDistributions.list.HuntingLockers.items, "MoreGloves.FingerlessTacticalGloves01");
+table.insert(ProceduralDistributions.list.HuntingLockers.items, 2);
+
+table.insert(ProceduralDistributions.list.HuntingLockers.items, "MoreGloves.FingerlessTacticalGloves02");
 table.insert(ProceduralDistributions.list.HuntingLockers.items, 2);
 
 --DrugLab
@@ -252,10 +288,19 @@ table.insert(ProceduralDistributions.list.FireStorageOutfit.items, 10)
 table.insert(ProceduralDistributions.list.PoliceLockers.items, "MoreGloves.TacticalGloves02");
 table.insert(ProceduralDistributions.list.PoliceLockers.items, 2.5)
 
+table.insert(ProceduralDistributions.list.PoliceLockers.items, "MoreGloves.FingerlessTacticalGloves02");
+table.insert(ProceduralDistributions.list.PoliceLockers.items, 2.5)
+
 --PoliceStorageOutfit
 table.insert(ProceduralDistributions.list.PoliceStorageOutfit.items, "MoreGloves.TacticalGloves02");
 table.insert(ProceduralDistributions.list.PoliceStorageOutfit.items, 5)
 
+table.insert(ProceduralDistributions.list.PoliceStorageOutfit.items, "MoreGloves.FingerlessTacticalGloves02");
+table.insert(ProceduralDistributions.list.PoliceStorageOutfit.items, 5)
+
 --PrisonGuardLockers
 table.insert(ProceduralDistributions.list.PrisonGuardLockers.items, "MoreGloves.TacticalGloves02");
+table.insert(ProceduralDistributions.list.PrisonGuardLockers.items, 5)
+
+table.insert(ProceduralDistributions.list.PrisonGuardLockers.items, "MoreGloves.FingerlessTacticalGloves02");
 table.insert(ProceduralDistributions.list.PrisonGuardLockers.items, 5)

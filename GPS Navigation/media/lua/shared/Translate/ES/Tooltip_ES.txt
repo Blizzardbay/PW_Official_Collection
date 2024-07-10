@@ -1,0 +1,3 @@
+Tooltip_ES = {
+    Tooltip_GPSNav = "Se puede fijar al vehiculo o usarlo colocandolo en el cinturon despues de insertar la bateria.",
+}

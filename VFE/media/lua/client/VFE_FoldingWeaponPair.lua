@@ -7,4 +7,5 @@ VFEFoldingWeaponPair = {
 	"Base.MAC10Unfolded","Base.MAC10Folded",
 	"Base.CAR15","Base.CAR15Folded",
 	"Base.CAR15D","Base.CAR15DFolded",
+	"Base.UziUnfolded","Base.UziFolded",
 	"Base.MP5Unfolded","Base.MP5Folded"}

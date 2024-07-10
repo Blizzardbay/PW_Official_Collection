@@ -83,6 +83,43 @@ ContextMenu_EN = {
 	ContextMenu_EvolvedRecipe_SapphCooking.HR3 = "Huevos Rancheros",
 	ContextMenu_EvolvedRecipe_SapphCooking.HR4 = "Huevos Rancheros",
 	ContextMenu_EvolvedRecipe_SapphCooking.Mochi = "Mochi",
+	ContextMenu_EvolvedRecipe_SapphCooking.BlenderShake = "Milkshake",
+	ContextMenu_EvolvedRecipe_SapphCooking.BlenderSmoothie = "Smoothie",
+	ContextMenu_EvolvedRecipe_SapphCooking.BlenderPuree = "Puree",
+	ContextMenu_EvolvedRecipe_SapphCooking.BlenderJuice = "Juice",
+	ContextMenu_EvolvedRecipe_SapphCooking.WokRoastVeg = "Roast",  
+	ContextMenu_EvolvedRecipe_SapphCooking.FrenchToastEvolved = "French Toast",
+	ContextMenu_EvolvedRecipe_SapphCooking.WokCacioePepe = "Cacio e Pepe",
+	ContextMenu_EvolvedRecipe_SapphCooking.FlatbreadEvolved = "Flatbread",
+	ContextMenu_EvolvedRecipe_SapphCooking.CrepesEvolved = "Crepe",
+	ContextMenu_EvolvedRecipe_SapphCooking.CocktailCupEvolved = "Pour Drink",
+	ContextMenu_EvolvedRecipe_SapphCooking.LowballCupEvolved = "Pour Drink",
+	ContextMenu_EvolvedRecipe_SapphCooking.BowlSorbet = "Sorbet",
+	ContextMenu_EvolvedRecipe_SapphCooking.BorschtEvolved = "Borscht",
+	ContextMenu_EvolvedRecipe_SapphCooking.CornCob = "Corn on the Cob",
+	ContextMenu_EvolvedRecipe_SapphCooking.DoughnutsEvolved = "Doughnut",
+	ContextMenu_EvolvedRecipe_SapphCooking.DoughnutsChocolateEvolved = "Chocolate Doughnut",
+	ContextMenu_EvolvedRecipe_SapphCooking.EclairEvolved = "Eclair",
+	ContextMenu_EvolvedRecipe_SapphCooking.EclairChocolateEvolved = "Chocolate Eclair",
+	ContextMenu_EvolvedRecipe_SapphCooking.EclairWhiteChocolateEvolved = "White Chocolate Eclair",
+	ContextMenu_EvolvedRecipe_SapphCooking.BagelPlainEvolved = "Bagel",
+	ContextMenu_EvolvedRecipe_SapphCooking.HomemadeSauceEvolved = "Sauce",
+	ContextMenu_EvolvedRecipe_SapphCooking.ChurrosEvolved = "Churro",
+	ContextMenu_EvolvedRecipe_SapphCooking.ChurrosChocolateEvolved = "Churro",
+	ContextMenu_EvolvedRecipe_SapphCooking.LettuceWrapEvolved = "Lettuce Wrap",
+	ContextMenu_EvolvedRecipe_SapphCooking.StuffedPepperEvolved = "Stuffed Pepper",
+	ContextMenu_EvolvedRecipe_SapphCooking.Cake_Chocolate = "Chocolate Cake",
+	ContextMenu_EvolvedRecipe_SapphCooking.Cake_Carrot = "Carrot Cake",
+    ContextMenu_EvolvedRecipe_SapphCooking.Cake_BlackForest = "Black Forest Cake",
+    ContextMenu_EvolvedRecipe_SapphCooking.Cake_RedVelvet = "Red Velvet Cake",
+    ContextMenu_EvolvedRecipe_SapphCooking.Cake_Strawberry = "Strawberry Cake",
+	ContextMenu_EvolvedRecipe_SapphCooking.MacaronPink = "Macaron",
+    ContextMenu_EvolvedRecipe_SapphCooking.MacaronRed = "Macaron",
+    ContextMenu_EvolvedRecipe_SapphCooking.MacaronBlue = "Macaron",
+    ContextMenu_EvolvedRecipe_SapphCooking.MacaronGreen = "Macaron",
+    ContextMenu_EvolvedRecipe_SapphCooking.MacaronYellow = "Macaron",
+    ContextMenu_EvolvedRecipe_SapphCooking.MacaronPurple = "Macaron",
+
 
 
 
@@ -97,6 +134,8 @@ ContextMenu_EN = {
 	ContextMenu_FoodType_Cachaca = "Cachaca",
 	ContextMenu_FoodType_Rum = "Rum",
 	ContextMenu_FoodType_Gin = "Gin",
-	
-	
+
+
+
+	ContextMenu_Sapph_WearTied = "Wear around Waist",
 } 

@@ -1,0 +1,13 @@
+IG_UI_EN = {
+ IGUI_PlayerText_st = "Setting the destination.",
+ IGUI_PlayerText_in = "The destination is nearby.",
+ IGUI_PlayerText_end = "Arrived at the destination.",
+ IGUI_PlayerText_left = "Turn left shortly.",
+ IGUI_PlayerText_right = "Turn right shortly.",
+ IGUI_PlayerText_autoon = "Switching to autonomous driving mode.",
+ IGUI_PlayerText_auttooff = "Exiting autonomous driving mode.",
+ IGUI_PlayerText_stop = "Stopping due to the vehicle ahead.",
+ IGUI_PlayerText_Navout = "You are deviating from the route.",
+ IGUI_Tutorial_NavGPS = " <CENTRE> <SIZE:large> How to use Navigation! <LINE> <LINE> <SIZE:medium> [Left Shift (Left Stick Button on the pad)] : You can set a destination! It is recommended to mark waypoints in the middle to create an accurate route. <LINE> <LINE> [X (LT Button on the pad)] : Deletes one of the set destinations in recent order! <LINE> <LINE> [Space (LB Button on the pad)] : You can remove all set destinations and waypoints! <LINE> <LINE>",
+
+}

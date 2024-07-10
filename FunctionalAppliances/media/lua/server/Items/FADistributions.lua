@@ -43,9 +43,6 @@ end
 table.insert(VehicleDistributions["GloveBox"].items, "FunctionalAppliances.FAFountainCup");
 table.insert(VehicleDistributions["GloveBox"].items, 0.01);
 
-table.insert(SuburbsDistributions["all"]["bin"].items, "FunctionalAppliances.FAFountainCup");
-table.insert(SuburbsDistributions["all"]["bin"].items, 0.01);
-
 if FAZombieItemsSpawn then
 	table.insert(SuburbsDistributions["all"]["inventorymale"].items, "FunctionalAppliances.FAFountainCup");
 	table.insert(SuburbsDistributions["all"]["inventorymale"].items, 0.01);
@@ -299,17 +296,6 @@ if isFriendlyModEnabled("CCSFixed") then
 	table.insert(ProceduralDistributions["list"]["TheatreSnacks"].items, 10);
 end
 
---table.insert(SuburbsDistributions["theatre"]["counter"].procList, {name="TheatreSnacks", min=0, max=99, forceForTiles="location_shop_accessories_01_0;location_shop_accessories_01_1;location_shop_accessories_01_2;location_shop_accessories_01_3;location_shop_accessories_01_20;location_shop_accessories_01_21;location_shop_accessories_01_22;location_shop_accessories_01_23;fixtures_sinks_01_0;fixtures_sinks_01_1;fixtures_sinks_01_2;fixtures_sinks_01_3;fixtures_sinks_01_4;fixtures_sinks_01_5;fixtures_sinks_01_6;fixtures_sinks_01_7;fixtures_sinks_01_8;fixtures_sinks_01_9;fixtures_sinks_01_10;fixtures_sinks_01_11;fixtures_sinks_01_16;fixtures_sinks_01_17;fixtures_sinks_01_18;fixtures_sinks_01_19"});
---table.insert(SuburbsDistributions["theatre"]["counter"].procList, name="TheatreSnacks");
---table.insert(SuburbsDistributions["theatre"]["counter"].procList, min=0);
---table.insert(SuburbsDistributions["theatre"]["counter"].procList, max=99);
---table.insert(SuburbsDistributions["theatre"]["counter"].procList, weightChance=60);
---table.insert(SuburbsDistributions["theatre"]["counter"]["procList"].items, name="TheatreSnacks");
---table.insert(SuburbsDistributions["theatre"]["counter"]["procList"].items, min=0);
---table.insert(SuburbsDistributions["theatre"]["counter"]["procList"].items, max=99);
---table.insert(SuburbsDistributions["theatre"]["counter"]["procList"].items, weightChance=60);
---table.insert(SuburbsDistributions["theatre"]["counter"].procList, {name="TheatreSnacks", min=0, max=99, weightChance=60});
-
 local FABaseCandyList = {
 	"Base.Chocolate",
 	"Base.CandyPackage",
@@ -351,7 +337,6 @@ local FABarTapsKegsList = {
 }
 
 local FASodaFountainSyrupsList = {
-	"FunctionalAppliances.FACO2Tank",
 	"FunctionalAppliances.FAOrangeSodaSyrupBox",
 	"FunctionalAppliances.FALemonLimeSodaSyrupBox",
 	"FunctionalAppliances.FARootBeerSodaSyrupBox",
@@ -410,70 +395,148 @@ local FATheatrespawns = {
 
 
 local FABarTapsspawns = {
-	bar = {counter=60}
+	bar = {counter=80}
 }
 
 local FASyrupsspawns = {
-	jayschicken_kitchen = {counter=60},
-	zippeestore = {counter=60},
-	zippeestorage = {metal_shelves=60},
-	theatrestorage = {shelves=60,crate=60,counter=60},
-    	theatre = {counter=60,crate=60},
-  	theatrekitchen = {counter=60,crate=60,metal_shelves=60},
-	spiffo_dining = {counter=60},
-	spiffosstorage = {crate=60,metal_shelves=60},
-    	spiffoskitchen = {crate=60,metal_shelves=60},
-	gasstorage = {crate=60,metal_shelves=60}
+	zippeestore = {counter=80},
+	theatrestorage = {counter=80},
+    	theatre = {counter=80},
+  	theatrekitchen = {counter=80},
+	spiffo_dining = {counter=80},
+    	spiffoskitchen = {counter=80},
+	gasstore = {counter=80},
+	restaurant = {counter=80}
 }
 
-local function FAApplySpawnChance(value)
+FA = FA or {}
+
+FA.ApplySpawnChance = function(value)
 	if ZombRand(100)+1 >= (100 - value) then
-		return true;
+		return true
 	else
-		return false;
+		return false
 	end
 end
 
-local function FAPickOne(index)
+FA.PickOne = function(index)
 	return ZombRand(index)+1
 end
 
+FA.depleteSpawnedKeg = function(keg)
+		local filledAmount = SandboxVars.FunctionalAppliances.BeerKegsFilledAmount
+		local randomNumb = 0
+
+		if filledAmount == 6 then
+			randomNumb = ZombRand(2,48)
+		elseif filledAmount == 5 then
+			randomNumb = 48
+		elseif filledAmount == 4 then
+			randomNumb = ZombRand(30,47)
+		elseif filledAmount == 3 then
+			randomNumb = ZombRand(20,32)
+		elseif filledAmount == 2 then
+			randomNumb = ZombRand(10,22)
+		elseif filledAmount == 1 then
+			randomNumb = ZombRand(2,12)
+		end
+
+		local kegDelta = keg:getUseDelta()
+		local newWeightAmount = 2 + (randomNumb * 0.375)
+
+		keg:setDelta(randomNumb * kegDelta)
+		keg:setActualWeight(newWeightAmount)
+		keg:setCustomWeight(true)
+end	
+
+FA.depleteSpawnedTank = function(tank)
+	local filledAmount = SandboxVars.FunctionalAppliances.SyrupsFilledAmount
+	local randomNumb = 0
+
+	if filledAmount == 6 then
+		randomNumb = ZombRand(2,100)
+	elseif filledAmount == 5 then
+		randomNumb = 100
+	elseif filledAmount == 4 then
+		randomNumb = ZombRand(73,98)
+	elseif filledAmount == 3 then
+		randomNumb = ZombRand(48,77)
+	elseif filledAmount == 2 then
+		randomNumb = ZombRand(23,52)
+	elseif filledAmount == 1 then
+		randomNumb = ZombRand(2,27)
+	end
+
+	local tankDelta = tank:getUseDelta()
+	local newWeightAmount = 5 + (randomNumb * 0.05)
+
+	tank:setDelta(randomNumb * tankDelta)
+	tank:setActualWeight(newWeightAmount)
+	tank:setCustomWeight(true)
+end
+
+FA.depleteSpawnedSyrup = function(syrup)
+	local filledAmount = SandboxVars.FunctionalAppliances.SyrupsFilledAmount
+	local randomNumb = 0
+
+	if filledAmount == 6 then
+		randomNumb = ZombRand(2,48)
+	elseif filledAmount == 5 then
+		randomNumb = 48
+	elseif filledAmount == 4 then
+		randomNumb = ZombRand(30,47)
+	elseif filledAmount == 3 then
+		randomNumb = ZombRand(20,32)
+	elseif filledAmount == 2 then
+		randomNumb = ZombRand(10,22)
+	elseif filledAmount == 1 then
+		randomNumb = ZombRand(2,12)
+	end
+
+	local syrupDelta = syrup:getUseDelta()
+	local newWeightAmount = 1 + (randomNumb * 0.1875)
+
+	syrup:setDelta(randomNumb * syrupDelta)
+	syrup:setActualWeight(newWeightAmount)
+	syrup:setCustomWeight(true)
+end
+
 local function FASpawn(roomName, containerType, containerFilled)
-	if (FATheatrespawns[roomName] == nil and FABarTapsspawns[roomName] == nil and FASyrupsspawns[roomName] == nil) then
-		return;
+	if FATheatrespawns[roomName] == nil and FABarTapsspawns[roomName] == nil and FASyrupsspawns[roomName] == nil then
+		return
 	end
 
 	local RollRand = 0
 	
-	if (FATheatrespawns[roomName] ~= nil) and (FATheatrespawns[roomName][containerType] ~= nil) then
-		if FAApplySpawnChance(FATheatrespawns[roomName][containerType]) then
+	if FATheatrespawns[roomName] ~= nil and FATheatrespawns[roomName][containerType] ~= nil then
+		if FA.ApplySpawnChance(FATheatrespawns[roomName][containerType]) then
 			if isFriendlyModEnabled("sapphcooking") then
 				if containerType == "fridge" then
 					RollRand = ZombRand(1,100)+(FASapphsCookingFreshTheatreSpawnChance*10)
 					if RollRand >= 101 then
-						containerFilled:AddItem(FASapphsFreshList[FAPickOne(#FASapphsFreshList)]);
+						containerFilled:AddItem(FASapphsFreshList[FA.PickOne(#FASapphsFreshList)])
 						if RollRand >= 121 then
-							containerFilled:AddItem(FASapphsFreshList[FAPickOne(#FASapphsFreshList)]);
+							containerFilled:AddItem(FASapphsFreshList[FA.PickOne(#FASapphsFreshList)])
 							if RollRand >= 131 then
-								containerFilled:AddItem(FASapphsFreshList[FAPickOne(#FASapphsFreshList)]);
+								containerFilled:AddItem(FASapphsFreshList[FA.PickOne(#FASapphsFreshList)])
 							end
 						end
 					end
 				else
 					RollRand = ZombRand(1,100)+(FASapphsCookingFreshTheatreSpawnChance*10)
 					if RollRand >= 101 then
-						containerFilled:AddItem(FASapphsFreshList[FAPickOne(#FASapphsFreshList)]);
+						containerFilled:AddItem(FASapphsFreshList[FA.PickOne(#FASapphsFreshList)])
 						if RollRand >= 121 then
-							containerFilled:AddItem(FASapphsFreshList[FAPickOne(#FASapphsFreshList)]);
+							containerFilled:AddItem(FASapphsFreshList[FA.PickOne(#FASapphsFreshList)])
 						end
 					end
 					RollRand = ZombRand(1,100)+(FASapphsCookingTheatreSpawnChance*10)
 					if RollRand >= 101 then
-						containerFilled:AddItem(FASapphsList[FAPickOne(#FASapphsList)]);
+						containerFilled:AddItem(FASapphsList[FA.PickOne(#FASapphsList)])
 						if RollRand >= 121 then
-							containerFilled:AddItem(FASapphsList[FAPickOne(#FASapphsList)]);
+							containerFilled:AddItem(FASapphsList[FA.PickOne(#FASapphsList)])
 							if RollRand >= 131 then
-								containerFilled:AddItem(FASapphsList[FAPickOne(#FASapphsList)]);
+								containerFilled:AddItem(FASapphsList[FA.PickOne(#FASapphsList)])
 							end
 						end
 					end
@@ -483,22 +546,22 @@ local function FASpawn(roomName, containerType, containerFilled)
 			if isFriendlyModEnabled("CCSFixed") and containerType == "counter" then
 				RollRand = ZombRand(1,100)+(FACCSTheatreSpawnChance*10)
 				if RollRand >= 101 then
-					containerFilled:AddItem(FACCSFixedCandyList[FAPickOne(#FACCSFixedCandyList)]);
+					containerFilled:AddItem(FACCSFixedCandyList[FA.PickOne(#FACCSFixedCandyList)])
 					if RollRand >= 121 then
-						containerFilled:AddItem(FACCSFixedCandyList[FAPickOne(#FACCSFixedCandyList)]);
+						containerFilled:AddItem(FACCSFixedCandyList[FA.PickOne(#FACCSFixedCandyList)])
 						if RollRand >= 131 then
-							containerFilled:AddItem(FACCSFixedCandyList[FAPickOne(#FACCSFixedCandyList)]);
+							containerFilled:AddItem(FACCSFixedCandyList[FA.PickOne(#FACCSFixedCandyList)])
 						end
 					end
 				end
 			elseif isFriendlyModEnabled("CCS") and containerType == "counter" then
 				RollRand = ZombRand(1,100)+(FACCSTheatreSpawnChance*10)
 				if RollRand >= 101 then
-					containerFilled:AddItem(FACCSCandyList[FAPickOne(#FACCSCandyList)]);
+					containerFilled:AddItem(FACCSCandyList[FA.PickOne(#FACCSCandyList)])
 					if RollRand >= 121 then
-						containerFilled:AddItem(FACCSCandyList[FAPickOne(#FACCSCandyList)]);
+						containerFilled:AddItem(FACCSCandyList[FA.PickOne(#FACCSCandyList)])
 						if RollRand >= 131 then
-							containerFilled:AddItem(FACCSCandyList[FAPickOne(#FACCSCandyList)]);
+							containerFilled:AddItem(FACCSCandyList[FA.PickOne(#FACCSCandyList)])
 						end
 					end
 				end
@@ -507,39 +570,39 @@ local function FASpawn(roomName, containerType, containerFilled)
 			if containerType == "fridge" then
 				RollRand = ZombRand(1,100)+(FAFreshTheatreSpawnChance*10)
 				if RollRand >= 101 then
-					containerFilled:AddItem(FAFreshList[FAPickOne(#FAFreshList)]);
+					containerFilled:AddItem(FAFreshList[FA.PickOne(#FAFreshList)])
 					if RollRand >= 121 then
-						containerFilled:AddItem(FAFreshList[FAPickOne(#FAFreshList)]);
+						containerFilled:AddItem(FAFreshList[FA.PickOne(#FAFreshList)])
 						if RollRand >= 131 then
-							containerFilled:AddItem(FAFreshList[FAPickOne(#FAFreshList)]);
+							containerFilled:AddItem(FAFreshList[FA.PickOne(#FAFreshList)])
 						end
 					end
 				end
 			else
 				RollRand = ZombRand(1,100)+(FAFreshTheatreSpawnChance*10)
 				if RollRand >= 101 then
-					containerFilled:AddItem(FAFreshList[FAPickOne(#FAFreshList)]);
+					containerFilled:AddItem(FAFreshList[FA.PickOne(#FAFreshList)])
 					if RollRand >= 121 then
-						containerFilled:AddItem(FAFreshList[FAPickOne(#FAFreshList)]);
+						containerFilled:AddItem(FAFreshList[FA.PickOne(#FAFreshList)])
 					end
 				end
 				RollRand = ZombRand(1,100)+(FATheatreSpawnChance*10)
 				if RollRand >= 101 then
-					containerFilled:AddItem(FAPopcornList[FAPickOne(#FAPopcornList)]);
+					containerFilled:AddItem(FAPopcornList[FA.PickOne(#FAPopcornList)])
 					if RollRand >= 121 then
-						containerFilled:AddItem(FAPopcornList[FAPickOne(#FAPopcornList)]);
+						containerFilled:AddItem(FAPopcornList[FA.PickOne(#FAPopcornList)])
 						if RollRand >= 131 then
-							containerFilled:AddItem(FAPopcornList[FAPickOne(#FAPopcornList)]);
+							containerFilled:AddItem(FAPopcornList[FA.PickOne(#FAPopcornList)])
 						end
 					end
 				end
 				RollRand = ZombRand(1,100)+(FATheatreSpawnChance*10)
 				if RollRand >= 101 then
-					containerFilled:AddItem(FABaseCandyList[FAPickOne(#FABaseCandyList)]);
+					containerFilled:AddItem(FABaseCandyList[FA.PickOne(#FABaseCandyList)])
 					if RollRand >= 121 then
-						containerFilled:AddItem(FABaseCandyList[FAPickOne(#FABaseCandyList)]);
+						containerFilled:AddItem(FABaseCandyList[FA.PickOne(#FABaseCandyList)])
 						if RollRand >= 131 then
-							containerFilled:AddItem(FABaseCandyList[FAPickOne(#FABaseCandyList)]);
+							containerFilled:AddItem(FABaseCandyList[FA.PickOne(#FABaseCandyList)])
 						end
 					end
 				end
@@ -548,30 +611,93 @@ local function FASpawn(roomName, containerType, containerFilled)
 		end
 	end
 
-	if (FABarTapsspawns[roomName] ~= nil) and (FABarTapsspawns[roomName][containerType] ~= nil) then
-		if FAApplySpawnChance(FABarTapsspawns[roomName][containerType]) then
-			RollRand = ZombRand(1,100)+(FAKegSpawnChance*10)
-			if RollRand >= 101 then
-				containerFilled:AddItem(FABarTapsKegsList[FAPickOne(#FABarTapsKegsList)]);
-				if RollRand >= 121 then
-					containerFilled:AddItem(FABarTapsKegsList[FAPickOne(#FABarTapsKegsList)]);
+	if FABarTapsspawns[roomName] ~= nil and FABarTapsspawns[roomName][containerType] ~= nil then
+		if FA.ApplySpawnChance(FABarTapsspawns[roomName][containerType]) then
+			local BarTapsObject = nil
+			local square = containerFilled:getParent():getSquare()
+			for i=1,square:getObjects():size() do
+				local thisObject = square:getObjects():get(i-1)
+				if thisObject:getSprite() then
+					local properties = thisObject:getSprite():getProperties()
+					local spr = thisObject:getSprite():getName()  
+					local groupName = nil
+					if properties ~= nil then
+						if properties:Is("GroupName") then
+							groupName = properties:Val("GroupName")
+						end				
+						if groupName == "Bar Tap" then				
+							BarTapsObject = thisObject
+							break
+						end
+					end
+				end
+			end
+			if BarTapsObject ~= nil then
+				RollRand = ZombRand(1,100)+(FAKegSpawnChance*20)
+				if RollRand >= 101 then
+					local keg1 = containerFilled:AddItem(FABarTapsKegsList[FA.PickOne(#FABarTapsKegsList)])
+					FA.depleteSpawnedKeg(keg1)
+					if RollRand >= 121 then
+						local keg2 = containerFilled:AddItem(FABarTapsKegsList[FA.PickOne(#FABarTapsKegsList)])
+						FA.depleteSpawnedKeg(keg2)
+						if RollRand >= 131 then
+							local keg3 = containerFilled:AddItem(FABarTapsKegsList[FA.PickOne(#FABarTapsKegsList)])
+							FA.depleteSpawnedKeg(keg3)
+							if RollRand >= 141 then
+								local keg4 = containerFilled:AddItem(FABarTapsKegsList[FA.PickOne(#FABarTapsKegsList)])
+								FA.depleteSpawnedKeg(keg4)
+							end
+						end
+					end
 				end
 			end
 		end
 	end
 
-	if (FASyrupsspawns[roomName] ~= nil) and (FASyrupsspawns[roomName][containerType] ~= nil) then
-		if FAApplySpawnChance(FASyrupsspawns[roomName][containerType]) then
-			RollRand = ZombRand(1,100)+(FASyrupsSpawnChance*10)
-			if RollRand >= 101 then
-				containerFilled:AddItem(FASodaFountainSyrupsList[FAPickOne(#FASodaFountainSyrupsList)]);
-				if RollRand >= 121 then
-					containerFilled:AddItem(FASodaFountainSyrupsList[FAPickOne(#FASodaFountainSyrupsList)]);
+	if FASyrupsspawns[roomName] ~= nil and FASyrupsspawns[roomName][containerType] ~= nil then
+		if FA.ApplySpawnChance(FASyrupsspawns[roomName][containerType]) then
+			local SodaFountainObject = nil
+			local square = containerFilled:getParent():getSquare()
+			for i=1,square:getObjects():size() do
+				local thisObject = square:getObjects():get(i-1)
+				if thisObject:getSprite() then
+					local properties = thisObject:getSprite():getProperties()
+					local spr = thisObject:getSprite():getName()  
+					local groupName = nil
+					if properties ~= nil then
+						if properties:Is("GroupName") then
+							groupName = properties:Val("GroupName")
+						end				
+						if groupName == "Tabletop Soda" then				
+							SodaFountainObject = thisObject
+							break
+						end
+					end
+				end
+			end
+			if SodaFountainObject ~= nil then
+				RollRand = ZombRand(1,100)+(FASyrupsSpawnChance*20)
+				if RollRand >= 101 then
+					local addItem1 = containerFilled:AddItem(FASodaFountainSyrupsList[FA.PickOne(#FASodaFountainSyrupsList)])
+					FA.depleteSpawnedSyrup(addItem1)
+					local addItem2 = containerFilled:AddItem("FunctionalAppliances.FACO2Tank")
+					FA.depleteSpawnedTank(addItem2)
+					if RollRand >= 121 then
+						local addItem3 = containerFilled:AddItem(FASodaFountainSyrupsList[FA.PickOne(#FASodaFountainSyrupsList)])
+						FA.depleteSpawnedSyrup(addItem3)
+						if RollRand >= 131 then
+							local addItem4 = containerFilled:AddItem(FASodaFountainSyrupsList[FA.PickOne(#FASodaFountainSyrupsList)])
+							FA.depleteSpawnedSyrup(addItem4)
+							if RollRand >= 141 then
+								local addItem5 = containerFilled:AddItem(FASodaFountainSyrupsList[FA.PickOne(#FASodaFountainSyrupsList)])
+								FA.depleteSpawnedSyrup(addItem5)
+							end
+						end
+					end
 				end
 			end
 		end
 	end
-
 end
 
 Events.OnFillContainer.Add(FASpawn)

@@ -1,0 +1,480 @@
+module Base
+{
+	template vehicle TwoDoor {
+		part EngineDoor
+		{
+			anim Close
+			{
+				anim = Hood_closing,
+				rate = 1.75,
+			}
+
+			anim Open
+			{
+				anim = Hood_closing,
+				reverse = TRUE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = Hood_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = Hood_closing,
+				animate = FALSE,
+			}
+		}		
+		part DoorFrontLeft
+		{
+			anim Close
+			{
+				anim = DoorFrontLeft_closing,
+				rate = 1.75,
+			}
+
+			anim Open
+			{
+				anim = DoorFrontLeft_closing,
+				reverse = TRUE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorFrontLeft_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorFrontLeft_closing,
+				animate = FALSE,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			anim Close
+			{
+				anim = DoorFrontRight_closing,
+				rate = 1.75,
+			}
+
+			anim Open
+			{
+				anim = DoorFrontRight_closing,
+				reverse = TRUE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorFrontRight_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorFrontRight_closing,
+				animate = FALSE,
+			}
+		}
+	}
+
+	template vehicle ThreeDoor {
+		part EngineDoor
+		{
+			anim Close
+			{
+				anim = Hood_closing,
+				rate = 1.75,
+			}
+
+			anim Open
+			{
+				anim = Hood_closing,
+				reverse = TRUE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = Hood_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = Hood_closing,
+				animate = FALSE,
+			}
+		}
+		part DoorFrontLeft
+		{
+			anim Close
+			{
+				anim = DoorFrontLeft_closing,
+				rate = 1.75,
+			}
+
+			anim Open
+			{
+				anim = DoorFrontLeft_closing,
+				reverse = TRUE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorFrontLeft_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorFrontLeft_closing,
+				animate = FALSE,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			anim Close
+			{
+				anim = DoorFrontRight_closing,
+				rate = 1.75,
+			}
+
+			anim Open
+			{
+				anim = DoorFrontRight_closing,
+				reverse = TRUE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorFrontRight_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorFrontRight_closing,
+				animate = FALSE,
+			}
+		}
+		part DoorMiddleRight
+		{
+			anim Close
+			{
+				anim = DoorRearRight_closing,
+				rate = 1.75,
+			}
+
+			anim Open
+			{
+				anim = DoorRearRight_closing,
+				reverse = TRUE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorRearRight_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorRearRight_closing,
+				animate = FALSE,
+			}
+		}
+	}
+	template vehicle FourDoor {
+		part EngineDoor
+		{
+			anim Close
+			{
+				anim = Hood_closing,
+				rate = 1.75,
+			}
+
+			anim Open
+			{
+				anim = Hood_closing,
+				reverse = TRUE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = Hood_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = Hood_closing,
+				animate = FALSE,
+			}
+		}		
+		part DoorFrontLeft
+		{
+			anim Close
+			{
+				anim = DoorFrontLeft_closing,
+				rate = 1.75,
+			}
+
+			anim Open
+			{
+				anim = DoorFrontLeft_closing,
+				reverse = TRUE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorFrontLeft_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorFrontLeft_closing,
+				animate = FALSE,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			anim Close
+			{
+				anim = DoorFrontRight_closing,
+				rate = 1.75,
+			}
+
+			anim Open
+			{
+				anim = DoorFrontRight_closing,
+				reverse = TRUE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorFrontRight_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorFrontRight_closing,
+				animate = FALSE,
+			}
+		}
+		part DoorRearLeft
+		{
+			anim Close
+			{
+				anim = DoorRearLeft_closing,
+				rate = 1.75,
+			}
+
+			anim Open
+			{
+				anim = DoorRearLeft_closing,
+				reverse = TRUE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorRearLeft_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorRearLeft_closing,
+				animate = FALSE,
+			}
+		}
+
+		part DoorRearRight
+		{
+			anim Close
+			{
+				anim = DoorRearRight_closing,
+				rate = 1.75,
+			}
+
+			anim Open
+			{
+				anim = DoorRearRight_closing,
+				reverse = TRUE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorRearRight_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorRearRight_closing,
+				animate = FALSE,
+			}
+		}
+	}
+	template vehicle RearDoorVersion {
+		part DoorRear
+		{
+			anim Close
+			{
+				anim = Trunk_closing,
+				rate = 1.75,
+			}
+
+			anim Open
+			{
+				anim = Trunk_closing,
+				reverse = TRUE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = Trunk_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = Trunk_closing,
+				animate = FALSE,
+			}
+		}
+	}
+	template vehicle TrunkDoorVersion {
+		part TrunkDoor
+		{
+			anim Close
+			{
+				anim = Trunk_closing,
+				rate = 1.75,
+			}
+
+			anim Open
+			{
+				anim = Trunk_closing,
+				reverse = TRUE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = Trunk_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = Trunk_closing,
+				animate = FALSE,
+			}
+		}
+	}
+	template vehicle OpenBedVersion {		
+	}
+
+	template vehicle SixSeats {
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+		passenger MiddleLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+		passenger MiddleRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+	}
+	template vehicle FourSeats {
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+	}
+	template vehicle TwoSeats {
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+	}
+	template vehicle CullSeats {}
+}

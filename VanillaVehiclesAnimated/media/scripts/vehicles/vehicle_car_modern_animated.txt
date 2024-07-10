@@ -1,0 +1,227 @@
+module Base
+{
+	model Vehicles_ModernCar_a
+	{
+		mesh = vehicles/Vehicles_CarModern_animated|ModernCar,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	
+
+	model Vehicles_ModernCar_internals
+	{
+		mesh = vehicles/Vehicles_CarModern_animated|Interior,
+		shader = vehiclewheel,
+		texture = Vehicles/vehicle_moderncarshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	model Vehicles_ModernCar_DoorFrontLeft
+	{
+		mesh = vehicles/Vehicles_CarModern_animated|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_ModernCar_DoorFrontRight
+	{
+		mesh = vehicles/Vehicles_CarModern_animated|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_ModernCar_DoorRearLeft
+	{
+		mesh = vehicles/Vehicles_CarModern_animated|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_ModernCar_DoorRearRight
+	{
+		mesh = vehicles/Vehicles_CarModern_animated|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_ModernCar_WindowFrontLeft
+	{
+		mesh = vehicles/Vehicles_CarModern_animated|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_ModernCar_WindowFrontRight
+	{
+		mesh = vehicles/Vehicles_CarModern_animated|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_ModernCar_WindowRearLeft
+	{
+		mesh = vehicles/Vehicles_CarModern_animated|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_ModernCar_WindowRearRight
+	{
+		mesh = vehicles/Vehicles_CarModern_animated|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_ModernCar_Trunk
+	{
+		mesh = vehicles/Vehicles_CarModern_animated|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_ModernCar_Hood
+	{
+		mesh = vehicles/Vehicles_CarModern_animated|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_ModernCar_Windshield
+	{
+		mesh = vehicles/Vehicles_CarModern_animated|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+	model Vehicles_ModernCar_RearWindow
+	{
+		mesh = vehicles/Vehicles_CarModern_animated|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+
+
+	template vehicle ModernCar_animatedDoors {
+		part TruckBed 
+		{
+			model Default 
+			{
+				file = Vehicles_ModernCar_internals,
+				rotate = 0 0 0,
+				scale = 1,
+			}			
+		}
+
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = Vehicles_ModernCar_Trunk,
+				offset = 0 0 0,
+				rotate = -90 0 0,
+				scale = 1.0,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = Vehicles_ModernCar_DoorFrontLeft,
+				rotate = -90 0 0,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = Vehicles_ModernCar_DoorFrontRight,
+				rotate = -90 0 0,
+			}
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = Vehicles_ModernCar_DoorRearLeft,
+				rotate = -90 0 0,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = Vehicles_ModernCar_DoorRearRight,
+				rotate = -90 0 0,
+			}
+		}
+		part EngineDoor
+		{
+			model Default
+			{
+				file = Vehicles_ModernCar_Hood,
+				rotate = -90 0 0,
+			}
+		}
+		part WindowFrontLeft
+        	{	
+            		model Default
+            		{
+                		file = Vehicles_ModernCar_WindowFrontLeft,
+				rotate = -90 0 0,
+            		}
+			anim CloseOpen {
+				anim = WindowFrontLeft_opening,
+			}
+
+        	}
+		part WindowFrontRight
+        	{	
+            		model Default
+            		{
+                		file = Vehicles_ModernCar_WindowFrontRight,
+				rotate = -90 0 0,
+            		}
+
+        	}
+		part WindowRearLeft
+        	{	
+            		model Default
+            		{
+                		file = Vehicles_ModernCar_WindowRearLeft,
+				rotate = -90 0 0,
+            		}
+            		
+        	}
+		part WindowRearRight
+        	{	
+            		model Default
+            		{
+                		file = Vehicles_ModernCar_WindowRearRight,
+				rotate = -90 0 0,
+            		}
+            		
+        	}		
+		
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = Vehicles_ModernCar_Windshield,
+				rotate = 0 0 0,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = Vehicles_ModernCar_RearWindow,
+				rotate = 0 0 0,
+			}
+		}
+	}
+}

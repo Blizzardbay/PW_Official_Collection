@@ -1,11 +1,12 @@
 Tooltip_PL = {
 --
-	Tooltip_OilPan 				= "Wymaga ciep�a do u�ytkowania",
-	Tooltip_WaterPan			= "Musi by� ugotowane.",
-	Tooltip_AsiaFoodMagazine = "Uczy przepis�w kulinarnych z regionu Azji.",
-	Tooltip_EuropeFoodMagazine = "Uczy przepis�w kulinarnych z regionu Europy.",
-	Tooltip_PastaDoughMagazine = "Uczy przepis�w na makarony.",
-	
+	Tooltip_OilPan 				= "Wymaga ciepła do użytkowania",
+	Tooltip_WaterPan			= "Musi byc ugotowane.",
+	Tooltip_AsiaFoodMagazine = "Uczy przepisów kulinarnych z regionu Azji.",
+	Tooltip_EuropeFoodMagazine = "Uczy przepisów kulinarnych z regionu Europy.",
+	Tooltip_PastaDoughMagazine = "Uczy przepisów na makarony.",
+        Tooltip_CheeseCurds = "Można go formować w krążki parmezanu w garnkach, foremkach lub wiaderkach; można też przecedzić i uzyskać ser mozzarella.",
+	Tooltip_BlueCheese = "Można go wykorzystać do produkcji sera pleśniowego w garnkach, formach do sera lub wiaderkach.",
 	
 	
 } 	

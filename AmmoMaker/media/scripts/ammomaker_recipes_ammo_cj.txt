@@ -7,120 +7,142 @@ module ammomaker {
 		Base
 	}
 
-/* Recipes Ammo */
+/* Recipes Ammo CJ */
 
-	recipe Make 5.45x39 Bullets x3
+	recipe Make 5.45x39 [CJ]
 	{
 		OnTest:Recipe.OnTest.isActivated_CJ,
-
-		GunPowder=1,
-		ScrapMetal=1,
-		BlowTorch=1,
+		
+		ammomaker_GunPowderGrains=56,
+		ammomaker_PartsBottleneckS=1,
 		keep Hammer/BallPeenHammer,
 
 		Result:CJ545=1,
-		RemoveResultItem:true,
-		OnCreate:Recipe.OnCreate.Make_CJ_545x39,
 		Sound:Hammering,
 		Time:50.0,
-        Category:Ammo Maker CJ,
-		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+        Category:Ammo Maker Ammo,
+		OnGiveXP:Recipe.OnGiveXP.Reloading3,
 		NeedToBeLearn:false,
+		IsHidden:true,
 	}
 
-	recipe Make .22 LR Bullets x40
+	recipe Make .22 LR [CJ]
 	{
 		OnTest:Recipe.OnTest.isActivated_CJ,
-
-		GunPowder=1,
-		ScrapMetal=1,
-		BlowTorch=1,
+		
+		ammomaker_GunPowderGrains=4,
+		ammomaker_PartsStraightSRim=1,
 		keep Hammer/BallPeenHammer,
 
 		Result:CJ22LR=1,
-		RemoveResultItem:true,
-		OnCreate:Recipe.OnCreate.Make_CJ_22LR,
 		Sound:Hammering,
 		Time:50.0,
-        Category:Ammo Maker CJ,
-		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+        Category:Ammo Maker Ammo,
+		OnGiveXP:Recipe.OnGiveXP.Reloading3,
 		NeedToBeLearn:false,
+		IsHidden:true,
 	}
 
-	recipe Make 7.62x51 NATO Bullets x2
+	recipe Make 7.62x51 NATO [CJ]
 	{
 		OnTest:Recipe.OnTest.isActivated_CJ,
-
-		GunPowder=1,
-		ScrapMetal=1,
-		BlowTorch=1,
+		
+		ammomaker_GunPowderGrains=86,
+		ammomaker_PartsBottleneckM=1,
 		keep Hammer/BallPeenHammer,
 
 		Result:762NATO=1,
-		RemoveResultItem:true,
-		OnCreate:Recipe.OnCreate.Make_CJ_762x51NATO,
 		Sound:Hammering,
 		Time:50.0,
-        Category:Ammo Maker CJ,
-		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+        Category:Ammo Maker Ammo,
+		OnGiveXP:Recipe.OnGiveXP.Reloading3,
 		NeedToBeLearn:false,
+		IsHidden:true,
 	}
 
-	recipe Make 7.62x39 Bullets x3
+	recipe Make 7.62x39 [CJ]
 	{
 		OnTest:Recipe.OnTest.isActivated_CJ,
-
-		GunPowder=1,
-		ScrapMetal=1,
-		BlowTorch=1,
+		
+		ammomaker_GunPowderGrains=50,
+		ammomaker_PartsBottleneckS=1,
 		keep Hammer/BallPeenHammer,
 
 		Result:CJ762=1,
-		RemoveResultItem:true,
-		OnCreate:Recipe.OnCreate.Make_CJ_762x39,
 		Sound:Hammering,
 		Time:50.0,
-        Category:Ammo Maker CJ,
-		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+        Category:Ammo Maker Ammo,
+		OnGiveXP:Recipe.OnGiveXP.Reloading3,
 		NeedToBeLearn:false,
+		IsHidden:true,
 	}
 
-	recipe Make 7.62x54 R Bullets x2
+	recipe Make 7.62x54 R [CJ]
 	{
 		OnTest:Recipe.OnTest.isActivated_CJ,
-
-		GunPowder=1,
-		ScrapMetal=1,
-		BlowTorch=1,
+		
+		ammomaker_GunPowderGrains=100,
+		ammomaker_PartsBottleneckMRim=1,
 		keep Hammer/BallPeenHammer,
 
 		Result:762_54R=1,
-		RemoveResultItem:true,
-		OnCreate:Recipe.OnCreate.Make_CJ_762x54R,
 		Sound:Hammering,
 		Time:50.0,
-        Category:Ammo Maker CJ,
-		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+        Category:Ammo Maker Ammo,
+		OnGiveXP:Recipe.OnGiveXP.Reloading3,
 		NeedToBeLearn:false,
+		IsHidden:true,
 	}
 
-	recipe Make .357 Mag Bullets x9
+	recipe Make .357 Mag [CJ]
 	{
 		OnTest:Recipe.OnTest.isActivated_CJ,
-
-		GunPowder=1,
-		ScrapMetal=1,
-		BlowTorch=1,
+		
+		ammomaker_GunPowderGrains=18,
+		ammomaker_PartsStraightMRim=1,
 		keep Hammer/BallPeenHammer,
 
 		Result:357Magnum=1,
-		RemoveResultItem:true,
-		OnCreate:Recipe.OnCreate.Make_CJ_357Mag,
 		Sound:Hammering,
 		Time:50.0,
-        Category:Ammo Maker CJ,
-		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+        Category:Ammo Maker Ammo,
+		OnGiveXP:Recipe.OnGiveXP.Reloading3,
 		NeedToBeLearn:false,
+		IsHidden:true,
+	}
+
+	recipe Make 9x39 [CJ]
+	{
+		OnTest:Recipe.OnTest.isActivated_CJWIP,
+		
+		ammomaker_GunPowderGrains=20,
+		ammomaker_PartsBottleneckS=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:CJ9_39=1,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker Ammo,
+		OnGiveXP:Recipe.OnGiveXP.Reloading3,
+		NeedToBeLearn:false,
+		IsHidden:true,
+	}
+
+	recipe Make .50 BMG [CJ]
+	{
+		OnTest:Recipe.OnTest.isActivated_CJWIP,
+
+		ammomaker_GunPowderGrains=440,
+		ammomaker_PartsBottleneckL=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:50Bmg=1,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker Ammo,
+		OnGiveXP:Recipe.OnGiveXP.Reloading3,
+		NeedToBeLearn:false,
+		IsHidden:true,
 	}
 
 }

@@ -1,0 +1,195 @@
+module Base
+{
+	model Vehicle_87gmcarmored_a
+	{
+		mesh = vehicles/Vehicles_87gmc_amored_animated|87gmcamouredcar,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 1,
+	}
+	
+	model Vehicle_87gmcarmored_internals
+	{
+		mesh = vehicles/Vehicles_87gmc_amored_animated|Interior,
+		shader = vehiclewheel,
+		texture = Vehicles/vehicle_stepvanshell,
+		static = TRUE,
+		scale = 1,
+	}
+
+	model Vehicle_87gmcarmored_DoorFrontLeft
+	{
+		mesh = vehicles/Vehicles_87gmc_amored_animated|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+	model Vehicle_87gmcarmored_DoorFrontRight
+	{
+		mesh = vehicles/Vehicles_87gmc_amored_animated|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+	model Vehicle_87gmcarmored_WindowFrontLeft
+	{
+		mesh = vehicles/Vehicles_87gmc_amored_animated|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 1,
+	}
+	model Vehicle_87gmcarmored_WindowFrontRight
+	{
+		mesh = vehicles/Vehicles_87gmc_amored_animated|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 1,
+	}	
+	model Vehicle_87gmcarmored_WindowRearLeft
+	{
+		mesh = vehicles/Vehicles_87gmc_amored_animated|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 1,
+	}
+	model Vehicle_87gmcarmored_WindowRearRight
+	{
+		mesh = vehicles/Vehicles_87gmc_amored_animated|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 1,
+	}	
+	model Vehicles_87gmcarmored_Trunk
+	{
+		mesh = vehicles/Vehicles_87gmc_amored_animated|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+	model Vehicle_87gmcarmored_Hood
+	{
+		mesh = vehicles/Vehicles_87gmc_amored_animated|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+	model Vehicle_87gmcarmored_Windshield
+	{
+		mesh = vehicles/Vehicles_87gmc_amored_animated|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 1,
+	}
+	model Vehicle_87gmcarmored_RearWindow
+	{
+		mesh = vehicles/Vehicles_87gmc_amored_animated|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 1,
+	}
+
+
+	template vehicle 87gmcarmored_animatedDoors {
+		part TruckBed 
+		{
+			model Default 
+			{
+				file = Vehicle_87gmcarmored_internals,
+				rotate = 0 0 0,
+				scale = 1,
+			}			
+		}
+		
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = Vehicle_87gmcarmored_DoorFrontLeft,
+				rotate = -90 0 0,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = Vehicle_87gmcarmored_DoorFrontRight,
+				rotate = -90 0 0,
+			}
+		}
+
+		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = Vehicle_87gmcarmored_Hood,
+				rotate = -90 0 0,
+			}
+		}
+		part WindowFrontLeft
+        	{	
+            		model Default
+            		{
+                		file = Vehicle_87gmcarmored_WindowFrontLeft,
+				rotate = -90 0 0,
+            		}
+
+        	}
+		part WindowFrontRight
+        	{	
+            		model Default
+            		{
+                		file = Vehicle_87gmcarmored_WindowFrontRight,
+				rotate = -90 0 0,
+            		}
+
+        	}
+		part WindowRearLeft
+        	{	
+            		model Default
+            		{
+                		file = Vehicle_87gmcarmored_WindowRearLeft,
+				rotate = 0 0 0,
+            		}
+
+        	}
+		part WindowRearRight
+        	{	
+            		model Default
+            		{
+                		file = Vehicle_87gmcarmored_WindowRearRight,
+				rotate = 0 0 0,
+            		}
+
+        	}
+
+				
+		
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = Vehicle_87gmcarmored_Windshield,
+				rotate = 0 0 0,
+			}			
+		}
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = Vehicles_87gmcarmored_Trunk,
+				offset = 0 0 0,
+				rotate = -90 0 0,
+				scale = 1.0,
+			}
+		}
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = Vehicle_87gmcarmored_RearWindow,
+				rotate = 0 0 0,
+			}
+		}
+	}
+}

@@ -10,7 +10,7 @@ module SapphCooking
 		Type = Literature,
 		DisplayName = Foods around the World Vol.1,
 		Icon = MagazineVol1Icon,
-		TeachedRecipes = Make Flour Dough Wrapper;Fill Dumplings with Minced Meat;Fill Dumplings with Vegetables;Make Saucepan with Shui Zhu Yu in Stock;Cook Kung Pao Chicken in Wok Pan;Cook Yakisoba in Wok Pan;Make Saucepan of Japanese Chicken Curry;Cook Borscht in Saucepan with Stock,
+		TeachedRecipes = Make Flour Dough Wrapper;Fill Dumplings with Minced Meat;Fill Dumplings with Vegetables;Make Saucepan with Shui Zhu Yu in Stock;Cook Kung Pao Chicken in Wok Pan;Prepare Yakisoba in Wok Pan;Make Saucepan of Japanese Chicken Curry;Cook Borscht in Saucepan with Stock,
 		StaticModel = H_AsianMag,
 		ReplaceOnUse    =   AsianFoodMagazine,
 		WorldStaticModel = AsianMag_Ground,
@@ -55,6 +55,98 @@ module SapphCooking
 		WorldStaticModel = SausageMag_Ground,
 		Tooltip             = Tooltip_SausagesMagazine,
 		DisplayCategory = SkillBook,
+	}
+
+	
+	item Fortune_Message1
+	{
+		Weight 		= 0.01,
+		DisplayCategory = Junk,
+		DisplayName 		= Fortune Message,
+		Icon 		=  FortuneMessageIcon,
+		WorldStaticModel 		=  FortuneMessage_Ground,
+		Tooltip = Tooltip_Fortune1,
+	}
+	item Fortune_Message2
+	{
+		Weight 		= 0.01,
+		DisplayCategory = Junk,
+		DisplayName 		= Fortune Message,
+		Icon 		=  FortuneMessageIcon,
+		WorldStaticModel 		=  FortuneMessage_Ground,
+		Tooltip = Tooltip_Fortune2,
+	}
+	item Fortune_Message3
+	{
+		Weight 		= 0.01,
+		DisplayCategory = Junk,
+		DisplayName 		= Fortune Message,
+		Icon 		=  FortuneMessageIcon,
+		WorldStaticModel 		=  FortuneMessage_Ground,
+		Tooltip = Tooltip_Fortune3,
+	}
+	item Fortune_Message4
+	{
+		Weight 		= 0.01,
+		DisplayCategory = Junk,
+		DisplayName 		= Fortune Message,
+		Icon 		=  FortuneMessageIcon,
+		WorldStaticModel 		=  FortuneMessage_Ground,
+		Tooltip = Tooltip_Fortune4,
+	}
+	item Fortune_Message5
+	{
+		Weight 		= 0.01,
+		DisplayCategory = Junk,
+		DisplayName 		= Fortune Message,
+		Icon 		=  FortuneMessageIcon,
+		WorldStaticModel 		=  FortuneMessage_Ground,
+		Tooltip = Tooltip_Fortune5,
+	}
+	item Fortune_Message6
+	{
+		Weight 		= 0.01,
+		DisplayCategory = Junk,
+		DisplayName 		= Fortune Message,
+		Icon 		=  FortuneMessageIcon,
+		WorldStaticModel 		=  FortuneMessage_Ground,
+		Tooltip = Tooltip_Fortune6,
+	}
+	item Fortune_Message7
+	{
+		Weight 		= 0.01,
+		DisplayCategory = Junk,
+		DisplayName 		= Fortune Message,
+		Icon 		=  FortuneMessageIcon,
+		WorldStaticModel 		=  FortuneMessage_Ground,
+		Tooltip = Tooltip_Fortune7,
+	}
+	item Fortune_Message8
+	{
+		Weight 		= 0.01,
+		DisplayCategory = Junk,
+		DisplayName 		= Fortune Message,
+		Icon 		=  FortuneMessageIcon,
+		WorldStaticModel 		=  FortuneMessage_Ground,
+		Tooltip = Tooltip_Fortune8,
+	}
+	item Fortune_Message9
+	{
+		Weight 		= 0.01,
+		DisplayCategory = Junk,
+		DisplayName 		= Fortune Message,
+		Icon 		=  FortuneMessageIcon,
+		WorldStaticModel 		=  FortuneMessage_Ground,
+		Tooltip = Tooltip_Fortune9,
+	}
+	item Fortune_Message10
+	{
+		Weight 		= 0.01,
+		DisplayCategory = Junk,
+		DisplayName 		= Fortune Message,
+		Icon 		=  FortuneMessageIcon,
+		WorldStaticModel 		=  FortuneMessage_Ground,
+		Tooltip = Tooltip_Fortune10,
 	}
 
 }

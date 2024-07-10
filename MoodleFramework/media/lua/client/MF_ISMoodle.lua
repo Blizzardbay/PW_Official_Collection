@@ -6,20 +6,35 @@
 
 MF = MF or {}
 MF.Moodles = {}--moodles map (for getPlayer only, for now)
+MF.MoodlesStorage = {}--moodles map (for splitscreen compatibility)
 MF.verbose = false
 MF.TooLargeValue = 100000
 MF.ModDataClean = false
 MF.scale = 1
 
---moodle creation for user (beware character & MF.Moodles management prohibit local coop correct handling)
+--moodle creation for user (beware character & MF.MoodlesStorage management prohibit local coop correct handling)
 function MF.createMoodle(moodleName)
     Events.OnCreatePlayer.Add(function(playerNum) MF.ISMoodle:new(moodleName,getSpecificPlayer(playerNum)) end);
 end
 
 
 --moodle access for user
-function MF.getMoodle(moodleName)
-    return MF.Moodles[moodleName];
+function MF.getMoodle(moodleName,playerNum)
+    if not playerNum then
+        playerNum = 0
+        if MF.verbose then
+            print("MF.ISMoodle:getMoodle "..moodleName.." with playernum "..playerNum)--design by contract
+            if tab2str then
+                print("MF.ISMoodle:getMoodle failed with storage = "..tab2str(MF.MoodlesStorage))
+            end
+        end
+    end
+
+    if not MF.MoodlesStorage[playerNum] then
+        return nil
+    end
+    
+    return MF.MoodlesStorage[playerNum][moodleName]
 end
 
 
@@ -291,10 +306,16 @@ function MF.ISMoodle:mouseOverMoodle(goodBadNeutral,moodleLevel)
 end
 
 function MF.ISMoodle:getXYPosition()
-    local x = (getCore():getScreenWidth() - self:getWidth() * MF.scale) - 18;
-    local y = 101;--y of first moodle
+    local x = getPlayerScreenLeft(self.playerNum) + getPlayerScreenWidth(self.playerNum) - 18 - self:getWidth() * MF.scale
+    local y = getPlayerScreenTop(self.playerNum) + 100
 
-    if self.disable then if MF.verbose then print("MF.ISMoodle:getXYPosition while disabled. "..self.name) end; return x,y; end--design by contract
+    --local x = (getCore():getScreenWidth() - self:getWidth() * MF.scale) - 18;
+    --local y = 101;--y of first moodle
+
+    if self.disable then
+        if MF.verbose then print("MF.ISMoodle:getXYPosition while disabled. "..self.name) end;
+        return x,y;--design by contract
+    end
     
     if self:getLevel() ~= 0 then--bypass when not displayed (this is bad design)
         for i = 0, 23 do--vanilla moodles first
@@ -360,6 +381,9 @@ function MF.ISMoodle:new(moodleName,character)
     
     o.name = moodleName;
     o.char = character;
+    o.playerNum = 0;
+    if o.char and o.char.getPlayerNum then o.playerNum = o.char:getPlayerNum() end--splitscreen compatibility
+
     o.disable = false;
     
     o:setThresholds(0.1,0.2,0.3,0.4,   0.6,0.7,0.8,0.9)--from bad4 to good4 0 is always the worse (TODO add sign inversion option)
@@ -385,15 +409,16 @@ function MF.ISMoodle:new(moodleName,character)
     --cache (for potential override)
     o:handleCacheOverride()
     
-    o.onPlayerDeathFunc = function(player) if player == o.char then o:removeFromUIManager(); o:suspend() end end
-    
+    if not MF.MoodlesStorage[o.playerNum] then MF.MoodlesStorage[o.playerNum] = {} end
     --avoid multiple death event stack
-    local old = MF.Moodles[self.name];
+    local old = MF.MoodlesStorage[o.playerNum][moodleName];
     if old and old.onPlayerDeathFunc then Events.OnPlayerDeath.Remove(old.onPlayerDeathFunc); end
     
+    o.onPlayerDeathFunc = function(player) if player == o.char then o:removeFromUIManager(); o:suspend() end end
     Events.OnPlayerDeath.Add(o.onPlayerDeathFunc)--disconnect from rendering on player death
     
-    MF.Moodles[moodleName] = o;--keep track in the map for external use and for override propagation after character death
+    MF.MoodlesStorage[o.playerNum][moodleName] = o;--keep track in the map for external use and for override propagation after character death (splitscreen compatible)
+    MF.Moodles = {}--moodles map backward compatibility
     
     return o;
 end
@@ -407,7 +432,10 @@ function MF.ISMoodle:activate()--in case we want to pause it
 end
 
 function MF.ISMoodle:handleCacheOverride()
-    local old = MF.Moodles[self.name];
+    local old = nil
+    if MF.MoodlesStorage[self.playerNum] then
+        old = MF.MoodlesStorage[self.playerNum][self.name];
+    end
     if not old then--initially we load default setup
         self.chevronCount = 0;
         self.chevronIsUp = true;

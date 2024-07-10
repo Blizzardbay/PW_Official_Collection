@@ -1,0 +1,3 @@
+Tooltip_EN = {
+    Tooltip_GPSNav = "It can be attached to a car or used with batteries and held with one hand.",
+}

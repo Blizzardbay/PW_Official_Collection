@@ -1,0 +1,502 @@
+module Base
+{
+	recipe Open Pack of 7.62 Boxes
+    {
+        762Pack,
+
+        Result:762Box=4,
+        Time:50.0,
+    }
+
+    recipe Pack 7.62 Boxes
+    {
+        762Box=4,
+
+        Result:762Pack,
+        Time:50.0,
+    }
+	
+	recipe Open Pack of .308 Boxes
+    {
+        308Pack,
+
+        Result:308Box=4,
+        Time:50.0,
+    }
+
+    recipe Pack .308 Boxes
+    {
+        308Box=4,
+
+        Result:308Pack,
+        Time:50.0,
+    }
+	
+	recipe Open Pack of .556 Boxes
+    {
+        556Pack,
+
+        Result:556Box=4,
+        Time:50.0,
+    }
+
+    recipe Pack .556 Boxes
+    {
+        556Box=4,
+
+        Result:556Pack,
+        Time:50.0,
+    }
+	
+	recipe Open Pack of .223 Boxes
+    {
+        223Pack,
+
+        Result:223Box=4,
+        Time:50.0,
+    }
+
+    recipe Pack .223 Boxes
+    {
+        223Box=4,
+
+        Result:223Pack,
+        Time:50.0,
+    }
+	
+	recipe Open Pack of Shotgun Shell Boxes
+    {
+        ShotgunShellsPack,
+
+        Result:ShotgunShellsBox=4,
+        Time:50.0,
+    }
+
+    recipe Pack Shotgun Shell Boxes
+    {
+        ShotgunShellsBox=4,
+
+        Result:ShotgunShellsPack,
+        Time:50.0,
+    }
+	
+	recipe Open Pack of 9mm Boxes
+    {
+        9mmPack,
+
+        Result:Bullets9mmBox=4,
+        Time:50.0,
+    }
+
+    recipe Pack 9mm Boxes
+    {
+        Bullets9mmBox=4,
+
+        Result:9mmPack,
+        Time:50.0,
+    }
+	
+	recipe Open Pack of .22 Boxes
+    {
+        22Pack,
+
+        Result:22Box=4,
+        Time:50.0,
+    }
+
+    recipe Pack .22 Boxes
+    {
+        22Box=4,
+
+        Result:22Pack,
+        Time:50.0,
+    }
+	
+	recipe Open Pack of .38 Special Boxes
+    {
+        38Pack,
+
+        Result:Bullets38Box=4,
+        Time:50.0,
+    }
+
+    recipe Pack .38 Special Boxes
+    {
+        Bullets38Box=4,
+
+        Result:38Pack,
+        Time:50.0,
+    }
+	
+	recipe Open Pack of .44 Magnum Boxes
+    {
+        44Pack,
+
+        Result:Bullets44Box=4,
+        Time:50.0,
+    }
+
+    recipe Pack .44 Magnum Boxes
+    {
+        Bullets44Box=4,
+
+        Result:44Pack,
+        Time:50.0,
+    }
+	
+	recipe Open Pack of .45 Auto Boxes
+    {
+        45Pack,
+
+        Result:Bullets45Box=4,
+        Time:50.0,
+    }
+
+    recipe Pack .45 Auto Boxes
+    {
+        Bullets45Box=4,
+
+        Result:45Pack,
+        Time:50.0,
+    }
+	
+	recipe Open Case of 7.62 Boxes
+    {
+        762Case,
+
+        Result:762Pack=4,
+        Time:50.0,
+    }
+
+    recipe Case 7.62 Packs
+    {
+        762Pack=4,
+
+        Result:762Case,
+        Time:50.0,
+    }
+	
+	recipe Open Case of .308 Boxes
+    {
+        308Case,
+
+        Result:308Pack=4,
+        Time:50.0,
+    }
+
+    recipe Case .308 Packs
+    {
+        308Pack=4,
+
+        Result:308Case,
+        Time:50.0,
+    }
+	
+	recipe Open Case of .556 Boxes
+    {
+        556Case,
+
+        Result:556Pack=4,
+        Time:50.0,
+    }
+
+    recipe Case .556 Packs
+    {
+        556Pack=4,
+
+        Result:556Case,
+        Time:50.0,
+    }
+	
+	recipe Open Case of .223 Boxes
+    {
+        223Case,
+
+        Result:223Pack=4,
+        Time:50.0,
+    }
+
+    recipe Case .223 Packs
+    {
+        223Pack=4,
+
+        Result:223Case,
+        Time:50.0,
+    }
+	
+	recipe Open Case of Shotgun Shell Boxes
+    {
+        ShotgunShellsCase,
+
+        Result:ShotgunShellsPack=4,
+        Time:50.0,
+    }
+
+    recipe Case Shotgun Shell Packs
+    {
+        ShotgunShellsPack=4,
+
+        Result:ShotgunShellsCase,
+        Time:50.0,
+    }
+	
+	recipe Open Case of 9mm Boxes
+    {
+        9mmCase,
+
+        Result:9mmPack=4,
+        Time:50.0,
+    }
+
+    recipe Case 9mm Packs
+    {
+        9mmPack=4,
+
+        Result:9mmCase,
+        Time:50.0,
+    }
+	
+	recipe Open Case of .22 Boxes
+    {
+        22Case,
+
+        Result:22Pack=4,
+        Time:50.0,
+    }
+
+    recipe Case .22 Packs
+    {
+        22Pack=4,
+
+        Result:22Case,
+        Time:50.0,
+    }
+	
+	recipe Open Case of .38 Special Boxes
+    {
+        38Case,
+
+        Result:38Pack=4,
+        Time:50.0,
+    }
+
+    recipe Case .38 Special Packs
+    {
+        38Pack=4,
+
+        Result:38Case,
+        Time:50.0,
+    }
+	
+	recipe Open Case of .44 Magnum Boxes
+    {
+        44Case,
+
+        Result:44Pack=4,
+        Time:50.0,
+    }
+
+    recipe Case .44 Magnum Packs
+    {
+        44Pack=4,
+
+        Result:44Case,
+        Time:50.0,
+    }
+	
+	recipe Open Case of .45 Auto Boxes
+    {
+        45Case,
+
+        Result:45Pack=4,
+        Time:50.0,
+    }
+
+    recipe Case .45 Auto Packs
+    {
+        45Pack=4,
+
+        Result:45Case,
+        Time:50.0,
+    }
+	
+	recipe Open Crate of 7.62 Boxes
+    {
+        762Crate,
+
+		CanBeDoneFromFloor:true,
+        Result:762Case=4,
+        Time:50.0,
+    }
+
+    recipe Crate 7.62 Cases
+    {
+        762Case=4,
+
+        CanBeDoneFromFloor:true,
+		Result:762Crate,
+        Time:50.0,
+    }
+	
+	recipe Open Crate of .308 Boxes
+    {
+        308Crate,
+
+        CanBeDoneFromFloor:true,
+		Result:308Case=4,
+        Time:50.0,
+    }
+
+    recipe Crate .308 Cases
+    {
+        308Case=4,
+
+        CanBeDoneFromFloor:true,
+		Result:308Crate,
+        Time:50.0,
+    }
+	
+	recipe Open Crate of .556 Boxes
+    {
+        556Crate,
+
+        CanBeDoneFromFloor:true,
+		Result:556Case=4,
+        Time:50.0,
+    }
+
+    recipe Crate .556 Cases
+    {
+        556Case=4,
+
+        CanBeDoneFromFloor:true,
+		Result:556Crate,
+        Time:50.0,
+    }
+	
+	recipe Open Crate of .223 Boxes
+    {
+        223Crate,
+
+        CanBeDoneFromFloor:true,
+		Result:223Case=4,
+        Time:50.0,
+    }
+
+    recipe Crate .223 Cases
+    {
+        223Case=4,
+
+        CanBeDoneFromFloor:true,
+		Result:223Crate,
+        Time:50.0,
+    }
+	
+	recipe Open Crate of Shotgun Shell Boxes
+    {
+        ShotgunShellsCrate,
+
+        CanBeDoneFromFloor:true,
+		Result:ShotgunShellsCase=4,
+        Time:50.0,
+    }
+
+    recipe Crate Shotgun Shell Cases
+    {
+        ShotgunShellsCase=4,
+
+        CanBeDoneFromFloor:true,
+		Result:ShotgunShellsCrate,
+        Time:50.0,
+    }
+	
+	recipe Open Crate of 9mm Boxes
+    {
+        9mmCrate,
+
+        CanBeDoneFromFloor:true,
+		Result:9mmCase=4,
+        Time:50.0,
+    }
+
+    recipe Crate 9mm Cases
+    {
+        9mmCase=4,
+
+        CanBeDoneFromFloor:true,
+		Result:9mmCrate,
+        Time:50.0,
+    }
+	
+	recipe Open Crate of .22 Boxes
+    {
+        22Crate,
+
+        CanBeDoneFromFloor:true,
+		Result:22Case=4,
+        Time:50.0,
+    }
+
+    recipe Crate .22 Cases
+    {
+        22Case=4,
+
+        CanBeDoneFromFloor:true,
+		Result:22Crate,
+        Time:50.0,
+    }
+	
+	recipe Open Crate of .38 Special Boxes
+    {
+        38Crate,
+
+        CanBeDoneFromFloor:true,
+		Result:38Case=4,
+        Time:50.0,
+    }
+
+    recipe Crate .38 Special Cases
+    {
+        38Case=4,
+
+        CanBeDoneFromFloor:true,
+		Result:38Crate,
+        Time:50.0,
+    }
+	
+	recipe Open Crate of .44 Magnum Boxes
+    {
+        44Crate,
+
+        CanBeDoneFromFloor:true,
+		Result:44Case=4,
+        Time:50.0,
+    }
+
+    recipe Crate .44 Magnum Cases
+    {
+        44Case=4,
+
+        CanBeDoneFromFloor:true,
+		Result:44Crate,
+        Time:50.0,
+    }
+	
+	recipe Open Crate of .45 Auto Boxes
+    {
+        45Crate,
+
+        CanBeDoneFromFloor:true,
+		Result:45Case=4,
+        Time:50.0,
+    }
+
+    recipe Crate .45 Auto Cases
+    {
+        45Case=4,
+
+        CanBeDoneFromFloor:true,
+		Result:45Crate,
+        Time:50.0,
+    }
+}

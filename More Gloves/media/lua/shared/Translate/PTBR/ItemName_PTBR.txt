@@ -14,4 +14,8 @@ ItemName_PTBR = {
 	ItemName_MoreGloves.TacticalGloves01 = "Luvas táticas",
 	ItemName_MoreGloves.TacticalGloves02 = "Luvas táticas",
 	ItemName_MoreGloves.TacticalGloves03 = "Luvas táticas",
+	ItemName_MoreGloves.LeatherWorkGloves = "Luvas de trabalho",
+	ItemName_MoreGloves.FingerlessTacticalGloves01 = "Luvas táticas sem dedos",
+	ItemName_MoreGloves.FingerlessTacticalGloves02 = "Luvas táticas sem dedos",
+	ItemName_MoreGloves.FingerlessTacticalGloves03 = "Luvas táticas sem dedos",	
 }

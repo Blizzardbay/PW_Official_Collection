@@ -1,0 +1,5 @@
+name=Vanilla Vehicles Animated: disable passenger rendering
+id=VVA_cullseats
+description=Current default animations result in character clipping through the roof when exiting the vehicle or switching seats, and some equipment clipping through the roof/windshield.
+description=If this is bothering you - enble this mod to disable passenger visibility.
+poster=poster.png

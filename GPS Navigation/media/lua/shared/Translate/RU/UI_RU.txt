@@ -1,0 +1,11 @@
+UI_RU = {
+    UI_dis = "Расстояние",
+    UI_time = "Время",
+    UI_name = "GPS-навигация",
+    UI_min = "мин",
+    UI_sec = "сек",
+    UI_Nav_tip = "Использование GPS-навигации",
+    UI_install_Nav = "Установить GPS-навигацию",
+    UI_uninstall_Nav = "Удалить GPS-навигацию",
+    UI_not_Nav = "У вас нет GPS-навигации",
+}

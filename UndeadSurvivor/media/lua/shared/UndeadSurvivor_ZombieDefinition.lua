@@ -28,7 +28,7 @@ local function DoIt() --It does the thing
 	end
 
 	if AmazonaSpawnrate > 0.00 then
-		table.insert(ZombiesZoneDefinition.Default,{name = "Amazona", chance = AmazonaSpawnrate});
+		table.insert(ZombiesZoneDefinition.Default,{name = "Amazona", chance = AmazonaSpawnrate, gender="female"});
 	end
 
 end

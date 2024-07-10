@@ -1,16 +1,27 @@
 IGUI_EN = {
     IGUI_draw = "Draw",
     IGUI_deal = "Deal Card",
+    IGUI_dealCards = "Deal %1 Cards",
     IGUI_drawCard = "Draw Card From Top",
+    IGUI_drawCards = "Draw %1 Cards",
+    IGUI_splitCards = "Split %1 Cards"
     IGUI_drawRandCard = "Draw Random Card",
     IGUI_shuffleCards = "Shuffle",
     IGUI_flipCard = "Flip",
     IGUI_searchDeck = "Search"
     IGUI_flipPiece = "Flip",
     IGUI_rollDie = "Roll",
-    IGUI_CardDeck = "Playing Card",
+    IGUI_lock = "Lock",
+
+    IGUI_placeDieOnSide = "Place as..."
+    IGUI_PlaceDieOnSide = "Place as %1",
+    IGUI_examine = "Examine",
+    IGUI_coinFlip = "Flip Coin",
+
     IGUI_take = "Take",
     IGUI_takeMore = "Take %1",
+
+    IGUI_SpecialActionAll = " All"
 
     IGUI_Play_Game = "Play Game",
 
@@ -22,4 +33,9 @@ IGUI_EN = {
     IGUI_ItemCat_GameBoard = "Game Board",
     IGUI_ItemCat_GameBox = "Game Box",
     IGUI_ItemCat_Die = "Die",
+
+    IGUI_CardDeck = "Playing Card",
+    IGUI_PlayingCards1 = "Playing Card",
+    IGUI_PlayingCards2 = "Playing Card",
+    IGUI_PlayingCards3 = "Playing Card",
 }

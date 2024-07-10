@@ -3,9 +3,9 @@ require "TimedActions/ISEatFoodAction"
 SSO_last_match_sound = 0;
 SSO_last_lighter_sound = 0;
 
-local start_function_o = ISEatFoodAction.start
+local start_function_o = ISEatFoodAction.start;
 
-function ISEatFoodAction:start()
+function ISEatFoodAction:start()	
 	--Susceptible support for removing mask before smoking/eating * Not my code! *
 	if getActivatedMods():contains("Susceptible") then
 		if SusceptibleMod.isPlayerSusceptible(self.character) then
@@ -24,11 +24,12 @@ function ISEatFoodAction:start()
 		end
 	end
 	
-	local customEatSound = self.item:getCustomEatSound()
+	local customEatSound = self.item:getCustomEatSound()			
 	
-	--Run original function if not of type Cigarettes or contains a CustomEatSound, otherwise run Smoking Overhaul override
-	if (self.item:getEatType() ~= "Cigarettes") or (customEatSound ~= "" and customEatSound ~= nil) and (customEatSound ~= "sm_smoking") then
-		start_function_o(self)
+	--Run original function if not of EatType Cigarettes, doesn't contain a CustomEatSound and is not sm_smoking (for MCM compatiblity)
+	--Is also not GF_LightUp for Jigga's GF, otherwise run Smoking Overhaul override
+	if (self.item:getEatType() ~= "Cigarettes") or (customEatSound ~= "" and customEatSound ~= nil) and (customEatSound ~= "sm_smoking") and (customEatSound ~= "GF_LightUp") then
+		start_function_o(self);
 	else
 		local playerInv = self.character:getInventory()
 		local lighter = playerInv:getFirstTag("Lighter") or playerInv:getFirstType("Base.Lighter");
@@ -60,7 +61,7 @@ function ISEatFoodAction:start()
 			current_sound = "Smoking_matches" .. sound_rand
 		end
 		
-		local gender = "";
+		local gender = "m";
 				
 		--Determine f or m 
 		if self.character:isFemale() then
@@ -69,8 +70,15 @@ function ISEatFoodAction:start()
 			gender = "m";
 		end
 		
+		local long_smoke_check = "";
+				
+		--Perform Longer Smoke Time check
+		if getActivatedMods():contains("LongerSmokeTime") then
+			long_smoke_check = "_L";							
+		end	
+						
 		--Play custom sound
-		self.eatAudio = self.character:getEmitter():playSound(current_sound .. gender);
+		self.eatAudio = self.character:getEmitter():playSound(current_sound .. gender .. long_smoke_check);
 				
 		--Continue with the original function
 		if self.item:getCustomMenuOption() then

@@ -1,6 +1,6 @@
 require "IS/UI/ISPanel"
 local c = require "EquipmentUI/Settings"
-
+local BG_COLOR = {r=1, g=1, b=1}
 local TWO_HAND_OFFSET = 1.3;
 
 WeaponSlot = ISPanel:derive("WeaponSlot");
@@ -34,6 +34,9 @@ function WeaponSlot:initialise()
        self:applyScale(scale) 
     end)
     self:applyScale(c.SCALE)
+    NotlocControllerNode
+        :injectControllerNode(self)
+        :setJoypadDownHandler(self.controllerNodeOnJoypadDown)
 end
 
 function WeaponSlot:applyScale(scale)
@@ -56,8 +59,11 @@ end
 
 function WeaponSlot:prerender()
     local tex = self.isSecondary and self.secondaryTexture or self.primaryTexture;
-    local r, g, b = 1, 1, 1;
-    
+    local hasControllerFocus = self.controllerNode and self.controllerNode.isFocused
+    local bgColor = hasControllerFocus and NotlocControllerNode.FOCUS_COLOR or BG_COLOR
+
+    local r, g, b = bgColor.r, bgColor.g, bgColor.b;
+
     local item = self:getHandItem();
     local dragItem = DragAndDrop.getDraggedItem();
     if dragItem then
@@ -108,7 +114,7 @@ function WeaponSlot:render()
         self:drawTextureCenteredAndSquare(item:getTex(), 1 + c.WEAPON_SLOT_PRIMARY_OFFSET, c.WEAPON_SLOT_PRIMARY_OFFSET, c.WEAPON_SLOT_PRIMARY_SIZE, alpha, self.getItemColor(item));
     end
 
-    if self:isMouseOver() then
+    if self:isMouseOver() or self.controllerNode.isFocused then
         self.equipmentUi:doTooltipForItem(self, item);
     end
 end
@@ -224,15 +230,13 @@ function WeaponSlot:isHandGood(item)
 end
 
 function WeaponSlot:dropOrUnequip()
-    if InventoryTetris then
-        return
-    end
-
     local item = self:getHandItem();
     if item then
-        if self.inventoryPane:isMouseOver() then
-            ISInventoryPaneContextMenu.unequipItem(item, self.playerNum)
-            return
+        if not InventoryTetris then
+            if self.inventoryPane:isMouseOver() then
+                ISInventoryPaneContextMenu.unequipItem(item, self.playerNum)
+                return
+            end
         end
 
         local playerObj = getSpecificPlayer(self.playerNum)
@@ -241,19 +245,28 @@ function WeaponSlot:dropOrUnequip()
             return
         end
 
-        local mouseOverUi = false
-        local mx, my = getMouseX(), getMouseY()
-        local allUi = UIManager.getUI()
-        for i = 0, allUi:size() - 1 do
-            local ui = allUi:get(i)
-            if ui:isPointOver(mx, my) then
-                mouseOverUi = true
-                break
-            end
-        end
-
-        if not mouseOverUi then
+        if not ISUIElement.isMouseOverAnyUI() then
             ISInventoryPaneContextMenu.dropItem(item, self.playerNum)
         end
     end
+end
+
+function WeaponSlot:controllerNodeOnJoypadDown(button)
+    if button == Joypad.AButton then
+        local item = self:getHandItem();
+        if item then
+            EquipmentSlot.openItemContextMenu(self, self:getWidth(), self:getHeight(), item, self.inventoryPane, self.playerNum);
+        end
+        return true
+    end
+
+    if button == Joypad.XButton then
+        local item = self:getHandItem();
+        if item then
+            ISInventoryPaneContextMenu.unequipItem(item, self.playerNum)
+        end
+        return true
+    end
+
+    return false
 end

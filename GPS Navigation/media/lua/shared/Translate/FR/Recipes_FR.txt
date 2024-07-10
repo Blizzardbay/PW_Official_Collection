@@ -1,0 +1,6 @@
+Recipes_FR = {
+    Recipe_Make GPS = "Fabriquer un systeme de navigation GPS",
+    Recipe_Remove GPSBattery = "Retirer la batterie du systeme de navigation GPS",
+    Recipe_Insert Battery into GPS = "Inserer la batterie dans le systeme de navigation GPS",
+    Recipe_Dismantle GPS = "Demonter le systeme de navigation GPS",
+}

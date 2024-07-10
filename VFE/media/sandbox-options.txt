@@ -40,3 +40,9 @@ option VFE.HouseWeaponsMulti {
 	page = VFE,
 	translation = VFE_HouseWeaponsMulti,
 }
+option VFE.HeavyWeapons {
+	type = boolean,
+	default = true,
+	page = VFE,
+	translation = VFE_HeavyWeapons,
+}

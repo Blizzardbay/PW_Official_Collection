@@ -1,7 +1,7 @@
 --- For anyone looking to make a sub-mod:
 --- ! SEE: `gameNight - implementUno`
 
-local applyItemDetails = require "gameNight - applyItemDetails"
+local deckActionHandler = require "gameNight - deckActionHandler"
 
 --- Basic Playing Cards
 --Joker red and black
@@ -17,4 +17,13 @@ for _,s in pairs(playingCards.suits) do
         table.insert(playingCards.cards, v.." of "..s)
     end
 end
-applyItemDetails.addDeck("CardDeck", playingCards.cards)
+deckActionHandler.addDeck("CardDeck", playingCards.cards)
+
+deckActionHandler.addDeck("PlayingCards1", playingCards.cards)
+deckActionHandler.addDeck("PlayingCards2", playingCards.cards)
+deckActionHandler.addDeck("PlayingCards3", playingCards.cards)
+
+local gamePieceAndBoardHandler = require "gameNight - gamePieceAndBoardHandler"
+gamePieceAndBoardHandler.registerSpecial("Base.PlayingCards1", { cardFaceType = "CardDeck" })
+gamePieceAndBoardHandler.registerSpecial("Base.PlayingCards2", { cardFaceType = "CardDeck" })
+gamePieceAndBoardHandler.registerSpecial("Base.PlayingCards3", { cardFaceType = "CardDeck" })

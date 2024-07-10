@@ -364,6 +364,7 @@ ItemName_EN = {
 	ItemName_AuthenticZLite.AuthenticBalloon_Green =  "Green Balloon",
 	ItemName_AuthenticZLite.AuthenticBalloon_Purple =  "Purple Balloon",
 	ItemName_AuthenticZLite.AuthenticBalloon_Red =  "Red Balloon",	
+	ItemName_AuthenticZLite.AuthenticBalloon_Teal =  "Teal Balloon",	
 	ItemName_AuthenticZLite.AuthenticBalloon_White =  "White Balloon",	
 	ItemName_AuthenticZLite.AuthenticBalloon_Yellow =  "Yellow Balloon",	
 	ItemName_AuthenticZLite.AuthenticBalloon_Group =  "Group of Balloons",
@@ -384,8 +385,7 @@ ItemName_EN = {
 	ItemName_AuthenticZLite.AuthenticPipeBomb =  "Pipe Bomb",	
 	ItemName_AuthenticZLite.AuthenticSmokeBomb =  "M18 Smoke Grenade",	
 	ItemName_AuthenticZLite.AuthenticSmokeBombRemote =  "M18 Smoke Grenade",
-	ItemName_AuthenticZLite.AuthenticWalkingCane =  "Walking Cane",	
-	ItemName_AuthenticZLite.Chainsaw =  "Chainsaw",		
+	ItemName_AuthenticZLite.AuthenticWalkingCane =  "Walking Cane",			
 	ItemName_AuthenticZLite.FlareGun =  "Flare Gun",
 	ItemName_AuthenticZLite.Flare12GaugeShot =  "12-Gauge Flare",	
 	ItemName_AuthenticZLite.Postal_Petition =  "Postal Dude's Petition",	
@@ -987,9 +987,9 @@ ItemName_EN = {
     ItemName_AuthenticZLite.Dress_BallroomDress_Elegant = "Elegant Round Gown",		
     ItemName_AuthenticZLite.Dress_BallroomDress_LongSleevedButtoned = "Long-Sleeved Round Gown",		
     ItemName_AuthenticZLite.Dress_BallroomDress_LongSleevedButtonedApron = "Long-Sleeved Round Gown with Apron",		
-    ItemName_AuthenticZLite.Dress_BallroomDress_Simple = "Round Gown",	
-    ItemName_AuthenticZLite.Dress_BallroomDress_Striped = "Round Gown",		
-    ItemName_AuthenticZLite.Dress_BallroomDress_StripedApron = "Round Gown with Apron",	
+    ItemName_AuthenticZLite.Dress_BallroomDress_Simple = "Modern Round Gown",	
+    ItemName_AuthenticZLite.Dress_BallroomDress_Striped = "Short-Sleeved Round Gown",		
+    ItemName_AuthenticZLite.Dress_BallroomDress_StripedApron = "Short-Sleeved Round Gown with Apron",	
     ItemName_AuthenticZLite.Dress_BallroomDress_Pattern = "Round Gown",			
     ItemName_AuthenticZLite.Gloves_LeatherGauntlets = "Leather Gauntlets",		
     ItemName_AuthenticZLite.Hat_DeerSkull = "Deer Skull",		
@@ -1076,4 +1076,17 @@ ItemName_EN = {
 	
 	ItemName_AuthenticZLite.Bag_B4BMom = "Casual Daypack",
 	ItemName_AuthenticZLite.Bag_B4BEvangelo = "FlexFit Backpack",
+	ItemName_AuthenticZLite.Hat_Bonnet_Tied = "Bonnet (Tied)",
+	ItemName_AuthenticZLite.Hat_Bonnet_UnTied = "Bonnet (Untied)",
+	ItemName_AuthenticZLite.Hat_TopHat_AZ = "Top Hat",	
+	
+	ItemName_AuthenticZLite.Shirt_UndershirtFancy = "Fancy Undershirt",	
+	ItemName_AuthenticZLite.SubstitutionDoll = "Substitution Doll",	
+		
+	ItemName_AuthenticZLite.Chainsaw =  "Chainsaw (ON)",	
+	ItemName_AuthenticZLite.ChainsawOff =  "Chainsaw (Off)",	
+	
+	/* New */		
+	ItemName_AuthenticZClothing.Hat_CourtJester =  "Court Jester Hat",	
+	ItemName_AuthenticZClothing.Hat_GraduationCap =  "Graduation Cap",	
 }

@@ -1,0 +1,26 @@
+module NAV
+{
+	imports
+	{
+		Base
+	}
+
+	item GPS
+    {
+        DisplayCategory 	= Communications,
+	Weight				= 0.3,
+        Type				= Drainable,
+        TorchCone	=	TRUE,
+        UseDelta	=	0.0009,
+        LightStrength	=	0.3,
+        ActivatedItem	=	TRUE,
+        cantBeConsolided = TRUE,
+        DisplayName		= GPS,
+        Tooltip 			= Tooltip_GPSNav,
+        Icon				= GpsNAV,
+	UsesBattery		= TRUE,
+	IsTelevision		= TRUE,
+        AttachmentType = Walkie,
+        WorldStaticModel	= WalkieTalkieValue, 
+    }	
+}

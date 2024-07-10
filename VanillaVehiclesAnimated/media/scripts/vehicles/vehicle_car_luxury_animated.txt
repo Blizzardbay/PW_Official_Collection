@@ -1,0 +1,161 @@
+module Base
+{
+	model Vehicles_LuxuryCar_a
+	{
+		mesh = vehicles/Car_Luxury_animated|Vehicles_LuxuryCar,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+
+	model Vehicles_LuxuryCar_internals
+	{
+		mesh = vehicles/Car_Luxury_animated|Vehicles_Interior,
+		shader = vehiclewheel,
+		texture = Vehicles/vehicle_luxurycarshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	model Vehicles_LuxuryCar_DoorFrontLeft
+	{
+		mesh = vehicles/Car_Luxury_animated|Door_Left_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_LuxuryCar_DoorFrontRight
+	{
+		mesh = vehicles/Car_Luxury_animated|Door_Right_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_LuxuryCar_WindowFrontLeft
+	{
+		mesh = vehicles/Car_Luxury_animated|Window_Left_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_LuxuryCar_WindowFrontRight
+	{
+		mesh = vehicles/Car_Luxury_animated|Window_Right_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_LuxuryCar_Trunk
+	{
+		mesh = vehicles/Car_Luxury_animated|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_LuxuryCar_Hood
+	{
+		mesh = vehicles/Car_Luxury_animated|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_LuxuryCar_Windshield
+	{
+		mesh = vehicles/Car_Luxury_animated|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+	model Vehicles_LuxuryCar_RearWindow
+	{
+		mesh = vehicles/Car_Luxury_animated|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+
+
+	template vehicle LuxuryCar_animatedDoors 
+	{
+		part TruckBed 
+		{
+			model Default 
+			{
+				file = Vehicles_LuxuryCar_internals,
+				rotate = 0 0 0,
+				scale = 1,
+			}			
+		}
+
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = Vehicles_LuxuryCar_Trunk,
+				offset = 0 0 0,
+				rotate = -90 0 0,
+				scale = 1.0,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = Vehicles_LuxuryCar_DoorFrontLeft,
+				rotate = -90 0 0,
+			}			
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = Vehicles_LuxuryCar_DoorFrontRight,
+				rotate = -90 0 0,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = Vehicles_LuxuryCar_Hood,
+				rotate = -90 0 0,
+			}
+		}
+		part WindowFrontLeft
+        	{	
+            		model Default
+            		{
+                		file = Vehicles_LuxuryCar_WindowFrontLeft,
+				rotate = -90 0 0,
+            		}
+
+        	}
+		part WindowFrontRight
+        	{	
+            		model Default
+            		{
+                		file = Vehicles_LuxuryCar_WindowFrontRight,
+				rotate = -90 0 0,
+            		}
+
+        	}				
+		
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = Vehicles_LuxuryCar_Windshield,
+				rotate = 0 0 0,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = Vehicles_LuxuryCar_RearWindow,
+				rotate = 0 0 0,
+			}
+		}
+	}
+}

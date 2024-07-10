@@ -1,12 +1,5 @@
    module Base
-{
-
-    imports    
-    {
-		Base
-	}
-   
-	
+{	
 	model Bullets9mm
     {
         mesh = weapons/ammo/9-45Ammo,
@@ -111,6 +104,209 @@
 		
     }
 	
+	model 556BattlePack
+    {
+        mesh = weapons/ammo/556BattlePack,
+		texture = WorldItems/BattlePackTexture,
+		scale = 0.8,
+    }	
+	
+	model 556Pack
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoPack,
+		texture = weapons/ammo/556AmmoBox,
+		scale = 0.7,
+    }	
+	
+	model 223Pack
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoPack,
+		texture = weapons/ammo/223AmmoBox,
+		scale = 0.7,
+    }	
+	
+	model 308Pack
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoPack,
+		texture = weapons/ammo/308AmmoBox,
+		scale = 0.7,
+		
+    }	
+	model 762Pack
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoPack,
+		texture = weapons/ammo/762AmmoBox,
+		scale = 0.7,
+    }
+	model ShotgunShellPack
+    {
+        mesh = weapons/ammo/ShotgunShellsPack,
+		texture = WorldItems/BoxOfShotGunShells,
+		scale = 0.6,
+    }
+	model 9mmPack
+    {
+        mesh = weapons/ammo/HandGunAmmoPack,
+		texture = worldItems/BoxOfRounds9MM,
+		scale = 0.4,
+    }	
+	
+	model 22Pack
+    {
+        mesh = weapons/ammo/HandGunAmmoPack,
+		texture = worldItems/BoxOfRounds22LR,
+		scale = 0.4,
+    }	
+	
+	model 38Pack
+    {
+        mesh = weapons/ammo/HandGunAmmoPack,
+		texture = worldItems/BoxOfRounds38Special,
+		scale = 0.4,
+    }	
+	model 44Pack
+    {
+        mesh = weapons/ammo/HandGunAmmoPack,
+		texture = worldItems/BoxOfRounds44Magnum,
+		scale = 0.4,
+    }
+	model 45Pack
+    {
+        mesh = weapons/ammo/HandGunAmmoPack,
+		texture = worldItems/BoxOfRounds45Auto,
+		scale = 0.4,
+    }
+	
+	model 556Case
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoCase,
+		texture = worldItems/CaseRifle556,
+		scale = 0.9,
+    }	
+	model 223Case
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoCase,
+		texture = worldItems/CaseRifle223,
+		scale = 0.9,
+    }	
+	model 308Case
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoCase,
+		texture = worldItems/CaseRifle308,
+		scale = 0.9,
+		
+    }	
+	model 762Case
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoCase,
+		texture = worldItems/CaseRifle762,
+		scale = 0.9,
+    }
+	model ShotgunShellCase
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoCase,
+		texture = WorldItems/CaseShotgunShell,
+		scale = 0.9,
+    }
+	model 9mmCase
+    {
+        mesh = weapons/ammo/HandGunAmmoCase,
+		texture = worldItems/CaseHandgun9,
+		scale = 0.9,
+    }	
+	
+	model 22Case
+    {
+        mesh = weapons/ammo/HandGunAmmoCase,
+		texture = worldItems/CaseHandgun22,
+		scale = 0.9,
+    }	
+	
+	model 38Case
+    {
+        mesh = weapons/ammo/HandGunAmmoCase,
+		texture = worldItems/CaseHandgun38,
+		scale = 0.9,
+    }	
+	model 44Case
+    {
+        mesh = weapons/ammo/HandGunAmmoCase,
+		texture = worldItems/CaseHandgun44,
+		scale = 0.9,
+    }
+	model 45Case
+    {
+        mesh = weapons/ammo/HandGunAmmoCase,
+		texture = worldItems/CaseHandgun45,
+		scale = 0.9,
+    }
+	
+	model 556Crate
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoCrate,
+		texture = worldItems/CrateRifle556,
+    }	
+	model 223Crate
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoCrate,
+		texture = worldItems/CrateRifle223,
+    }	
+	model 308Crate
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoCrate,
+		texture = worldItems/CrateRifle308,	
+    }	
+	model 762Crate
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoCrate,
+		texture = worldItems/CrateRifle762,
+    }
+	model ShotgunShellCrate
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoCrate,
+		texture = WorldItems/CrateShotgunShell,
+    }
+	model 9mmCrate
+    {
+        mesh = weapons/ammo/HandGunAmmoCrate,
+		texture = worldItems/CrateHandgun9,
+    }	
+	model 22Crate
+    {
+        mesh = weapons/ammo/HandGunAmmoCrate,
+		texture = worldItems/CrateHandgun22,
+    }	
+	model 38Crate
+    {
+        mesh = weapons/ammo/HandGunAmmoCrate,
+		texture = worldItems/CrateHandgun38,
+    }	
+	model 44Crate
+    {
+        mesh = weapons/ammo/HandGunAmmoCrate,
+		texture = worldItems/CrateHandgun44,
+    }
+	model 45Crate
+    {
+        mesh = weapons/ammo/HandGunAmmoCrate,
+		texture = worldItems/CrateHandgun45,
+    }
+	
+	model M60LinkBox
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoBox,
+		texture = weapons/ammo/M60LinkBox,
+		scale = 0.9,
+		
+    }	
+	
+	model 308BulletsLinked
+    {
+        mesh =    weapons/ammo/AmmoLinked,
+		texture = weapons/ammo/308AmmoLinked,
+		scale = 0.6,
+    }	
+	
 	model Magazine_9mm
 	{
 		mesh = Weapons/ammo/Magazine_9mm,
@@ -150,6 +346,20 @@
 	{
 		mesh = Weapons/ammo/Magazine_FAL,
 		texture = WorldItems/Magazine_FAL,
+	}
+	
+	model Magazine_M60
+	{
+		mesh = Weapons/ammo/Magazine_M60,
+		texture = Weapons/Firearm/m60MMG_texture,
+		scale = 0.9,
+	}
+	
+	model M60_Link
+	{
+		mesh = Weapons/ammo/Link_M60,
+		texture = Weapons/Firearm/m60MMG_texture,
+		scale = 2.0,
 	}
 
 	model Magazine_223
@@ -321,6 +531,12 @@
         texture = WorldItems/FiberglassStock_texture,
     }
 	
+	model LightenedStock_Ground
+    {
+        mesh = WorldItems/fiberglassstock_ground,
+        texture = WorldItems/LightenedStock_texture,
+    }
+	
 	model ImprovedIrons_Ground
     {
         mesh = WorldItems/improvedirons_ground,
@@ -331,6 +547,12 @@
 	{
 		mesh = weapons/parts/m24_sights,
 		texture = weapons/firearm/m24_texture,
+	}
+	
+	model M60_Sights
+	{
+		mesh = weapons/parts/m60_sights,
+		texture = weapons/firearm/m60mmg_texture,
 	}
 	
 	model LaserOn
@@ -362,6 +584,24 @@
 	    mesh = WorldItems/bulletloop_ground,
 	    texture = Weapons/parts/bulletloop_texture,
 	}
+	
+	model ShellLoops
+	{
+	    mesh = Weapons/parts/shellloop_model,
+	    texture = Weapons/parts/shellloop_texture,
+	}
+	
+	model ShellLoops_Shotgun
+	{
+	    mesh = Weapons/parts/shellloopshotgun_model,
+	    texture = Weapons/parts/shellloop_texture,
+	}
+	
+	model ShellLoops_Ground
+	{
+	    mesh = WorldItems/shellloop_ground,
+	    texture = Weapons/parts/shellloop_texture,
+	}
 
 	model Coupled556
 	{
@@ -385,6 +625,18 @@
 	{
 	    mesh = WorldItems/coupled762_ground,
 	    texture = Weapons/parts/coupled762_texture,
+	}
+	
+	model M60BrassCatcher
+	{
+	    mesh = Weapons/parts/M60BrassCatcher,
+	    texture = Weapons/parts/M60BrassCatcher,
+	}
+	
+	model M60BrassCatcher_Ground
+	{
+	    mesh = WorldItems/M60BrassCatcher_Ground,
+	    texture = Weapons/parts/M60BrassCatcher,
 	}
 	
 	model BoxOfRounds22LR
@@ -475,6 +727,30 @@
 	model Sling2_MP5SD
 	{
 	    mesh = Weapons/parts/sling_mp5sd,
+	    texture = Weapons/parts/sling2_texture,
+	}
+	
+	model Sling_UZIFolded
+	{
+	    mesh = Weapons/parts/sling_uzifolded,
+	    texture = Weapons/parts/sling_texture,
+	}
+	
+	model Sling2_UZIFolded
+	{
+	    mesh = Weapons/parts/sling_uzifolded,
+	    texture = Weapons/parts/sling2_texture,
+	}
+	
+	model Sling_UZI
+	{
+	    mesh = Weapons/parts/sling_uzi,
+	    texture = Weapons/parts/sling_texture,
+	}
+	
+	model Sling2_UZI
+	{
+	    mesh = Weapons/parts/sling_uzi,
 	    texture = Weapons/parts/sling2_texture,
 	}
 	
@@ -586,6 +862,18 @@
 	    texture = Weapons/parts/sling2_texture,
 	}
 	
+	model Sling_Levergun2
+	{
+	    mesh = Weapons/parts/sling_levergun2,
+	    texture = Weapons/parts/sling_texture,
+	}
+	
+	model Sling2_Levergun2
+	{
+	    mesh = Weapons/parts/sling_levergun2,
+	    texture = Weapons/parts/sling2_texture,
+	}
+	
 	model Sling_Shotgun
 	{
 	    mesh = Weapons/parts/sling_shotgun,
@@ -607,6 +895,18 @@
 	model Sling2_Doublebarrel
 	{
 	    mesh = Weapons/parts/sling_doublebarrel,
+	    texture = Weapons/parts/sling2_texture,
+	}
+	
+	model Sling_M2400
+	{
+	    mesh = Weapons/parts/sling_m2400,
+	    texture = Weapons/parts/sling_texture,
+	}
+	
+	model Sling2_M2400
+	{
+	    mesh = Weapons/parts/sling_m2400,
 	    texture = Weapons/parts/sling2_texture,
 	}
 	
@@ -682,6 +982,30 @@
 	    texture = Weapons/parts/sling2_texture,
 	}
 	
+	model Sling_M60MMG
+	{
+	    mesh = Weapons/parts/sling_m60mmg,
+	    texture = Weapons/parts/sling_texture,
+	}
+	
+	model Sling2_M60MMG
+	{
+	    mesh = Weapons/parts/sling_m60mmg,
+	    texture = Weapons/parts/sling2_texture,
+	}
+	
+	model Sling_AssaultRifleMasterkey
+	{
+	    mesh = Weapons/parts/sling_assaultriflemasterkey,
+	    texture = Weapons/parts/sling_texture,
+	}
+	
+	model Sling2_AssaultRifleMasterkey
+	{
+	    mesh = Weapons/parts/sling_assaultriflemasterkey,
+	    texture = Weapons/parts/sling2_texture,
+	}
+	
 	model M9Bayonet
 	{
 		mesh = Weapons/1handed/BayonetM9,
@@ -698,5 +1022,107 @@
 			offset = -0.0100 0.3000 0.0000,
 			rotate = 0.0000 0.0000 0.0000,
 		}
+	}
+	
+	model EntrenchingTool_Blade
+	{
+		mesh = Weapons/1Handed/EntrenchingTool_Blade,
+		texture = Weapons/1Handed/EntrenchingTool,
+		
+		attachment world
+		{
+			offset = 0.0000 0.0320 0.0000,
+			rotate = 180.0000 0.0000 0.0000,
+		}
+	}
+	
+	model EntrenchingTool_Blunt
+	{
+		mesh = Weapons/1Handed/EntrenchingTool_Blunt,
+		texture = Weapons/1Handed/EntrenchingTool,
+		
+		attachment world
+		{
+			offset = -0.0380 0.1750 0.0000,
+			rotate = 0.0000 90.0000 180.0000,
+		}
+	}
+	
+	model EntrenchingTool_Folded
+	{
+		mesh = Weapons/1Handed/EntrenchingTool_Folded,
+		texture = Weapons/1Handed/EntrenchingTool,
+		
+		attachment world
+		{
+			offset = 0.0000 0.0620 0.0000,
+			rotate = 180.0000 -45.0000 180.0000,
+		}
+	}
+	
+	model EntrenchingToolBlack_Blade
+	{
+		mesh = Weapons/1Handed/EntrenchingTool_Blade,
+		texture = Weapons/1Handed/EntrenchingToolBlack,
+		
+		attachment world
+		{
+			offset = 0.0000 0.0320 0.0000,
+			rotate = 180.0000 0.0000 0.0000,
+		}
+	}
+	
+	model EntrenchingToolBlack_Blunt
+	{
+		mesh = Weapons/1Handed/EntrenchingTool_Blunt,
+		texture = Weapons/1Handed/EntrenchingToolBlack,
+		
+		attachment world
+		{
+			offset = -0.0380 0.1750 0.0000,
+			rotate = 0.0000 90.0000 180.0000,
+		}
+	}
+	
+	model EntrenchingToolBlack_Folded
+	{
+		mesh = Weapons/1Handed/EntrenchingTool_Folded,
+		texture = Weapons/1Handed/EntrenchingToolBlack,
+		
+		attachment world
+		{
+			offset = 0.0000 0.0620 0.0000,
+			rotate = 180.0000 -45.0000 180.0000,
+		}
+	}
+	
+	model AmmoCanNarrow
+	{
+		mesh = WorldItems/AmmoCanNarrow,
+		texture = WorldItems/ammobox_texture,
+		
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+	}
+	
+	model AmmoCanWide
+	{
+		mesh = WorldItems/AmmoCanWide,
+		texture = WorldItems/ammoboxwide_texture,
+		
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+	}
+	
+	model M60LinkDie_Ground
+	{
+		mesh = WorldItems/M60LinkDie_Ground,
+		texture = WorldItems/Magazine_223_308,
 	}
 }

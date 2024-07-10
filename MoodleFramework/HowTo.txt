@@ -31,7 +31,7 @@ require "MF_ISMoodle"
 MF.createMoodle(*);
 
 4/ access your moodle from your code with
-MF.getMoodle(*):setValue(myNewMoodleValue)
+MF.getMoodle(*,playerNum):setValue(myNewMoodleValue)
 0.0 <= myNewMoodleValue <=1.0
 
 see mod description for further options

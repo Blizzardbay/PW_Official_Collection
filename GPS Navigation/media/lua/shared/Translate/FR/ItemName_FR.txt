@@ -1,0 +1,3 @@
+ItemName_FR = {
+	ItemName_NAV.GPS = "Navigateur GPS",
+}

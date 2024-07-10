@@ -1,0 +1,13 @@
+module Base
+{
+	template vehicle SixSeats {
+		
+	}
+	template vehicle FourSeats {
+		
+	}
+	template vehicle TwoSeats {
+		
+	}
+	template vehicle CullSeats {}
+}

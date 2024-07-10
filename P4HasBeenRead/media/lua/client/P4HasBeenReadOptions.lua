@@ -7,6 +7,7 @@ local options = {
 	showNCasNR = false,
 	showSM = true,
 	showCT = true,
+	enableMap = true,
 	enableCD = true,
 	enableVHS = true,
 	enableHVHS = true,
@@ -39,6 +40,10 @@ if ModOptions and ModOptions.getInstance then
 	local optShowCT = settings:getData("showCT")
 	optShowCT.name = "UI_P4HasBeenRead_Options_ShowCT_Name"
 	optShowCT.tooltip = "UI_P4HasBeenRead_Options_ShowCT_Tooltip"
+
+	local optEnableMap = settings:getData("enableMap")
+	optEnableMap.name = "UI_P4HasBeenRead_Options_EnableMap_Name"
+	optEnableMap.tooltip = "UI_P4HasBeenRead_Options_EnableMap_Tooltip"
 
 	local optEnableCD = settings:getData("enableCD")
 	optEnableCD.name = "UI_P4HasBeenRead_Options_EnableCD_Name"

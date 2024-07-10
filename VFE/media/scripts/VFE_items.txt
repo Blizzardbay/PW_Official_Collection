@@ -1,12 +1,5 @@
    module Base
 {
-
-    imports    
-    {
-		Base
-	}
-
-
     item FireKlean
     {
         Type				=		Drainable,
@@ -27,6 +20,18 @@
         Icon				=		cleaningkit,
         Weight				=		0.6,
         WorldStaticModel = CleaningKit,
+    }
+	
+	item 556BattlePack
+    {
+        DisplayCategory = Ammo,
+        Weight	=	2.0,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	5.56 Battle Pack,
+        Icon	=	556BattlePack,
+        MetalValue = 130,
+        WorldStaticModel = 556BattlePack,
     }
 
    item 762Clip
@@ -61,7 +66,7 @@
         Weight	=	0.025,
         AlwaysWelcomeGift	=	TRUE,
         Type	=	Normal,
-        DisplayName	=	7.62 Rounds,
+        DisplayName	=	7.62 Round,
         DisplayCategory = Ammo,
         Icon	=	762Bullets,
         MetalValue = 1,
@@ -74,13 +79,12 @@
         Weight	=	0.005,
         AlwaysWelcomeGift	=	TRUE,
         Type	=	Normal,
-        DisplayName	=	.22 Rounds,
+        DisplayName	=	.22 Round,
         DisplayCategory = Ammo,
         Icon	=	22bullets,
         MetalValue = 1,
         WorldStaticModel = Bullets22lr,
     }
-
 
     item 22Box
     {
@@ -89,9 +93,22 @@
         Type	=	Normal,
         DisplayName	=	Box of .22 Rounds,
         DisplayCategory = Ammo,
-        Icon	=	22box,
+        Icon	=	22AmmoBox,
         MetalValue = 40,
         WorldStaticModel = BoxOfRounds22LR,
+    }
+	
+	item 308BulletsLinked
+    {
+        DisplayCategory = Ammo,
+        Count	=	5,
+        Weight	=	0.04,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	Linked .308 Round,
+        Icon	=	308Bullets_Linked,
+        MetalValue = 1,
+        WorldStaticModel = 308BulletsLinked,
     }
 	
 	item 223Clip20
@@ -114,13 +131,27 @@
         CanStack	=	FALSE,
         Weight	=	0.1,
         Type	=	Normal,
-        DisplayName	=	.22 Magazine,
+        DisplayName	=	1022 Magazine,
         Icon	=	1022Clip,
         MaxAmmo = 10,
         AmmoType = Base.22Bullets,
         StaticModel = Magazine_1022,
         GunType = Base.1022,
         WorldStaticModel = Magazine_1022,
+    }
+	
+	item 22ClipPistol
+    {
+        CanStack	=	FALSE,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Mk2 Magazine,
+        Icon	=	MK2Clip,
+        MaxAmmo = 10,
+        AmmoType = Base.22Bullets,
+        StaticModel = Magazine_glock,
+        GunType = Base.MK2,
+        WorldStaticModel = Magazine_glock,
     }
 
 	
@@ -164,6 +195,21 @@
         GunType = Base.MAC10Unfolded,
         WorldStaticModel = Magazine_MAC10,
     }
+
+	item 9mmClip32
+    {
+        CanStack	=	FALSE,
+        Weight	=	0.16,
+        Type	=	Normal,
+        DisplayName	=	Uzi Magazine,
+        Icon	=	Uzimag,
+        MaxAmmo = 32,
+        AmmoType = Base.Bullets9mm,
+        StaticModel = GunMagazine,
+        GunType = Base.UziUnfolded,
+        WorldStaticModel = Magazine_Tec9,
+    }
+
 
     item 9mmClip20
     {
@@ -248,6 +294,53 @@
         StaticModel = Magazine_M14,
         GunType = Base.FAL,
         WorldStaticModel = Magazine_M14,
+    }
+	
+	item M60Belt
+    {
+        CanStack	=	FALSE,
+        Weight	=	0.5,
+        Type	=	Normal,
+        DisplayName	=	M60 Belt,
+        Icon	=	M60_Belt,
+        MaxAmmo = 100,
+        AmmoType = Base.308BulletsLinked,
+        StaticModel = Magazine_M60,
+        GunType = Base.M60MMG,
+        WorldStaticModel = Magazine_M60,
+    }
+	
+	item M60_Link
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	M13 Ammunition Link,
+        Icon	=	M60_Link,
+        WorldStaticModel = M60_Link,
+    }
+	
+	item M60_Links_Box
+    {
+        Weight	=	0.3,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	Box of M13 Ammunition Links,
+        DisplayCategory = Ammo,
+        Icon	=	M60_Links_Box,
+        MetalValue = 40,
+        WorldStaticModel = M60LinkBox,
+    }
+	
+	item M60_Link_Die
+    {
+        DisplayCategory = Ammo,
+        Weight = 2.5,
+        Type = Normal,
+        DisplayName	= M13 Link Die,
+        Icon = M60_LinkDie,
+        MetalValue = 150,
+        WorldStaticModel = M60LinkDie_Ground, 
     }
 	
 	item FakeItemSling

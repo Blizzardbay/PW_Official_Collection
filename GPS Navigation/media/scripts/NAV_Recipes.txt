@@ -1,0 +1,65 @@
+module Base
+
+{
+	recipe Make GPS
+	{
+        ElectronicsScrap=2,
+        Amplifier,
+        LightBulb,
+        LightBulbGreen,
+        LightBulbRed,
+        LightBulbBlue,
+        Radio.RadioReceiver,
+        Radio.RadioTransmitter,
+        Radio.ElectricWire=1,
+        Aluminum=1,
+        keep [Recipe.GetItemTypes.Screwdriver],
+
+        NoBrokenItems:true,
+        Result:NAV.GPS,
+        SkillRequired:Electricity=1,
+        NeedToBeLearn:true,
+        Time:100.0,
+        OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+        Category:Electrical,
+	}
+
+  recipe Remove GPSBattery
+   {
+     keep NAV.GPS,
+
+     Result:Battery,
+     Time:30,
+     OnTest:Recipe.OnTest.NavGPSBatteryRemoval,
+     OnCreate:Recipe.OnCreate.NavGPSBatteryRemoval,
+     StopOnWalk:false,
+   }
+
+   recipe Insert Battery into GPS
+   {
+     destroy NAV.GPS,
+     destroy Battery,
+
+     Result:NAV.GPS,
+     Time:30,
+     OnTest:Recipe.OnTest.NavGPSbatteryInsert,
+     OnCreate:Recipe.OnCreate.NavGPSbatteryInsert,
+     StopOnWalk:false,
+   }
+
+   recipe Dismantle GPS
+   {
+      destroy NAV.GPS,
+      keep [Recipe.GetItemTypes.Screwdriver],
+
+      Result:ElectronicsScrap,
+      Time:30.0,
+      OnTest:Recipe.OnTest.DismantleElectronics,
+      OnGiveXP:Recipe.OnGiveXP.DismantleElectronics,
+      OnCreate:Recipe.OnCreate.DismantleNavGPS,
+      Category:Electrical,
+      AnimNode:Disassemble,
+      Prop1:Screwdriver,
+      Prop2:Source=1,
+   }
+}

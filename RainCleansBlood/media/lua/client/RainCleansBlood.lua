@@ -49,7 +49,7 @@ function RainCleansBlood:onTick()
                 for i = 0, objects:size() - 1 do
                     local object = objects:get(i)
 
-                    if object:getName() == "burnedCorpse" then
+                    if object and object:getName() == "burnedCorpse" then
                         object:removeFromSquare()
                     end
                 end

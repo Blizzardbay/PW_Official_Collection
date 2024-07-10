@@ -1,0 +1,11 @@
+UI_CN = {
+ UI_dis = "距离",
+ UI_time = "时间",
+ UI_name = "导航仪",
+ UI_min = "分钟",
+ UI_sec = "秒",
+ UI_Nav_tip = "导航使用方法",
+ UI_install_Nav = "安装导航仪",
+ UI_uninstall_Nav = "卸载导航仪",
+ UI_not_Nav = "没有导航仪。",
+}

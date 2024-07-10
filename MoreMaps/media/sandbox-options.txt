@@ -1078,3 +1078,81 @@ option MoreMaps.FortBoonesboroughMap
 	page = MoreMaps,
 	translation = MoreMaps_FortBoonesboroughMap,
 }
+
+option MoreMaps.CrowlakeMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_CrowlakeMap,
+}
+option MoreMaps.GustonMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_GustonMap,
+}
+option MoreMaps.JaspervilleMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_JaspervilleMap,
+}
+option MoreMaps.YakamaStateParkMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_YakamaStateParkMap,
+}
+option MoreMaps.ValuTechAmusementParkMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_ValuTechAmusementParkMap,
+}
+option MoreMaps.CanvasbackStudiosMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_CanvasbackStudiosMap,
+}
+option MoreMaps.PlefordSpringsMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_PlefordSpringsMap,
+}
+option MoreMaps.FoxWoodMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_FoxWoodMap,
+}
+option MoreMaps.BrazilMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_BrazilMap,
+}
+option MoreMaps.FortLoidMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_FortLoidMap,
+}
+option MoreMaps.HavenRidgeMap
+{
+	type = boolean,
+	default = true,
+	page = MoreMaps,
+	translation = MoreMaps_HavenRidgeMap,
+}

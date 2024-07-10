@@ -4,6 +4,381 @@ module Base
 	{
 		Base
 	}
+	model uziunfolded
+	{
+		mesh = Weapons/Firearm/uziunfolded_model,
+		texture = Weapons/Firearm/uzi_texture,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 4.3000,
+		}
+
+		attachment muzzle
+		{
+			offset =  -0.01800 0.2320 0.0260,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+	}
+	model uzifolded
+	{
+		mesh = Weapons/Firearm/uzifolded_model,
+		texture = Weapons/Firearm/uzi_texture,
+		
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.2320 0.0260,
+			rotate = -90.0000 0.0000 -175.7000,
+		}
+	}
+	model AssaultRifleMasterkey
+	{
+		mesh = Weapons/Firearm/AssaultRifleMasterkey,
+		texture = Weapons/Firearm/AssaultRifleMasterkey,
+
+		attachment muzzle
+		{
+			offset = 0.0061 0.4700 0.0515,
+			rotate = -88.0000 0.0000 -180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0061 0.0412 0.0894,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+		
+		attachment reddot
+		{
+			offset = 0.0061 0.0025 0.0900,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0315 0.2610 0.0338,
+			rotate = 180.0000 90.0000 180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.1300 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+	}
+	model AssaultRifleMasterkey_Shotgun
+	{
+		mesh = Weapons/Firearm/AssaultRifleMasterkey,
+		texture = Weapons/Firearm/AssaultRifleMasterkey,
+
+		attachment muzzle
+		{
+			offset = 0.0061 0.4600 0.0234,
+			rotate = -88.0000 0.0000 -180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0061 0.0412 0.0894,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+		
+		attachment reddot
+		{
+			offset = 0.0061 0.0025 0.0900,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0315 0.2610 0.0338,
+			rotate = 180.0000 90.0000 180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.1300 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+	}
+	model CampCarbine
+	{
+		mesh = weapons/firearm/campcarbine_model,
+		texture = weapons/firearm/campcarbine_texture,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.4250 0.0270,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0037 0.0517 0.0550,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0247 0.2357 0.0200,
+			rotate = 0.0000 90.0000 0.0000,
+		}
+	}
+	model CampCarbineFGS
+	{
+		mesh = weapons/firearm/campcarbine_model,
+		texture = weapons/firearm/campcarbine_fiberglass_texture,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.4250 0.0270,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0037 0.0517 0.0550,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0247 0.2357 0.0200,
+			rotate = 0.0000 90.0000 0.0000,
+		}
+	}
+	model Rossi
+	{
+		mesh = weapons/firearm/Rossi_model,
+		texture = weapons/firearm/Rossi_texture,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.4550 0.0190,
+			rotate = -90.0000 0.0000 180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0400 0.0440,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+		
+		attachment bulletloops
+		{
+			offset = -0.0050 -0.0470 -0.0180,
+			rotate = 5.0000 0.0000 0.0000,
+		}
+		
+		attachment laser
+		{
+			offset = 0.0142 0.2100 0.0100,
+			rotate = 0.0000 90.0000 0.0000,
+		}
+	}
+	
+	model RossiFGS
+	{
+		mesh = weapons/firearm/Rossi_model,
+		texture = weapons/firearm/Rossi_fiberglass_texture,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.4550 0.0190,
+			rotate = -90.0000 0.0000 180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0400 0.0440,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+		
+		attachment bulletloops
+		{
+			offset = -0.0050 -0.0470 -0.0180,
+			rotate = 5.0000 0.0000 0.0000,
+		}
+		
+		attachment laser
+		{
+			offset = 0.0142 0.2100 0.0100,
+			rotate = 0.0000 90.0000 0.0000,
+		}
+	}
+	model M60MMG
+	{
+		mesh = Weapons/Firearm/M60MMG,
+		texture = Weapons/Firearm/m60mmg_texture,
+
+		attachment muzzle
+		{
+			offset = 0.0080 0.4850 0.0336,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0061 0.0412 0.0744,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+		
+		attachment reddot
+		{
+			offset = 0.0061 0.0025 0.0750,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser	
+		{
+			offset = 0.0315 0.2610 0.0188,
+			rotate = 180.0000 90.0000 180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.2300 0.0000,
+			rotate = 0.0000 -74.0000 -5.8000,
+		}
+	}
+	model M60MMG_Empty
+	{
+		mesh = Weapons/Firearm/M60MMG_Empty,
+		texture = Weapons/Firearm/m60mmg_texture,
+
+		attachment muzzle
+		{
+			offset = 0.0080 0.4850 0.0336,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0061 0.0412 0.0744,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+		
+		attachment reddot
+		{
+			offset = 0.0061 0.0025 0.0750,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0315 0.2610 0.0188,
+			rotate = 180.0000 90.0000 180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.2300 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model M60MMG_BP
+	{
+		mesh = Weapons/Firearm/M60MMG_BP,
+		texture = Weapons/Firearm/m60mmg_texture,
+
+		attachment muzzle
+		{
+			offset = 0.0080 0.4850 0.0336,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0061 0.0412 0.0744,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+		
+		attachment reddot
+		{
+			offset = 0.0061 0.0025 0.0750,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser	
+		{
+			offset = 0.0315 0.2610 0.0188,
+			rotate = 180.0000 90.0000 180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.2300 0.0000,
+			rotate = 0.0000 -90.0000 11.0000,
+		}
+	}
+	model M60MMG_BP_Empty
+	{
+		mesh = Weapons/Firearm/M60MMG_BP_Empty,
+		texture = Weapons/Firearm/m60mmg_texture,
+
+		attachment muzzle
+		{
+			offset = 0.0080 0.4850 0.0336,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0061 0.0412 0.0744,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+		
+		attachment reddot
+		{
+			offset = 0.0061 0.0025 0.0750,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0315 0.2610 0.0188,
+			rotate = 180.0000 90.0000 180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.2300 0.0000,
+			rotate = 0.0000 -90.0000 11.0000,
+		}
+	}
 	model Shotgun
 	{
 		mesh = Weapons/Firearm/Shotgun,
@@ -239,7 +614,7 @@ module Base
 			rotate = 180.0000 0.0000 180.0000,
 		}
 	}
-	model ShotgunDoubleBarrel_OPEN
+	model DoubleBarrelShotgun_OPEN
     {
         mesh = Weapons/Firearm/ShotgunDoubleBarrel_OPEN,
 		texture = Weapons/Firearm/ShotgunDoubleBarrel,
@@ -248,6 +623,46 @@ module Base
 		{
 			offset = 0.0000 -0.0028 -0.0644,
 			rotate = -23.0000 0.0000 0.0000,
+		}
+    }
+	model DoubleBarrelShotgunFGS
+	{
+		mesh = Weapons/Firearm/ShotgunDoubleBarrel,
+		texture = Weapons/Firearm/ShotgunDoubleBarrel_fiberglass,
+		
+		attachment muzzle
+		{
+			offset = 0.0090 0.5660 0.0240,
+			rotate = -90.0000 0.0000 180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.2000 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+		
+		attachment bulletloops
+		{
+			offset = 0.0041 -0.0112 -0.0130,
+			rotate = 3.0000 0.0000 0.0000,
+		}
+	}
+	model DoubleBarrelShotgunFGS_OPEN
+    {
+        mesh = Weapons/Firearm/ShotgunDoubleBarrel_OPEN,
+		texture = Weapons/Firearm/ShotgunDoubleBarrel_fiberglass,
+		
+		attachment sling
+		{
+			offset = 0.0000 -0.0028 -0.0644,
+			rotate = -23.0000 0.0000 0.0000,
+		}
+		
+		attachment bulletloops
+		{
+			offset = 0.0041 -0.0112 -0.0130,
+			rotate = 3.0000 0.0000 0.0000,
 		}
     }
 	model ShotgunDoubleBarrelSawn
@@ -294,6 +709,226 @@ module Base
         mesh = Weapons/Firearm/ShotgunDoubleBarrelSawn2_OPEN,
 		texture = Weapons/Firearm/ShotgunDoubleBarrel,
     }
+	model ShotgunDoubleBarrelSawnFGS
+	{
+		mesh = Weapons/Firearm/ShotgunDoubleBarrelSawn,
+		texture = Weapons/Firearm/ShotgunDoubleBarrel_fiberglass,
+
+		attachment muzzle
+		{
+			offset = 0.0090 0.3400 0.0240,
+			rotate = -90.0000 0.0000 180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 -0.3500 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+		
+		attachment bulletloops
+		{
+			offset = 0.0041 -0.0112 -0.0130,
+			rotate = 3.0000 0.0000 0.0000,
+		}
+	}
+	model ShotgunDoubleBarrelSawnFGS_OPEN
+    {
+        mesh = Weapons/Firearm/ShotgunDoubleBarrelSawn_OPEN,
+		texture = Weapons/Firearm/ShotgunDoubleBarrel_fiberglass,
+		
+		attachment bulletloops
+		{
+			offset = 0.0041 -0.0112 -0.0130,
+			rotate = 3.0000 0.0000 0.0000,
+		}
+    }
+	model M2400_Rifle
+	{
+		mesh = weapons/firearm/M2400_model,
+		texture = weapons/firearm/ShotgunDoubleBarrel,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.5040 0.0028,
+			rotate = -90.0000 0.0000 180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0574 0.0440,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+		
+		attachment bulletloops
+		{
+			offset = -0.0047 -0.0081 -0.0110,
+			rotate = 3.0000 0.0000 0.0000,
+		}
+	}
+	model M2400_Shotgun
+	{
+		mesh = weapons/firearm/M2400_model,
+		texture = weapons/firearm/ShotgunDoubleBarrel,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.5040 0.0250,
+			rotate = -90.0000 0.0000 180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0574 0.0440,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+		
+		attachment bulletloops
+		{
+			offset = -0.0047 -0.0081 -0.0110,
+			rotate = 3.0000 0.0000 0.0000,
+		}
+	}
+	model M2400_OPEN
+	{
+		mesh = weapons/firearm/M2400_OPEN_model,
+		texture = weapons/firearm/ShotgunDoubleBarrel,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.5040 0.0250,
+			rotate = -90.0000 0.0000 180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0574 0.0440,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+		
+		attachment bulletloops
+		{
+			offset = -0.0047 -0.0081 -0.0110,
+			rotate = 3.0000 0.0000 0.0000,
+		}
+		
+		attachment sling
+		{
+			offset = 0.0000 0.02100 -0.0545,
+			rotate = -20.0000 0.0000 0.0000,
+		}
+	}
+	model M2400_RifleFGS
+	{
+		mesh = weapons/firearm/M2400_model,
+		texture = weapons/firearm/ShotgunDoubleBarrel_fiberglass,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.5040 0.0028,
+			rotate = -90.0000 0.0000 180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0574 0.0440,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+		
+		attachment bulletloops
+		{
+			offset = -0.0047 -0.0081 -0.0110,
+			rotate = 3.0000 0.0000 0.0000,
+		}
+	}
+	model M2400_ShotgunFGS
+	{
+		mesh = weapons/firearm/M2400_model,
+		texture = weapons/firearm/ShotgunDoubleBarrel_fiberglass,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.5040 0.0250,
+			rotate = -90.0000 0.0000 180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0574 0.0440,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+		
+		attachment bulletloops
+		{
+			offset = -0.0047 -0.0081 -0.0110,
+			rotate = 3.0000 0.0000 0.0000,
+		}
+	}
+	model M2400FGS_OPEN
+	{
+		mesh = weapons/firearm/M2400_OPEN_model,
+		texture = weapons/firearm/ShotgunDoubleBarrel_fiberglass,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.5040 0.0250,
+			rotate = -90.0000 0.0000 180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0574 0.0440,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+		
+		attachment bulletloops
+		{
+			offset = -0.0047 -0.0081 -0.0110,
+			rotate = 3.0000 0.0000 0.0000,
+		}
+		
+		attachment sling
+		{
+			offset = 0.0000 0.02100 -0.0545,
+			rotate = -20.0000 0.0000 0.0000,
+		}
+	}
 	model Shotgun2
 	{
 		mesh = Weapons/Firearm/Shotgun2,
@@ -390,6 +1025,124 @@ module Base
 		{
 			offset = 0.0000 -0.4650 0.0250,
 			rotate = 0.0000 0.0000 -90.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.1660 0.0000,
+			rotate = -180.0000 180.0000 -180.0000,
+		}
+
+		attachment choketube
+		{
+			offset = 0.0000 -0.4930 0.0255,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment shellholder
+		{
+			offset = 0.0000 0.0000 0.0230,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model Shotgun2M9
+	{
+		mesh = Weapons/Firearm/Shotgun2M9,
+		texture = weapons/firearm/Shotgun,
+
+		attachment muzzle
+		{
+			offset = 0.0000 -0.4850 0.0255,
+			rotate = 90.0000 0.0000 -180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.1660 0.0000,
+			rotate = -180.0000 1.0000 -180.0000,
+		}
+
+		attachment choketube
+		{
+			offset = 0.0000 -0.4930 0.0255,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment shellholder
+		{
+			offset = 0.0000 0.0000 0.0230,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	
+	model Shotgun2M9SH
+	{
+		mesh = Weapons/Firearm/Shotgun2M9,
+		texture = weapons/firearm/Shotgun,
+
+		attachment muzzle
+		{
+			offset = 0.0000 -0.4850 0.0255,
+			rotate = 90.0000 0.0000 -180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.1660 0.0000,
+			rotate = -180.0000 180.0000 -180.0000,
+		}
+
+		attachment choketube
+		{
+			offset = 0.0000 -0.4930 0.0255,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment shellholder
+		{
+			offset = 0.0000 0.0000 0.0230,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	
+	model Shotgun2M9FGS
+	{
+		mesh = Weapons/Firearm/Shotgun2M9,
+        texture = weapons/firearm/Shotgunfiberglass_texture,
+		
+		attachment muzzle
+		{
+			offset = 0.0000 -0.4850 0.0255,
+			rotate = 90.0000 0.0000 -180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.1660 0.0000,
+			rotate = -180.0000 1.0000 -180.0000,
+		}
+
+		attachment choketube
+		{
+			offset = 0.0000 -0.4930 0.0255,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment shellholder
+		{
+			offset = 0.0000 0.0000 0.0230,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model Shotgun2M9FGSSH
+	{
+		mesh = Weapons/Firearm/Shotgun2M9,
+        texture = weapons/firearm/Shotgunfiberglass_texture,
+		
+		attachment muzzle
+		{
+			offset = 0.0000 -0.4850 0.0255,
+			rotate = 90.0000 0.0000 -180.0000,
 		}
 
 		attachment world
@@ -2648,6 +3401,40 @@ module Base
 		attachment laser
 		{
 			offset = 0.0000 0.0790 -0.0090,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+	}
+	model MK2
+	{
+		mesh = weapons/firearm/mk2_model,
+		texture = weapons/firearm/mk2_texture,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.1920 0.0140,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.0750 -0.0080,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+	}
+	model MK2SD
+	{
+		mesh = weapons/firearm/mk2sd_model,
+		texture = weapons/firearm/mk2sd_texture,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.2300 0.0140,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.0750 -0.0080,
 			rotate = 0.0000 180.0000 0.0000,
 		}
 	}

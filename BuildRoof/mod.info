@@ -1,0 +1,5 @@
+name=Build Roof
+poster=BuildRoofPreview.png
+id=BuildRoof
+description=You can build a roof from the ground with just a wall.
+icon=BuildRoofIcon.png

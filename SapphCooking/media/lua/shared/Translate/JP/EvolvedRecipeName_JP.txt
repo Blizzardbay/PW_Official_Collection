@@ -22,11 +22,24 @@ EvolvedRecipeName_JP = {
 	EvolvedRecipeName_SapphCooking.SlicedSteak = "牛肉",
 	EvolvedRecipeName_SapphCooking.StrawberryMilk = "ストロベリーミルク",
 	EvolvedRecipeName_SapphCooking.EnergyDrink = "エナジードリンク",
-	EvolvedRecipeName_SapphCooking.IcenCubes = "氷",
-
-
-
-
-
+	EvolvedRecipeName_SapphCooking.IceCubes = "氷",
+	EvolvedRecipeName_SapphCooking.VodkaFull = "ウォッカ",
+	EvolvedRecipeName_SapphCooking.LiqueurBottle = "リキュール",
+	EvolvedRecipeName_SapphCooking.SakeFull = "酒",
+	EvolvedRecipeName_SapphCooking.TequilaFull = "テキーラ",
+	EvolvedRecipeName_SapphCooking.CachacaFull = "カシャーサ",
+	EvolvedRecipeName_SapphCooking.RumFull = "ラム",
+	EvolvedRecipeName_SapphCooking.GinFull = "ジン",
+	EvolvedRecipeName_SapphCooking.SugarPacket = "甘い",
+	EvolvedRecipeName_SapphCooking.HotsaucePacket = "辛い",
+	EvolvedRecipeName_SapphCooking.CoffeePacket = "コーヒー",
+	EvolvedRecipeName_SapphCooking.Rice = "ライス",
+	EvolvedRecipeName_SapphCooking.MeltedChocolate = "溶けたチョコレート",
+	EvolvedRecipeName_SapphCooking.Grape = "ぶどう",
+	EvolvedRecipeName_SapphCooking.Strawberry = "いちご",
+	EvolvedRecipeName_SapphCooking.Watermelon = "スイカ",
+	EvolvedRecipeName_SapphCooking.Lemon = "レモン",
+	EvolvedRecipeName_SapphCooking.Apple = "リンゴ",
+	EvolvedRecipeName_SapphCooking.Pineapple = "パイナップル",
 
 }

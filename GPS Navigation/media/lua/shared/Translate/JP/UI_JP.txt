@@ -1,0 +1,11 @@
+UI_JP = {
+    UI_dis = "距離",
+    UI_time = "時間",
+    UI_name = "カーナビ",
+    UI_min = "分",
+    UI_sec = "秒",
+    UI_Nav_tip = "カーナビの使用法",
+    UI_install_Nav = "カーナビを取り付ける",
+    UI_uninstall_Nav = "カーナビを取り外す",
+    UI_not_Nav = "カーナビを持っていません。",
+}

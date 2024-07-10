@@ -14,5 +14,8 @@ ItemName_CN = {
 	ItemName_MoreGloves.TacticalGloves01 = "战术手套",
 	ItemName_MoreGloves.TacticalGloves02 = "战术手套",
 	ItemName_MoreGloves.TacticalGloves03 = "战术手套",
-
+	ItemName_MoreGloves.LeatherWorkGloves = "工作手套",
+	ItemName_MoreGloves.FingerlessTacticalGloves01 = "战术露指手套",
+	ItemName_MoreGloves.FingerlessTacticalGloves02 = "战术露指手套",
+	ItemName_MoreGloves.FingerlessTacticalGloves03 = "战术露指手套",
 }

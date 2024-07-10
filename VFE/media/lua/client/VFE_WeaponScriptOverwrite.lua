@@ -49,7 +49,10 @@ function ISRackFirearm:animEvent(event, parameter)
 	end
     if event == 'changeWeaponSprite' then
         if parameter and parameter ~= '' then
-            if parameter ~= 'original' then
+			if parameter == 'open' then
+				VFESetWeaponModel(self.gun,true)
+				self:setOverrideHandModels(self.gun, nil)
+            elseif parameter ~= 'original' then
                 self.gun:setWeaponSprite(parameter)
 				self:setOverrideHandModels(self.gun, nil)
             else
@@ -77,7 +80,10 @@ function ISReloadWeaponAction:animEvent(event, parameter)
 	end
     if event == 'changeWeaponSprite' then
         if parameter and parameter ~= '' then
-            if parameter ~= 'original' then
+            if parameter == 'open' then
+				VFESetWeaponModel(self.gun,true)
+				self:setOverrideHandModels(self.gun, nil)
+            elseif parameter ~= 'original' then
                 self.gun:setWeaponSprite(parameter)
 				self:setOverrideHandModels(self.gun, nil)
             else
@@ -97,6 +103,63 @@ function ISReloadWeaponAction:stop()
     return ISReloadWeaponAction_stop_old(self)
 end
 
+-- Complete overwritting, no need to keep the old function locally
+function ISReloadWeaponAction.setReloadSpeed(character, rack)
+	local baseReloadSpeed = 1;
+	if rack then
+		-- reloading skill has less impact on racking, panic does nothing
+		baseReloadSpeed = baseReloadSpeed + (character:getPerkLevel(Perks.Reloading) * 0.03);
+	else
+		baseReloadSpeed = baseReloadSpeed + (character:getPerkLevel(Perks.Reloading) * 0.07);
+		baseReloadSpeed = baseReloadSpeed - (character:getMoodles():getMoodleLevel(MoodleType.Panic) * 0.05);
+	end
+	
+	-- check for ammo straps
+	local gun = character:getPrimaryHandItem();
+	local strap = character:getWornItem("AmmoStrap");
+	local reloadFast = character:hasEquippedTag("ReloadFastShells") or character:hasEquippedTag("ReloadFastBullets")
+	local attachmentBoost = 0
+	local strapFound = false;
+	if instanceof(gun, "HandWeapon") then
+		if gun then
+			local shell = false;
+			if gun:getAmmoType() == "Base.ShotgunShells" then
+				shell = true;
+			end
+			if reloadFast or (strap and strap:getClothingItem()) then
+				if shell and (character:hasEquippedTag("ReloadFastShells") or strap:getClothingItemName() == "AmmoStrap_Shells") then
+					strapFound = true;
+				elseif not shell and (character:hasEquippedTag("ReloadFastBullets") or strap:getClothingItemName() == "AmmoStrap_Bullets") then
+					strapFound = true;
+				end
+			end
+			if not rack then
+				local weaponPart = gun:getRecoilpad()
+				if weaponPart ~= nil then
+					if (shell and weaponPart:hasTag("ShellReloadBoost")) or (not shell and weaponPart:hasTag("BulletReloadBoost")) then
+						attachmentBoost = attachmentBoost + 0.15
+					end
+				end
+				weaponPart = gun:getSling()
+				if weaponPart ~= nil then
+					if (shell and weaponPart:hasTag("ShellReloadBoost")) or (not shell and weaponPart:hasTag("BulletReloadBoost")) then
+						attachmentBoost = attachmentBoost + 0.30
+					end
+				end
+			end
+		end
+		baseReloadSpeed = baseReloadSpeed + attachmentBoost;
+		if strapFound and not rack then
+			baseReloadSpeed = baseReloadSpeed * 1.15;
+		end
+	end
+	-- vehicles driver take bit longer to reload their weapon
+	if character:getVehicle() and character:getVehicle():getDriver() == character then
+		baseReloadSpeed = baseReloadSpeed * 0.8;
+	end
+	character:setVariable("ReloadSpeed", baseReloadSpeed * GameTime.getAnimSpeedFix());
+end
+
 local ISUnloadBulletsFromFirearm_animEvent_old = ISUnloadBulletsFromFirearm.animEvent
 function ISUnloadBulletsFromFirearm:animEvent(event, parameter)
 	if event == 'unloadFinished' then
@@ -105,7 +168,10 @@ function ISUnloadBulletsFromFirearm:animEvent(event, parameter)
 	end
     if event == 'changeWeaponSprite' then
         if parameter and parameter ~= '' then
-            if parameter ~= 'original' then
+            if parameter == 'open' then
+				VFESetWeaponModel(self.gun,true)
+				self:setOverrideHandModels(self.gun, nil)
+            elseif parameter ~= 'original' then
                 self.gun:setWeaponSprite(parameter)
 				self:setOverrideHandModels(self.gun, nil)
             else
@@ -125,10 +191,91 @@ function ISUnloadBulletsFromFirearm:stop()
     return ISUnloadBulletsFromFirearm_stop_old(self)
 end
 
+local ISInsertMagazine_animEvent_old = ISInsertMagazine.animEvent
+function ISInsertMagazine:animEvent(event, parameter)
+	if event == 'loadFinished' then
+		-- flicker the magazine state. It's stupid but it works
+		self.gun:setContainsClip(true)
+		VFESetWeaponModel(self.gun,false)
+		self.gun:setContainsClip(false)
+		return ISInsertMagazine_animEvent_old(self, event, parameter)
+	end
+    if event == 'changeWeaponSprite' then
+        if parameter and parameter ~= '' then
+            if parameter == 'open' then
+				VFESetWeaponModel(self.gun,true)
+				self:setOverrideHandModels(self.gun, nil)
+            elseif parameter ~= 'original' then
+                self.gun:setWeaponSprite(parameter)
+				self:setOverrideHandModels(self.gun, nil)
+            else
+                VFESetWeaponModel(self.gun,false)
+				self:setOverrideHandModels(self.gun, nil)
+            end
+        end
+    else
+        return ISInsertMagazine_animEvent_old(self, event, parameter)
+    end
+end
+
+local ISInsertMagazine_stop_old = ISInsertMagazine.stop
+function ISInsertMagazine:stop()
+	VFESetWeaponModel(self.gun,false)
+	self:setOverrideHandModels(self.gun, nil)
+    return ISInsertMagazine_stop_old(self)
+end
+
+local ISEjectMagazine_animEvent_old = ISEjectMagazine.animEvent
+function ISEjectMagazine:animEvent(event, parameter)
+	if event == 'unloadFinished' then
+		-- flicker the magazine state. It's stupid but it works
+		self.gun:setContainsClip(false)
+		VFESetWeaponModel(self.gun,false)
+		self.gun:setContainsClip(true)
+		return ISEjectMagazine_animEvent_old(self, event, parameter)
+	end
+    if event == 'changeWeaponSprite' then
+        if parameter and parameter ~= '' then
+            if parameter == 'open' then
+				VFESetWeaponModel(self.gun,true)
+				self:setOverrideHandModels(self.gun, nil)
+            elseif parameter ~= 'original' then
+                self.gun:setWeaponSprite(parameter)
+				self:setOverrideHandModels(self.gun, nil)
+            else
+                VFESetWeaponModel(self.gun,false)
+				self:setOverrideHandModels(self.gun, nil)
+            end
+        end
+    else
+        return ISEjectMagazine_animEvent_old(self, event, parameter)
+    end
+end
+
+local ISEjectMagazine_stop_old = ISEjectMagazine.stop
+function ISEjectMagazine:stop()
+	VFESetWeaponModel(self.gun,false)
+	self:setOverrideHandModels(self.gun, nil)
+    return ISEjectMagazine_stop_old(self)
+end
+
+-- Complete overwritting, no need to keep the old function locally
 ISReloadWeaponAction.onShoot = function(player, weapon)
 	if not weapon:isRanged() then return; end
 	if getDebug() and getDebugOptions():getBoolean("Cheat.Player.UnlimitedAmmo") then
 		return;
+	end
+	if weapon:hasTag("M60_Link") then
+		local pad = weapon:getRecoilpad()
+		if pad ~= nil then
+			if pad:hasTag("CatchBrass") then
+				player:getInventory():AddItem("Base.M60_Link")
+			else
+				player:getCurrentSquare():AddWorldInventoryItem("Base.M60_Link", 0.0, 0.0, 0.0);
+			end
+		else
+			player:getCurrentSquare():AddWorldInventoryItem("Base.M60_Link", 0.0, 0.0, 0.0);
+		end
 	end
 	if weapon:getFullType() == "Base.AssaultRifleM1" then
 		if weapon:isRoundChambered() and weapon:getCurrentAmmoCount() == 0 then

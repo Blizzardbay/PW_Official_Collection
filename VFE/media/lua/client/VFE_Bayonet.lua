@@ -146,6 +146,7 @@ function VFEBayonet(item, index, player, bayonet)
 		-- Save Rifle Data
 		modData.rifle.Condition = item:getCondition()		
 		result:setCurrentAmmoCount(item:getCurrentAmmoCount())
+		result:setSpentRoundCount(item:getSpentRoundCount())
 		
 		if(modData.modifier) then
 			modData.rifle.modifier = modData.modifier
@@ -383,4 +384,5 @@ function VFEBayonet(item, index, player, bayonet)
 		BayonetModifierRecalc(result)
 	end
 	VFESetWeaponModel(result,false) -- Sets the model corretly incase of attachments that change weapon model
+	VFESetWeaponIcon(result)
 end

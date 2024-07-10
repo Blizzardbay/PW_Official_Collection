@@ -1,5 +1,22 @@
 VERSION = 1,
 
+option PompsItems.ZombieLoot
+{
+    type = boolean,
+    default = true,
+    page = PompsItems,
+    translation = PompsItems_ZombieLoot,
+}
+
+option PompsItems.ZombieLootSpawnRate
+{
+	type = double,
+	min = 0, max = 100,
+	default = 1.0,
+    page = PompsItems,
+    translation = PompsItems_ZombieLootSpawnRate,
+}
+
 option PompsItems.StallionMilk
 {
     type = boolean,
@@ -100,7 +117,7 @@ option PompsItems.LiquorSpawnRate
 option PompsItems.Littering
 {
     type = boolean,
-    default = false,
+    default = true,
     page = PompsItems,
     translation = PompsItems_Littering,
 }

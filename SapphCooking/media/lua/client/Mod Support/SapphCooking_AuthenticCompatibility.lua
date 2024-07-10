@@ -39,6 +39,7 @@ local items = {
   "SapphCooking.Syrup_Chocolate",
   "SapphCooking.Syrup_Strawberry",
   "SapphCooking.Syrup_Caramel",
+  "SapphCooking.Blender",
 }
 
 local manager = ScriptManager.instance

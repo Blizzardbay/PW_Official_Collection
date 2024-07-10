@@ -308,6 +308,19 @@
         FabricType = Cotton,
 		WorldStaticModel = Shirt_Ground,		
 	}
+    item Shirt_UndershirtFancy
+	{
+        DisplayCategory = Clothing,		
+		Type = Clothing,
+		DisplayName = Fancy Undershirt,
+		ClothingItem = Shirt_UndershirtFancy,
+		BodyLocation = Shirt,
+		IconsForTexture = FancyUndershirt_Black;FancyUndershirt_Brown;FancyUndershirt_Green;FancyUndershirt_Red;FancyUndershirt_Yellow,
+        Insulation = 0.25,
+        WindResistance = 0.15,
+        FabricType = Cotton,
+		WorldStaticModel = Shirt_Ground,		
+	}	
      item Shirt_Walker
 	{
         DisplayCategory = Clothing,		
@@ -922,7 +935,8 @@
         CanBeEquipped 			= 	FannyPackFront,	
         RunSpeedModifier 		= 	0.98,
 		AcceptItemFunction      = 	AZ_TV110Vest.AcceptItemFunctionTV110,	
-        WorldStaticModel 		= 	WorldItem-AuthenticTV110_Bag,       	
+        WorldStaticModel 		= 	WorldItem-AuthenticTV110_Bag,  
+        OBSOLETE = TRUE,     	
     }
     item Vest_BulletTV110_Bag_Radio
     {
@@ -930,7 +944,6 @@
         Type 					= 	Container,
         DisplayName 			= 	TV-110 Bulletproof Vest (Bag),
         ClothingItem 			= 	Vest_BulletTV110_Bag_Radio,
-
         BodyLocation 			= 	FannyPackFront,
 		IconsForTexture 		= 	TV110Desert;TV110Camo;TV110Urban,
         WeightReduction			=	70,
@@ -942,7 +955,9 @@
         CanBeEquipped 			= 	FannyPackFront,	
         RunSpeedModifier 		= 	0.98,	
 		AcceptItemFunction      = 	AZ_TV110Vest.AcceptItemFunctionTV110,		
-        WorldStaticModel 		= 	WorldItem-AuthenticTV110_Bag_Radio,       	
+        WorldStaticModel 		= 	WorldItem-AuthenticTV110_Bag_Radio,   
+   
+        OBSOLETE = TRUE,		
     }	
     item Vest_BulletTV110_BulletVest
     {
@@ -975,7 +990,8 @@
         BiteDefense 			= 30,
         ScratchDefense 			= 55,
         BulletDefense 			= 100,		
-        WorldStaticModel 		= WorldItem-AuthenticTV110_Radio,	        
+        WorldStaticModel 		= WorldItem-AuthenticTV110_Radio,	 
+        OBSOLETE = TRUE,		
     }
     item Vest_HighViz_Press
     {

@@ -1,0 +1,4 @@
+Tooltip_EN = {
+    Tooltip_craft_woodenRoofDesc = "A basic roof made from wood ",
+    Tooltip_craft_metalRoofDesc = "A basic roof made from metal ",
+}

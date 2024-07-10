@@ -16,6 +16,7 @@ never know when you'll break them!]]
 
 require "recipecode"
 
+
 --Recipes that adds on the inventory. 
 function recipe_PeelPotato(items, result, player)
 	local inv = player:getInventory();
@@ -71,7 +72,7 @@ end
 local items_to_add = {
   "SapphCooking.SaltPacket",
   "SapphCooking.Mouth_Toothpick",
-  "SapphCooking.SugarPacket",
+  "Base.SugarPacket",
   "SapphCooking.Drinkmix_Lemon",
   "SapphCooking.PlasticSpork",
   "SapphCooking.Mustard_Sachet",
@@ -95,7 +96,7 @@ end
 --OPTION 2 MRE
 local items_to_add2 = {
   "SapphCooking.SaltPacket",
-  "SapphCooking.SugarPacket",
+  "Base.SugarPacket",
   "SapphCooking.Mouth_Toothpick",
   "SapphCooking.Drinkmix_Orange",
   "SapphCooking.PlasticSpork",
@@ -107,6 +108,7 @@ local items_to_add2 = {
   "Base.Matches",
   "Base.GrahamCrackers",
   "Base.Gum",
+  "Base.MintCandy",
 }
 
 function recipe_MREopen2(items, result, player)
@@ -133,6 +135,23 @@ function Recipe.GetItemTypes.SapphCookingOil(scriptItems)
     scriptItems:addAll(getScriptManager():getItemsTag("SapphCookingOil"));
     scriptItems:addAll(getScriptManager():getItemsTag("Oil"));
  end
+
+ function Recipe.GetItemTypes.SapphCookingJuice(scriptItems)
+    scriptItems:addAll(getScriptManager():getItemsTag("Juice"));
+    scriptItems:addAll(getScriptManager():getItemsTag("FruitJuice"));
+ end
+
+ --for recipes with bacon and eggs pans
+ function Recipe.GetItemTypes.SapphCookingBaconEggsPan(scriptItems)
+    scriptItems:addAll(getScriptManager():getItemsTag("BaconEgssPan"));
+ end
+ 
+function Recipe.GetItemTypes.SapphCookingFalafel(scriptItems)
+    scriptItems:addAll(getScriptManager():getItemsTag("SapphCookingFalafel"));
+    scriptItems:addAll(getScriptManager():getItemsTag("Peas"));
+    scriptItems:addAll(getScriptManager():getItemsTag("Beans"));
+ end
+
 
  
  function Recipe.GetItemTypes.SapphCookingBread(scriptItems)
@@ -230,10 +249,22 @@ function Recipe.GetItemTypes.SapphCookingChicken(scriptItems)
 	scriptItems:addAll(getScriptManager():getItemsTag("Chicken"));
 end
 
+function Recipe.GetItemTypes.SapphCookingFriedChickenRecipe(scriptItems)
+    scriptItems:addAll(getScriptManager():getItemsTag("SapphCookingFriedChicken"));
+	scriptItems:addAll(getScriptManager():getItemsTag("FriedChickenRecipe"));
+end
+
 function Recipe.GetItemTypes.SapphCookingSugar(scriptItems)
     scriptItems:addAll(getScriptManager():getItemsTag("SapphCookingSugar"));
 	scriptItems:addAll(getScriptManager():getItemsTag("Sugar"));
 end
+
+function Recipe.GetItemTypes.SapphCookingBerry(scriptItems)
+    scriptItems:addAll(getScriptManager():getItemsTag("SapphCookingBerry"));
+	scriptItems:addAll(getScriptManager():getItemsTag("Berries"));
+    scriptItems:addAll(getScriptManager():getItemsTag("Berry"));
+end
+
 
 function Recipe.GetItemTypes.SapphCookingPepper(scriptItems)
     scriptItems:addAll(getScriptManager():getItemsTag("SapphCookingPepper"));
@@ -250,6 +281,12 @@ function Recipe.GetItemTypes.SapphCookingPasta(scriptItems)
 	scriptItems:addAll(getScriptManager():getItemsTag("Pasta"));
 end
 
+function Recipe.GetItemTypes.SapphCookingSyrup(scriptItems)
+    scriptItems:addAll(getScriptManager():getItemsTag("SapphCookingSyrup"));
+	scriptItems:addAll(getScriptManager():getItemsTag("Syrup"));
+    scriptItems:addAll(getScriptManager():getItemsTag("Syrups"));
+end
+
 function Recipe.GetItemTypes.SapphCookingSliced(scriptItems)
     scriptItems:addAll(getScriptManager():getItemsTag("SapphCookingSlicedVegetables"));
 	scriptItems:addAll(getScriptManager():getItemsTag("SlicedVegetables"));
@@ -264,79 +301,119 @@ function Recipe.GetItemTypes.SapphCookingMeltedChocolate(scriptItems)
 	scriptItems:addAll(getScriptManager():getItemsTag("SapphCookingMeltedChocolate"));
 end
 
+function Recipe.GetItemTypes.SapphCookingIcing(scriptItems)
+    scriptItems:addAll(getScriptManager():getItemsTag("Icing"));
+end
+
+function Recipe.GetItemTypes.SapphCookingChocolate(scriptItems)
+    scriptItems:addAll(getScriptManager():getItemsTag("Chocolate"));
+end
+
+function Recipe.GetItemTypes.SapphCookingCakes(scriptItems)
+    scriptItems:addAll(getScriptManager():getItemsTag("isCake"));
+end
+
+function Recipe.GetItemTypes.SapphCookingPastryCream(scriptItems)
+    scriptItems:addAll(getScriptManager():getItemsTag("PastryCream"));
+    scriptItems:addAll(getScriptManager():getItemsTag("Custard"));
+end
+
+
+
+
+
+
+function Recipe.OnCreate.SapphAutoCook(items, result, player) -- auto cooks foods, and reduces boredom/stress.
+    result:setCooked(true);
+    result:setHeat(2.5);
+
+    --get the boredom/status of the player.
+    --makes the player happy when cooking c:
+    local body = player:getBodyDamage(); 
+    local stats = player:getStats();    
+    local currentUnhappiness = body:getUnhappynessLevel(); 
+    local currentBoredom = body:getBoredomLevel();  
+    local currentStress = stats:getStress();
+    body:setBoredomLevel(currentBoredom - 4); 
+    body:setUnhappynessLevel(currentUnhappiness - 4); 
+    stats:setStress(currentStress - .1);
+    HaloTextHelper.addTextWithArrow(player, getText("IGUI_HaloNote_Stress").. ", " .. getText("IGUI_HaloNote_Boredom"), false, HaloTextHelper.getColorGreen());
+    
+end
+
 	-- Adding Candles on cakes.
-	--  sapph: So... wasn't sure why i added this.
+	--  sapph(from 2023-ish): So... wasn't sure why i added this.
     -- someone a few months ago said they had their birthday on zomboid,
     -- so i guess this was made with that in mind, some way of adding candles on a cakes
     -- birthdays should be fun, so hopefully this can help with that.
     -- heh, only time will tell.
-function LightCakeCandle_OnCreate(items, result, player)
-    for i=0,items:size() - 1 do
-        local item = items:get(i)
-        if item:getType() == "Candle" then
-            result:setUsedDelta(item:getUsedDelta());
-            result:setCondition(item:getCondition());
-            result:setFavorite(item:isFavorite());
-            if player:getPrimaryHandItem() == player:getSecondaryHandItem() then
-                player:setPrimaryHandItem(nil)
+
+    --sapph(from june/2024): guess, i'm doing back on this idea again :3
+    --this code is here, cause i don't want the player to be able to 
+    --re-use candles on cakes (since they'll give the player a stress/happiness boost).
+    
+    function LightHalfCandle_OnCreate(items, result, player)
+        for i=0,items:size() - 1 do
+            local item = items:get(i)
+            if item:getType() == "HalfCandle" then
+                result:setUsedDelta(item:getUsedDelta());
+                result:setCondition(item:getCondition());
+                result:setFavorite(item:isFavorite());
+                if player:getPrimaryHandItem() == player:getSecondaryHandItem() then
+                    player:setPrimaryHandItem(nil)
+                end
+                player:setSecondaryHandItem(result);
+                result:setActivated(true); --ensure the candle emits light upon creation
             end
-            player:setSecondaryHandItem(result);
-            result:setActivated(true); --ensure the candle emits light upon creation
         end
     end
-end
-
-function ExtinguishCarrotCakeCandle_OnCreate(items, result, player)
-    for i=0,items:size() - 1 do
-        local item = items:get(i)
-        if item:getType() == "CarrotCake_CandleLit" then
-            result:setUsedDelta(item:getUsedDelta());
-            result:setCondition(item:getCondition());
-            result:setFavorite(item:isFavorite());
+    
+    function ExtinguishHalfCandle_OnCreate(items, result, player)
+        for i=0,items:size() - 1 do
+            local item = items:get(i)
+            if item:getType() == "HalfCandleLit" then
+                result:setUsedDelta(item:getUsedDelta());
+                result:setCondition(item:getCondition());
+                result:setFavorite(item:isFavorite());
+            end
         end
     end
-	--remove candle
+
+
+--Gives back a Pot.
+function Recipe.OnCreate.SapphGivePot(items, result, player)
 	local inv = player:getInventory();
-	inv:AddItem("SapphCooking.CarrotCake");
+	inv:AddItem("Base.Pot", 1);
 end
 
-function ExtinguishChocolateCakeCandle_OnCreate(items, result, player)
-    for i=0,items:size() - 1 do
-        local item = items:get(i)
-        if item:getType() == "ChocolateCake_CandleLit" then
-            result:setUsedDelta(item:getUsedDelta());
-            result:setCondition(item:getCondition());
-            result:setFavorite(item:isFavorite());
-        end
-    end
-	--remove candle
+--Gives back Cheese Mold
+function Recipe.OnCreate.SapphGiveCheeseMold(items, result, player)
 	local inv = player:getInventory();
-	inv:AddItem("SapphCooking.ChocolateCake");
+	inv:AddItem("SapphCooking.Wooden_CheeseMolds", 1);
 end
 
-	--cutting cakes.
-	--Gives 5 pieces of cake.
-function recipe_CarrotCake(items, result, player)
+--Gives back a Bucket (DEAR GOD!)
+function Recipe.OnCreate.SapphGiveBucket(items, result, player)
 	local inv = player:getInventory();
-	inv:AddItem("Base.CakeCarrot", 5);
+	inv:AddItem("SapphCooking.BucketEmpty", 1);
 end
 
-
-function recipe_ChocolateCake(items, result, player)
+--Gives back a Baking Tray
+function Recipe.OnCreate.SapphGiveTray(items, result, player)
 	local inv = player:getInventory();
-	inv:AddItem("Base.CakeChocolate", 5);
+	inv:AddItem("Base.BakingTray", 1);
 end
-
 
 --Tests to see if a food has been eaten before crafting it.
 function Recipe.OnTest.WholeSlicedVegetables(item)
-	if item:isCooked() then return false end
-	if not item:hasTag("SlicedVegetables") then return true end
+	if not item:getTags():contains("SlicedVegetables") then return true end
 	local baseHunger = math.abs(item:getBaseHunger())
 	local hungerChange = math.abs(item:getHungerChange())
     if item:isFresh() then return not (baseHunger > hungerChange) end
     return not ((baseHunger * 0.75) > hungerChange)
 end
+--sapph (25/01/2024): okay, so this function does not work! so,  i'll look for a work-around!
+
 
 
 --Adds the code to make Wok/Frying Pan Evolved Bowls... or pieces.
@@ -347,13 +424,24 @@ end
 -- this is mainly for evolved recipes, where the player adds stuff on something.
 -- anyhow, thanks! see ya around!
 
+--used for checking if a food item is cooked.
+function Recipe.OnCanPerform.CheckCooking(recipe, playerObj, item)
+    return item and item:isCooked();
+end
+
+--for icecubes and popscicles
+function Recipe.OnCanPerform.CheckFrozen(recipe, playerObj, item)
+    return item and item:isFrozen();
+end
+
+
 --Woks--
 function Recipe.OnCreate.MakeBowlofFood2Wok(items, result, player)
     local addType = "SapphCooking.WokPan"
     local condition = 10;
     for i=0,items:size() - 1 do
         local item = items:get(i)
-        if item:getType() == "WokPanwithFriedRice" or item:getType() == "WokFriedRiceEvolved" or item:getType() == "WokPan_Yakisoba" or item:getType() == "WokPan_YakisobaEvolved" then
+        if item:getType() == "WokPanwithFriedRice" or item:getType() == "WokPan_KungPaoChicken" or item:getType() == "WokFriedRiceEvolved" or item:getType() == "WokPan_Yakisoba" or item:getType() == "WokPan_YakisobaEvolved" then
             result:setBaseHunger(item:getBaseHunger() / 2);
             result:setHungChange(item:getHungChange() / 2);
             result:setThirstChange(item:getThirstChangeUnmodified() / 2);
@@ -451,7 +539,7 @@ function Recipe.OnCreate.MakeBowlofFood2Saucepan(items, result, player)
     local condition = 10;
     for i=0,items:size() - 1 do
         local item = items:get(i)
-        if item:getType() == "SaucepanwithRavioli" or item:getType() == "SaucepanwithSpaguetti" or item:getType() == "SaucepanwithUncookedSpaguetti" or item:getType() == "Saucepan_InstantNoodlesEvolved" or item:getType() == "Saucepan_InstantNoodles" or item:getType() == "SaucepanwithTortellini" or item:getType() == "Saucepan_ArrozLeche" or item:getType() == "Saucepan_ArrozLecheUn" then
+        if item:getType() == "SaucepanwithRavioli" or item:getType() == "SaucepanwithChickenStroganoff" or item:getType() == "SaucepanwithJapaneseCurry" or item:getType() == "SaucepanwithMashedPotatoes" or item:getType() == "SaucepanwithBeefStew" or item:getType() == "SaucepanwithSpaguetti" or item:getType() == "SaucepanwithUncookedSpaguetti" or item:getType() == "Saucepan_InstantNoodlesEvolved" or item:getType() == "Saucepan_InstantNoodles" or item:getType() == "SaucepanwithTortellini" or item:getType() == "Saucepan_ArrozLeche" or item:getType() == "Saucepan_ArrozLecheUn" or item:getType() == "SaucepanwithBorscht" or item:getType() == "SaucepanwithRisotto" or item:getType() == "SaucepanwithNoodleSoup" then
             result:setBaseHunger(item:getBaseHunger() / 2);
             result:setHungChange(item:getHungChange() / 2);
             result:setThirstChange(item:getThirstChangeUnmodified() / 2);
@@ -507,14 +595,15 @@ function Recipe.OnCreate.CutLasagna8Pieces(items, result, player)
     local pot = player:getInventory():AddItem(addType);
 end
 
---Thermos Soup
+--Thermos Soup/Stew
 --sapph:code that transfer every stats of a soup pot, into a thermos can!
 function Recipe.OnCreate.SoupThermos(items, result, player)
     local addType = "Base.Pot"
     local condition = 10;
     for i=0,items:size() - 1 do
         local item = items:get(i)
-        if item:getType() == "PotOfSoup" or item:getType() == "PotOfSoupRecipe" then
+        if item:getType() == "PotOfSoup" or item:getType() == "PotOfSoupRecipe" or item:getType() == "PotOfStew" then
+            result:setName(item:getName() .. " Thermos");
             result:setBaseHunger(item:getBaseHunger());
             result:setHungChange(item:getHungChange());
             result:setThirstChange(item:getThirstChangeUnmodified());
@@ -575,6 +664,7 @@ function Recipe.OnCreate.StockBottle(items, result, player)
             result:setCalories(item:getCalories());
             result:setWeight(item:getWeight());
             result:setActualWeight(item:getActualWeight())
+            result:setCooked(item:isCooked());
             condition = item:getCondition();
         end
     end
@@ -589,7 +679,7 @@ function Recipe.OnCreate.GrindMeat(items, result, player)
     --sapph: this code is being used in tenderizing meat as well, since it uses the same base items
     for i=0,items:size() - 1 do
         local item = items:get(i)
-        if item:getType() == "Sausage" or item:getType() == "Chicken" or item:getType() == "Smallanimalmeat" or item:getType() == "Smallbirdmeat" or item:getType() == "SlicedChicken" or item:getType() == "SlicedChickenBatter" or item:getType() == "FrankfurterSausage" or item:getType() == "ViennaSausage" or item:getType() == "MuttonChop" or item:getType() == "SlicedSteak" or item:getType() == "Steak" or item:getType() == "PorkChop" or item:getType() == "Rabbitmeat" or item:getType() == "MincedMeat" or item:getType() == "MincedMeat_Chicken"then
+        if item:getType() == "Sausage" or item:getType() == "Chicken" or item:getType() == "Smallanimalmeat" or item:getType() == "Meatballs" or item:getType() == "Smallbirdmeat" or item:getType() == "SlicedChicken" or item:getType() == "SlicedChickenBatter" or item:getType() == "FrankfurterSausage" or item:getType() == "ViennaSausage" or item:getType() == "MuttonChop" or item:getType() == "SlicedSteak" or item:getType() == "Steak" or item:getType() == "PorkChop" or item:getType() == "Rabbitmeat" or item:getType() == "MincedMeat" or item:getType() == "MincedMeat_Chicken"then
             result:setBaseHunger(item:getBaseHunger());
             result:setHungChange(item:getHungChange());
             result:setThirstChange(item:getThirstChangeUnmodified());
@@ -610,7 +700,7 @@ function Recipe.OnCreate.PreparePasta(items, result, player)
 
     for i=0,items:size() - 1 do
         local item = items:get(i)
-        if item:getType() == "Ravioli" or item:getType() == "RolledPastaDough" or item:getType() == "Tortellini" or item:getType() == "FilledMeatPastaDough" or item:getType() == "SlicedChicken" or item:getType() == "SlicedChickenBatter" or item:getType() == "FrankfurterSausage" or item:getType() == "ViennaSausage" or item:getType() == "MuttonChop" or item:getType() == "SlicedSteak" or item:getType() == "Steak" or item:getType() == "PorkChop" or item:getType() == "Rabbitmeat" or item:getType() == "MincedMeat" or item:getType() == "MincedMeat_Chicken" then
+        if item:getType() == "Ravioli" or item:getType() == "RolledPastaDough" or item:getType() == "Tortellini" or item:getType() == "Meatballs" or item:getType() == "FilledMeatPastaDough" or item:getType() == "SlicedChicken" or item:getType() == "SlicedChickenBatter" or item:getType() == "FrankfurterSausage" or item:getType() == "ViennaSausage" or item:getType() == "MuttonChop" or item:getType() == "SlicedSteak" or item:getType() == "Steak" or item:getType() == "PorkChop" or item:getType() == "Rabbitmeat" or item:getType() == "MincedMeat" or item:getType() == "MincedMeat_Chicken" then
             result:setBaseHunger(item:getBaseHunger());
             result:setHungChange(item:getHungChange());
             result:setThirstChange(item:getThirstChangeUnmodified());
@@ -620,7 +710,8 @@ function Recipe.OnCreate.PreparePasta(items, result, player)
             result:setLipids(item:getLipids());
             result:setProteins(item:getProteins());
             result:setCalories(item:getCalories());
-
+            result:setCooked(true);
+            result:setHeat(2.5);
         end
     end
 end
@@ -646,10 +737,11 @@ end
 
 
 --Batter/Fry Recipes
+--adds itens to the batter
 function Recipe.OnCreate.FryingBatter(items, result, player)
     for i=0,items:size() - 1 do
         local item = items:get(i)
-        if item:getType() == "TenderizedMeat" or item:getType() == "BreadedTenderizedMeat" or item:getType() == "FishFilletinBatter" or item:getType() == "SapphFishFried" or item:getType() == "Schnitzel" or item:getType() == "Smallbirdmeat" or item:getType() == "SmallbirdmeatinBatter" or item:getType() == "FishFillet" then
+        if item:getType() == "TenderizedMeat" or item:getType() == "BreadedTenderizedMeat" or item:getType() == "FishFilletinBatter" or item:getType() == "SapphFishFried" or item:getType() == "Schnitzel" or item:getType() == "Smallbirdmeat" or item:getType() == "SmallbirdmeatinBatter" or item:getType() == "FishFillet" or item:getType() == "SausageinBatter" or item:getType() == "Sausage" or item:getType() == "SausageEvolved" or item:getType() == "ViennaSausage" or item:getType() == "DeadRat" or item:getType() == "SlicedChicken" then
             result:setBaseHunger(item:getBaseHunger());
             result:setHungChange(item:getHungChange());
             result:setThirstChange(item:getThirstChangeUnmodified());
@@ -658,7 +750,74 @@ function Recipe.OnCreate.FryingBatter(items, result, player)
             result:setCarbohydrates(item:getCarbohydrates());
             result:setLipids(item:getLipids());
             result:setProteins(item:getProteins());
-            result:setCalories(item:getCalories());
+            result:setCalories(item:getCalories() + 50);
+        end
+    end
+end
+
+--returns the result cooked!
+function Recipe.OnCreate.FryingCooking(items, result, player)
+    for i=0,items:size() - 1 do
+        local item = items:get(i)
+        if item:getType() == "TenderizedMeat" or item:getType() == "BreadedTenderizedMeat" or item:getType() == "FishFilletinBatter" or item:getType() == "SapphFishFried" or item:getType() == "Schnitzel" or item:getType() == "Smallbirdmeat" or item:getType() == "SmallbirdmeatinBatter" or item:getType() == "FishFillet" or item:getType() == "SausageinBatter" or item:getType() == "Sausage" or item:getType() == "SausageEvolved" or item:getType() == "ViennaSausage" or item:getType() == "DeadRat" or item:getType() == "SlicedChicken" or item:getType() == "Tortilla" or item:getType() == "Chicken" then
+            result:setBaseHunger(item:getBaseHunger());
+            result:setHungChange(item:getHungChange());
+            result:setThirstChange(item:getThirstChangeUnmodified());
+            result:setBoredomChange(item:getBoredomChangeUnmodified());
+            result:setUnhappyChange(item:getUnhappyChangeUnmodified());
+            result:setCarbohydrates(item:getCarbohydrates());
+            result:setLipids(item:getLipids());
+            result:setProteins(item:getProteins());
+            result:setCalories(item:getCalories() + 50);
+            result:setCooked(true);
+            result:setHeat(2.5);
+        end
+    end
+    --get the boredom/status of the player.
+    --makes the player happy when cooking c:
+    local body = player:getBodyDamage(); 
+    local stats = player:getStats();    
+    local currentUnhappiness = body:getUnhappynessLevel(); 
+    local currentBoredom = body:getBoredomLevel();  
+    local currentStress = stats:getStress();
+    body:setBoredomLevel(currentBoredom - 4); 
+    body:setUnhappynessLevel(currentUnhappiness - 4); 
+    stats:setStress(currentStress - .1);
+    HaloTextHelper.addTextWithArrow(player, getText("IGUI_HaloNote_Stress").. ", " .. getText("IGUI_HaloNote_Boredom"), false, HaloTextHelper.getColorGreen());
+end
+
+--divides by two
+function Recipe.OnCreate.MeatDivide2(items, result, player)
+    for i=0,items:size() - 1 do
+        local item = items:get(i)
+        if item:getType() == "SlicedChicken" or item:getType() =="MincedMeat" or item:getType() == "MincedMeat_Chicken" or item:getType() == "FishFillet" then
+            result:setBaseHunger(item:getBaseHunger() / 2);
+            result:setHungChange(item:getHungChange() / 2);
+            result:setThirstChange(item:getThirstChangeUnmodified() / 2);
+            result:setBoredomChange(item:getBoredomChangeUnmodified() / 2);
+            result:setUnhappyChange(item:getUnhappyChangeUnmodified() / 2);
+            result:setCarbohydrates(item:getCarbohydrates() / 2);
+            result:setLipids(item:getLipids() / 2);
+            result:setProteins(item:getProteins() / 2);
+            result:setCalories(item:getCalories() / 2);
+        end
+    end
+end
+--divides by two but cooks the item.
+function Recipe.OnCreate.MeatDivide2Cooked(items, result, player)
+    for i=0,items:size() - 1 do
+        local item = items:get(i)
+        if item:getType() == "SlicedChicken" or item:getType() =="MincedMeat" or item:getType() == "MincedMeat_Chicken" or item:getType() == "FishFillet" then
+            result:setBaseHunger(item:getBaseHunger() / 2);
+            result:setHungChange(item:getHungChange() / 2);
+            result:setThirstChange(item:getThirstChangeUnmodified() / 2);
+            result:setBoredomChange(item:getBoredomChangeUnmodified() / 2);
+            result:setUnhappyChange(item:getUnhappyChangeUnmodified() / 2);
+            result:setCarbohydrates(item:getCarbohydrates() / 2);
+            result:setLipids(item:getLipids() / 2);
+            result:setProteins(item:getProteins() / 2);
+            result:setCalories(item:getCalories() / 2);
+            result:setCooked(true);
         end
     end
 end
@@ -675,7 +834,6 @@ function Recipe.OnCreate.ThermosCups(items, result, player)
             result:setCalories(item:getCalories() / 2);
             result:setWeight(item:getWeight()/2);
             result:setActualWeight(item:getActualWeight()/2)
-
         end
     end
 end
@@ -749,8 +907,434 @@ function Recipe.OnCreate.ChurnBottle(items, result, player)
             result:setLipids(item:getLipids());
             result:setProteins(item:getProteins());
             result:setCalories(item:getCalories());
+            result:setCustomWeight(true);
+            result:setWeight(0.5);
+            result:setActualWeight(0.5);
         end
     end
     local inv = player:getInventory();
 	inv:AddItem("SapphCooking.ButterChurn");
+end
+
+
+function Recipe.OnCreate.TakeoutBox(items, result, player)
+    local addType = "Base.Pot"
+    local condition = 10;
+    for i=0,items:size() - 1 do
+        local item = items:get(i)
+        if item:getType() == "SaucepanwithRavioli" or item:getType() == "SaucepanwithSpaguetti" or item:getType() == "SaucepanwithUncookedSpaguetti" or item:getType() == "Saucepan_InstantNoodlesEvolved" or item:getType() == "Saucepan_InstantNoodles" or item:getType() == "SaucepanwithTortellini" or item:getType() == "Saucepan_ArrozLeche" or item:getType() == "Saucepan_ArrozLecheUn" or item:getType() == "SaucepanwithBorscht" or item:getType() == "WokPan_RoastVeg" or item:getType() == "Blender_Puree" or item:getType() == "FryingPanFriedRiceEvolved" or item:getType() == "WokFriedRiceEvolved" or item:getType() == "WokPan_YakisobaEvolved" or item:getType() == "PotOfStew" or item:getType() == "PotOfSoupRecipe" or item:getType() == "PanFriedVegetables"  or item:getType() == "GriddlePanFriedVegetables" or item:getType() == "PanFriedVegetables2" or item:getType() == "PastaPot" then
+            result:setName(item:getName());
+            result:setBaseHunger(item:getBaseHunger() / 2);
+            result:setHungChange(item:getHungChange() / 2);
+            result:setThirstChange(item:getThirstChangeUnmodified() / 2);
+            result:setBoredomChange(item:getBoredomChangeUnmodified() / 2);
+            result:setUnhappyChange(item:getUnhappyChangeUnmodified() / 2);
+            result:setCarbohydrates(item:getCarbohydrates() / 2);
+            result:setLipids(item:getLipids() / 2);
+            result:setProteins(item:getProteins() / 2);
+            result:setCalories(item:getCalories() / 2);
+            result:setCooked(item:isCooked());
+            result:setCustomWeight(true);
+            result:setWeight(1);
+            result:setActualWeight(1);
+            condition = item:getCondition()
+            if string.contains(item:getType(), "Pan") or string.contains(item:getType(), "FryingPan") then
+                addType = "Base.Pan"
+            elseif string.contains(item:getType(), "Saucepan") then
+                addType = "Base.Saucepan"
+            elseif string.contains(item:getType(), "Wok") then
+                addType = "SapphCooking.WokPan"
+            end
+        end
+    end
+    local pot = player:getInventory():AddItem(addType);
+    pot:setCondition(condition)
+end
+
+
+function Recipe.OnCreate.RoastPanAddTwo(items, result, player)
+    local addType = "Base.RoastingPan"
+    local condition = 10;
+    for i=0,items:size() - 1 do
+        local item = items:get(i)
+        if item:getType() == "GriddlePanFriedVegetables" or item:getType() == "PanFriedVegetables2" then
+            result:setName(item:getName());
+            result:setBaseHunger(item:getBaseHunger() / 2);
+            result:setHungChange(item:getHungChange() / 2);
+            result:setThirstChange(item:getThirstChangeUnmodified() / 2);
+            result:setBoredomChange(item:getBoredomChangeUnmodified() / 2);
+            result:setUnhappyChange(item:getUnhappyChangeUnmodified() / 2);
+            result:setCarbohydrates(item:getCarbohydrates() / 2);
+            result:setLipids(item:getLipids() / 2);
+            result:setProteins(item:getProteins() / 2);
+            result:setCalories(item:getCalories() / 2);
+            result:setCooked(item:isCooked());
+            result:setCustomWeight(true);
+            result:setWeight(1);
+            result:setActualWeight(1);
+            condition = item:getCondition()
+            if string.contains(item:getType(), "GriddlePanFriedVegetables") then
+                addType = "Base.GridlePan"
+            end
+        end
+    end
+    local pot = player:getInventory():AddItem(addType);
+    pot:setCondition(condition)
+end
+
+--BLENDERS
+function Recipe.OnCreate.PureeMix(items, result, player)
+    for i=0,items:size() - 1 do
+        local item = items:get(i)
+        if item:getType() == "Blender_Prep_Puree" or item:getType() == "Blender_Puree"  then
+            result:setName(item:getName());
+            result:setBaseHunger(item:getBaseHunger());
+            result:setHungChange(item:getHungChange());
+            result:setThirstChange(item:getThirstChangeUnmodified());
+            result:setBoredomChange(item:getBoredomChangeUnmodified());
+            result:setUnhappyChange(item:getUnhappyChangeUnmodified());
+            result:setCarbohydrates(item:getCarbohydrates());
+            result:setLipids(item:getLipids());
+            result:setProteins(item:getProteins());
+            result:setCalories(item:getCalories());
+            result:setTaintedWater(item:isTaintedWater());
+            result:setCooked(true);
+            result:setCustomWeight(true);
+            result:setWeight(1.5);
+            result:setActualWeight(1.5);
+        end
+    end
+end
+
+function Recipe.OnCreate.SmoothieMix(items, result, player)
+    for i=0,items:size() - 1 do
+        local item = items:get(i)
+        if item:getType() ==  "Blender_Prep_Smoothie"  or item:getType() == "Blender_Smoothie"  then
+            result:setBaseHunger(item:getBaseHunger());
+            result:setHungChange(item:getHungChange());
+            result:setThirstChange(item:getThirstChangeUnmodified());
+            result:setBoredomChange(item:getBoredomChangeUnmodified());
+            result:setUnhappyChange(item:getUnhappyChangeUnmodified());
+            result:setCarbohydrates(item:getCarbohydrates());
+            result:setLipids(item:getLipids());
+            result:setProteins(item:getProteins());
+            result:setCalories(item:getCalories());
+            result:setTaintedWater(item:isTaintedWater());
+            result:setCooked(true);
+            result:setCustomWeight(true);
+            result:setWeight(1.5);
+            result:setActualWeight(1.5);
+        end
+    end
+end
+
+function Recipe.OnCreate.SorbetMix(items, result, player)
+    for i=0,items:size() - 1 do
+        local item = items:get(i)
+        if item:getType() == "Blender_Juice" or item:getType() == "Blender_Sorbet" or item:getType() == "Blender_Prep_Juice" then
+            result:setName(item:getName() .. " Sorbet");
+            result:setBaseHunger(item:getBaseHunger());
+            result:setHungChange(item:getHungChange());
+            result:setThirstChange(item:getThirstChangeUnmodified());
+            result:setBoredomChange(item:getBoredomChangeUnmodified());
+            result:setUnhappyChange(item:getUnhappyChangeUnmodified());
+            result:setCarbohydrates(item:getCarbohydrates());
+            result:setLipids(item:getLipids());
+            result:setProteins(item:getProteins());
+            result:setCalories(item:getCalories());
+            result:setTaintedWater(item:isTaintedWater());
+            result:setCooked(true);
+            result:setCustomWeight(true);
+            result:setWeight(1.5);
+            result:setActualWeight(1.5);
+        end
+    end
+end
+function Recipe.OnCreate.PopsicleMix(items, result, player)
+    for i=0,items:size() - 1 do
+        local item = items:get(i)
+        if item:getType() == "Blender_Juice" or item:getType() == "Blender_Prep_Juice" then
+            result:setName(item:getName() .. " Popsicle");
+            result:setBaseHunger(item:getBaseHunger());
+            result:setHungChange(item:getHungChange());
+            result:setThirstChange(item:getThirstChangeUnmodified());
+            result:setBoredomChange(item:getBoredomChangeUnmodified());
+            result:setUnhappyChange(item:getUnhappyChangeUnmodified());
+            result:setCarbohydrates(item:getCarbohydrates());
+            result:setLipids(item:getLipids());
+            result:setProteins(item:getProteins());
+            result:setCalories(item:getCalories());
+            result:setTaintedWater(item:isTaintedWater());
+            result:setCooked(item:isCooked());
+        end
+    end
+end
+
+function Recipe.OnCreate.JuiceMix(items, result, player)
+    for i=0,items:size() - 1 do
+        local item = items:get(i)
+        if item:getType() == "Blender_Juice" or item:getType() == "Blender_Prep_Juice" then
+            result:setName(item:getName());
+            result:setBaseHunger(item:getBaseHunger());
+            result:setHungChange(item:getHungChange());
+            result:setThirstChange(item:getThirstChangeUnmodified());
+            result:setBoredomChange(item:getBoredomChangeUnmodified());
+            result:setUnhappyChange(item:getUnhappyChangeUnmodified());
+            result:setCarbohydrates(item:getCarbohydrates());
+            result:setLipids(item:getLipids());
+            result:setProteins(item:getProteins());
+            result:setCalories(item:getCalories());
+            result:setTaintedWater(item:isTaintedWater());
+            result:setCooked(item:isCooked());
+            result:setCustomWeight(true);
+            result:setWeight(1.5);
+            result:setActualWeight(1.5);
+        end
+    end
+end
+
+function Recipe.OnCreate.MilkshakeMix(items, result, player)
+    for i=0,items:size() - 1 do
+        local item = items:get(i)
+        if item:getType() == "Blender_Milkshake" or item:getType() == "Blender_Prep_Shake" then
+            result:setName(item:getName());
+            result:setBaseHunger(item:getBaseHunger());
+            result:setHungChange(item:getHungChange());
+            result:setThirstChange(item:getThirstChangeUnmodified());
+            result:setBoredomChange(item:getBoredomChangeUnmodified());
+            result:setUnhappyChange(item:getUnhappyChangeUnmodified());
+            result:setCarbohydrates(item:getCarbohydrates());
+            result:setLipids(item:getLipids());
+            result:setProteins(item:getProteins());
+            result:setCalories(item:getCalories());
+            result:setTaintedWater(item:isTaintedWater());
+            result:setCooked(item:isCooked());
+            result:setCustomWeight(true);
+            result:setWeight(1.5);
+            result:setActualWeight(1.5);
+        end
+    end
+end
+
+function Recipe.OnCreate.BlenderAddBowl(items, result, player)
+    for i=0,items:size() - 1 do
+        local item = items:get(i)
+        if item:getType() == "Blender_Milkshake" or item:getType() == "Blender_Prep_Shake"  or item:getType() == "Blender_Juice" or item:getType() == "Blender_Prep_Juice" or item:getType() == "Blender_Sorbet" or item:getType() == "Blender_Prep_Puree" or item:getType() == "Blender_Puree" or item:getType() ==  "Blender_Prep_Smoothie"  or item:getType() == "Blender_Smoothie" then
+            result:setName(item:getName());
+            result:setBaseHunger(item:getBaseHunger());
+            result:setHungChange(item:getHungChange());
+            result:setThirstChange(item:getThirstChangeUnmodified());
+            result:setBoredomChange(item:getBoredomChangeUnmodified());
+            result:setUnhappyChange(item:getUnhappyChangeUnmodified());
+            result:setCarbohydrates(item:getCarbohydrates());
+            result:setLipids(item:getLipids());
+            result:setProteins(item:getProteins());
+            result:setCalories(item:getCalories());
+            result:setTaintedWater(item:isTaintedWater());
+            result:setCooked(item:isCooked());
+            result:setCustomWeight(true);
+            result:setWeight(1.2);
+            result:setActualWeight(1.2);
+        end
+    end
+    local inv = player:getInventory();
+	inv:AddItem("SapphCooking.Blender",1);
+end
+
+--Divides into five, cooks and gives a baking pan.
+function Recipe.OnCreate.SapphSliceCakes(items, result, player)
+    for i=0,items:size() - 1 do
+        local item = items:get(i)
+        if item:getType() == "PieWholeRaw" or item:getType() == "PieWholeRawSweet" or item:getType() == "Cake_NianGao" or item:getType() == "CakeRaw" or item:getType() == "CakeRaw_Chocolate" or item:getType() == "CakeRaw_Carrot" or item:getType() == "CakeRaw_Strawberry" or item:getType() == "CakeRaw_BlackForest" or item:getType() == "CakeRaw_Birthday" or item:getType() == "CakeRaw_RedVelvet" or item:getType() == "CakePrep_Chocolate" or item:getType() == "CakePrep_Carrot" or item:getType() == "CakePrep_Strawberry" or item:getType() == "CakePrep_BlackForest" or item:getType() == "CakePrep_Birthday" or item:getType() == "CakePrep_RedVelvet" or item:getType() == "Parmesan_CheeseWheel" then
+            result:setBaseHunger(item:getBaseHunger() / 5);
+            result:setHungChange(item:getHungChange() / 5);
+            result:setThirstChange(item:getThirstChangeUnmodified() / 5)
+            result:setBoredomChange(item:getBoredomChangeUnmodified() / 5)
+            result:setUnhappyChange(item:getUnhappyChangeUnmodified() / 5)
+            result:setCalories(item:getCalories() / 5)
+            result:setCarbohydrates(item:getCarbohydrates() / 5)
+            result:setLipids(item:getLipids() / 5)
+            result:setProteins(item:getProteins() / 5)
+            result:setCooked(true);
+        end
+    end
+    player:getInventory():AddItem("Base.BakingPan");
+end
+
+--Divides into five.
+function Recipe.OnCreate.SapphSliceIntoFives(items, result, player)
+    for i=0,items:size() - 1 do
+        local item = items:get(i)
+        if item:getType() == "Parmesan_CheeseWheel" or item:getType() == "Blue_CheeseWheel" then
+            result:setBaseHunger(item:getBaseHunger() / 5);
+            result:setHungChange(item:getHungChange() / 5);
+            result:setThirstChange(item:getThirstChangeUnmodified() / 5)
+            result:setBoredomChange(item:getBoredomChangeUnmodified() / 5)
+            result:setUnhappyChange(item:getUnhappyChangeUnmodified() / 5)
+            result:setCalories(item:getCalories() / 5)
+            result:setCarbohydrates(item:getCarbohydrates() / 5)
+            result:setLipids(item:getLipids() / 5)
+            result:setProteins(item:getProteins() / 5)
+        end
+    end
+end
+
+function Recipe.OnCreate.PopscicleCreate(items, result, player)
+
+    Colors={ "SapphCooking.Popsicle_White", 
+    "SapphCooking.Popsicle_Pink", 
+    "SapphCooking.Popsicle_Blue",
+    "SapphCooking.Popsicle_Purple",
+    "SapphCooking.Popsicle_Green",
+    "SapphCooking.Popsicle_Red",
+    "SapphCooking.Popsicle_Orange",
+    "SapphCooking.Popsicle_Yellow", }
+
+    local inv = player:getInventory();
+	inv:AddItem(Colors[ZombRand(1, #Colors+1)], 1)
+end
+
+
+
+function Recipe.OnCreate.SapphCottonCandy(items, result, player)
+   
+    Results={ "SapphCooking.CottonCandy_White", 
+"SapphCooking.CottonCandy_Pink", 
+"SapphCooking.CottonCandy_Blue",
+"SapphCooking.CottonCandy_Purple",
+"SapphCooking.CottonCandy_Green",
+"SapphCooking.CottonCandy_Red",
+"SapphCooking.CottonCandy_Yellow",
+"SapphCooking.CottonCandy_Orange", }
+
+    local inv = player:getInventory();
+	inv:AddItem(Results[ZombRand(1, #Results+1)], 1)
+
+end
+
+function Recipe.OnCreate.SapphFortuneCookie(items, result, player)
+   
+    Fortunes={ "SapphCooking.Fortune_Message1", 
+"SapphCooking.Fortune_Message2", 
+"SapphCooking.Fortune_Message3",
+"SapphCooking.Fortune_Message4",
+"SapphCooking.Fortune_Message5",
+"SapphCooking.Fortune_Message6",
+"SapphCooking.Fortune_Message7",
+"SapphCooking.Fortune_Message8",
+"SapphCooking.Fortune_Message9",
+"SapphCooking.Fortune_Message10", }
+
+    local inv = player:getInventory();
+	inv:AddItem(Fortunes[ZombRand(1, #Fortunes+1)], 1)
+
+    --get the boredom/status of the player.
+    --makes the player happy when cooking c:
+    local body = player:getBodyDamage(); 
+    local stats = player:getStats();    
+    local currentUnhappiness = body:getUnhappynessLevel(); 
+    local currentBoredom = body:getBoredomLevel();  
+    local currentStress = stats:getStress();
+    body:setBoredomLevel(currentBoredom - 5); 
+    body:setUnhappynessLevel(currentUnhappiness - 5); 
+    stats:setStress(currentStress - 2);
+    HaloTextHelper.addTextWithArrow(player, getText("IGUI_HaloNote_Stress").. ", " .. getText("IGUI_HaloNote_Boredom"), false, HaloTextHelper.getColorGreen());
+end
+
+
+function Recipe.OnCreate.SapphBrewCoffee(items, result, player)
+    result:setCooked(item:isCooked());
+    result:setHeat(2.5);
+    local inv = player:getInventory();
+	inv:AddItem("SapphCooking.DirtyClothFilter");
+end
+
+--cakes~
+function Recipe.OnCreate.SapphCakeAddCandle(items, result, player)
+    for i=0,items:size() - 1 do
+        local item = items:get(i)
+        if item:getType() == "CakeRaw" or item:getType() == "CakeRaw_Chocolate" or item:getType() == "CakeRaw_BlackForestCake" or item:getType() == "CakeRaw_Carrot" or item:getType() == "CakeRaw_Strawberry" or item:getType() == "CakeRaw_RedVelvet" or item:getType() == "CakeRaw_Birthday" or item:getType() == "CakePrep_Chocolate" or item:getType() == "CakePrep_Carrot" or item:getType() == "CakePrep_Strawberry" or item:getType() == "CakePrep_BlackForest" or item:getType() == "CakePrep_Birthday" or item:getType() == "CakePrep_RedVelvet" then
+            result:setBaseHunger(item:getBaseHunger());
+            result:setHungChange(item:getHungChange());
+            result:setThirstChange(item:getThirstChangeUnmodified());
+            result:setBoredomChange(item:getBoredomChangeUnmodified());
+            result:setUnhappyChange(item:getUnhappyChangeUnmodified());
+            result:setCarbohydrates(item:getCarbohydrates());
+            result:setLipids(item:getLipids());
+            result:setProteins(item:getProteins());
+            result:setCalories(item:getCalories());
+            result:setWeight(item:getWeight());
+            if player:getPrimaryHandItem() == player:getSecondaryHandItem() then
+                player:setPrimaryHandItem(nil)
+            end
+            player:setSecondaryHandItem(result);
+        end
+    end
+end
+
+function Recipe.OnCreate.SapphCakeRemoveCandle(items, result, player)
+    for i=0,items:size() - 1 do
+        local item = items:get(i)
+        if item:getType() == "Cake_Candle" or item:getType() == "CakeChocolate_Candle" or item:getType() == "CakeBlackForest_Candle" or item:getType() == "CakeCarrot_Candle" or item:getType() == "CakeStrawberry_Candle" or item:getType() == "CakeRedVelvet_Candle" or item:getType() == "CakeBirthday_Candle" then
+            result:setBaseHunger(item:getBaseHunger());
+            result:setHungChange(item:getHungChange());
+            result:setThirstChange(item:getThirstChangeUnmodified());
+            result:setBoredomChange(item:getBoredomChangeUnmodified());
+            result:setUnhappyChange(item:getUnhappyChangeUnmodified());
+            result:setCarbohydrates(item:getCarbohydrates());
+            result:setLipids(item:getLipids());
+            result:setProteins(item:getProteins());
+            result:setCalories(item:getCalories());
+            result:setWeight(item:getWeight());
+            result:setCooked(true);
+        end
+    end
+    --adds a half used candle, so you can't farm wishes~
+    local inv = player:getInventory();
+	inv:AddItem("SapphCooking.HalfCandle");
+
+    --get the boredom/status of the player.
+    --makes the player happy when cooking c:
+    local body = player:getBodyDamage(); 
+    local stats = player:getStats();    
+    local currentUnhappiness = body:getUnhappynessLevel(); 
+    local currentBoredom = body:getBoredomLevel();  
+    local currentStress = stats:getStress();
+    body:setBoredomLevel(currentBoredom - 30); 
+    body:setUnhappynessLevel(currentUnhappiness - 30); 
+    stats:setStress(currentStress - 10);
+    HaloTextHelper.addTextWithArrow(player, getText("IGUI_HaloNote_Stress").. ", " .. getText("IGUI_HaloNote_Boredom"), false, HaloTextHelper.getColorGreen());
+end
+
+
+function Recipe.OnCreate.SapphBirthdayCake(items, result, player)
+    for i=0,items:size() - 1 do
+        local item = items:get(i)
+	    if item:getTags():contains("isCake") then 
+            result:setBaseHunger(item:getBaseHunger());
+            result:setHungChange(item:getHungChange());
+            result:setThirstChange(item:getThirstChangeUnmodified());
+            result:setBoredomChange(item:getBoredomChangeUnmodified());
+            result:setUnhappyChange(item:getUnhappyChangeUnmodified());
+            result:setCarbohydrates(item:getCarbohydrates());
+            result:setLipids(item:getLipids());
+            result:setProteins(item:getProteins());
+            result:setCalories(item:getCalories() + 30);
+            result:setWeight(item:getWeight());
+            result:setCooked(true);
+        end
+    end
+end
+
+--Gives a random tray, with random macaron colors.
+function Recipe.OnCreate.SapphMacaronTray(items, result, player)
+   
+    Trays={ "SapphCooking.BakingTray_MacaronCookies1", 
+    "SapphCooking.BakingTray_MacaronCookies2", 
+    "SapphCooking.BakingTray_MacaronCookies3",
+    "SapphCooking.BakingTray_MacaronCookies4",
+    }   
+    local inv = player:getInventory();
+	inv:AddItem(Trays[ZombRand(1, #Trays+1)], 1)
+
 end

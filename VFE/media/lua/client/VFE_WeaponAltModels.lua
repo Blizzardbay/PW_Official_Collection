@@ -179,6 +179,32 @@ AssaultRifle2.Apply = function(weapon, open)
 end
 table.insert(VFEWeaponModelTable, AssaultRifle2);
 
+local M60MMG = {}
+M60MMG.Name = "Base.M60MMG"
+M60MMG.Apply = function(weapon, open)
+	local player = getSpecificPlayer(0)
+	local originalSprite = weapon:getOriginalWeaponSprite()
+	if not weapon:isContainsClip() then
+		originalSprite = originalSprite .. "_Empty"
+	end
+
+	weapon:setWeaponSprite(originalSprite)
+end
+table.insert(VFEWeaponModelTable, M60MMG);
+
+local M60MMG_Bipod = {}
+M60MMG_Bipod.Name = "Base.M60MMG_Bipod"
+M60MMG_Bipod.Apply = function(weapon, open)
+	local player = getSpecificPlayer(0)
+	local originalSprite = weapon:getOriginalWeaponSprite()
+	if not weapon:isContainsClip() then
+		originalSprite = originalSprite .. "_Empty"
+	end
+
+	weapon:setWeaponSprite(originalSprite)
+end
+table.insert(VFEWeaponModelTable, M60MMG_Bipod);
+
 local Shotgun = {}
 Shotgun.Name = "Base.Shotgun"
 Shotgun.Apply = function(weapon, open)
@@ -218,6 +244,20 @@ ShotgunSawnoff.Apply = function(weapon, open)
 	weapon:setWeaponSprite(originalSprite)
 end
 table.insert(VFEWeaponModelTable, ShotgunSawnoff);
+
+local ShotgunSawnoffNoStock = {}
+ShotgunSawnoffNoStock.Name = "Base.ShotgunSawnoffNoStock"
+ShotgunSawnoffNoStock.Apply = function(weapon, open)
+	local originalSprite = weapon:getOriginalWeaponSprite()
+	local pad = weapon:getRecoilpad()
+	if pad ~= nil then
+		if pad:getType() == "ShellHolder" then
+			originalSprite = originalSprite .. "SH"
+		end
+	end
+	weapon:setWeaponSprite(originalSprite)
+end
+table.insert(VFEWeaponModelTable, ShotgunSawnoffNoStock);
 
 local Shotgun2 = {}
 Shotgun2.Name = "Base.Shotgun2"
@@ -299,6 +339,105 @@ ShotgunSemi2.Apply = function(weapon, open)
 end
 table.insert(VFEWeaponModelTable, ShotgunSemi2);
 
+local ShotgunSilent = {}
+ShotgunSilent.Name = "Base.ShotgunSilent"
+ShotgunSilent.Apply = function(weapon, open)
+	local originalSprite = weapon:getOriginalWeaponSprite()
+	local pad = weapon:getRecoilpad()
+	if pad ~= nil then
+		if pad:getType() == "ShellHolder" then
+			originalSprite = originalSprite .. "SH"
+		end
+	end
+	weapon:setWeaponSprite(originalSprite)
+end
+table.insert(VFEWeaponModelTable, ShotgunSilent);
+
+local DoubleBarrelShotgun = {}
+DoubleBarrelShotgun.Name = "Base.DoubleBarrelShotgun"
+DoubleBarrelShotgun.Apply = function(weapon, open)
+	local originalSprite = weapon:getOriginalWeaponSprite()
+	local stock = weapon:getStock()
+	if stock ~= nil then
+		if stock:getType() == "FiberglassStock" then
+			originalSprite = originalSprite .. "FGS"
+		end
+	end
+	if open then
+		originalSprite = originalSprite .. "_OPEN"
+	end
+	weapon:setWeaponSprite(originalSprite)
+end
+table.insert(VFEWeaponModelTable, DoubleBarrelShotgun);
+
+local DoubleBarrelShotgunSawnoff = {}
+DoubleBarrelShotgunSawnoff.Name = "Base.DoubleBarrelShotgunSawnoff"
+DoubleBarrelShotgunSawnoff.Apply = function(weapon, open)
+	local originalSprite = weapon:getOriginalWeaponSprite()
+	local stock = weapon:getStock()
+	if stock ~= nil then
+		if stock:getType() == "FiberglassStock" then
+			originalSprite = originalSprite .. "FGS"
+		end
+	end
+	if open then
+		originalSprite = originalSprite .. "_OPEN"
+	end
+	weapon:setWeaponSprite(originalSprite)
+end
+table.insert(VFEWeaponModelTable, DoubleBarrelShotgunSawnoff);
+
+local DoubleBarrelShotgunSawnoffNoStock = {}
+DoubleBarrelShotgunSawnoffNoStock.Name = "Base.DoubleBarrelShotgunSawnoffNoStock"
+DoubleBarrelShotgunSawnoffNoStock.Apply = function(weapon, open)
+	local originalSprite = weapon:getOriginalWeaponSprite()
+	if open then
+		originalSprite = originalSprite .. "_OPEN"
+	end
+	weapon:setWeaponSprite(originalSprite)
+end
+table.insert(VFEWeaponModelTable, DoubleBarrelShotgunSawnoffNoStock);
+
+local M2400_Shotgun = {}
+M2400_Shotgun.Name = "Base.M2400_Shotgun"
+M2400_Shotgun.Apply = function(weapon, open)
+	local originalSprite = weapon:getOriginalWeaponSprite()
+	local stock = weapon:getStock()
+	if stock ~= nil then
+		if stock:getType() == "FiberglassStock" then
+			if open then
+				originalSprite = "M2400FGS_OPEN"
+			else
+				originalSprite = originalSprite .. "FGS"
+			end
+		end
+	elseif open then
+		originalSprite = "M2400_OPEN"
+	end
+	weapon:setWeaponSprite(originalSprite)
+end
+table.insert(VFEWeaponModelTable, M2400_Shotgun);
+
+local M2400_Rifle = {}
+M2400_Rifle.Name = "Base.M2400_Rifle"
+M2400_Rifle.Apply = function(weapon, open)
+	local originalSprite = weapon:getOriginalWeaponSprite()
+	local stock = weapon:getStock()
+	if stock ~= nil then
+		if stock:getType() == "FiberglassStock" then
+			if open then
+				originalSprite = "M2400FGS_OPEN"
+			else
+				originalSprite = originalSprite .. "FGS"
+			end
+		end
+	elseif open then
+		originalSprite = "M2400_OPEN"
+	end
+	weapon:setWeaponSprite(originalSprite)
+end
+table.insert(VFEWeaponModelTable, M2400_Rifle);
+
 
 local LeverRifle = {}
 LeverRifle.Name = "Base.LeverRifle"
@@ -313,3 +452,31 @@ LeverRifle.Apply = function(weapon, open)
 	weapon:setWeaponSprite(originalSprite)
 end
 table.insert(VFEWeaponModelTable, LeverRifle);
+
+local LeverRifle2 = {}
+LeverRifle2.Name = "Base.LeverRifle2"
+LeverRifle2.Apply = function(weapon, open)
+	local originalSprite = weapon:getOriginalWeaponSprite()
+	local stock = weapon:getStock()
+	if stock ~= nil then
+		if stock:getType() == "FiberglassStock" then
+			originalSprite = originalSprite .. "FGS"
+		end
+	end
+	weapon:setWeaponSprite(originalSprite)
+end
+table.insert(VFEWeaponModelTable, LeverRifle2);
+
+local CampCarbine = {}
+CampCarbine.Name = "Base.CampCarbine"
+CampCarbine.Apply = function(weapon, open)
+	local originalSprite = weapon:getOriginalWeaponSprite()
+	local stock = weapon:getStock()
+	if stock ~= nil then
+		if stock:getType() == "FiberglassStock" then
+			originalSprite = originalSprite .. "FGS"
+		end
+	end
+	weapon:setWeaponSprite(originalSprite)
+end
+table.insert(VFEWeaponModelTable, CampCarbine);

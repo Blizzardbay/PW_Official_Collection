@@ -46,7 +46,7 @@
 
 	<m_FemaleOutfits>
 		<m_Name>Stalker</m_Name>
-		<m_Guid>40f4c3af-b4a4-4a4e-a7e1-38fc63dbeae5</m_Guid>
+		<m_Guid>0340737f-c394-4de2-b117-e4de8eac8b97</m_Guid>
 		<m_Top>false</m_Top>
 		<m_Pants>false</m_Pants>
 		<m_AllowPantsHue>false</m_AllowPantsHue>
@@ -137,7 +137,7 @@
 
 	<m_FemaleOutfits>
 		<m_Name>Nomad</m_Name>
-		<m_Guid>ed21a0db-41fe-455b-bae5-ddd4fba7807c</m_Guid>
+		<m_Guid>3537701b-0f34-47ff-92a2-5c629acad362</m_Guid>
 		<m_Top>false</m_Top>
 		<m_Pants>false</m_Pants>
 		<m_AllowPantsHue>false</m_AllowPantsHue>
@@ -185,7 +185,7 @@
 
 	<m_MaleOutfits>
 		<m_Name>OminousNomad</m_Name>
-		<m_Guid>3537701b-0f34-47ff-92a2-5c629acad362</m_Guid>
+		<m_Guid>ed21a0db-41fe-455b-bae5-ddd4fba7807c</m_Guid>
 		<m_Top>false</m_Top>
 		<m_Pants>false</m_Pants>
 		<m_AllowPantsHue>false</m_AllowPantsHue>
@@ -312,9 +312,8 @@
 	</m_MaleOutfits>
 
 	<m_FemaleOutfits>
-
 		<m_Name>Prepper</m_Name>
-		<m_Guid>9ea6bbe0-1e8d-4662-a5bc-365d9ea1c324</m_Guid>
+		<m_Guid>e450d06d-298a-4a7a-9b1d-444b182f5957</m_Guid>
 		<m_Top>false</m_Top>
 		<m_Pants>false</m_Pants>
 		<m_AllowPantsHue>false</m_AllowPantsHue>
@@ -392,7 +391,7 @@
 
 	<m_FemaleOutfits>
 		<m_Name>Headhunter</m_Name>
-		<m_Guid>ff41982f-e7d9-41f4-b695-f09154ae8096</m_Guid>
+		<m_Guid>f53755c3-cd66-4da9-962e-b519604b1737</m_Guid>
 		<m_Top>true</m_Top>
 		<m_Pants>true</m_Pants>
 		<m_AllowPantsHue>false</m_AllowPantsHue>
@@ -428,7 +427,7 @@
 
 	<m_MaleOutfits>
 		<m_Name>DeadlyHeadhunter</m_Name>
-		<m_Guid>f53755c3-cd66-4da9-962e-b519604b1737</m_Guid>
+		<m_Guid>ff41982f-e7d9-41f4-b695-f09154ae8096</m_Guid>
 		<m_Top>true</m_Top>
 		<m_Pants>true</m_Pants>
 		<m_AllowPantsHue>false</m_AllowPantsHue>

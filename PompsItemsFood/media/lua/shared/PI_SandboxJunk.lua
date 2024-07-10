@@ -118,6 +118,7 @@ local trashItems = {
 	['PompsItems.PILemonChica'] = 'PILemonChicaEmpty',
 	['PompsItems.PIFreddyFudgebar'] = 'PIFreddyFudgebarEmpty',
 	['PompsItems.PIFazbar'] = 'PIFazbarEmpty',
+	['PompsItems.PIGummyFrogs'] = 'PompsItems.PIGummyFrogsEmpty',
 } 
 Events.OnInitGlobalModData.Add(function()
     if not SandboxVars.PompsItems.Littering then

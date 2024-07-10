@@ -1,0 +1,12 @@
+IG_UI_CN = {
+ IGUI_PlayerText_st = "设置目的地。",
+ IGUI_PlayerText_in = "目的地在附近。",
+ IGUI_PlayerText_end = "您已到达目的地。",
+ IGUI_PlayerText_left = "稍后左转。",
+ IGUI_PlayerText_right = "稍后右转。",
+ IGUI_PlayerText_autoon = "切换为自动驾驶模式。",
+ IGUI_PlayerText_auttooff = "退出自动驾驶模式。",
+ IGUI_PlayerText_stop = "前方有车辆，停车。",
+ IGUI_PlayerText_Navout = "您已偏离路线。",
+ IGUI_Tutorial_NavGPS = " <CENTRE> <SIZE:large> 导航使用方法! <LINE> <LINE> <SIZE:medium> [左 Shift (手柄上的左摇杆按钮)] : 可以设置目的地! 建议在中途标记中途点以创建精确的路线。 <LINE> <LINE> [X (手柄上的LT按钮)] : 按最近的顺序删除一个设置的目的地! <LINE> <LINE> [空格 (手柄上的LB按钮)] : 可以删除所有设置的目的地和中途点! <LINE> <LINE>",
+}

@@ -14,4 +14,6 @@ Sandbox_EN = {
 	Sandbox_VFE_HouseWeapons_tooltip = "VFE weapons spawning inside of normal houses."
 	Sandbox_VFE_HouseWeaponsMulti = "House Weapons Multiplier"
 	Sandbox_VFE_HouseWeaponsMulti_tooltip = "Multiplier to weapons spawning in houses (Requires previous option enabled)"
+	Sandbox_VFE_HeavyWeapons = "Heavy Weapons"
+	Sandbox_VFE_HeavyWeapons_tooltip = "Allows spawning of weapons like the M60 Machinegun."
 }

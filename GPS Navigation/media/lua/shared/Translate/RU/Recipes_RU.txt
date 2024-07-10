@@ -1,0 +1,6 @@
+Recipes_RU = {
+    Recipe_Make GPS = "Изготовить GPS-навигатор",
+    Recipe_Remove GPSBattery = "Извлечь батарею из GPS-навигатора",
+    Recipe_Insert Battery into GPS = "Вставить батарею в GPS-навигатор",
+    Recipe_Dismantle GPS = "Разобрать GPS-навигатор",
+}

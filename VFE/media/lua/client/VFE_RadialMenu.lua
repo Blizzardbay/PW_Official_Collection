@@ -64,6 +64,12 @@ function CVFEBayonet:fillMenu(menu, weapon, index)
     local bayonet = nil
 	local bayonetFound = false
 	self.index = index
+	local parts = weapon:getAllWeaponParts()
+	for i=1,parts:size() do
+		if parts:get(i-1):hasTag("BlockBayonet") then
+			return
+		end
+	end
 	if index % 3 == 1 then
 		if VFEBayonetSet[index + 2] ~= "NULL" then
 			local playerItems = self.character:getInventory():getItems()
@@ -114,6 +120,47 @@ function CVFEBayonet:invoke()
 	end
 
 	ISTimedActionQueue.add(VFEBayonetContextAction:new(weapon, self.index, self.character, bayonet, CharacterActionAnims.Craft, 15));
+end
+
+-----
+local CVFEAltOperation = BaseCommand:derive("CVFEAltOperation")
+
+function CVFEAltOperation:new(frm)
+	local o = BaseCommand.new(self, frm)
+	o.isAltOp = true
+	return o
+end
+
+function CVFEAltOperation:fillMenu(menu, weapon, index)
+	local altOperationList = VFEAltOperationSetCheck(weapon)
+	
+	if #altOperationList > 0 then
+		if altOperationList[index].RadialMenu then
+			local target = 2
+			if altOperationList[index].Name[2] == weapon:getFullType() then
+				target = 1
+			end
+			self.altOperation = altOperationList[index]
+			self.target = target
+			if altOperationList[index].RadialMenu then
+				if altOperationList[index].RequireEmpty then
+					if not(weapon:isContainsClip() and altOperationList[index].RequireNoMag) and not (weapon:getCurrentAmmoCount() > 0) and not weapon:isRoundChambered() then
+						local text = getText(altOperationList[index].OperationText[target])
+						menu:addSlice(text, getTexture("media/ui/" .. altOperationList[index].OperationIcon[target] .. ".png"), self.invoke, self)
+					end
+				else
+					local text = getText(altOperationList[index].OperationText[target])
+					menu:addSlice(text, getTexture("media/ui/" .. altOperationList[index].OperationIcon[target] .. ".png"), self.invoke, self)
+				end
+			end
+		end
+	end
+end
+
+function CVFEAltOperation:invoke()
+	local weapon = self.character:getPrimaryHandItem()
+	if not weapon then return end
+	VFEAltOperationContext.callAction(weapon, self.altOperation, self.target, self.character)
 end
 
 --- because they're local I have to redefine all the other methods lmao --
@@ -332,6 +379,7 @@ local ISFirearmRadialMenu_fillMenu_old = ISFirearmRadialMenu.fillMenu
 function ISFirearmRadialMenu:fillMenu(submenu)
 	local weapon = self.character:getPrimaryHandItem()
 	if not weapon then return nil end
+	if not instanceof(weapon, "HandWeapon") then return nil end
 	for index, preset in ipairs(VFEBayonetSet) do
 		if preset == weapon:getFullType() and index % 3 == 2 then
 			local weapInd = index
@@ -351,8 +399,6 @@ function ISFirearmRadialMenu:fillMenu(submenu)
 
 		end
 	end
-	if not instanceof(weapon, "HandWeapon") then return nil end
-	if not weapon:isRanged() then return nil end
 	for index, preset in ipairs(VFEBayonetSet) do
 		if preset == weapon:getFullType() and index % 3 == 1 then
 			local weapInd = index
@@ -413,6 +459,45 @@ function ISFirearmRadialMenu:fillMenu(submenu)
 			return
 		end
 	end	
+	local altOperationList = VFEAltOperationSetCheck(weapon)
+	if #altOperationList > 0 then
+		local menu = getPlayerRadialMenu(self.playerNum)
+		local weapInd = 1
+		menu:clear()
+		local commands = {}
+		if weapon:getSubCategory() == "Firearm" then
+			if weapon:getMagazineType() then
+				if weapon:isContainsClip() then
+					table.insert(commands, CEjectMagazine:new(self))
+				else
+					table.insert(commands, CInsertMagazine:new(self))
+				end
+				table.insert(commands, CLoadBulletsInMagazine:new(self))
+			else
+				table.insert(commands, CLoadRounds:new(self))
+				table.insert(commands, CUnloadRounds:new(self))
+			end
+			table.insert(commands, CRack:new(self))
+		end
+		
+		if #altOperationList > 0 then
+			for index, altOperation in ipairs(altOperationList) do
+				table.insert(commands, CVFEAltOperation:new(self))
+			end
+		end
+		
+		for _,command in ipairs(commands) do
+			local count = #menu.slices
+			command:fillMenu(menu, weapon, weapInd)
+			if command.isAltOp == true then
+				weapInd = weapInd + 1
+			end
+			if count == #menu.slices then
+				menu:addSlice(nil, nil, nil)
+			end
+		end
+		return
+	end
 	ISFirearmRadialMenu_fillMenu_old(self, submenu) -- If went through without finding a folding stock weapon or bayonet weapon, run the original script
 end
 
@@ -424,6 +509,11 @@ function ISFirearmRadialMenu.checkWeapon(playerObj)
 		if preset == weapon:getFullType() and index % 3 == 2 then
 			return true
 		end
+	end
+	-- Alt weapon operation
+	local altOperationList = VFEAltOperationSetCheck(weapon)
+	if #altOperationList > 0 then
+		return true
 	end
 	return ISFirearmRadialMenu_checkWeapon_old(playerObj)
 end

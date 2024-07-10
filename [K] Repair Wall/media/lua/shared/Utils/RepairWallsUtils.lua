@@ -72,7 +72,8 @@ function KAMER_RepairWallsUtils.ModData(self, object)
         end
         return data
     end
-    ---------------------------------------------------------    
+    ---------------------------------------------------------
+
     for aName, aValue in pairs(info) do
         local c = string.match(tostring(aName), '[^:]+$')
 

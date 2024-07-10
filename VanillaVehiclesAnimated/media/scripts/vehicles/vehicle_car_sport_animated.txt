@@ -1,0 +1,164 @@
+module Base
+{
+	model Vehicles_SportsCar_a
+	{
+		mesh = vehicles/Vehicles_SportCar_animated|Vehicles_SportsCar,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	
+
+	model Vehicles_SportsCar_internals
+	{
+		mesh = vehicles/Vehicles_SportCar_animated|Vehicles_Interior,
+		shader = vehiclewheel,
+		texture = Vehicles/vehicle_sportscarshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	model Vehicles_SportsCar_DoorFrontLeft
+	{
+		mesh = vehicles/Vehicles_SportCar_animated|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_SportsCar_DoorFrontRight
+	{
+		mesh = vehicles/Vehicles_SportCar_animated|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_SportsCar_WindowFrontLeft
+	{
+		mesh = vehicles/Vehicles_SportCar_animated|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_SportsCar_WindowFrontRight
+	{
+		mesh = vehicles/Vehicles_SportCar_animated|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_SportsCar_Trunk
+	{
+		mesh = vehicles/Vehicles_SportCar_animated|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_SportsCar_Hood
+	{
+		mesh = vehicles/Vehicles_SportCar_animated|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model Vehicles_SportsCar_Windshield
+	{
+		mesh = vehicles/Vehicles_SportCar_animated|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+	model Vehicles_SportsCar_RearWindow
+	{
+		mesh = vehicles/Vehicles_SportCar_animated|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+
+
+	template vehicle SportsCar_animatedDoors {
+		part TruckBed 
+		{
+			model Default 
+			{
+				file = Vehicles_SportsCar_internals,
+				rotate = 0 0 0,
+				scale = 1,
+			}			
+		}
+
+				
+
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = Vehicles_SportsCar_Trunk,
+				offset = 0 0 0,
+				rotate = -90 0 0,
+				scale = 1.0,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = Vehicles_SportsCar_DoorFrontLeft,
+				rotate = -90 0 0,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = Vehicles_SportsCar_DoorFrontRight,
+				rotate = -90 0 0,
+			}
+		}
+
+		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = Vehicles_SportsCar_Hood,
+				rotate = -90 0 0,
+			}
+		}
+		part WindowFrontLeft
+        	{	
+            		model Default
+            		{
+                		file = Vehicles_SportsCar_WindowFrontLeft,
+				rotate = -90 0 0,
+            		}
+
+        	}
+		part WindowFrontRight
+        	{	
+            		model Default
+            		{
+                		file = Vehicles_SportsCar_WindowFrontRight,
+				rotate = -90 0 0,
+            		}
+
+        	}				
+		
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = Vehicles_SportsCar_Windshield,
+				rotate = 0 0 0,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = Vehicles_SportsCar_RearWindow,
+				rotate = 0 0 0,
+			}
+		}
+	}
+}

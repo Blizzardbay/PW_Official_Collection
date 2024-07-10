@@ -18,6 +18,15 @@ sound Battersound
 			file = media/sound/Battersound.ogg,
 		}
 	}
+sound EatingWhippedCream
+	{
+		category = Item,
+		is3D = true,
+		clip
+		{
+			file = media/sound/EatWhippedCream.ogg,
+		}
+	}
 sound BottleShake
 	{
 		category = Item,
@@ -171,6 +180,15 @@ sound IceBreaking
 		clip
 		{
 			file = media/sound/IceBreaking.ogg,
+		}
+	}
+sound BlenderOn
+	{
+		category = Item,
+		is3D = true,
+		clip
+		{
+			file = media/sound/SapphBlender.ogg,
 		}
 	}
 

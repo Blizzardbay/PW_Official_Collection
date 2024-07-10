@@ -2487,6 +2487,182 @@ local function initMapReveals()
 		mapAPI:setBoundsInSquares(14000, 1850, 14300, 2080)
 		MapUtils.overlayPaper(mapUI)
 	end
+	
+
+	-- Pineville DONE
+	-- Taylorsville DONE
+
+	-- print(" ( "..getPlayer():getX().. " , "..getPlayer():getY().." ) ")
+
+	-- Crowlake (6300 ,11100 , 6599, 11699)
+	-- Mod ID: Crowlake
+	-- Map Folder: Crowlake
+	LootMaps.Init.CrowlakeMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Crowlake")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(6300 ,11100 , 6599, 11699)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Guston, KY (3640, 6715, 4450, 7770)
+	-- Mod ID: Guston
+	-- Map Folder: GustonKY
+	LootMaps.Init.GustonMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/GustonKY")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(3600, 6900, 4200, 7800)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Jasperville
+	-- Mod ID: Jasperville
+	-- Map Folder: Jasperville
+	-- Jasperville Train Station (5300, 1600, 6200, 2200)
+	LootMaps.Init.JaspervilleTrainStationMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Jasperville")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(5300, 1600, 6200, 2300)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- Jasperville Industrial (5680, 2350, 6125, 2800)
+	LootMaps.Init.JaspervilleIndustrialMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Jasperville")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(5680, 2300, 6200, 2800)
+		overlayPNG(mapUI, 5900, 2310, 0.25, "legend", "media/textures/worldMap/Legend.png")
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- Map of Jasperville (6235, 1915, 7120, 2730)
+	LootMaps.Init.JaspervilleMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Jasperville")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(6235, 1915, 7120, 2730)
+		overlayPNG(mapUI, 6250, 1930, 0.5, "legend", "media/textures/worldMap/Legend.png")
+		MapUtils.overlayPaper(mapUI)
+	end
+
+
+
+	-- Yakama State Park (8400, 10500, 9599, 11399)
+	-- Mod ID: YakamaStatePark
+	-- Map Folder: YakamaStatePark
+	LootMaps.Init.YakamaStateParkMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/YakamaStatePark")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(8400, 10500, 9599, 11399)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- ValuTech Amusement Park (13500, 4200, 13799, 4799)
+	-- Mod ID: SimonMDValuTechAmusementPark
+	-- Map Folder: valutechamusementpark
+	LootMaps.Init.ValuTechAmusementParkMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/valutechamusementpark")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(13500, 4200, 13799, 4799)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Canvasback Studios (9900, 10200, 10199, 10499)
+	-- Mod ID: Canvasback Studios
+	-- Map Folder: Canvasback
+	LootMaps.Init.CanvasbackStudiosMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Canvasback")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(9900, 10200, 10199, 10499)
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- Pleford Springs, KY (3300, 7200, 4199, 8099)
+	-- Mod ID: PlefordSpringsMapMod
+	-- Map Folder: PlefordSprings
+	LootMaps.Init.PlefordSpringsMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/PlefordSprings")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(3350, 7300, 4199, 8099)
+		overlayPNG(mapUI, 3365, 7315, 0.35, "legend", "media/textures/worldMap/Legend.png")
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- FoxWood (7800, 7500, 8099, 7799)
+	-- Mod ID: One cell life
+	-- Map Folder: Foxwood
+	LootMaps.Init.FoxWoodMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Foxwood")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(7800, 7500, 8099, 7799)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- Mapa brasil 1.0 (7200, 12300, 8400, 13500)
+	-- Mod ID: mapa brasil
+	-- Map Folder: mapa brasil
+	LootMaps.Init.BrazilMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/mapa brasil")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(7200, 12300, 8400, 13500)
+		overlayPNG(mapUI, 7220, 12900, 0.5, "legend", "media/textures/worldMap/Legend.png")
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- Fort Loid (11100, 8100, 11399, 8399)
+	-- Mod ID: FortLoid
+	-- Map Folder: Fort Loid
+	LootMaps.Init.FortLoidMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/Fort Loid")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(11100, 8100, 11399, 8399)
+		MapUtils.overlayPaper(mapUI)
+	end
+	-- HavenRidge (4260, 9900, 4799, 10199)
+	-- Mod ID: LastOfUs
+	-- Map Folder: LastOfUs
+	LootMaps.Init.HavenRidgeMap = function(mapUI)
+		local mapAPI = mapUI.javaObject:getAPIv1()
+		MapUtils.initDirectoryMapData(mapUI, "media/maps/LastOfUs")
+		MapUtils.initDefaultStyleV1(mapUI)
+		replaceWaterStyle(mapUI)
+		mapAPI:setBoundsInSquares(4260, 9900, 4799, 10199)
+		overlayPNG(mapUI, 4270, 9910, 0.18, "legend", "media/textures/worldMap/Legend.png")
+		MapUtils.overlayPaper(mapUI)
+	end
+
+	-- SHELTERS COLLECTION
+	-- NONE OF THEM ARE INDEICATED ON THE IN GAME MAP
+	-- SHELTER 22 38 (6600, 11400, 6899, 11699)
+	-- SHELTER 31 22 (9300, 6600, 9599, 6899)
+	-- SHELTER 49 12 (14700, 3600, 14999, 3899)
+	-- SHELTER 22 28 (6600, 8400, 6899, 8699)
+	-- SHELTER 25 33 (7500, 9900, 7799, 10199)
+	-- SHELTER 29 26 (8700, 7800, 8999, 8099)
+	-- SHELTER 40 30 (12000, 9000, 12299, 9299)
+	-- SHELTER 45 15 (13500, 4500, )
+	-- TOWER 13 26
+	-- TOWER 47 22
+
+
 
 	--------------------------------------------------
 	-- will do later maybe
@@ -2509,6 +2685,8 @@ local function initMapReveals()
 	-- Daegu Metropolitan City (vanilla)
 	-- Drayton
 	-- The Walking Dead Project
+
+
 end 
 
 

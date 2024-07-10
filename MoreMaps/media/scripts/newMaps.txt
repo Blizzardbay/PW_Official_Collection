@@ -2319,5 +2319,149 @@ module Base
         WorldStaticModel    =   Map,
     }
 
-
+    
+    item CrowlakeMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Crowlake,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   CrowlakeMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    
+    item GustonMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Guston,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   GustonMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item JaspervilleTrainStationMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Jasperville - Train Station,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   JaspervilleTrainStationMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item JaspervilleIndustrialMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Jasperville - Industrial Complex,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   JaspervilleIndustrialMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item JaspervilleMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Jasperville,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   JaspervilleMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item ValuTechAmusementParkMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of ValuTech Amusement Park,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   ValuTechAmusementParkMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item CanvasbackStudiosMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Canvasback Studios,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   CanvasbackStudiosMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item YakamaStateParkMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of  Yakama State Park,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   YakamaStateParkMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item PlefordSpringsMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Pleford Springs,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   PlefordSpringsMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item FoxWoodMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of FoxWood,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   FoxWoodMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item BrazilMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Brazil City,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   BrazilMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item FortLoidMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Fort Loid,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   FortLoidMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
+    item HavenRidgeMap
+    {
+        DisplayCategory     =   Cartography,
+        Type				=	Map,
+        DisplayName			=	Map of Haven Ridge,
+        Icon				=	Map,
+        Weight				=	0.1,
+        Map                 =   HavenRidgeMap,
+        SurvivalGear        =   TRUE,
+        WorldStaticModel    =   Map,
+    }
 }

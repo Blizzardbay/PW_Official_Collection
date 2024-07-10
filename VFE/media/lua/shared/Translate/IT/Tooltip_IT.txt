@@ -1,0 +1,3 @@
+Tooltip_IT = {
+	Tooltip_BrassCatcher = "Accessorio per armi. Raccoglie i collegamenti per evitare che cadano a terra.",
+}

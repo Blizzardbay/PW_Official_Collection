@@ -1,10 +1,5 @@
 module Base
 {
-    imports    
-    {
-		Base
-	}
-	
     item x2Scope
     {
         Type = WeaponPart,
@@ -14,7 +9,7 @@ module Base
         WeightModifier = 0.3,
         MaxRangeModifier = 7,
         MinRangeModifier = 6,
-        MountOn = HuntingRifle; 1022; VarmintRifle; SniperRifle; AssaultRifle; CAR15; CAR15D; Mini14; Mini14Unfolded; AssaultRifle2; FAL,
+        MountOn = HuntingRifle; 1022; VarmintRifle; SniperRifle; AssaultRifle; CAR15; Mini14; Mini14Unfolded; CampCarbine; LeverRifle2; AssaultRifle2; FAL,
         PartType = Scope,
         Tooltip = Tooltip_Scope,
         MetalValue = 22,
@@ -30,7 +25,7 @@ module Base
         WeightModifier = 0.3,
         MaxRangeModifier = 0,
         MinRangeModifier = 0,
-        MountOn = HuntingRifle; 1022; VarmintRifle; SniperRifle; AssaultRifle; CAR15; CAR15D; Mini14; Mini14Unfolded; AssaultRifle2; FAL,
+        MountOn = HuntingRifle; 1022; VarmintRifle; SniperRifle; AssaultRifle; CAR15; Mini14; Mini14Unfolded; CampCarbine; LeverRifle2; AssaultRifle2; FAL,
         PartType = Scope,
         Tooltip = Tooltip_Scope,
         MetalValue = 22,
@@ -46,7 +41,7 @@ module Base
         WeightModifier = 0.4,
         MaxRangeModifier = 10,
         MinRangeModifier = 8,
-        MountOn = HuntingRifle; SniperRifle; LeverRifle; 1022; VarmintRifle; Mini14; Mini14Unfolded; AssaultRifle2; SKS; SKSSpiker; AK47; AK47Unfolded; FAL,
+        MountOn = HuntingRifle; SniperRifle; LeverRifle; 1022; VarmintRifle; Mini14; Mini14Unfolded; CampCarbine; LeverRifle2; AssaultRifle2; SKS; SKSSpiker; AK47; AK47Unfolded; FAL,
         PartType = Scope,
         Tooltip = Tooltip_Scope,
         MetalValue = 22,
@@ -60,9 +55,9 @@ module Base
         Icon = x4Scope,
         Weight = 0.4,
         WeightModifier = 0.4,
-        MaxRangeModifier = 10,
-        MinRangeModifier = 8,
-        MountOn = HuntingRifle; SniperRifle; LeverRifle; 1022; VarmintRifle; Mini14; Mini14Unfolded; AssaultRifle2; SKS; SKSSpiker; AK47; AK47Unfolded; FAL,
+        MaxRangeModifier = 0,
+        MinRangeModifier = 0,
+        MountOn = HuntingRifle; SniperRifle; LeverRifle; 1022; VarmintRifle; Mini14; Mini14Unfolded; CampCarbine; LeverRifle2; AssaultRifle2; SKS; SKSSpiker; AK47; AK47Unfolded; FAL,
         PartType = Scope,
         Tooltip = Tooltip_Scope,
         MetalValue = 22,
@@ -92,8 +87,8 @@ module Base
         Icon = x8Scope,
         Weight = 0.8,
         WeightModifier = 0.8,
-        MaxRangeModifier = 20,
-        MinRangeModifier = 10,
+        MaxRangeModifier = 0,
+        MinRangeModifier = 0,
         MountOn = HuntingRifle; VarmintRifle; SniperRifle; Mini14; Mini14Unfolded; AssaultRifle2,
         PartType = Scope,
         Tooltip = Tooltip_Scope,
@@ -187,7 +182,7 @@ module Base
         Weight = 0.2,
         WeightModifier = 0.2,
         AimingTimeModifier = 10,
-        MountOn = Pistol3; Revolver_Long; 1022; LeverRifle; SniperRifle; MP5; MP5Unfolded; MP5SD; AssaultRifle; CAR15; CAR15D; AssaultRifle2; Mini14; Mini14Unfolded; FAL,
+        MountOn = Pistol3; Revolver_Long; 1022; LeverRifle; SniperRifle; MP5; MP5Unfolded; MP5SD; AssaultRifle; CAR15; AssaultRifle2; Mini14; Mini14Unfolded; CampCarbine; LeverRifle2; FAL; M60MMG; AssaultRifleMasterkey,
         PartType = Scope,
         Tooltip = Tooltip_RedDot,
         StaticModel = RedDot,
@@ -205,10 +200,11 @@ module Base
         Weight = 0.4,
         WeightModifier = 0.4,
         ReloadTimeModifier = -5,
-        MountOn = Shotgun; Shotgun2; ShotgunSemi; ShotgunSemi2; ShotgunSawnoff; Spas12,
+        MountOn = Shotgun; Shotgun2; ShotgunSemi; ShotgunSawnoff; ShotgunSawnoffNoStock; Spas12; AssaultRifleMasterkey,
         PartType = RecoilPad,
         Tooltip = Tooltip_AmmoStrap,
         WorldStaticModel = ShellHolder_Ground,
+		Tags = ShellReloadBoost,
     }
 
     item Laser
@@ -220,7 +216,7 @@ module Base
         WeightModifier = 0.2,
         HitChanceModifier = 10,
 		AimingTimeModifier = 5,
-        MountOn = Pistol; Pistol2; Pistol3; Glock; Glock18; P229; CZ75; 1022; LeverRifle; MP5; MP5Unfolded; MP5SD; AssaultRifle; CAR15; CAR15D; AssaultRifle2; SniperRifle; Mini14; Mini14Unfolded; Spas12; FAL,
+        MountOn = Pistol; Pistol2; Pistol3; Glock; P229; CZ75; 1022; LeverRifle; MP5; MP5Unfolded; MP5SD; AssaultRifle; CAR15; AssaultRifle2; SniperRifle; Mini14; Mini14Unfolded; CampCarbine; LeverRifle2; Spas12; FAL; M60MMG; AssaultRifleMasterkey,
         PartType = Canon,
         Tooltip = Tooltip_Laser,
         MetalValue = 15,
@@ -236,7 +232,7 @@ module Base
         WeightModifier = 0.2,
         HitChanceModifier = 10,
 		AimingTimeModifier = 5,
-        MountOn = Pistol; Pistol2; Pistol3; Glock; Glock18; P229; CZ75; 1022; LeverRifle; MP5; MP5Unfolded; MP5SD; AssaultRifle; CAR15; CAR15D; AssaultRifle2; SniperRifle; Mini14; Mini14Unfolded; Spas12; FAL,
+        MountOn = Pistol; Pistol2; Pistol3; Glock; P229; CZ75; 1022; LeverRifle; MP5; MP5Unfolded; MP5SD; AssaultRifle; CAR15; AssaultRifle2; SniperRifle; Mini14; Mini14Unfolded; CampCarbine; LeverRifle2; Spas12; FAL; M60MMG; AssaultRifleMasterkey,
         PartType = Canon,
         Tooltip = Tooltip_Laser,
         MetalValue = 15,
@@ -253,11 +249,12 @@ module Base
         WeightModifier = 0.1,
         AngleModifier = 0.05,
         DamageModifier = 0.5,
-        MountOn = Shotgun; Shotgun2; ShotgunSemi; ShotgunSemi2; Spas12,
+        MountOn = Shotgun; Shotgun2; ShotgunSemi; Spas12,
         PartType = Canon,
         Tooltip = Tooltip_ChokeTubeFull,
         MetalValue = 12,
         WorldStaticModel = Shotgun_Choke_Ground,
+		Tags = BlockBayonet,
     }
 
     item ChokeTubeImproved
@@ -269,11 +266,12 @@ module Base
         WeightModifier = 0.1,
         AngleModifier = -0.1,
         DamageModifier = -0.5,
-        MountOn = Shotgun; Shotgun2; ShotgunSemi; ShotgunSemi2; Spas12,
+        MountOn = Shotgun; Shotgun2; ShotgunSemi; Spas12,
         PartType = Canon,
         Tooltip = Tooltip_ChokeTubeImproved,
         MetalValue = 12,
         WorldStaticModel = Shotgun_Choke_Ground,
+		Tags = BlockBayonet,
     }
 
 
@@ -300,10 +298,23 @@ module Base
         Icon = RifleFibreglassStock,
         Weight = 1,
         WeightModifier = -0.4,
-        MountOn = ShotgunSawnoff; Shotgun; Shotgun2; ShotgunSemi; ShotgunSemi2; HuntingRifle; VarmintRifle; Mini14; AK47; SKS; 1022; AssaultRifle2; LeverRifle,
+        MountOn = Shotgun; ShotgunSawnoff; Shotgun2; ShotgunSemi; DoubleBarrelShotgun; DoubleBarrelShotgunSawnoff; M2400_Shotgun; HuntingRifle; VarmintRifle; Mini14; AK47; SKS; 1022; AssaultRifle2; LeverRifle; LeverRifle2; CampCarbine,
         PartType = Stock,
         Tooltip = Tooltip_Sling,
 		WorldStaticModel = FiberglassStock_Ground,
+    }
+	
+	item LightenedStock
+    {
+        Type = WeaponPart,
+        DisplayName = Lightened Stock,
+        Icon = RifleLightenedStock,
+        Weight = 1,
+        WeightModifier = -0.4,
+        MountOn = Shotgun; ShotgunSawnoff; Shotgun2; ShotgunSemi; DoubleBarrelShotgun; DoubleBarrelShotgunSawnoff; M2400_Shotgun; HuntingRifle; VarmintRifle; Mini14; AK47; SKS; 1022; AssaultRifle2; LeverRifle; LeverRifle2; CampCarbine,
+        PartType = Stock,
+        Tooltip = Tooltip_Sling,
+		WorldStaticModel = LightenedStock_Ground,
     }
 
     item AmmoStraps
@@ -315,10 +326,41 @@ module Base
         Weight = 0.4,
         WeightModifier = 0.4,
         ReloadTimeModifier = -5,
-        MountOn = HuntingRifle; VarmintRifle; SniperRifle; LeverRifle; SKS; SKSSpiker; AssaultRifleM1,
+        MountOn = HuntingRifle; VarmintRifle; SniperRifle; LeverRifle; LeverRifle2; SKS; SKSSpiker; M2400_Shotgun; AssaultRifleM1,
         PartType = RecoilPad,
         Tooltip = Tooltip_AmmoStrap,
         WorldStaticModel = BulletLoops_Ground,
+		Tags = BulletReloadBoost,
+    }
+	
+	item ShellStraps
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Shell loops,
+        Icon = shellloops,
+        Weight = 0.4,
+        WeightModifier = 0.4,
+        ReloadTimeModifier = -5,
+        MountOn = Shotgun; ShotgunSawnoff; Shotgun2; ShotgunSemi; DoubleBarrelShotgun; DoubleBarrelShotgunSawnoff; M2400_Shotgun; AssaultRifleMasterkey,
+        PartType = RecoilPad,
+        Tooltip = Tooltip_AmmoStrap,
+        WorldStaticModel = ShellLoops_Ground,
+		Tags = ShellReloadBoost,
+    }
+	
+	item M60BrassCatcher
+    {
+        Type = WeaponPart,
+        DisplayName = Brass Catcher,
+        Icon = M60_BrassCatcher,
+        Weight = 0.6,
+        WeightModifier = 0.6,
+        MountOn = M60MMG,
+        PartType = RecoilPad,
+        Tooltip = Tooltip_BrassCatcher,
+        WorldStaticModel = M60BrassCatcher_Ground,
+		Tags = CatchBrass,
     }
 
     item Coupled556
@@ -330,10 +372,11 @@ module Base
         Weight = 0.5,
         WeightModifier = 0.5,
         ReloadTimeModifier = -10,
-        MountOn = CAR15; CAR15D; AssaultRifle,
+        MountOn = CAR15; AssaultRifle,
         PartType = Sling,
         Tooltip = Tooltip_AmmoStrap,
         WorldStaticModel = Coupled556_Ground,
+		Tags = BulletReloadBoost,
     }
 
     item Coupled762
@@ -349,5 +392,6 @@ module Base
         PartType = Sling,
         Tooltip = Tooltip_AmmoStrap,
         WorldStaticModel = Coupled762_Ground,
+		Tags = BulletReloadBoost,
     }
 }

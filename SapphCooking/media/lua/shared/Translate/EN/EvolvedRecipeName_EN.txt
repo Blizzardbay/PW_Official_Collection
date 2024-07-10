@@ -35,5 +35,22 @@ EvolvedRecipeName_EN = {
 	EvolvedRecipeName_SapphCooking.HotsaucePacket = "Hot",
 	EvolvedRecipeName_SapphCooking.CoffeePacket = "Coffee",
 	EvolvedRecipeName_SapphCooking.Rice = "Rice",
+	EvolvedRecipeName_SapphCooking.MeltedChocolate = "Melted Chocolate",
+
+	EvolvedRecipeName_SapphCooking.Grape = "Grape",
+	EvolvedRecipeName_SapphCooking.Strawberry = "Strawberry",
+	EvolvedRecipeName_SapphCooking.Watermelon = "Watermelon",
+	EvolvedRecipeName_SapphCooking.Lemon = "Lemon",
+	EvolvedRecipeName_SapphCooking.Apple = "Apple",
+	EvolvedRecipeName_SapphCooking.Pineapple = "Pineapple",
+
+	EvolvedRecipeName_SapphCooking.BowlofYakisoba = "Yakisoba",
+	EvolvedRecipeName_SapphCooking.BowlofKungPaoChicken = "Kung Pao Chicken",
+	EvolvedRecipeName_SapphCooking.BowlofShuiZhuYu = "Shui Zhu Yu",
+	EvolvedRecipeName_SapphCooking.BowlofJapaneseCurry = "Japanese Curry",
+	EvolvedRecipeName_SapphCooking.BowlofChickenStroganoff = "Chicken Stroganoff",
+	EvolvedRecipeName_SapphCooking.ArborioRiceBowl = "Arborio Rice",
+	EvolvedRecipeName_SapphCooking.BowlofFriedRice = "Fried Rice",
+	EvolvedRecipeName_SapphCooking.BrownRiceBowl = "Brown Rice",
 
 }

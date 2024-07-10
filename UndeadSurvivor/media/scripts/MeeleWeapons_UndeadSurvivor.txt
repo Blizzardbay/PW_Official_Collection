@@ -51,6 +51,7 @@ module UndeadSurvivor
 		HitFloorSound = MacheteHit,
         BreakSound  =   MacheteBreak,
 		SwingSound = MacheteSwing,
+        obsolete = true,
      }
 
 	item AmazonaSpear

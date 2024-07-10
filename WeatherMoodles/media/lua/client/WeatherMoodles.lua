@@ -31,7 +31,11 @@ Options.fogIs = 2
 Options.enableSun = true
 Options.sunIs = 1
 
+Options.enableSeason = false
+Options.seasonIs = 1
+
 --Moodle creation order determines the in-game order of them.
+MF.createMoodle("Season")
 --Extreme Weather
 MF.createMoodle("WeatherStorm")
 MF.createMoodle("WeatherBlizzard")
@@ -47,9 +51,10 @@ MF.createMoodle("WeatherSun")
 
 isPlayerValid = false
 isExtremeWeather = false
+isSeasonGood = { [1]=1, [2]=0 }
 
 --Hotkey
---Used this a master switch for showing/hiding moodles. Still respects the settings in ModOptions.
+--Use this a master switch for showing/hiding moodles. Still respects the settings in ModOptions.
 isOn = true
 KEY_TOGGLE = {
 	name = "KeyToggle",
@@ -73,6 +78,7 @@ function UseAltTextures()
 	if Options.isAltTexture then selTexDir = "media/ui/alt/" else selTexDir = "media/ui/" end
 	for t = 1, 2 do
 		for i = 1, 4 do
+			MF.getMoodle("Season"):setPicture(t, i, getTexture(selTexDir .. "SeasonDefault.png"))
 			MF.getMoodle("WeatherCloud"):setPicture(t, i, getTexture(selTexDir .. "WeatherStorm.png"))
 			MF.getMoodle("WeatherCloud"):setPicture(t, i, getTexture(selTexDir .. "WeatherBlizzard.png"))
 			MF.getMoodle("WeatherCloud"):setPicture(t, i, getTexture(selTexDir .. "WeatherTropicalStorm.png"))
@@ -85,6 +91,29 @@ function UseAltTextures()
 		end
 	end
 end
+
+local function SwitchSeason(seasonName)
+	local selTexDir = nil
+	local moodleName = nil
+	local titleText = nil
+	if Options.isAltTexture then selTexDir = "media/ui/alt/" else selTexDir = "media/ui/" end
+
+	if seasonName == "Spring" then moodleName = "SeasonSpring"
+	elseif seasonName == "Early Summer" then moodleName = "SeasonEarlySummer"
+	elseif seasonName == "Late Summer" then moodleName = "SeasonLateSummer"
+	elseif seasonName == "Autumn" then moodleName = "SeasonAutumn"
+	elseif seasonName == "Winter" then moodleName = "SeasonWinter"
+	else moodleName = "SeasonDefault"
+	end
+
+	for t = 1, 2 do
+		for i = 1, 4 do
+			MF.getMoodle("Season"):setPicture(t, i, getTexture(selTexDir .. moodleName .. ".png"))
+			MF.getMoodle("Season"):setTitle(t ,i, getText("Moodles_" .. moodleName .. "_Good_lvl4"))	--Must set the descriptions for "bad" if I ever add flavor text
+		end
+	end
+end
+
 --!!!should rename sun related variables!!!
 local function SwitchSunMoon(isSun)
 	local selTexDir = nil
@@ -95,13 +124,19 @@ local function SwitchSunMoon(isSun)
 	for t = 1, 2 do
 		for i = 1, 4 do
 			MF.getMoodle("WeatherSun"):setPicture(t, i, getTexture(selTexDir .. moodleName .. ".png"))
-			MF.getMoodle("WeatherSun"):setTitle(t,i,getText("Moodles_" .. moodleName .. "_Good_lvl4"))
+			MF.getMoodle("WeatherSun"):setTitle(t, i, getText("Moodles_" .. moodleName .. "_Good_lvl4"))	--Must set the descriptions for "bad" if I ever add flavor text
 		end
 	end
 end
 
 --This function is not local. Because we're calling it from the ModOptions file.
 function UpdateThresholds()
+
+	if Options.seasonIs == 1 then
+		MF.getMoodle("Season"):setThresholds(nil, nil, nil, nil, 0.1, nil, nil, 0.9)
+	else
+		MF.getMoodle("Season"):setThresholds(0.1, nil, nil, 0.9, nil, nil, nil, nil)
+	end
 
 	if Options.cloudIs == 1 then
 		MF.getMoodle("WeatherCloud"):setThresholds(nil, nil, nil, nil, 0.1, 0.25, 0.50, 0.75)
@@ -141,6 +176,14 @@ function UpdateThresholds()
 
 end
 
+local function HideMoodle(moodleName, optionsWeatherIs)
+	if optionsWeatherIs ~= 1 then
+		MF.getMoodle(moodleName):setValue(1)
+	else
+		MF.getMoodle(moodleName):setValue(0)
+	end
+end
+
 --MoodleFramework dev said that MF.getMoodle() doesn't work without a valid player. So we check for that before starting. This is called by an event, check the end of file.
 local function ValidatePlayer(playerIndex, player)
 	if player == getPlayer() then
@@ -148,16 +191,9 @@ local function ValidatePlayer(playerIndex, player)
 		UpdateThresholds()
 		UseAltTextures()
 		SwitchSunMoon(ClimateManager.getInstance():getNightStrength() < 0.5)
+		SwitchSeason(ClimateManager.getInstance():getSeasonName())
 	else
-		print("Player is not valid")
-	end
-end
-
-local function HideMoodle(moodleName, optionsWeatherIs)
-	if optionsWeatherIs ~= 1 then
-		MF.getMoodle(moodleName):setValue(1)
-	else
-		MF.getMoodle(moodleName):setValue(0)
+		print("Player is not valid. Cannot run the mod.")
 	end
 end
 
@@ -203,8 +239,18 @@ local function EveryHours()
 	SwitchSunMoon(ClimateManager.getInstance():getNightStrength() < 0.5)
 end
 
+local function UpdateSeason()
+	if Options.enableSeason then
+		MF.getMoodle("Season"):setValue(isSeasonGood[Options.seasonIs])			--converting 1 to 1 and 2 to 0 because ModOptions starts dropdown index from 1 *sigh*
+		SwitchSeason(ClimateManager.getInstance():getSeasonName())
+	else
+		HideMoodle("Season", Options.seasonIs)
+	end
+end
+
 --Main function
 local function UpdateWeatherMoodles(climateManager)
+
 	local player = getPlayer()
 	if isPlayerValid then
 
@@ -221,6 +267,7 @@ local function UpdateWeatherMoodles(climateManager)
 		--!!!this does not look pretty. find another way!!!
 		if not player:isOutside() and not Options.showInside or not isOn then
 			HideExtremeWeather()
+			HideMoodle("Season", Options.seasonIs)
 			HideMoodle("WeatherCloud", Options.cloudIs)
 			HideMoodle("WeatherRain", Options.rainIs)
 			HideMoodle("WeatherSnow", Options.snowIs)
@@ -236,6 +283,8 @@ local function UpdateWeatherMoodles(climateManager)
 				--HideMoodle("WeatherFog", Options.fogIs)
 				HideMoodle("WeatherSun", Options.sunIs)
 			else
+
+				UpdateSeason()
 
 				if Options.enableCloud and cloudIntensity > 0 then
 					if Options.cloudIs ~= 1 then cloudIntensity = 1 - cloudIntensity end
@@ -270,7 +319,7 @@ local function UpdateWeatherMoodles(climateManager)
 				end
 			end
 		end
-	else print("Player is not valid")
+	else print("Player is not valid. Cannot update the weather.")
 	end
 end
 
@@ -283,3 +332,5 @@ Events.OnClimateTick.Add(UpdateWeatherMoodles)
 Events.EveryHours.Add(EveryHours)
 
 Events.OnKeyPressed.Add(KeyUp)
+
+--Events.EveryDays.Add(UpdateSeason)

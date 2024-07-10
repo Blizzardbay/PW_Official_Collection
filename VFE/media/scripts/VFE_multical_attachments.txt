@@ -1,0 +1,522 @@
+/* Fake attachments to make weight consistent between modes */
+
+/* TODO: make these dynamically get their stats from actual ammunition weight */
+
+module VFECombination
+{
+	imports
+	{
+		 Base,
+	}
+
+    item CombinationShotgunShellNoClip_1
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Shotgun Shell,
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.05,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination308NoClip_1
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = .308 Round,
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.03,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item CombinationM500ShotgunShellNoClip_1
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Underbarrel M500 (1),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.05,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item CombinationM500ShotgunShellNoClip_2
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Underbarrel M500 (2),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.1,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item CombinationM500ShotgunShellNoClip_3
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Underbarrel M500 (3),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.15,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item CombinationM500ShotgunShellNoClip_4
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Underbarrel M500 (4),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.2,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16NoClip_1
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with one in the Chamber,
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.02,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+/* Gonna be one for every single state the magazine can be in. Oh well. */
+	
+	item Combination556M16Magazine_0
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (0),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.2,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_1
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (1),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.22,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_2
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (2),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.24,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_3
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (3),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.26,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_4
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (4),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.28,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_5
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (5),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.30,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_6
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (6),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.32,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_7
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (7),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.34,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_8
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (8),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.36,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_9
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (9),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.38,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_10
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (10),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.4,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_11
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (11),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.42,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_12
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (12),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.44,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_13
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (13),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.46,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_14
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (14),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.48,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_15
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (15),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.5,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_16
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (16),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.52,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_17
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (17),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.54,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_18
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (18),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.56,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_19
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (19),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.58,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_20
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (20),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.6,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_21
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (21),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.62,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_22
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (22),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.64,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	/* I am in Spain without the a */
+	
+	item Combination556M16Magazine_23
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (23),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.66,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_24
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (24),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.68,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_25
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (25),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.7,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_26
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (26),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.72,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_27
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (27),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.74,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_28
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (28),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.76,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_29
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (29),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.78,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_30
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (30),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.8,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+	
+	item Combination556M16Magazine_31
+	{
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 with Magazine (31),
+		Icon	=	IntentionallyInvalid,
+        Weight = 0.0,
+        WeightModifier = 0.82,
+        PartType = Clip,
+		MountOn = FakeItemSights,
+		Tags = NoRemoveAttachment,
+    }
+}

@@ -261,4 +261,19 @@ Sandbox_EN = {
 	Sandbox_MoreMaps_OtterCreekMap =  "Otter Creek Map (mod)",
 	Sandbox_MoreMaps_WellsburgLakeMap =  "Wellsburg Lake Map (mod)",
 	Sandbox_MoreMaps_FortBoonesboroughMap =  "Fort Boonesborough Map (mod)",
+
+
+	
+	Sandbox_MoreMaps_FortBoonesboroughMap =  "Fort Boonesborough Map (mod)",
+	Sandbox_MoreMaps_CrowlakeMap =  "Crowlake Map (mod)",
+	Sandbox_MoreMaps_GustonMap =  "Guston Map (mod)",
+	Sandbox_MoreMaps_JaspervilleMap =  "Jasperville Maps (mod)",
+	Sandbox_MoreMaps_YakamaStateParkMap =  "Yakama State Park Map (mod)",
+	Sandbox_MoreMaps_ValuTechAmusementParkMap =  "ValuTech Amusement Park Map (mod)",
+	Sandbox_MoreMaps_CanvasbackStudiosMap =  "Canvasback Studios Map (mod)",
+	Sandbox_MoreMaps_PlefordSpringsMap =  "Pleford Springs Map (mod)",
+	Sandbox_MoreMaps_FoxWoodMap =  "FoxWood Map (mod)",
+	Sandbox_MoreMaps_BrazilMap =  "Brazil Map (mod)",
+	Sandbox_MoreMaps_FortLoidMap =  "Fort Loid Map (mod)",
+	Sandbox_MoreMaps_HavenRidgeMap =  "Haven Ridge Map (mod)",
 }

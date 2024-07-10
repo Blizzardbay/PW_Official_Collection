@@ -1,0 +1,31 @@
+module Base
+{
+    recipe Bind Journal
+        {
+           Notebook/Journal,
+           LeatherStrips=3,
+           [Recipe.GetItemTypes.Glue],
+           Thread,
+
+           Result:SkillRecoveryBoundJournal,
+
+           Time:150.0,
+           OnCanPerform:SkillRecoveryJournalOnCanPerformCraftable
+        }
+
+    recipe Transcribe Journal
+        {
+           keep SkillRecoveryBoundJournal,
+           keep [Recipe.GetItemTypes.Write],
+
+           Result:SkillRecoveryBoundJournal,
+           RemoveResultItem:true,
+		   AnimNode 	: TranscribeJournal,
+		   Prop1 		: Source=2,
+		   Prop2 		: Source=1,
+
+           Time:50.0,
+           OnCanPerform:SkillRecoveryJournalOnCanPerformWritingJournal,
+           StopOnWalk:false,
+        }
+}

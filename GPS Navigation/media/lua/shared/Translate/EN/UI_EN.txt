@@ -1,0 +1,11 @@
+UI_EN = {
+    UI_dis = "Distance",
+    UI_time = "Time",
+    UI_name = "GPS",
+    UI_min = "m",
+    UI_sec = "s",
+    UI_Nav_tip = "GPS TIP.",
+    UI_install_Nav = "Attaching GPS",
+    UI_uninstall_Nav = "Removing GPS",
+    UI_not_Nav = "You do not have GPS.",
+  }

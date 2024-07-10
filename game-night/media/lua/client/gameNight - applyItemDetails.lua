@@ -1,23 +1,27 @@
-local deckActionHandler = require "gameNight - deckActionHandler"
-local gamePieceAndBoardHandler = require "gameNight - gamePieceAndBoardHandler"
-
 local applyItemDetails = {}
 
-applyItemDetails.deckCatalogues = {}
-applyItemDetails.altDetails = {} --altNames, altIcons
+applyItemDetails.deckActionHandler = require "gameNight - deckActionHandler"
+applyItemDetails.gamePieceAndBoardHandler = require "gameNight - gamePieceAndBoardHandler"
 
-function applyItemDetails.addDeck(name, cards, altNames, altIcons)
-    applyItemDetails.deckCatalogues[name] = cards
 
-    if altNames or altIcons then
-        applyItemDetails.altDetails[name] = {}
-        if altNames then applyItemDetails.altDetails[name].altNames = altNames end
-        if altIcons then applyItemDetails.altDetails[name].altIcons = altIcons end
+function applyItemDetails.applyCardsFromDeck(item, deck)
+
+    item:getModData()["gameNight_cardDeck"] = item:getModData()["gameNight_cardDeck"] or copyTable(deck)
+
+    --oops, clear this
+    item:getModData()["gameNight_cardAltNames"] = nil
+    item:getModData()["gameNight_cardAltIcons"] = nil
+    
+    local flippedStates = item:getModData()["gameNight_cardFlipped"]
+    if not flippedStates then
+        item:getModData()["gameNight_cardFlipped"] = {}
+        for i=1, #deck do item:getModData()["gameNight_cardFlipped"][i] = true end
     end
 end
 
 
 applyItemDetails.parsedItems = {}
+---@param item InventoryItem
 function applyItemDetails.applyGameNightToItem(item, stackInit)
     if not item then return end
 
@@ -26,31 +30,33 @@ function applyItemDetails.applyGameNightToItem(item, stackInit)
     if (not applyItemDetails.parsedItems[item]) then
 
         applyItemDetails.parsedItems[item] = true
-        
-        if not gamePieceAndBoardHandler._itemTypes then gamePieceAndBoardHandler.generate_itemTypes() end
 
-        gamePiece = gamePieceAndBoardHandler.isGamePiece(item)
-        if gamePiece then gamePieceAndBoardHandler.handleDetails(item, stackInit) end
+        if not applyItemDetails.gamePieceAndBoardHandler._itemTypes then applyItemDetails.gamePieceAndBoardHandler.generate_itemTypes() end
+
+        gamePiece = applyItemDetails.gamePieceAndBoardHandler.isGamePiece(item)
+        if gamePiece then applyItemDetails.gamePieceAndBoardHandler.handleDetails(item, stackInit) end
 
         local itemType = item:getType()
+        local fullType = item:getFullType()
 
-        deck = applyItemDetails.deckCatalogues[itemType]
-        if deck then
-            if deck then
-                item:getModData()["gameNight_cardDeck"] = item:getModData()["gameNight_cardDeck"] or copyTable(deck)
+        if item:getDisplayCategory() == "GameBox" then
+            local specialCase = applyItemDetails.gamePieceAndBoardHandler.specials[fullType]
+            if specialCase and specialCase.nonGamePieceOnApplyDetails then
+                local func = applyItemDetails[specialCase.nonGamePieceOnApplyDetails]
+                if func then func(item) end
+            end
+        end
 
-                if applyItemDetails.altDetails[itemType] then
-                    item:getModData()["gameNight_cardAltNames"] = applyItemDetails.altDetails[itemType].altNames
-                    item:getModData()["gameNight_cardAltIcons"] = applyItemDetails.altDetails[itemType].altIcons
-                end
+        deck = applyItemDetails.deckActionHandler.deckCatalogues[itemType]
+        if deck and applyItemDetails.gamePieceAndBoardHandler.specials then
+            local specialCase = applyItemDetails.gamePieceAndBoardHandler.specials[fullType]
+            if specialCase and specialCase.applyCards then
+                applyItemDetails[specialCase.applyCards](item, deck)
+            else
+                applyItemDetails.applyCardsFromDeck(item, deck)
+            end
 
-                local flippedStates = item:getModData()["gameNight_cardFlipped"]
-            if not flippedStates then
-            item:getModData()["gameNight_cardFlipped"] = {}
-                for i=1, #deck do item:getModData()["gameNight_cardFlipped"][i] = true end
-                end
-                deckActionHandler.handleDetails(item)
-                end
+            applyItemDetails.deckActionHandler.handleDetails(item)
         end
     end
 end
@@ -77,7 +83,7 @@ end
 
 
 function applyItemDetails.applyToInventory(ISInventoryPage, step)
-    if step == "begin" then
+    if step == "end" then
         applyItemDetails.applyGameNightToInventory(ISInventoryPage.inventory)
     end
 end

@@ -1,0 +1,9 @@
+Sandbox_CN = {
+    Sandbox_Navigation = "导航",
+    Sandbox_Navigation_Voice = "导航语音支持",
+    Sandbox_Navigation_Volume = "音量设置",
+    Sandbox_Navigation_GTA4_Voice = "切换到GTA4语音",
+    Sandbox_Navigation_R = "导航 红色",
+    Sandbox_Navigation_G = "导航 绿色",
+    Sandbox_Navigation_B = "导航 蓝色",
+}

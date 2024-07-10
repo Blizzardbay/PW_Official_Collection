@@ -277,6 +277,52 @@ local distributionTable = {
         }
     },
 	
+	VFEAmmoCanWide = {
+        rolls = 2,
+        items = {
+            "556Box", 200,
+            "556Box", 50,
+            "556BattlePack", 20,
+            "556BattlePack", 10,
+        },
+        junk = {
+            rolls = 1,
+            items = {
+                
+            }
+        }
+    },
+	
+	VFEAmmoCanNarrow_Toolkit = {
+        rolls = 1,
+        items = {
+            "BallPeenHammer", 6,
+            "ClubHammer", 4,
+            "Crowbar", 4,
+            "DuctTape", 8,
+            "GardenSaw", 10,
+            "Hammer", 8,
+            "HandTorch", 10,
+            "Nails", 10,
+            "NailsBox", 10,
+            "PipeWrench", 6,
+            "Saw", 8,
+            "Screwdriver", 10,
+            "ScrewsBox", 8,
+            "Twine", 10,
+            "WoodenMallet", 4,
+            "Woodglue", 8,
+            "Wrench", 6,
+        },
+        junk = {
+            rolls = 1,
+            items = {
+                
+            }
+        },
+        fillRand = 0,
+    },
+	
 }
 
 table.insert(Distributions, 1, distributionTable);
@@ -307,10 +353,29 @@ table.insert(Distributions, 1, distributionTable);
 -- ======================= ---
 
 -- Army Ammo
+table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, "VFEAmmoCanWide");
+table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, 10);
+
+table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, "Bullets9mmBox");
+table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, 20);
 table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, "Bullets9mmBox");
 table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, 20);
 table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, "Bullets9mmBox");
 table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, 10);
+table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, "Bullets9mmBox");
+table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, 10);
+
+table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, "308Pack");
+table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, 2);
+table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, "556Pack");
+table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, 2);
+table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, "45Pack");
+table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, 2);
+table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, "9mmPack");
+table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, 2);
+table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, "ShotgunShellsPack");
+table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, 2);
+
 
 -- Antique Weapons
 table.insert(ProceduralDistributions.list.Antiques.items, "AssaultRifleM1");
@@ -322,7 +387,7 @@ table.insert(ProceduralDistributions.list.Antiques.items, 1.0);
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "CAR15");
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 2);
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "SniperRifle");
-table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 5);
+table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 2);
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "CAR15D");
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 0.01);
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "MK23SOCOM");
@@ -344,6 +409,8 @@ table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 5);
 
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "9mmClip30");
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 3);
+table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "45Clip12");
+table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 0.1);
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "45Clip32");
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 0.1);
 
@@ -352,13 +419,20 @@ table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 0.05);
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "Bipod");
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 6);
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "ShellHolder");
-table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 6);
+table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 4);
+table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "ShellStraps");
+table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 2);
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "IronSight");
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 2);
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "Sling2");
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 2);
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "CleaningKit");
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 10);
+
+table.insert(ProceduralDistributions.list.ArmyHangarTools.items, "EntrenchingTool_Blade");
+table.insert(ProceduralDistributions.list.ArmyHangarTools.items, 1);
+table.insert(ProceduralDistributions.list.ArmyHangarTools.items, "EntrenchingToolBlack_Blade");
+table.insert(ProceduralDistributions.list.ArmyHangarTools.items, 1);
 
 -- Army Surplus
 table.insert(ProceduralDistributions.list.ArmySurplusTools.items, "CleaningKit");
@@ -367,6 +441,10 @@ table.insert(ProceduralDistributions.list.ArmySurplusTools.items, "CleaningKit")
 table.insert(ProceduralDistributions.list.ArmySurplusTools.items, 6);
 table.insert(ProceduralDistributions.list.ArmySurplusTools.items, "M16Bayonet");
 table.insert(ProceduralDistributions.list.ArmySurplusTools.items, 4);
+table.insert(ProceduralDistributions.list.ArmySurplusTools.items, "EntrenchingTool_Blade");
+table.insert(ProceduralDistributions.list.ArmySurplusTools.items, 1);
+table.insert(ProceduralDistributions.list.ArmySurplusTools.items, "EntrenchingToolBlack_Blade");
+table.insert(ProceduralDistributions.list.ArmySurplusTools.items, 1);
 
 -- Drug Lab Guns
 table.insert(ProceduralDistributions.list.DrugLabGuns.items, "9mmClip20");
@@ -384,6 +462,8 @@ table.insert(ProceduralDistributions.list.DrugLabGuns.items, 2);
 table.insert(ProceduralDistributions.list.DrugLabGuns.items, "FALClip");
 table.insert(ProceduralDistributions.list.DrugLabGuns.items, 2);
 table.insert(ProceduralDistributions.list.DrugLabGuns.items, "45Clip32");
+table.insert(ProceduralDistributions.list.DrugLabGuns.items, 1);
+table.insert(ProceduralDistributions.list.DrugLabGuns.items, "9mmClip32");
 table.insert(ProceduralDistributions.list.DrugLabGuns.items, 1);
 
 
@@ -411,6 +491,8 @@ table.insert(ProceduralDistributions.list.DrugLabGuns.items, 0.1);
 table.insert(ProceduralDistributions.list.DrugLabGuns.items, "FAL");
 table.insert(ProceduralDistributions.list.DrugLabGuns.items, 0.2);
 table.insert(ProceduralDistributions.list.DrugLabGuns.items, "MAC10Folded");
+table.insert(ProceduralDistributions.list.DrugLabGuns.items, 0.05);
+table.insert(ProceduralDistributions.list.DrugLabGuns.items, "UziFolded");
 table.insert(ProceduralDistributions.list.DrugLabGuns.items, 0.05);
 table.insert(ProceduralDistributions.list.DrugLabGuns.items, "MP5");
 table.insert(ProceduralDistributions.list.DrugLabGuns.items, 0.4);
@@ -458,6 +540,10 @@ table.insert(ProceduralDistributions.list.FirearmWeapons.items, "FALClip");
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, 2);
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, "45Clip32");
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, 1);
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "9mmClip32");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 1);
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "45Clip12");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 1);
 
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, "762Box");
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, 10);
@@ -476,6 +562,12 @@ table.insert(ProceduralDistributions.list.FirearmWeapons.items, "Mini14Unfolded"
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, 2);
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, "LeverRifle");
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, 6);
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "LeverRifle2");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 4);
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "CampCarbine");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 4);
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "M2400_Shotgun");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 2);
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, "SKS");
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, 4);
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, "SKSSpiker");
@@ -504,9 +596,13 @@ table.insert(ProceduralDistributions.list.FirearmWeapons.items, "MK23SOCOM");
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.01);
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, "MAC10Folded");
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.01);
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "UziFolded");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.01);
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, "FALClassic");
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.01);
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, "AssaultRifleM1");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.01);
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "MK2SD");
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.01);
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, "Shotgun2");
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, 1);
@@ -519,11 +615,74 @@ table.insert(ProceduralDistributions.list.FirearmWeapons.items, 8);
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, "CZ75");
 table.insert(ProceduralDistributions.list.FirearmWeapons.items, 3);
 
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "762Case");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.1);
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "308Case");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.1);
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "556Case");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.1);
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "223Case");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.1);
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "ShotgunShellsCase");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.1);
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "9mmCase");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.1);
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "22Case");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.1);
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "38Case");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.1);
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "44Case");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.1);
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "45Case");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.1);
+
 -- Gunstore Ammo
 table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "762Box");
-table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 25);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 20);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "762Box");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 10);
 table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "22Box");
-table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 27);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 20);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "22Box");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 10);
+
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "762Pack");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 2);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "308Pack");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 2);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "223Pack");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 2);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "ShotgunShellsPack");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 2);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "9mmPack");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 2);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "22Pack");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 2);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "38Pack");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 2);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "44Pack");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 2);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "45Pack");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 2);
+
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "762Case");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 0.1);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "308Case");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 0.1);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "223Case");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 0.1);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "ShotgunShellsCase");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 0.1);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "9mmCase");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 0.1);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "22Case");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 0.1);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "38Case");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 0.1);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "44Case");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 0.1);
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, "45Case");
+table.insert(ProceduralDistributions.list.GunStoreAmmunition.items, 0.1);
 
 -- Gunstore Counter
 table.insert(ProceduralDistributions.list.GunStoreCounter.items, "762Clip");
@@ -538,6 +697,8 @@ table.insert(ProceduralDistributions.list.GunStoreCounter.items, "CleaningKit");
 table.insert(ProceduralDistributions.list.GunStoreCounter.items, 4);
 table.insert(ProceduralDistributions.list.GunStoreCounter.items, "FireKlean");
 table.insert(ProceduralDistributions.list.GunStoreCounter.items, 0.01);
+table.insert(ProceduralDistributions.list.GunStoreCounter.items, "VFEAmmoCanNarrow");
+table.insert(ProceduralDistributions.list.GunStoreCounter.items, 2);
 
 -- Gunstore Displaycase
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "9mmClip20");
@@ -549,6 +710,8 @@ table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 5.2);
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "9mmClip17");
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 5.2);
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "22ClipRifle");
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 6);
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "22ClipPistol");
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 6);
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "762Clip");
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 3);
@@ -570,9 +733,13 @@ table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 5);
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "Bipod");
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 4);
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "ShellHolder");
-table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 5);
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 4);
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "ShellStraps");
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 2);
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "Sling2");
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 2);
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "LightenedStock");
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 0.5);
 
 
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "FAL");
@@ -583,12 +750,20 @@ table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "AK47Unfold
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 0.1);
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "MAC10Folded");
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 0.01);
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "UziFolded");
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 0.01);
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "SKS");
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 2);
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "SKSSpiker");
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 1);
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "LeverRifle");
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 7);
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "LeverRifle2");
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 4);
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "CampCarbine");
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 4);
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "M2400_Shotgun");
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 3);
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "1022");
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 7);
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "Tec9");
@@ -599,11 +774,15 @@ table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "P229");
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 4);
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "Glock");
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 4);
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "MK2");
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 4);
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "Mini14");
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 2);
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "Mini14Unfolded");
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 2);
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "Spas12");
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 0.2);
+table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "MK2SD");
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 0.2);
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, "Shotgun2");
 table.insert(ProceduralDistributions.list.GunStoreDisplayCase.items, 3);
@@ -622,6 +801,8 @@ table.insert(ProceduralDistributions.list.GunStoreShelf.items, 6);
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, "762Clip");
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, 1);
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, "45Clip32");
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, 0.1);
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, "9mmClip32");
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, 0.1);
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, "M14Clip");
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, 2);
@@ -647,17 +828,30 @@ table.insert(ProceduralDistributions.list.GunStoreShelf.items, 20);
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, "Bipod");
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, 6);
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, "ShellHolder");
-table.insert(ProceduralDistributions.list.GunStoreShelf.items, 6);
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, 4);
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, "ShellStraps");
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, 2);
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, "Sling2");
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, 2);
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, "IronSight");
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, 3);
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, "LightenedStock");
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, 0.5);
+
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, "VFEAmmoCanNarrow");
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, 10);
 
 -- Hunter Light Weapons
 table.insert(ProceduralDistributions.list.Hunter.items, "1022");
 table.insert(ProceduralDistributions.list.Hunter.items, 0.05);
 table.insert(ProceduralDistributions.list.Hunter.items, "LeverRifle");
 table.insert(ProceduralDistributions.list.Hunter.items, 0.01);
+table.insert(ProceduralDistributions.list.Hunter.items, "LeverRifle2");
+table.insert(ProceduralDistributions.list.Hunter.items, 0.005);
+table.insert(ProceduralDistributions.list.Hunter.items, "CampCarbine");
+table.insert(ProceduralDistributions.list.Hunter.items, 0.005);
+table.insert(ProceduralDistributions.list.Hunter.items, "M2400_Shotgun");
+table.insert(ProceduralDistributions.list.Hunter.items, 0.005);
 table.insert(ProceduralDistributions.list.Hunter.items, "SKS");
 table.insert(ProceduralDistributions.list.Hunter.items, 0.005);
 table.insert(ProceduralDistributions.list.Hunter.items, "Shotgun2");
@@ -680,6 +874,12 @@ table.insert(ProceduralDistributions.list.HuntingLockers.items, "1022");
 table.insert(ProceduralDistributions.list.HuntingLockers.items, 0.05);
 table.insert(ProceduralDistributions.list.HuntingLockers.items, "LeverRifle");
 table.insert(ProceduralDistributions.list.HuntingLockers.items, 0.01);
+table.insert(ProceduralDistributions.list.HuntingLockers.items, "LeverRifle2");
+table.insert(ProceduralDistributions.list.HuntingLockers.items, 0.005);
+table.insert(ProceduralDistributions.list.HuntingLockers.items, "CampCarbine");
+table.insert(ProceduralDistributions.list.HuntingLockers.items, 0.005);
+table.insert(ProceduralDistributions.list.HuntingLockers.items, "M2400_Shotgun");
+table.insert(ProceduralDistributions.list.HuntingLockers.items, 0.005);
 table.insert(ProceduralDistributions.list.HuntingLockers.items, "SKS");
 table.insert(ProceduralDistributions.list.HuntingLockers.items, 0.005);
 table.insert(ProceduralDistributions.list.HuntingLockers.items, "Shotgun2");
@@ -718,11 +918,13 @@ table.insert(ProceduralDistributions.list.PawnShopGuns.items, "9mmClip16");
 table.insert(ProceduralDistributions.list.PawnShopGuns.items, 2.2);
 table.insert(ProceduralDistributions.list.PawnShopGuns.items, "22ClipRifle");
 table.insert(ProceduralDistributions.list.PawnShopGuns.items, 6);
+table.insert(ProceduralDistributions.list.PawnShopGuns.items, "22ClipPistol");
+table.insert(ProceduralDistributions.list.PawnShopGuns.items, 3);
 
 table.insert(ProceduralDistributions.list.PawnShopGuns.items, "Glock");
 table.insert(ProceduralDistributions.list.PawnShopGuns.items, 2.5);
-table.insert(ProceduralDistributions.list.PawnShopGuns.items, "Glock18");
-table.insert(ProceduralDistributions.list.PawnShopGuns.items, 0.001);
+table.insert(ProceduralDistributions.list.PawnShopGuns.items, "MK2");
+table.insert(ProceduralDistributions.list.PawnShopGuns.items, 2.5);
 table.insert(ProceduralDistributions.list.PawnShopGuns.items, "P229");
 table.insert(ProceduralDistributions.list.PawnShopGuns.items, 1.5);
 table.insert(ProceduralDistributions.list.PawnShopGuns.items, "Shotgun2");
@@ -733,6 +935,12 @@ table.insert(ProceduralDistributions.list.PawnShopGuns.items, "CZ75");
 table.insert(ProceduralDistributions.list.PawnShopGuns.items, 2);
 table.insert(ProceduralDistributions.list.PawnShopGuns.items, "LeverRifle");
 table.insert(ProceduralDistributions.list.PawnShopGuns.items, 6);
+table.insert(ProceduralDistributions.list.PawnShopGuns.items, "LeverRifle2");
+table.insert(ProceduralDistributions.list.PawnShopGuns.items, 3);
+table.insert(ProceduralDistributions.list.PawnShopGuns.items, "CampCarbine");
+table.insert(ProceduralDistributions.list.PawnShopGuns.items, 3);
+table.insert(ProceduralDistributions.list.PawnShopGuns.items, "M2400_Shotgun");
+table.insert(ProceduralDistributions.list.PawnShopGuns.items, 2);
 table.insert(ProceduralDistributions.list.PawnShopGuns.items, "1022");
 table.insert(ProceduralDistributions.list.PawnShopGuns.items, 6);
 
@@ -743,13 +951,21 @@ table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, "FALClip");
 table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, 1);
 table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, "45Clip32");
 table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, 1);
+table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, "9mmClip32");
+table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, 1);
 
 table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, "FAL");
 table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, 0.2);
+table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, "MK2SD");
+table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, 0.2);
 table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, "MAC10Folded");
+table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, 0.2);
+table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, "UziFolded");
 table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, 0.2);
 table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, "FALClassic");
 table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, 0.02);
+table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, "Glock18");
+table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, 0.001);
 table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, "AK47");
 table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, 0.1);
 table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, "AK47Unfolded");
@@ -759,8 +975,16 @@ table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, 0.2);
 table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, "Shotgun2");
 table.insert(ProceduralDistributions.list.PawnShopGunsSpecial.items, 0.2);
 
+-- Other Pawn Shop
 table.insert(ProceduralDistributions.list.PawnShopKnives.items, "M16Bayonet");
 table.insert(ProceduralDistributions.list.PawnShopKnives.items, 4);
+table.insert(ProceduralDistributions.list.PawnShopKnives.items, "EntrenchingTool_Blade");
+table.insert(ProceduralDistributions.list.PawnShopKnives.items, 1);
+table.insert(ProceduralDistributions.list.PawnShopKnives.items, "EntrenchingToolBlack_Blade");
+table.insert(ProceduralDistributions.list.PawnShopKnives.items, 1);
+
+table.insert(ProceduralDistributions.list.PawnShopCases.items, "VFEAmmoCanNarrow");
+table.insert(ProceduralDistributions.list.PawnShopCases.items, 2);
 
 -- Plank Stash Sneaky 100% Legal Guns
 table.insert(ProceduralDistributions.list.PlankStashGun.items, "762Clip");
@@ -769,6 +993,8 @@ table.insert(ProceduralDistributions.list.PlankStashGun.items, "9mmClip20");
 table.insert(ProceduralDistributions.list.PlankStashGun.items, 5);
 table.insert(ProceduralDistributions.list.PlankStashGun.items, "45Clip32");
 table.insert(ProceduralDistributions.list.PlankStashGun.items, 1);
+table.insert(ProceduralDistributions.list.PlankStashGun.items, "9mmClip32");
+table.insert(ProceduralDistributions.list.PlankStashGun.items, 1);
 
 table.insert(ProceduralDistributions.list.PlankStashGun.items, "AK47Folded");
 table.insert(ProceduralDistributions.list.PlankStashGun.items, 4);
@@ -776,16 +1002,26 @@ table.insert(ProceduralDistributions.list.PlankStashGun.items, "Tec9");
 table.insert(ProceduralDistributions.list.PlankStashGun.items, 5);
 table.insert(ProceduralDistributions.list.PlankStashGun.items, "MAC10Folded");
 table.insert(ProceduralDistributions.list.PlankStashGun.items, 2);
+table.insert(ProceduralDistributions.list.PlankStashGun.items, "UziFolded");
+table.insert(ProceduralDistributions.list.PlankStashGun.items, 2);
 
 -- Police Ammunition
 table.insert(ProceduralDistributions.list.PoliceStorageAmmunition.items, "556Box");
 table.insert(ProceduralDistributions.list.PoliceStorageAmmunition.items, 10);
 table.insert(ProceduralDistributions.list.PoliceStorageAmmunition.items, "556Box");
 table.insert(ProceduralDistributions.list.PoliceStorageAmmunition.items, 5);
+table.insert(ProceduralDistributions.list.PoliceStorageAmmunition.items, "556Pack");
+table.insert(ProceduralDistributions.list.PoliceStorageAmmunition.items, 2);
+
 table.insert(ProceduralDistributions.list.PoliceStorageAmmunition.items, "223Box");
 table.insert(ProceduralDistributions.list.PoliceStorageAmmunition.items, 10);
 table.insert(ProceduralDistributions.list.PoliceStorageAmmunition.items, "223Box");
 table.insert(ProceduralDistributions.list.PoliceStorageAmmunition.items, 5);
+table.insert(ProceduralDistributions.list.PoliceStorageAmmunition.items, "223Pack");
+table.insert(ProceduralDistributions.list.PoliceStorageAmmunition.items, 2);
+
+table.insert(ProceduralDistributions.list.PoliceStorageAmmunition.items, "ShotgunShellsPack");
+table.insert(ProceduralDistributions.list.PoliceStorageAmmunition.items, 2);
 
 -- Police Guns
 table.insert(ProceduralDistributions.list.PoliceStorageGuns.items, "FireKlean");
@@ -795,7 +1031,9 @@ table.insert(ProceduralDistributions.list.PoliceStorageGuns.items, 8);
 table.insert(ProceduralDistributions.list.PoliceStorageGuns.items, "Bipod");
 table.insert(ProceduralDistributions.list.PoliceStorageGuns.items, 4);
 table.insert(ProceduralDistributions.list.PoliceStorageGuns.items, "ShellHolder");
-table.insert(ProceduralDistributions.list.PoliceStorageGuns.items, 6);
+table.insert(ProceduralDistributions.list.PoliceStorageGuns.items, 4);
+table.insert(ProceduralDistributions.list.PoliceStorageGuns.items, "ShellStraps");
+table.insert(ProceduralDistributions.list.PoliceStorageGuns.items, 2);
 table.insert(ProceduralDistributions.list.PoliceStorageGuns.items, "IronSight");
 table.insert(ProceduralDistributions.list.PoliceStorageGuns.items, 2);
 table.insert(ProceduralDistributions.list.PoliceStorageGuns.items, "Sling2");
@@ -850,6 +1088,12 @@ table.insert(ProceduralDistributions.list.SurvivalGear.items, "1022");
 table.insert(ProceduralDistributions.list.SurvivalGear.items, 0.05);
 table.insert(ProceduralDistributions.list.SurvivalGear.items, "LeverRifle");
 table.insert(ProceduralDistributions.list.SurvivalGear.items, 0.01);
+table.insert(ProceduralDistributions.list.SurvivalGear.items, "LeverRifle2");
+table.insert(ProceduralDistributions.list.SurvivalGear.items, 0.005);
+table.insert(ProceduralDistributions.list.SurvivalGear.items, "CampCarbine");
+table.insert(ProceduralDistributions.list.SurvivalGear.items, 0.005);
+table.insert(ProceduralDistributions.list.SurvivalGear.items, "M2400_Shotgun");
+table.insert(ProceduralDistributions.list.SurvivalGear.items, 0.005);
 table.insert(ProceduralDistributions.list.SurvivalGear.items, "SKS");
 table.insert(ProceduralDistributions.list.SurvivalGear.items, 0.005);
 table.insert(ProceduralDistributions.list.SurvivalGear.items, "SKSSpiker");
@@ -877,6 +1121,12 @@ table.insert(ProceduralDistributions.list.Trapper.items, "1022");
 table.insert(ProceduralDistributions.list.Trapper.items, 0.05);
 table.insert(ProceduralDistributions.list.Trapper.items, "LeverRifle");
 table.insert(ProceduralDistributions.list.Trapper.items, 0.01);
+table.insert(ProceduralDistributions.list.Trapper.items, "LeverRifle2");
+table.insert(ProceduralDistributions.list.Trapper.items, 0.005);
+table.insert(ProceduralDistributions.list.Trapper.items, "CampCarbine");
+table.insert(ProceduralDistributions.list.Trapper.items, 0.005);
+table.insert(ProceduralDistributions.list.Trapper.items, "M2400_Shotgun");
+table.insert(ProceduralDistributions.list.Trapper.items, 0.005);
 table.insert(ProceduralDistributions.list.Trapper.items, "SKS");
 table.insert(ProceduralDistributions.list.Trapper.items, 0.005);
 table.insert(ProceduralDistributions.list.Trapper.items, "Shotgun2");
@@ -895,6 +1145,12 @@ table.insert(ProceduralDistributions.list.Trapper.items, "VFEShotgunCase2");
 table.insert(ProceduralDistributions.list.Trapper.items, 0.001);
 table.insert(ProceduralDistributions.list.Trapper.items, "M16Bayonet");
 table.insert(ProceduralDistributions.list.Trapper.items, 2);
+
+-- Other places for ammo cans --
+table.insert(ProceduralDistributions.list.CarSupplyTools.items, "VFEAmmoCanNarrow_Toolkit");
+table.insert(ProceduralDistributions.list.CarSupplyTools.items, 1);
+table.insert(ProceduralDistributions.list.ClosetShelfGeneric.items, "VFEAmmoCanNarrow_Toolkit");
+table.insert(ProceduralDistributions.list.ClosetShelfGeneric.items, 1);
 
 -- Give function a table and it'll remove vanilla firearm weights and recaculate them
 local function BulkRemoveVanillaFirearms(distroTable)
@@ -979,6 +1235,12 @@ local function VFEGenerateLongFirearmsDistro(distroTable)
 	table.insert(distroTable.items, 0.0005 * SandboxVars.VFE.HouseWeaponsMulti);
 	table.insert(distroTable.items, "LeverRifle");
 	table.insert(distroTable.items, 0.02 * SandboxVars.VFE.HouseWeaponsMulti);
+	table.insert(distroTable.items, "LeverRifle2");
+	table.insert(distroTable.items, 0.01 * SandboxVars.VFE.HouseWeaponsMulti);
+	table.insert(distroTable.items, "CampCarbine");
+	table.insert(distroTable.items, 0.01 * SandboxVars.VFE.HouseWeaponsMulti);
+	table.insert(distroTable.items, "M2400_Shotgun");
+	table.insert(distroTable.items, 0.01 * SandboxVars.VFE.HouseWeaponsMulti);
 	table.insert(distroTable.items, "SKS");
 	table.insert(distroTable.items, 0.0002 * SandboxVars.VFE.HouseWeaponsMulti);
 	table.insert(distroTable.items, "Shotgun2");
@@ -1008,9 +1270,9 @@ local function VFEGenerateShortFirearmsDistro(distroTable)
 	table.insert(distroTable.items, "VFEPistolCase3");
 	table.insert(distroTable.items, 0.0002 * SandboxVars.VFE.HouseWeaponsMulti);
 	table.insert(distroTable.items, "Pistol");
-	table.insert(distroTable.items, 0.2 * SandboxVars.VFE.HouseWeaponsMulti);
+	table.insert(distroTable.items, 0.15 * SandboxVars.VFE.HouseWeaponsMulti);
 	table.insert(distroTable.items, "Pistol2");
-	table.insert(distroTable.items, 0.1 * SandboxVars.VFE.HouseWeaponsMulti);
+	table.insert(distroTable.items, 0.08 * SandboxVars.VFE.HouseWeaponsMulti);
 	table.insert(distroTable.items, "Pistol3");
 	table.insert(distroTable.items, 0.005 * SandboxVars.VFE.HouseWeaponsMulti);
 	table.insert(distroTable.items, "Revolver");
@@ -1025,6 +1287,8 @@ local function VFEGenerateShortFirearmsDistro(distroTable)
 	table.insert(distroTable.items, 0.003 * SandboxVars.VFE.HouseWeaponsMulti);
 	table.insert(distroTable.items, "Tec9");
 	table.insert(distroTable.items, 0.002 * SandboxVars.VFE.HouseWeaponsMulti);
+	table.insert(distroTable.items, "MK2");
+	table.insert(distroTable.items, 0.07 * SandboxVars.VFE.HouseWeaponsMulti);
 end
 
 local function VFEGenerateFirearmsVehicleDistro(distroTable)
@@ -1039,12 +1303,14 @@ end
 
 
 --== House Loot ==--
-function VFEHouseDistro()
+local function VFEHouseDistro()
 	-- Garage guns with attachments and cleaning kits
 	table.insert(ProceduralDistributions.list.GarageFirearms.items, "Bipod");
 	table.insert(ProceduralDistributions.list.GarageFirearms.items, 4);
 	table.insert(ProceduralDistributions.list.GarageFirearms.items, "ShellHolder");
-	table.insert(ProceduralDistributions.list.GarageFirearms.items, 5);
+	table.insert(ProceduralDistributions.list.GarageFirearms.items, 3);
+	table.insert(ProceduralDistributions.list.GarageFirearms.items, "ShellStraps");
+	table.insert(ProceduralDistributions.list.GarageFirearms.items, 2);
 	table.insert(ProceduralDistributions.list.GarageFirearms.items, "IronSight");
 	table.insert(ProceduralDistributions.list.GarageFirearms.items, 2);
 	table.insert(ProceduralDistributions.list.GarageFirearms.items, "CleaningKit");
@@ -1053,6 +1319,8 @@ function VFEHouseDistro()
 	table.insert(ProceduralDistributions.list.GarageFirearms.items, 0.01);
 	table.insert(ProceduralDistributions.list.GarageFirearms.items, "Sling2");
 	table.insert(ProceduralDistributions.list.GarageFirearms.items, 2);
+	table.insert(ProceduralDistributions.list.GarageFirearms.items, "LightenedStock");
+	table.insert(ProceduralDistributions.list.GarageFirearms.items, 0.5);
 
 	table.insert(ProceduralDistributions.list.GarageFirearms.items, "VFEPistolCase1");
 	table.insert(ProceduralDistributions.list.GarageFirearms.items, 0.2);
@@ -1101,6 +1369,12 @@ function VFEHouseDistro()
 	table.insert(ProceduralDistributions.list.GarageFirearms.items, 2);
 	table.insert(ProceduralDistributions.list.GarageFirearms.items, "LeverRifle");
 	table.insert(ProceduralDistributions.list.GarageFirearms.items, 6);
+	table.insert(ProceduralDistributions.list.GarageFirearms.items, "LeverRifle2");
+	table.insert(ProceduralDistributions.list.GarageFirearms.items, 4);
+	table.insert(ProceduralDistributions.list.GarageFirearms.items, "CampCarbine");
+	table.insert(ProceduralDistributions.list.GarageFirearms.items, 4);
+	table.insert(ProceduralDistributions.list.GarageFirearms.items, "M2400_Shotgun");
+	table.insert(ProceduralDistributions.list.GarageFirearms.items, 2);
 	table.insert(ProceduralDistributions.list.GarageFirearms.items, "SKS");
 	table.insert(ProceduralDistributions.list.GarageFirearms.items, 3);
 	table.insert(ProceduralDistributions.list.GarageFirearms.items, "SKSSpiker");
@@ -1154,22 +1428,87 @@ function VFEHouseDistro()
 	-- Wardrobe Woman Classy Long Guns
 	VFEGenerateLongFirearmsDistro(ProceduralDistributions.list.WardrobeWomanClassy)
 end
-
+ -- DONT FORGET TO REVERT
 table.insert(ProceduralDistributions.list.MotelLinens.items, "ShotgunSilent");
-table.insert(ProceduralDistributions.list.MotelLinens.items, 0.001);
+table.insert(ProceduralDistributions.list.MotelLinens.items, 0.0001);
+
+--== Heavy Weapons ==--
+local function VFEHeavyWeaponsDistro()
+	-- Army Ammo
+	table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, "M60_Links_Box");
+	table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, 10);
+	table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, "M60_Links_Box");
+	table.insert(ProceduralDistributions.list.ArmyStorageAmmunition.items, 5);
+
+	-- Army Guns
+	table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "M60MMG");
+	table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 0.005);
+	table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "AssaultRifleMasterkey");
+	table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 0.005);
+
+	table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "M60Belt");
+	table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 0.5);
+
+	-- The links getting to random places that make sense
+	table.insert(ProceduralDistributions.list.ArmySurplusTools.items, "M60_Links_Box");
+	table.insert(ProceduralDistributions.list.ArmySurplusTools.items, 1);
+	table.insert(ProceduralDistributions.list.PawnShopGuns.items, "M60_Links_Box");
+	table.insert(ProceduralDistributions.list.PawnShopGuns.items, 0.5);
+	
+	-- Survivor Houses
+	table.insert(ProceduralDistributions.list.FirearmWeapons.items, "M60MMG");
+	table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.01);
+	table.insert(ProceduralDistributions.list.FirearmWeapons.items, "M60Belt");
+	table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.1);
+	table.insert(ProceduralDistributions.list.FirearmWeapons.items, "M60_Links_Box");
+	table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.1);
+	table.insert(ProceduralDistributions.list.FirearmWeapons.items, "AssaultRifleMasterkey");
+	table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.01);
+	
+	-- Illegal M60 Plank Stash
+	table.insert(ProceduralDistributions.list.PlankStashGun.items, "M60MMG");
+	table.insert(ProceduralDistributions.list.PlankStashGun.items, 1);
+	table.insert(ProceduralDistributions.list.PlankStashGun.items, "M60Belt");
+	table.insert(ProceduralDistributions.list.PlankStashGun.items, 0.5);
+	table.insert(ProceduralDistributions.list.PlankStashGun.items, "M60_Links_Box");
+	table.insert(ProceduralDistributions.list.PlankStashGun.items, 0.5);
+	
+	-- M60 Related Magazine
+	table.insert(ProceduralDistributions.list.BookstoreMisc.items, "VFECraftingMag1");
+	table.insert(ProceduralDistributions.list.BookstoreMisc.items, 1);
+	table.insert(ProceduralDistributions.list.CrateMagazines.items, "VFECraftingMag1");
+	table.insert(ProceduralDistributions.list.CrateMagazines.items, 1);
+	table.insert(ProceduralDistributions.list.LibraryBooks.items, "VFECraftingMag1");
+	table.insert(ProceduralDistributions.list.LibraryBooks.items, 1);
+	table.insert(ProceduralDistributions.list.LivingRoomShelfNoTapes.items, "VFECraftingMag1");
+	table.insert(ProceduralDistributions.list.LivingRoomShelfNoTapes.items, 0.1);
+	table.insert(ProceduralDistributions.list.LivingRoomSideTable.items, "VFECraftingMag1");
+	table.insert(ProceduralDistributions.list.LivingRoomSideTable.items, 0.1);
+	table.insert(ProceduralDistributions.list.LivingRoomSideTableNoRemote.items, "VFECraftingMag1");
+	table.insert(ProceduralDistributions.list.LivingRoomSideTableNoRemote.items, 0.1);
+	table.insert(ProceduralDistributions.list.MagazineRackMixed.items, "VFECraftingMag1");
+	table.insert(ProceduralDistributions.list.MagazineRackMixed.items, 1);
+	table.insert(ProceduralDistributions.list.GunStoreMagazineRack.items, "VFECraftingMag1");
+	table.insert(ProceduralDistributions.list.GunStoreMagazineRack.items, 2);
+	table.insert(ProceduralDistributions.list.PostOfficeMagazines.items, "VFECraftingMag1");
+	table.insert(ProceduralDistributions.list.PostOfficeMagazines.items, 1);
+	table.insert(ProceduralDistributions.list.ShelfGeneric.items, "VFECraftingMag1");
+	table.insert(ProceduralDistributions.list.ShelfGeneric.items, 0.1);
+	
+end
 
 -- ==================== ---
 -- VehicleDistributions ---
 -- ==================== ---
 
-function VFEVehicleDistro()
+local function VFEVehicleDistro()
 	-- Generic vehicle glovebox handgun
 	VFEGenerateFirearmsVehicleDistro(VehicleDistributions.GloveBox.junk)
 
 	-- Survivalist vehicle glovebox handgun
 	table.insert(VehicleDistributions.SurvivalistGlovebox.junk.items, "Glock");
 	table.insert(VehicleDistributions.SurvivalistGlovebox.junk.items, 2.5);
-	table.insert(VehicleDistributions.SurvivalistGlovebox.junk.items, "P229");
+	table.insert(VehicleDistributions.SurvivalistGlovebox.junk.items, "CZ75");
 	table.insert(VehicleDistributions.SurvivalistGlovebox.junk.items, 1.5);
 	table.insert(VehicleDistributions.SurvivalistGlovebox.junk.items, "Tec9");
 	table.insert(VehicleDistributions.SurvivalistGlovebox.junk.items, 1.5);
@@ -1222,7 +1561,9 @@ function VFEVehicleDistro()
 	table.insert(VehicleDistributions.PoliceTruckBed.items, "9mmClip30");
 	table.insert(VehicleDistributions.PoliceTruckBed.items, 2);
 	table.insert(VehicleDistributions.PoliceTruckBed.items, "ShellHolder");
-	table.insert(VehicleDistributions.PoliceTruckBed.items, 4);
+	table.insert(VehicleDistributions.PoliceTruckBed.items, 3);
+	table.insert(VehicleDistributions.PoliceTruckBed.items, "ShellStraps");
+	table.insert(VehicleDistributions.PoliceTruckBed.items, 2);
 	table.insert(VehicleDistributions.PoliceTruckBed.items, "Sling2");
 	table.insert(VehicleDistributions.PoliceTruckBed.items, 2);
 
@@ -1286,6 +1627,7 @@ end
 function VFEWeaponDistributionsSandboxLoader()
 	if SandboxVars.VFE.CarWeapons then VFEVehicleDistro() end
 	if SandboxVars.VFE.HouseWeapons then VFEHouseDistro() end
+	if SandboxVars.VFE.HeavyWeapons then VFEHeavyWeaponsDistro() end
 	ItemPickerJava.Parse()
 end
 

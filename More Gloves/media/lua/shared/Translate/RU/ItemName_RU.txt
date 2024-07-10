@@ -14,4 +14,8 @@ ItemName_RU = {
 	ItemName_MoreGloves.TacticalGloves01 = "Тактические перчатки",
 	ItemName_MoreGloves.TacticalGloves02 = "Тактические перчатки",
 	ItemName_MoreGloves.TacticalGloves03 = "Тактические перчатки",
+	ItemName_MoreGloves.LeatherWorkGloves = "Рабочие перчатки",
+	ItemName_MoreGloves.FingerlessTacticalGloves01 = "Тактические перчатки без пальцев",
+	ItemName_MoreGloves.FingerlessTacticalGloves02 = "Тактические перчатки без пальцев",
+	ItemName_MoreGloves.FingerlessTacticalGloves03 = "Тактические перчатки без пальцев",		
 }

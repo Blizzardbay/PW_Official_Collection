@@ -9,7 +9,9 @@ end
 function CTagsPanel:createChildren()
 	local hO = self.y;
 
-	self.tagsBtn = ISButton:new(0, 0, 40, 35, "", self, CTagsPanel.onOptionMouseDown);
+	self:onMouseMove(0, 0); -- Just in case you lost it. 
+
+	self.tagsBtn = ISButton:new(10, 10, 40, 35, "", self, CTagsPanel.onOptionMouseDown);
 	if CTags.mode == 2 then
 		self.tagsBtn:setImage(getTexture("media/textures/note_faction.png"));
 	else
@@ -19,12 +21,75 @@ function CTagsPanel:createChildren()
 	self.tagsBtn:instantiate();
 	self.tagsBtn:setDisplayBackground(false);
 	CTagsPanel.button = self.tagsBtn;
-
 	self.tagsBtn.borderColor = {r=1, g=1, b=1, a=0.1};
 	self.tagsBtn:ignoreWidthChange();
 	self.tagsBtn:ignoreHeightChange();
 	self:addChild(self.tagsBtn);
+
+	-- Moving menu
+
+	function self.tagsBtn:onRightMouseDown(x, y)
+		getSoundManager():playUISound(self.sounds.activate)
+		CTagsSettings.makeWindow(x, y)
+	end
+	function self.tagsBtn:onMouseDown(x, y)
+		CTagsPanel.window.move = true;
+		if not self:getIsVisible() then
+			return;
+		end
+	    self.pressed = true;
+	    if self.onmousedown == nil or not self.enable then
+			return;
+	    end
+		self.onmousedown(self.target, self, x, y);
+	end
+
+	function self.tagsBtn:onMouseUp(x, y)
+		local diffX = math.abs(CTagsPanel.window.x - CTagsPanel.window.prevPos.x);
+		local diffY = math.abs(CTagsPanel.window.y - CTagsPanel.window.prevPos.y);
+		if CTagsPanel.window.move and (diffX > 5 or diffY > 5) then return end;
+	    if not self:getIsVisible() then
+	        return;
+	    end
+	    local process = false;
+	    if self.pressed == true then
+	        process = true;
+	    end
+	    self.pressed = false;
+	     if self.onclick == nil then
+	        return;
+	    end
+	    if self.enable and (process or self.allowMouseUpProcessing) then
+	        getSoundManager():playUISound(self.sounds.activate)
+	        self.onclick(self.target, self, self.onClickArgs[1], self.onClickArgs[2], self.onClickArgs[3], self.onClickArgs[4]);
+		    --print(self.title);
+	    end
+	end	
 end
+
+function CTagsPanel:onMouseDown(x, y)
+	self.move = true;
+end
+
+function CTagsPanel:onMouseMove(x, y)
+	if self.move then
+		local safeX = math.max(5,math.min(self.core:getScreenWidth() - 60, self.x + x));
+		local safeY = math.max(5,math.min(self.core:getScreenHeight() - 60, self.y + y))
+		self:setX(safeX);
+		self:setY(safeY);
+	end
+end
+
+function CTagsPanel:onMouseUp(x, y)
+	self.move = false;
+	self.prevPos = { ["x"] = self.x, ["y"] = self.y }
+	CTagsSettings:onOptionChange(0, self.x, "ui_x")
+	CTagsSettings:onOptionChange(1, self.y, "ui_y")
+end
+
+function CTagsPanel:onMouseMoveOutside(x, y) self:onMouseMove(x, y) end
+function CTagsPanel:onMouseUpOutside(x, y)self:onMouseUp(x, y) end
+
 
 function CTagsPanel.onOptionMouseDown(button, x, y)
 	local mode = CTags.mode or 1;
@@ -75,11 +140,13 @@ function CTagsPanel.hide()
 end
 
 function CTagsPanel.make()
+	if CTagsPanel.window then CTagsPanel.hide() end;
+
 	local player = getPlayer();
 	local playerNum = player:getPlayerNum()
 	local x = getPlayerScreenLeft(playerNum)
 	local y = getPlayerScreenTop(playerNum)
-	local panel = CTagsPanel:new(18, 670, 50, 50, player);
+	local panel = CTagsPanel:new(CTags.settings.ui_x or 20, CTags.settings.ui_y or 670, 40, 40, player);
 	CTagsPanel.window = panel;
 	panel:initialise();
 	panel:addToUIManager();
@@ -110,5 +177,6 @@ function CTagsPanel:new(x, y, w, h)
 	o.player = getPlayer();
 	o.playerNumber = o.player:getPlayerNum();
 	o.core = getCore();
+	o.prevPos = { ["x"] = x, ["y"] = y }
 	return o;
 end

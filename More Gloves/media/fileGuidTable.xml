@@ -67,6 +67,18 @@
 	<files>
         <path>media/clothing/clothingItems/FishnetGloves.xml</path>
         <guid>4f01096f-0d53-41ab-b450-3541176a4d3a</guid>
+    </files>
+	<files>
+        <path>media/clothing/clothingItems/FingerlessTacticalGloves01.xml</path>
+        <guid>dcdc3fa1-48e4-4693-abd9-be8742d5a9ad</guid>
+    </files>
+	<files>
+        <path>media/clothing/clothingItems/FingerlessTacticalGloves02.xml</path>
+        <guid>6ed501a6-eae7-4c5e-8f36-c516eab1a691</guid>
+    </files>
+	<files>
+        <path>media/clothing/clothingItems/FingerlessTacticalGloves03.xml</path>
+        <guid>3f99ac94-2bf5-4cee-b113-07ef5a69d850</guid>
     </files>	
 	<!-- Default vanilla files for outfit distribution -->
 	<files>
@@ -448,5 +460,9 @@
 	<files>
 		<path>media/clothing/clothingItems/Skirt_Short.xml</path>
 		<guid>bc9773d7-e020-4051-848e-aefd88d11d1d</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Dress_SmallBlackStrapless.xml</path>
+		<guid>8b783da1-e926-4e21-a510-c06462bbc324</guid>
 	</files>	
 </fileGuidTable> 

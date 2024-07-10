@@ -1,0 +1,13 @@
+IG_UI_JP = {
+ IGUI_PlayerText_st = "目的地を設定します。",
+ IGUI_PlayerText_in = "目的地が近くにあります。",
+ IGUI_PlayerText_end = "目的地に到着しました。",
+ IGUI_PlayerText_left = "まもなく左折です。",
+ IGUI_PlayerText_right = "まもなく右折です。",
+ IGUI_PlayerText_autoon = "自動運転モードに切り替えます。",
+ IGUI_PlayerText_auttooff = "自動運転モードを終了します。",
+ IGUI_PlayerText_stop = "前方の車両のため停止します。",
+ IGUI_PlayerText_Navout = "ルートから外れています。",
+ IGUI_Tutorial_NavGPS = " <CENTRE> <SIZE:large> ナビゲーションの使い方! <LINE> <LINE> <SIZE:medium> [左 Shift (パッドの左スティックボタン)] : 目的地を設定できます！ 中間地点を設定して正確なルートを作成することをお勧めします。 <LINE> <LINE> [X (パッドのLTボタン)] : 設定された目的地を最近順に1つずつ削除します！ <LINE> <LINE> [スペース (パッドのLBボタン)] : 設定されたすべての目的地と経由地を削除できます！ <LINE> <LINE>",
+
+}

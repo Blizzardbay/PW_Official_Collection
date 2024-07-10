@@ -3563,6 +3563,15 @@
 		</m_items>
 		<m_items> <!-- Clown Cone Hat -->
 			<itemGUID>64cb6c48-3dcd-4435-9d7e-320b90b7248a</itemGUID>
+			<subItems> <!-- Clown Cone Hat -->
+				<itemGUID>64cb6c48-3dcd-4435-9d7e-320b90b7248a</itemGUID>
+			</subItems>	
+			<subItems> <!--  Clown Cone Hat -->
+				<itemGUID>64cb6c48-3dcd-4435-9d7e-320b90b7248a</itemGUID>
+			</subItems>	
+			<subItems> <!-- Court Jester Hat -->
+				<itemGUID>c19af59f-f726-4569-98ed-054d72558ff8</itemGUID>
+			</subItems>				
 		</m_items>		
 		<m_items> <!-- Pop eyes -->
 			<probability>0.3</probability>		
@@ -4762,6 +4771,10 @@
 		<m_items> <!-- Cultist Hat -->
 			<probability>0.6</probability>
 			<itemGUID>c8e1d8b3-9ef5-43fe-aaa0-f52d489b1fe4</itemGUID>
+		</m_items>	
+		<m_items> <!-- Deer Skull -->
+			<probability>0.3</probability>
+			<itemGUID>eaa86691-02db-4d15-bf5f-ea8021b62b3e</itemGUID>
 		</m_items>			
 		<m_items> <!-- Cultist Robe -->
 			<itemGUID>3cd1289c-50e3-4fd9-b6a7-45e59262ec32</itemGUID>
@@ -4815,7 +4828,11 @@
 		<m_items> <!-- Cultist Hat -->
 			<probability>0.6</probability>
 			<itemGUID>c8e1d8b3-9ef5-43fe-aaa0-f52d489b1fe4</itemGUID>
-		</m_items>			
+		</m_items>	
+		<m_items> <!-- Deer Skull -->
+			<probability>0.1</probability>
+			<itemGUID>eaa86691-02db-4d15-bf5f-ea8021b62b3e</itemGUID>
+		</m_items>		
 		<m_items> <!-- Cultist Robe -->
 			<itemGUID>3cd1289c-50e3-4fd9-b6a7-45e59262ec32</itemGUID>
 		</m_items>
@@ -14543,68 +14560,6 @@
 		</m_items>
 		<m_items> <!-- Brown Boots -->
 			<itemGUID>7fb2c6bd-1503-440d-8471-57b12275881a</itemGUID>
-		</m_items>
-		<m_items> <!-- Dismembered Bone_Arm_L -->
-			<probability>0.03</probability>		
-			<itemGUID>6e10e6c0-0ac4-4010-974c-56d57f1edd46</itemGUID>
-			<subItems> <!-- Bone_Arm_R-->
-				<itemGUID>5eab0171-d6d2-422e-b69a-3387f219652f</itemGUID>
-			</subItems>
-			<subItems> <!-- Bone_UpperArm_L -->
-				<itemGUID>4736ed99-f312-44f3-b312-8dffd1629a25</itemGUID>
-			</subItems>	
-			<subItems> <!-- Bone_UpperArm_R -->
-				<itemGUID>9b7d0838-abd4-4720-bd91-260c5e8c8003</itemGUID>
-			</subItems>	
-			<subItems> <!-- Bone_Hand_L -->
-				<itemGUID>9f1781e7-c6b6-4fee-adfb-cf14ef833a76</itemGUID>
-			</subItems>	
-			<subItems> <!-- Bone_Hand_R -->
-				<itemGUID>6e7fb312-cb8b-4bf4-8062-c2a72851e190</itemGUID>
-			</subItems>	
-			<subItems> <!-- Bone_Stub_R -->
-				<itemGUID>ade3238e-17c4-4ddd-896b-eadb3208635c</itemGUID>
-			</subItems>	
-			<subItems> <!-- Bone_Stub_L -->
-				<itemGUID>4f9d39e6-34d0-402f-8b1e-6a243cdb8a1c</itemGUID>
-			</subItems>
-			<subItems> <!-- Bones_UpperArm_L -->
-				<itemGUID>a114f19f-5c3f-4006-a0d2-1dc3f308dbd6</itemGUID>
-			</subItems>	
-			<subItems> <!-- Bones_UpperArm_R -->
-				<itemGUID>30c303ef-18ab-4f14-a602-8305e92376b0</itemGUID>
-			</subItems>				
-		</m_items>			
-	</m_FemaleOutfits>
-
-<m_FemaleOutfits> <m_Name>AuthenticNMRIHBadass</m_Name>
-		<m_Guid>b1aa0754-422c-465f-b1c3-dcb052bb9df9</m_Guid>
-		<m_Pants>false</m_Pants>
-		<m_AllowPantsHue>false</m_AllowPantsHue>
-		<m_items> <!-- Choker necklace -->
-			<itemGUID>5c4e5d70-62c6-45fd-804c-fbd50d30a5dd</itemGUID>
-		</m_items>
-		<m_items> <!-- SchoolBag-->
-			<itemGUID>1bba5b1a-c6c6-4af7-ab69-43f583007159</itemGUID>
-		</m_items>		
-		<m_items> <!-- Tank Top -->
-			<itemGUID>a700a956-32c2-49a6-bd5f-5a2895073f19</itemGUID>
-		</m_items>
-		<m_items> <!-- Intellectual Badass CropTop -->
-			<itemGUID>9339566a-8578-4435-9503-875ae8aa0e54</itemGUID>
-		</m_items>		
-		<m_items> <!-- Default Jeans -->
-			<itemGUID>b63133df-07bb-46db-91ca-cc10f2048669</itemGUID>
-		</m_items>		
-		<m_items> <!-- Bandage lower right arm -->
-			<itemGUID>6c8d6274-5e6e-4151-9133-f7e4be1763c7</itemGUID>
-		</m_items>		
-		<m_items><!-- Holster -->
-			<probability>0.3</probability>
-			<itemGUID>88f11c9e-e717-446c-82ec-f749320df25a</itemGUID>
-		</m_items>
-		<m_items> <!-- Brown Boots -->
-			<itemGUID>7fb2c6bd-1503-440d-8471-57b12275881a</itemGUID>
 		</m_items>	
 		<m_items> <!-- Dismembered Bone_Arm_L -->
 			<probability>0.03</probability>		
@@ -17932,9 +17887,24 @@
 		<m_items> <!-- Schoolbag -->
 			<probability>0.25</probability>
 			<itemGUID>1bba5b1a-c6c6-4af7-ab69-43f583007159</itemGUID>
-			<subItems>
+			<subItems> <!-- Schoolbag -->
+				<itemGUID>1bba5b1a-c6c6-4af7-ab69-43f583007159</itemGUID>
+			</subItems>
+			<subItems> <!-- Satchel -->
 				<itemGUID>f8988b1c-04bb-4b9a-8656-851d324d2fd0</itemGUID>
 			</subItems>
+			<subItems> <!-- Satchel -->
+				<itemGUID>f8988b1c-04bb-4b9a-8656-851d324d2fd0</itemGUID>
+			</subItems>			
+			<subItems> <!-- Bag_Packsport_Plain -->
+				<itemGUID>732a0feb-0e8b-4b3b-b007-ad69e3bc8a63</itemGUID>
+			</subItems>	
+			<subItems> <!-- Bag_Packsport_Rim -->
+				<itemGUID>1f4aa194-52ef-4ea0-8e77-ee3f87958881</itemGUID>
+			</subItems>	
+			<subItems> <!-- Bag_Schoolbag_Spiffo2 -->
+				<itemGUID>1f4aa194-52ef-4ea0-8e77-ee3f87958881</itemGUID>
+			</subItems>				
 		</m_items>
 		<m_items> <!-- Dismembered Bone_Arm_L -->
 			<probability>0.01</probability>		
@@ -19839,9 +19809,28 @@
 				<itemGUID>593bea3d-c127-4574-ac1e-2197dc56e486</itemGUID>
 			</subItems>
 		</m_items>
-		<m_items> <!-- SchoolBag -->
+		<m_items> <!-- Schoolbag -->
+			<probability>0.25</probability>
 			<itemGUID>1bba5b1a-c6c6-4af7-ab69-43f583007159</itemGUID>
-		</m_items>	
+			<subItems> <!-- Schoolbag -->
+				<itemGUID>1bba5b1a-c6c6-4af7-ab69-43f583007159</itemGUID>
+			</subItems>
+			<subItems> <!-- Satchel -->
+				<itemGUID>f8988b1c-04bb-4b9a-8656-851d324d2fd0</itemGUID>
+			</subItems>
+			<subItems> <!-- Satchel -->
+				<itemGUID>f8988b1c-04bb-4b9a-8656-851d324d2fd0</itemGUID>
+			</subItems>			
+			<subItems> <!-- Bag_Packsport_Plain -->
+				<itemGUID>732a0feb-0e8b-4b3b-b007-ad69e3bc8a63</itemGUID>
+			</subItems>	
+			<subItems> <!-- Bag_Packsport_Rim -->
+				<itemGUID>1f4aa194-52ef-4ea0-8e77-ee3f87958881</itemGUID>
+			</subItems>	
+			<subItems> <!-- Bag_Schoolbag_Spiffo2 -->
+				<itemGUID>1f4aa194-52ef-4ea0-8e77-ee3f87958881</itemGUID>
+			</subItems>				
+		</m_items>
 		<m_items> <!-- Welding Mask -->
 			<itemGUID>1bd52396-c99d-440a-8f2d-7808ce1cdd57</itemGUID>
 		</m_items>			
@@ -19944,9 +19933,28 @@
 				<itemGUID>593bea3d-c127-4574-ac1e-2197dc56e486</itemGUID>
 			</subItems>
 		</m_items>
-		<m_items> <!-- SchoolBag -->
+		<m_items> <!-- Schoolbag -->
+			<probability>0.25</probability>
 			<itemGUID>1bba5b1a-c6c6-4af7-ab69-43f583007159</itemGUID>
-		</m_items>	
+			<subItems> <!-- Schoolbag -->
+				<itemGUID>1bba5b1a-c6c6-4af7-ab69-43f583007159</itemGUID>
+			</subItems>
+			<subItems> <!-- Satchel -->
+				<itemGUID>f8988b1c-04bb-4b9a-8656-851d324d2fd0</itemGUID>
+			</subItems>
+			<subItems> <!-- Satchel -->
+				<itemGUID>f8988b1c-04bb-4b9a-8656-851d324d2fd0</itemGUID>
+			</subItems>			
+			<subItems> <!-- Bag_Packsport_Plain -->
+				<itemGUID>732a0feb-0e8b-4b3b-b007-ad69e3bc8a63</itemGUID>
+			</subItems>	
+			<subItems> <!-- Bag_Packsport_Rim -->
+				<itemGUID>1f4aa194-52ef-4ea0-8e77-ee3f87958881</itemGUID>
+			</subItems>	
+			<subItems> <!-- Bag_Schoolbag_Spiffo2 -->
+				<itemGUID>1f4aa194-52ef-4ea0-8e77-ee3f87958881</itemGUID>
+			</subItems>				
+		</m_items>
 		<m_items> <!-- Welding Mask -->
 			<itemGUID>1bd52396-c99d-440a-8f2d-7808ce1cdd57</itemGUID>
 		</m_items>			
@@ -21246,11 +21254,26 @@
 			<itemGUID>5574c07e-1381-49d8-a0ba-40e5b2cf55cd</itemGUID>
 		</m_items>			
 		<m_items> <!-- Schoolbag -->
-			<probability>0.5</probability>
+			<probability>0.4</probability>
 			<itemGUID>1bba5b1a-c6c6-4af7-ab69-43f583007159</itemGUID>
-			<subItems>
+			<subItems> <!-- Schoolbag -->
+				<itemGUID>1bba5b1a-c6c6-4af7-ab69-43f583007159</itemGUID>
+			</subItems>
+			<subItems> <!-- Satchel -->
 				<itemGUID>f8988b1c-04bb-4b9a-8656-851d324d2fd0</itemGUID>
 			</subItems>
+			<subItems> <!-- Satchel -->
+				<itemGUID>f8988b1c-04bb-4b9a-8656-851d324d2fd0</itemGUID>
+			</subItems>			
+			<subItems> <!-- Bag_Packsport_Plain -->
+				<itemGUID>732a0feb-0e8b-4b3b-b007-ad69e3bc8a63</itemGUID>
+			</subItems>	
+			<subItems> <!-- Bag_Packsport_Rim -->
+				<itemGUID>1f4aa194-52ef-4ea0-8e77-ee3f87958881</itemGUID>
+			</subItems>	
+			<subItems> <!-- Bag_Schoolbag_Spiffo2 -->
+				<itemGUID>1f4aa194-52ef-4ea0-8e77-ee3f87958881</itemGUID>
+			</subItems>				
 		</m_items>
 		<m_items> <!-- Shoes Random-->
 			<itemGUID>7741404b-9689-4608-a0f5-4e06597776f9</itemGUID>
@@ -21382,17 +21405,17 @@
 				<itemGUID>2fb65117-0609-4d55-977f-29f599912b4c</itemGUID>
 			</subItems>				
 		</m_items>				
-		<m_items>
+		<m_items> <!-- Glasses_Normal -->
 			<probability>0.2</probability>
 			<itemGUID>6d702d88-4ca0-4bcb-9aee-d88f2be29e69</itemGUID>
-			<subItems>
+			<subItems> <!-- Glasses_Reading -->
 				<itemGUID>9df22d1f-96cd-4d2c-88f2-4e7423d93649</itemGUID>
 			</subItems>
 		</m_items>
-		<m_items>
+		<m_items> <!-- Jacket_Varsity -->
 			<probability>0.8</probability>
 			<itemGUID>f756aca5-7504-4ee5-bc34-d0327347a2d0</itemGUID>
-			<subItems>
+			<subItems> <!-- Jumper_RoundNeck -->
 				<itemGUID>7a5f7b89-9de9-4c05-afb6-e62dca97b8a2</itemGUID>
 			</subItems>
 			<subItems> <!-- Burger Sweater -->
@@ -21408,13 +21431,13 @@
 				<itemGUID>dbb37ca8-c745-4457-a50e-1645b0e7942e</itemGUID>
 			</subItems>		
 		</m_items>
-		<m_items>
+		<m_items> <!-- Tshirt_DefaultTEXTURE_TINT -->
 			<itemGUID>19af00e4-ed4d-49bc-a893-a4a3376fe6da</itemGUID>
 		</m_items>
-		<m_items>
+		<m_items> <!-- Socks_Ankle -->
 			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
 		</m_items>
-		<m_items>
+		<m_items> <!-- Shoes_TrainerTINT -->
 			<itemGUID>6fed6e2b-3a72-4bac-aac5-09585984493d</itemGUID>
 		</m_items>
 		<m_items> <!-- Watches -->
@@ -21430,7 +21453,7 @@
 				<itemGUID>0383956a-3fbd-4001-9749-69e2ba70b134</itemGUID>
 			</subItems>
 		</m_items>
-		<m_items>
+		<m_items> <!-- Bracelet_RightFriendshipTINT -->
 			<probability>0.3</probability>
 			<itemGUID>e0326808-75a8-4bef-a712-ef89dddd7b1f</itemGUID>
 		</m_items>
@@ -21597,12 +21620,27 @@
 				<itemGUID>8c80a404-dc1d-4b2a-a56a-8647f1f720a8</itemGUID>
 			</subItems>			
 		</m_items>
-		<m_items> <!-- Backpack -->
-			<probability>0.5</probability>
+		<m_items> <!-- Schoolbag -->
+			<probability>0.4</probability>
 			<itemGUID>1bba5b1a-c6c6-4af7-ab69-43f583007159</itemGUID>
-			<subItems>
+			<subItems> <!-- Schoolbag -->
+				<itemGUID>1bba5b1a-c6c6-4af7-ab69-43f583007159</itemGUID>
+			</subItems>
+			<subItems> <!-- Satchel -->
 				<itemGUID>f8988b1c-04bb-4b9a-8656-851d324d2fd0</itemGUID>
 			</subItems>
+			<subItems> <!-- Satchel -->
+				<itemGUID>f8988b1c-04bb-4b9a-8656-851d324d2fd0</itemGUID>
+			</subItems>			
+			<subItems> <!-- Bag_Packsport_Plain -->
+				<itemGUID>732a0feb-0e8b-4b3b-b007-ad69e3bc8a63</itemGUID>
+			</subItems>	
+			<subItems> <!-- Bag_Packsport_Rim -->
+				<itemGUID>1f4aa194-52ef-4ea0-8e77-ee3f87958881</itemGUID>
+			</subItems>	
+			<subItems> <!-- Bag_Schoolbag_Spiffo2 -->
+				<itemGUID>1f4aa194-52ef-4ea0-8e77-ee3f87958881</itemGUID>
+			</subItems>				
 		</m_items>
 		<m_items> <!-- Shoes -->
 			<itemGUID>7741404b-9689-4608-a0f5-4e06597776f9</itemGUID>

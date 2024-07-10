@@ -7,7 +7,20 @@ Moodles_EN {
 
 	Moodles_WeatherTropicalStorm_Bad_lvl4 = "Tropical Storm",
     Moodles_WeatherTropicalStorm_Bad_desc_lvl4 = "",
-	
+
+    Moodles_SeasonSpring_Good_lvl4 = "Spring",
+    Moodles_SeasonSpring_Bad_lvl4 = "Spring",
+    Moodles_SeasonEarlySummer_Good_lvl4 = "Early Summer",
+    Moodles_SeasonEarlySummer_Bad_lvl4 = "Early Summer",
+    Moodles_SeasonLateSummer_Good_lvl4 = "Late Summer",
+    Moodles_SeasonLateSummer_Bad_lvl4 = "Late Summer",
+    Moodles_SeasonAutumn_Good_lvl4 = "Autumn",
+    Moodles_SeasonAutumn_Bad_lvl4 = "Autumn",
+    Moodles_SeasonWinter_Good_lvl4 = "Winter",
+    Moodles_SeasonWinter_Bad_lvl4 = "Winter",
+    Moodles_Season_Good_desc_lvl4 = "",
+    Moodles_Season_Bad_desc_lvl4 = "",
+
 	Moodles_WeatherCloud_Good_lvl1 = "Mostly clear",
     Moodles_WeatherCloud_Good_desc_lvl1 = "",
     Moodles_WeatherCloud_Good_lvl2 = "Partly cloudy",
@@ -24,7 +37,7 @@ Moodles_EN {
     Moodles_WeatherCloud_Bad_desc_lvl3 = "",
     Moodles_WeatherCloud_Bad_lvl4 = "Overcast",
     Moodles_WeatherCloud_Bad_desc_lvl4 = "",
-	
+
     Moodles_WeatherRain_Good_lvl1 = "Drizzle",
     Moodles_WeatherRain_Good_desc_lvl1 = "",
     Moodles_WeatherRain_Good_lvl2 = "Moderate rain",
@@ -75,7 +88,7 @@ Moodles_EN {
     Moodles_WeatherWind_Bad_desc_lvl3 = "",
     Moodles_WeatherWind_Bad_lvl4 = "Gale",
     Moodles_WeatherWind_Bad_desc_lvl4 = "",
-	
+
 	Moodles_WeatherFog_Good_lvl1 = "Misty",
     Moodles_WeatherFog_Good_desc_lvl1 = "",
     Moodles_WeatherFog_Good_lvl2 = "Foggy",
@@ -92,14 +105,12 @@ Moodles_EN {
     Moodles_WeatherFog_Bad_desc_lvl3 = "",
     Moodles_WeatherFog_Bad_lvl4 = "Thick fog",
     Moodles_WeatherFog_Bad_desc_lvl4 = "",
-	
+
     Moodles_WeatherSun_Good_lvl4 = "Sunny",
-    Moodles_WeatherSun_Good_desc_lvl4 = "",
     Moodles_WeatherSun_Bad_lvl4 = "Sunny",
-    Moodles_WeatherSun_Bad_desc_lvl4 = "",
-	
     Moodles_WeatherMoon_Good_lvl4 = "Starry",
-    Moodles_WeatherMoon_Good_desc_lvl4 = "",
     Moodles_WeatherMoon_Bad_lvl4 = "Starry",
-    Moodles_WeatherMoon_Bad_desc_lvl4 = "",
+    Moodles_WeatherSun_Good_desc_lvl4 = "",
+    Moodles_WeatherSun_Bad_desc_lvl4 = "",
+
 }

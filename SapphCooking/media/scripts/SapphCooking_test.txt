@@ -7,6 +7,17 @@ module SapphCooking
 
 	/**************sapph: hi, there`s not a lot to explain here, just a file to keep track and test new stuff *************************/
 	/****************************** that means, everything here is work in progress, and you can't craft them without a spawn menu. ******************************/	
+	
+	recipe Boil Bagels
+	{
+		BagelShapedDough=1,
+		Water=2,
+		Result 		: BagelPlain,
+		Time 		: 150,
+		Category 		: Cooking,
+		Heat 		: -0.1,
+		OnGiveXP 		: Recipe.OnGiveXP.None,
+	}
 
 }
 

@@ -105,6 +105,9 @@ table.insert(SuburbsDistributions["all"]["inventorymale"].items, "SapphCooking.H
 table.insert(SuburbsDistributions["all"]["inventorymale"].items, ZombieSpawnChance * 0.006);
 table.insert(SuburbsDistributions["all"]["inventorymale"].items, "SapphCooking.MetalSpork");
 table.insert(SuburbsDistributions["all"]["inventorymale"].items, ZombieSpawnChance * 0.0002);
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, "SapphCooking.FortuneCookie");
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, ZombieSpawnChance * 0.0001);
+
 
 
 
@@ -132,6 +135,8 @@ table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "SapphCooking
 table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, ZombieSpawnChance * 0.006);
 table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "SapphCooking.MetalSpork");
 table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, ZombieSpawnChance * 0.0002);
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "SapphCooking.FortuneCookie");
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, ZombieSpawnChance * 0.0001);
 
 --Survivor Bag (Rare)
 table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "SapphCooking.ProteinBar");
@@ -150,7 +155,7 @@ table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, MRESpawnChance * 0.3
 table.insert(ProceduralDistributions["list"]["KitchenPots"].items, "SapphCooking.PlasticSpork");
 table.insert(ProceduralDistributions["list"]["KitchenPots"].items, KitchenUtensilsSpawnChance * 1);
 table.insert(ProceduralDistributions["list"]["KitchenPots"].items, "SapphCooking.WokPan");
-table.insert(ProceduralDistributions["list"]["KitchenPots"].items, KitchenUtensilsSpawnChance * 0.6);
+table.insert(ProceduralDistributions["list"]["KitchenPots"].items, KitchenUtensilsSpawnChance * 0.1);
 table.insert(ProceduralDistributions["list"]["KitchenPots"].items, "SapphCooking.Laddle");
 table.insert(ProceduralDistributions["list"]["KitchenPots"].items, KitchenUtensilsSpawnChance * 0.33);
 table.insert(ProceduralDistributions["list"]["KitchenPots"].items, "SapphCooking.WoodenSpoon");
@@ -189,11 +194,15 @@ table.insert(ProceduralDistributions["list"]["KitchenPots"].items, "SapphCooking
 table.insert(ProceduralDistributions["list"]["KitchenPots"].items, KitchenUtensilsSpawnChance * 0.1);
 table.insert(ProceduralDistributions["list"]["KitchenPots"].items, "SapphCooking.MetalSpork");
 table.insert(ProceduralDistributions["list"]["KitchenPots"].items, KitchenUtensilsSpawnChance * 0.1);
+table.insert(ProceduralDistributions["list"]["KitchenPots"].items, "SapphCooking.Empty_FrenchPress");
+table.insert(ProceduralDistributions["list"]["KitchenPots"].items, KitchenUtensilsSpawnChance * 0.05);
+table.insert(ProceduralDistributions["list"]["KitchenPots"].items, "SapphCooking.SapphCooking.Blender");
+table.insert(ProceduralDistributions["list"]["KitchenPots"].items, KitchenUtensilsSpawnChance * 0.8);
 
 
 --CrateDishes
 table.insert(ProceduralDistributions["list"]["CrateDishes"].items, "SapphCooking.WokPan");
-table.insert(ProceduralDistributions["list"]["CrateDishes"].items, KitchenUtensilsSpawnChance * 0.6);
+table.insert(ProceduralDistributions["list"]["CrateDishes"].items, KitchenUtensilsSpawnChance * 0.1);
 table.insert(ProceduralDistributions["list"]["CrateDishes"].items, "SapphCooking.MetalWhisk");
 table.insert(ProceduralDistributions["list"]["CrateDishes"].items, KitchenUtensilsSpawnChance * 0.6);
 table.insert(ProceduralDistributions["list"]["CrateDishes"].items, "SapphCooking.PlasticSpork");
@@ -356,9 +365,12 @@ table.insert(ProceduralDistributions["list"]["KitchenCannedFood"].items, NonPeri
 table.insert(ProceduralDistributions["list"]["KitchenCannedFood"].items, "SapphCooking.MetalSpork");
 table.insert(ProceduralDistributions["list"]["KitchenCannedFood"].items, KitchenUtensilsSpawnChance * 0.01);
 table.insert(ProceduralDistributions["list"]["KitchenCannedFood"].items, "SapphCooking.InstantNoodles_Beef");
-table.insert(ProceduralDistributions["list"]["KitchenCannedFood"].items, KitchenUtensilsSpawnChance * 1.2);
+table.insert(ProceduralDistributions["list"]["KitchenCannedFood"].items, NonPerishableSpawnChance * 1.2);
 table.insert(ProceduralDistributions["list"]["KitchenCannedFood"].items, "SapphCooking.InstantNoodles_Chicken");
-table.insert(ProceduralDistributions["list"]["KitchenCannedFood"].items, KitchenUtensilsSpawnChance * 1.2);
+table.insert(ProceduralDistributions["list"]["KitchenCannedFood"].items, NonPerishableSpawnChance * 1.2);
+table.insert(ProceduralDistributions["list"]["KitchenCannedFood"].items, "SapphCooking.Spice_OysterSauce");
+table.insert(ProceduralDistributions["list"]["KitchenCannedFood"].items, NonPerishableSpawnChance * 0.4);
+
 
 
 
@@ -416,7 +428,7 @@ table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, "SapphCooki
 table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, PerishableSpawnChance * 0.07);
 table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, "SapphCooking.VegetableSushi");
 table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, PerishableSpawnChance * 0.07);
-table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, "SapphCooking.CutCheeseSandwich");
+table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, "SapphCooking.SapphCutCheeseSandwich");
 table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, PerishableSpawnChance * 0.33);
 table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, "SapphCooking.BowlofInstantNoodles");
 table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, PerishableSpawnChance * 0.07);
@@ -460,6 +472,11 @@ table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, "SapphCooki
 table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, PerishableSpawnChance * 0.3);
 table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, "SapphCooking.Takoyaki");
 table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, PerishableSpawnChance * 0.3);
+table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, "SapphCooking.WhippedCream_Can");
+table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, NonPerishableSpawnChance * 0.1);
+table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, "SapphCooking.CheeseSpray_Can");
+table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, NonPerishableSpawnChance * 0.1);
+
 
 
 
@@ -514,7 +531,7 @@ table.insert(ProceduralDistributions["list"]["FridgeRich"].items, "SapphCooking.
 table.insert(ProceduralDistributions["list"]["FridgeRich"].items, PerishableSpawnChance * 0.07);
 table.insert(ProceduralDistributions["list"]["FridgeRich"].items, "SapphCooking.VegetableSushi");
 table.insert(ProceduralDistributions["list"]["FridgeRich"].items, PerishableSpawnChance * 0.07);
-table.insert(ProceduralDistributions["list"]["FridgeRich"].items, "SapphCooking.CutCheeseSandwich");
+table.insert(ProceduralDistributions["list"]["FridgeRich"].items, "SapphCooking.SapphCutCheeseSandwich");
 table.insert(ProceduralDistributions["list"]["FridgeRich"].items, PerishableSpawnChance * 0.07);
 table.insert(ProceduralDistributions["list"]["FridgeRich"].items, "SapphCooking.BowlofYakisoba");
 table.insert(ProceduralDistributions["list"]["FridgeRich"].items, PerishableSpawnChance * 0.07);
@@ -538,6 +555,18 @@ table.insert(ProceduralDistributions["list"]["FridgeRich"].items, "SapphCooking.
 table.insert(ProceduralDistributions["list"]["FridgeRich"].items, PerishableSpawnChance * 0.6)
 table.insert(ProceduralDistributions["list"]["FridgeRich"].items, "SapphCooking.Seitan");
 table.insert(ProceduralDistributions["list"]["FridgeRich"].items, PerishableSpawnChance * 0.2)
+table.insert(ProceduralDistributions["list"]["FridgeRich"].items, "SapphCooking.Spice_PestoBowl");
+table.insert(ProceduralDistributions["list"]["FridgeRich"].items, PerishableSpawnChance * 0.08)
+table.insert(ProceduralDistributions["list"]["FridgeRich"].items, "SapphCooking.Sausage_PigBlanket");
+table.insert(ProceduralDistributions["list"]["FridgeRich"].items, PerishableSpawnChance * 0.2)
+table.insert(ProceduralDistributions["list"]["FridgeRich"].items, "SapphCooking.WhippedCream_Can");
+table.insert(ProceduralDistributions["list"]["FridgeRich"].items, NonPerishableSpawnChance * 0.2);
+table.insert(ProceduralDistributions["list"]["FridgeRich"].items, "SapphCooking.CheeseSpray_Can");
+table.insert(ProceduralDistributions["list"]["FridgeRich"].items, NonPerishableSpawnChance * 0.1);
+table.insert(ProceduralDistributions["list"]["FridgeRich"].items, "SapphCooking.BlueCheese");
+table.insert(ProceduralDistributions["list"]["FridgeRich"].items, PerishableSpawnChance * 0.2);
+
+
 
 
 --FridgeTrailerPark
@@ -592,7 +621,7 @@ table.insert(ProceduralDistributions["list"]["FridgeTrailerPark"].items, "SapphC
 table.insert(ProceduralDistributions["list"]["FridgeTrailerPark"].items, PerishableSpawnChance * 0.07);
 table.insert(ProceduralDistributions["list"]["FridgeTrailerPark"].items, "SapphCooking.VegetableSushi");
 table.insert(ProceduralDistributions["list"]["FridgeTrailerPark"].items, PerishableSpawnChance * 0.07);
-table.insert(ProceduralDistributions["list"]["FridgeTrailerPark"].items, "SapphCooking.CutCheeseSandwich");
+table.insert(ProceduralDistributions["list"]["FridgeTrailerPark"].items, "SapphCooking.SapphCutCheeseSandwich");
 table.insert(ProceduralDistributions["list"]["FridgeTrailerPark"].items, PerishableSpawnChance * 0.07);
 table.insert(ProceduralDistributions["list"]["FridgeTrailerPark"].items, "SapphCooking.BowlofYakisoba");
 table.insert(ProceduralDistributions["list"]["FridgeTrailerPark"].items, PerishableSpawnChance * 0.07);
@@ -606,6 +635,8 @@ table.insert(ProceduralDistributions["list"]["FridgeTrailerPark"].items, "SapphC
 table.insert(ProceduralDistributions["list"]["FridgeTrailerPark"].items, NonPerishableSpawnChance * 0.33);
 table.insert(ProceduralDistributions["list"]["FridgeTrailerPark"].items, "SapphCooking.BowlofJapaneseCurry");
 table.insert(ProceduralDistributions["list"]["FridgeTrailerPark"].items, PerishableSpawnChance * 0.07);
+table.insert(ProceduralDistributions["list"]["FridgeTrailerPark"].items, "SapphCooking.Spice_PestoBowl");
+table.insert(ProceduralDistributions["list"]["FridgeTrailerPark"].items, PerishableSpawnChance * 0.08)
 
 
 --BurgerKitchenFridge
@@ -691,7 +722,7 @@ table.insert(ProceduralDistributions["list"]["FridgeOther"].items, "SapphCooking
 table.insert(ProceduralDistributions["list"]["FridgeOther"].items, PerishableSpawnChance * 0.07);
 table.insert(ProceduralDistributions["list"]["FridgeOther"].items, "SapphCooking.VegetableSushi");
 table.insert(ProceduralDistributions["list"]["FridgeOther"].items, PerishableSpawnChance * 0.07);
-table.insert(ProceduralDistributions["list"]["FridgeOther"].items, "SapphCooking.CutCheeseSandwich");
+table.insert(ProceduralDistributions["list"]["FridgeOther"].items, "SapphCooking.SapphCutCheeseSandwich");
 table.insert(ProceduralDistributions["list"]["FridgeOther"].items, PerishableSpawnChance * 0.07);
 table.insert(ProceduralDistributions["list"]["FridgeOther"].items, "SapphCooking.BowlofYakisoba");
 table.insert(ProceduralDistributions["list"]["FridgeOther"].items, PerishableSpawnChance * 0.07);
@@ -845,7 +876,7 @@ table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, "Sapph
 table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, AlcoholSpawnChance * 0.6);
 table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, "SapphCooking.CachacaFull");
 table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, AlcoholSpawnChance * 0.6);
-table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, "SapphCooking.TequillaFull");
+table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, "SapphCooking.TequilaFull");
 table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, AlcoholSpawnChance * 0.6);
 table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, "SapphCooking.RumFull");
 table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, AlcoholSpawnChance * 0.6);
@@ -916,9 +947,19 @@ table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, Kitche
 table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, "SapphCooking.Gloves_OvenMitten_Udderly");
 table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, KitchenUtensilsSpawnChance * 1);
 table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, "SapphCooking.InstantNoodles_Beef");
-table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, KitchenUtensilsSpawnChance * 0.4);
+table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, NonPerishableSpawnChance * 0.4);
 table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, "SapphCooking.InstantNoodles_Chicken");
-table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, KitchenUtensilsSpawnChance * 0.4);
+table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, NonPerishableSpawnChance * 0.4);
+table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, "SapphCooking.Empty_FrenchPress");
+table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, KitchenUtensilsSpawnChance * 0.5);
+table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, "SapphCooking.SapphCooking.Blender");
+table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, KitchenUtensilsSpawnChance * 0.8);
+table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, "SapphCooking.Spice_Furikake");
+table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, NonPerishableSpawnChance * 0.03);
+table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, "SapphCooking.Spice_OysterSauce");
+table.insert(ProceduralDistributions["list"]["DishCabinetGeneric"].items, NonPerishableSpawnChance * 0.03);
+
+
 
 
 
@@ -958,7 +999,7 @@ table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, NonPerisha
 table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, "SapphCooking.BagofHotdogBuns");
 table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, PerishableSpawnChance * 0.22);
 table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, "SapphCooking.BagofSeaweed");
-table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, NonPerishableSpawnChance * 1);
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, NonPerishableSpawnChance * 0.2);
 table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, "SapphCooking.BeefBroth");
 table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, NonPerishableSpawnChance * 2);
 table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, "SapphCooking.ChickenBroth");
@@ -1020,10 +1061,13 @@ table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, NonPerisha
 table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, "SapphCooking.ClothFilter");
 table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, KitchenUtensilsSpawnChance * 0.02);
 table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, "SapphCooking.InstantNoodles_Beef");
-table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, KitchenUtensilsSpawnChance * 0.4);
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, NonPerishableSpawnChance * 0.4);
 table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, "SapphCooking.InstantNoodles_Chicken");
-table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, KitchenUtensilsSpawnChance * 0.4);
-
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, NonPerishableSpawnChance * 0.4);
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, "SapphCooking.Spice_OysterSauce");
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, NonPerishableSpawnChance * 0.2);
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, "SapphCooking.Spice_Furikake");
+table.insert(ProceduralDistributions["list"]["KitchenDryFood"].items, NonPerishableSpawnChance * 0.1);
 
 --GigamartDryGoods
 table.insert(ProceduralDistributions["list"]["GigamartDryGoods"].items, "SapphCooking.CanofPowderedMilk");
@@ -1084,6 +1128,10 @@ table.insert(ProceduralDistributions["list"]["GigamartDryGoods"].items, "SapphCo
 table.insert(ProceduralDistributions["list"]["GigamartDryGoods"].items, NonPerishableSpawnChance * 0.08);
 table.insert(ProceduralDistributions["list"]["GigamartDryGoods"].items, "SapphCooking.Syrup_Caramel");
 table.insert(ProceduralDistributions["list"]["GigamartDryGoods"].items, NonPerishableSpawnChance * 0.08);
+table.insert(ProceduralDistributions["list"]["GigamartDryGoods"].items, "SapphCooking.Spice_OysterSauce");
+table.insert(ProceduralDistributions["list"]["GigamartDryGoods"].items, NonPerishableSpawnChance * 0.1);
+table.insert(ProceduralDistributions["list"]["GigamartDryGoods"].items, "SapphCooking.Spice_Furikake");
+table.insert(ProceduralDistributions["list"]["GigamartDryGoods"].items, NonPerishableSpawnChance * 0.4);
 
 
 --GigamartCannedFood
@@ -1164,13 +1212,15 @@ table.insert(ProceduralDistributions["list"]["GigamartHousewares"].items, Kitche
 
 --GigamartPots
 table.insert(ProceduralDistributions["list"]["GigamartPots"].items, "SapphCooking.WokPan");
-table.insert(ProceduralDistributions["list"]["GigamartPots"].items, KitchenUtensilsSpawnChance * 1.6);
+table.insert(ProceduralDistributions["list"]["GigamartPots"].items, KitchenUtensilsSpawnChance * 0.6);
 table.insert(ProceduralDistributions["list"]["GigamartPots"].items, "SapphCooking.MeatTenderizer");
 table.insert(ProceduralDistributions["list"]["GigamartPots"].items, KitchenUtensilsSpawnChance * 0.33);
 table.insert(ProceduralDistributions["list"]["GigamartPots"].items, "SapphCooking.Laddle");
 table.insert(ProceduralDistributions["list"]["GigamartPots"].items, KitchenUtensilsSpawnChance * 2.66);
 table.insert(ProceduralDistributions["list"]["GigamartPots"].items, "SapphCooking.MessTray");
 table.insert(ProceduralDistributions["list"]["GigamartPots"].items, KitchenUtensilsSpawnChance * 0.2);
+table.insert(ProceduralDistributions["list"]["GigamartPots"].items, "SapphCooking.PizzaPeel");
+table.insert(ProceduralDistributions["list"]["GigamartPots"].items, KitchenUtensilsSpawnChance * 0.08);
 
 --GigamartSauce
 table.insert(ProceduralDistributions["list"]["GigamartSauce"].items, "Base.Soysauce");
@@ -1202,6 +1252,8 @@ table.insert(ProceduralDistributions["list"]["BakeryBread"].items, "SapphCooking
 table.insert(ProceduralDistributions["list"]["BakeryBread"].items, PerishableSpawnChance * 2);
 table.insert(ProceduralDistributions["list"]["BakeryBread"].items, "SapphCooking.TunaSandwich");
 table.insert(ProceduralDistributions["list"]["BakeryBread"].items, PerishableSpawnChance * 2);
+table.insert(ProceduralDistributions["list"]["BakeryBread"].items, "SapphCooking.Sausage_PigBlanket");
+table.insert(ProceduralDistributions["list"]["BakeryBread"].items, PerishableSpawnChance * 0.9)
 
 --BandPracticeFridge
 table.insert(ProceduralDistributions["list"]["BandPracticeFridge"].items, "SapphCooking.CheeseSandwich");
@@ -1224,6 +1276,14 @@ table.insert(ProceduralDistributions["list"]["CafeteriaSandwiches"].items, "Sapp
 table.insert(ProceduralDistributions["list"]["CafeteriaSandwiches"].items, PerishableSpawnChance * 1.6);
 table.insert(ProceduralDistributions["list"]["CafeteriaSandwiches"].items, "SapphCooking.WildGarlicBreadCooked");
 table.insert(ProceduralDistributions["list"]["CafeteriaSandwiches"].items, PerishableSpawnChance * 1);
+table.insert(ProceduralDistributions["list"]["CafeteriaSandwiches"].items, "SapphCooking.TakeoutBox");
+table.insert(ProceduralDistributions["list"]["CafeteriaSandwiches"].items, NonPerishableSpawnChance * 0.8);
+table.insert(ProceduralDistributions["list"]["CafeteriaSandwiches"].items, "SapphCooking.Empty_FrenchPress");
+table.insert(ProceduralDistributions["list"]["CafeteriaSandwiches"].items, KitchenUtensilsSpawnChance * 0.8);
+table.insert(ProceduralDistributions["list"]["CafeteriaSandwiches"].items, "SapphCooking.Sausage_PigBlanket");
+table.insert(ProceduralDistributions["list"]["CafeteriaSandwiches"].items, PerishableSpawnChance * 0.9)
+
+
 
 
 
@@ -1256,11 +1316,21 @@ table.insert(ProceduralDistributions["list"]["BakeryKitchenBaking"].items, "Sapp
 table.insert(ProceduralDistributions["list"]["BakeryKitchenBaking"].items, KitchenUtensilsSpawnChance * 3);
 table.insert(ProceduralDistributions["list"]["BakeryKitchenBaking"].items, "SapphCooking.Gloves_OvenMitten_Udderly");
 table.insert(ProceduralDistributions["list"]["BakeryKitchenBaking"].items, KitchenUtensilsSpawnChance * 3);
+table.insert(ProceduralDistributions["list"]["BakeryKitchenBaking"].items, "SapphCooking.PizzaPeel");
+table.insert(ProceduralDistributions["list"]["BakeryKitchenBaking"].items, KitchenUtensilsSpawnChance * 2);
+table.insert(ProceduralDistributions["list"]["BakeryKitchenBaking"].items, "SapphCooking.PizzaCutter");
+table.insert(ProceduralDistributions["list"]["BakeryKitchenBaking"].items, KitchenUtensilsSpawnChance * 1);
+
+
 --KitchenBaking
 table.insert(ProceduralDistributions["list"]["KitchenBaking"].items, "SapphCooking.Gloves_OvenMitten_White");
 table.insert(ProceduralDistributions["list"]["KitchenBaking"].items, KitchenUtensilsSpawnChance * 3);
 table.insert(ProceduralDistributions["list"]["KitchenBaking"].items, "SapphCooking.Gloves_OvenMitten_Udderly");
 table.insert(ProceduralDistributions["list"]["KitchenBaking"].items, KitchenUtensilsSpawnChance * 1);
+table.insert(ProceduralDistributions["list"]["KitchenBaking"].items, "SapphCooking.PizzaPeel");
+table.insert(ProceduralDistributions["list"]["KitchenBaking"].items, KitchenUtensilsSpawnChance * 0.03);
+table.insert(ProceduralDistributions["list"]["KitchenBaking"].items, "SapphCooking.PizzaCutter");
+table.insert(ProceduralDistributions["list"]["KitchenBaking"].items, KitchenUtensilsSpawnChance * 0.02);
 
 
 --BakeryMisc
@@ -1274,6 +1344,8 @@ table.insert(ProceduralDistributions["list"]["BakeryMisc"].items, "SapphCooking.
 table.insert(ProceduralDistributions["list"]["BakeryMisc"].items, NonPerishableSpawnChance * 1.66);
 table.insert(ProceduralDistributions["list"]["BakeryMisc"].items, "SapphCooking.Bonbon");
 table.insert(ProceduralDistributions["list"]["BakeryMisc"].items, NonPerishableSpawnChance * 1.66);
+table.insert(ProceduralDistributions["list"]["BakeryMisc"].items, "SapphCooking.PizzaPeel");
+table.insert(ProceduralDistributions["list"]["BakeryMisc"].items, KitchenUtensilsSpawnChance * 0.1);
 
 
 
@@ -1304,6 +1376,12 @@ table.insert(ProceduralDistributions["list"]["StoreKitchenBaking"].items, "Sapph
 table.insert(ProceduralDistributions["list"]["StoreKitchenBaking"].items, KitchenUtensilsSpawnChance * 3);
 table.insert(ProceduralDistributions["list"]["StoreKitchenBaking"].items, "SapphCooking.Meatgrinder");
 table.insert(ProceduralDistributions["list"]["StoreKitchenBaking"].items, KitchenUtensilsSpawnChance * 1);
+table.insert(ProceduralDistributions["list"]["StoreKitchenBaking"].items, "SapphCooking.FortuneCookie");
+table.insert(ProceduralDistributions["list"]["StoreKitchenBaking"].items, NonPerishableSpawnChance * 0.5);
+table.insert(ProceduralDistributions["list"]["StoreKitchenBaking"].items, "SapphCooking.SapphCooking.Blender");
+table.insert(ProceduralDistributions["list"]["StoreKitchenBaking"].items, KitchenUtensilsSpawnChance * 0.8);
+table.insert(ProceduralDistributions["list"]["StoreKitchenBaking"].items, "SapphCooking.PizzaPeel");
+table.insert(ProceduralDistributions["list"]["StoreKitchenBaking"].items, KitchenUtensilsSpawnChance * 0.1);
 
 
 
@@ -1334,6 +1412,8 @@ table.insert(ProceduralDistributions["list"]["GigamartBakingMisc"].items, "Sapph
 table.insert(ProceduralDistributions["list"]["GigamartBakingMisc"].items, KitchenUtensilsSpawnChance * 1);
 table.insert(ProceduralDistributions["list"]["GigamartBakingMisc"].items, "SapphCooking.Meatgrinder");
 table.insert(ProceduralDistributions["list"]["GigamartBakingMisc"].items, KitchenUtensilsSpawnChance * 1);
+table.insert(ProceduralDistributions["list"]["GigamartBakingMisc"].items, "SapphCooking.TakeoutBox");
+table.insert(ProceduralDistributions["list"]["GigamartBakingMisc"].items, NonPerishableSpawnChance * 0.5);
 
 
 --BurgerKitchenSauce
@@ -1379,7 +1459,7 @@ table.insert(ProceduralDistributions["list"]["BarShelfLiquor"].items, "SapphCook
 table.insert(ProceduralDistributions["list"]["BarShelfLiquor"].items, AlcoholSpawnChance * 0.33);
 table.insert(ProceduralDistributions["list"]["BarShelfLiquor"].items, "SapphCooking.CachacaFull");
 table.insert(ProceduralDistributions["list"]["BarShelfLiquor"].items, AlcoholSpawnChance * 0.33);
-table.insert(ProceduralDistributions["list"]["BarShelfLiquor"].items, "SapphCooking.TequillaFull");
+table.insert(ProceduralDistributions["list"]["BarShelfLiquor"].items, "SapphCooking.TequilaFull");
 table.insert(ProceduralDistributions["list"]["BarShelfLiquor"].items, AlcoholSpawnChance * 0.33);
 table.insert(ProceduralDistributions["list"]["BarShelfLiquor"].items, "SapphCooking.Vermouth");
 table.insert(ProceduralDistributions["list"]["BarShelfLiquor"].items, AlcoholSpawnChance * 0.33);
@@ -1401,7 +1481,7 @@ table.insert(ProceduralDistributions["list"]["DrugShackDrugs"].items, "SapphCook
 table.insert(ProceduralDistributions["list"]["DrugShackDrugs"].items, AlcoholSpawnChance * 0.33);
 table.insert(ProceduralDistributions["list"]["DrugShackDrugs"].items, "SapphCooking.CachacaFull");
 table.insert(ProceduralDistributions["list"]["DrugShackDrugs"].items, AlcoholSpawnChance * 0.33);
-table.insert(ProceduralDistributions["list"]["DrugShackDrugs"].items, "SapphCooking.TequillaFull");
+table.insert(ProceduralDistributions["list"]["DrugShackDrugs"].items, "SapphCooking.TequilaFull");
 table.insert(ProceduralDistributions["list"]["DrugShackDrugs"].items, AlcoholSpawnChance * 0.33);
 table.insert(ProceduralDistributions["list"]["DrugShackDrugs"].items, "SapphCooking.Vermouth");
 table.insert(ProceduralDistributions["list"]["DrugShackDrugs"].items, AlcoholSpawnChance * 0.33);
@@ -1426,7 +1506,7 @@ table.insert(ProceduralDistributions["list"]["BarCounterGlasses"].items, Kitchen
 
 --StoreKitchenPots
 table.insert(ProceduralDistributions["list"]["StoreKitchenPots"].items, "SapphCooking.WokPan");
-table.insert(ProceduralDistributions["list"]["StoreKitchenPots"].items, KitchenUtensilsSpawnChance * 0.6);
+table.insert(ProceduralDistributions["list"]["StoreKitchenPots"].items, KitchenUtensilsSpawnChance * 0.4);
 table.insert(ProceduralDistributions["list"]["StoreKitchenPots"].items, "SapphCooking.MeatTenderizer");
 table.insert(ProceduralDistributions["list"]["StoreKitchenPots"].items, KitchenUtensilsSpawnChance * 2);
 table.insert(ProceduralDistributions["list"]["StoreKitchenPots"].items, "SapphCooking.Laddle");
@@ -1439,7 +1519,7 @@ table.insert(ProceduralDistributions["list"]["StoreKitchenPots"].items, KitchenU
 
 --StoreKitchenCutlery
 table.insert(ProceduralDistributions["list"]["StoreKitchenCutlery"].items, "SapphCooking.WokPan");
-table.insert(ProceduralDistributions["list"]["StoreKitchenCutlery"].items, KitchenUtensilsSpawnChance * 0.6);
+table.insert(ProceduralDistributions["list"]["StoreKitchenCutlery"].items, KitchenUtensilsSpawnChance * 0.2);
 table.insert(ProceduralDistributions["list"]["StoreKitchenCutlery"].items, "SapphCooking.MeatTenderizer");
 table.insert(ProceduralDistributions["list"]["StoreKitchenCutlery"].items, KitchenUtensilsSpawnChance * 2);
 table.insert(ProceduralDistributions["list"]["StoreKitchenCutlery"].items, "SapphCooking.Laddle");
@@ -1496,7 +1576,21 @@ table.insert(ProceduralDistributions["list"]["FridgeSnacks"].items, "SapphCookin
 table.insert(ProceduralDistributions["list"]["FridgeSnacks"].items, PerishableSpawnChance * 2);
 table.insert(ProceduralDistributions["list"]["FridgeSnacks"].items, "SapphCooking.VegetableSushi");
 table.insert(ProceduralDistributions["list"]["FridgeSnacks"].items, PerishableSpawnChance * 2);
+table.insert(ProceduralDistributions["list"]["FridgeSnacks"].items, "SapphCooking.Spice_PestoBowl");
+table.insert(ProceduralDistributions["list"]["FridgeSnacks"].items, PerishableSpawnChance * 0.5);
 
+
+
+--SpiffosDiningCounter 
+table.insert(ProceduralDistributions["list"]["SpiffosDiningCounter"].items, "SapphCooking.FortuneCookie");
+table.insert(ProceduralDistributions["list"]["SpiffosDiningCounter"].items, NonPerishableSpawnChance * 0.4);
+table.insert(ProceduralDistributions["list"]["SpiffosDiningCounter"].items, "SapphCooking.TakeoutBox");
+table.insert(ProceduralDistributions["list"]["SpiffosDiningCounter"].items, NonPerishableSpawnChance * 2.2);
+
+
+--ChineseKitchenBaking
+table.insert(ProceduralDistributions["list"]["ChineseKitchenBaking"].items, "SapphCooking.FortuneCookie");
+table.insert(ProceduralDistributions["list"]["ChineseKitchenBaking"].items, NonPerishableSpawnChance * 2);
 --ChineseKitchenCutlery
 table.insert(ProceduralDistributions["list"]["ChineseKitchenCutlery"].items, "SapphCooking.MeatTenderizer");
 table.insert(ProceduralDistributions["list"]["ChineseKitchenCutlery"].items, KitchenUtensilsSpawnChance * 2);
@@ -1514,6 +1608,24 @@ table.insert(ProceduralDistributions["list"]["ChineseKitchenCutlery"].items, "Sa
 table.insert(ProceduralDistributions["list"]["ChineseKitchenCutlery"].items, KitchenUtensilsSpawnChance * 0.1);
 table.insert(ProceduralDistributions["list"]["ChineseKitchenCutlery"].items, "SapphCooking.Gloves_OvenMitten_Udderly");
 table.insert(ProceduralDistributions["list"]["ChineseKitchenCutlery"].items, KitchenUtensilsSpawnChance * 0.1);
+table.insert(ProceduralDistributions["list"]["ChineseKitchenCutlery"].items, "SapphCooking.TakeoutBox");
+table.insert(ProceduralDistributions["list"]["ChineseKitchenCutlery"].items, NonPerishableSpawnChance * 2.8);
+
+--ServingTrayNoodleSoup 
+table.insert(ProceduralDistributions["list"]["ServingTrayNoodleSoup"].items, "SapphCooking.FortuneCookie");
+table.insert(ProceduralDistributions["list"]["ServingTrayNoodleSoup"].items, NonPerishableSpawnChance * 3);
+
+--ServingTrayMeatSteamBuns 
+table.insert(ProceduralDistributions["list"]["ServingTrayMeatSteamBuns"].items, "SapphCooking.FortuneCookie");
+table.insert(ProceduralDistributions["list"]["ServingTrayMeatSteamBuns"].items, NonPerishableSpawnChance * 3);
+
+--ServingTrayTofuFried 
+table.insert(ProceduralDistributions["list"]["ServingTrayTofuFried"].items, "SapphCooking.FortuneCookie");
+table.insert(ProceduralDistributions["list"]["ServingTrayTofuFried"].items, NonPerishableSpawnChance * 3);
+
+--ServingTrayChickenNuggets 
+table.insert(ProceduralDistributions["list"]["ServingTrayChickenNuggets"].items, "SapphCooking.FortuneCookie");
+table.insert(ProceduralDistributions["list"]["ServingTrayChickenNuggets"].items, NonPerishableSpawnChance * 3);
 
 --StoreKitchenDishes
 table.insert(ProceduralDistributions["list"]["StoreKitchenDishes"].items, "SapphCooking.StackBowl2");
@@ -1557,7 +1669,7 @@ table.insert(ProceduralDistributions["list"]["FridgeSoda"].items, NonPerishableS
 table.insert(ProceduralDistributions["list"]["FridgeSoda"].items, "SapphCooking.ColaBottle");
 table.insert(ProceduralDistributions["list"]["FridgeSoda"].items, NonPerishableSpawnChance * 2);
 table.insert(ProceduralDistributions["list"]["FridgeSoda"].items, "SapphCooking.EnergyDrink");
-table.insert(ProceduralDistributions["list"]["FridgeSoda"].items, NonPerishableSpawnChance * 2);
+table.insert(ProceduralDistributions["list"]["FridgeSoda"].items, NonPerishableSpawnChance * 0.2);
 
 --FridgeWater
 table.insert(ProceduralDistributions["list"]["FridgeWater"].items, "SapphCooking.CarbonatedWater");
@@ -1603,7 +1715,7 @@ table.insert(ProceduralDistributions["list"]["KitchenBottles"].items, NonPerisha
 table.insert(ProceduralDistributions["list"]["KitchenBottles"].items, "SapphCooking.ColaBottle");
 table.insert(ProceduralDistributions["list"]["KitchenBottles"].items, NonPerishableSpawnChance * 0.6);
 table.insert(ProceduralDistributions["list"]["KitchenBottles"].items, "SapphCooking.EnergyDrink");
-table.insert(ProceduralDistributions["list"]["KitchenBottles"].items, NonPerishableSpawnChance * 0.4);
+table.insert(ProceduralDistributions["list"]["KitchenBottles"].items, NonPerishableSpawnChance * 0.1);
 table.insert(ProceduralDistributions["list"]["KitchenBottles"].items, "SapphCooking.Gloves_OvenMitten_White");
 table.insert(ProceduralDistributions["list"]["KitchenBottles"].items, KitchenUtensilsSpawnChance * 1);
 table.insert(ProceduralDistributions["list"]["KitchenBottles"].items, "SapphCooking.Gloves_OvenMitten_Udderly");
@@ -1628,8 +1740,6 @@ table.insert(ProceduralDistributions["list"]["StoreShelfCombo"].items, "SapphCoo
 table.insert(ProceduralDistributions["list"]["StoreShelfCombo"].items, NonPerishableSpawnChance * 1);
 table.insert(ProceduralDistributions["list"]["StoreShelfCombo"].items, "SapphCooking.BagofHotdogBuns");
 table.insert(ProceduralDistributions["list"]["StoreShelfCombo"].items, PerishableSpawnChance * 2);
-table.insert(ProceduralDistributions["list"]["StoreShelfCombo"].items, "SapphCooking.BagofSeaweed");
-table.insert(ProceduralDistributions["list"]["StoreShelfCombo"].items, NonPerishableSpawnChance * 2);
 
 
 --StoreShelfBeer
@@ -1640,7 +1750,7 @@ table.insert(ProceduralDistributions["list"]["StoreShelfBeer"].items, "SapphCook
 table.insert(ProceduralDistributions["list"]["StoreShelfBeer"].items, AlcoholSpawnChance * 0.33);
 table.insert(ProceduralDistributions["list"]["StoreShelfBeer"].items, "SapphCooking.CachacaFull");
 table.insert(ProceduralDistributions["list"]["StoreShelfBeer"].items, AlcoholSpawnChance * 0.33);
-table.insert(ProceduralDistributions["list"]["StoreShelfBeer"].items, "SapphCooking.TequillaFull");
+table.insert(ProceduralDistributions["list"]["StoreShelfBeer"].items, "SapphCooking.TequilaFull");
 table.insert(ProceduralDistributions["list"]["StoreShelfBeer"].items, AlcoholSpawnChance * 0.33);
 table.insert(ProceduralDistributions["list"]["StoreShelfBeer"].items, "SapphCooking.Vermouth");
 table.insert(ProceduralDistributions["list"]["StoreShelfBeer"].items, AlcoholSpawnChance * 0.33);
@@ -1663,8 +1773,6 @@ table.insert(ProceduralDistributions["list"]["StoreShelfSnacks"].items, "SapphCo
 table.insert(ProceduralDistributions["list"]["StoreShelfSnacks"].items, NonPerishableSpawnChance * 1);
 table.insert(ProceduralDistributions["list"]["StoreShelfSnacks"].items, "SapphCooking.BagofHotdogBuns");
 table.insert(ProceduralDistributions["list"]["StoreShelfSnacks"].items, PerishableSpawnChance * 2.66);
-table.insert(ProceduralDistributions["list"]["StoreShelfSnacks"].items, "SapphCooking.BagofSeaweed");
-table.insert(ProceduralDistributions["list"]["StoreShelfSnacks"].items, NonPerishableSpawnChance * 2.66);
 table.insert(ProceduralDistributions["list"]["StoreShelfSnacks"].items, "SapphCooking.ChocolateEgg_Small");
 table.insert(ProceduralDistributions["list"]["StoreShelfSnacks"].items, NonPerishableSpawnChance * 0.66);
 table.insert(ProceduralDistributions["list"]["StoreShelfSnacks"].items, "SapphCooking.ChocolateEgg_Medium");
@@ -1723,7 +1831,7 @@ table.insert(ProceduralDistributions["list"]["DishCabinetLiquor"].items, "SapphC
 table.insert(ProceduralDistributions["list"]["DishCabinetLiquor"].items, AlcoholSpawnChance * 0.33);
 table.insert(ProceduralDistributions["list"]["DishCabinetLiquor"].items, "SapphCooking.CachacaFull");
 table.insert(ProceduralDistributions["list"]["DishCabinetLiquor"].items, AlcoholSpawnChance * 0.33);
-table.insert(ProceduralDistributions["list"]["DishCabinetLiquor"].items, "SapphCooking.TequillaFull");
+table.insert(ProceduralDistributions["list"]["DishCabinetLiquor"].items, "SapphCooking.TequilaFull");
 table.insert(ProceduralDistributions["list"]["DishCabinetLiquor"].items, AlcoholSpawnChance * 0.330);
 table.insert(ProceduralDistributions["list"]["DishCabinetLiquor"].items, "SapphCooking.Vermouth");
 table.insert(ProceduralDistributions["list"]["DishCabinetLiquor"].items, AlcoholSpawnChance * 0.33);
@@ -1745,7 +1853,7 @@ table.insert(ProceduralDistributions["list"]["BarCounterLiquor"].items, "SapphCo
 table.insert(ProceduralDistributions["list"]["BarCounterLiquor"].items, AlcoholSpawnChance * 0.33);
 table.insert(ProceduralDistributions["list"]["BarCounterLiquor"].items, "SapphCooking.CachacaFull");
 table.insert(ProceduralDistributions["list"]["BarCounterLiquor"].items, AlcoholSpawnChance * 0.33);
-table.insert(ProceduralDistributions["list"]["BarCounterLiquor"].items, "SapphCooking.TequillaFull");
+table.insert(ProceduralDistributions["list"]["BarCounterLiquor"].items, "SapphCooking.TequilaFull");
 table.insert(ProceduralDistributions["list"]["BarCounterLiquor"].items, AlcoholSpawnChance * 0.33);
 table.insert(ProceduralDistributions["list"]["BarCounterLiquor"].items, "SapphCooking.Vermouth");
 table.insert(ProceduralDistributions["list"]["BarCounterLiquor"].items, AlcoholSpawnChance * 0.33);
@@ -1766,8 +1874,6 @@ table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, "SapphCo
 table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, NonPerishableSpawnChance * 1);
 table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, "SapphCooking.BagofHotdogBuns");
 table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, PerishableSpawnChance * 1.33);
-table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, "SapphCooking.BagofSeaweed");
-table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, NonPerishableSpawnChance * 0.33);
 table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, "SapphCooking.ChocolateEgg_Small");
 table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, NonPerishableSpawnChance * 0.66);
 table.insert(ProceduralDistributions["list"]["CandyStoreSnacks"].items, "SapphCooking.ChocolateEgg_Medium");

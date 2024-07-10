@@ -1,5 +1,15 @@
 module Base
 {
+	recipe Examine Further
+    {
+    PompsItems.PIMysteryFoodIcon,
+       RemoveResultItem:true,
+       Result:PompsItems.PIMysteryFoodIcon,
+       Time:25.0,
+	   OnCreate:Recipe.OnCreate.PIZombieFood,
+       Sound:PutItemInBag,
+       Category:General,
+    }
 	recipe Open Canned Stallion Milk
 	{
        PompsItems.StallionMilk,

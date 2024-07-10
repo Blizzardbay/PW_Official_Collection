@@ -14,6 +14,9 @@ if ModOptions and ModOptions.getInstance then
 		Options.isCombine = x.settings.options.isCombine
 
 		Options.showInside = x.settings.options.showInside
+		
+		Options.enableSeason= x.settings.options.enableSeason
+		Options.seasonIs = x.settings.options.seasonIs
 
 		Options.enableCloud = x.settings.options.enableCloud
 		Options.cloudIs = x.settings.options.cloudIs
@@ -70,6 +73,22 @@ if ModOptions and ModOptions.getInstance then
 				name = "UI_WeatherMoodles_ShowInside",
 				tooltip = "UI_WeatherMoodles_ShowInside_Tooltip",
 				default = false,
+				OnApplyMainMenu = OnApply,
+				OnApplyInGame = OnApply,
+			},
+
+			enableSeason = {
+				name = "UI_WeatherMoodles_EnableSeason",
+				tooltip = "UI_WeatherMoodles_EnableSeason_Tooltip",
+				default = false,
+				OnApplyMainMenu = OnApply,
+				OnApplyInGame = OnApply,
+			},
+			seasonIs = {
+				getText("UI_WeatherMoodles_Good"), getText("UI_WeatherMoodles_Bad"),
+				name = "UI_WeatherMoodles_SeasonIs",
+				tooltip = "UI_WeatherMoodles_BGColor_Tooltip",
+				default = 1,
 				OnApplyMainMenu = OnApply,
 				OnApplyInGame = OnApply,
 			},

@@ -45,82 +45,91 @@
 [*] Riverwood
 [*] Dead In Hong Kong
 [*] x3 SNAKE's Modpack : Mansion, construction factory, western military complex
-[*] [b][i](NEW)[/i][/b] (x3) Big Bear Lake
-[*] [b][i](NEW)[/i][/b] (x7) Dirkerdam
-[*] [b][i](NEW)[/i][/b] (x4) Lake Cumberland (old location)
-[*] [b][i](NEW)[/i][/b] (x4) Lake Cumberland
-[*] [b][i](NEW)[/i][/b] Hopefalls
-[*] [b][i](NEW)[/i][/b] [Legacy] Vine Grove, KY
-[*] [b][i](NEW)[/i][/b] [Legacy] Louisiana, KY
-[*] [b][i](NEW)[/i][/b] (x3) [Legacy] California, KY
-[*] [b][i](NEW)[/i][/b] Westwood Remake
-[*] [b][i](NEW)[/i][/b] Anthem, KY
-[*] [b][i](NEW)[/i][/b] laconia, KY (conflicts with coryerdon and dirkerdam)
-[*] [b][i](NEW)[/i][/b] ashenwood
-[*] [b][i](NEW)[/i][/b] elysium island
-[*] [b][i](NEW)[/i][/b] Hopewell, KY
-[*] [b][i](NEW)[/i][/b] Walnut Ridge
-[*] [b][i](NEW)[/i][/b] Heavens Hill
-[*] [b][i](NEW)[/i][/b] Chestown
-[*] [b][i](NEW)[/i][/b] Nashville, Ky
-[*] [b][i](NEW)[/i][/b] Overlook hotel
-[*] [b][i](NEW)[/i][/b] Perfect shelter
-[*] [b][i](NEW)[/i][/b] O'Connor Farm
-[*] [b][i](NEW)[/i][/b] Lincoln Regional Airport
-[*] [b][i](NEW)[/i][/b] Muldraugh - West outskirts Shipping Company
-[*] [b][i](NEW)[/i][/b] Rosewood Military Hospital
-[*] [b][i](NEW)[/i][/b] The Museum
-[*] [b][i](NEW)[/i][/b] The Eye Lake
-[*] [b][i](NEW)[/i][/b] Addams Family Mansion
-[*] [b][i](NEW)[/i][/b] Louisville River Expansion
-[*] [b][i](NEW)[/i][/b] Cherokee Lake
-[*] [b][i](NEW)[/i][/b] Riverside Mansion
-[*] [b][i](NEW)[/i][/b] Finnegan Mental Asylum
-[*] [b][i](NEW)[/i][/b] Papaville
-[*] [b][i](NEW)[/i][/b] SouthTown
-[*] [b][i](NEW)[/i][/b] Chinatown Expansion
-[*] [b][i](NEW)[/i][/b] Louisville Bunker
-[*] [b][i](NEW)[/i][/b] Orchidwood
-[*] [b][i](NEW)[/i][/b] Winchester, KY
-[*] [b][i](NEW)[/i][/b] Breakpoint
-[*] [b][i](NEW)[/i][/b] Wilbore, KY
-[*] [b][i](NEW)[/i][/b] Petroville
-[*] [b][i](NEW)[/i][/b] Cedar Hill
-[*] [b][i](NEW)[/i][/b] Cathaya Valley, KY
-[*] [b][i](NEW)[/i][/b] Springwood
-[*] [b][i](NEW)[/i][/b] Nature's Vengeance Township
-[*] [b][i](NEW)[/i][/b] The Sims Zomboid
-[*] [b][i](NEW)[/i][/b] Waterlocked Pharmaceutical Factory
-[*] [b][i](NEW)[/i][/b] Nettle Township 
-[*] [b][i](NEW)[/i][/b] St Moose Hospital Area
-[*] [b][i](NEW)[/i][/b] Shortrest County
-[*] [b][i](NEW)[/i][/b] Leavenburg
-[*] [b][i](NEW)[/i][/b] Bunker - Day of the dead
-[*] [b][i](NEW)[/i][/b] SuperGigaMart
-[*] [b][i](NEW)[/i][/b] Ztardew Valley
-[*] [b][i](NEW)[/i][/b] The Walking Dead: Prison
-[*] [b][i](NEW)[/i][/b] The Walking Dead: Terminus
-[*] [b][i](NEW)[/i][/b] Hunter's Base
-[*] [b][i](NEW)[/i][/b] PortCity, KY
-[*] [b][i](NEW)[/i][/b] SpringValley, KY
-[*] [b][i](NEW)[/i][/b] Oakshire
-[*] [b][i](NEW)[/i][/b] Ranger's Homestead
-[*] [b][i](NEW)[/i][/b] The Frigate
-[*] [b][i](NEW)[/i][/b] Bunker: Last Minute Prepper
-[*] [b][i](NEW)[/i][/b] Louisville Quarantine Zone
-[*] [b][i](NEW)[/i][/b] Louisville International Airport
-[*] [b][i](NEW)[/i][/b] Muldraugh Checkpoint
-[*] [b][i](NEW)[/i][/b] Speck
-[*] [b][i](NEW)[/i][/b] Homestead Windy
-[*] [b][i](NEW)[/i][/b] Military Fuel Depot
-[*] [b][i](NEW)[/i][/b] Spencer Mansion
-[*] [b][i](NEW)[/i][/b] Uncle Red's Bunker Redux
-[*] [b][i](NEW)[/i][/b] Weyhausen, KY
-[*] [b][i](NEW)[/i][/b] Daisy County
-[*] [b][i](NEW)[/i][/b] McCoy's Bunker
-[*] [b][i](NEW)[/i][/b] Otter Creek
-[*] [b][i](NEW)[/i][/b] Wellsburg Lake
-[*] [b][i](NEW)[/i][/b] Fort Boonesborough 
+[*] (x3) Big Bear Lake
+[*] (x7) Dirkerdam
+[*] (x4) Lake Cumberland (old location)
+[*] (x4) Lake Cumberland
+[*] Hopefalls
+[*] [Legacy] Vine Grove, KY
+[*] [Legacy] Louisiana, KY
+[*] (x3) [Legacy] California, KY
+[*] Westwood Remake
+[*] Anthem, KY
+[*] laconia, KY (conflicts with coryerdon and dirkerdam)
+[*] ashenwood
+[*] elysium island
+[*] Hopewell, KY
+[*] Walnut Ridge
+[*] Heavens Hill
+[*] Chestown
+[*] Nashville, Ky
+[*] Overlook hotel
+[*] Perfect shelter
+[*] O'Connor Farm
+[*] Lincoln Regional Airport
+[*] Muldraugh - West outskirts Shipping Company
+[*] Rosewood Military Hospital
+[*] The Museum
+[*] The Eye Lake
+[*] Addams Family Mansion
+[*] Louisville River Expansion
+[*] Cherokee Lake
+[*] Riverside Mansion
+[*] Finnegan Mental Asylum
+[*] Papaville
+[*] SouthTown
+[*] Chinatown Expansion
+[*] Louisville Bunker
+[*] Orchidwood
+[*] Winchester, KY
+[*] Breakpoint
+[*] Wilbore, KY
+[*] Petroville
+[*] Cedar Hill
+[*] Cathaya Valley, KY
+[*] Springwood
+[*] Nature's Vengeance Township
+[*] The Sims Zomboid
+[*] Waterlocked Pharmaceutical Factory
+[*] Nettle Township 
+[*] St Moose Hospital Area
+[*] Shortrest County
+[*] Leavenburg
+[*] Bunker - Day of the dead
+[*] SuperGigaMart
+[*] Ztardew Valley
+[*] The Walking Dead: Prison
+[*] The Walking Dead: Terminus
+[*] Hunter's Base
+[*] PortCity, KY
+[*] SpringValley, KY
+[*] Oakshire
+[*] Ranger's Homestead
+[*] The Frigate
+[*] Bunker: Last Minute Prepper
+[*] Louisville Quarantine Zone
+[*] Louisville International Airport
+[*] Muldraugh Checkpoint
+[*] Speck
+[*] Homestead Windy
+[*] Military Fuel Depot
+[*] Spencer Mansion
+[*] Uncle Red's Bunker Redux
+[*] Weyhausen, KY
+[*] Daisy County
+[*] McCoy's Bunker
+[*] Otter Creek
+[*] Wellsburg Lake
+[*] Fort Boonesborough 
+[*] [b][i](NEW)[/i][/b] Crowlake
+[*] [b][i](NEW)[/i][/b] Guston, KY
+[*] [b][i](NEW)[/i][/b] Jasperville
+[*] [b][i](NEW)[/i][/b] ValuTech Amusement Park
+[*] [b][i](NEW)[/i][/b] Pleford Springs, KY
+[*] [b][i](NEW)[/i][/b] FoxWood
+[*] [b][i](NEW)[/i][/b] mapa brasil
+[*] [b][i](NEW)[/i][/b] Fort Loid
+[*] [b][i](NEW)[/i][/b] Haven Ridge
 [/list]
 
-Total : 122 mods
+Total : 131 mods

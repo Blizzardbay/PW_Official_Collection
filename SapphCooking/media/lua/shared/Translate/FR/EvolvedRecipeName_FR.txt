@@ -21,11 +21,27 @@ EvolvedRecipeName_FR = {
 	EvolvedRecipeName_SapphCooking.SlicedChicken = "Poulet",
 	EvolvedRecipeName_SapphCooking.SlicedSteak = "Boeuf",
 	EvolvedRecipeName_SapphCooking.StrawberryMilk = "Lait à la fraise",
-	EvolvedRecipeName_SapphCooking.EnergyDrink = "Energy Drink",
+	EvolvedRecipeName_SapphCooking.EnergyDrink = "Boisson énergisante",
+	
 	EvolvedRecipeName_SapphCooking.IcenCubes = "Glace"
+	EvolvedRecipeName_SapphCooking.VodkaFull = "Vodka",
+	EvolvedRecipeName_SapphCooking.LiqueurBottle = "Liqueur",
+	EvolvedRecipeName_SapphCooking.SakeFull = "Sake",
+	EvolvedRecipeName_SapphCooking.TequilaFull = "Tequila",
+	EvolvedRecipeName_SapphCooking.CachacaFull = "Cachaca",
+	EvolvedRecipeName_SapphCooking.RumFull = "Rhum",
+	EvolvedRecipeName_SapphCooking.GinFull = "Gin",
+	EvolvedRecipeName_SapphCooking.SugarPacket = "Sachet de sucre",
+	EvolvedRecipeName_SapphCooking.HotsaucePacket = "Sachet de sauce piquante",
+	EvolvedRecipeName_SapphCooking.CoffeePacket = "Sachet de café",
+	EvolvedRecipeName_SapphCooking.Rice = "Riz",
+	EvolvedRecipeName_SapphCooking.MeltedChocolate = "Chocolat fondu",
 
-
-
-
+	EvolvedRecipeName_SapphCooking.Grape = "Raisin",
+	EvolvedRecipeName_SapphCooking.Strawberry = "Fraise",
+	EvolvedRecipeName_SapphCooking.Watermelon = "Pastèque",
+	EvolvedRecipeName_SapphCooking.Lemon = "Citron",
+	EvolvedRecipeName_SapphCooking.Apple = "Pomme",
+	EvolvedRecipeName_SapphCooking.Pineapple = "Ananas",
 
 }

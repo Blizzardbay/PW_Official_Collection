@@ -18,6 +18,7 @@ module Base
         MountOn = SilencerMountOn,
 		Tooltip = Tooltip_Silencer,
 		WorldStaticModel = Silencer_Ground,
+	Tags = BlockBayonet,
     }
 
 	item SilencerMountOn
@@ -51,6 +52,7 @@ module Base
         MountOn = SilencerMountOn,
 		Tooltip = Tooltip_MetalPipeSilencer,
 		WorldStaticModel = MetalPipeSilencer_Ground,
+	Tags = BlockBayonet,
     }
 
 	item TorchSilencer
@@ -66,6 +68,7 @@ module Base
         MountOn = CraftedSilencerMountOn,
 		Tooltip = Tooltip_TorchSilencer,
 		WorldStaticModel = TorchSilencer_Ground,
+	Tags = BlockBayonet,
     }
 	
 	item WaterBottleSilencer
@@ -81,6 +84,7 @@ module Base
         MountOn = CraftedSilencerMountOn,
 		Tooltip = Tooltip_WaterBottleSilencer,
 		WorldStaticModel = WaterBottleSilencer_Ground,
+	Tags = BlockBayonet,
     }
 	
 	recipe Craft Silencer

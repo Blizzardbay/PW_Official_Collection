@@ -1,0 +1,13 @@
+IG_UI_ES = {
+    IGUI_PlayerText_st = "Estableciendo destino.",
+    IGUI_PlayerText_in = "Destino cercano.",
+    IGUI_PlayerText_end = "Has llegado a tu destino.",
+    IGUI_PlayerText_left = "Pronto girar a la izquierda.",
+    IGUI_PlayerText_right = "Pronto girar a la derecha.",
+    IGUI_PlayerText_autoon = "Cambiando a modo de conduccion autonoma.",
+    IGUI_PlayerText_auttooff = "Finalizando modo de conduccion autonoma.",
+    IGUI_PlayerText_stop = "Deteniendose debido a un vehiculo delante.",
+    IGUI_PlayerText_Navout = "Desviandose del camino.",
+    IGUI_Tutorial_NavGPS = " <CENTRE> <SIZE:large> ¢®Como usar la navegacion! <LINE> <LINE> <SIZE:medium> [Shift izquierdo (Boton de palanca izquierda en el pad)] : ¢®Puedes establecer un destino! Se recomienda marcar puntos de paso en el medio para crear una ruta precisa. <LINE> <LINE> [X (Boton LT en el pad)] : ¢®Elimina uno de los destinos establecidos en orden reciente! <LINE> <LINE> [Espacio (Boton LB en el pad)] : ¢®Puedes eliminar todos los destinos y puntos de paso establecidos! <LINE> <LINE>",
+
+}

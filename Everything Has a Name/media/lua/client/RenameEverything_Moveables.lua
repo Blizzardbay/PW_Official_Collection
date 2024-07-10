@@ -3,7 +3,7 @@ ISRenameEverything = ISRenameEverything or {};
 local original_ISMoveableSpriteProps_getInfoPanelFlagsGeneral = ISMoveableSpriteProps.getInfoPanelFlagsGeneral
 
 function ISMoveableSpriteProps:getInfoPanelFlagsGeneral(square, object, ...)
-  if instanceof(item, "Moveable") or instanceof (item, "Radio") then
+  if instanceof(item, "Moveable") or instanceof(item, "Radio") then
     local obj_name = object:getModData().renameEverything_name
   end
 
@@ -11,9 +11,9 @@ function ISMoveableSpriteProps:getInfoPanelFlagsGeneral(square, object, ...)
   local result = original_ISMoveableSpriteProps_getInfoPanelFlagsGeneral(self, square, object, ...)
   -- post stuff
 
-  if instanceof(item, "Moveable") or instanceof (item, "Radio") then
+  if instanceof(item, "Moveable") or instanceof(item, "Radio") then
     if obj_name then
-      InfoPanelFlags.name = obj_name 
+      InfoPanelFlags.name = obj_name
     end
   end
 
@@ -23,10 +23,10 @@ end
 local original_ISMoveableSpriteProps_placeMoveable = ISMoveableSpriteProps.placeMoveable
 
 function ISMoveableSpriteProps:placeMoveable(character, square, origSpriteName, ...)
-  local item = self:findInInventory(character, origSpriteName );
+  local item = self:findInInventory(character, origSpriteName);
   local item_name = nil
 
-  if instanceof(item, "Moveable") or instanceof (item, "Radio") then
+  if instanceof(item, "Moveable") or instanceof(item, "Radio") then
     item_name = item:getModData().renameEverything_name
   end
 
@@ -34,8 +34,8 @@ function ISMoveableSpriteProps:placeMoveable(character, square, origSpriteName, 
   local result = original_ISMoveableSpriteProps_placeMoveable(self, character, square, origSpriteName, ...)
   -- post stuff
 
-  if instanceof(item, "Moveable") or instanceof (item, "Radio") then
-    local worldObj = self:findOnSquare( square, self.spriteName );
+  if instanceof(item, "Moveable") or instanceof(item, "Radio") then
+    local worldObj = self:findOnSquare(square, self.spriteName);
 
 
     if item_name then
@@ -49,7 +49,7 @@ local original_ISMoveableSpriteProps_pickUpMoveable = ISMoveableSpriteProps.pick
 local created_item
 
 function ISMoveableSpriteProps:pickUpMoveable(character, square, ...)
-  local worldObj = self:findOnSquare( square, self.spriteName );
+  local worldObj = self:findOnSquare(square, self.spriteName);
 
   -- pre stuff
   local result = original_ISMoveableSpriteProps_pickUpMoveable(self, character, square, ...)
@@ -65,15 +65,14 @@ end
 
 ArendamethUtils.patchClassMethod(zombie.inventory.ItemContainer.class, "AddItem", function(original_fn)
   return function(self, item, ...)
-  if instanceof(item, "Moveable") or instanceof(item, "Radio") then
-    created_item = item
+    if instanceof(item, "Moveable") or instanceof(item, "Radio") then
+      created_item = item
+    end
+
+    --pre stuff
+    local result = original_fn(self, item, ...)
+    -- post stuff
+
+    return result
   end
-
-  --pre stuff
-  local result = original_fn(self, item, ...)
-  -- post stuff
-
-  return result
-
-end
 end)

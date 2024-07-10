@@ -18,6 +18,8 @@ function CTagsUI:createChildren()
 	self.textField.no:setVisible(false);
 	self.textField:onPickedColor(self.color);
 	self.textField:setVisible(true);
+	function self.textField:onMouseMove(dx, dy) end
+	function self.textField:onMouseMoveOutside(dx, dy) end
 	self:addChild(self.textField);
 
 	self.applyButton = ISButton:new(0, titleH + inputH, self.width, self.height - (inputH + titleH), "Apply", self, function () CTagsUI:apply(self) end);
@@ -35,19 +37,28 @@ function CTagsUI:loop()
 	local faction = CTags:getFaction();
 	if not faction and CTags.mode == 2 then 
 		CTagsUI:removeWindow() 
+		return
+	end
+
+	if not CTagsUI.window:isVisible() then
+		CTagsUI:removeWindow() 
+		return
 	end
 	-- Loop
-	CTags:sleepDo(0.25, CTagsUI.loop);
+	CTags:sleepDo(0.1, CTagsUI.loop);
 end
 
 function CTagsUI:apply(ui)
-	local square = ui.square;
+	local object = ui.object;
+	local square = object:getSquare();
 	local squareID = ui.squareID;
+	local spriteName = ui.spriteName;
 	local textField = ui.textField;
 	local text = textField.entry:getText();
 	local color = textField.colorBtn.backgroundColor;
 	local player = getPlayer();
 	local faction = CTags:getFaction();
+	local renderOffset = ui.renderOffset;
 
 	-- Too long
 	if ui.maxChars and textField.entry:getInternalText():len() > ui.maxChars then
@@ -61,12 +72,10 @@ function CTagsUI:apply(ui)
 		if not tagData.tags then tagData.tags = {} end;
 		local tags = tagData.tags;
 
-
-
 		if textField.entry:getInternalText():len() == 0 then
 			tagData.tags[squareID] = {};
 		else 
-			tagData.tags[squareID] = { ['square'] = {square:getX(), square:getY(), square:getZ()}, ['tag'] = text, ['color'] = {color.r, color.g, color.b} };
+			tagData.tags[squareID] = { ['square'] = {square:getX(), square:getY(), square:getZ(), renderOffset}, ['tag'] = text, ['color'] = {color.r, color.g, color.b}, ['spriteName'] = spriteName };
 		end
 	end 
 
@@ -74,15 +83,11 @@ function CTagsUI:apply(ui)
 	if ui.mode == 2 then
 		if faction then
 			local factionName = faction:getName();
-			local tagData = ModData.getOrCreate("ContainerTagDataFaction");
-			if not tagData[factionName] then tagData[factionName] = {} end;
-			local tags = tagData[factionName];
 
 			if textField.entry:getInternalText():len() == 0 then
-				sendClientCommand(player, "CTags", "delete", { ['factionName'] = factionName, ['square'] = {square:getX(), square:getY(), square:getZ()} });
+				sendClientCommand(player, "CTags", "delete", { ['factionName'] = factionName, ['square'] = {square:getX(), square:getY(), square:getZ(), renderOffset}, ['spriteName'] = spriteName });
 			else
-				print(color.r); 
-				sendClientCommand(player, "CTags", "update", { ['factionName'] = factionName, ['square'] = {square:getX(), square:getY(), square:getZ()}, ['tag'] = text, ['color'] = {color.r, color.g, color.b} });
+				sendClientCommand(player, "CTags", "update", { ['factionName'] = factionName, ['square'] = {square:getX(), square:getY(), square:getZ(), renderOffset}, ['tag'] = text, ['color'] = {color.r, color.g, color.b}, ['spriteName'] = spriteName });
 			end	
 		end 	
 	end 
@@ -91,7 +96,7 @@ function CTagsUI:apply(ui)
 end 
 
 -- Entry point
-function CTagsUI.makeWindow(x, y, square, squareID)
+function CTagsUI.makeWindow(x, y, object, objectName, squareID, renderOffset, spriteName, playerName)
 	-- Don't store it, regenerate completely
 	if CTagsUI.window then CTagsUI:removeWindow() end
 
@@ -101,13 +106,13 @@ function CTagsUI.makeWindow(x, y, square, squareID)
 	local Hmax = 1;
 	local Wmax = 1; 
 	local w = (sw / 5) * Wmax <= sw and (sw / 5) * Wmax or sw
-	local h = (sh / 12) * Wmax <= sh and (sh / 12) * Hmax or sh
+	local h = (sh / 15) * Wmax <= sh and (sh / 15) * Hmax or sh
 	local mode = CTags.mode or 1;
 
 	-- Tags are off
 	if mode == 0 then return end;
 
-	window = CTagsUI:new(x, y, w, h, square, squareID, mode);
+	window = CTagsUI:new(x, y, w, h, mode, object, objectName, squareID, renderOffset, spriteName, playerName);
 	window:setVisible(true)
 	window:setResizable(false);
 	window:addToUIManager()
@@ -121,11 +126,12 @@ end
 function CTagsUI.removeWindow()
 	local window = CTagsUI.window;
 	if not window then return end;
+	window.textField.colorPicker:setVisible(false);
 	window:setVisible(false)
 	window:removeFromUIManager()
 end
 
-function CTagsUI:new(x, y, width, height, square, squareID, mode)
+function CTagsUI:new(x, y, width, height, mode, object, objectName, squareID, renderOffset, spriteName, playerName)
 	local o = {};
 	o = ISCollapsableWindow:new(x, y, width, height);
 	setmetatable(o, self);
@@ -135,8 +141,11 @@ function CTagsUI:new(x, y, width, height, square, squareID, mode)
 	o.y = y
 	o.width = width
 	o.height = height
-	o.square = square
-	o.squareID = squareID
+	o.object = object
+	o.squareID = squareID;
+	o.renderOffset = renderOffset;
+	o.spriteName = spriteName;
+	o.playerName = playerName;
 	o.clearStentil = false;
 	o.maxChars = 32;
 	o.mode = mode; 
@@ -144,41 +153,44 @@ function CTagsUI:new(x, y, width, height, square, squareID, mode)
 	-- Find data
 	local tagData;
 	local tags;
-	local player = getPlayer();
 
-
-
+	-- Personal tagger
 	if o.mode == 1 then 
 		tagData = ModData.getOrCreate("ContainerTagData");
 		if not tagData.tags then tagData.tags = {} end;
 		tags = tagData.tags;
 	end 
 
+	-- Faction tagger
 	if o.mode == 2 then
-		local faction = CTags:getFaction(); 
-		o.faction = faction;
-
+		local faction = CTags:getFaction();
+		
 		if faction then
 			local factionName = faction:getName();
-			o.factionName = factionName;
 			tagData = ModData.getOrCreate("ContainerTagDataFaction");
-			if not tagData[factionName] then tagData[factionName] = {} end;
-			tags = tagData[factionName];
+			if not tagData.tags then tagData.tags = {} end;
+			if not tagData.tags[factionName] then tagData.tags[factionName] = {} end;
+			tags = tagData.tags[factionName];
+			o.factionName = factionName;
+			o.faction = faction;
 		else 
 			tagData = {};
 			tags = {};
 		end
 	end
 
+	-- Finalize
 	if tags[squareID] then
 		local tag = tags[squareID];
 		local text = tag.tag or "";
 		local color = tag.color or {};
 		o.color = { r = color[1] or 1, g = color[2] or 1, b = color[3] or 1};
 		o.text = text
+		o.title = objectName .. ' (' .. (tag.playerName or o.playerName) .. ')';
 	else
 		o.color = { r = 1, g = 1, b = 1 }
 		o.text = "";
+		o.title = objectName .. ' (' .. o.playerName .. ')';
 	end 
 
 	return o;

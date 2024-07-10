@@ -2,6 +2,49 @@
 --**                    THE INDIE STONE                    **
 --***********************************************************
 
+-- Vilespring: This function adds a weapon to an attachment's list of vaid weapons without removing any.
+local function attachmentAddToMountOn(attachment, addValues)
+    local attachmentScript = ScriptManager.instance:getItem(attachment);
+
+    if attachmentScript
+    then
+        local attachmentItem = InventoryItemFactory.CreateItem(attachment);
+        local mountOptions = attachmentItem:getMountOn();
+        local newList = {};
+
+        for i, addValue in ipairs(type(addValues) ~= "table"
+            and {
+                addValues
+            }
+            or addValues
+        )
+        do
+            if not mountOptions:contains(addValue) and InventoryItemFactory.CreateItem(addValue)
+            then
+                table.insert(newList, addValue);
+            end
+        end
+
+        if #newList > 0
+        then
+            for i = 0, mountOptions:size() - 1
+            do
+                local weapon = mountOptions:get(i);
+
+                if weapon and InventoryItemFactory.CreateItem(weapon)
+                then
+                    table.insert(newList, weapon);
+                end
+            end
+
+            attachmentScript:DoParam("MountOn = " .. table.concat(newList, "; "));
+        end
+    end
+
+    return attachmentScript;
+end
+
+
 -- Adds attachment positions on Items
 
 local group = AttachedLocations.getGroup("Human")
@@ -158,92 +201,112 @@ end
 
 local item = ScriptManager.instance:getItem("Base.308Silencer")    
 if item then 
-    item:DoParam("MountOn = AssaultRifle2; M24Rifle; FN_FAL; SKS; AK47; DeadlyHeadhunterRifle; HeadhunterRifle")
+	attachmentAddToMountOn("Base.308Silencer", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.308Silencer", "HeadhunterRifle")
 end
 
 local item = ScriptManager.instance:getItem("Base.ImprovisedSilencer")    
 if item then 
-    item:DoParam("MountOn = Pistol; Pistol2; Glock17; AR15; AssaultRifle2; M24Rifle; FN_FAL; SKS; AK47; VarmintRifle; HuntingRifle; HuntingRifle_Sawn  ; AssaultRifle; M16A2; M733; MP5; UZI; Mac10; Revolver_Short; Revolver; Revolver_Long; ColtPeacemaker; Shotgun; Mossberg500; Mossberg500Tactical; Remington870Wood; M37; SPAS12; LAW12; Winchester73; Winchester94;  Rossi92; ColtSingleAction22; ColtAnaconda; ColtPython; ColtPythonHunter; ColtAce; M1Garand; DeadlyHeadhunterRifle; HeadhunterRifle")
+	attachmentAddToMountOn("Base.ImprovisedSilencer", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.ImprovisedSilencer", "HeadhunterRifle")
 end
 
 local item = ScriptManager.instance:getItem("Base.Silencer_PopBottle")    
 if item then 
-    item:DoParam("MountOn = Pistol; Pistol2; Glock17; AR15; AssaultRifle2; M24Rifle; FN_FAL; SKS; AK47; VarmintRifle; HuntingRifle; HuntingRifle_Sawn; AssaultRifle; M16A2; M733; MP5; UZI; Mac10; Revolver_Short; Revolver; Revolver_Long; ColtPeacemaker; Shotgun; Mossberg500; Mossberg500Tactical; Remington870Wood; M37; SPAS12; LAW12; Winchester73; Winchester94; Rossi92; ColtSingleAction22; ColtAnaconda; ColtPython; ColtPythonHunter; ColtAce; M1Garand; DeadlyHeadhunterRifle; HeadhunterRifle")
+	attachmentAddToMountOn("Base.Silencer_PopBottle", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.Silencer_PopBottle", "HeadhunterRifle")
 end
 
 local item = ScriptManager.instance:getItem("Base.RecoilPad")    
 if item then 
-    item:DoParam("MountOn = HuntingRifle; VarmintRifle; AssaultRifle; AssaultRifle2; Base.Winchester94; Base.M24Rifle ; Shotgun; Base.Mossberg500; Base.Remington870Wood; Rugerm7722; DeadlyHeadhunterRifle; HeadhunterRifle")
+	attachmentAddToMountOn("Base.RecoilPad", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.RecoilPad", "HeadhunterRifle")
 end
 
 local item = ScriptManager.instance:getItem("Base.ExtendedRecoilPad")    
 if item then 
-    item:DoParam("MountOn = HuntingRifle; VarmintRifle; M24Rifle; DeadlyHeadhunterRifle; HeadhunterRifle")
+	attachmentAddToMountOn("Base.ExtendedRecoilPad", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.ExtendedRecoilPad", "HeadhunterRifle")
 end
 
 local item = ScriptManager.instance:getItem("Base.Rifle_Bipod")    
 if item then 
-    item:DoParam("MountOn = HuntingRifle; VarmintRifle; M24Rifle; HuntingRifle_Sawn; AssaultRifle2; FN_FAL; DeadlyHeadhunterRifle; HeadhunterRifle")
+	attachmentAddToMountOn("Base.Rifle_Bipod", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.Rifle_Bipod", "HeadhunterRifle")
 end
 
-local item = ScriptManager.instance:getItem("Base.Sling")    
-if item then 
-    item:DoParam("MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; AR15; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Mossberg500Tactical; SPAS12; LAW12; Base.MP5; Base.UZI; Rugerm7722; FN_FAL; M1Garand; DeadlyHeadhunterRifle; HeadhunterRifle")
+local item = ScriptManager.instance:getItem("Base.Sling")
+-- VFE uses a special system for its slings, so it's better to not add to it.
+if item and not getActivatedMods():contains("VFExpansion1") then 
+	attachmentAddToMountOn("Base.Sling", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.Sling", "HeadhunterRifle")
 end
 
 local item = ScriptManager.instance:getItem("Base.Sling_Leather")    
 if item then 
-    item:DoParam("MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; AR15; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Mossberg500Tactical; SPAS12; LAW12; Base.MP5; Base.UZI; Rugerm7722; FN_FAL; M1Garand; DeadlyHeadhunterRifle; HeadhunterRifle")
+	attachmentAddToMountOn("Base.Sling_Leather", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.Sling_Leather", "HeadhunterRifle")
 end
 
 local item = ScriptManager.instance:getItem("Base.Sling_Olive")    
 if item then 
-    item:DoParam("MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; AR15; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Mossberg500Tactical; SPAS12; LAW12; Base.MP5; Base.UZI; Rugerm7722; FN_FAL; M1Garand; DeadlyHeadhunterRifle; HeadhunterRifle")
+	attachmentAddToMountOn("Base.Sling_Olive", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.Sling_Olive", "HeadhunterRifle")
 end
 
 local item = ScriptManager.instance:getItem("Base.Sling_Camo")    
 if item then 
-    item:DoParam("MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; AR15; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Mossberg500Tactical; SPAS12; LAW12; Base.MP5; Base.UZI; Rugerm7722; FN_FAL; M1Garand; DeadlyHeadhunterRifle; HeadhunterRifle")
+	attachmentAddToMountOn("Base.Sling_Camo", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.Sling_Camo", "HeadhunterRifle")
 end
 
 local item = ScriptManager.instance:getItem("Base.AmmoStraps")    
 if item then 
-    item:DoParam("MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; AR15; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Mossberg500Tactical; SPAS12; LAW12; Base.MP5; Base.UZI; Rugerm7722; FN_FAL; M1Garand; DeadlyHeadhunterRifle; HeadhunterRifle")
+	attachmentAddToMountOn("Base.AmmoStraps", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.AmmoStraps", "HeadhunterRifle")
 end
 
 local item = ScriptManager.instance:getItem("Base.Laser")    
 if item then 
-    item:DoParam("MountOn = Pistol; Base.Glock17; Pistol2; Pistol3; AssaultRifle; AssaultRifle2; FN_FAL; M16A2; M733; AR15; M24Rifle; DeadlyHeadhunterRifle; HeadhunterRifle")
+	attachmentAddToMountOn("Base.Laser", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.Laser", "HeadhunterRifle")
 end
 
 local item = ScriptManager.instance:getItem("Base.IronSight")    
-if item then 
-    item:DoParam("MountOn = HuntingRifle; Base.HuntingRifle_Sawn ; VarmintRifle; Pistol; Pistol2; Pistol3; Revolver; Revolver_Long; AssaultRifle; AssaultRifle2; Base.M24Rifle; Rugerm7722; DeadlyHeadhunterRifle; HeadhunterRifle")
+-- VFE uses a special system for its iron sights, so it's better to not add to it.
+if item and not getActivatedMods():contains("VFExpansion1") then 
+	attachmentAddToMountOn("Base.IronSight", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.IronSight", "HeadhunterRifle")
 end
 
 local item = ScriptManager.instance:getItem("Base.RedDot")    
 if item then 
-    item:DoParam("MountOn = Pistol; Pistol2; Pistol3; Revolver; Revolver_Long; AssaultRifle; AssaultRifle2; HuntingRifle; VarmintRifle; Base.Glock17; Base.HuntingRifle_Sawn; Shotgun; ShotgunSawnoff; Base.Remington870Sawnoff; Base.Mossberg500; Mossberg500Tactical; LAW12; Base.Remington870Wood; Base.MP5; Base.UZI; Base.M24Rifle; Base.M16A2; M733; Rugerm7722; FN_FAL; DeadlyHeadhunterRifle; HeadhunterRifle")
+    attachmentAddToMountOn("Base.RedDot", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.RedDot", "HeadhunterRifle")
 end
 
 local item = ScriptManager.instance:getItem("Base.x2Scope")    
 if item then 
-    item:DoParam("MountOn = HuntingRifle; VarmintRifle; Base.HuntingRifle_Sawn; AssaultRifle; Base.M60; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.MP5; Base.UZI; Mossberg500Tactical; LAW12; Base.Mossberg500; Shotgun; ShotgunSawnoff; Base.Remington870Sawnoff; Base.Remington870Wood; Rugerm7722; FN_FAL; DeadlyHeadhunterRifle; HeadhunterRifle")
+	attachmentAddToMountOn("Base.x2Scope", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.x2Scope", "HeadhunterRifle")
 end
 
 local item = ScriptManager.instance:getItem("Base.x4Scope")    
 if item then 
-    item:DoParam("MountOn = HuntingRifle; VarmintRifle; Base.HuntingRifle_Sawn; AssaultRifle; AssaultRifle2; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.MP5; Mossberg500Tactical; LAW12; Rugerm7722; FN_FAL; DeadlyHeadhunterRifle; HeadhunterRifle")
+	attachmentAddToMountOn("Base.x4Scope", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.x4Scope", "HeadhunterRifle")
 end
 
 local item = ScriptManager.instance:getItem("Base.x8Scope")    
 if item then 
-    item:DoParam("MountOn = HuntingRifle; VarmintRifle; Base.HuntingRifle_Sawn; AssaultRifle; AssaultRifle2; Base.M24Rifle; Rugerm7722; DeadlyHeadhunterRifle; HeadhunterRifle")
+	attachmentAddToMountOn("Base.x8Scope", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.x8Scope", "HeadhunterRifle")
 end
 
 local item = ScriptManager.instance:getItem("Base.x4-x12Scope")    
 if item then 
-    item:DoParam("MountOn = HuntingRifle; VarmintRifle; HuntingRifle_Sawn; AssaultRifle2; M24Rifle; Rugerm7722; DeadlyHeadhunterRifle; HeadhunterRifle")
+	attachmentAddToMountOn("Base.x4-x12Scope", "DeadlyHeadhunterRifle")
+	attachmentAddToMountOn("Base.x4-x12Scope", "HeadhunterRifle")
 end
 
 

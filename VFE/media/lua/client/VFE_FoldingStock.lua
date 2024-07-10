@@ -125,6 +125,7 @@ function VFEFoldingStock(item, newWeapIndex, player)
 				result:setContainsClip(true)
 			end
 			result:setCurrentAmmoCount(item:getCurrentAmmoCount())
+			result:setSpentRoundCount(item:getSpentRoundCount())
 			
 			result:setFireMode(item:getFireMode())
 			
@@ -179,6 +180,7 @@ function VFEFoldingStock(item, newWeapIndex, player)
 				FoldingStockModifierRecalc(result)
 			end
 			VFESetWeaponModel(result,false) -- Sets the model corretly incase of attachments that change weapon model
+			VFESetWeaponIcon(result)
 			player:getEmitter():playSound("M16Equip")
 		end
 end

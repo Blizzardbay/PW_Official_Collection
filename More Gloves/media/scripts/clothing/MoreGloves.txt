@@ -33,7 +33,7 @@ module MoreGloves
 		WindResistance = 0.20,
 		ScratchDefense = 15,
 		BiteDefense = 10,
-		CombatSpeedModifier = 1.01,
+		CombatSpeedModifier = 1.02,
 		FabricType = Leather,
 		WorldStaticModel = Gloves_Ground,
 	}
@@ -51,9 +51,8 @@ module MoreGloves
         	Insulation = 0.25,
         	WindResistance = 0.40,
 		ScratchDefense = 30,
-        	BiteDefense = 15,
+        	BiteDefense = 10,
 		CombatSpeedModifier = 0.98,
-		FabricType = Leather,
         	WorldStaticModel = Gloves_Ground,
 	}
 	item Cut-ResistantGloves
@@ -69,9 +68,8 @@ module MoreGloves
         	Insulation = 0.10,
         	WindResistance = 0.20,
 		ScratchDefense = 50,
-        	BiteDefense = 5,
-		CombatSpeedModifier = 0.99,
-		FabricType = Cotton,
+        	BiteDefense = 0,
+		CombatSpeedModifier = 0.97,
         	WorldStaticModel = Gloves_Ground,
 	}
 	
@@ -91,7 +89,6 @@ module MoreGloves
         	WindResistance = 0.35,
 		ScratchDefense = 25,
         	BiteDefense = 5,
-		FabricType = Denim,
         	WorldStaticModel = Gloves_Ground,
 	}
 	item RippedSheetsGloves
@@ -108,7 +105,6 @@ module MoreGloves
         	WindResistance = 0.25,
 		ScratchDefense = 15,
         	BiteDefense = 0,
-		FabricType = Cotton,
         	WorldStaticModel = Gloves_Ground,
 	}
 	
@@ -128,7 +124,7 @@ module MoreGloves
         	WindResistance = 0.25,
 		ScratchDefense = 20,
         	BiteDefense = 10,
-		CombatSpeedModifier = 1.02,
+		CombatSpeedModifier = 1.01,
 		FabricType = Leather,
         	WorldStaticModel = Gloves_Ground,
 	}
@@ -170,8 +166,6 @@ module MoreGloves
         	WindResistance = 0.25,
 		ScratchDefense = 35,
         	BiteDefense = 20,
-		FabricType = Leather,
-		CombatSpeedModifier = 0.98,
         	WorldStaticModel = Kickboxing_ground,
 	}
 	
@@ -190,7 +184,7 @@ module MoreGloves
         	WindResistance = 1.00,
 		ScratchDefense = 15,
         	BiteDefense = 5,
-		FabricType = Leather,
+			CombatSpeedModifier = 0.98,
         	WorldStaticModel = Gloves_Ground,
 	}
 
@@ -205,11 +199,10 @@ module MoreGloves
 		BloodLocation = Hands,
 		IconsForTexture = Winter01;Winter02;Winter03;Winter04;Winter05,
 		Weight = 0.1,
-        	Insulation = 0.80,
-        	WindResistance = 0.75,
+        	Insulation = 0.90,
+        	WindResistance = 0.85,
 		ScratchDefense = 15,
         	BiteDefense = 5,
-		FabricType = Cotton,
         	WorldStaticModel = Gloves_Ground,
 	}
 
@@ -224,12 +217,11 @@ module MoreGloves
 		BloodLocation = Hands,
 		IconsForTexture = Firefighter01;Firefighter02;Firefighter03,
 		Weight = 0.3,
-        	Insulation = 0.85,
+        	Insulation = 1,
         	WindResistance = 0.60,
-		ScratchDefense = 60,
+		ScratchDefense = 50,
         	BiteDefense = 30,
 		CombatSpeedModifier = 0.97,
-		FabricType = Leather,
         	WorldStaticModel = Gloves_Ground,
 	}
 /************************ Tactical ************************/
@@ -245,10 +237,9 @@ module MoreGloves
 		Weight = 0.1,
         	Insulation = 0.25,
         	WindResistance = 0.50,
-		ScratchDefense = 60,
-        	BiteDefense = 30,
+		ScratchDefense = 55,
+        	BiteDefense = 25,
 		CombatSpeedModifier = 1.02,
-		FabricType = Leather,
         	WorldStaticModel = Gloves_Ground,
 	}
 	item TacticalGloves02
@@ -263,10 +254,9 @@ module MoreGloves
 		Weight = 0.1,
         	Insulation = 0.25,
         	WindResistance = 0.50,
-		ScratchDefense = 60,
-        	BiteDefense = 30,
+		ScratchDefense = 55,
+        	BiteDefense = 25,
 		CombatSpeedModifier = 1.02,
-		FabricType = Leather,
         	WorldStaticModel = Gloves_Ground,
 	}
 	item TacticalGloves03
@@ -281,10 +271,9 @@ module MoreGloves
 		Weight = 0.1,
         	Insulation = 0.25,
         	WindResistance = 0.50,
-		ScratchDefense = 60,
-        	BiteDefense = 30,
+		ScratchDefense = 55,
+        	BiteDefense = 25,
 		CombatSpeedModifier = 1.02,
-		FabricType = Leather,
         	WorldStaticModel = Gloves_Ground,
 	}
 /************************ LeatherWork ************************/
@@ -297,7 +286,7 @@ module MoreGloves
 		BodyLocation = Hands,
 		BloodLocation = Hands,
 		IconsForTexture = LeatherWork01;LeatherWork02;LeatherWork03,
-		Weight = 0.15,
+		Weight = 0.2,
         	Insulation = 0.50,
         	WindResistance = 0.75,
 		ScratchDefense = 45,
@@ -319,7 +308,58 @@ module MoreGloves
 		Weight = 0.1,
 		ScratchDefense = 0,
         	BiteDefense = 0,
-		FabricType = Cotton,
         	WorldStaticModel = Gloves_Ground,
+	}
+/************************ Fingerless Tactical ************************/
+	item FingerlessTacticalGloves01
+	{
+	    DisplayCategory = ClothArm,
+		Type = Clothing,
+		DisplayName = Fingerless Tactical Gloves,
+		ClothingItem = FingerlessTacticalGloves01,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = FingerlessTactical01,
+		Weight = 0.1,
+        Insulation = 0.15,
+        WindResistance = 0.25,
+		ScratchDefense = 40,
+        BiteDefense = 15,
+		CombatSpeedModifier = 1.03,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item FingerlessTacticalGloves02
+	{
+	    DisplayCategory = ClothArm,
+		Type = Clothing,
+		DisplayName = Fingerless Tactical Gloves,
+		ClothingItem = FingerlessTacticalGloves02,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = FingerlessTactical02,
+		Weight = 0.1,
+        Insulation = 0.15,
+        WindResistance = 0.25,
+		ScratchDefense = 40,
+        BiteDefense = 15,
+		CombatSpeedModifier = 1.03,
+        WorldStaticModel = Gloves_Ground,
+	}
+	item FingerlessTacticalGloves03
+	{
+	    DisplayCategory = ClothArm,
+		Type = Clothing,
+		DisplayName = Fingerless Tactical Gloves,
+		ClothingItem = FingerlessTacticalGloves03,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = FingerlessTactical03,
+		Weight = 0.1,
+        Insulation = 0.15,
+        WindResistance = 0.25,
+		ScratchDefense = 40,
+        BiteDefense = 15,
+		CombatSpeedModifier = 1.03,
+        WorldStaticModel = Gloves_Ground,
 	}
 }

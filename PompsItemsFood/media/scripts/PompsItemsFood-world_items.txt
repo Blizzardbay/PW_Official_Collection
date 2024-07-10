@@ -4153,4 +4153,22 @@ module Base
 		texture = Food/PIFazbarTex,
         scale = 0.02,
 	}
+					    model PIGummyFrogs
+    {
+        mesh = WorldItems/PIGummyWorms,
+		texture = Food/PIGummyFrogsTex,
+        scale = 0.02,
+	}
+					    model PIGummyFrogsHand
+    {
+        mesh = WorldItems/GummyWormsHand,
+		texture = Food/PIGummyFrogsTex,
+        scale = 0.02,
+	}
+					    model PIGummyFrogsEmpty
+    {
+        mesh = WorldItems/GummyWormsEmpty,
+		texture = Food/PIGummyFrogsEmptyTex,
+        scale = 0.02,
+	}
 }

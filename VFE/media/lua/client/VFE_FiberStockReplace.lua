@@ -23,9 +23,11 @@ function ISRemoveWeaponUpgrade:perform()
 		self.character:getInventory():DoRemoveItem(self.part)
 		self.part = InventoryItemFactory.CreateItem("Base.Laser")
 	end
-    ISRemoveWeaponUpgrade_performHook(self)
+	if not self.part:hasTag("NoRemoveAttachment") then
+		ISRemoveWeaponUpgrade_performHook(self)
+	end
 	VFESetWeaponModel(self.weapon, false)
-	-- VFESetWeaponIcon(self.weapon)
+	VFESetWeaponIcon(self.weapon)
 end
 
 local ISUpgradeWeapon_performHook = ISUpgradeWeapon.perform

@@ -14,4 +14,6 @@ Sandbox_ES = {
 	Sandbox_VFE_HouseWeapons_tooltip = "Armas de VFE que aparecen en casas normales."
 	Sandbox_VFE_HouseWeaponsMulti = "Multiplicador de Armas en Casa"
 	Sandbox_VFE_HouseWeaponsMulti_tooltip = "Multiplicador para armas que aparecen en casas (Requiere habilitar la opción anterior)"
+	Sandbox_VFE_HeavyWeapons = "Armas Pesadas"
+	Sandbox_VFE_HeavyWeapons_tooltip = "Permite la aparición de armas como la Ametralladora M60."
 }
